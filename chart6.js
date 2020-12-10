@@ -5,9 +5,9 @@ var Chart6 = {
   
   "data": {"url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=region&metric=newCasesBySpecimenDate&format=csv", "format":{"type":"csv"}},
   
-  "height":600,
+  "height":500,
 
-  "width": 600,
+  "width": "container",
   
   "mark": {"type": "line","point": false, "color":"green"},
 
