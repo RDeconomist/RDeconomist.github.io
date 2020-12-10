@@ -7,7 +7,7 @@ var Chart6 = {
   
   "height":500,
 
-  "width": "container",
+  "width": 500,
   
   "mark": {"type": "line","point": false, "color":"green"},
 
@@ -43,7 +43,8 @@ var Chart6 = {
     "color": {
       "field": "areaName", 
       "type": "nominal", 
-      "scale": {"scheme": "set1"}
+      "scale": {"scheme": "set1"},
+      "title":"Region"
     }
   }
 };

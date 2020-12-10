@@ -35,24 +35,30 @@
         <div class="work-detail"> 
 
   <h1>Covid-19</h1> 
-  <p><b>Richard Davies</b></p>
+  <h2>Richard Davies</h2>
   <p>This is a site I built while thinking about how to improve the way we present data at the Economics Observatory. The Covid-19 pandemic has produced a torrent of data, but with some notable exceptions, the graphical analysis of it has been weak. Most of what we see in the news is days or weeks out of date. The charts here are all live, either running direct from the original data sources, or are updated daily via a quick script written by me. All of the code — HTML, CSS and JavaScript — is by me and I am no expert so please please do suggest improvements. The charts are drawn in Vega-Lite, which has an excellent support from the University of Washington and Observable. You can find this project on my GitHub page, and me on Twitter. Get in touch. 
 
-  <p><b>Chart 1 - Covid cases by region</b></p>
-  <p>The chart below shows new Covid cases, over a 14 day rolling window to smooth out the data a little.</p> 
-  <p>Try hovering over the data with a mouse, this will give you the number of cases, but also the raw data i.e. the acutal number of cases that day.</p> 
+  <h2>Covid cases by region - line</h2>
+  <p>The chart below shows new Covid cases, over a 14 day rolling window to smooth out the data a little. Hovering over the data with a mouse will give you both the number of cases plotted and the raw data, i.e. the acutal number of cases that day. The charts in this section use the UK government API.</p> 
 
 <!--Chart 6 - Start-->
     <div id="vis6">
     <script src="chart6.js"></script>
+    </div>
 <!--Chart 6 - End-->
 
+<h2>Covid cases by region - trellis</h2>
+<p>Another way to look at the same data is to give each region its own chart. I find it a little easier to compare the data visually this way. These kids of charts are known as trellis plots.</p> 
 
 <!--Chart 7 - Start-->
     <div id="vis7">
     <script src="chart7.js"></script>
+    </div>
 <!--Chart 7 - End-->
 
+
+<h2>Covid cases by region - past 30 days</h2>
+<p>The pattern between regions is similar, but in recent weeks some differences have appeared. The chart below looks at the last month's data. Cases have started to rise again in London.</p>
 
 <!--Chart 8 - Start-->
     <div id="vis8">
@@ -108,7 +114,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2 text-center section"> <a href="index.html"><i class="fa fa-th fa-2x"></i></a>
-        <p>Back to projects</p>
+        <p>Back to top</p>
       </div>
     </div>
   </div>
@@ -120,8 +126,8 @@
 <footer class="footer">
   <div class="container">
     <div class="col-md-6 left">
-      <h4>Join RapidCharts</h4>
-      <p> Twitter/Istagram @RapidCharts | <a href="mailto:hello@agency.com"> office@rapidcharts.com </a></p>
+      <h4>A RapidCharts project</h4>
+      <p> Twitter | Instagram | @RapidCharts | <a href="mailto:office@rapidcharts.io"> office@rapidcharts.io </a></p>
     </div>
     <div class="col-md-6 right">
       <p>© BBE Ltd. All Rights Reserved</p>
