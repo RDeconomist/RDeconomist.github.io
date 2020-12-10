@@ -11,6 +11,8 @@
 -------------------------------------------------------------------------------*/
 
 @import url(http://fonts.googleapis.com/css?family=Cutive%20Mono:400);
+@import url(https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap);
+
 p {
 	font-size: 14px;
 	line-height: 22.4px;
@@ -74,7 +76,7 @@ a:hover, a:focus {
 	transition: background-color, color, 0.3s;
 }
 body {
-	font-family: "Cutive Mono";
+	font-family: "Heebo";
 	font-weight: 400;
 	color: #fff;
 }
