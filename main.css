@@ -61,11 +61,18 @@ a:hover, a:focus {
 	-webkit-transition: background-color, color, 0.3s;
 	transition: background-color, color, 0.3s;
 }
+
 body {
 	font-family: "Crimson Text";
 	font-weight: 400;
 	color: #fff;
+	max-width: 800px; 
+	margin: 0 auto 0 auto !important; 
+	float: none !important; 
 }
+
+
+
 ul, ol {
 	margin: 0;
 	padding: 0;
