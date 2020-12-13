@@ -45,16 +45,79 @@
       <div class="col-md-12 work-detail ">
         <div class="work-detail"> 
 
-  <h1>rapidcharts</h1> 
-  <h2>Richard Davies</h2>
-  <p> Topics: <a href="covid.html"> Covid-19 </a></p>
-  <p>This is a site I built while thinking about how to improve the way we present data at the Economics Observatory. The Covid-19 pandemic has produced a torrent of data, but with some notable exceptions, the graphical analysis of it has been weak. Most of what we see in the news is days or weeks out of date. The charts here are all live, either running direct from the original data sources, or are updated daily via a script written by me. AThe charts are drawn in Vega-Lite, which has an excellent support from the University of Washington and Observable. You can find this project on my GitHub page. Contact details are at the bottom of the page. 
+  <h1>coronavirus</h1> 
+  <h2>Richard Davies <a href="index.html"> Home </a></h2>  
+  <p>The first set of charts focus on the UK, and run direct from the official government data. They auto update, so check back each day to see our progress against Covid-19 
 
-  <!--Chart 6 - Start-->
+  <h2>Covid cases by region - line</h2>
+  <p>The chart below shows new Covid cases, over a 14 day rolling window to smooth out the data a little. Hovering over the data with a mouse will give you both the number of cases plotted and the raw data, i.e. the acutal number of cases that day. The charts in this section use the UK government API.</p> 
+
+<!--Chart 6 - Start-->
     <div id="vis6">
     <script src="chart6.js"></script>
     </div>
 <!--Chart 6 - End-->
+
+<h2>Covid cases by region - trellis</h2>
+<p>Another way to look at the same data is to give each region its own chart. I find it a little easier to compare the data visually this way. These kids of charts are known as trellis plots.</p> 
+
+<!--Chart 7 - Start-->
+    <div id="vis7">
+    <script src="chart7.js"></script>
+    </div>
+<!--Chart 7 - End-->
+
+
+<h2>Covid cases by region - past 30 days</h2>
+<p>The pattern between regions is similar, but in recent weeks some differences have appeared. The chart below looks at the last month's data. Cases have started to rise again in London.</p>
+
+<!--Chart 8 - Start-->
+    <div id="vis8">
+    <script src="chart8.js"></script>
+<!--Chart 8 - End-->
+
+
+
+<!--First Chart-->
+<!--This embeds the chart as a JS file-->
+<!--This is a bit slower to load, but allows editing of the individual JS files, without breaking the whole page-->
+    <div id="vis">   
+    <script src="chart1.js"> </script>
+<!--End of First Chart-->
+
+<p>Another Chart with Cases plotted against deaths</p> 
+<p>These charts use a pre-defined colour palette, this one called "inferno"</p> 
+
+
+<!--Chart 2 - Start-->
+    <div id="vis2">
+    <script src="chart2.js"> </script>
+<!--Chart 2 - End-->
+
+
+<p>These charts use a pre-defined colour palette, this one called "viridis"</p> 
+
+<!--Chart 3 - Start-->
+    <div id="vis3">
+    <script src="chart3.js"></script>
+<!--Chart 3 - End-->
+
+<p>The chart below has an interactive tooltip, changing the size of the data that you hover over</p>
+
+
+<!--Chart 4 - Start-->
+    <div id="vis4">
+    <script src="chart4.js"></script>
+<!--Chart 4 - End-->
+
+<!--Chart 5 - Start-->
+    <div id="vis5">
+    <script src="chart5.js"></script>
+<!--Chart 5 - End-->
+
+
+
+
 
 
 <!-- service section -->
@@ -62,7 +125,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8 col-md-offset-2 text-center section"> <a href="index.html"><i class="fa fa-th fa-2x"></i></a>
-        <p>Topics: <a href="covid.html"> Covid-19 </a></p>
+        <p>Back to top</p>
       </div>
     </div>
   </div>
