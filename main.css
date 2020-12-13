@@ -3,8 +3,14 @@
 	Typography
 -------------------------------------------------------------------------------*/
 
+/* Old fonts not used:
 @import url(http://fonts.googleapis.com/css?family=Cutive%20Mono:400);
+@import url(https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap); 
+*/
+
+@import url(https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
 
 p {
 	font-size: 16px;
@@ -12,12 +18,15 @@ p {
 	color: #323232;
 }
 h1 {
+	font-family: "Catamaran";
+	font-variant: small-caps;
 	font-size: 60px;
 	color: #320064;
 	font-weight: 900;
 	font-kerning: 50
 }
 h2 {
+	font-family: "Heebo";
 	font-size: 16px;
 	color: #2d3033;
 	margin: 30px 0 10px 0;
@@ -53,7 +62,7 @@ a:hover, a:focus {
 	transition: background-color, color, 0.3s;
 }
 body {
-	font-family: "Heebo";
+	font-family: "Crimson Text";
 	font-weight: 400;
 	color: #fff;
 }
