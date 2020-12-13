@@ -5,7 +5,7 @@ var Chart8 = {
   
   "data": {"url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=region&metric=newCasesBySpecimenDate&format=csv", "format":{"type":"csv"}},
   
-  "height":200,
+  "height":133.3,
   "width": 200,
 
   "config":{
@@ -18,7 +18,7 @@ var Chart8 = {
    
     {"filter": {
       "field": "date", 
-      "range": [{"year": 2020, "month": "nov", "date": 1}, {"year": 2020, "month": "dec", "date": 7}] 
+      "range": [{"year": 2020, "month": "nov", "date": 1}, {"year": 2020, "month": "dec", "date": 13}] 
       }
       }
     

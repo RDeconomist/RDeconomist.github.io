@@ -61,7 +61,7 @@ var Chart3 = {
   "config":{
     "background": "#FAFAFA"
   },
-  "height": 450,  "width": 800,
+  "height": 400,  "width": 600,
 
   "mark": {
     "type": "point",

@@ -65,9 +65,9 @@ var Chart4 = {
     "anchor": "start",
     "color": "black"
   },
-  "config": {"background": "#FAFAFA"},
-  "height": 450,
-  "width": 800,
+  "config": {"background": "#FcFdFd"},
+  "height": 400,
+  "width": 600,
   "mark": {
     "type": "point",
     "opacity": 1}
