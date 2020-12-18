@@ -54,16 +54,28 @@ h5 {
 	Global Styles
 -------------------------------------------------------------------------------*/
 
+/* Links as buttons */
+a {
+	font-family: "Heebo";
+	font-size: 14px;
+	font-weight: 700;
+    xxbackground-color: white ;
+    xxcolor: white;
+    xxpadding: 0..25em 0.75em;
+    text-decoration: none;
+    text-transform: none;
+    xxborder-radius: 8px;
+}
 
 /* unvisited link */
 a:link {
-  color: blue;
+  color: black;
   text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-  color: blue;
+  color: black;
   text-decoration: none;
 }
 
