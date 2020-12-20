@@ -1,4 +1,4 @@
-var Chart8 = {
+var ChartUK5 = {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 
   "description": "Coronavirus cases",
@@ -18,7 +18,7 @@ var Chart8 = {
    
     {"filter": {
       "field": "date", 
-      "range": [{"year": 2020, "month": "nov", "date": 1}, {"year": 2020, "month": "dec", "date": 13}] 
+      "range": [{"year": 2020, "month": "nov", "date": 1}, {"year": 2020, "month": "dec", "date": 30}] 
       }
       }
     
@@ -43,4 +43,4 @@ var Chart8 = {
   }
 };
 
-vegaEmbed('#vis8', Chart8);
+vegaEmbed('#visUK5', ChartUK5);
