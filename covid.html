@@ -52,16 +52,33 @@
   <!-- topics sub heading clickable links -->
 
   
-  <p>The first set of charts focus on the UK, and run direct from the official government data. They auto update, so check back each day to see our progress against Covid-19 
+  <p>A set of Covid related charts focus on the UK, and run direct from the official government data. They auto update, so check back each day to see our progress against Covid-19</p> 
 
-  <h2>Covid cases by region - line</h2>
-  <p>The chart below shows new Covid cases, over a 14 day rolling window to smooth out the data a little. Hovering over the data with a mouse will give you both the number of cases plotted and the raw data, i.e. the acutal number of cases that day. The charts in this section use the UK government API.</p> 
+  <h2>Covid cases</h2>
 
-<!--Chart 6 - Start-->
+  <p>The chart below shows new Covid cases reported each day in England. The regions are stacked on top of one another to give the national picture. Use the drop down box to select a particular region.</p> 
+
+<!--Chart UK1 - Start-->
+    <div id="visUK1">
+    <script src="chartUK1.js"></script>
+    </div>
+<!--Chart UK1 - End-->
+
+<p>The second chart splits out the regions in a 'trellis' plot. This makes it easier to compare and contrast regions.</p>
+
+<!--Chart UK2 - Start-->
+    <div id="visUK2">
+    <script src="chartUK2.js"></script>
+    </div>
+<!--Chart UK2 - End-->
+
+  <p>The next chart shows new Covid cases, over a 14 day rolling window to smooth out the data a little. Hovering over the data with a mouse will give you both the number of cases plotted and the raw data, i.e. the acutal number of cases that day.</p>
+
+<!--Chart UK3 - Start-->
     <div id="vis6">
     <script src="chart6.js"></script>
     </div>
-<!--Chart 6 - End-->
+<!--Chart UK3 - End-->
 
 <h2>Covid cases by region - trellis</h2>
 <p>Another way to look at the same data is to give each region its own chart. I find it a little easier to compare the data visually this way. These kids of charts are known as trellis plots.</p> 
@@ -80,7 +97,6 @@
     <div id="vis8">
     <script src="chart8.js"></script>
 <!--Chart 8 - End-->
-
 
 
 <!--First Chart-->
