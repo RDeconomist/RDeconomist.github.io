@@ -2,19 +2,14 @@ var Chart7 = {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "description": "Coronavirus cases",
   "data": {
-    "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=region&metric=newCasesBySpecimenDate&format=csv",
+    "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=region&metric=newCasesBySpecimenDateRollingSum&metric=newCasesBySpecimenDate&format=csv",
     "format": {"type": "csv"}
   },
   "height": 133.3,
   "width": 200,
   "mark": {"type": "line", "point": false, "color": ["green", "red"]},
   "transform": [
-    {
-      "window": [
-        {"field": "newCasesBySpecimenDate", "op": "mean", "as": "rolling_mean"}
-      ],
-      "frame": [-7, 7]
-    },
+    
     {
       "filter": {
         "field": "date",
@@ -28,9 +23,9 @@ var Chart7 = {
   "encoding": {
     "x": {"field": "date", "type": "temporal", "title": "Date"},
     "y": {
-      "field": "rolling_mean",
+      "field": "newCasesBySpecimenDateRollingSum",
       "type": "quantitative",
-      "title": "New cases (14-day avg)"
+      "title": "New cases (rolling sum)"
     },
     "facet": {
       "field": "areaName",
@@ -40,7 +35,7 @@ var Chart7 = {
     },
     "tooltip": [
       {"field": "date", "type": "temporal", "title": "Date"},
-      {"field": "rolling_mean", "type": "quantitative", "title": "Cases, rolling"},
+      {"field": "newCasesBySpecimenDateRollingSum", "type": "quantitative", "title": "Cases, rolling sum"},
       {"field": "newCasesBySpecimenDate", "type": "quantitative", "title": "Cases"}
     ],
     "color": {
