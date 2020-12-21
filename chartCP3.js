@@ -35,6 +35,7 @@ var chartCP3 = {
     }
   },
 
+
   "encoding": {
     
     "x": {"field": "year", "type": "temporal", "title": "Year"},
@@ -64,7 +65,13 @@ var chartCP3 = {
       "type": "nominal",
       "columns": 4,
       "title": "Region"
-    }
+    },
+
+ "tooltip": [
+      {"field": "region", "type": "nominal", "title": "Region"},
+      {"field": "year", "type": "temporal", "title": "Date", "timeUnit":"year"},
+      {"field": "value", "type": "nominal", "title": "Value", "format": ".0f"}
+    ]
   }
 };
 
