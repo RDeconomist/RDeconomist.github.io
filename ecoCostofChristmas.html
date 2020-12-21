@@ -1,0 +1,195 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+
+<!-- ////////////////////////////// START HEAD //////////////////////////////-->
+<head>
+<!--Meta stuff-->
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--Code to allow Vega embed-->
+<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+</head>
+<!-- ////////////////////////////// END HEAD //////////////////////////////-->
+
+
+
+<!-- ////////////////////////////// START BODY //////////////////////////////-->
+<body>
+
+
+<h2>The cost of Christmas in the UK</h2>
+
+<p>Wages.</p> 
+
+<!--Chart CP1 - Start-->
+    <div id="visCP1">
+    <script>    
+var chartCP1 = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/db_wages_real.csv"
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "region",
+        "oneOf": ["England", "Scotland", "Wales", "Northern Ireland"]
+      }
+    }
+  ],
+  "selection": {
+    "country": {"type": "multi", "fields": ["region"], "bind": "legend"}
+  },
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "temporal",
+      "timeUnit": "year",
+      "axis": {
+        "title": "Date",
+        "grid": false,
+        "tickCount": 7,
+        "labelOverlap": "greedy"
+      }
+    },
+    "y": {
+      "field": "wage",
+      "type": "quantitative",
+      "axis": {
+        "title": "Hourly wage (£) (median)",
+        "grid": false,
+        "format": ".2f"
+      },
+      "scale": {"domain": [5, 16]}
+    },
+    "color": {
+      "field": "region",
+      "type": "nominal",
+      "scale": {"scheme": "set1"},
+      "title": "Country"
+    },
+    "opacity": {
+      "condition": {"selection": "country", "value": 1},
+      "value": 0.2
+    },
+
+"facet": {
+      "field": "type",
+      "type": "nominal",
+      "columns": 2,
+      "title": null,
+      "sort":["Annual Values", "Adjusted: 1997 prices"]
+    },
+
+    "tooltip": [
+      {
+        "field": "year",
+        "type": "temporal",
+        "timeUnit": "year",
+        "title": "Date"
+      },
+      {
+        "field": "wage",
+        "type": "quantitative",
+        "title": "Median wage",
+        "format": ".2f"
+      },
+      {"field": "region", "type": "nominal", "title": "Country"}
+    ]
+  },
+  "config": {"background": "#FcFdFd"},
+  "height": 400,
+  "width": 300,
+  "mark": {"type": "line", "point": true}
+};
+
+vegaEmbed('#visCP1', chartCP1);
+</script>
+</div>
+<!--Chart CP1 - End-->
+
+
+<p>Interactive: prices of some holiday goods.</p> 
+<!--Chart CP2 - Start-->
+    <div id="visE6">
+    <script>
+      
+var chartE6 = {
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "Coronavirus cases",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/db_xmas_p50.csv ",
+    "format": {"type": "csv"}
+  },
+  "height": 200,
+  "width": 300,
+  "config": {"background": "#FcFdFd"},
+  "mark": {"type": "line", "point": false},
+  "transform": [
+    {
+      
+       "filter": {"selection": "Type"}
+    }
+  ],
+
+  "selection": {
+
+    "region": {"type": "multi", "fields": ["region_s"], "bind": "legend"},
+  
+    "Type": {
+      "type": "single",
+      "fields": ["type"],
+      "init":{"type":"Meat"},
+      "bind": {
+        "input": "select",
+        "options": [
+          "Meat",
+          "Drink",
+          "Presents",
+          "Food",
+          "Vegetables",
+          "Gifts for Kids"
+        ],
+        "name": "Select items:"
+      }
+    }
+  },
+  "encoding": {
+    "x": {"field": "year", "type": "temporal", "title": "Year"},
+    "y": {"field": "price", "type": "quantitative", "title": "Price, £"},
+    "color": {
+      "field": "region_s",
+      "type": "nominal",
+      "scale": {"scheme": "set1"},
+      "title": "Region"
+    },
+    "facet": {
+      "field": "name",
+      "type": "nominal",
+      "columns": 2,
+      "title": "Region"
+    },
+    "opacity": {"condition": {"selection": "region", "value": 1}, "value": 0.1}
+  },
+  "resolve": {"scale": {"y": "independent"}}
+};
+
+vegaEmbed('#visE6', chartE6);
+
+    </script>
+    </div>
+<!--Chart CP2 - End-->
+
+
+
+<!--Chart End-->
+
+<!-- ////////////////////////////// END BODY //////////////////////////////-->
+</body>
+</html>
