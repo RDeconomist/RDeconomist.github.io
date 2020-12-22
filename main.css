@@ -96,7 +96,8 @@ body {
 	font-weight: 400;
 	color: #fff;
 	max-width: 800px; 
-	margin: 0 5 0 5 !important; 
+	margin: 0 auto 0 auto !important;
+	padding: 0 5 0 5; 
 	float: none !important; 
 }
 
@@ -438,12 +439,18 @@ ul li {
 	margin: 0 2px;
 }
 
+/* ------------------------------------------------------------------------------
+	 MOBILE PAGE
+-------------------------------------------------------------------------------*/
+
 #visMobile1 {
 	width:100%;
 	height:300px;	
 }
 
-div {
-    width:100%;
-	height:300px;
-}
+#wrap {
+    margin: 0 5 0 5;
+    border: 5 5 5 5
+    padding:20 20 30 5;
+  }
+
