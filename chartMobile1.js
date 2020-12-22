@@ -6,11 +6,11 @@ var chartMobile1 = {
     "format": {"type": "csv"}
   },
 
-  "height": "container",
+  "height": 250,
   
   "width": "container",
   
-  "mark": {"type": "bar"},
+  "mark": {"type": "bar", "width":10},
   
   "selection": {
     "Region": {
@@ -47,6 +47,7 @@ var chartMobile1 = {
       }
     }
   ],
+
   "encoding": {
     "x": {"field": "date", "type": "temporal", "title": "Date"},
     "y": {
@@ -54,21 +55,8 @@ var chartMobile1 = {
       "type": "quantitative",
       "title": "New cases"
     },
-    "tooltip": [
-      {"field": "date", "type": "temporal", "title": "Date"},
-      {
-        "field": "rolling_mean",
-        "type": "quantitative",
-        "title": "Cases, 7-day average",
-        "format": ",.0f"
-      },
-      {
-        "field": "newCasesBySpecimenDate",
-        "type": "quantitative",
-        "title": "Cases",
-        "format": ",.0f"
-      }
-    ],
+    
+      
     "color": {
       "field": "areaName",
       "type": "nominal",
