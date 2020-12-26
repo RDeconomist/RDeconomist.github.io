@@ -19,14 +19,13 @@ p {
 	color: #323232;
 }
 h1 {
-	text-indent: 10px;
 	font-family: "Catamaran";
 	font-variant: small-caps;
 	font-size: 60px;
 	color: #320064;
 	font-weight: 900;
 	font-kerning: 50;
-	margin: 0px 0px 30px 0px  ;
+	margin: 0px 0px 30px 2px  ;
 	height: 40px;
 }
 h2 {
@@ -418,7 +417,7 @@ ul li {
 -------------------------------------------------------------------------------*/
 .footer {
 	text-align: left;
-	background-color: #333;
+	background-color: #333333;
 	padding: 1%;
 }
 .footer h4 {
@@ -426,8 +425,11 @@ ul li {
 	margin: 0 0 10px 0;
 	padding: 0px;
 }
+
 .footer p {
-	color: #c8c8c8;
+	font-family: Heebo;
+	font-size: 14px;
+	color: #888888;
 }
 .footer a {
 	color: #E6FF00;
@@ -450,9 +452,7 @@ ul li {
 	height:300px;	
 }
 
-#wrap {
-    margin: 0 5 0 5;
-    border: 5 5 5 5
-    padding:20 20 30 5;
+.wrap {
+    margin: 0px 10px 0px 10px;
   }
 
