@@ -1,0 +1,149 @@
+
+/* ------------------------------------------------------------------------------
+	Typography
+-------------------------------------------------------------------------------*/
+
+/* Old fonts not used:
+@import url(http://fonts.googleapis.com/css?family=Cutive%20Mono:400);
+@import url(https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap); 
+*/
+
+/*
+
+@import url(https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
+*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@900&display=swap');
+@import url(https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap);
+
+body {
+  background-color: #f1f5fd
+}
+
+p {
+	font-family: "Crimson Text";
+	font-size: 16px;
+	line-height: 22.4px;
+	color: #323232;
+	margin: 0;
+}
+
+.centre {
+	font-family: "Crimson Text";
+	text-align: center;
+	font-size: 16px;
+	line-height: 22.4px;
+	color: #323232;
+	margin: 0px 0px 30px 0px;
+}
+
+.clients {
+	font-family: "Crimson Text";
+	text-align: center;
+	font-size: 50px;
+	line-height: 50px;
+	color: #323232;
+	margin: 50px 0px 30px 0px;
+}
+
+.footer {
+	font-family: "Crimson Text";
+	text-align: left;
+	font-size: 10px;
+	line-height: 22.4px;
+	color: #323232;
+	margin: 100px 0px 30px 0px;
+}
+
+
+h1 {
+	font-family: "Work Sans";
+	color: 
+	font-variant: small-caps;
+	text-align: center;
+	font-size: 100px;
+	color: #ffff00;
+	font-weight: 900;
+	font-kerning: 50;
+	margin: 100px 10px 10px 10px;
+	height: 70px;
+	padding: 10px;
+}
+
+h2 {
+	font-family: "Work Sans";
+	font-variant: small-caps;
+	text-align: center;
+	font-size: 100px;
+	color: #ffea00;
+	font-weight: 900;
+	font-kerning: 50;
+	margin: 20px 10px;
+	height: 70px;
+}
+
+h3 {
+	font-family: "Work Sans";
+	font-variant: small-caps;
+	text-align: center;
+	font-size: 100px;
+	color: #eaff00;
+	font-weight: 900;
+	font-kerning: 50;
+	margin: 30px 10px 100px 10px;
+	height: 70px;
+}
+
+
+h4 {
+	font-size: 22px;
+	color: #2d3033;
+	font-weight: 400;
+}
+h5 {
+	font-size: 14px;
+	color: #2d3033;
+	font-weight: 700;
+}
+
+/* ------------------------------------------------------------------------------
+	Global Styles
+-------------------------------------------------------------------------------*/
+
+/* Links as buttons */
+a {
+	font-family: "Heebo";
+	font-size: 14px;
+	font-weight: 700;
+    xxbackground-color: white ;
+    xxcolor: white;
+    xxpadding: 0..25em 0.75em;
+    text-decoration: none;
+    text-transform: none;
+    xxborder-radius: 8px;
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+  text-decoration: none;
+}
+

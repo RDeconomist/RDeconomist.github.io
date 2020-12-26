@@ -13,19 +13,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
 
 p {
-	font-size: 16px;
+	font-size: 18px;
+	margin: 5px 5px;
 	line-height: 22.4px;
 	color: #323232;
 }
 h1 {
+	text-indent: 10px;
 	font-family: "Catamaran";
 	font-variant: small-caps;
 	font-size: 60px;
 	color: #320064;
 	font-weight: 900;
 	font-kerning: 50;
-	margin: 0;
-	height: 70px;
+	margin: 0px 0px 30px 0px  ;
+	height: 40px;
 }
 h2 {
 	font-family: "Heebo";
