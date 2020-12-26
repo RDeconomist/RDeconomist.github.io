@@ -456,3 +456,45 @@ ul li {
     margin: 0px 10px 0px 10px;
   }
 
+
+/* ------------------------------------------------------------------------------
+	Topics
+-------------------------------------------------------------------------------*/
+
+/* Links as buttons */
+.topics a {
+	font-family: "Heebo";
+	font-size: 18px;
+	font-weight: 900;
+    background-color: #0198E1 ;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    text-transform: bold;
+    border-radius: 12px;
+    margin: 0px;
+}
+
+/* unvisited link */
+.topics a:link {
+  color: #fcf787;
+  text-decoration: none;
+}
+
+/* visited link */
+.topics a:visited {
+  color: #fcf787;
+  text-decoration: none;
+}
+
+/* mouse over link */
+.topics a:hover {
+  color: hotpink;
+  text-decoration: none;
+}
+
+/* selected link */
+.topics a:active {
+  color: blue;
+  text-decoration: none;
+}
+
