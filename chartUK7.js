@@ -58,7 +58,7 @@ var chartUK7 = {
   },
   "config": {"background": "#FcFdFd"},
   "height": 400,
-  "width": 600,
+  "width": 300,
   "mark": {"type": "circle", "opacity": 0.4, "color":"blue"}
 }
 ;

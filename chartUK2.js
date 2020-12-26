@@ -9,7 +9,7 @@ var chartUK2 = {
   },
 
   "height": 133.3,
-  "width": 200,
+  "width": 150,
   "mark": {"type": "bar"},
   
   "transform": [
@@ -40,7 +40,7 @@ var chartUK2 = {
     "facet": {
       "field": "areaName",
       "type": "nominal",
-      "columns": 3,
+      "columns": 2,
       "title": "Region"
     },
     "tooltip": [

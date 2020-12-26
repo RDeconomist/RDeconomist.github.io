@@ -9,7 +9,7 @@ var chartUK1 = {
   },
 
   "height": 400,
-  "width": 600,
+  "width": "container",
   "mark": {"type": "bar"},
 
 "selection": {

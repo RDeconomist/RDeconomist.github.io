@@ -1,32 +1,16 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
+<!DOCTYPE html>
+
 <html class="no-js" lang="">
-<!--<![endif]-->
+
 <head>
 <meta charset="utf-8">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>rapidCharts</title>
 
 <!--Main Stylesheet-->
 <link rel="stylesheet" href="main.css">
-
-<!--Other stylesheets--
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="css/font-icon.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<<<<<<< HEAD
-
-<link rel="icon" href="images/icon.png">
-
-=======
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/jquery.fancybox.css">
-!--Other stylesheets-->
->>>>>>> 613be15bd369f948238455dcab68b951864314db
 
 <!--The next three lines allow the Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
@@ -40,29 +24,36 @@
 <!-- portfolio grid section -->
 <section id="work-detail">
   <div class="container">
-    <hr>
-    <div class="row">
+     <div class="row">
       <div class="col-md-12 work-detail ">
         <div class="work-detail"> 
 
-  <h1>rc : coronavirus</h1> 
-
- <!-- topics sub heading clickable links -->
-  <p><a href="index.html">  Home  </a> &nbsp; | &nbsp; <a href="covid.html">  Covid-UK  </a> &nbsp; | &nbsp; <a href="covidGlobal.html">  Covid-Global  </a> &nbsp; | &nbsp; <a href="econ.html">  Economics  </a> &nbsp; | &nbsp; <a href="pricesUK.html">  Prices-UK  </a> &nbsp; | &nbsp; <a href="usa.html">  USA  </a></p>
-  <!-- topics sub heading clickable links -->
+<!-- heading for page-->
+  <div class="wrap">
+  <h1>covid - uk</h1> 
 
   
-  <p>A set of Covid related charts focus on the UK, and run direct from the official government data. They auto update, so check back each day to see our progress against Covid-19</p> 
+  <!-- topics sub heading clickable links -->
+  <p><a href="index.html">  Home  </a> &nbsp; | &nbsp; <a href="topics.html">  Topics  </a> &nbsp; | &nbsp; <a href="about.html">  About </a></p>
+  <!-- topics sub heading clickable links -->
 
-  <h2>Covid cases</h2>
+  <!-- White space across the page --> 
+  <span style="display:block; height: 20px;"></span>
 
-  <p>The chart below shows new Covid cases reported each day in England. The regions are stacked on top of one another to give the national picture. Use the drop down box to select a particular region.</p> 
+  
+  <p>A set of Covid-related charts for the UK. They run direct from official government data and update daily, so check back to see our progress against Covid-19.</p>
 
 <!--Chart UK1 - Start-->
     <div id="visUK1">
     <script src="chartUK1.js"></script>
     </div>
 <!--Chart UK1 - End-->
+
+  
+
+  <p>The first chart shows new Covid cases reported each day in England since the start of the pandemic. The regions are stacked on top of one another to give the national picture. Use the drop down box to select a particular region.</p> 
+
+
 
 <p>The second chart splits out the regions in a 'trellis' plot. This makes it easier to compare and contrast regions.</p>
 
@@ -80,15 +71,6 @@
     </div>
 <!--Chart UK3 - End-->
 
-<h2>Covid cases by region - trellis</h2>
-<p>Another way to look at the same data is to give each region its own chart. I find it a little easier to compare the data visually this way. These kids of charts are known as trellis plots.</p> 
-
-<!--Chart 7 - Start-->
-    <div id="vis7">
-    <script src="chart7.js"></script>
-    </div>
-<!--Chart 7 - End-->
-
 
 <h2>Covid cases by region - past 30 days</h2>
 <p>The pattern between regions is similar, but in recent weeks some differences have appeared. The chart below looks at the last month's data. Cases have started to rise again in London.</p>
@@ -96,6 +78,7 @@
 <!--Chart UK5 - Start-->
     <div id="visUK5">
     <script src="chartUK5.js"></script>
+    </div>
 <!--Chart UK5 - End-->
 
 
@@ -106,6 +89,7 @@
 <!--Chart UK6 - Start-->
     <div id="visUK6">
     <script src="chartUK6.js"></script>
+    </div>
 <!--Chart UK6 - End-->
 
 
@@ -119,6 +103,7 @@
     <script src="chartUK7.js"></script>
 <!--Chart UK7 - End-->
 
+</div>
 
 <!-- service section -->
 <section id="backto" class="work-detail section">

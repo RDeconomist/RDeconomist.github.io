@@ -10,7 +10,7 @@ var chartUK6 = {
 
   "height": 133.3,
 
-  "width": 200,
+  "width": 150,
 
   "mark": {"type": "point", "color":"red"},
   
@@ -25,7 +25,7 @@ var chartUK6 = {
     "facet": {
       "field": "areaName",
       "type": "nominal",
-      "columns": 3,
+      "columns": 2,
       "title": "Region"
     },
     "tooltip": [
