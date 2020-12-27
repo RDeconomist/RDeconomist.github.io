@@ -1,39 +1,44 @@
-var chartUS1 = {
-  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
+var chartUS1 =  { "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+
+  "description": "Various US measures state by state",
+
   "data": {"url": "https://raw.githubusercontent.com/RDeconomist/vega/master/US%20states2.csv"},
 
-  "mark": "circle",
+  "mark": {
+    "type":"circle",
+    "size":300},
   
-  "height": 400,
+  "height": 350,
   
-  "width": 600,
-  
+  "width": "container",
+
   "encoding": {
-    
+
     "x": {
-      "field": "Gini", 
+      "field": "Med income", 
       "type": "quantitative",
-      "scale": {"domain": [0.41, 0.5]},
-      "title":"Inequality (Gini)"
+      "scale": {"domain": [40000, 80000]},
+      "title":"Median income, $"
       },
 
     "y": {
-      "field": "Death Rate", 
-      "type": "quantitative"
+      "field": "Firearm deaths", 
+      "type": "quantitative",
+      "title":"Firearm deaths, per 100k"
       },
 
     "color": {
       "field": "Division", 
       "type": "ordinal",
-      "scale": {"scheme": "set1"}
+      "scale": {"scheme": "set1"},
+      "legend": {"orient":"top"},
+      "title":null
       },
 
-     "size": {
-      "field": "Med income", 
-      "type": "quantitative"
-      } 
-
+      "tooltip": [
+      {"field": "State", "type": "ordinal", "title": "State"}
+      ]
+  
   }
 };
 

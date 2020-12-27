@@ -8,7 +8,7 @@ var chartUK2 = {
     "format": {"type": "csv"}
   },
 
-  "height": 133.3,
+  "height": 90,
   "width": 150,
   "mark": {"type": "bar"},
   

@@ -1,78 +1,87 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
+<!DOCTYPE html>
 <html class="no-js" lang="">
-<!--<![endif]-->
+
+<!-- ////////////////////////////// START HEAD //////////////////////////////-->
 <head>
+<!--Meta stuff-->
 <meta charset="utf-8">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!--Facebook meta - this comes up when you post a link to the site-->
+<meta property="og:title" content="Rapid Charts">
+<meta property="og:description" content="Automated, verifiable, beautiful">
+<meta property="og:image" content="chart1.png">
+<meta property="og:url" content="http://rapidcharts.io/index.htm">
+
+<!--Favicon-->
+<link rel="icon" href="images/icon.png">
+<link rel="shortcut icon" href="images/icon.png" />
+<link rel="apple-touch-icon" href="images/icon.png" />
+
+
 <title>Rapid Charts</title>
 
 <!--Main Stylesheet-->
 <link rel="stylesheet" href="main.css">
 
-<!--Other stylesheets--
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="css/font-icon.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<<<<<<< HEAD
-
-<link rel="icon" href="images/icon.png">
-
-=======
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/jquery.fancybox.css">
-!--Other stylesheets-->
->>>>>>> 613be15bd369f948238455dcab68b951864314db
-
-<!--The next three lines allow the Vega embed-->
+<!--Code to allow Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
 </head>
+<!-- ////////////////////////////// END HEAD //////////////////////////////-->
+
+
+
+<!-- ////////////////////////////// START BODY //////////////////////////////-->
 <body>
-
-
 
 <!-- portfolio grid section -->
 <section id="work-detail">
   <div class="container">
-    <hr>
     <div class="row">
       <div class="col-md-12 work-detail ">
         <div class="work-detail"> 
 
   
-  <h1>rc : usa</h1> 
- 
- <!-- topics sub heading clickable links -->
-  <p><a href="index.html">  Home  </a> &nbsp; | &nbsp; <a href="covid.html">  Covid-UK  </a> &nbsp; | &nbsp; <a href="covidGlobal.html">  Covid-Global  </a> &nbsp; | &nbsp; <a href="econ.html">  Economics  </a> &nbsp; | &nbsp; <a href="pricesUK.html">  Prices-UK  </a> &nbsp; | &nbsp; <a href="usa.html">  USA  </a></p>
-  <!-- topics sub heading clickable links -->  
- 
+  <!-- heading for page-->
+  <div class="wrap">
+  <h1>usa</h1> 
 
-  <h2>The United States of America</h2>
-  <p>Charts and visualisations about the US.</p> 
+  
+  <!-- topics sub heading clickable links -->
+  <p><a href="index.html">  Home  </a> &nbsp; | &nbsp; <a href="topics.html">  Topics  </a> &nbsp; | &nbsp; <a href="about.html">  About </a></p>
+  <!-- topics sub heading clickable links -->
+
+  <!-- White space across the page --> 
+  <span style="display:block; height: 20px;"></span>
+
+
+  <p>A chart showing the relationship between income and gun deaths in the US. Press the circles to reveal the name of the state.</p> 
+
+  <!-- White space across the page --> 
+  <span style="display:block; height: 20px;"></span>
 
 <!--Chart US1 - Start-->
-    <div id="visUS1">
+    <div id="visUS1" style="width:100%;">
     <script src="chartUS1.js"></script>
     </div>
 <!--Chart US1 - End-->
 
 
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
 
-
-
+<!-- White space across the page --> 
+  <span style="display:block; height: 30px;"></span>
 
 <!-- footer section -->
 <footer class="footer">
   <div class="container">
     <div class="col-md-6 left">
-      <h4>A RapidCharts project</h4>
-      <p> Twitter | Instagram | @RapidCharts | <a href="mailto:office@rapidcharts.io"> office@rapidcharts.io </a></p>
+      <p><a href="https://twitter.com/RapidCharts"> @RapidCharts </a> | <a href="https://twitter.com/RD_Economist"> @RD_Economist </a> | <a href="mailto:rd@richarddavies.io"> rd@richarddavies.io </a></p>
     </div>
     <div class="col-md-6 right">
       <p>© BBE Ltd. All Rights Reserved</p>
