@@ -8,7 +8,7 @@ var chartUK8 = {
 
   "height": 150,
   
-  "width": "container",
+  "width": 150,
   
   "mark": {"type": "bar", "color":"#4f009f"},
   
