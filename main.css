@@ -18,6 +18,39 @@ p {
 	line-height: 22.4px;
 	color: #323232;
 }
+
+
+/* ------------------------------------------------------------------------------
+	Lists
+-------------------------------------------------------------------------------*/
+
+ul {
+	font-size: 18px;
+	margin: 5px 5px;
+	line-height: 22.4px;
+	color: #323232;
+}
+
+ul.a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+ul, ol {
+	margin: 5px 5px;
+	padding: 0;
+}
+ul li {
+   list-style-position: inside;
+}
+
+/* ------------------------------------------------------------------------------
+	Lists
+-------------------------------------------------------------------------------*/
+
 h1 {
 	font-family: "Catamaran";
 	font-variant: small-caps;
@@ -104,13 +137,7 @@ body {
 
 
 
-ul, ol {
-	margin: 0;
-	padding: 0;
-}
-ul li {
-	list-style: none;
-}
+
 .section {
 	padding: 20px 0;
 }

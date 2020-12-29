@@ -3,10 +3,12 @@
 
 <!-- ////////////////////////////// START HEAD //////////////////////////////-->
 <head>
+
 <!--Meta stuff-->
 <meta charset="utf-8">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <!--Facebook meta - this comes up when you post a link to the site-->
 <meta property="og:title" content="Rapid Charts">
@@ -25,14 +27,6 @@
 <!--Main Stylesheet-->
 <link rel="stylesheet" href="main.css">
 
-<!--Other stylesheets not used--
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="css/font-icon.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/jquery.fancybox.css">
-!--Other stylesheets-->
-
 <!--Code to allow Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
@@ -46,45 +40,57 @@
 <!-- ////////////////////////////// START BODY //////////////////////////////-->
 <body>
 
+<!-- ///TOP SECTION - HEADER AND LINKS-->
 <!-- portfolio grid section -->
 <section id="work-detail">
   <div class="container">
-    <hr>
     <div class="row">
       <div class="col-md-12 work-detail ">
         <div class="work-detail"> 
 
   
   <!-- heading for page-->
+  <div class="wrap">
   <h1>rapidcharts</h1> 
 
   
   <!-- topics sub heading clickable links -->
-  <p><a href="index.html">  Home  </a> &nbsp; | &nbsp; <a href="covid.html">  Covid-UK  </a> &nbsp; | &nbsp; <a href="covidGlobal.html">  Covid-Global  </a> &nbsp; | &nbsp; <a href="econ.html">  Economics  </a> &nbsp; | &nbsp; <a href="pricesUK.html">  Prices-UK  </a> &nbsp; | &nbsp; <a href="usa.html">  USA  </a> &nbsp; | &nbsp; <a href="sandbox.html">  Sandbox  </a> &nbsp; | &nbsp; <a href="mobile.html">  Mobile  </a></p>
+  <p><a href="index.html">  Home  </a> &nbsp; | &nbsp; <a href="topics.html">  Topics  </a> &nbsp; | &nbsp; <a href="about.html">  About </a></p>
   <!-- topics sub heading clickable links -->
+
+  <!-- White space across the page --> 
+  <span style="display:block; height: 20px;"></span>
+
+<!-- ///END OF TOP SECTION -->
  
   
-  <p>This site is devoted to charts. Everything here is automated, running from the latest official data in the moments after it is released. The example below tracks Covid-19 cases across the UK regions. Try playing with the drop-down box to toggle between the noisy daily data, and the smoothed lines.</p> 
+  <p>This site is devoted to charts. We live in a world of data but too often it is fake, opaque or just ugly. The approach here is different. RapidCharts are:</p>
 
+  <ul class="a">
+    <li><b>Auto-updating.</b> Linked directly to official data sources, the charts here refresh and update when new numbers are released.</li>
+    <li><b>Interactive.</b> The charts are customisable, allowing you to toggle metrics, click data points to find out more, or highlight trends.</li>
+    <li><b>Transparent.</b> Everything that happens, from the raw data to the way the axes are set and colours chosen, can be inspected, checked and verified.</li>
+    <li><b>Shareable.</b> The charts convert to PNG files with one click. These can then be forwarded to pivate groups or shared publicly on social media.</li>
+  </ul>
 
-  <!--Chart 7 - Start-->
-    <div id="vis7">
-    <script src="chart7.js"></script>
-    </div>
-<!--Chart 7 - End-->
+  <p>If you have ideas about this approach, or reguests for data you would like to see charts of, please get in touch. For more detail on the data and code behind the site, please see my notes pages below.</p>
 
-<p>If you have any comments of ideas for things that need the RapidCharts treatment, get in touch. <b>| Richard Davies</b></p>
+    <ul class="b">
+    <li><b>Data.</b> A discussion of the sources that the site uses.</li>
+    <li><b>Code.</b> Notes and links related to data analysis and visualisation libraries</li>
+    
+  </ul> 
 
- <!-- topics sub heading clickable links -->
-  <p><a href="index.html">  Home  </a> &nbsp; | &nbsp; <a href="covid.html">  Covid-UK  </a> &nbsp; | &nbsp; <a href="covidGlobal.html">  Covid-Global  </a> &nbsp; | &nbsp; <a href="econ.html">  Economics  </a> &nbsp; | &nbsp; <a href="pricesUK.html">  Prices-UK  </a> &nbsp; | &nbsp; <a href="usa.html">  USA  </a></p>
-  <!-- topics sub heading clickable links -->
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
 
+<!-- White space across the page --> 
+  <span style="display:block; height: 30px;"></span>
 
 <!-- footer section -->
 <footer class="footer">
   <div class="container">
     <div class="col-md-6 left">
-      <p> Twitter | <a href="https://twitter.com/RapidCharts"> @RapidCharts </a> | Email <a href="mailto:rd@richarddavies.io"> rd@richarddavies.io </a></p>
+      <p><a href="https://twitter.com/RapidCharts"> @RapidCharts </a> | <a href="https://twitter.com/RD_Economist"> @RD_Economist </a> | <a href="mailto:rd@richarddavies.io"> rd@richarddavies.io </a></p>
     </div>
     <div class="col-md-6 right">
       <p>© BBE Ltd. All Rights Reserved</p>
