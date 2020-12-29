@@ -73,7 +73,7 @@ var chartCP1 = {
   },
   "config": {"background": "#FcFdFd"},
   "height": 400,
-  "width": 300,
+  "width": "container",
   "mark": {"type": "line", "point": true}
 };
 

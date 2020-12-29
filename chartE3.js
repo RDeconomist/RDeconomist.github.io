@@ -6,7 +6,7 @@ var chartE3 = {
     "format": {"type": "csv"}
   },
   "height": 200,
-  "width": 200,
+  "width": 150,
   "config": {"background": "#FcFdFd"},
   "mark": {"type": "line", "point": false},
 
@@ -45,7 +45,7 @@ var chartE3 = {
     "facet": {
       "field": "region_s",
       "type": "nominal",
-      "columns": 4,
+      "columns": 2,
       "title": "Region"
     },
 

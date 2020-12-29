@@ -6,7 +6,7 @@ var chartE6 = {
     "format": {"type": "csv"}
   },
   "height": 200,
-  "width": 300,
+  "width": 150,
   "config": {"background": "#FcFdFd"},
   "mark": {"type": "line", "point": false},
   "transform": [

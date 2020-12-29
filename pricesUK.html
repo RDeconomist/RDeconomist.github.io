@@ -1,20 +1,19 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
+<!DOCTYPE html>
+
 <html class="no-js" lang="">
-<!--<![endif]-->
+
 <head>
+
+<!--Meta stuff-->
 <meta charset="utf-8">
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rapid Charts</title>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>rapidCharts</title>
 
 <!--Main Stylesheet-->
 <link rel="stylesheet" href="main.css">
-
-
 
 <!--The next three lines allow the Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
@@ -23,34 +22,35 @@
 </head>
 <body>
 
-
-
 <!-- portfolio grid section -->
 <section id="work-detail">
   <div class="container">
-    <hr>
-    <div class="row">
+     <div class="row">
       <div class="col-md-12 work-detail ">
         <div class="work-detail"> 
 
+
+<!-- heading for page-->
+  <div class="wrap">
+  <h1>prices and inflation</h1> 
+
   
-  <h1>rc : prices</h1> 
-
-
- <!-- topics sub heading clickable links -->
-  <p><a href="index.html">  Home  </a> &nbsp; | &nbsp; <a href="covid.html">  Covid-UK  </a> &nbsp; | &nbsp; <a href="covidGlobal.html">  Covid-Global  </a> &nbsp; | &nbsp; <a href="econ.html">  Economics  </a> &nbsp; | &nbsp; <a href="pricesUK.html">  Prices-UK  </a> &nbsp; | &nbsp; <a href="usa.html">  USA  </a></p>
   <!-- topics sub heading clickable links -->
+  <p><a href="index.html">  Home  </a> &nbsp; | &nbsp; <a href="topics.html">  Topics  </a> &nbsp; | &nbsp; <a href="about.html">  About </a></p>
+  <!-- topics sub heading clickable links -->
+
+  <!-- White space across the page --> 
+  <span style="display:block; height: 20px;"></span>
+
   
- 
+  <p>An analysis of how Covid is shaping prices and inflation in the UK. These charts are updated monthly, as new data is released.</p> 
 
 
-
-
-<h2>The cost of Christmas in the UK</h2>
+<h2>Data blog: the cost of Christmas in the UK</h2>
 
 <p>Wages.</p> 
 <!--Chart CP1 - Start-->
-    <div id="visCP1">
+    <div id="visCP1" style="width:100%;">
     <script src="chartCP1.js"></script>
     </div>
 <!--Chart CP1 - End-->
@@ -59,7 +59,7 @@
 
 <p>Interactive: prices of some holiday goods.</p> 
 <!--Chart CP2 - Start-->
-    <div id="visE6">
+    <div id="visE6" style="width:100%;">
     <script src="chartE6.js"></script>
     </div>
 <!--Chart CP2 - End-->
@@ -67,24 +67,15 @@
 
 <p>Interactive: prices, wages and costs of christmas by region.</p> 
 <!--Chart CP3 - Start-->
-    <div id="visCP3">
+    <div id="visCP3" style="width:100%;">
     <script src="chartCP3.js"></script>
     </div>
 <!--Chart CP2 - End-->
 
 
-
-<p>A chart of some festive drinks. Click on the legend to select the region you are interested in.</p> 
-<!--Chart e2 - Start-->
-    <div id="visE4">
-    <script src="chartE4.js"></script>
-    </div>
-<!--Chart e2 - End-->
-
-
 <p>This chart shows the same data from a different perspective. Stout costs more than Bitter, exept in Northern Ireland.</p> 
 <!--Chart e2 - Start-->
-    <div id="visE3">
+    <div id="visE3" style="width:100%;">
     <script src="chartE3.js"></script>
     </div>
 <!--Chart e2 - End-->
@@ -93,7 +84,7 @@
 <p>The official RPI.</p> 
 
 <!--Chart e1 - Start-->
-    <div id="visE1">
+    <div id="visE1" style="width:100%;">
     <script src="chartE1.js"></script>
     </div>
 <!--Chart e1 - End-->
@@ -102,12 +93,16 @@
 
 
 
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+
+<!-- White space across the page --> 
+  <span style="display:block; height: 30px;"></span>
+
 <!-- footer section -->
 <footer class="footer">
   <div class="container">
     <div class="col-md-6 left">
-      <h4>A RapidCharts project</h4>
-      <p> Twitter | Instagram | @RapidCharts | <a href="mailto:office@rapidcharts.io"> office@rapidcharts.io </a></p>
+      <p><a href="https://twitter.com/RapidCharts"> @RapidCharts </a> | <a href="https://twitter.com/RD_Economist"> @RD_Economist </a> | <a href="mailto:rd@richarddavies.io"> rd@richarddavies.io </a></p>
     </div>
     <div class="col-md-6 right">
       <p>© BBE Ltd. All Rights Reserved</p>

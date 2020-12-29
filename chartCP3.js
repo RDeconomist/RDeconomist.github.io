@@ -10,7 +10,7 @@ var chartCP3 = {
 
   "height": 130,
   
-  "width": 125,
+  "width": 150,
 
   "config": {"background": "#FcFdFd"},
   
@@ -63,7 +63,7 @@ var chartCP3 = {
     "facet": {
       "field": "region",
       "type": "nominal",
-      "columns": 4,
+      "columns": 2,
       "title": "Region"
     },
 

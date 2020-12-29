@@ -1,12 +1,13 @@
 var chartE1 = {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "description": "Coronavirus cases",
+
+  "description": "Inflation UK",
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/czbh",
     "format": {"type": "json", "property": "quarters"}
   },
   "height": 400,
-  "width": 600,
+  "width": "container",
   "config": {"background": "#FcFdFd"},
   "mark": {"type": "line", 
             "point": false, 
