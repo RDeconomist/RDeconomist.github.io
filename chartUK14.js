@@ -1,8 +1,8 @@
-var chartUK13 = {
+var chartUK14 = {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "description": "Coronavirus cases",
   "data": {
-    "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=region&metric=newCasesBySpecimenDate&format=csv",
+    "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=region&metric=newDeaths28DaysByPublishDate&format=csv",
     "format": {"type": "csv"}
   },
   "height": 250,
@@ -45,19 +45,19 @@ var chartUK13 = {
   "encoding": {
     "x": {"field": "date", "type": "temporal", "title": "Date"},
     "y": {
-      "field": "newCasesBySpecimenDate",
+      "field": "newDeaths28DaysByPublishDate",
       "type": "quantitative",
-      "title": "New cases"
+      "title": "Deaths within 28 days"
     },
     "color": {
       "field": "areaName",
       "type": "nominal",
       "legend": {"orient":"top"},
-      "scale": {"scheme": "turbo"},
+      "scale": {"scheme": "inferno"},
       "title":null
     }
   }
 }
 ;
 
-vegaEmbed('#visUK13', chartUK13);
+vegaEmbed('#visUK14', chartUK14);
