@@ -52,7 +52,7 @@ var chartUK14 = {
     "color": {
       "field": "areaName",
       "type": "nominal",
-      "legend": {"orient":"top"},
+      "legend": null,
       "scale": {"scheme": "inferno"},
       "title":null
     }
