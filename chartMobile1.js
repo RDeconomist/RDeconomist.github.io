@@ -42,7 +42,7 @@ var chartMobile1 = {
         "field": "date",
         "range": [
           {"year": 2020, "month": "dec", "date": 1},
-          {"year": 2020, "month": "dec", "date": 30}
+          {"year": 2050, "month": "dec", "date": 30}
         ]
       }
     }
