@@ -1,7 +1,7 @@
-var chartUK15 = {  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+var chartUK16 = {  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
  
  "title": {
-    "text": "NEW CASES - ROLLING RATE",
+    "text": "NEW CASES - DAILY DATA",
     "anchor": "middle",
     "color": "black"
   },
@@ -9,13 +9,13 @@ var chartUK15 = {  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 
   "description": "Coronavirus cases",
   "data": {
-    "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=region&metric=newCasesByPublishDateRollingRate&format=csv",
+    "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=region&metric=newCasesByPublishDate&format=csv",
     "format": {"type": "csv"}
   },
   "height": 600,
   "width": 480,
   "config": {"background": "#FcFdFd"},
-  "mark": {"type": "bar", "point": false},
+  "mark": {"type": "circle", "point": false},
   "selection": {
     "region": {"type": "multi", "fields": ["areaName"], "bind": "legend"}
   },
@@ -40,7 +40,7 @@ var chartUK15 = {  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
       },
 
     "y": {
-      "field": "newCasesByPublishDateRollingRate",
+      "field": "newCasesByPublishDate",
       "type": "quantitative",
       "title": "New cases",
       "axis":{"grid":false}
@@ -73,4 +73,4 @@ var chartUK15 = {  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 }
 ;
 
-vegaEmbed('#visUK15', chartUK15);
+vegaEmbed('#visUK16', chartUK16);
