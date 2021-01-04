@@ -63,4 +63,4 @@ var chartUK8 = {
 }
 ;
 
-vegaEmbed('#visUK8', chartUK8);
+vegaEmbed('#visUK8', chartUK8, {"actions":false});

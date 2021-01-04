@@ -1,4 +1,4 @@
-var chartMobile1 = {
+var chartG1 = {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "description": "Coronavirus cases",
   "data": {
@@ -8,7 +8,7 @@ var chartMobile1 = {
 
   "height": 300,
   
-  "width": 300,
+  "width": 330,
   
   "mark": {"type": "bar", "width":10},
   
@@ -67,4 +67,4 @@ var chartMobile1 = {
 }
 ;
 
-vegaEmbed('#visMobile1', chartMobile1);
+vegaEmbed('#chartG1', chartG1, {"actions":false});
