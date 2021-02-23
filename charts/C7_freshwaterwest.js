@@ -5,8 +5,8 @@ var chartC7 =
   },
 
    "title": {
-    "text": "Llangennith",
-    "subtitle":"Today's 1-week swell forecast, from MSW",
+    "text": "Freshwater West",
+    
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -30,14 +30,14 @@ var chartC7 =
       },
       
       "y": {
-        "field": "llangennith_high",
+        "field": "freshwaterwest_high",
         "type": "quantitative",
         "title": "Predicted wave height",
         "grid":null
       },
 
       "y2": {
-        "field": "llangennith_low",
+        "field": "freshwaterwest_low",
         "type": "quantitative",
         "title": "Predicted wave height",
         "grid":null

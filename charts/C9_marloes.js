@@ -5,8 +5,8 @@ var chartC9 =
   },
 
    "title": {
-    "text": "Llangennith",
-    "subtitle":"Today's 1-week swell forecast, from MSW",
+    "text": "Marloes",
+    
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -30,14 +30,14 @@ var chartC9 =
       },
       
       "y": {
-        "field": "llangennith_high",
+        "field": "marloes_high",
         "type": "quantitative",
         "title": "Predicted wave height",
         "grid":null
       },
 
       "y2": {
-        "field": "llangennith_low",
+        "field": "marloes_low",
         "type": "quantitative",
         "title": "Predicted wave height",
         "grid":null

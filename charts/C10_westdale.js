@@ -5,8 +5,8 @@ var chartC10 =
   },
 
    "title": {
-    "text": "Llangennith",
-    "subtitle":"Today's 1-week swell forecast, from MSW",
+    "text": "Westdale",
+
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -30,14 +30,14 @@ var chartC10 =
       },
       
       "y": {
-        "field": "llangennith_high",
+        "field": "westdale_high",
         "type": "quantitative",
         "title": "Predicted wave height",
         "grid":null
       },
 
       "y2": {
-        "field": "llangennith_low",
+        "field": "westdale_low",
         "type": "quantitative",
         "title": "Predicted wave height",
         "grid":null

@@ -6,7 +6,7 @@ var chartC1 =
 
    "title": {
     "text": "Croyde",
-    "subtitle":"Today's 1-week swell forecast, from MSW",
+    
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
