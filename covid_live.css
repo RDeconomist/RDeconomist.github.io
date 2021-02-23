@@ -1,0 +1,187 @@
+
+/* ------------------------------------------------------------------------------
+	Typography
+-------------------------------------------------------------------------------*/
+
+/* Old fonts not used:
+@import url(http://fonts.googleapis.com/css?family=Cutive%20Mono:400);
+@import url(https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap); 
+*/
+
+/*@import url(https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap);*/
+
+@import url(https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
+
+
+p {
+	font-size: 16px;
+	margin: 5px 5px;
+	line-height: 22.4px;
+	color: #323232;
+}
+
+
+body {
+  background-color: #f8fcfd;
+}
+
+/* ------------------------------------------------------------------------------
+	Grid stuff
+-------------------------------------------------------------------------------*/
+
+.grid_items {
+  padding: 2px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-column-gap: 0;
+  grid-row-gap: 20px;
+}
+.grid_items > div {
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 10px;
+  width: fit-content;
+}
+.grid_items > div:nth-child(3n + 2) {
+  background-color: #ffffff;
+}
+.grid_items > div:nth-child(3n) {
+  background-color: #ffffff;
+}
+
+
+@media only screen and (min-width: 760px) {
+  .grid_items {
+    grid-template-columns: 47.5% 47.5%;
+    grid-column-gap: 5%;
+    grid-row-gap: 40px;
+  }
+  .grid_items > div {
+    padding: 10px;
+  }
+}
+
+
+@media only screen and (min-width: 1280px) {
+  .grid_items {
+    grid-template-columns: 30% 30% 30%;
+    grid-row-gap: 50px;
+  }
+  .grid_items > div {
+    padding: 10px;
+  }
+}
+
+
+
+ul {
+	font-size: 18px;
+	margin: 5px 5px;
+	line-height: 22.4px;
+	color: #323232;
+}
+
+ul.a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+ul, ol {
+	margin: 5px 5px;
+	padding: 0;
+}
+ul li {
+   list-style-position: inside;
+}
+
+/* ------------------------------------------------------------------------------
+	Lists
+-------------------------------------------------------------------------------*/
+
+h1 {
+	font-family: "Catamaran";
+	font-variant: small-caps;
+	font-size: 60px;
+	color: #320064;
+	font-weight: 900;
+	font-kerning: 50;
+	margin: 0px 0px 30px 0px  ;
+	height: 40px;
+}
+h2 {
+	font-family: "Heebo";
+	font-size: 16px;
+	color: #2d3033;
+	margin: 0;
+	font-weight: 1000;
+}
+h3 {
+	font-size: 28px;
+	color: #2d3033;
+	font-weight: 300;
+}
+h4 {
+	font-size: 22px;
+	color: #2d3033;
+	font-weight: 400;
+}
+h5 {
+	font-size: 14px;
+	color: #2d3033;
+	font-weight: 700;
+}
+
+/* ------------------------------------------------------------------------------
+	Global Styles
+-------------------------------------------------------------------------------*/
+
+/* Links as buttons */
+a {
+	xxfont-family: "Heebo";
+	font-size: 16px;
+	font-weight: 600;
+    xxbackground-color: lightblue ;
+    xxcolor: white;
+    padding: 0.05em 0.10em;
+    text-decoration: none;
+    text-transform: none;
+    border-radius: 8px;
+}
+
+/* unvisited link */
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+  text-decoration: none;
+}
+
+body {
+	font-family: "Crimson Text";
+	font-weight: 400;
+	color: #323232;
+	max-width: 1300px; 
+	margin: 0 auto 0 auto !important;
+	padding: 0 5 0 5; 
+	float: none !important; 
+}

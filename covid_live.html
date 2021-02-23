@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<head>
+
+<!--Meta stuff-->
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!--Facebook meta - this comes up when you post a link to the site-->
+<meta property="og:title" content="Covid Data">
+<meta property="og:description" content="A dashboard of interactive charts that runs directly from official government data. Automatically updates daily.">
+<meta property="og:image" content="linkimage.PNG">
+<meta property="og:url" content="http://coviddata.uk/index.htm">
+
+<!--Favicon-->
+<link rel="icon" href="icon-small.PNG">
+<link rel="shortcut icon" href="icon.PNG" />
+<link rel="apple-touch-icon" href="icon.PNG" />
+
+<!--Title - this is the bit that comes up in the tab-->
+<title>Covid Data UK</title>
+
+<!--Main Stylesheet-->
+<link rel="stylesheet" href="covid_live.css">
+
+<!--The next three lines allow the Vega embed-->
+<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+</head>
+
+
+<body>
+
+<!-- heading for page-->
+<div class="wrap">
+  <h1>covid<span style="color: #ff0000">data</span></h1>
+  <span style="display:block; height: 10px;"></span>
+  <p>A dashboard running directly from <a href="https://coronavirus.data.gov.uk/details/download">official government data.</a> Each chart is interactive: try clicking on the legends, drop-down boxes, or data points. Auto-updated instantly as new data is released. Please share and get in touch if there are charts you would like to see.</p>
+  <span style="display:block; height: 10px;"></span>
+</div>
+
+
+<!--Begin Grid-->
+<div class="grid_items">
+  
+<!--Item 1-->
+  <div class="grid_item">
+    <div id="chartC1">
+      <script src="charts/chartC1.js"></script>
+    </div>
+  </div>
+
+<!--Item 2-->
+  <div class="grid_item">
+    <div id="chartC2">
+        <script src="charts/chartC2.js"></script>
+      </script>
+    </div>
+  </div>
+
+  <!--Item 3-->
+  <div class="grid_item">
+    <div id="chartC2b">
+        <script src="charts/chartC2b.js"></script>
+      </script>
+    </div>
+  </div>
+
+<!--Item 4-->
+  <div class="grid_item">
+    <div id="chartC3">
+        <script src="charts/chartC3.js"></script>
+      </script>
+    </div>
+  </div>
+
+
+<!--Item 5-->
+  <div class="grid_item">
+    <div id="chartR1">
+      <script src="charts/chartR1.js"></script>
+    </div>
+  </div>
+
+
+  <!--Item 6-->
+  <div class="grid_item">
+    <div id="chartD1">
+      <script src="charts/chartD1.js"></script>
+    </div>
+  </div>
+
+
+
+    <!--Item 7-->
+  <div class="grid_item">
+    <div id="chartCD1">
+      <script src="charts/chartCD1.js"></script>
+    </div>
+  </div>
+
+
+    <!--Item 8-->
+  <div class="grid_item">
+    <div id="chartC4">
+      <script src="charts/chartC4.js"></script>
+    </div>
+  </div>
+
+      <!--Item 9-->
+  <div class="grid_item">
+    <div id="chartH1">
+      <script src="charts/chartH1.js"></script>
+    </div>
+  </div>
+
+    <!--Item 10-->
+  <div class="grid_item">
+    <div id="chartD2">
+      <script src="charts/chartD2.js"></script>
+    </div>
+  </div>
+
+
+    <!--Item 11-->
+  <div class="grid_item">
+    <div id="chartD3">
+      <script src="charts/chartD3.js"></script>
+    </div>
+  </div>
+
+      <!--Item 12-->
+  <div class="grid_item">
+    <div id="chartCD2">
+      <script src="charts/chartCD2.js"></script>
+    </div>
+  </div>
+
+
+
+<!--End Grid-->  
+</div>
+
+
+
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+
+<!-- White space across the page --> 
+  <span style="display:block; height: 30px;"></span>
+
+<!-- footer section -->
+<p><a href="https://wwww.richarddavies.io"> Richard Davies</a> &nbsp; | &nbsp; <a href="https://twitter.com/RD_Economist"> @RD_Economist </a> &nbsp; | &nbsp; <a href="mailto:rd@richarddavies.io"> rd@richarddavies.io </a></p>
+
+<span style="display:block; height: 30px;"></span> 
+
+<!-- footer section --> 
+
+<!-- JS FILES --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.fancybox.pack.js"></script> 
+<script src="js/jquery.waypoints.min.js"></script> 
+<script src="js/retina.min.js"></script> 
+<script src="js/modernizr.js"></script> 
+<script src="js/main.js"></script>
+</body>
+</html>
