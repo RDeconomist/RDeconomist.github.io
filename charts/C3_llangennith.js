@@ -33,6 +33,7 @@ var chartC3 =
         "field": "llangennith_high",
         "type": "quantitative",
         "title": "Predicted wave height",
+        "scale": {"domain": [0, 12]},
         "grid":null
       },
 
