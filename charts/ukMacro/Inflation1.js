@@ -18,8 +18,8 @@ var chartI1 =
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/czbh",
     "format": {"type": "json", "property": "months"}
   },
-  "height": 400,
-  "width": 600,
+  "height": 300,
+  "width": 350,
   "mark": {
     "type": "line",
     "point": false,
@@ -46,4 +46,5 @@ var chartI1 =
     }
   }
 };
+
 vegaEmbed('#chartI1', chartI1, {"actions": false});
