@@ -1,5 +1,4 @@
 var Inflation1 =
-
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 
@@ -46,5 +45,4 @@ var Inflation1 =
     }
   }
 };
-
 vegaEmbed('#Inflation1', Inflation1, {"actions": false});
