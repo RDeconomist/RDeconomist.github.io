@@ -17,8 +17,8 @@ var ChartI1 =
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/czbh",
     "format": {"type": "json", "property": "months"}
   },
-  "height": 400,
-  "width": 600,
+  "height": 300,
+  "width": 345,
   "mark": {
     "type": "line",
     "point": false,
