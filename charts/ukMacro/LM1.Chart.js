@@ -22,7 +22,7 @@ var ChartLM1 =
     "type": "line",
     "point": false,
     "interpolate": "monotone",
-    "color": "darkblue"
+    "color": "seagreen"
   },
   "encoding": {
     "x": {
