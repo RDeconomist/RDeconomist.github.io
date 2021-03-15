@@ -6,8 +6,8 @@ var ChartF1 =
   "description": "(F1) Total UK tax revenue",
 
    "title": {
-    "text": "UK total tax revenue (£m), 1997-2021",
-    "subtitle":"Source: ONS",
+    "text": "Tax revenue",
+    "subtitle":"£ million. Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",

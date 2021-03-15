@@ -6,8 +6,8 @@ var ChartGI4 =
   "description": "(GI4) UK output per hour worked, 1971-2020",
 
    "title": {
-    "text": "UK output per hour worked, 1971-2020",
-    "subtitle":"2018 = 100, Source: ONS",
+    "text": "Output",
+    "subtitle":"Per hour worked, 2018 = 100. Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",

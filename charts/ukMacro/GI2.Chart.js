@@ -6,8 +6,8 @@ var ChartGI2 =
   "description": "(GI2) GDP year on year growth (%)",
 
    "title": {
-    "text": "UK GDP year on year growth (%), 1949-2020",
-    "subtitle":"Source: ONS",
+    "text": "GDP growth (%)",
+    "subtitle":"Year on year. Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -16,9 +16,13 @@ var ChartGI2 =
   
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/GI2.DataHub.GrowthInnovationGDPRealGrowth.csv"},
+
   "height": 300,
   "width": 345,
-  "mark": {
+
+"layer": [
+
+  {"mark": {
     "type": "line",
     "point": false,
     "interpolate": "monotone",
@@ -51,6 +55,21 @@ var ChartGI2 =
       }
     ]
   }
+},
+
+{
+      "mark": {"type": "rule", "color": "darkgrey", "size": 0.75},
+      "encoding": {"y": {"field": "Lines", "type": "quantitative"}},
+      "data": {
+        "values": [
+          {"Lines": "0"}
+        ]
+        
+      }
+    }
+    
+    
+    ]
 };
 
 vegaEmbed('#ChartGI2', ChartGI2, {"actions": false});

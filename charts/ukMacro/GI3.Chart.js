@@ -6,8 +6,8 @@ var ChartGI3 =
   "description": "(GI3) UK real nDP per capita",
 
    "title": {
-    "text": "Uk real net domestic product per capita, 1997-2020",
-    "subtitle":"Source: ONS",
+    "text": "Net domestic product",
+    "subtitle":"Per capita. Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -38,6 +38,7 @@ var ChartGI3 =
     "y": {
       "field": "Value",
       "type": "quantitative",
+      "scale": {"domain": [3000, 7000]},
       "title": "",
       "axis": {"grid": false}
     },

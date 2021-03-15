@@ -6,8 +6,8 @@ var ChartGI5 =
   "description": "(GI5) UK government consumption expenditure (£m), 1955-2020",
 
    "title": {
-    "text": "UK government consumption expenditure (£m), 1955-2020",
-    "subtitle":"Source: ONS",
+    "text": "Government consumption expenditure",
+    "subtitle":"£ million. Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",

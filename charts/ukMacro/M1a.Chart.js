@@ -6,8 +6,8 @@ var ChartM1a =
   "description": "(M1a) UK broad money aggregate (£m), 1955-2020",
 
    "title": {
-    "text": "UK broad money outstanding (£m), 1963-2020",
-    "subtitle":"Source: Bank of England",
+    "text": "Broad money outstanding",
+    "subtitle":"£ million. Source: Bank of England",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",

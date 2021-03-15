@@ -6,8 +6,8 @@ var ChartF3 =
   "description": "(F3) Current UK budget deficit",
 
    "title": {
-    "text": "UK current budget deficit (£m), 1997-2021",
-    "subtitle":"Source: ONS",
+    "text": "Current budget deficit",
+    "subtitle":"£ million. Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -18,7 +18,12 @@ var ChartF3 =
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/F3.DataHub.FiscalCurrentBudgetDef.csv"},
   "height": 300,
   "width": 345,
-  "mark": {
+
+ 
+
+"layer": [
+
+  {"mark": {
     "type": "line",
     "point": false,
     "interpolate": "monotone",
@@ -41,6 +46,7 @@ var ChartF3 =
       "title": "",
       "axis": {"grid": false}
     },
+  
     
     "tooltip": [
       {"field": "Date", "type": "temporal"},
@@ -50,7 +56,25 @@ var ChartF3 =
         "type": "quantitative"
       }
     ]
-  }
+    
+    }},
+
+    {
+      "mark": {"type": "rule", "color": "darkgrey", "size": 0.75},
+      "encoding": {"y": {"field": "Lines", "type": "quantitative"}},
+      "data": {
+        "values": [
+          {"Lines": "0"}
+        ]
+        
+      }
+    }
+    
+    
+    ]
+  
+  
+
 };
 
 
