@@ -54,6 +54,7 @@ body {
 @media only screen and (min-width: 760px) {
   .grid_items {
     grid-template-columns: 47.5% 47.5%;
+    grid-column-gap: 5%;
     grid-row-gap: 40px;
   }
   .grid_items > div {
@@ -62,9 +63,10 @@ body {
 }
 
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1280px) {
   .grid_items {
     grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 5%;
     grid-row-gap: 50px;
   }
   .grid_items > div {
