@@ -21,7 +21,7 @@
 <link rel="apple-touch-icon" href="icon.PNG" />
 
 <!--Title - this is the bit that comes up in the tab-->
-<title>UK Economy DataHub Test Page</title>
+<title>UK Economy DataHub</title>
 
 <!--Main Stylesheet-->
 <link rel="stylesheet" href="covid_live.css">
@@ -38,21 +38,65 @@
 <!-- heading for page-->
 <div class="wrap">
   <h1>
-    <span style="color: #233a58">data</span>
-    <span style="color: #e54753">hub</span>
+    <span style="color: #e54753">eco</span><span style="color: #233a58">data</span><span style="color: #e54753">hub</span>
   </h1>
   
   <span style="display:block; height: 10px;"></span>
   <p>A dashboard on the UK economy built by Richard Davies and Charlie Meyrick. Developed for the <a href="https://www.economicsobservatory.com/"> Economics Observatory. </a> To request a chart addition, <a href="https://www.economicsobservatory.com/ask-your-question"> get in touch.</a></p>
   <span style="display:block; height: 10px;"></span>
 
-  <p>Headline measures:</p>
+<p>Headline measures:</p>
 
 </div>
+
 
 <!--Begin Grid-->
 <div class="grid_items">
 
+
+<!--Item: Unemployment-->
+  <div class="grid_item">
+    <div id="ChartLM1">
+        <script src="charts/ukMacro/LM1.Chart.js"></script>  
+    </div>
+  </div>
+
+<!--Item: Inflation-->
+  <div class="grid_item">
+    <div id="ChartM2">
+        <script src="charts/ukMacro/M2.Chart.js"></script>  
+    </div>
+  </div>
+
+  <!--Item: Growth rate-->
+  <div class="grid_item">
+    <div id="ChartGI2">
+        <script src="charts/ukMacro/GI2.Chart.js"></script>  
+    </div>
+  </div>
+
+
+<!--Item: Productivity-->
+  <div class="grid_item">
+    <div id="ChartGI4">
+        <script src="charts/ukMacro/GI4.Chart.js"></script>  
+    </div>
+  </div>
+
+<!--End Grid-->  
+</div>
+
+
+<!--Starting a new grid-->  
+
+<div class="wrap">
+<span style="display:block; height: 40px;"></span>
+<p>Fiscal measures: taxes, spending, deficit and debt.</p>
+<span style="display:block; height: 10px;"></span>
+</div>
+
+<!--Begin Grid-->
+<div class="grid_items">
 
 <!--Item 1-->
   <div class="grid_item">
@@ -96,6 +140,20 @@
     </div>
   </div>
 
+<!--End Grid-->  
+</div>
+
+
+<!--Starting a new grid-->  
+<div class="wrap">
+<span style="display:block; height: 40px;"></span>
+<p>Output measures: GDP, productivity.</p>
+<span style="display:block; height: 10px;"></span>
+</div>
+
+<!--Begin Grid-->
+<div class="grid_items">
+
 <!--Item 7-->
   <div class="grid_item">
     <div id="ChartGI1">
@@ -104,12 +162,16 @@
     </div>
   </div>
 
+
   <!--Item 8-->
   <div class="grid_item">
-    <div id="ChartGI2">
-        <script src="charts/ukMacro/GI2.Chart.js"></script>  
+    <div id="ChartGI2b">
+        <script>
+          vegaEmbed('#ChartGI2b', ChartGI2, {"actions": false});
+        </script>  
     </div>
   </div>
+
 
 <!--Item 9-->
   <div class="grid_item">
@@ -132,6 +194,20 @@
     </div>
   </div>
 
+<!--End Grid-->  
+</div>
+
+
+<!--Starting a new grid-->  
+<div class="wrap">
+<span style="display:block; height: 40px;"></span>
+<p>Monetary measures: money, inflation.</p>
+<span style="display:block; height: 10px;"></span>
+</div>
+
+<!--Begin Grid-->
+<div class="grid_items">
+
 <!--Item 12-->
   <div class="grid_item">
     <div id="ChartM1a">
@@ -152,6 +228,20 @@
         <script src="charts/ukMacro/M2.Chart.js"></script>  
     </div>
   </div>
+
+<!--End Grid-->  
+</div>
+
+
+<!--Starting a new grid-->  
+<div class="wrap">
+<span style="display:block; height: 40px;"></span>
+<p>Labour market meausures: unemployment, wages, vacancies.</p>
+<span style="display:block; height: 10px;"></span>
+</div>
+
+<!--Begin Grid-->
+<div class="grid_items">
 
 <!--Item 15-->
   <div class="grid_item">

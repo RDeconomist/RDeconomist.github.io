@@ -60,7 +60,7 @@ body {
 
 /* One column*/
 @media only screen and (min-width: 250px) {
-  .grid_items {
+  .grid_items, .wrap {
     grid-template-columns: 100%;
     max-width: 420px; 
     margin: 0 auto 0 auto !important;
@@ -78,7 +78,7 @@ body {
 
 /* Two columns*/
 @media only screen and (min-width: 900px) {
-  .grid_items {
+  .grid_items, .wrap {
     grid-template-columns: 47.5% 47.5%;
     max-width: 880px; 
     margin: 0 auto 0 auto !important;
@@ -94,7 +94,7 @@ body {
 
 /* Three columns*/
 @media only screen and (min-width: 1400px) {
-  .grid_items {
+  .grid_items, .wrap {
     grid-template-columns: 30% 30% 30%;
     max-width: 1400px; 
     margin: 0 auto 0 auto !important;
@@ -111,7 +111,7 @@ body {
 
 /* Four columns*/
 @media only screen and (min-width: 1800px) {
-  .grid_items {
+  .grid_items, .wrap {
     grid-template-columns: 25% 25% 25% 25%;
     max-width: 1900px; 
     margin: 0 auto 0 auto !important;
