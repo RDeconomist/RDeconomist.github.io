@@ -6,8 +6,8 @@ var ChartF2 =
   "description": "(F2) Total UK expenditure",
 
    "title": {
-    "text": "UK total expenditure (£m), 1997-2021",
-    "subtitle":"Source: ONS",
+    "text": "Expenditure",
+    "subtitle":"£ million. Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",

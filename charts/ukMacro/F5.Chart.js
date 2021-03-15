@@ -6,8 +6,8 @@ var ChartF5 =
   "description": "(F5) UK net debt (£m)",
 
    "title": {
-    "text": "UK net debt (£m), 1997-2020",
-    "subtitle":"Source: ONS",
+    "text": "Net debt",
+    "subtitle":"£ million. Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",

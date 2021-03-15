@@ -6,8 +6,8 @@ var ChartM2 =
   "description": "(M2) CPIH annual rate (%), 1989-2021",
 
    "title": {
-    "text": "UK consumer price inflation (CPIH) annual rate (%), 1989-2021",
-    "subtitle":"Source: ONS",
+    "text": "Inflation (%)",
+    "subtitle":"CPIH annual rate. Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",

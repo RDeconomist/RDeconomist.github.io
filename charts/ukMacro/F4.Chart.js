@@ -7,7 +7,7 @@ var ChartF4 =
   "description": "(F4) Current UK budget deficit (% GDP)",
 
    "title": {
-    "text": "UK current budget deficit (% of GDP), 1956-2020",
+    "text": "Current budget deficit (% of GDP)",
     "subtitle":"Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
@@ -17,8 +17,12 @@ var ChartF4 =
   
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/F4.DataHub.FiscalCurrentBudgetDefPerDGP.csv"},
+
   "height": 300,
   "width": 345,
+
+"layer": [
+{
   "mark": {
     "type": "line",
     "point": false,
@@ -52,6 +56,21 @@ var ChartF4 =
       }
     ]
   }
+},
+
+{
+      "mark": {"type": "rule", "color": "darkgrey", "size": 0.5},
+      "encoding": {"y": {"field": "Lines", "type": "quantitative"}},
+      "data": {
+        "values": [
+          {"Lines": "0"}
+        ]
+        
+      }
+    }
+
+]
+
 };
 
 vegaEmbed('#ChartF4', ChartF4, {"actions": false});

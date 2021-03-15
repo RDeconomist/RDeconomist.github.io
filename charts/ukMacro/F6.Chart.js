@@ -6,7 +6,7 @@ var ChartF6 =
   "description": "(F6) UK net debt (% of GDP)",
 
    "title": {
-    "text": "UK net debt (% of GDP), 1997-2020",
+    "text": "Net debt (% of GDP)",
     "subtitle":"Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,

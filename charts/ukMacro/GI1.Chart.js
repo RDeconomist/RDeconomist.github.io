@@ -6,8 +6,8 @@ var ChartGI1 =
   "description": "(GI1) GDP chained volume measure (£m, seasonally adjusted)",
 
    "title": {
-    "text": "UK GDP chained volume (£m, seasonally adjusted), 1955-2020",
-    "subtitle":"Source: ONS",
+    "text": "GDP",
+    "subtitle":"Chained volume, £ million, seasonally adjusted. Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
