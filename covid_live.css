@@ -62,7 +62,7 @@ body {
 }
 
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1400px) {
   .grid_items {
     grid-template-columns: 30% 30% 30%;
     grid-row-gap: 50px;
