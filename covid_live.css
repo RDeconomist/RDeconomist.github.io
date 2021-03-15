@@ -34,7 +34,10 @@ body {
   padding: 2px;
   display: grid;
   grid-template-columns: 100%;
-  grid-column-gap: 0;
+  max-width: 800px; 
+  margin: 0 auto 0 auto !important;
+  padding: 0 5 0 5; 
+  grid-column-gap: 5px;
   grid-row-gap: 20px;
 }
 .grid_items > div {
@@ -51,10 +54,18 @@ body {
 }
 
 
-@media only screen and (min-width: 760px) {
+/* ------------------------------------------------------------------------------
+	DIFFERENT SCREEN SIZES
+-------------------------------------------------------------------------------*/
+
+/* One column*/
+@media only screen and (min-width: 250px) {
   .grid_items {
-    grid-template-columns: 47.5% 47.5%;
-    grid-column-gap: 5%;
+    grid-template-columns: 100%;
+    max-width: 420px; 
+    margin: 0 auto 0 auto !important;
+	padding: 0 5 0 5; 
+    grid-column-gap: 10px;
     grid-row-gap: 40px;
   }
   .grid_items > div {
@@ -63,16 +74,56 @@ body {
 }
 
 
-@media only screen and (min-width: 1280px) {
+
+
+/* Two columns*/
+@media only screen and (min-width: 900px) {
+  .grid_items {
+    grid-template-columns: 47.5% 47.5%;
+    max-width: 880px; 
+    margin: 0 auto 0 auto !important;
+	padding: 0 5 0 5; 
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+  }
+  .grid_items > div {
+    padding: 10px;
+  }
+}
+
+
+/* Three columns*/
+@media only screen and (min-width: 1400px) {
   .grid_items {
     grid-template-columns: 30% 30% 30%;
-    grid-column-gap: 5%;
+    max-width: 1400px; 
+    margin: 0 auto 0 auto !important;
+	padding: 0 5 0 5; 
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+  }
+  
+  .grid_items > div {
+    padding: 10px;
+  }
+}
+
+
+/* Four columns*/
+@media only screen and (min-width: 1800px) {
+  .grid_items {
+    grid-template-columns: 25% 25% 25% 25%;
+    max-width: 1900px; 
+    margin: 0 auto 0 auto !important;
+	padding: 0 5 0 5; 
+    grid-column-gap: 20px;
     grid-row-gap: 50px;
   }
   .grid_items > div {
     padding: 10px;
   }
 }
+
 
 
 
@@ -181,7 +232,7 @@ body {
 	font-family: "Crimson Text";
 	font-weight: 400;
 	color: #323232;
-	max-width: 1300px; 
+	max-width: 1800px; 
 	margin: 0 auto 0 auto !important;
 	padding: 0 5 0 5; 
 	float: none !important; 
