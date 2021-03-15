@@ -8,7 +8,7 @@ var chartMobile1 = {
 
   "height": 300,
   
-  "width": 300,
+  "width": 450,
   
   "mark": {"type": "bar", "width":10},
   
@@ -61,10 +61,10 @@ var chartMobile1 = {
       "field": "areaName",
       "type": "nominal",
       "legend": null,
-      "scale": {"scheme": "viridis"}
+      "scale": {"scheme": "inferno"}
     }
   }
 }
 ;
 
-vegaEmbed('#visMobile1', chartMobile1);
+vegaEmbed('#visMobile1', chartMobile1, {"actions": false});
