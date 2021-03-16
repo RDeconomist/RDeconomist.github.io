@@ -6,7 +6,7 @@ var ChartF1and2 =
   "description": "(F1and2) Tax revenue v expenditure",
 
    "title": {
-    "text": "Tax revenue vs expenditure",
+    "text": "Expenditure vs tax revenue",
     "subtitle":"£ million. Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,

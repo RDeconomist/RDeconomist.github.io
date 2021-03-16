@@ -6,7 +6,7 @@ var ChartM1aand4 =
   "description": "(M1aand4) Nominal GDP vs broad money",
 
    "title": {
-    "text": "Nominal GDP versus broad money",
+    "text": "Broad money vs nominal GDP",
     "subtitle":"£ million. Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
