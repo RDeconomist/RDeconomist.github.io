@@ -1,9 +1,9 @@
-var ChartF1 =
+var ChartF1and2 =
 
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 
-  "description": "(F1) Total UK tax revenue",
+  "description": "(F1and2) Tax revenue v expenditure",
 
    "title": {
     "text": "Tax revenue vs expenditure",

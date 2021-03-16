@@ -1,13 +1,13 @@
-var ChartM2 =
+var ChartM4 =
 
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 
-  "description": "(M2) CPIH annual rate (%), 1989-2021",
+  "description": "(M4) Nominal GDP",
 
    "title": {
-    "text": "Inflation",
-    "subtitle":"CPIH annual % change. Source: ONS",
+    "text": "Nominal GDP",
+    "subtitle":"GDP at market prices, seasonally adjusted, £ million. Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -15,7 +15,7 @@ var ChartM2 =
   },
   
   "data": {
-    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/M2.DataHub.MonetaryCPIHAnnRate.csv"},
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/M4.DataHub.MonetaryGDPMarketPrices.csv"},
   "height": 300,
   "width": 345,
   "mark": {
@@ -26,12 +26,13 @@ var ChartM2 =
   },
   "encoding": {
     "x": {
-      "field": "Month",
+      "field": "Date",
       "type": "temporal",
       "axis": {
         "title": null,
         "grid": false,
         "labelSeparation": 20
+        
       }
     },
     "y": {
@@ -45,7 +46,7 @@ var ChartM2 =
       {"field": "Date", "type": "temporal"},
       {
         "field": "Value",
-        "title": "CPIH",
+        "title": "Nominal GDP",
         "type": "quantitative"
       }
     ]
@@ -53,4 +54,4 @@ var ChartM2 =
 };
 
 
-vegaEmbed('#ChartM2', ChartM2, {"actions": false});
+vegaEmbed('#ChartM4', ChartM4, {"actions": false});
