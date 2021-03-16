@@ -45,6 +45,7 @@ var ChartM1aand4 =
     },
     "color": {
       "field": "Measure",
+      "legend": {"orient": "top-right"},
       "type": "nominal",
       "scale": {"range": ["darkblue", "lightblue"]}
     },

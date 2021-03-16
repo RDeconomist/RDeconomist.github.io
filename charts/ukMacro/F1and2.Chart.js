@@ -3,7 +3,7 @@ var ChartF1and2 =
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 
-  "description": "(F1and2) Tax revenue v expenditure",
+  "description": "(F1) Total UK tax revenue",
 
    "title": {
     "text": "Expenditure vs tax revenue",
@@ -45,6 +45,7 @@ var ChartF1and2 =
     },
     "color": {
       "field": "Measure",
+      "legend": {"orient": "top-right"},
       "type": "nominal",
       "scale": {"range": ["mediumvioletred", "pink"]}
     },
