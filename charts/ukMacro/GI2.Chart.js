@@ -6,8 +6,8 @@ var ChartGI2 =
   "description": "(GI2) GDP year on year growth (%)",
 
    "title": {
-    "text": "GDP growth (%)",
-    "subtitle":"Year on year. Source: ONS",
+    "text": "GDP growth",
+    "subtitle":"Quarterly, year on year % change. Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",

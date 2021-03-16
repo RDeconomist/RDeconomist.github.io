@@ -83,6 +83,14 @@
     </div>
   </div>
 
+
+<!--Item: Bank Rate-->
+  <div class="grid_item">
+    <div id="ChartM3">
+        <script src="charts/ukMacro/m3Chart.js"></script>  
+    </div>
+  </div>
+
 <!--End Grid-->  
 </div>
 
@@ -207,8 +215,19 @@
 <span style="display:block; height: 10px;"></span>
 </div>
 
+
 <!--Begin Grid-->
 <div class="grid_items">
+
+<!--Item 14-->
+  <div class="grid_item">
+    <div id="ChartM3b">
+        <script>
+       vegaEmbed('#ChartM3b', ChartM3, {"actions": false});
+        </script>  
+    </div>
+  </div>
+
 
 <!--Item 12-->
   <div class="grid_item">

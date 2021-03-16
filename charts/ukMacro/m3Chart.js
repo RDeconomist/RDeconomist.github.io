@@ -1,13 +1,13 @@
-var ChartM2 =
+var ChartM3 =
 
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 
-  "description": "(M2) CPIH annual rate (%), 1989-2021",
+  "description": "Bank Rate",
 
    "title": {
-    "text": "Inflation",
-    "subtitle":"CPIH annual % change. Source: ONS",
+    "text": "Bank Rate",
+    "subtitle":"Bank of England's main policy rate. Source: BoE",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -15,28 +15,27 @@ var ChartM2 =
   },
   
   "data": {
-    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/M2.DataHub.MonetaryCPIHAnnRate.csv"},
-  "height": 300,
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/m3BankRate.csv"},
+  "height": 340,
   "width": 345,
   "mark": {
     "type": "line",
     "point": false,
-    "interpolate": "monotone",
-    "color": "darkblue"
+    "interpolate": "step",
+    "color": "red"
   },
   "encoding": {
     "x": {
-      "field": "Month",
+      "field": "Date",
       "type": "temporal",
       "axis": {
         "title": null,
         "grid": false,
-        "labelSeparation": 20,
-        "ticks": false
+        "labelSeparation": 20
       }
     },
     "y": {
-      "field": "Value",
+      "field": "Rate",
       "type": "quantitative",
       "title": "",
       "axis": {"grid": false}
@@ -45,13 +44,12 @@ var ChartM2 =
     "tooltip": [
       {"field": "Date", "type": "temporal"},
       {
-        "field": "Value",
-        "title": "CPIH",
+        "field": "Rate",
+        "title": "Bank Rate",
         "type": "quantitative"
       }
     ]
   }
 };
 
-
-vegaEmbed('#ChartM2', ChartM2, {"actions": false});
+vegaEmbed('#ChartM3', ChartM3, {"actions": false});

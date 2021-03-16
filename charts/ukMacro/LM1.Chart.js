@@ -6,8 +6,8 @@ var ChartLM1 =
   "description": "(LM1) Unemployment rate (16+), seasonally adjusted",
 
    "title": {
-    "text": "Unemployment rate (%)",
-    "subtitle":"16+, seasonally adjusted. Source: ONS",
+    "text": "Unemployment",
+    "subtitle":"Rate (%), 16+, seasonally adjusted. Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
