@@ -34,9 +34,7 @@ var ChartGI2 =
       "type": "temporal",
       "axis": {
         "title": null,
-        "grid": false,
-        "labelSeparation": 20,
-        "ticks": false
+        "grid": false
       }
     },
     "y": {

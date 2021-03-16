@@ -7,8 +7,8 @@ var ChartF4 =
   "description": "(F4) Current UK budget deficit (% GDP)",
 
    "title": {
-    "text": "Current budget deficit (% of GDP)",
-    "subtitle":"Source: ONS",
+    "text": "Deficit/GDP ratio",
+    "subtitle":"% GDP. Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -36,8 +36,8 @@ var ChartF4 =
       "axis": {
         "title": null,
         "grid": false,
-        "labelSeparation": 20,
-        "ticks": false
+        "labelSeparation": 20
+        
       }
     },
     "y": {

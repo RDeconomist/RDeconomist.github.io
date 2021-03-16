@@ -22,7 +22,7 @@ var ChartM3 =
     "type": "line",
     "point": false,
     "interpolate": "step",
-    "color": "red"
+    "color": "darkblue"
   },
   "encoding": {
     "x": {

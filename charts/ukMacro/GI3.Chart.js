@@ -30,9 +30,7 @@ var ChartGI3 =
       "type": "temporal",
       "axis": {
         "title": null,
-        "grid": false,
-        "labelSeparation": 20,
-        "ticks": false
+        "grid": false
       }
     },
     "y": {

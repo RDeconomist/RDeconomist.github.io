@@ -1,13 +1,13 @@
-var ChartGI1 =
+var ChartF1 =
 
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 
-  "description": "(GI1) GDP chained volume measure (£m, seasonally adjusted)",
+  "description": "(F1) Total UK tax revenue",
 
    "title": {
-    "text": "GDP",
-    "subtitle":"Chained volume, £ million, seasonally adjusted. Source: ONS",
+    "text": "Tax revenue vs expenditure",
+    "subtitle":"£ million. Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -15,14 +15,16 @@ var ChartGI1 =
   },
   
   "data": {
-    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/GI1.DataHub.GrowthInnovationGDP.csv"},
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/F1.2.FiscalRevVExp.csv"},
+
   "height": 300,
   "width": 345,
+  
   "mark": {
     "type": "line",
     "point": false,
-    "interpolate": "monotone",
-    "color": "goldenrod"
+    "interpolate": "monotone"
+    
   },
   "encoding": {
     "x": {
@@ -30,7 +32,9 @@ var ChartGI1 =
       "type": "temporal",
       "axis": {
         "title": null,
-        "grid": false
+        "grid": false,
+        "labelSeparation": 20
+        
       }
     },
     "y": {
@@ -39,16 +43,23 @@ var ChartGI1 =
       "title": "",
       "axis": {"grid": false}
     },
+    "color": {
+      "field": "Measure",
+      "type": "nominal",
+      "scale": {"range": ["mediumvioletred", "pink"]}
+    },
     
     "tooltip": [
       {"field": "Date", "type": "temporal"},
       {
         "field": "Value",
-        "title": "GDP chained volume (£m)",
+        "title": "Value (£m)",
         "type": "quantitative"
       }
     ]
   }
 };
 
-vegaEmbed('#ChartGI1', ChartGI1, {"actions": false});
+
+vegaEmbed('#ChartF1and2', ChartF1and2, {"actions": false});
+

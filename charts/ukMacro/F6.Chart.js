@@ -6,8 +6,8 @@ var ChartF6 =
   "description": "(F6) UK net debt (% of GDP)",
 
    "title": {
-    "text": "Net debt (% of GDP)",
-    "subtitle":"Source: ONS",
+    "text": "Debt/GDP ratio",
+    "subtitle":"% GDP. Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -31,8 +31,7 @@ var ChartF6 =
       "axis": {
         "title": null,
         "grid": false,
-        "labelSeparation": 20,
-        "ticks": false
+        "labelSeparation": 20
       }
     },
     "y": {

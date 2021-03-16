@@ -31,8 +31,7 @@ var ChartF5 =
       "axis": {
         "title": null,
         "grid": false,
-        "labelSeparation": 20,
-        "ticks": false
+        "labelSeparation": 20
       }
     },
     "y": {
