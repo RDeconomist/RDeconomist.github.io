@@ -18,38 +18,71 @@ var ChartLM1 =
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/LM1.DataHub.LabourMarketUnemployment.csv"},
   "height": 300,
   "width": 345,
-  "mark": {
-    "type": "line",
-    "point": false,
-    "interpolate": "monotone",
-    "color": "seagreen"
-  },
-  "encoding": {
-    "x": {
-      "field": "Date",
-      "type": "temporal",
-      "axis": {
-        "title": null,
-        "grid": false,
-        "labelSeparation": 20
-      }
+
+  "encoding": {"x": {"field": "Date", "type": "temporal", "axis": {"title":null, "grid": false}}},
+
+  "layer": [
+
+    {"encoding": {
+
+        "y": {"field": "Value", 
+
+              "type": "quantitative", 
+              "title":"",
+              
+               "axis": {"grid": false}
+              }
+            },
+
+        
+        "layer": [{"mark": {"type": "line", "color": "seagreen"}},
+
+                  {"transform": 
+
+                      [{"filter": {"selection": "hover"}}], 
+
+                        "mark": "point"}
+
+      ]
+
     },
-    "y": {
-      "field": "Value",
-      "type": "quantitative",
-      "title": "",
-      "axis": {"grid": false}
-    },
-    
-    "tooltip": [
-      {"field": "Date", "type": "temporal"},
-      {
-        "field": "Value",
-        "title": "Unemployment rate (%)",
-        "type": "quantitative"
+
+    {"mark": "rule", 
+
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0.1, "selection": "hover"},
+          "value": 0
+        },
+
+        "tooltip": [
+
+          {"field": "Date", "type": "temporal", "format":"%B, %Y"},
+          {"field": "Value", "title": "Unemployment rate", "type": "quantitative", "format": ""}
+
+        ]
+
+      },
+
+
+      
+      "selection": {
+        "hover": {
+          "type": "single",
+          "fields": ["Date"],
+          "nearest": true,
+          "on": "mouseover",
+          "empty": "none",
+          "clear": "mouseout"
+
+        }
+
       }
-    ]
-  }
+
+    }
+
+  ]
+
 };
 
 

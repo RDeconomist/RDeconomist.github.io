@@ -18,38 +18,71 @@ var ChartM3 =
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/m3BankRate.csv"},
   "height": 340,
   "width": 345,
-  "mark": {
-    "type": "line",
-    "point": false,
-    "interpolate": "step",
-    "color": "darkblue"
-  },
-  "encoding": {
-    "x": {
-      "field": "Date",
-      "type": "temporal",
-      "axis": {
-        "title": null,
-        "grid": false,
-        "labelSeparation": 20
-      }
+  
+  "encoding": {"x": {"field": "Date", "type": "temporal", "axis": {"title":null, "grid": false}}},
+
+  "layer": [
+
+    {"encoding": {
+
+        "y": {"field": "Rate", 
+
+              "type": "quantitative", 
+              "title":"",
+              
+               "axis": {"grid": false}
+              }
+            },
+
+        
+        "layer": [{"mark": {"type": "line", "color": "darkblue"}},
+
+                  {"transform": 
+
+                      [{"filter": {"selection": "hover"}}], 
+
+                        "mark": "point"}
+
+      ]
+
     },
-    "y": {
-      "field": "Rate",
-      "type": "quantitative",
-      "title": "",
-      "axis": {"grid": false}
-    },
-    
-    "tooltip": [
-      {"field": "Date", "type": "temporal"},
-      {
-        "field": "Rate",
-        "title": "Bank Rate",
-        "type": "quantitative"
+
+    {"mark": "rule", 
+
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0.1, "selection": "hover"},
+          "value": 0
+        },
+
+        "tooltip": [
+
+          {"field": "Date", "type": "temporal", "format":"%B, %Y"},
+          {"field": "Rate", "title": "Bank rate", "type": "quantitative", "format": ""}
+
+        ]
+
+      },
+
+
+      
+      "selection": {
+        "hover": {
+          "type": "single",
+          "fields": ["Date"],
+          "nearest": true,
+          "on": "mouseover",
+          "empty": "none",
+          "clear": "mouseout"
+
+        }
+
       }
-    ]
-  }
+
+    }
+
+  ]
+
 };
 
 vegaEmbed('#ChartM3', ChartM3, {"actions": false});
