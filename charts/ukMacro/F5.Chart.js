@@ -18,39 +18,71 @@ var ChartF5 =
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/F5.DataHub.FiscalNetDebt.csv"},
   "height": 300,
   "width": 345,
-  "mark": {
-    "type": "line",
-    "point": false,
-    "interpolate": "monotone",
-    "color": "mediumvioletred"
-  },
-  "encoding": {
-    "x": {
-      "field": "Date",
-      "type": "temporal",
-      "axis": {
-        "title": null,
-        "grid": false,
-        "labelSeparation": 20,
-        "ticks": false
-      }
+
+  "encoding": {"x": {"field": "Date", "type": "temporal", "axis": {"title":null, "grid": false}}},
+
+  "layer": [
+
+    {"encoding": {
+
+        "y": {"field": "Value", 
+
+              "type": "quantitative", 
+              "title":"",
+              
+               "axis": {"grid": false}
+              }
+            },
+
+        
+        "layer": [{"mark": {"type": "line", "color": "mediumvioletred"}},
+
+                  {"transform": 
+
+                      [{"filter": {"selection": "hover"}}], 
+
+                        "mark": "point"}
+
+      ]
+
     },
-    "y": {
-      "field": "Value",
-      "type": "quantitative",
-      "title": "",
-      "axis": {"grid": false}
-    },
-    
-    "tooltip": [
-      {"field": "Date", "type": "temporal"},
-      {
-        "field": "Value",
-        "title": "Net debt (£m)",
-        "type": "quantitative"
+
+    {"mark": "rule", 
+
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0.1, "selection": "hover"},
+          "value": 0
+        },
+
+        "tooltip": [
+
+          {"field": "Date", "type": "temporal", "format":"%B, %Y"},
+          {"field": "Value", "title": "Net debt", "type": "quantitative", "format": ",.0f"}
+
+        ]
+
+      },
+
+
+      
+      "selection": {
+        "hover": {
+          "type": "single",
+          "fields": ["Date"],
+          "nearest": true,
+          "on": "mouseover",
+          "empty": "none",
+          "clear": "mouseout"
+
+        }
+
       }
-    ]
-  }
+
+    }
+
+  ]
+
 };
 
 vegaEmbed('#ChartF5', ChartF5, {"actions": false});

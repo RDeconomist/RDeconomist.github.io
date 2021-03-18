@@ -1,14 +1,13 @@
-var ChartF4 =
+var ChartM1aand4 =
 
 {
-
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 
-  "description": "(F4) Current UK budget deficit (% GDP)",
+  "description": "(M1aand4) Nominal GDP vs broad money",
 
    "title": {
-    "text": "Deficit/GDP ratio",
-    "subtitle":"% GDP. Source: ONS",
+    "text": "Broad money vs nominal GDP",
+    "subtitle":"£ million. Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -16,18 +15,16 @@ var ChartF4 =
   },
   
   "data": {
-    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/F4.DataHub.FiscalCurrentBudgetDefPerDGP.csv"},
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/M1aand4.MonetaryGDPvBroadMoney.csv"},
 
   "height": 300,
   "width": 345,
-
-"layer": [
-{
+  
   "mark": {
     "type": "line",
     "point": false,
-    "interpolate": "monotone",
-    "color": "mediumvioletred"
+    "interpolate": "monotone"
+    
   },
   "encoding": {
     "x": {
@@ -46,33 +43,23 @@ var ChartF4 =
       "title": "",
       "axis": {"grid": false}
     },
+    "color": {
+      "field": "Measure",
+      "legend": {"orient": "top-right"},
+      "type": "nominal",
+      "scale": {"range": ["darkblue", "lightblue"]}
+    },
     
     "tooltip": [
       {"field": "Date", "type": "temporal"},
       {
         "field": "Value",
-        "title": "Current budget deficit (% of GDP)",
+        "title": "Value (£m)",
         "type": "quantitative"
       }
     ]
   }
-},
-
-{
-      "mark": {"type": "rule", "color": "darkgrey", "size": 0.5},
-      "encoding": {"y": {"field": "Lines", "type": "quantitative"}},
-      "data": {
-        "values": [
-          {"Lines": "0"}
-        ]
-        
-      }
-    }
-
-]
-
 };
 
-vegaEmbed('#ChartF4', ChartF4, {"actions": false});
 
-
+vegaEmbed('#ChartM1aand4', ChartM1aand4, {"actions": false});

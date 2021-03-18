@@ -1,13 +1,13 @@
-var ChartGI5 =
+var ChartM4 =
 
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 
-  "description": "(GI5) UK government consumption expenditure (£m), 1955-2020",
+  "description": "(M4) Nominal GDP",
 
    "title": {
-    "text": "Government consumption expenditure",
-    "subtitle":"£ million. Source: ONS",
+    "text": "Nominal GDP",
+    "subtitle":"GDP at market prices, seasonally adjusted, £ million. Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -15,11 +15,11 @@ var ChartGI5 =
   },
   
   "data": {
-    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/GI5.DataHub.GrowthInnovationGovSpend.csv"},
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/M4.DataHub.MonetaryGDPMarketPrices.csv"},
   "height": 300,
   "width": 345,
-
-   "encoding": {"x": {"field": "Date", "type": "temporal", "axis": {"title":null, "grid": false}}},
+  
+  "encoding": {"x": {"field": "Date", "type": "temporal", "axis": {"title":null, "grid": false}}},
 
   "layer": [
 
@@ -35,7 +35,7 @@ var ChartGI5 =
             },
 
         
-        "layer": [{"mark": {"type": "line", "color": "goldenrod"}},
+        "layer": [{"mark": {"type": "line", "color": "darkblue"}},
 
                   {"transform": 
 
@@ -58,7 +58,7 @@ var ChartGI5 =
         "tooltip": [
 
           {"field": "Date", "type": "temporal", "format":"%B, %Y"},
-          {"field": "Value", "title": "Expenditure", "type": "quantitative", "format": ",.0f"}
+          {"field": "Value", "title": "Nominal GDP", "type": "quantitative", "format": ",.0f"}
 
         ]
 
@@ -86,4 +86,4 @@ var ChartGI5 =
 };
 
 
-vegaEmbed('#ChartGI5', ChartGI5, {"actions": false});
+vegaEmbed('#ChartM4', ChartM4, {"actions": false});
