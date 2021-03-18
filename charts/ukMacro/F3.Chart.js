@@ -19,62 +19,85 @@ var ChartF3 =
   "height": 300,
   "width": 345,
 
- 
 
-"layer": [
 
-  {"mark": {
-    "type": "line",
-    "point": false,
-    "interpolate": "monotone",
-    "color": "mediumvioletred"
-  },
-  "encoding": {
-    "x": {
-      "field": "Year",
-      "type": "temporal",
-      "axis": {
-        "title": null,
-        "grid": false,
-        "labelSeparation": 20
+
+
+  "encoding": {"x": {"field": "Year", "type": "temporal", "axis": {"title":null, "grid": false}}},
+
+  "layer": [
+
+    {"encoding": {
+
+        "y": {"field": "Value", 
+
+              "type": "quantitative", 
+              "title":"",
+              "scale": {"domain": [-300000, 100000]},
+               "axis": {"grid": false}
+              }
+            },
+
         
-      }
+        "layer": [{"mark": {"type": "line", "color": "mediumvioletred", "interpolate": "monotone"}},
+
+                  {"transform": 
+
+                      [{"filter": {"selection": "hover"}}], 
+
+                        "mark": "point"}
+
+      ]
+
     },
-    "y": {
-      "field": "Value",
-      "type": "quantitative",
-      "title": "",
-      "scale": {"domain": [-250000, 50000]},
-      "axis": {"grid": false}
-    },
-  
     
-    "tooltip": [
-      {"field": "Year", "type": "temporal"},
-      {
-        "field": "Value",
-        "title": "Current budget deficit (£m)",
-        "type": "quantitative"
+
+    {"mark": "rule", 
+
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0.1, "selection": "hover"},
+          "value": 0
+        },
+
+        "tooltip": [
+
+          {"field": "Date", "type": "temporal", "format":"%B, %Y"},
+          {"field": "Value", "type": "quantitative", "format": ",.0f"}
+
+        ]
+
+      },
+
+
+      
+      "selection": {
+        "hover": {
+          "type": "single",
+          "fields": ["Year"],
+          "nearest": true,
+          "on": "mouseover",
+          "empty": "none",
+          "clear": "mouseout"
+
+        }
+
       }
-    ]
-    
-    }},
+
+    },
 
     {
       "mark": {"type": "rule", "color": "darkgrey", "size": 0.75},
-      "encoding": {"y": {"field": "Lines", "type": "quantitative"}},
+      "encoding": {"y": {"field": "Value", "type": "quantitative"}},
       "data": {
         "values": [
-          {"Lines": "0"}
+          {"Value": "0"}
         ]
         
       }
     }
-    
-    
-    ]
-  
-  
+
+  ]
 
 };
 

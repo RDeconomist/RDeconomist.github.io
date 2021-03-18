@@ -20,45 +20,84 @@ var ChartM1aand4 =
   "height": 300,
   "width": 345,
   
-  "mark": {
-    "type": "line",
-    "point": false,
-    "interpolate": "monotone"
-    
-  },
-  "encoding": {
-    "x": {
-      "field": "Date",
-      "type": "temporal",
-      "axis": {
-        "title": null,
-        "grid": false,
-        "labelSeparation": 20
-        
-      }
-    },
-    "y": {
-      "field": "Value",
-      "type": "quantitative",
-      "title": "",
-      "axis": {"grid": false}
-    },
-    "color": {
+  "encoding": {"x": {"field": "Date", "type": "temporal", "axis": {"title":null, "grid": false}}},
+
+  "layer": [
+
+    {"encoding": {
+
+        "y": {"field": "Value", 
+
+              "type": "quantitative", 
+              "title":"",
+              
+               "axis": {"grid": false}
+              },
+              
+      "color": {
+      
       "field": "Measure",
       "legend": {"orient": "top-right"},
       "type": "nominal",
       "scale": {"range": ["darkblue", "lightblue"]}
+    }
+
+
+            },
+            
+
+        
+        "layer": [{"mark": {"type": "line", "color": ""}},
+
+                  {"transform": 
+
+                      [{"filter": {"selection": "hover"}}], 
+
+                        "mark": "point"}
+
+      ]
+
     },
-    
-    "tooltip": [
-      {"field": "Date", "type": "temporal"},
-      {
-        "field": "Value",
-        "title": "Value (£m)",
-        "type": "quantitative"
+
+    {
+      
+      "mark": "rule", 
+
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0.1, "selection": "hover"},
+          "value": 0
+        },
+
+        "tooltip": [
+
+          {"field": "Date", "type": "temporal", "format":"%B, %Y"},
+          {"field": "Value", "type": "quantitative", "format": ""},
+          {"field": "Measure", "type": "nominal", "format": ""}
+
+        ]
+
+      },
+
+
+      
+      "selection": {
+        "hover": {
+          "type": "single",
+          "fields": ["Date"],
+          "nearest": true,
+          "on": "mouseover",
+          "empty": "none",
+          "clear": "mouseout"
+
+        }
+
       }
-    ]
-  }
+
+    }
+
+  ]
+
 };
 
 

@@ -21,55 +21,82 @@ var ChartF4 =
   "height": 300,
   "width": 345,
 
-"layer": [
-{
-  "mark": {
-    "type": "line",
-    "point": false,
-    "interpolate": "monotone",
-    "color": "mediumvioletred"
-  },
-  "encoding": {
-    "x": {
-      "field": "Date",
-      "type": "temporal",
-      "axis": {
-        "title": null,
-        "grid": false,
-        "labelSeparation": 20
+
+  "encoding": {"x": {"field": "Date", "type": "temporal", "axis": {"title":null, "grid": false}}},
+
+  "layer": [
+
+    {"encoding": {
+
+        "y": {"field": "Value", 
+
+              "type": "quantitative", 
+              "title":"",
+              
+               "axis": {"grid": false}
+              }
+            },
+
         
-      }
-    },
-    "y": {
-      "field": "Value",
-      "type": "quantitative",
-      "title": "",
-      "axis": {"grid": false}
+        "layer": [{"mark": {"type": "line", "color": "mediumvioletred", "interpolate": "monotone"}},
+
+                  {"transform": 
+
+                      [{"filter": {"selection": "hover"}}], 
+
+                        "mark": "point"}
+
+      ]
+
     },
     
-    "tooltip": [
-      {"field": "Date", "type": "temporal"},
-      {
-        "field": "Value",
-        "title": "Current budget deficit (% of GDP)",
-        "type": "quantitative"
-      }
-    ]
-  }
-},
 
-{
-      "mark": {"type": "rule", "color": "darkgrey", "size": 0.5},
-      "encoding": {"y": {"field": "Lines", "type": "quantitative"}},
+    {"mark": "rule", 
+
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0.1, "selection": "hover"},
+          "value": 0
+        },
+
+        "tooltip": [
+
+          {"field": "Date", "type": "temporal", "format":"%B, %Y"},
+          {"field": "Value", "type": "quantitative", "format": ""}
+
+        ]
+
+      },
+
+
+      
+      "selection": {
+        "hover": {
+          "type": "single",
+          "fields": ["Date"],
+          "nearest": true,
+          "on": "mouseover",
+          "empty": "none",
+          "clear": "mouseout"
+
+        }
+
+      }
+
+    },
+
+    {
+      "mark": {"type": "rule", "color": "darkgrey", "size": 0.75},
+      "encoding": {"y": {"field": "Value", "type": "quantitative"}},
       "data": {
         "values": [
-          {"Lines": "0"}
+          {"Value": "0"}
         ]
         
       }
     }
 
-]
+  ]
 
 };
 
