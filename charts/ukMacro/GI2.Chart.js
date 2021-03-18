@@ -1,7 +1,7 @@
 var ChartGI2 =
 
-{
-  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+
+  {"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 
   "description": "(GI2) GDP year on year growth (%)",
 
@@ -20,54 +20,82 @@ var ChartGI2 =
   "height": 300,
   "width": 345,
 
-"layer": [
+ "encoding": {"x": {"field": "Date", "type": "temporal", "axis": {"title":null, "grid": false}}},
 
-  {"mark": {
-    "type": "line",
-    "point": false,
-    "interpolate": "monotone",
-    "color": "goldenrod"
-  },
-  "encoding": {
-    "x": {
-      "field": "Date",
-      "type": "temporal",
-      "axis": {
-        "title": null,
-        "grid": false
-      }
-    },
-    "y": {
-      "field": "Value",
-      "type": "quantitative",
-      "title": "",
-      "axis": {"grid": false}
+  "layer": [
+
+    {"encoding": {
+
+        "y": {"field": "Value", 
+
+              "type": "quantitative", 
+              "title":"",
+              
+               "axis": {"grid": false}
+              }
+            },
+
+        
+        "layer": [{"mark": {"type": "line", "color": "goldenrod", "interpolate": "monotone"}},
+
+                  {"transform": 
+
+                      [{"filter": {"selection": "hover"}}], 
+
+                        "mark": "point"}
+
+      ]
+
     },
     
-    "tooltip": [
-      {"field": "Date", "type": "temporal"},
-      {
-        "field": "Value",
-        "title": "GDP growth (%)",
-        "type": "quantitative"
-      }
-    ]
-  }
-},
 
-{
+    {"mark": "rule", 
+
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0.1, "selection": "hover"},
+          "value": 0
+        },
+
+        "tooltip": [
+
+          {"field": "Date", "type": "temporal", "format":"%B, %Y"},
+          {"field": "Value", "type": "quantitative", "format": ""}
+
+        ]
+
+      },
+
+
+      
+      "selection": {
+        "hover": {
+          "type": "single",
+          "fields": ["Date"],
+          "nearest": true,
+          "on": "mouseover",
+          "empty": "none",
+          "clear": "mouseout"
+
+        }
+
+      }
+
+    },
+
+    {
       "mark": {"type": "rule", "color": "darkgrey", "size": 0.75},
-      "encoding": {"y": {"field": "Lines", "type": "quantitative"}},
+      "encoding": {"y": {"field": "Value", "type": "quantitative"}},
       "data": {
         "values": [
-          {"Lines": "0"}
+          {"Value": "0"}
         ]
         
       }
     }
-    
-    
-    ]
+
+  ]
+
 };
 
 vegaEmbed('#ChartGI2', ChartGI2, {"actions": false});
