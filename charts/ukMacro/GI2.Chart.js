@@ -60,7 +60,7 @@ var ChartGI2 =
         "tooltip": [
 
           {"field": "Date", "type": "temporal", "format":"%B, %Y"},
-          {"field": "Value", "type": "quantitative", "format": ""}
+          {"field": "Value", "title": "GDP growth", "type": "quantitative", "format": ""}
 
         ]
 
