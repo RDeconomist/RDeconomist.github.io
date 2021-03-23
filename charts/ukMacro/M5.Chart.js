@@ -1,14 +1,13 @@
-var ChartF4 =
+var ChartM5 =
 
 {
-
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 
-  "description": "(F4) Current UK budget deficit (% GDP)",
+  "description": "(M5) USD to GBP exchange rate",
 
    "title": {
-    "text": "Deficit/GDP ratio",
-    "subtitle":"% GDP. Source: ONS",
+    "text": "USD/GBP exhange rate",
+    "subtitle":"Calendar year average. Source: [tbc], OFX",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -16,13 +15,11 @@ var ChartF4 =
   },
   
   "data": {
-    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/F4.DataHub.FiscalCurrentBudgetDefPerDGP.csv"},
-
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/M5_USDGBP_LongRun.csv"},
   "height": 300,
   "width": 345,
-
-
-  "encoding": {"x": {"field": "Date", "type": "temporal", "axis": {"title":null, "grid": false}}},
+  
+  "encoding": {"x": {"field": "Year", "type": "temporal", "axis": {"title":null, "grid": false}}},
 
   "layer": [
 
@@ -32,13 +29,13 @@ var ChartF4 =
 
               "type": "quantitative", 
               "title":"",
-              
+              "scale": {"domain": [0, 12]},
                "axis": {"grid": false}
               }
             },
 
         
-        "layer": [{"mark": {"type": "line", "color": "mediumvioletred", "interpolate": "monotone"}},
+        "layer": [{"mark": {"type": "line", "color": "darkblue"}},
 
                   {"transform": 
 
@@ -49,7 +46,6 @@ var ChartF4 =
       ]
 
     },
-    
 
     {"mark": "rule", 
 
@@ -61,8 +57,8 @@ var ChartF4 =
 
         "tooltip": [
 
-          {"field": "Date", "type": "temporal", "format":"%B, %Y"},
-          {"field": "Value", "title": "Deficit/GDP ratio", "type": "quantitative", "format": ""}
+          {"field": "Year", "type": "temporal", "format":"%B, %Y"},
+          {"field": "Value", "title": "USD to GBP", "type": "quantitative", "format": ""}
 
         ]
 
@@ -73,7 +69,7 @@ var ChartF4 =
       "selection": {
         "hover": {
           "type": "single",
-          "fields": ["Date"],
+          "fields": ["Year"],
           "nearest": true,
           "on": "mouseover",
           "empty": "none",
@@ -83,23 +79,11 @@ var ChartF4 =
 
       }
 
-    },
-
-    {
-      "mark": {"type": "rule", "color": "darkgrey", "size": 0.75},
-      "encoding": {"y": {"field": "Value", "type": "quantitative"}},
-      "data": {
-        "values": [
-          {"Value": "0"}
-        ]
-        
-      }
     }
 
   ]
 
 };
 
-vegaEmbed('#ChartF4', ChartF4, {"actions": false});
 
-
+vegaEmbed('#ChartM5', ChartM5, {"actions": false});

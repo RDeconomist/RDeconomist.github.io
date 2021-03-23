@@ -63,7 +63,7 @@ var ChartF3 =
         "tooltip": [
 
           {"field": "Date", "type": "temporal", "format":"%B, %Y"},
-          {"field": "Value", "type": "quantitative", "format": ",.0f"}
+          {"field": "Value", "title": "Budget deficit", "type": "quantitative", "format": ",.0f"}
 
         ]
 
