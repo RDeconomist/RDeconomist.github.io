@@ -15,7 +15,7 @@ var ChartM8 =
   },
   
   "data": {
-    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/M7.DataHub.Monetary.UKTreasuryBonds.csv"},
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/M8.DataHub.Monetary.UKTreasuryBonds.csv"},
   "height": 300,
   "width": 345,
   
