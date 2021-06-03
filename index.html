@@ -1,118 +1,41 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
-
-<!-- ////////////////////////////// START HEAD //////////////////////////////-->
+<html lang="en">
 <head>
 
 <!--Meta stuff-->
-<meta charset="utf-8">
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--Facebook meta - this comes up when you post a link to the site-->
-<meta property="og:title" content="Rapid Charts">
-<meta property="og:description" content="Automated, verifiable, beautiful">
-<meta property="og:image" content="chart1.png">
-<meta property="og:url" content="http://rapidcharts.io/index.htm">
-
-<!--Favicon-->
-<link rel="icon" href="images/icon.png">
-<link rel="shortcut icon" href="images/icon.png" />
-<link rel="apple-touch-icon" href="images/icon.png" />
-
-
-<title>Rapid Charts</title>
-
-<!--Main Stylesheet-->
-<link rel="stylesheet" href="main.css">
-
-<!--Code to allow Vega embed-->
-<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
-
+<!--Title for the page:-->
+    <title>Rapid Charts</title>
+    
+<!--Link to main Stylesheet-->
+    <link rel="stylesheet" href="index.css">
+    
 </head>
 <!-- ////////////////////////////// END HEAD //////////////////////////////-->
 
 
-
-<!-- ////////////////////////////// START BODY //////////////////////////////-->
 <body>
 
-
-<!-- ///TOP SECTION - HEADER AND LINKS-->
-<!-- portfolio grid section -->
-<section id="work-detail">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 work-detail ">
-        <div class="work-detail"> 
-
-  
-  <!-- heading for page-->
-<div class="wrap">
-  <h1>rapid<span style="color: #ff9a00">charts</span></h1>
-
-  
-  <!-- topics sub heading clickable links -->
-  <p><a href="index.html">  Home  </a> &nbsp; | &nbsp; <a href="covid_live.html">  Covid  </a> &nbsp; | &nbsp; <a href="ukMacro.html">  Economy </a> &nbsp; | &nbsp; <a href="surf.html">  Surfing </a> </a> &nbsp; | &nbsp; <a href="about.html">  About </a></p>
-  <!-- topics sub heading clickable links -->
-
-  <!-- White space across the page --> 
-  <span style="display:block; height: 20px;"></span>
-<!-- ///END OF TOP SECTION -->
-  
-
-
-
-  <p>A new site devoted to data. The chart below auto-updates daily. Use the drop-down box to compare UK regions. More coronavirus analysis is <a href="covid_live.html"> here</a>.</p> 
-  </div>
-
-<!-- White space across the page --> 
-  <span style="display:block; height: 20px;"></span>
-
-  <!--Chart 7 - Start-->
-    <div id="visMobile1" >
-    <script src="chartMobile1.js"></script>
+    <div class="heading">    
+      <h1>rapid<span style="color:red">charts</span></h1>
+      <span style="display:block; height: 20px;"></span>
+      <p>Automated<span style="color:red; font-weight: 900; font-size:20px">.</span></p>
+      <p>Verified<span style="color:blue; font-weight: 900; font-size:20px">.</span></p>
+      <p>Social<span style="color:yellow; font-weight: 900; font-size:20px">.</span></p>
+      <p>Beautiful<span style="color:green; font-weight: 900; font-size:20px">.</span></p>
     </div>
-  <!--Chart 7 - End-->
 
-<!-- White space across the page --> 
-  <span style="display:block; height: 30px;"></span>
-
-  <div class="wrap">
-
-  <p>The data here refers to the day cases were published. To see the same chart, drawn for the days specimens were collected, click <a href="index_specimen.html"> here</a>.</p>
-  <p><b>Richard Davies</b></p>
-  </div>
-
-
-<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
-
-<!-- White space across the page --> 
-  <span style="display:block; height: 30px;"></span>
-
-<!-- footer section -->
-<footer class="footer">
-  <div class="container">
-    <div class="col-md-6 left">
-      <p><a href="https://twitter.com/RapidCharts"> @RapidCharts </a> | <a href="https://twitter.com/RD_Economist"> @RD_Economist </a> | <a href="mailto:rd@richarddavies.io"> rd@richarddavies.io </a></p>
+    <div class="buttonDiv">    
+        <button class="button">START</button>
     </div>
-    <div class="col-md-6 right">
-      <p>© BBE Ltd. All Rights Reserved</p>
-    </div>
-  </div>
-</footer>
-<!-- footer section --> 
 
-<!-- JS FILES --> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/jquery.fancybox.pack.js"></script> 
-<script src="js/jquery.waypoints.min.js"></script> 
-<script src="js/retina.min.js"></script> 
-<script src="js/modernizr.js"></script> 
-<script src="js/main.js"></script>
+
+
+    <canvas></canvas>
+    <script src="canvas2.js"></script>
+
 </body>
 </html>
