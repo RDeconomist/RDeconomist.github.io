@@ -14,17 +14,18 @@ canvas.height = window.innerHeight;
 //This gives us the methods and functions to draw on canvas
 var c = canvas.getContext('2d');
 
-
+///////////////////////////
 ///Control Panel
+///////////////////////////
 //Speed (sp), Number (n), Size (w), Shape (sh)
-var sp1 = 3;
+var sp1 = 1;
 var sp2 = 5;
 
 var n1 = 1000;
-var n2 = 30;
+var n2 = 100;
 
-var w1 = 0.01;
-var w2 = 0.01;
+var w1 = 0.002;
+var w2 = 0.005;
 
 var sh = 2;
 
@@ -106,17 +107,42 @@ var circle2Array = [];
 //And then they get pushed into the array:
 
 for (var i = 0; i < n1; i++) {
-    var x = Math.random() * innerWidth;
-    var y = Math.random() * innerHeight;
-    var dx = (Math.random() - 0.5)*sp1
-    var dy = (Math.random() - 0.5)*sp1
+    
+    // The original x and y (where the bubbles start from) affects the appearance a lot.
+    var x = innerWidth/2;
+    var y = innerHeight/2;
+    //var x = Math.random() * innerWidth;
+    //var y = Math.random() * innerHeight;
+    
+    
+    
+    // The direction the bubbles travel:
+    
+    var dist = Math.random();
+    var dx = Math.random()-0.5;
+    // var dy = ((dist*dist) - (dx*dx))^0.5
+    n = (dist*dist);
+    m = (dx*dx);
+    nm = n-m;
+    var dy = Math.sqrt(nm);
+
+    
+    // var dist = Math.random()
+    // var dx = (Math.random() - 0.5)*sp1
+    // var dy = (dist - dx)*sp1
+    
+    // var dx = (Math.random() - 0.5)*sp1
+    // var dy = (Math.random() - 0.5)*sp1
+    
+    
+    
     var r = Math.random()*window.innerWidth*w1;
     circle1Array.push(new Circle1(x, y, dx, dy, r))
 }
 
 for (var i = 0; i < n2; i++) {
-    var x = Math.random() * innerWidth;
-    var y = Math.random() * innerHeight;
+    var x = (0.5)*innerWidth;
+    var y = (0.8)*innerHeight;
     var dx = (Math.random() - 0.5)*sp2
     var dy = (Math.random() - 0.5)*sp2
     var r = Math.random()*window.innerWidth*w2;
