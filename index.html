@@ -22,20 +22,69 @@
     <div class="heading">    
       <h1>rapid<span style="color:red">charts</span></h1>
       <span style="display:block; height: 20px;"></span>
-      <p>Automated<span style="color:red; font-weight: 900; font-size:20px">.</span></p>
-      <p>Verified<span style="color:blue; font-weight: 900; font-size:20px">.</span></p>
-      <p>Social<span style="color:yellow; font-weight: 900; font-size:20px">.</span></p>
-      <p>Beautiful<span style="color:green; font-weight: 900; font-size:20px">.</span></p>
+      <p>automated<span style="color:red; font-weight: 900; font-size:20px">.</span></p>
+      <!-- <p>Verified<span style="color:blue; font-weight: 900; font-size:20px">.</span></p> -->
+      <p>social<span style="color:yellow; font-weight: 900; font-size:20px">.</span></p>
+      <p>beautiful<span style="color:green; font-weight: 900; font-size:20px">.</span></p>
     </div>
 
-    <div class="buttonDiv">    
-        <a href="home.html" class="button">START</a>
+    <div class="buttonDiv1">    
+        <button class="button1">START</button>
     </div>
 
+<!-- Trigger/Open The Modal -->
+    <div id="myBtn" class="buttonDiv2">    
+        <button class="button2">BUBBLES</button>
+    </div>
+
+
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h5>Bubble Controls Coming Soon</h5>
+  </div>
+
+</div>
 
 
     <canvas></canvas>
     <script src="canvas2.js"></script>
+
+<script>
+    // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+</script>
+
 
 </body>
 </html>
