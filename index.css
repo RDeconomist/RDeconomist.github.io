@@ -38,22 +38,49 @@ h1 {
 	height: 40px;
 }
 
-.heading {
-    position: fixed;
-    top: 10%;
-    left: 10%;
+
+
+.heading{
+    border-width: 0px;
+    border-color: white;
+    border-style: dashed;
+    border-radius: 10px;
+    text-align: left;
+  
+    width: 340;
+    height: 18%;
+  
+    position: absolute;
+    left:50%;
+    top:5%;
+    transform: translate(-50%, 25%);
+   
+    
+  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16 px;
+    color: white
+  }
+  
+.buttonDiv1 {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
 }
 
-.buttonDiv {
-    position: fixed;
-    top: 50%;
-    left: 35%;
+.buttonDiv2 {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, 190%);
 }
 
-.button {
+.button1  {
+    width:140px;
     font-family: "Catamaran";
 	font-weight: 900;
-    background-color: rgba(40, 40, 40, 1);
+    background-color: rgba(40, 40, 40, 0.1);
     color:white;
     border: none;
     padding: 15px 32px;
@@ -64,15 +91,110 @@ h1 {
     margin: 4px 2px;
     border-radius: 12px;
     cursor: pointer;
-    font-family: "Catamaran";
+    transition: background-color 1s ease;
   }
+
+.button1:hover {
+    background-color:red;
+    /* transition-delay: 1s;
+    transition-property: background-color; */
+}  
+
+
+.button2  {
+    width:140px;
+    font-family: "Catamaran";
+	font-weight: 900;
+    background-color: rgba(40, 40, 40, .5);
+    color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(40, 40, 40, 0.2);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: border-color 250ms ease;
+  }
+
+.button2:hover {
+    /* background-color: rgba(255, 165, 0, 1);
+    border-radius: 80px; */
+    color: rgba(255, 255, 255, 1);
+    width: 140px;
+    border-style: solid;
+    border-width: 2px;
+    /* border-color: rgba(255, 165, 0, 1); */
+    border-color:red;
+    
+    
+    /* transition-delay: 1s;
+    transition-property: background-color; */
+}  
+
+
+
 
 p {
 	font-family: "Catamaran";
-	font-weight: 300;
+    font-variant: small-caps;
+	font-weight: 800;
+    font-size: 1.4em;
 	color:white;
 	max-width: 800px; 
-	margin: 0 0 0 0;
+	margin: 0 0 0 3px;
 	padding: 0 0 0 0; 
-	float: none !important; 
+	float: none !important;
+    text-align: left;
+ 
 }
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    font-family: "Catamaran";
+    font-variant: small-caps;
+	font-weight: 800;
+    font-size: 1.4em;
+	color:black;
+
+}
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
