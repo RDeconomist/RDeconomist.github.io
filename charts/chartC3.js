@@ -1,7 +1,7 @@
 var chartC3 = {  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
  
  "title": {
-    "text": "Cases: English regions - since September",
+    "text": "Cases: English regions - long run",
     "subtitle":"New cases by publish date. Rolling weekly rate per 100k population.",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
@@ -16,7 +16,7 @@ var chartC3 = {  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "format": {"type": "csv"}
   },
   "height": 300,
-  "width": 340,
+  "width": 300,
   "xxconfig": {"background": "#FcFdFd"},
   "mark": {"type": "bar", "point": false},
   "selection": {
@@ -28,7 +28,7 @@ var chartC3 = {  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
       "filter": {
         "field": "date",
         "range": [
-          {"year": 2020, "month": "sep", "date": 1},
+          {"year": 2020, "month": "jan", "date": 1},
           {"year": 2050, "month": "dec", "date": 30}
         ]
       }
@@ -38,14 +38,14 @@ var chartC3 = {  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "x": {
       "field": "date", 
       "type": "temporal", 
-      "title": "Date", 
+      "title": null, 
       "axis":{"grid":false}
       },
 
     "y": {
       "field": "newCasesByPublishDateRollingRate",
       "type": "quantitative",
-      "title": "New cases",
+      "title": null,
       "axis":{"grid":false}
       },
 

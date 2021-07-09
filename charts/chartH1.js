@@ -4,8 +4,8 @@ var chartH1 = {
   "description": "Hospital admissions",
 
 "title": {
-    "text": "Hospitals: new admissions",
-    "subtitle":"Daily new hospital admissions",
+    "text": "Hospital Admissions",
+    "subtitle":"Daily new hospital admissions, UK nations",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -19,7 +19,7 @@ var chartH1 = {
 
   "height": 130,
   
-  "width": 150,
+  "width": 120,
   
   "mark": {"type": "line", "color":"red"},
   
@@ -29,7 +29,7 @@ var chartH1 = {
         "field": "date",
         "range": [
           {"year": 2020, "month": "feb", "date": 1},
-          {"year": 2020, "month": "dec", "date": 30}
+          {"year": 2030, "month": "dec", "date": 30}
         ]
       }
     }
@@ -37,7 +37,7 @@ var chartH1 = {
   
   "encoding": {
     
-    "x": {"field": "date", "type": "temporal", "title": "Date"},
+    "x": {"field": "date", "type": "temporal", "title": null},
     
     "y": {
       "field": "newAdmissions",

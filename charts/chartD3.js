@@ -2,7 +2,7 @@ var chartD3 = {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 
 "title": {
-    "text": "Deaths by publication date: English regions",
+    "text": "Deaths - English regions (by publication date)",
     "subtitle":"New deaths by publish date.",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
@@ -18,7 +18,7 @@ var chartD3 = {
 
   "height": 300,
   
-  "width": 330,
+  "width": 300,
   
   "mark": {"type": "bar", "width":10},
   
@@ -51,7 +51,7 @@ var chartD3 = {
       "filter": {
         "field": "date",
         "range": [
-          {"year": 2020, "month": "dec", "date": 15},
+          {"year": 2020, "month": "dec", "date": 1},
           {"year": 2050, "month": "dec", "date": 30}
         ]
       }
@@ -59,11 +59,11 @@ var chartD3 = {
   ],
 
   "encoding": {
-    "x": {"field": "date", "type": "temporal", "title": "Date"},
+    "x": {"field": "date", "type": "temporal", "title": null},
     "y": {
       "field": "newDeaths28DaysByPublishDate",
       "type": "quantitative",
-      "title": "New deaths, daily"
+      "title": null
     },
     
       

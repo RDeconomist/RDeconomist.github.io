@@ -2,7 +2,7 @@ var chartC1 = {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": {
     "text": "Cases: UK nations",
-    "subtitle":"New cases by publish date. Source: coronavirus.data.gov.uk",
+    "subtitle":"New cases by publish date, rolling rate.",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -14,7 +14,7 @@ var chartC1 = {
     "format": {"type": "csv"}
   },
   "height": 300,
-  "width": 345,
+  "width": 310,
   "xxconfig": {"background": "#FcFdFd"},
   "mark": {"type": "line", "point": false},
   "selection": {
@@ -35,13 +35,13 @@ var chartC1 = {
     "x": {
       "field": "date",
       "type": "temporal",
-      "title": "Date",
+      "title": null,
       "axis": {"grid": false}
     },
     "y": {
       "field": "newCasesByPublishDateRollingRate",
       "type": "quantitative",
-      "title": "New Cases, rolling rate",
+      "title": null,
       "axis": {"grid": false}
     },
     "color": {
@@ -49,7 +49,7 @@ var chartC1 = {
       "type": "nominal",
       "scale": {"scheme": "set1"},
       "title": "Region",
-      "legend": {"orient": "top-left", "fillColor": "#FcFdFd"}
+      "legend": {"orient": "top-right", "fillColor": "#FcFdFd"}
     },
     "opacity": {"condition": {"selection": "region", "value": 1}, "value": 0.1},
     "tooltip": [

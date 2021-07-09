@@ -19,12 +19,13 @@ p {
 	margin: 5px 5px;
 	line-height: 22.4px;
 	color: #323232;
+  
 }
 
 
 body {
-  background-color: #f8fcfd;
-}
+  background-color: #ebe5e5;
+ }
 
 /* ------------------------------------------------------------------------------
 	Grid stuff
@@ -44,7 +45,8 @@ body {
   background-color: #ffffff;
   padding: 5px;
   border-radius: 10px;
-  width: fit-content;
+  width: 340px;
+  margin:auto;
 }
 .grid_items > div:nth-child(3n + 2) {
   background-color: #ffffff;
@@ -60,17 +62,33 @@ body {
 
 /* One column*/
 @media only screen and (min-width: 250px) {
-  .grid_items, .wrap {
+  .grid_items {
     grid-template-columns: 100%;
     max-width: 420px; 
     margin: 0 auto 0 auto !important;
 	padding: 0 5 0 5; 
     grid-column-gap: 10px;
     grid-row-gap: 40px;
+    text-align: center;
+  }
+
+  .wrap {
+    grid-template-columns: 100%;
+    max-width: 360px; 
+    margin: 0 auto 0 auto !important;
+	padding: 0 5 0 5; 
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    text-align: center;
   }
   .grid_items > div {
     padding: 10px;
   }
+  .rubric {
+    text-align: left;
+  }
+
+
 }
 
 
@@ -85,6 +103,7 @@ body {
 	padding: 0 5 0 5; 
     grid-column-gap: 10px;
     grid-row-gap: 40px;
+    text-align: left;
   }
   .grid_items > div {
     padding: 10px;
@@ -195,7 +214,7 @@ h5 {
 a {
 	xxfont-family: "Heebo";
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: 300;
     xxbackground-color: lightblue ;
     xxcolor: white;
     padding: 0.05em 0.10em;
@@ -206,8 +225,8 @@ a {
 
 /* unvisited link */
 a:link {
-  color: black;
-  text-decoration: none;
+  color: #320064;
+  text-decoration: underline;
 }
 
 /* visited link */

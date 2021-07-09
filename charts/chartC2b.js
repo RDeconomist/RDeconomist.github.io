@@ -2,7 +2,7 @@ var chartC2b = {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 
 "title": {
-    "text": "Cases by specimen date: English regions - past month",
+    "text": "Cases by specimen date: English regions",
     "subtitle":"Daily new cases by specimen date.",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
@@ -18,7 +18,7 @@ var chartC2b = {
 
   "height": 300,
   
-  "width": 330,
+  "width": 300,
   
   "mark": {"type": "bar", "width":10},
   
@@ -59,11 +59,11 @@ var chartC2b = {
   ],
 
   "encoding": {
-    "x": {"field": "date", "type": "temporal", "title": "Date"},
+    "x": {"field": "date", "type": "temporal", "title": null},
     "y": {
       "field": "newCasesBySpecimenDate",
       "type": "quantitative",
-      "title": "New cases"
+      "title": null
     },
     
       

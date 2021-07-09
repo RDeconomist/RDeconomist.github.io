@@ -3,7 +3,7 @@ var chartC4 = {
 
   "title": {
     "text": "Case positivity: English regions",
-    "subtitle":"Positive tests %, by specimen date, rolling weekly sum.",
+    "subtitle":"Positivity rate %, by specimen date, rolling weekly sum.",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -16,7 +16,7 @@ var chartC4 = {
     "format": {"type": "csv"}
   },
   "height": 300,
-  "width": 345,
+  "width": 300,
   "config": {"background": "#FfFfFf"},
   "mark": {"type": "line", "point": false},
   "selection": {
@@ -37,13 +37,13 @@ var chartC4 = {
     "x": {
       "field": "date",
       "type": "temporal",
-      "title": "Date",
+      "title": null,
       "axis": {"grid": false}
     },
     "y": {
       "field": "uniqueCasePositivityBySpecimenDateRollingSum",
       "type": "quantitative",
-      "title": "Positivity rate (%)",
+      "title": null,
       "axis": {"grid": false}
     },
     "color": {
@@ -51,7 +51,7 @@ var chartC4 = {
       "type": "nominal",
       "scale": {"scheme": "set1"},
       "title": "Region",
-      "legend": {"orient": "top-left", "fillColor": "#FfFfFf"}
+      "legend": {"orient": "top-right", "fillColor": "#FfFfFf"}
     },
     "opacity": {"condition": {"selection": "region", "value": 1}, "value": 0.1},
     "tooltip": [
