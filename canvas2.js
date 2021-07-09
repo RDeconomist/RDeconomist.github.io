@@ -144,7 +144,7 @@ for (var i = 0; i < n1; i++) {
 
 for (var i = 0; i < n2; i++) {
     var x = (0.5)*innerWidth;
-    var y = (0.8)*innerHeight;
+    var y = (0.5)*innerHeight;
     var dx = (Math.random() - 0.5)*sp2
     var dy = (Math.random() - 0.5)*sp2
     var r = Math.random()*window.innerWidth*w2;
