@@ -18,14 +18,14 @@ var c = canvas.getContext('2d');
 ///Control Panel
 ///////////////////////////
 //Speed (sp), Number (n), Size (w), Shape (sh)
-var sp1 = 1;
+var sp1 = 5;
 var sp2 = 5;
 
-var n1 = 1000;
-var n2 = 100;
+var n1 = 50;
+var n2 = 10;
 
-var w1 = 0.002;
-var w2 = 0.005;
+var w1 = 0.005;
+var w2 = 0.010;
 
 var sh = 2;
 
@@ -42,8 +42,8 @@ function Circle1(x, y, dx, dy, r) {
         c.arc(this.x, this.y, this.r, 0, Math.PI*sh, false);
         //c.strokeStyle = 'pink';
         //c.fillStyle = 'pink';
-        c.strokeStyle = 'rgba(240,240,240,0.2)';
-        c.fillStyle = 'rgba(245,240,240,0.2)';
+        c.strokeStyle = 'rgba(240,240,240,0.5)';
+        c.fillStyle = 'rgba(245,240,240,0.5)';
         c.stroke();
         c.fill();
     }
@@ -117,22 +117,24 @@ for (var i = 0; i < n1; i++) {
     
     
     // The direction the bubbles travel:
+
+    // Attempt to make cirular:
     
-    var dist = Math.random();
-    var dx = Math.random()-0.5;
-    // var dy = ((dist*dist) - (dx*dx))^0.5
-    n = (dist*dist);
-    m = (dx*dx);
-    nm = n-m;
-    var dy = Math.sqrt(nm);
+    // var dist = Math.random();
+    // var dx = Math.random()-0.5;
+    // // var dy = ((dist*dist) - (dx*dx))^0.5
+    // n = (dist*dist);
+    // m = (dx*dx);
+    // nm = n-m;
+    // var dy = Math.sqrt(nm);
 
     
     // var dist = Math.random()
     // var dx = (Math.random() - 0.5)*sp1
     // var dy = (dist - dx)*sp1
     
-    // var dx = (Math.random() - 0.5)*sp1
-    // var dy = (Math.random() - 0.5)*sp1
+    var dx = (Math.random() - 0.5)*sp1
+    var dy = (Math.random() - 0.5)*sp1
     
     
     
