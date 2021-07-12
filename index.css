@@ -27,7 +27,7 @@ body {
 	Headings
 -------------------------------------------------------------------------------*/
 
-h1 {
+h1, span {
 	font-family: "Catamaran";
 	font-variant: small-caps;
 	font-size: 60px;

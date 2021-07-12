@@ -19,17 +19,10 @@ var c = canvas.getContext('2d');
 ///////////////////////////
 //Speed (sp), Number (n), Size (w), Shape (sh)
 var sp1 = 5;
-var sp2 = 5;
+var sp2 = 7;
 
-// var n1 = 50;
-
-var n1 = document.getElementById('range1');
-console.info(input.defaultValue); // value default (15)
-input.onchange = function () {
-  console.info(input.value); // value change
-};
-
-var n2 = 10;
+var n1 = 50;
+var n2 = 15;
 
 var w1 = 0.005;
 var w2 = 0.010;
@@ -123,9 +116,7 @@ for (var i = 0; i < n1; i++) {
     
     
     
-    // The direction the bubbles travel:
-
-    // Attempt to make cirular:
+    // // The direction the bubbles travel:
     
     // var dist = Math.random();
     // var dx = Math.random()-0.5;
@@ -136,9 +127,9 @@ for (var i = 0; i < n1; i++) {
     // var dy = Math.sqrt(nm);
 
     
-    // var dist = Math.random()
-    // var dx = (Math.random() - 0.5)*sp1
-    // var dy = (dist - dx)*sp1
+    // // var dist = Math.random()
+    // // var dx = (Math.random() - 0.5)*sp1
+    // // var dy = (dist - dx)*sp1
     
     var dx = (Math.random() - 0.5)*sp1
     var dy = (Math.random() - 0.5)*sp1
