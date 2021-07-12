@@ -17,7 +17,7 @@ var ChartM5 =
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/M5_USDGBP_LongRun.csv"},
   "height": 300,
-  "width": 310,
+  "width": 295,
   
   "encoding": {"x": {"field": "Year", "type": "temporal", "axis": {"title":null, "grid": false}}},
 

@@ -17,7 +17,7 @@ var ChartM1b =
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/M1b.DataHub.MonetaryBroadMoneyLend.csv"},
   "height": 300,
-  "width": 295,
+  "width": 280,
 
   "encoding": {"x": {"field": "Date", "type": "temporal", "axis": {"title":null, "grid": false}}},
 

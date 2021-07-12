@@ -17,7 +17,7 @@ var ChartM4 =
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/M4.DataHub.MonetaryGDPMarketPrices.csv"},
   "height": 300,
-  "width": 305,
+  "width": 295,
   
   "encoding": {"x": {"field": "Date", "type": "temporal", "axis": {"title":null, "grid": false}}},
 

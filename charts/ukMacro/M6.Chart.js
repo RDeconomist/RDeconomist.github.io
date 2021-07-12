@@ -17,7 +17,7 @@ var ChartM6 =
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/M6.DataHub.MonetaryCBIndependence.csv"
   },
   "height": 300,
-  "width": 270,
+  "width": 255,
   "mark": {"type": "bar", "color": "darkblue"},
   "encoding": {
     "y": {"field": "Country", "type": "nominal", "title": "", "sort": "-x"},

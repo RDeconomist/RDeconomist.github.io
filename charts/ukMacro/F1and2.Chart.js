@@ -18,7 +18,7 @@ var ChartF1and2 =
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/F1.2.FiscalRevVExp.csv"},
 
   "height": 300,
-  "width": 295,
+  "width": 285,
   
   "encoding": {"x": {"field": "Date", "type": "temporal", "axis": {"title":null, "grid": false}}},
 

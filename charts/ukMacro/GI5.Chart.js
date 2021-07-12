@@ -17,7 +17,7 @@ var ChartGI5 =
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/GI5.DataHub.GrowthInnovationGovSpend.csv"},
   "height": 300,
-  "width": 295,
+  "width": 285,
 
    "encoding": {"x": {"field": "Date", "type": "temporal", "axis": {"title":null, "grid": false}}},
 

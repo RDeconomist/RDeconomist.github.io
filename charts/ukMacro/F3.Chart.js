@@ -17,7 +17,7 @@ var ChartF3 =
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/F3.DataHub.FiscalCurrentBudgetDefAnn.csv"},
   "height": 300,
-  "width": 295,
+  "width": 280,
 
 
 

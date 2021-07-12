@@ -17,7 +17,7 @@ var ChartM3 =
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/m3BankRate.csv"},
   "height": 340,
-  "width": 315,
+  "width": 305,
   
   "encoding": {"x": {"field": "Date", "type": "temporal", "axis": {"title":null, "grid": false}}},
 
