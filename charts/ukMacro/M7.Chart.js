@@ -7,7 +7,7 @@ var ChartM7 =
 
    "title": {
     "text": "Quantitative easing",
-    "subtitle":"BoE balnace sheet, reserve balances. Source: BoE weekly report",
+    "subtitle":"BoE balance sheet, reserve balances. Source: BoE weekly report",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",

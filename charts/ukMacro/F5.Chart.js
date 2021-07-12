@@ -17,7 +17,7 @@ var ChartF5 =
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/F5.DataHub.FiscalNetDebt.csv"},
   "height": 300,
-  "width": 345,
+  "width": 295,
 
   "encoding": {"x": {"field": "Date", "type": "temporal", "axis": {"title":null, "grid": false}}},
 

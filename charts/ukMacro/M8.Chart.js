@@ -17,7 +17,7 @@ var ChartM8 =
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/M8.DataHub.Monetary.UKTreasuryBonds.csv"},
   "height": 300,
-  "width": 345,
+  "width": 305,
   
   "encoding": {"x": {"field": "Date", "type": "temporal", "axis": {"title":null, "grid": false}}},
 

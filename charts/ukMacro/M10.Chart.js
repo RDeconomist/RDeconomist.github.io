@@ -17,7 +17,7 @@ var ChartM10 =
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/M10.DataHub.Monetary.HHMortgageRate.csv"},
   "height": 300,
-  "width": 345,
+  "width": 310,
   
   "encoding": {"x": {"field": "Date", "type": "temporal", "axis": {"title":null, "grid": false}}},
 

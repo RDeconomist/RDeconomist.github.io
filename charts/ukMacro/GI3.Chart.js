@@ -17,7 +17,7 @@ var ChartGI3 =
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/GI3.DataHub.GrowthInnovationGDPperCap.csv"},
   "height": 300,
-  "width": 345,
+  "width": 305,
 
    "encoding": {"x": {"field": "Date", "type": "temporal", "axis": {"title":null, "grid": false}}},
 

@@ -17,7 +17,7 @@ var ChartM1a =
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ukMacro/M1a.DataHub.MonetaryBroadMoney.csv"},
   "height": 300,
-  "width": 345,
+  "width": 295,
   
    "encoding": {"x": {"field": "Date", "type": "temporal", "axis": {"title":null, "grid": false}}},
 
