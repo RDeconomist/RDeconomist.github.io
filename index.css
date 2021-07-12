@@ -1,0 +1,338 @@
+
+/* ------------------------------------------------------------------------------
+	Typography
+-------------------------------------------------------------------------------*/
+
+/* Old fonts not used:
+@import url(http://fonts.googleapis.com/css?family=Cutive%20Mono:400);
+@import url(https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap); 
+*/
+
+@import url(https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap');
+
+canvas {
+    border: 1px solid;
+    background: black;
+}
+
+
+body {
+    margin: 0;
+}   
+
+/* ------------------------------------------------------------------------------
+	Headings
+-------------------------------------------------------------------------------*/
+
+h1 {
+	font-family: "Catamaran";
+	font-variant: small-caps;
+	font-size: 60px;
+	color:whitesmoke;
+	font-weight: 900;
+	font-kerning: 50;
+	margin: 0px 0px 30px 0px  ;
+	height: 40px;
+}
+
+
+
+.heading{
+    border-width: 0px;
+    border-color: white;
+    border-style: dashed;
+    border-radius: 10px;
+    text-align: left;
+  
+    width: 340;
+    height: 18%;
+  
+    position: absolute;
+    left:50%;
+    top:5%;
+    transform: translate(-50%, 25%);
+   
+    
+  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16 px;
+    color: white
+  }
+  
+.buttonDiv1 {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+
+.buttonDiv2 {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, 190%);
+}
+
+.button1  {
+    width:140px;
+    font-family: "Catamaran";
+	font-weight: 900;
+    background-color: rgba(40, 40, 40, 0.1);
+    color:white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+  }
+
+.button1:hover {
+    background-color:red;
+    /* transition-delay: 1s;
+    transition-property: background-color; */
+}  
+
+
+.button2  {
+    width:140px;
+    font-family: "Catamaran";
+	font-weight: 900;
+    background-color: rgba(40, 40, 40, .5);
+    color: rgba(255, 255, 255, 0.5);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(40, 40, 40, 0.2);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: border-color 250ms ease;
+  }
+
+.button2:hover {
+    /* background-color: rgba(255, 165, 0, 1);
+    border-radius: 80px; */
+    color: rgba(255, 255, 255, 1);
+    width: 140px;
+    border-style: solid;
+    border-width: 2px;
+    /* border-color: rgba(255, 165, 0, 1); */
+    border-color:red;
+    
+    
+    /* transition-delay: 1s;
+    transition-property: background-color; */
+}  
+
+
+
+
+p {
+	font-family: "Catamaran";
+    font-variant: small-caps;
+	font-weight: 800;
+    font-size: 1.4em;
+	color:white;
+	max-width: 800px; 
+	margin: 0 0 0 3px;
+	padding: 0 0 0 0; 
+	float: none !important;
+    text-align: left;
+ 
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    font-family: "Catamaran";
+    font-variant: small-caps;
+	font-weight: 800;
+    font-size: 1.4em;
+	color:black;
+
+}
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+ /* The Close Button */
+
+
+  .phoneOutline{
+    border-width: 2px;
+    border-color: rgb(36, 35, 35);
+    border-style: dashed;
+    border-radius: 30px;
+    background-color: black;
+    width: 320px;
+    height: 568px;
+
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12 px;
+}
+
+.controlContainer{
+ 
+    /* To centre the div vertically and horizontally*/
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    
+    width: 90%;
+    height: 75%;
+
+    background-color:rgb(221, 219, 217);
+    border-radius: 5px;
+
+}
+
+.controls1{
+    background-color: rgb(240, 240, 240); 
+    border-radius: 5px;
+    border-width: 20px 5px 5px 5px;
+    border-style: solid;
+    border-color: rgb(240, 240, 240);
+    width:80%;
+
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-95%);
+}
+
+
+.controls2{
+    background-color: rgb(240, 240, 240); 
+    border-radius: 5px 5px;
+    border-width: 0px;
+    width:70%;
+
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,20%);
+}
+
+.bubbles{
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    color: black;
+    text-align: center;
+}
+
+.bubbleTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/*
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #151515;
+}
+*/
+
+/* div {
+  position: absolute;
+} */
+
+#rangeValue {
+  xposition: relative;
+  xdisplay: block;
+  text-align: right;
+  font-size: 1em;
+  color: #999;
+  font-weight: 400;
+}
+
+.range {
+  width: 100%;
+  height: 15px;
+  -webkit-appearance: none;
+  background: grey;
+  outline: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: red;
+  cursor: pointer;
+  border: 4px solid #333;
+  box-shadow: -407px 0 0 400px black;
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
