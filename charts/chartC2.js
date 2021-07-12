@@ -66,7 +66,7 @@ var chartC2 = {
     "y": {
       "field": "newCasesByPublishDate",
       "type": "quantitative",
-      "title": null"
+      "title": null
     },
     
       

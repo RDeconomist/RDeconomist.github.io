@@ -51,7 +51,7 @@ var chartD2 = {
       "filter": {
         "field": "date",
         "range": [
-          {"year": 2020, "month": "dec", "date": 13},
+          {"year": 2020, "month": "dec", "date": 1},
           {"year": 2050, "month": "dec", "date": 30}
         ]
       }
