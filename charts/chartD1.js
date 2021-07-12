@@ -4,8 +4,8 @@ var chartD1 = {
   "description": "Coronavirus deaths",
 
 "title": {
-    "text": "Deaths: UK nations",
-    "subtitle":"Deaths within 28 days of Covid-19 diagnosis.",
+    "text": "Deaths",
+    "subtitle":"Deaths within 28 days of Covid-19 diagnosis, UK Nations.",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -19,7 +19,7 @@ var chartD1 = {
 
   "height": 130,
   
-  "width": 150,
+  "width": 120,
   
   "mark": {"type": "bar", "color":"#4f009f"},
   
@@ -29,7 +29,7 @@ var chartD1 = {
         "field": "date",
         "range": [
           {"year": 2020, "month": "feb", "date": 1},
-          {"year": 2020, "month": "dec", "date": 30}
+          {"year": 2050, "month": "dec", "date": 30}
         ]
       }
     }
@@ -37,7 +37,7 @@ var chartD1 = {
   
   "encoding": {
     
-    "x": {"field": "date", "type": "temporal", "title": "Date"},
+    "x": {"field": "date", "type": "temporal", "title": null},
     
     "y": {
       "field": "newDeaths28DaysByPublishDate",

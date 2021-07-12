@@ -2,7 +2,7 @@ var chartR1 = {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 
   "title": {
-    "text": "Risks: case rate, versus elderly population",
+    "text": "Risk hotspots: case rates and elderly population",
     "subtitle":"Case rate, per capita. Share of population 75+ years old. Source: my calcs",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
@@ -10,7 +10,7 @@ var chartR1 = {
     "color": "black"
   },
 
-  "description": "Covid-19 data, from ECDC",
+
 
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/db_covidLocalRisk.csv"
@@ -26,7 +26,7 @@ var chartR1 = {
       "field": "risk_share",
       "type": "quantitative",
       "axis": {
-        "title": "At risk / Population",
+        "title": "Elderly population",
         "grid": false,
         "tickCount": 14,
         "format": ".1%",
@@ -36,7 +36,10 @@ var chartR1 = {
     "y": {
       "field": "cases_pop",
       "type": "quantitative",
-      "axis": {"title": "Cases / Population", "grid": false, "format": ".2%"}
+      "axis": {
+        "title": "Case rate", 
+        "grid": false, 
+        "format": ".2%"}
     },
     
     "size": {
@@ -63,7 +66,7 @@ var chartR1 = {
   
   "xxconfig": {"background": "#FcFdFd"},
   "height": 300,
-  "width": 340,
+  "width": 280,
   "mark": {"type": "circle", "opacity": 0.4, "color":"blue"}
 }
 ;

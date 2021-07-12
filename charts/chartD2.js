@@ -2,8 +2,8 @@ var chartD2 = {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 
 "title": {
-    "text": "Deaths by date of death: English regions",
-    "subtitle":"Daily deaths by date of death.",
+    "text": "Deaths - English regions",
+    "subtitle":"Daily deaths since December 2020, by date of death.",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -18,7 +18,7 @@ var chartD2 = {
 
   "height": 300,
   
-  "width": 330,
+  "width": 300,
   
   "mark": {"type": "bar", "width":10},
   
@@ -59,11 +59,14 @@ var chartD2 = {
   ],
 
   "encoding": {
-    "x": {"field": "date", "type": "temporal", "title": "Date"},
+    "x": {
+      "field": "date", 
+      "type": "temporal", 
+      "title": null},
     "y": {
       "field": "newDeaths28DaysByDeathDate",
       "type": "quantitative",
-      "title": "New deaths"
+      "title": null
     },
     
       

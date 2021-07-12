@@ -9,8 +9,8 @@ var chartCD1 = {
   },
 
   "title": {
-    "text": "Cases vs Deaths: UK (7 day average)",
-    "subtitle":"New cases and new deaths (28d) by publish date.",
+    "text": "Cases vs Deaths",
+    "subtitle":"New cases and new deaths, by publish date.",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -19,7 +19,7 @@ var chartCD1 = {
 
   "height": 300,
 
-  "width": 290,
+  "width": 230,
 
   "config": {"background": "#ffFfFf"},
 
