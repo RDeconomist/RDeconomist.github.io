@@ -21,7 +21,14 @@ var c = canvas.getContext('2d');
 var sp1 = 5;
 var sp2 = 5;
 
-var n1 = 50;
+// var n1 = 50;
+
+var n1 = document.getElementById('range1');
+console.info(input.defaultValue); // value default (15)
+input.onchange = function () {
+  console.info(input.value); // value change
+};
+
 var n2 = 10;
 
 var w1 = 0.005;

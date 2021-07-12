@@ -6,7 +6,7 @@ var chartC7 =
 
    "title": {
     "text": "Freshwater West",
-    
+    "subtitle": "Predicted wave height (ft), range.",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -14,7 +14,7 @@ var chartC7 =
   },
   
   "height":300,
-  "width":350,
+  "width":300,
 
   "mark": {
     "type":"area",

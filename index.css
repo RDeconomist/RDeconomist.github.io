@@ -198,3 +198,141 @@ p {
     cursor: pointer;
   }
 
+
+
+  .phoneOutline{
+    border-width: 2px;
+    border-color: rgb(36, 35, 35);
+    border-style: dashed;
+    border-radius: 30px;
+    background-color: black;
+    width: 320px;
+    height: 568px;
+
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12 px;
+}
+
+.controlContainer{
+ 
+    /* To centre the div vertically and horizontally*/
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    
+    width: 90%;
+    height: 75%;
+
+    background-color:rgb(221, 219, 217);
+    border-radius: 5px;
+
+}
+
+.controls1{
+    background-color: rgb(240, 240, 240); 
+    border-radius: 5px;
+    border-width: 20px 5px 5px 5px;
+    border-style: solid;
+    border-color: rgb(240, 240, 240);
+    width:80%;
+
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-95%);
+}
+
+
+.controls2{
+    background-color: rgb(240, 240, 240); 
+    border-radius: 5px 5px;
+    border-width: 0px;
+    width:70%;
+
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,20%);
+}
+
+.bubbles{
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    color: black;
+    text-align: center;
+}
+
+.bubbleTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/*
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #151515;
+}
+*/
+
+/* div {
+  position: absolute;
+} */
+
+#rangeValue {
+  xposition: relative;
+  xdisplay: block;
+  text-align: right;
+  font-size: 1em;
+  color: #999;
+  font-weight: 400;
+}
+
+.range {
+  width: 100%;
+  height: 15px;
+  -webkit-appearance: none;
+  background: grey;
+  outline: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: red;
+  cursor: pointer;
+  border: 4px solid #333;
+  box-shadow: -407px 0 0 400px black;
+}
+
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
