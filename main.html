@@ -25,7 +25,7 @@
 <title>Rapid Charts</title>
 
 <!--Main Stylesheet-->
-<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="covid_live.css">
 
 <!--Code to allow Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
@@ -66,41 +66,44 @@
 
 
 
-  <p>A new site devoted to data. The chart below auto-updates daily. Use the drop-down box to compare UK regions. More coronavirus analysis is <a href="covid_live.html"> here</a>.</p> 
+  <p class="rubric">Tools and classes to make data analysis automated, shareable and interactive. Use the links above to find live dashboards, resources and course materials. 
+    
+
   </div>
+
+  <!--Begin Grid-->
+<div class="grid_items">
+    <div class="grid_item">
+      <div id="visMobile1">
+        <script src="chartMobile1.js"></script>
+      </div>
+    </div>
+</div>
+
+<div class="wrap">
+  <p class="rubric">The chart of Covid cases above auto-updates daily. You can use the drop-down box to compare UK regions. More coronavirus analysis is <a href="covid_live.html"> here</a>.</p> 
+</div>
+
 
 <!-- White space across the page --> 
   <span style="display:block; height: 20px;"></span>
 
-  <!--Chart 7 - Start-->
-    <div id="visMobile1" >
-    <script src="chartMobile1.js"></script>
-    </div>
-  <!--Chart 7 - End-->
 
-<!-- White space across the page --> 
-  <span style="display:block; height: 30px;"></span>
 
-  <div class="wrap">
-
-  <p>The data here refers to the day cases were published. To see the same chart, drawn for the days specimens were collected, click <a href="index_specimen.html"> here</a>.</p>
-  <p><b>Richard Davies</b></p>
-  </div>
 
 
 <!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
 
-<!-- White space across the page --> 
-  <span style="display:block; height: 30px;"></span>
+
 
 <!-- footer section -->
 <footer class="footer">
   <div class="container">
     <div class="col-md-6 left">
-      <p><a href="https://twitter.com/RapidCharts"> @RapidCharts </a> | <a href="https://twitter.com/RD_Economist"> @RD_Economist </a> | <a href="mailto:rd@richarddavies.io"> rd@richarddavies.io </a></p>
+      <!-- <p><a href="https://twitter.com/RapidCharts"> @RapidCharts </a> | <a href="https://twitter.com/RD_Economist"> @RD_Economist </a> | <a href="mailto:rd@richarddavies.io"> rd@richarddavies.io </a></p>
     </div>
     <div class="col-md-6 right">
-      <p>© BBE Ltd. All Rights Reserved</p>
+      <p>© BBE Ltd. All Rights Reserved</p> -->
     </div>
   </div>
 </footer>
