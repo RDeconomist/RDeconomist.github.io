@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Link to main Stylesheet-->
+    <link rel="stylesheet" href="apiTool.css">
+
+    <title>API tester</title>
+
+</head>
+
+
+<!-- /////////////////////////////////////////////////////// -->
+<body>
+    
+<h1 class="intro">api tester</h1>
+
+<div class="inputs">
+<input  id="url" type="url" class="urlBox"
+        placeholder="Paste API url here"
+        pattern="https://.*"></input>
+
+<br>        
+
+<button class ="button" onclick="testURL()">Fetch Data</button>
+</div>
+
+<div class="box">
+  <div class=boxTitle>Result:</div>
+  <div class="result" id="result"></div>
+</div>
+
+<!-- //////////////////////////////////////////////// -->
+
+<script>
+async function testURL() {
+  
+  //Grab the URL from the page:
+  var url = document.querySelector('#url').value;
+  console.log(url);
+
+  //Now use Fetch to get the URL:
+  const response = await fetch(url); 
+  const data = await response.json();
+  console.log(data);
+
+  //Now turn the results into JSON:
+  dataJSON = JSON.stringify(data);
+
+  //Now display the JSON on the page:
+  // document.body.innerHTML = dataJSON;
+  var x = document.getElementById("result");
+  x.innerHTML = dataJSON;
+
+}
+
+</script>
+
+
+</body>
+
+
+</html>

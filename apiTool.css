@@ -1,0 +1,163 @@
+
+/* Get hold of the font: */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+/* Global stuff: to apply everywhere using wildcard */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-variant: small-caps;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  margin:10px
+}
+
+
+
+
+.inputs{
+  border-width: 0px;
+  border-color: white;
+  border-style: dashed;
+  border-radius: 10px;
+  background-color: rgb(231, 225, 225);
+  text-align: center;
+
+  width: 75%;
+  height: 18%;
+
+  position: absolute;
+  left:50%;
+  top:5%;
+  transform: translate(-50%, 25%);
+ 
+  
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12 px;
+  color: white
+}
+
+
+.urlBox{
+  width: 90%;
+  padding: 2px;
+  margin:15px;
+  border-width: 2px;
+  border-color: #88ACE0;
+  border-style: solid;
+  border-radius: 20px;
+  background-color:white;
+  text-align: center;
+  font-size: 30;
+
+}
+
+.urlBox:hover{
+  border-width: 2px;
+  border-color:#2E37FE;
+  
+}
+
+
+
+.button{
+  border-width:0;
+  border-radius:10px;
+  background-color: #88ACE0;
+  width: 30%;
+  height: 30%;
+  margin: 10px;
+
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-30%);
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12 px;
+  color: white;
+  
+}
+
+.button:hover{
+  background-color:#2E37FE;
+}
+
+
+.box{
+  border-width: 1px;
+  border-color:black;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: black;
+  width: 75%;
+  height: 60%;
+
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-30%);
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12 px;
+  color: white;
+  
+}
+
+.boxTitle{
+  font-size: 12 px;
+  font-weight: 800;
+  color: white;
+  margin: 5px 5px 5px 15px;
+
+  
+}
+
+.result{
+  width:97%;
+  font-size: 10px;
+  font-weight: 200;
+  color:green;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-y: scroll;
+  overflow-x:hidden;
+  height:85%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(20, 20, 20);
+  border-radius: 10px;
+  border-width:1px;
+  border-color:white;
+  border-style:solid;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #88ACE0;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2E37FE;
+}
+
