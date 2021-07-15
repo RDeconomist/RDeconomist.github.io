@@ -6,7 +6,7 @@ var chartC10 =
 
    "title": {
     "text": "Westdale",
-
+    "subtitle": "Predicted wave height (ft), range.",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -14,7 +14,7 @@ var chartC10 =
   },
   
   "height":300,
-  "width":350,
+  "width":300,
 
   "mark": {
     "type":"area",
@@ -32,7 +32,7 @@ var chartC10 =
       "y": {
         "field": "westdale_high",
         "type": "quantitative",
-        "title": "Predicted wave height",
+        "title": null,
         "scale": {"domain": [0, 12]},
         "grid":null
       },
@@ -40,7 +40,7 @@ var chartC10 =
       "y2": {
         "field": "westdale_low",
         "type": "quantitative",
-        "title": "Predicted wave height",
+        "title": null,
         "grid":null
       }
     }

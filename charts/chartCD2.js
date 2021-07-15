@@ -9,7 +9,7 @@ var chartCD2 = {
   },
 
   "title": {
-    "text": "Cases vs Deaths: UK Cumulative",
+    "text": "Cases vs Deaths",
     "subtitle":"Cumulative cases and deaths by publish date.",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
@@ -19,7 +19,7 @@ var chartCD2 = {
 
   "height": 300,
 
-  "width": 290,
+  "width": 220,
 
   "config": {"background": "#ffFfFf"},
 

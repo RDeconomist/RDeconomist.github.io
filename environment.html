@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+
+<!--Meta stuff-->
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!--Facebook meta - this comes up when you post a link to the site-->
+<meta property="og:title" content="Covid Data">
+<meta property="og:description" content="A dashboard of interactive charts that runs directly from official government data. Automatically updates daily.">
+<meta property="og:image" content="linkimage.PNG">
+<meta property="og:url" content="http://coviddata.uk/index.htm">
+
+<!--Favicon-->
+<link rel="icon" href="icon-small.PNG">
+<link rel="shortcut icon" href="icon.PNG" />
+<link rel="apple-touch-icon" href="icon.PNG" />
+
+<!--Title - this is the bit that comes up in the tab-->
+<title>Covid Data UK</title>
+
+<!--Main Stylesheet-->
+<link rel="stylesheet" href="covid_live.css">
+
+<!--The next three lines allow the Vega embed-->
+<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+</head>
+
+
+<body>
+
+<!-- heading for page-->
+<div class="wrap">
+  <h1>environment<span style="color: #ff0000"></span></h1>
+  <span style="display:block; height: 10px;"></span>
+  <p id="rubric" class="rubric">A series of charts on the environment and sustainability, prepared for the Economics Observatory data hub.</p>
+  <span style="display:block; height: 10px;"></span>
+</div>
+
+
+<!--Begin Grid-->
+<div class="grid_items">
+  
+<!--Item 1-->
+  <div class="grid_item">
+    <div id="chartENV1">
+      <script src="charts/environment/chartENV1.js"></script>
+    </div>
+    <p> Chart using data from OWID, by Charlie Meyrick</p>
+  </div>
+<!--End Item 1-->
+
+<!--Item 1-->
+<div class="grid_item">
+    <div id="chartENV2">
+      <script src="charts/environment/chartENV2.js"></script>
+    </div>
+    <p> [Description]</p>
+  </div>
+<!--End Item 1-->
+
+<!--Item 1-->
+<div class="grid_item">
+    <div id="chartENV1">
+      <script src="charts/environment/chartENV1.js"></script>
+    </div>
+    <p> [Description]</p>
+  </div>
+<!--End Item 1-->
+
+
+
+
+<!--End Grid-->  
+</div>
+
+
+
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+
+
+</body>
+</html>

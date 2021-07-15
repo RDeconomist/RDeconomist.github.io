@@ -1,6 +1,6 @@
 
 /* ------------------------------------------------------------------------------
-	Typography
+	START Typography
 -------------------------------------------------------------------------------*/
 
 /* Old fonts not used:
@@ -14,12 +14,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
 
 
+/* ------------------------------------------------------------------------------
+	END Typography
+-------------------------------------------------------------------------------*/
+
+
 p {
 	font-size: 16px;
 	margin: 5px 5px;
 	line-height: 22.4px;
-	color: #323232;
-  
+	color: #323232; 
 }
 
 
@@ -57,7 +61,7 @@ body {
 
 
 /* ------------------------------------------------------------------------------
-	DIFFERENT SCREEN SIZES
+	SCREEN SIZES - BUT THIS PAGE ONLY HAS ONE SCREEN
 -------------------------------------------------------------------------------*/
 
 /* One column*/
@@ -92,56 +96,6 @@ body {
 }
 
 
-
-
-/* Two columns*/
-@media only screen and (min-width: 900px) {
-  .grid_items, .wrap {
-    grid-template-columns: 47.5% 47.5%;
-    max-width: 880px; 
-    margin: 0 auto 0 auto !important;
-	padding: 0 5 0 5; 
-    grid-column-gap: 10px;
-    grid-row-gap: 40px;
-    text-align: left;
-  }
-  .grid_items > div {
-    padding: 10px;
-  }
-}
-
-
-/* Three columns*/
-@media only screen and (min-width: 1400px) {
-  .grid_items, .wrap {
-    grid-template-columns: 30% 30% 30%;
-    max-width: 1400px; 
-    margin: 0 auto 0 auto !important;
-	padding: 0 5 0 5; 
-    grid-column-gap: 20px;
-    grid-row-gap: 50px;
-  }
-  
-  .grid_items > div {
-    padding: 10px;
-  }
-}
-
-
-/* Four columns*/
-@media only screen and (min-width: 1800px) {
-  .grid_items, .wrap {
-    grid-template-columns: 25% 25% 25% 25%;
-    max-width: 1900px; 
-    margin: 0 auto 0 auto !important;
-	padding: 0 5 0 5; 
-    grid-column-gap: 20px;
-    grid-row-gap: 50px;
-  }
-  .grid_items > div {
-    padding: 10px;
-  }
-}
 
 
 
@@ -257,6 +211,116 @@ body {
 	float: none !important; 
 }
 
-.footer {
-  height:300px
+
+
+/* FOOTER */
+
+.footer-dark {
+    padding:20px 0;
+    color:#f0f9ff;
+    background-color:#282d32;
+    font-family:Arial, Helvetica, sans-serif
 }
+  
+  .footer-dark h3 {
+    margin-top:12px;
+    margin-bottom:6px;
+    font-weight:200;
+    font-size:16px;
+    color:#ebe5e5;
+  }
+  
+  .footer-dark ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+    color:#ebe5e5;
+  }
+  
+  .footer-dark ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+  }
+  
+  .footer-dark ul a:hover {
+    opacity:0.8;
+  }
+  
+ 
+  
+  .footer-dark .item.text {
+    margin-bottom:36px;
+  }
+  
+
+  
+  .footer-dark .item.text p {
+    opacity:0.6;
+    margin-bottom:0;
+    color:#ebe5e5;
+  }
+  
+  .footer-dark .item.social {
+    text-align:center;
+  }
+  
+  
+  .footer-dark .row {
+    display: flex;
+    width:350px;
+    margin:auto;
+  }
+  
+  .footer-dark .column {
+    flex: 50%;
+    text-align:center;
+  }
+
+  .footer-dark .footer-finalrow {
+    text-align:center;
+    margin: 30px;
+    color:#ebe5e5;
+  }
+
+  .footer-dark .footer-finalrow p {
+    text-align:center;
+    margin:0 8px;
+    color:#fff;
+    opacity:0.6;
+  }
+  
+ 
+  
+  
+  
+  .footer-dark .item.social > a {
+    font-size:20px;
+    width:36px;
+    height:36px;
+    line-height:36px;
+    display:inline-block;
+    text-align:center;
+    text-decoration: none;
+    border-radius:50%;
+    box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+    margin:0 8px;
+    color:#fff;
+    opacity:0.6;
+  }
+  
+  .footer-dark .item.social > a:hover {
+    opacity:0.95;
+  }
+  
+  .footer-dark .copyright {
+    text-align:center;
+    padding-top:24px;
+    opacity:0.3;
+    font-size:13px;
+    margin-bottom:0;
+    color:#fff;
+  }
+  

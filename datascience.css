@@ -41,19 +41,42 @@ body {
   grid-column-gap: 5px;
   grid-row-gap: 20px;
 }
+
 .grid_items > div {
-  background-color: #ffffff;
-  padding: 5px;
+  background-color: #ebe5e5;
+  padding: 3px;
   border-radius: 10px;
   width: 340px;
+  height: 340px;
   margin:auto;
 }
+
 .grid_items > div:nth-child(3n + 2) {
-  background-color: #ffffff;
+    background-color: #ebe5e5;
+  }
+  .grid_items > div:nth-child(3n) {
+    background-color: ##ebe5e5;
+  }
+  
+
+.lecture {
+    background-color: #fdfdff;
+    border-radius: 10px;
+    border-style:solid;
+    border-color: #320064;
+    border-width: 1px;
+    height:100%;
 }
-.grid_items > div:nth-child(3n) {
-  background-color: #ffffff;
+
+.practical {
+    background-color: #fffafa;
+    border-radius: 10px;
+    border-style:solid;
+    border-color: #ff0b54;
+    border-width: 1px;
+    height:100%;
 }
+
 
 
 /* ------------------------------------------------------------------------------
@@ -82,7 +105,7 @@ body {
     text-align: center;
   }
   .grid_items > div {
-    padding: 10px;
+    padding: 5px;
   }
   .rubric {
     text-align: left;
@@ -103,45 +126,23 @@ body {
 	padding: 0 5 0 5; 
     grid-column-gap: 10px;
     grid-row-gap: 40px;
-    text-align: left;
+    text-align: center;
   }
   .grid_items > div {
     padding: 10px;
-  }
+    }
+    .wrap {
+        grid-template-columns: 100%;
+        max-width: 700px; 
+        margin: 0 auto 0 auto !important;
+        padding: 0 5 0 5; 
+        grid-column-gap: 10px;
+        grid-row-gap: 40px;
+        text-align: center;
+      }
 }
 
 
-/* Three columns*/
-@media only screen and (min-width: 1400px) {
-  .grid_items, .wrap {
-    grid-template-columns: 30% 30% 30%;
-    max-width: 1400px; 
-    margin: 0 auto 0 auto !important;
-	padding: 0 5 0 5; 
-    grid-column-gap: 20px;
-    grid-row-gap: 50px;
-  }
-  
-  .grid_items > div {
-    padding: 10px;
-  }
-}
-
-
-/* Four columns*/
-@media only screen and (min-width: 1800px) {
-  .grid_items, .wrap {
-    grid-template-columns: 25% 25% 25% 25%;
-    max-width: 1900px; 
-    margin: 0 auto 0 auto !important;
-	padding: 0 5 0 5; 
-    grid-column-gap: 20px;
-    grid-row-gap: 50px;
-  }
-  .grid_items > div {
-    padding: 10px;
-  }
-}
 
 
 

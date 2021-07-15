@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Link to main Stylesheet-->
+    <link rel="stylesheet" href="apiTool.css">
+
+    <title>API tester</title>
+
+</head>
+
+
+<!-- /////////////////////////////////////////////////////// -->
+<body>
+ 
+
+  <!-- heading for page-->
+<div class="wrap">
+  <h1>api<span style="color: #ff0000">tester</span></h1>
+  <span style="display:block; height: 10px;"></span>
+  <p id="rubric" class="rubric">A functioning API lies at the heart of automated data analysis, yet APIs can fail. Paste an API into the box below to test your API. A sucessful fetch will return green JSON data. If nothing happens your API needs debugging, see tips further down the page.</p>
+  <span style="display:block; height: 10px;"></span>
+</div>
+
+
+
+
+<div class="inputs">
+<input  id="url" type="url" class="urlBox"
+        placeholder="Paste API url here"
+        pattern="https://.*"></input>
+
+<br>        
+
+<button class ="button" onclick="testURL()">Fetch Data</button>
+</div>
+
+<div class="box">
+  <div class=boxTitle>Result:</div>
+  <div class="result" id="result"></div>
+</div>
+
+
+<div class="wrap">
+  <h4>Debugging tips</h1>
+  <span style="display:block; height: 5px;"></span>
+  <p id="rubric" class="rubric">[To follow].</p>
+  <span style="display:block; height: 10px;"></span>
+</div>
+
+
+
+<!-- //////////////////////////////////////////////// -->
+
+<script>
+async function testURL() {
+  
+  //Grab the URL from the page:
+  var url = document.querySelector('#url').value;
+  console.log(url);
+
+  //Now use Fetch to get the URL:
+  const response = await fetch(url); 
+  const data = await response.json();
+  console.log(data);
+
+  //Now turn the results into JSON:
+  dataJSON = JSON.stringify(data);
+
+  //Now display the JSON on the page:
+  // document.body.innerHTML = dataJSON;
+  var x = document.getElementById("result");
+  x.innerHTML = dataJSON;
+
+}
+
+</script>
+
+
+</body>
+
+
+</html>
