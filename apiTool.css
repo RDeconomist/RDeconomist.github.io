@@ -1,51 +1,154 @@
 
 /* Get hold of the font: */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
+@import url(https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
 
 /* Global stuff: to apply everywhere using wildcard */
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
 }
 
 
-h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-variant: small-caps;
-  font-size: 1.2em;
-  font-weight: 400;
-  color: black;
+h1, .span{
+	font-family: "Catamaran";
+	font-variant: small-caps;
+	font-size: 60px;
+	color: #320064;
+	font-weight: 900;
+	font-kerning: 50;
+	margin: 0px 0px 30px 0px  ;
+	height: 40px;
   text-align: center;
-  padding: 10px;
-  margin:10px
 }
 
-
-
-
-.inputs{
-  border-width: 0px;
-  border-color: white;
-  border-style: dashed;
-  border-radius: 10px;
-  background-color: rgb(231, 225, 225);
+.wrap {
+  grid-template-columns: 100%;
+  max-width: 360px; 
+  margin: 0 auto 0 auto !important;
+  padding: 0 5 0 5; 
+  grid-column-gap: 10px;
+  grid-row-gap: 40px;
   text-align: center;
+}
 
-  width: 75%;
-  height: 18%;
+/* ------------------------------------------------------------------------------
+	DIFFERENT SCREEN SIZES
+-------------------------------------------------------------------------------*/
 
-  position: absolute;
-  left:50%;
-  top:5%;
-  transform: translate(-50%, 25%);
- 
+/* One column*/
+@media only screen and (min-width: 250px) {
+  .grid_items {
+    grid-template-columns: 100%;
+    max-width: 420px; 
+    margin: 0 auto 0 auto !important;
+	padding: 0 5 0 5; 
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    text-align: center;
+  }
+
+  .wrap {
+    grid-template-columns: 100%;
+    max-width: 360px; 
+    margin: 0 auto 0 auto !important;
+	padding: 0 5 0 5; 
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    text-align: center;
+  }
+  .grid_items > div {
+    padding: 10px;
+  }
+  .rubric {
+    text-align: left;
+  }
+
+  .inputs{
+    border-width: 1px;
+    border-color: rgb(146, 146, 146);
+    border-style: dashed;
+    border-radius: 10px;
+    background-color: rgb(231, 225, 225);
+    text-align: center;
   
+    width: 350px;
+    height: 100px;
+  
+    position:relative;
+  
+    margin:auto;
+  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12 px;
+    color: white
+  }
 
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12 px;
-  color: white
+  .box{
+    border-width: 1px;
+    border-color:black;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: black;
+    width: 350px;
+    height: 300px;
+  
+    margin: 2% auto;
+    
+  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12 px;
+    color: white;
+    
+  }
+
+}
+
+
+
+
+/* Two columns*/
+@media only screen and (min-width: 900px) {
+  .wrap {
+    max-width: 880px; 
+    margin: 0 auto 0 auto !important;
+	  padding: 0 5 0 5; 
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    text-align: left;
+  }
+
+  .inputs, .box{
+    width: 880px;
+  
+}
+}
+
+
+
+p {
+	font-size: 16px;
+	margin: 5px 5px;
+	line-height: 22.4px;
+	color: #323232;
+  
+}
+
+
+body {
+  background-color: #ebe5e5;
+ }
+
+ body {
+	font-family: "Crimson Text";
+	font-weight: 400;
+	color: #323232;
+	max-width: 1800px; 
+	margin: 0 auto 0 auto !important;
+	padding: 0 5 0 5; 
+	float: none !important; 
 }
 
 
@@ -95,25 +198,7 @@ h1 {
 }
 
 
-.box{
-  border-width: 1px;
-  border-color:black;
-  border-style: solid;
-  border-radius: 10px;
-  background-color: black;
-  width: 75%;
-  height: 60%;
 
-  position: absolute;
-  left:50%;
-  top:50%;
-  transform: translate(-50%,-30%);
-
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12 px;
-  color: white;
-  
-}
 
 .boxTitle{
   font-size: 12 px;
