@@ -1,0 +1,66 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "description": "NOMICS cryptocurrency chart. CORS does not work. Works using the AllOrigins tool, but this then retieved all/more data than expected. As a consequence dta needs to be filtered before charting. Example of how to get what we want from JSON data using dot notation.",
+
+    "config": {
+      "background":"black"
+    },
+
+    "title": {
+    "text": "Cyrptocurrencies - today's price change",
+    "anchor": "start",
+    "color": "white",
+    "subtitle":"1d change. Source: Nomics API",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "subtitleColor":"white"
+    
+  },
+
+    "data": {
+      "url": " https://api.allorigins.win/raw?url=https://api.nomics.com/v1/currencies/ticker?key=8bbf8728e16a7a780c4bffa13369437393a4da03&ids=BTC,ETH,XRP&interval=1d,30d,ytd"},
+  
+
+ "transform":[
+      {"filter": {
+        "field": "currency", 
+        "oneOf": ["BTC", "ETH", "XRP", "DOGE", "BNB"]}
+        }           
+      ],
+
+    "mark": {
+      "type": "bar",
+      "color":"hotpink"},
+  
+    "width":300,
+    "height":300,
+    
+    "encoding": {
+      
+      "x": {
+        "field": "currency", 
+        "type": "ordinal", 
+        "title": null,
+        "axis":{
+          "domainColor":"dimgrey",
+          "labelColor":"dodgerblue",
+          "tickColor":"pink",
+          "gridColor":"hotpink"
+          }
+        },
+      
+      "y": {
+        "field": "1d.price_change_pct", 
+        "type": "quantitative", 
+        "title": null,
+          "axis":{
+            "domainColor":"dimgrey",
+            "labelColor":"yellow",
+            "tickColor":"pink",
+            "gridColor":"dimgrey"
+          }
+  
+    }
+  }
+}
