@@ -25,7 +25,7 @@
       "title": "",
       "axis": {"grid": false},
       "sort": [],
-      "scale": {"domain": [-1, 25]}
+      "scale": {"domain": [-1, 26]}
     },
     "color": {
       "field": "Region",
