@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+
+<!--Meta stuff-->
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+<!--Title - this is the bit that comes up in the tab-->
+<title>ECO-Crypto</title>
+
+<!--Main Stylesheet-->
+<link rel="stylesheet" href="covid_live.css">
+<link rel="stylesheet" href="crypto.css">
+<!-- <link rel="stylesheet" href="cardFlip.css"> -->
+
+
+<!--The next three lines allow the Vega embed-->
+<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+</head>
+
+
+<body>
+
+<!-- heading for page-->
+<div class="wrap">
+  <h1>crypto<span style="color: #ff0000">charts</span></h1>
+  <span style="display:block; height: 10px;"></span>
+  <p id="rubric" class="rubric">Cryptocurrency charts made using both APIs and scrapers.</p>
+  <span style="display:block; height: 10px;"></span>
+</div>
+
+
+<!--Begin Grid-->
+<div class="grid_items">
+
+  
+<!--Item 1-->
+<div class="grid_item">
+  
+  <div class="front">
+    <div id="chartCRYP1">
+      <script>
+        var crypto1 = "charts/crypto/chart8_CryptoPricesAPI.json";
+        vegaEmbed('chartCRYP1', crypto1, {"actions": false});
+      </script>
+    </div>
+  </div>
+  
+
+</div>
+<!--End Item 1-->
+
+
+
+<!--End Grid-->  
+</div>
+
+
+
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+
+
+</body>
+</html>

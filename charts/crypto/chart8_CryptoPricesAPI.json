@@ -1,0 +1,23 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "description": "NOMICS cryptocurrency chart. CORS does not work. Example of how to get what we want from JSON data using dot notation.",
+      
+    "data": {
+      "url": "https://api.nomics.com/v1/currencies/ticker?key=8bbf8728e16a7a780c4bffa13369437393a4da03&ids=BTC,ETH,XRP&interval=1d,30d,ytd"},
+  
+    "mark": {
+      "type": "bar",
+      "color":"red"},
+  
+    "width":350,
+    "height":350,
+    
+    "encoding": {
+      
+      "x": {"field": "currency", "type": "ordinal", "title": null},
+      
+      "y": {"field": "1d.price_change_pct", "type": "quantitative", "title": null}
+  
+    }
+  }
