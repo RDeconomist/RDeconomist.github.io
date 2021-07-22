@@ -19,10 +19,11 @@
 <link rel="apple-touch-icon" href="icon.PNG" />
 
 <!--Title - this is the bit that comes up in the tab-->
-<title>Covid Data UK</title>
+<title>ECO - Environment</title>
 
 <!--Main Stylesheet-->
 <link rel="stylesheet" href="covid_live.css">
+<link rel="stylesheet" href="cardFlip.css">
 
 <!--The next three lines allow the Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
@@ -49,10 +50,15 @@
 
 <!--Item 1-->
   <div class="grid_item">
+    <div class="front">
     <div id="chartENV1">
       <script src="charts/environment/chartENV1.js"></script>
     </div>
+      </div>
+  <div class="back">
     <p> Chart using data from OWID, by Charlie Meyrick</p>
+
+  </div>
   </div>
 <!--End Item 1-->
 
@@ -60,15 +66,26 @@
 
 <!--Item 2-->
 <div class="grid_item">
-
-<div id="chartENV2">
-   <script>
+  
+  <div class="front">
+    <div id="chartENV2">
+      <script>
         var ozoneChart = "charts/environment/chart9_ozoneEmissionsAPI.json";
         vegaEmbed('#chartENV2', ozoneChart, {"actions": false});
-  </script>
-</div>
+      </script>
+    </div>
+  </div>
+
+  <div class="back">
+    <h1>Chart notes</h1>
+    <p>This chart pulls live pollution data from <a href="https://emissions-api.org/">emissions-api.org</a>. The data are produced from satellite imagary. The API works nicely and has a (relatively) intuitive interface that allows you to build your own API url to make the call.</p>
+    <p>The visulisation is made in Vega Lite. Data is pulled from the API twice, once requesting data for the UK, and once for Bristol. This creates two charts, which are superimposed on the same axes using the Layer command.</p> 
+    <p>The JSON code that defines the chart is available at the RapidCharts GitHub repository, <a href= "https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/environment/chart9_ozoneEmissionsAPI.json">here.</a></p>
+
+
+  </div>
   
-  <p>Live poluution data from <a href="https://emissions-api.org/">emissions-api.org</a>. RD</p>
+  
 
 </div>
 <!--End Item 2-->
