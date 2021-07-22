@@ -1,0 +1,14 @@
+
+body{
+    background-color: black;
+}
+
+h1, p{
+    color:white
+}
+
+.grid_item{
+    color:blue;
+    background-color: teal;
+}
+

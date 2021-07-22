@@ -19,10 +19,11 @@
 <link rel="apple-touch-icon" href="icon.PNG" />
 
 <!--Title - this is the bit that comes up in the tab-->
-<title>Covid Data UK</title>
+<title>ECO - Environment</title>
 
 <!--Main Stylesheet-->
 <link rel="stylesheet" href="covid_live.css">
+<link rel="stylesheet" href="cardFlip.css">
 
 <!--The next three lines allow the Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
@@ -37,41 +38,74 @@
 <div class="wrap">
   <h1>environment<span style="color: #ff0000"></span></h1>
   <span style="display:block; height: 10px;"></span>
-  <p id="rubric" class="rubric">A series of charts on the environment and sustainability, prepared for the Economics Observatory data hub.</p>
+  <p id="rubric" class="rubric">A series of charts on the environment and sustainability, prepared for the Economics Observatory data hub. Hover over the charts to reveal notes, links and code.</p>
   <span style="display:block; height: 10px;"></span>
 </div>
 
 
 <!--Begin Grid-->
 <div class="grid_items">
+
   
+
 <!--Item 1-->
   <div class="grid_item">
+    <div class="front">
     <div id="chartENV1">
       <script src="charts/environment/chartENV1.js"></script>
     </div>
+      </div>
+  <div class="back">
     <p> Chart using data from OWID, by Charlie Meyrick</p>
+
+  </div>
   </div>
 <!--End Item 1-->
 
-<!--Item 1-->
+
+
+<!--Item 2-->
 <div class="grid_item">
+  
+  <div class="front">
     <div id="chartENV2">
-      <script src="charts/environment/chartENV2.js"></script>
+      <script>
+        var ozoneChart = "charts/environment/chart9_ozoneEmissionsAPI.json";
+        vegaEmbed('#chartENV2', ozoneChart, {"actions": false});
+      </script>
     </div>
-    <p> [Description]</p>
   </div>
-<!--End Item 1-->
 
-<!--Item 1-->
+  <div class="back">
+    <h1>Chart notes</h1>
+    <p>This chart pulls live pollution data from <a href="https://emissions-api.org/">emissions-api.org</a>. The data are produced from satellite imagary. The API works nicely and has a (relatively) intuitive interface that allows you to build your own API url to make the call.</p>
+    <p>The visulisation is made in Vega Lite. Data is pulled from the API twice, once requesting data for the UK, and once for Bristol. This creates two charts, which are superimposed on the same axes using the Layer command.</p> 
+    <p>The JSON code that defines the chart is available at the RapidCharts GitHub repository, <a href= "https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/environment/chart9_ozoneEmissionsAPI.json">here.</a></p>
+    <p><strong>Richard Davies, July 2021</strong></p>
+
+
+  </div>
+  
+  
+
+</div>
+<!--End Item 2-->
+
+
+<!--Item 3-->
 <div class="grid_item">
-    <div id="chartENV1">
-      <script src="charts/environment/chartENV1.js"></script>
-    </div>
-    <p> [Description]</p>
-  </div>
-<!--End Item 1-->
 
+  <div id="chartENV3">
+     <script>
+          var CHARTNAME = "charts/environment/FILENAME.json";
+          vegaEmbed('#chartENV3', CHARTNAME, {"actions": false});
+    </script>
+  </div>
+    
+    <p></p>
+  
+  </div>
+  <!--End Item 3-->
 
 
 

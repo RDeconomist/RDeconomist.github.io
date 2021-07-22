@@ -77,7 +77,20 @@ body {
     height:100%;
 }
 
+.fly, .description, .concepts {
+  text-align:left;
+}
 
+.fly{
+  font-weight: 700;
+  font-size: small;
+}
+
+.title{
+  text-align:center;
+  padding:15px 0 2px 0;
+
+}
 
 /* ------------------------------------------------------------------------------
 	DIFFERENT SCREEN SIZES
