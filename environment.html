@@ -44,7 +44,9 @@
 
 <!--Begin Grid-->
 <div class="grid_items">
+
   
+
 <!--Item 1-->
   <div class="grid_item">
     <div id="chartENV1">
@@ -54,24 +56,38 @@
   </div>
 <!--End Item 1-->
 
-<!--Item 1-->
-<div class="grid_item">
-    <div id="chartENV2">
-      <script src="charts/environment/chartENV2.js"></script>
-    </div>
-    <p> [Description]</p>
-  </div>
-<!--End Item 1-->
 
-<!--Item 1-->
-<div class="grid_item">
-    <div id="chartENV1">
-      <script src="charts/environment/chartENV1.js"></script>
-    </div>
-    <p> [Description]</p>
-  </div>
-<!--End Item 1-->
 
+<!--Item 2-->
+<div class="grid_item">
+
+<div id="chartENV2">
+   <script>
+        var ozoneChart = "charts/environment/chart9_ozoneEmissionsAPI.json";
+        vegaEmbed('#chartENV2', ozoneChart, {"actions": false});
+  </script>
+</div>
+  
+  <p>Live poluution data from <a href="https://emissions-api.org/">emissions-api.org</a>. RD</p>
+
+</div>
+<!--End Item 2-->
+
+
+<!--Item 3-->
+<div class="grid_item">
+
+  <div id="chartENV3">
+     <script>
+          var CHARTNAME = "charts/environment/FILENAME.json";
+          vegaEmbed('#chartENV3', CHARTNAME, {"actions": false});
+    </script>
+  </div>
+    
+    <p></p>
+  
+  </div>
+  <!--End Item 3-->
 
 
 
