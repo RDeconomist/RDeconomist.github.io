@@ -74,12 +74,14 @@
 
   <!--Begin Grid-->
 <div class="grid_items">
-    <div class="grid_item">
-      <div id="visMobile1">
-        <script src="chartMobile1.js"></script>
-      </div>
+    <div class="grid_item" id="firstVis">
+      <script>
+        var openingVis = "charts/covid/chartC2.json";
+        vegaEmbed('#firstVis', openingVis, {"actions":false});
+      </script>
     </div>
 </div>
+
 
 <!-- White space across the page --> 
 <span style="display:block; height: 10px;"></span>
