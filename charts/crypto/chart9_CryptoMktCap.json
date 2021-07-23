@@ -39,7 +39,7 @@
       "type": "bar",
       "color":"#e6224b"},
   
-    "width":300,
+    "width":290,
     "height":300,
     
     "encoding": {
