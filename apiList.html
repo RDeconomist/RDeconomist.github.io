@@ -26,6 +26,7 @@
 
 <!--Main Stylesheet-->
 <link rel="stylesheet" href="css/main2.css">
+<link rel="stylesheet" href="css/apiLibrary.css">
 
 <!--Code to allow Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
@@ -43,67 +44,33 @@
 <!-- ////////////////////////////// START BODY //////////////////////////////-->
 <body>
 
-
-<!-- ///TOP SECTION - HEADER AND LINKS-->
-<!-- portfolio grid section -->
-<section id="work-detail">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 work-detail ">
-        <div class="work-detail"> 
-
   
   <!-- heading for page-->
 <div class="wrap">
-  <h1>rapid<span style="color: #ff9a00">charts</span></h1>
+  <h1>api<span style="color: #ff9a00">library</span></h1>
   <span style="display:block; height: 20px;"></span>
-  <p class="rubric">Automated and interactive charts, and the tools to build them. Use the links below to find live dashboards and resources. 
+  <p class="rubric">A growing list of useful APIs. Our course includes commentary on usage, bugs and data science ideas.</p> 
   <span style="display:block; height: 10px;"></span>
 
-  <!-- topics sub heading clickable links -->
-  <p><a href="covid_live.html">  Covid  </a> &nbsp; | &nbsp;
-     <a href="ukMacro.html">  Economy </a> &nbsp; | &nbsp;
-     <a href="environment.html">  Environment </a> &nbsp; | &nbsp; 
-     <a href="crypto.html">  Crypto </a> </a> &nbsp; | &nbsp;
-     <a href="colour.html">  Colour </a> </a> &nbsp; | &nbsp;
-     <a href="surf.html">  Surfing </a> </a> &nbsp; | &nbsp; 
-     <a href="datascience.html">  Course </a>
-    </p>
-  <!-- topics sub heading clickable links -->
+
+<div class="apiList">
+    <ul>
+        <li class="api"><a href="https://coronavirus.data.gov.uk/details/download ">Covid-19 UK official data</a></li>
+        <li class="api"><a href="https://covid19api.com/ ">Global Covid API</a></li>
+        <li class="api"><a href="https://api.beta.ons.gov.uk/v1">Office for National Statistics</a></li>
+        <li class="api"><a href="https://nomics.com/ ">Cryptocurrencies - Nomics</a></li>
+        <li class="api"><a href="https://apps.who.int/gho/data/node.resources.api ">World Health Organisation</a></li>
+        <li class="api"><a href="https://www.alphavantage.co/documentation/ ">Stock prices - Alphavantage</a></li>
+        <li class="api"><a href="https://emissions-api.org/">Emissions</a></li>
+    </ul>
+</div>
+
+
 
   <!-- White space across the page --> 
   <span style="display:block; height: 20px;"></span>
 
 </div>
-<!-- ///END OF TOP SECTION -->
-
-
-
-  <!--Begin Grid-->
-<div class="grid_items">
-    <div class="grid_item" id="firstVis">
-      <script>
-        var openingVis = "charts/covid/chartC2.json";
-        vegaEmbed('#firstVis', openingVis, {"actions":false});
-      </script>
-    </div>
-</div>
-
-
-<!-- White space across the page --> 
-<span style="display:block; height: 10px;"></span>
-
-<div class="wrap">
-  <p class="rubric">The chart of Covid cases above auto-updates daily. You can use the drop-down box to compare UK regions. More coronavirus analysis is <a href="covid_live.html"> here</a>.</p> 
-</div>
-
-
-<!-- White space across the page --> 
-  <span style="display:block; height: 20px;"></span>
-
-
-
-
 
 
 
@@ -127,7 +94,7 @@
                             <li><a href="https://nuggetcharts.com/stream">Nugget</a></li>
                             <li><a href="datascience.html">Course notes</a></li>
                             <li><a href="apiTester_tool.html">API debug</a></li>
-                            <li><a href="apiLibrary.html">API library</a></li>
+                            <li><a href="apiList.html">API library</a></li>
                         </ul>
                   </div>
                   </div>
