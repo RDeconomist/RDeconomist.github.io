@@ -9,12 +9,13 @@
         "stroke": "transparent"
       }
     },
+   
 
     "title": {
-    "text": "Major cryptocurrencies: today's price change",
+    "text": "Top 10 crypto",
     "anchor": "start",
     "color": "#179fdb",
-    "subtitle":"1d change. Source: Nomics API",
+    "subtitle":"Largest currencies by market cap, $ billions.",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "subtitleColor":"#179fdb"
@@ -28,9 +29,11 @@
  "transform":[
       {"filter": {
         "field": "currency", 
-        "oneOf": ["BTC", "ETH", "XRP", "DOGE", "BNB"]}
-        }           
-      ],
+        "oneOf": ["BTC", "ETH", "USDT", "ADA", "USDC", "DOT", "BUSD", "XRP", "DOGE", "BNB"]}
+        }
+        ,
+    {"calculate": "datum.market_cap/1000000000", "as": "mktCapb"}
+  ],    
 
     "mark": {
       "type": "bar",
@@ -42,27 +45,28 @@
     "encoding": {
       
       "x": {
-        "field": "currency", 
-        "type": "ordinal", 
+        "field": "mktCapb", 
+        "type": "quantitative", 
         "title": null,
+        "sort":"ascending",
         "axis":{
           "domainColor":"dimgrey",
           "labelColor":"#00a767",
           "tickColor":"pink",
-          "gridColor":"hotpink"
+          "gridColor":"dimgrey"
           }
         },
       
       "y": {
-        "field": "1d.price_change_pct", 
-        "type": "quantitative", 
+        "field": "currency", 
+        "type": "ordinal",
+        "sort":"-x", 
         "title": null,
           "axis":{
             "domainColor":"dimgrey",
             "labelColor":"#f4c245",
             "tickColor":"pink",
-            "gridColor":"dimgrey",
-            "format":"%"
+            "gridColor":"dimgrey"
           }
   
     }
