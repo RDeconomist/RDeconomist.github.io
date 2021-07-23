@@ -45,7 +45,7 @@ body {
   background-color: #ffffff;
   padding: 5px;
   border-radius: 10px;
-  width: 340px;
+  width: 360px;
   margin:auto;
 }
 .grid_items > div:nth-child(3n + 2) {
@@ -76,7 +76,7 @@ body {
     grid-template-columns: 100%;
     max-width: 360px; 
     margin: 0 auto 0 auto !important;
-	padding: 0 5 0 5; 
+	  padding: 0 5 0 5; 
     grid-column-gap: 10px;
     grid-row-gap: 40px;
     text-align: center;

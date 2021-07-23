@@ -4,17 +4,17 @@
     "description": "NOMICS cryptocurrency chart. CORS does not work. Works using the AllOrigins tool, but this then retieved all/more data than expected. As a consequence dta needs to be filtered before charting. Example of how to get what we want from JSON data using dot notation.",
 
     "config": {
-      "background":"black"
+      "background":"#122b39"
     },
 
     "title": {
-    "text": "Cyrptocurrencies - today's price change",
+    "text": "Major cryptocurrencies: today's price change",
     "anchor": "start",
-    "color": "white",
+    "color": "#179fdb",
     "subtitle":"1d change. Source: Nomics API",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
-    "subtitleColor":"white"
+    "subtitleColor":"#179fdb"
     
   },
 
@@ -31,7 +31,7 @@
 
     "mark": {
       "type": "bar",
-      "color":"hotpink"},
+      "color":"#e6224b"},
   
     "width":300,
     "height":300,
@@ -44,7 +44,7 @@
         "title": null,
         "axis":{
           "domainColor":"dimgrey",
-          "labelColor":"dodgerblue",
+          "labelColor":"#00a767",
           "tickColor":"pink",
           "gridColor":"hotpink"
           }
@@ -56,9 +56,10 @@
         "title": null,
           "axis":{
             "domainColor":"dimgrey",
-            "labelColor":"yellow",
+            "labelColor":"#f4c245",
             "tickColor":"pink",
-            "gridColor":"dimgrey"
+            "gridColor":"dimgrey",
+            "format":"%"
           }
   
     }

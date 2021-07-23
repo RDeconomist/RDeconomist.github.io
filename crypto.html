@@ -28,42 +28,36 @@
 
 <!-- heading for page-->
 <div class="wrap">
-  <h1>crypto<span style="color: #ff0000">charts</span></h1>
+  <h1>crypto<span style="color: #e6224b">charts</span></h1>
   <span style="display:block; height: 10px;"></span>
-  <p id="rubric" class="rubric">Cryptocurrency charts made using both APIs and scrapers.</p>
+  <p id="rubric" class="rubric">Cryptocurrency charts made using APIs and scrapers.</p>
   <span style="display:block; height: 10px;"></span>
 </div>
 
 
-<!--Begin Grid-->
+<!--Grid - START ///////////////////////////////-->
 <div class="grid_items">
 
   
-<!--Item 1-->
-<div class="grid_item">
   
-  <div class="front">
-    <div id="chartCRYP1">
-      <script>
-        var crypto1 = "charts/crypto/chart8_CryptoPricesDark.json";
-        vegaEmbed('chartCRYP1', crypto1, {"actions": false});
-      </script>
-    </div>
-  </div>
+<!--Chart1 - START ////////////////////////////////////-->
+<div class="grid_item" id="chartCRYP1">
+  <script>
+      var crypto1 = "charts/crypto/chart8_CryptoPricesDark.json";
+      vegaEmbed('#chartCRYP1', crypto1, {"actions": false});
+  </script>
+</div>
+<!--Chart 1 - END ///////////////////////////////////-->
+
+
+
+
+
   
-
-</div>
-<!--End Item 1-->
+ 
 
 
-
-<!--End Grid-->  
-</div>
-
-
-
-<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
-
+<!--Grid - end ///////////////////////////////-->
 
 </body>
 </html>

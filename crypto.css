@@ -1,14 +1,23 @@
 
 body{
-    background-color: black;
+    background-color: rgb(0, 0, 40);
 }
 
-h1, p{
-    color:white
+h1 {
+    color: #0063af;
 }
 
-.grid_item{
-    color:blue;
-    background-color: teal;
+p {
+    color: #fbfeff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.grid_items > div{
+    background-color: #122b39;
+    border-width:2px;
+    border-style: solid;
+    border-color: black;
+
 }
 
