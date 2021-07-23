@@ -1,0 +1,87 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<!-- ////////////////////////////// START HEAD //////////////////////////////-->
+<head>
+<!--Meta stuff-->
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--Facebook meta - this comes up when you post a link to the site-->
+<meta property="og:title" content="Rapid Charts">
+<meta property="og:description" content="Automated, verifiable, beautiful">
+<meta property="og:image" content="chart1.png">
+<meta property="og:url" content="http://rapidcharts.io/index.htm">
+
+<!--Favicon-->
+<link rel="icon" href="images/icon.png">
+<link rel="shortcut icon" href="images/icon.png" />
+<link rel="apple-touch-icon" href="images/icon.png" />
+
+
+<title>Rapid Charts</title>
+
+<!--Main Stylesheet-->
+<link rel="stylesheet" href="css/covid_live.css">
+
+
+<!--Code to allow Vega embed-->
+<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+</head>
+<!-- ////////////////////////////// END HEAD //////////////////////////////-->
+
+
+
+<!-- ////////////////////////////// START BODY //////////////////////////////-->
+<body>
+
+<!-- heading for page-->
+<div class="wrap">
+  <h1>colour<span style="color: #ff0000"></span></h1>
+  <span style="display:block; height: 10px;"></span>
+  <p id="rubric" class="rubric">This page has some charts that allow comparison of colours. The button next to the chart allows you to open and edit it, and play with colour palettes.</p>
+  <span style="display:block; height: 10px;"></span>
+</div> 
+  
+
+<!--Begin Grid-->
+<div class="grid_items">
+  
+
+
+<!--Albers Start-->
+    <div class="grid_item" id="visAlbers">
+    <script>
+      var albers = "charts/colour/albers.json";
+      vegaEmbed('#visAlbers', albers);
+      </script>
+    </div>
+<!--Albers End-->
+
+
+<!--Pyramid Start-->
+<div class="grid_item" id="visPyramid">
+  <script>
+    var pyramid = "charts/colour/pyramid.json";
+    vegaEmbed('#visPyramid', pyramid);
+    </script>
+  </div>
+<!--Pyramid End-->
+
+
+  </div>
+
+<!-- JS FILES --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery.fancybox.pack.js"></script> 
+<script src="js/jquery.waypoints.min.js"></script> 
+<script src="js/retina.min.js"></script> 
+<script src="js/modernizr.js"></script> 
+<script src="js/main.js"></script>
+</body>
+</html>

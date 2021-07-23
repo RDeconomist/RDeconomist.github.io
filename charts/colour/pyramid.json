@@ -1,6 +1,18 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
+
+    "title": {
+      "text": "Pyramid",
+      "subtitle": "An example from the Vega Lite site",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+
+
+
     "data": {
       "values": [
         {"category": "Sky", "value": 75, "order": 3},
@@ -9,10 +21,10 @@
       ]
     },
   
-    "mark": {"type": "arc", "outerRadius": 200},
+    "mark": {"type": "arc", "outerRadius": 160},
   
-    "height":400,
-    "width":600,
+    "height":350,
+    "width":250,
   
     "encoding": {
       "theta": {
@@ -27,9 +39,9 @@
           "range": ["RGB(0, 0, 150)", "RGB(180, 180, 0)", "RGB(249, 240, 0)"]
         },
         "legend": {
-          "orient": "top-right",
+          "orient": "bottom",
           "title": "Segments",
-          "columns": 1,
+          "columns": 3,
           "legendX": 200,
           "legendY": 80
         }
