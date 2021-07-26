@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
   "title": {
-      "text": "Fish caught",
+      "text": "Fish caught - by continent",
       "subtitle":"Million tonnes. Source: Our World in Data",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
