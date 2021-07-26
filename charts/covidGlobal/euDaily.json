@@ -1,0 +1,72 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "description": "ECDC data. Quite a lot of tricks used in this chart. All Origins used to grab the data. Then a few tranforms used to clean up the data.",
+  
+     "title": {
+      "text": "Covid infection rates - EU",
+      "subtitle":"New daily reported cases, EU countries. Source: ECDC",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+    
+    "data": {
+      "url": "https://api.allorigins.win/raw?url=https://opendata.ecdc.europa.eu/covid19/nationalcasedeath_eueea_daily_ei/json/",
+      "format":{
+        "type":"json",
+        "property":"records"
+        }
+      },
+  
+  
+    "transform": [ 
+      {"calculate": "datetime(datum.year, datum.month, datum.day)",
+        "as": "date"},
+  
+      {"filter": {
+          "field": "countriesAndTerritories",
+          "oneOf": ["France", "Italy", "Spain", "Portugal"]
+        }},
+  
+      {"filter": {
+          "field": "date",
+          "range": [
+            {"year": 2021, "month": "july", "date": 5},
+            {"year": 2021, "month": "dec", "date": 20}
+          ]}},
+  
+      {"window": [
+          {"field": "cases", 
+           "op": "mean", 
+           "as": "casesMean"}],
+        "frame": [-7, 0]}
+  
+         ],
+  
+  
+    "mark": "line",
+    "width":300,
+    "height":300,
+  
+  
+    "encoding": {
+      "x": {
+        "field": "date", 
+        "type": "temporal",
+        "title":null,
+        "axis": {"grid": false}},
+  
+      "y": {
+        "field": "casesMean", 
+        "type": "quantitative",
+        "title":null,
+        "axis": {"grid": false}},
+  
+      "color":{
+        "field":"countriesAndTerritories",
+        "title":null,
+        "legend":{"orient": "top-left"}} 
+    }
+  }
