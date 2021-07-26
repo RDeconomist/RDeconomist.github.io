@@ -94,7 +94,20 @@
 <span style="display:block; height: 10px;"></span>
 
 <div class="wrap">
-  <p class="rubric">The chart of Covid cases above auto-updates daily. You can use the drop-down box to compare UK regions. More coronavirus analysis is <a href="covid_live.html"> here</a>.</p> 
+  <p class="rubric">The charts here auto-update daily. You can use the drop-down box above to compare locations. The latest case numbers for major cities are shown in the live chart below. More coronavirus analysis is <a href="covid_live.html"> here</a>.</p> 
+</div>
+
+<!-- White space across the page --> 
+<span style="display:block; height: 10px;"></span>
+
+  <!--Begin Grid-->
+  <div class="grid_items">
+    <div class="grid_item" id="secondVis">
+      <script>
+        var Vis2 = "charts/covid/chartCovidLiveUKCitiesLatestData.json";
+        vegaEmbed('#secondVis', Vis2, {"actions":false});
+      </script>
+    </div>
 </div>
 
 
