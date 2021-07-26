@@ -45,6 +45,7 @@
         "field": "currency", 
         "type": "ordinal", 
         "title": null,
+        "sort":"-y",
         "axis":{
           "domainColor":"dimgrey",
           "labelColor":"#00a767",
