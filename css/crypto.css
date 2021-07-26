@@ -21,3 +21,10 @@ p {
 
 }
 
+.grid_items > div:nth-child(3n + 2) {
+    background-color: #122b39;
+  }
+  .grid_items > div:nth-child(3n) {
+    background-color: #122b39;
+  }
+  
