@@ -22,8 +22,8 @@
 <title>ECO - Environment</title>
 
 <!--Main Stylesheet-->
-<link rel="stylesheet" href="covid_live.css">
-<link rel="stylesheet" href="cardFlip.css">
+<link rel="stylesheet" href="css/covid_live.css">
+<link rel="stylesheet" href="css/cardFlip.css">
 
 <!--The next three lines allow the Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
@@ -63,8 +63,7 @@
 <!--End Item 1-->
 
 
-
-<!--Item 2-->
+<!--Item 2- ////////////////////////////////////////////////////////////-->
 <div class="grid_item">
   
   <div class="front">
@@ -75,29 +74,23 @@
       </script>
     </div>
   </div>
-
   <div class="back">
     <h1>Chart notes</h1>
     <p>This chart pulls live pollution data from <a href="https://emissions-api.org/">emissions-api.org</a>. The data are produced from satellite imagary. The API works nicely and has a (relatively) intuitive interface that allows you to build your own API url to make the call.</p>
     <p>The visulisation is made in Vega Lite. Data is pulled from the API twice, once requesting data for the UK, and once for Bristol. This creates two charts, which are superimposed on the same axes using the Layer command.</p> 
     <p>The JSON code that defines the chart is available at the RapidCharts GitHub repository, <a href= "https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/environment/chart9_ozoneEmissionsAPI.json">here.</a></p>
     <p><strong>Richard Davies, July 2021</strong></p>
-
-
   </div>
-  
-  
-
 </div>
-<!--End Item 2-->
+<!--End Item 2 ////////////////////////////////////////////////////////-->
 
 
-<!--Item 3-->
+<!--Item 3 ///////////////////////////////////////////////////////// -->
 <div class="grid_item">
 
   <div id="chartENV3">
      <script>
-          var CHARTNAME = "charts/environment/FILENAME.json";
+          var CHARTNAME = "charts/environment/chartENV3.json";
           vegaEmbed('#chartENV3', CHARTNAME, {"actions": false});
     </script>
   </div>
@@ -105,7 +98,43 @@
     <p></p>
   
   </div>
-  <!--End Item 3-->
+<!--End Item 3 /////////////////////////////////////////////-->
+
+
+
+<!--Item 4 /////////////////////////////////////////////////-->
+<div class="grid_item">
+
+  <div id="chartENV4">
+     <script>
+          var enivro4 = "charts/environment/chartENV4.json";
+          vegaEmbed('#chartENV4', enivro4, {"actions": false});
+    </script>
+  </div>
+    
+    <p></p>
+  
+  </div>
+  
+<!--End Item 4 //////////////////////////////////////////// -->
+
+
+
+<!--Item 5 //////////////////////////////////////////////// -->
+<div class="grid_item">
+
+  <div id="chartENV5">
+     <script>
+          var enivro5 = "charts/environment/chartENV5fishing.json";
+          vegaEmbed('#chartENV5', enivro5, {"actions": false});
+    </script>
+  </div>
+    
+    <p></p>
+  
+</div>
+<!--End Item 5 ////////////////////////////////////////////// -->
+
 
 
 

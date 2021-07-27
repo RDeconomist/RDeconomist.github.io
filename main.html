@@ -17,15 +17,15 @@
 <meta property="og:url" content="http://rapidcharts.io/index.htm">
 
 <!--Favicon-->
-<link rel="icon" href="images/icon.png">
-<link rel="shortcut icon" href="images/icon.png" />
-<link rel="apple-touch-icon" href="images/icon.png" />
+<link rel="icon" href="images/favicon.PNG">
+<link rel="shortcut icon" href="images/favicon.PNG" />
+<link rel="apple-touch-icon" href="images/favicon.PNG" />
 
 
 <title>Rapid Charts</title>
 
 <!--Main Stylesheet-->
-<link rel="stylesheet" href="main2.css">
+<link rel="stylesheet" href="css/main2.css">
 
 <!--Code to allow Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
@@ -57,15 +57,23 @@
 <div class="wrap">
   <h1>rapid<span style="color: #ff9a00">charts</span></h1>
   <span style="display:block; height: 20px;"></span>
-  <p class="rubric">Automated and interactive charts, and the tools to make them. Use the links below to find live dashboards and resources. 
-  <span style="display:block; height: 10px;"></span>
+  <p class="rubric">Live charts, and tools to build them. From Covid-19 to surf forecasting, find an interactive dashboard below.</p>
+    <span style="display:block; height: 5px;"></span>
 
   <!-- topics sub heading clickable links -->
-  <p><a href="covid_live.html">  Covid  </a> &nbsp; | &nbsp; <a href="ukMacro.html">  Economy </a> &nbsp; | &nbsp; <a href="environment.html">  Environment </a> &nbsp; | &nbsp; <a href="surf.html">  Surfing </a> </a> &nbsp; | &nbsp; <a href="datascience.html">  Course </a></p>
-  <!-- topics sub heading clickable links -->
+  <p><a href="covid_live.html">Covid</a> &nbsp; 
+    <a href="ukMacro.html">Economy</a> &nbsp; 
+    <a href="environment.html">Environment</a> &nbsp;  
+    <a href="crypto.html">Crypto</a> &nbsp; 
+    <!-- <a href="colour.html">  Colour </a> </a> &nbsp;  -->
+    <a href="surf.html">Surfing</a> &nbsp;  
+    <!-- <a href="datascience.html">  Course </a> -->
+   </p>
+ <!-- topics sub heading clickable links -->
 
-  <!-- White space across the page --> 
-  <span style="display:block; height: 20px;"></span>
+ <!-- White space across the page --> 
+ <span style="display:block; height: 0px;"></span>
+
 
 </div>
 <!-- ///END OF TOP SECTION -->
@@ -74,18 +82,33 @@
 
   <!--Begin Grid-->
 <div class="grid_items">
-    <div class="grid_item">
-      <div id="visMobile1">
-        <script src="chartMobile1.js"></script>
-      </div>
+    <div class="grid_item" id="firstVis">
+      <script>
+        var openingVis = "charts/covid/chartCovidLiveUKCitiesCases.json";
+        vegaEmbed('#firstVis', openingVis, {"actions":false});
+      </script>
     </div>
 </div>
+
 
 <!-- White space across the page --> 
 <span style="display:block; height: 10px;"></span>
 
 <div class="wrap">
-  <p class="rubric">The chart of Covid cases above auto-updates daily. You can use the drop-down box to compare UK regions. More coronavirus analysis is <a href="covid_live.html"> here</a>.</p> 
+  <p class="rubric">The charts here auto-update daily. You can use the drop-down box above to compare locations. The latest case numbers for major cities are shown in the live chart below. More coronavirus analysis is <a href="covid_live.html"> here</a>.</p> 
+</div>
+
+<!-- White space across the page --> 
+<span style="display:block; height: 10px;"></span>
+
+  <!--Begin Grid-->
+  <div class="grid_items">
+    <div class="grid_item" id="secondVis">
+      <script>
+        var Vis2 = "charts/covid/chartCovidLiveUKCitiesLatestData.json";
+        vegaEmbed('#secondVis', Vis2, {"actions":false});
+      </script>
+    </div>
 </div>
 
 
@@ -109,16 +132,13 @@
                     <ul>
                         <li><a href="#">Mission</a></li>
                         <li><a href="#">Team</a></li>
-                        <li><a href="#">Contacts</a></li>
                     </ul>
                   </div>
                   <div class="column">
-                        <h3>Tools</h3>
+                        <h3>Resources</h3>
                         <ul>
                             <li><a href="https://nuggetcharts.com/stream">Nugget</a></li>
-                            <li><a href="#">Course notes</a></li>
-                            <li><a href="apiTester_tool.html">API tester</a></li>
-                            <li><a href="apiList.html">API list</a></li>
+                            <li><a href="datascience.html">Course</a></li>
                         </ul>
                   </div>
                   </div>
