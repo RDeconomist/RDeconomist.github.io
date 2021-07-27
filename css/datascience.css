@@ -19,6 +19,7 @@ p {
 	margin: 5px 5px;
 	line-height: 22.4px;
 	color: #323232;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
 }
 
@@ -43,7 +44,7 @@ body {
 }
 
 .grid_items > div {
-  background-color: #ebe5e5;
+  background-color: #122b39;
   padding: 3px;
   border-radius: 10px;
   width: 340px;
@@ -52,27 +53,37 @@ body {
 }
 
 .grid_items > div:nth-child(3n + 2) {
-    background-color: #ebe5e5;
+  background-color: #122b39;
+   padding: 3px;
+   border-radius: 10px;
+   width: 340px;
+   height: 340px;
+   margin:auto;
   }
   .grid_items > div:nth-child(3n) {
-    background-color: ##ebe5e5;
+    background-color: #122b39;
+   padding: 3px;
+   border-radius: 10px;
+   width: 340px;
+   height: 340px;
+   margin:auto;
   }
   
 
 .lecture {
-    background-color: #fdfdff;
+    background-color: background-color: #122b39;
     border-radius: 10px;
     border-style:solid;
-    border-color: #320064;
+    /* border-color: #320064; */
     border-width: 1px;
     height:100%;
 }
 
 .practical {
-    background-color: #fffafa;
+    background-color: background-color: #122b39;
     border-radius: 10px;
     border-style:solid;
-    border-color: #ff0b54;
+    /* border-color: #ff0b54; */
     border-width: 1px;
     height:100%;
 }
@@ -84,12 +95,21 @@ body {
 .fly{
   font-weight: 700;
   font-size: small;
+  color:#e6224b;
 }
 
 .title{
   text-align:center;
   padding:15px 0 2px 0;
+  /* text-decoration: underline; */
+  font-weight: bold;
+  color: #00a767;
+}
 
+.concepts{
+  font-style: italic;
+  color: #f4c245; 
+  font-size:smaller;
 }
 
 /* ------------------------------------------------------------------------------
