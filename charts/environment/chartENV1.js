@@ -27,7 +27,7 @@ var chartENV1 =
       "title": "",
       "axis": {"grid": false},
       "sort": [],
-      "scale": {"domain": [-1, 25]}
+      "scale": {"domain": [-0.25, 25]}
     },
     "color": {
       "field": "Country",
@@ -35,7 +35,7 @@ var chartENV1 =
       "legend": {"orient": "top-left"},
       "type": "nominal",
       "sort": [],
-      "scale": {"range": ["#00a767", "#007548", "#004329", "#00110a", "#80d3b3", "#f4c245"]}
+      "scale": {"scheme": "yellowgreenblue"}
     },
     "tooltip": [
       {"field": "Time", "type": "temporal", "timeUnit": "year", "title": "Year"},

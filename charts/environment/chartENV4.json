@@ -28,7 +28,7 @@
       "color": {
         "field": "Region",
         "title": null,
-        "scale": {"scheme": "category20b"},
+        "scale": {"scheme": "yellowgreenblue"},
         "legend": {"orient": "top-left"},
         "type": "nominal"
       },

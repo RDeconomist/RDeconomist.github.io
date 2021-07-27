@@ -48,7 +48,7 @@ var ozoneChart =
   
     "mark":{
       "type": "circle",
-      "color":"red",
+      "color":"dodgerblue",
       "opacity":0.5
     }
     }

@@ -1,4 +1,4 @@
-  {
+{
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
   
@@ -25,7 +25,7 @@
       "title": "",
       "axis": {"grid": false},
       "sort": [],
-      "scale": {"domain": [-1, 26]}
+      "scale": {"domain": [-0.25, 26]}
     },
     "color": {
       "field": "Region",
@@ -33,7 +33,7 @@
       "legend": {"orient": "top-left"},
       "type": "nominal",
       "sort": [],
-      "scale": {"range": ["gold", "#00643e", "#80d3b3", "#00a767"]}
+      "scale": {"scheme": "yellowgreenblue"}
     },
     "tooltip": [
       {"field": "Time", "type": "temporal", "timeUnit": "year", "title": "Year"},
