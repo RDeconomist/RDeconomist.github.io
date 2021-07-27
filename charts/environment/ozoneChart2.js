@@ -7,7 +7,7 @@ var ozoneChart =
 
     "title": {
     "text": "Ozone - UK vs Bristol",
-    "subtitle": "Average daily Ozone concentration for the UK (grey) and Bristol (red)",
+    "subtitle": "Average daily Ozone concentration for the UK (grey) and Bristol (blue)",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
