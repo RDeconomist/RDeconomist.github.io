@@ -1,7 +1,9 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
-    "description": "NOMICS cryptocurrency chart. CORS does not work. Works using the AllOrigins tool, but this then retieved all/more data than expected. As a consequence dta needs to be filtered before charting. Example of how to get what we want from JSON data using dot notation.",
+    "note1": "NOMICS cryptocurrency chart. CORS does not work.",
+    "note2": "Works using the AllOrigins tool, but this then retieves all/more data than expected.", 
+    "note3": "As a consequence data needs to be filtered before charting. Example of how to get what we want from JSON data using dot notation.",
 
     "config": {
       "background":"#122b39",
