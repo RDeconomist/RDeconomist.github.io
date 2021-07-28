@@ -67,7 +67,7 @@
 
     "tooltip": [
       {"field": "name", "title": "Currency"},
-      {"field": "market_cap", "title": "Latest market cap"}
+      {"field": "mktCapb", "title": "Latest market cap (£billion)"}
       
       
       ]
