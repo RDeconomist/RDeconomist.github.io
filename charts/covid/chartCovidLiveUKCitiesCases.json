@@ -28,7 +28,7 @@
       "fields": ["areaName"],
       "bind": {
         "input": "select",
-        "options": [null, "Bristol, City of", "Glasgow City", "Manchester", "Cardiff", "Birmingham", "London", "Belfast", "Leeds", "Liverpool"],
+        "options": [null, "Bristol, City of", "Glasgow City", "Manchester", "Cardiff", "Birmingham", "Belfast", "Leeds", "Liverpool"],
         "name": "Pick a city"
       }
     }
@@ -39,7 +39,7 @@
         
         {"filter": {
           "field": "areaName", 
-          "oneOf": ["Bristol, City of", "Glasgow City", "Manchester", "Cardiff", "Birmingham", "London", "Belfast", "Leeds", "Liverpool"]}
+          "oneOf": ["Bristol, City of", "Glasgow City", "Manchester", "Cardiff", "Birmingham", "Belfast", "Leeds", "Liverpool"]}
           },
 
         {"filter": {"selection": "Region"}}
