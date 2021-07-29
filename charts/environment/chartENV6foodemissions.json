@@ -7,8 +7,8 @@
   "width": 300,
   "height": 300,
   "title": {
-    "text": "Greenhouse gas emissions across the supply chain",
-    "subtitle": "Kilograms of CO2 emitted per kilogram of food, source: Our world in data",
+    "text": "Food - CO2 greenhouse gas emissions",
+    "subtitle": "Kg of CO2 emitted per kg of food, source: Our World in Data",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,
     "anchor": "start",
