@@ -51,7 +51,7 @@
         "sort":"ascending",
         "axis":{
           "domainColor":"dimgrey",
-          "labelColor":"#00a767",
+          "labelColor":"#f4c245",
           "tickColor":"pink",
           "gridColor":"dimgrey"
           }
@@ -64,11 +64,18 @@
         "title": null,
           "axis":{
             "domainColor":"dimgrey",
-            "labelColor":"#f4c245",
+            "labelColor":"#00a767",
             "tickColor":"pink",
             "gridColor":"dimgrey"
           }
   
-    }
+    },
+
+    "tooltip": [
+      {"field": "name", "title": "Currency"},
+      {"field": "mktCapb", "title": "Market cap (£billion)"}
+      
+      
+      ]
   }
 }
