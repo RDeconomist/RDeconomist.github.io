@@ -52,7 +52,8 @@
           "domainColor":"dimgrey",
           "labelColor":"#00a767",
           "tickColor":"pink",
-          "gridColor":"hotpink"
+          "gridColor":"hotpink",
+          "labelAngle": 35
           }
         },
       
@@ -68,6 +69,12 @@
             "format":"%"
           }
   
-    }
+    },
+    "tooltip": [
+      {"field": "name", "title": "Currency"},
+      {"field": "1d.price_change_pct", "title": "Today's price change (%)"}
+      
+      
+      ]
   }
 }
