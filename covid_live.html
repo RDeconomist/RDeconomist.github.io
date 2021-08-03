@@ -62,29 +62,19 @@
 
   </div>
 
-  <!--Item 3-->
-  <div class="grid_item">
-    <div id="chartC2b">
-        <script src="charts/covid/chartC2b.js"></script>
-      </script>
-    </div>
+<!--Item Vaccine Rate /////////////////////////////////////////////////-->
+<div class="grid_item">
+  <div id="chartVacc1">
+     <script>
+          var Vacc1 = "charts/covid/chartCovidLiveVaccinationRateOldYoung.json";
+          vegaEmbed('#chartVacc1', Vacc1, {"actions": false});
+    </script>
   </div>
-
-<!--Item 4-->
-  <div class="grid_item">
-    <div id="chartC3">
-        <script src="charts/covid/chartC3.js"></script>
-      </script>
-    </div>
-  </div>
+</div>  
+<!--End Vaccine Rate //////////////////////////////////////////// -->
 
 
-<!--Item 5-->
-  <div class="grid_item">
-    <div id="chartR1">
-      <script src="charts/covid/chartR1.js"></script>
-    </div>
-  </div>
+
 
 
   <!--Item 6-->
@@ -126,12 +116,15 @@
   </div>
 
 
-    <!--Item 11-->
-  <div class="grid_item">
-    <div id="chartD3">
-      <script src="charts/covid/chartD3.js"></script>
+  <!--Begin Grid-->
+  <div class="grid_items">
+    <div class="grid_item" id="secondVis">
+      <script>
+        var Vis2 = "charts/covid/chartCovidLiveUKCitiesLatestData.json";
+        vegaEmbed('#secondVis', Vis2, {"actions":false});
+      </script>
     </div>
-  </div>
+</div>
 
       <!--Item 12-->
   <div class="grid_item">
@@ -139,6 +132,23 @@
       <script src="charts/covid/chartCD2.js"></script>
     </div>
   </div>
+
+    <!--Item 3-->
+    <div class="grid_item">
+      <div id="chartC2b">
+          <script src="charts/covid/chartC2b.js"></script>
+        </script>
+      </div>
+    </div>
+  
+  <!--Item 4-->
+    <div class="grid_item">
+      <div id="chartC3">
+          <script src="charts/covid/chartC3.js"></script>
+        </script>
+      </div>
+    </div>
+  
 
 
 
