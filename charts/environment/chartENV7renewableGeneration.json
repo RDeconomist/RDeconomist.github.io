@@ -33,7 +33,7 @@
     
     "mark": {
       "type": "bar",
-      "color": "limegreen"
+      "color": "green"
     },
     
     "encoding": {
