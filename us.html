@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<head>
+
+<!--Meta stuff-->
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!--Facebook meta - this comes up when you post a link to the site-->
+<meta property="og:title" content="Covid Data">
+<meta property="og:description" content="A dashboard of interactive charts that runs directly from official government data. Automatically updates daily.">
+<meta property="og:image" content="linkimage.PNG">
+<meta property="og:url" content="http://coviddata.uk/index.htm">
+
+<!--Favicon-->
+<link rel="icon" href="images/favicon.PNG">
+<link rel="shortcut icon" href="images/favicon.PNG" />
+<link rel="apple-touch-icon" href="images/favicon.PNG" />
+
+<!--Title - this is the bit that comes up in the tab-->
+<title>USA data</title>
+
+<!--Main Stylesheet-->
+<link rel="stylesheet" href="css/covid_live.css">
+<link rel="stylesheet" href="css/main2.css">
+
+<!--The next three lines allow the Vega embed-->
+<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+</head>
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<body>
+
+<!-- heading for page-->
+<div class="wrap">
+  <h1>usa<span style="color: #ff0000">data</span></h1>
+  <span style="display:block; height: 10px;"></span>
+  <p id="rubric" class="rubric">Live charts running directly from <a href="https://fred.stlouisfed.org/">FRED,</a> the best source for US economic data.</p>
+  <span style="display:block; height: 10px;"></span>
+</div>
+
+
+<!--Begin Grid-->
+<div class="grid_items">
+   <div id="vis1"></div>
+</div>
+<!--End Grid-->
+
+<span style="display:block; height: 40px;"></span>
+
+
+<!-- Begin the JavaScript. This is going to (a) get data, (b) define chart, (c) draw chart !-->
+<!-- Note: the steps order below actually does not matter. The order of actions is defined in the final fucntion, which "waits" for the data !-->
+    <script>
+    
+        ///////////////////////////////////
+        // STEP 1. Script to fetch the data from FRED.
+        async function getData() {
+            // url = 'https://api.stlouisfed.org/fred/series/observations?series_id=PCEPI&api_key=22ee7a76e736e32f54f5df0a7171538d&file_type=json'
+            const response = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('https://api.stlouisfed.org/fred/series/observations?series_id=PCEPI&api_key=22ee7a76e736e32f54f5df0a7171538d&file_type=json')}`);
+            const data = await response.json();
+            const myJSONfull = JSON.parse(data.contents);
+            const myData = myJSONfull.observations;
+            return myData
+        };
+        ////////////////////////////////////
+        ////////////////////////////////////
+    
+        /////////////////////////
+        // STEP 2. Define the spec for the chart. 
+        var myChart = "charts/usa/FREDinflation2.json";
+        ////////////////////////////
+    
+        ///////////////////
+        // STEP 3. Define the chart drawing function:
+        async function chartIt(){
+            const data = await getData();
+            vegaEmbed('#vis1', myChart,{"actions": false}).then(res =>
+                res.view
+                .insert('myData', data)
+                .run()
+                );
+        } 
+        ////////////////////////////////////
+        ////////////////////////////////////
+    
+        ////////////////////
+        // STEP 4.  Run the chart drawing function:
+        chartIt();
+        /////////////////////
+    
+    </script>
+
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+              <div class="column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
+              </div>
+              <div class="column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://nuggetcharts.com/stream">Nugget</a></li>
+                        <li><a href="datascience.html">Course</a></li>
+                    </ul>
+              </div>
+              </div>
+                
+                <div class="footer-finalrow">
+                    <h3>Rapid Charts</h3>
+                    <p>Automated and interactive data analysis.</p>                    </div>
+                
+                <div class="col item social">
+                  <a href="#" class="fa fa-facebook"></a>
+                  <a href="https://twitter.com/RD_Economist" class="fa fa-twitter"></a>
+                  <a href="#" class="fa fa-instagram"></a>
+                  <a href="#" class="fa fa-linkedin"></a>
+                </div>
+            
+              </div>
+            <p class="copyright">Richard Davies © 2021</p>       
+    </footer>
+</div>
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+</html>
