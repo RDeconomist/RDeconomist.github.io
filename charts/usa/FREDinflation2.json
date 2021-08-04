@@ -23,7 +23,8 @@
         ],
     
       "height": 300,
-      "width": 300,
+      "width": 290,
+      "padding":{"left": 20, "top": 5, "right": 5, "bottom": 20},
       
      
       "encoding": {"x": {"field": "date", "type": "temporal", "title":null}},
