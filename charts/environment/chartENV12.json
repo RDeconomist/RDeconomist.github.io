@@ -1,0 +1,74 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Renewable electricity generated - by source",
+
+"title": {
+    "text": "Renewable electricity generated - by source",
+    "subtitle":"GwH. Source: UK Gov (BEIS)",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/chartENV12.csv"
+  },
+
+    "selection": {
+    "Energy source": {
+      "type": "single",
+      "fields": ["Source"],
+      "bind": {
+        "input": "select",
+        "options": [null, "Onshore wind", "Offshore wind", "Hydro", "Landfill gas", "Plant biomass", "Solar"],
+        "name": "Pick a source"
+      }
+    }
+  },
+  
+     "transform":[
+
+        
+        {"filter": {
+          "field": "Source", 
+          "oneOf": ["Onshore wind", "Offshore wind", "Hydro", "Landfill gas", "Plant biomass", "Solar"]}
+          },
+
+        {"filter": {"selection": "Energy source"}}
+  
+  
+      ],   
+
+
+
+
+
+  "height": 300,
+  "width": 300,
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "Time", "type": "temporal", "title": "", "axis": {"grid": false}},
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "",
+      "axis": {"grid": false}
+      
+      
+    },
+    "color": {
+      "field": "Source",
+      "title": null,
+      "legend": {"orient": "top-left"},
+      "type": "nominal",
+      "sort": [],
+      "scale": {"scheme": "yellowgreenblue"}
+    },
+    "tooltip": [
+      {"field": "Time", "type": "temporal", "timeUnit": "yearmonth", "title": "Date"},
+      {"field": "Value", "type": "quantitative", "title": "Electricity generated (GwH)"},
+      {"field": "Source"}
+    ]
+  }
+}
