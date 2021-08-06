@@ -69,7 +69,9 @@
   
       "tooltip": [
         {"field": "date", "type": "temporal", "title": "Date"},
-        {"field": "newAdmissions","type": "quantitative","title": "New Admissions","format": ",.0f"}
+        {"field": "cumVaccinationCompleteCoverageByVaccinationDatePercentage","type": "quantitative","title": "Vacination rate (%)"},
+        {"field": "age", "title": "Age group"},
+        {"field": "areaName", "title": "Country"}
       ]
   
       

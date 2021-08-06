@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+
+  "description": "Ben chart",
+
+"title": {
+    "text": "Change in energy capacity by UK nation",
+    "subtitle":"Installed capacity over time (MW). Indexed (2012 = 100). Source: BIES",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/chartENV13.csv"
+   
+  },
+
+  "height": 130,
+ 
+  "width": 120,
+ 
+  "mark": {"type": "line", "color": "blue"},
+ 
+ 
+ 
+  "encoding": {
+   
+    "x": {"field": "Time", "type": "temporal", "title": null, "axis":{"grid": false}},
+   
+    "y": {
+      "field": "Value2",
+      "type": "quantitative",
+      "title": null,
+      "axis":{"grid": false}},
+     
+
+    "color": {
+      "field": "Type",
+      "type": "nominal",
+      "scale": {"scheme": "yellowgreenblue"},
+      "title": "Source",
+      "legend": {"fillColor": "#FcFdFd"}
+    },
+
+
+    "facet": {
+      "field": "Country",
+ 
+      "type": "nominal",
+      "columns": 2,
+      "title": null
+    },
+
+    "tooltip": [
+      {"field": "Time", "type": "temporal", "title": "Date", "timeUnit": "year"},
+      {"field": "Value","type": "quantitative","title": "Installed capacity (MW)","format": ",.0f"},
+      {"field": "Value2","type": "quantitative","title": "Index number","format": ",.0f"},
+      {"field": "Country"}
+    ]
+
+   
+  },
+  "resolve": {"scale": {"y": "independent"}}
+}
