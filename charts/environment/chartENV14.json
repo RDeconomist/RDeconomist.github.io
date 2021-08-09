@@ -61,7 +61,7 @@
 
     "tooltip": [
 
-      {"field": "Year", "type": "temporal", "title": "Date"},
+      {"field": "Year", "type": "temporal", "title": "Date", "timeUnit": "year"},
 
       {"field": "Value 2", "type": "quantitative", "title": "Reduction of forest area (%)"},
 
