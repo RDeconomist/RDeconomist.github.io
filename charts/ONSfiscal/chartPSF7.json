@@ -4,7 +4,7 @@
 
     "data": {
 
-      "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/hf6x/dataset/pusf/data",
+      "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/nmoe/dataset/pusf/data",
 
       "format": {
         "type":"json",
@@ -14,7 +14,7 @@
 
     "mark":{
 
-      "type": "line",
+      "type": "bar",
       "color": "rebeccapurple",
       "strokeWidth":2,
       "opacity":1
@@ -25,35 +25,15 @@
 
       {"calculate":"substring(datum.quarter,1)*3-1", "as": "quarter_n"},
       {"calculate":"join([datum.year, datum.quarter_n],['-'])", "as": "date2"},
-      {"calculate":"timeParse(datum.date2, '%Y-%m')", "as": "date3"},
-      {"filter": "datum.year>minYear"},
-      {"filter": "datum.year<maxYear"}
+      {"calculate":"timeParse(datum.date2, '%Y-%m')", "as": "date3"}
+     
 
     ],
 
-    "params": [    
-      {"name":"minYear", "value":1992,
-         "bind":{
-           "input": "range",
-           "min": 1992, 
-           "max": 2022, 
-           "step": 1,
-           "name": "Start year:"}
-      },
-
-      {"name":"maxYear", "value":2022,
-         "bind":{
-           "input": "range",
-           "min": 1992, 
-           "max": 2022, 
-           "step": 1,
-           "name": "End year:"}
-      }
-    ],
-
+    
     "title": {
-    "text": "Net debt",
-    "subtitle": "% of GDP. Excluding public sector banks. Source: ONS",
+    "text": "Local government net borrowing",
+    "subtitle": "£ million. Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -81,7 +61,7 @@
         },
         "tooltip": [
       {"field": "date3", "type": "temporal", "title": "Date", "timeUnit": "yearmonth"},
-      {"field": "value", "type": "quantitative", "title": "Net debt (% GDP)"}
+      {"field": "value", "type": "quantitative", "title": "Net borrowing (£m)"}
    
     ]
 
