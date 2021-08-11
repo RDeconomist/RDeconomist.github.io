@@ -14,7 +14,7 @@
 
     "mark":{
 
-      "type": "bar",
+      "type": "area",
       "color": "rebeccapurple",
       "strokeWidth":2,
       "opacity":1
