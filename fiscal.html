@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Public Sector Finances</title>
+
+<!--Main Stylesheet-->
+<link rel="stylesheet" href="css/covid_live.css">
+
+<!--Allow the Vega embed-->
+<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+
+
+</head>
+
+<body>
+<h1>UK Public Sector Finances Dashboard</h1>
+<p>This dashboard is linked to the Office for National Statistics API, and runs directly from source. The charts will update as soon as new data are released.</p>
+
+
+    <div class="grid_items">
+        <div class="grid_item" id="chart1"></div>
+        <div class="grid_item" id="chart2"></div>
+        <div class="grid_item" id="chart3"></div>
+        <div class="grid_item" id="chart4"></div>
+        <div class="grid_item" id="chart5"></div>
+        <div class="grid_item" id="chart6"></div>
+        <div class="grid_item" id="chart7"></div>
+        <div class="grid_item" id="chart8"></div>
+        <div class="grid_item" id="chart9"></div>
+        <div class="grid_item" id="chart10"></div>
+        <div class="grid_item" id="chart11"></div>
+        <div class="grid_item" id="chart12"></div>
+    </div>   
+</body>
+
+
+<script>
+    // Set the charts that we want on the page as variables, linking them to JSON files:
+    var PSA1 = "charts/ONSinflation/chartPSF1.json";
+    var PSA2 = "charts/ONSinflation/chartPSF2.json";
+    var PSA3 = "charts/ONSinflation/chartPSF3.json";
+    var PSA4 = "charts/ONSinflation/chartPSF4.json";
+    var PSA5 = "charts/ONSinflation/chartPSF5.json";
+    var PSA6 = "charts/ONSinflation/chartPSF6.json";
+    var PSA7 = "charts/ONSinflation/chartPSF7.json";
+    var PSA8 = "charts/ONSinflation/chartPSF8.json";
+    var PSA9 = "charts/ONSinflation/chartPSF9.json";
+    var PSA10 = "charts/ONSinflation/chartPSF10.json";
+    var PSA11 = "charts/ONSinflation/chartPSF11.json";
+    var PSA12 = "charts/ONSinflation/chartPSF12.json";
+   
+
+
+
+    // Now embed the charts in the divs set above:
+    vegaEmbed('#chart1', PSA1, {"actions": false});   
+    vegaEmbed('#chart2', PSA2, {"actions": false});
+    vegaEmbed('#chart2', PSA3, {"actions": false});
+    vegaEmbed('#chart2', PSA4, {"actions": false});
+    vegaEmbed('#chart2', PSA5, {"actions": false});
+    vegaEmbed('#chart2', PSA6, {"actions": false});
+    vegaEmbed('#chart2', PSA7, {"actions": false});
+    vegaEmbed('#chart2', PSA8, {"actions": false});
+    vegaEmbed('#chart2', PSA9, {"actions": false});
+    vegaEmbed('#chart2', PSA10, {"actions": false});
+    vegaEmbed('#chart2', PSA11, {"actions": false});
+    vegaEmbed('#chart2', PSA12, {"actions": false});
+   
+
+</script>
+
+
+
+
+</html>
