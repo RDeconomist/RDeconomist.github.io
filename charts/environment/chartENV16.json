@@ -31,7 +31,7 @@
       "x": {
         "field": "Name",
         "type": "nominal",
-        "sort": "y",
+        "sort": "-y",
         "axis": {
           "title": null,
           "grid": false,
