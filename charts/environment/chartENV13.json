@@ -5,7 +5,7 @@
 
 "title": {
     "text": "Energy capacity – by UK nation",
-    "subtitle":"Change in installed capacity over time (MW). Indexed (2012 = 100). Source: BIES",
+    "subtitle":"Change in installed capacity (MW). Indexed (2012 = 100). Source: BIES",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
