@@ -4,8 +4,8 @@
   "description": "Chart on stored energy capacity by UK nation and source",
 
 "title": {
-    "text": "Change in energy capacity by UK nation",
-    "subtitle":"Installed capacity over time (MW). Indexed (2012 = 100). Source: BIES",
+    "text": "Energy capacity – by UK nation",
+    "subtitle":"Change in installed capacity over time (MW). Indexed (2012 = 100). Source: BIES",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
