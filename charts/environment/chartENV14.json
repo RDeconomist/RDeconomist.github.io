@@ -11,7 +11,7 @@
   },
 
   "title": {
-    "text": "Change in forest area",
+    "text": "Forest area - by country",
     "subtitle":"% change square km (Base year = 1990). Source: World Bank",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
