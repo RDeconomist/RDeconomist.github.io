@@ -1,0 +1,61 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+
+    "title": {
+    "text": "The price of protein: fish vs meat",
+    "subtitle": "Percentage 12-month change, CPI divisions",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+
+    "width":300,
+    "height":300,
+
+
+    "encoding": {
+
+      "x": {
+        "field": "date", 
+        "type": "temporal", 
+        "title":null},
+      
+      "color": {
+        "field": "name", 
+        "type": "ordinal", 
+        "title":null,
+        "scale":{"scheme":"magma"}}},
+
+
+    "layer":[
+      
+    {"data": {"url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/d7hi/dataset/mm23/data",
+      "format": {"type":"json", "property": "months"}},
+
+      "mark":{"type": "line", "color":"blue"},
+
+      "encoding": {"y": {"field": "value", "type": "quantitative","title":null}},
+
+      "transform": [
+        {"calculate":"replace(datum.quarter, '', 'Meat')", "as": "name"}
+      ]
+    },
+
+    {"data": {"url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/d7hj/dataset/mm23/data",
+      "format": {"type":"json", "property": "months"}},
+
+      "mark":{"type": "line", "color":"green"},
+
+      "encoding": {"y": {"field": "value", "type": "quantitative","title":null}},
+
+      "transform": [
+        {"calculate":"replace(datum.quarter, '', 'Fish')", "as": "name"}
+      ]
+    }
+    
+  ]
+   
+}

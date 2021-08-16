@@ -1,0 +1,48 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+
+    "title": {
+    "text": "Tea v Coffee v Hot Cholocolate",
+    "subtitle": "Percentage 12-month price change for CPI items",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+
+    "width":300,
+    "height":300,
+
+    "encoding": {"x": {"field": "date", "type": "temporal", "title":null}},
+
+    "layer":[
+      
+      {"data": {"url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/l7lm/dataset/mm23/data",
+      "format": {"type":"json", "property": "months"}},
+
+      "mark":{"type": "line", "color":"red"},
+
+      "encoding": {"y": {"field": "value", "type": "quantitative","title":null}}
+    },
+
+    {"data": {"url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/l7lm/dataset/mm23/data",
+      "format": {"type":"json", "property": "months"}},
+
+      "mark":{"type": "line", "color":"blue"},
+
+      "encoding": {"y": {"field": "value", "type": "quantitative","title":null}}
+    },
+
+    {"data": {"url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/l7lo/dataset/mm23/data",
+      "format": {"type":"json", "property": "months"}},
+
+      "mark":{"type": "line", "color":"green"},
+
+      "encoding": {"y": {"field": "value", "type": "quantitative","title":null}}
+    }
+    
+    ]
+   
+}
