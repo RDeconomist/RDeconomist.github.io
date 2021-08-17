@@ -1,0 +1,70 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "BitCoin Price",
+
+   "title": {
+    "text": "Bitcoin",
+    "subtitle":"Weekly average price. Source: coinapi.io",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "#179fdb",
+    "subtitleColor":"#179fdb"},
+
+  "config": {
+    "background":"#122b39",
+    "view": {
+      "stroke": "transparent"}},
+ 
+  
+  "data": {
+    "url": "https://rest.coinapi.io/v1/exchangerate/BTC/USD/history?apikey=FCB2BB27-5458-483B-88CE-926C357E0606&period_id=7DAY&time_start=2020-01-01T00:00:00&time_end=2022-02-01T00:00:00&limit=1000",
+    "format": {"type": "json"}},
+  
+
+  "height": 300,
+  "width": 300,
+  
+
+  "mark": {
+    "type": "line",
+    "point": false,
+    "interpolate": "linear",
+    "color":"#f4c245"
+  },
+
+  "transform": [
+    {"calculate":"slice(datum.time_period_end,0,10)", "as": "dateA"},
+    {"calculate": "timeParse(datum.dateA , '%Y-%m-%d')", "as": "dateB"}
+  ],
+
+  "encoding": {
+    "x": {
+      "field": "dateB",
+      "type": "temporal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "labelSeparation": 10,
+        "xyzticks": false,
+        "domainColor":"dimgrey",
+        "labelColor":"#00a767",
+        "tickColor":"pink",
+        "gridColor":"dimgrey"
+      }},
+
+    "y": {
+      "field": "rate_open",
+      "type": "quantitative",
+      "title": "",
+      "axis": {
+        "grid": false,
+        "domainColor":"dimgrey",
+        "labelColor":"#00a767",
+        "tickColor":"pink",
+        "gridColor":"dimgrey",
+        "format":"$,.5"}
+        }
+     }
+}
