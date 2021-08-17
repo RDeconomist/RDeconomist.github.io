@@ -12,7 +12,7 @@
   },
 
 
-    "width":260,
+    "width":300,
     "height":300,
 
 
@@ -27,6 +27,7 @@
         "field": "name", 
         "type": "ordinal", 
         "title":null,
+        "legend":{"orient": "bottom"},
         "scale":{"scheme":"set1"}}},
 
 
