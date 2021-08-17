@@ -15,7 +15,7 @@
 
 canvas {
     border: 1px solid;
-    background: black;
+    background: rgb(21, 32, 43);
 }
 
 
@@ -95,7 +95,7 @@ h1, span {
   }
 
 .button1:hover {
-    background-color:red;
+    background-color:rgb(255, 173, 31);
     /* transition-delay: 1s;
     transition-property: background-color; */
 }  

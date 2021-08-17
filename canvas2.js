@@ -75,8 +75,8 @@ function Circle2(x, y, dx, dy, r) {
         c.arc(this.x, this.y, this.r, 0, Math.PI*sh, false);
         //c.strokeStyle = 'pink';
         //c.fillStyle = 'pink';
-        c.strokeStyle = 'rgba(250,0,0,0.9)';
-        c.fillStyle = 'rgba(250,0,0,0.9)';
+        c.strokeStyle = 'rgba(255, 173, 31, 0.9)';
+        c.fillStyle = 'rgba(255, 173, 31, 0.9)';
         c.stroke();
         c.fill();
     }
