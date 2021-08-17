@@ -31,6 +31,9 @@ body {
   background-color: #ebe5e5;
  }
 
+
+
+
 /* ------------------------------------------------------------------------------
 	Grid stuff
 -------------------------------------------------------------------------------*/
@@ -180,7 +183,7 @@ a {
 /* unvisited link */
 a:link {
   color: #320064;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* visited link */
@@ -322,5 +325,30 @@ body {
     font-size:13px;
     margin-bottom:0;
     color:#fff;
+  }
+
+
+  .dashboardButton {
+    background-color: transparent;
+    border: 1px solid rgb(126, 114, 114);
+    color: rgb(126, 114, 114);
+    font-family: MetricWeb,sans-serif;
+    line-height: 16px;
+    font-weight: 600;
+    border-radius: 150px;
+    box-sizing: content-box;
+    align-items: flex-start;
+    display: inline-block;
+    font-size: 12px;
+    margin: 1px 2px 1px 2px;
+    text-decoration: none;
+    max-width: 100px;
+    outline-offset: 2px;
+    overflow: hidden;
+    padding: 5px 12px;
+    text-align: left;
+    text-overflow: ellipsis;
+    transition: border-color,background-color .5s ease;
+    white-space: nowrap;
   }
   
