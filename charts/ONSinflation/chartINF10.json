@@ -14,7 +14,7 @@
     "format": {"type": "csv"}
   },
   "height": 300,
-  "width": 250,
+  "width": 185,
   "mark": {"type": "bar", "width": 3},
   "transform": [{"filter": {"selection": "pickSeries"}}],
   "selection": {
