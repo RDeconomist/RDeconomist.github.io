@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": {
+    "text": "CPI - sources of inflation",
+    "subtitle": "Contributions to CPI all items by sub series",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "description": "Coronavirus cases",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/teaching2/main/cpiContributions.csv",
+    "format": {"type": "csv"}
+  },
+  "height": 300,
+  "width": 250,
+  "mark": {"type": "bar", "width": 3},
+  "transform": [{"filter": {"selection": "pickSeries"}}],
+  "selection": {
+    "pickSeries": {
+      "type": "single",
+      "fields": ["series"],
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "AlcoholTobacco",
+          "ClothingFootwear",
+          "Communication",
+          "Education",
+          "Food",
+          "FurnitureHousehold",
+          "Health",
+          "HousingHouseService",
+          "Misc",
+          "RecreationCulture",
+          "RestaurantsHotels",
+          "Transport"
+        ],
+        "name": "Pick a series: "
+      }
+    }
+  },
+  "encoding": {
+    "x": {"field": "Date", "type": "temporal", "title": ""},
+    "y": {"field": "Value", "type": "quantitative", "title": ""},
+    "color": {
+      "field": "series",
+      "type": "nominal",
+      "legend": {"orient": "right", "columns":1},
+      "scale": {"scheme": "inferno"},
+      "title": ""
+    }
+  }
+}
