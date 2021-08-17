@@ -1,0 +1,45 @@
+html, body { 
+    width: 100%; 
+    height: 100%;
+    margin: 0; 
+    padding: 0;
+    background: rgb(21, 32, 43);
+  }
+  
+  svg {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 150%);
+  }
+  
+  svg #plug,
+  svg #socket {
+    fill:rgb(255, 173, 31);
+  }
+  
+  svg #loop-normal {
+    fill: none;
+    stroke: rgb(255, 173, 31);
+    stroke-width: 7%;
+  }
+  
+  svg #loop-offset {
+    display: none;
+  }
+  
+  .credit {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 900%);
+    text-align: center;
+    color: #FDB515;
+  }
+  
+  .credit a {
+    color: #FDB515;
+    font: 800 75% "Open Sans", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+  }

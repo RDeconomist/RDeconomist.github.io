@@ -1,60 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-<!--Stylesheets, inc for preloader-->
+<!--Main Stylesheet-->
 <link rel="stylesheet" href="css/covid_live.css">
-<link rel="stylesheet" href="css/preload.css">
-<link rel="stylesheet" href="xxxcss/crypto.css">
 
 <!--Allow the Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
 
+<style>
+
+    html, body { 
+        width: 100%; 
+        height: 100%;
+        margin: 0; 
+        padding: 0;
+        background: rgb(21, 32, 43);
+      }
+      
+      svg {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      svg #plug,
+      svg #socket {
+        fill:rgb(255, 173, 31);
+      }
+      
+      svg #loop-normal {
+        fill: none;
+        stroke: rgb(255, 173, 31);
+        stroke-width: 7%;
+      }
+      
+      svg #loop-offset {
+        display: none;
+      }
+      
+      .credit {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      
+      .credit a {
+        color: #FDB515;
+        font: 800 75% "Open Sans", sans-serif;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    
+    </style>
+
 </head>
 
 
-
-<body onload="myFunction()" style="margin:0;">
-
-
-
-<!--Div with the loader ///////////////////////////////////// -->
-    <div id="loader">
-        
-        <svg id="preloader" width="240px" height="120px" viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <path id="loop-normal" class="st1" d="M120.5,60.5L146.48,87.02c14.64,14.64,38.39,14.65,53.03,0s14.64-38.39,0-53.03s-38.39-14.65-53.03,0L120.5,60.5
-          L94.52,87.02c-14.64,14.64-38.39,14.64-53.03,0c-14.64-14.64-14.64-38.39,0-53.03c14.65-14.64,38.39-14.65,53.03,0z">
-              <animate attributeName="stroke-dasharray" from="5, 5" to="500, 500" begin="0s" dur="4s" repeatCount="indefinite" />
-              <animate attributeName="stroke-dashoffset" from="0" to="0" begin="0s" dur="4s" repeatCount="indefinite" />
-            </path>
-          
-            <path id="loop-offset" d="M146.48,87.02c14.64,14.64,38.39,14.65,53.03,0s14.64-38.39,0-53.03s-38.39-14.65-53.03,0L120.5,60.5L94.52,87.02c-14.64,14.64-38.39,14.64-53.03,0c-14.64-14.64-14.64-38.39,0-53.03c14.65-14.64,38.39-14.65,53.03,0L120.5,60.5L146.48,87.02z">
-            </path>            
-        </svg>
-        
-        <div class="credit">
-            <a href="https://nuggetcharts.com" target="_blank">fetching live data</a>
-        </div>
-     </div>
-<!--End of loader /////////////////////////////////// -->
-
-
-
-<!--Page content begins ///////////////////////////////-->
-<div style="display:none; background-color:#ebe5e5;" id="myDiv" class="animate-bottom">
-  
+<body>
 
 <!-- heading for page-->
     <div class="wrap">
-        <h1>price<span style="color: #86d0bb">charts</span></h1>
+        <h1>inflation<span style="color: #86d0bb">charts</span></h1>
         <span style="display:block; height: 10px;"></span>
         <p id="rubric" class="rubric">Charts on prices and inflation, running direct from the ONS API. Prepared for the Economics Observatory data hub.</p>
         <span style="display:block; height: 10px;"></span>
@@ -77,10 +93,7 @@
         <div class="grid_item" id="chart10"></div>
         <div class="grid_item" id="chart11"></div>
         <div class="grid_item" id="chart12"></div>
-    </div> 
-</div> 
-
-
+    </div>   
 </body>
 
 
@@ -113,21 +126,8 @@
     vegaEmbed('#chart10', inf9, {"actions": false});
     vegaEmbed('#chart11', inf11, {"actions": false});   
     vegaEmbed('#chart12', inf12, {"actions": false});
+</script>
 
-
-    // Scipt for the loader:
-    var myVar;
-    
-    function myFunction() {
-      myVar = setTimeout(showPage, 3000);
-    }
-    
-    function showPage() {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("myDiv").style.display = "block";
-    }
-
-    </script>
 
 
 
