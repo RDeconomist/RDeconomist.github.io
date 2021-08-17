@@ -5,7 +5,7 @@
 
    "title": {
     "text": "Bitcoin",
-    "subtitle":"Weekly average price",
+    "subtitle":"Weekly average price. Source: coinapi.io",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -24,14 +24,14 @@
   
 
   "height": 300,
-  "width": 300,
+  "width": 280,
   
 
   "mark": {
     "type": "line",
     "point": false,
     "interpolate": "linear",
-    "color":"#e6224b"
+    "color":"#f4c245"
   },
 
   "transform": [
@@ -61,9 +61,10 @@
       "axis": {
         "grid": false,
         "domainColor":"dimgrey",
-        "labelColor":"#f4c245",
+        "labelColor":"#00a767",
         "tickColor":"pink",
-        "gridColor":"dimgrey"}
+        "gridColor":"dimgrey",
+        "format":"$,.5"}
         }
      }
 }
