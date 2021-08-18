@@ -11,12 +11,12 @@
 <!--Title - this is the bit that comes up in the tab-->
 <title>ECO-Crypto</title>
 
-<!--Main Stylesheet-->
-<link rel="stylesheet" href="css/main2.css">
+<!--Stylesheets-->
 <link rel="stylesheet" href="css/covid_live.css">
+<link rel="stylesheet" href="css/preload.css">
+<link rel="stylesheet" href="css/main2.css">
 <link rel="stylesheet" href="css/crypto.css">
 
-<!-- <link rel="stylesheet" href="cardFlip.css"> -->
 
 
 <!--Favicon-->
@@ -36,59 +36,59 @@
 </head>
 
 
-<body>
+
+<body onload="myFunction()" style="margin:0;">
+
+  <!--Div with the loader ///////////////////////////////////// -->
+      <div id="loader" class="loader">
+          
+          <svg id="preloader" width="240px" height="120px" viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path id="loop-normal" class="st1" d="M120.5,60.5L146.48,87.02c14.64,14.64,38.39,14.65,53.03,0s14.64-38.39,0-53.03s-38.39-14.65-53.03,0L120.5,60.5
+            L94.52,87.02c-14.64,14.64-38.39,14.64-53.03,0c-14.64-14.64-14.64-38.39,0-53.03c14.65-14.64,38.39-14.65,53.03,0z">
+                <animate attributeName="stroke-dasharray" from="5, 5" to="500, 500" begin="0s" dur="4s" repeatCount="indefinite" />
+                <animate attributeName="stroke-dashoffset" from="0" to="0" begin="0s" dur="4s" repeatCount="indefinite" />
+              </path>
+            
+              <path id="loop-offset" d="M146.48,87.02c14.64,14.64,38.39,14.65,53.03,0s14.64-38.39,0-53.03s-38.39-14.65-53.03,0L120.5,60.5L94.52,87.02c-14.64,14.64-38.39,14.64-53.03,0c-14.64-14.64-14.64-38.39,0-53.03c14.65-14.64,38.39-14.65,53.03,0L120.5,60.5L146.48,87.02z">
+              </path>            
+          </svg>
+          
+          <div class="credit">
+              <a href="https://nuggetcharts.com">fetching live data</a>
+          </div>
+       </div>
+  <!--End of loader /////////////////////////////////// -->
+  
+  
+<!--Page content begins ///////////////////////////////-->
+<div style="display:none; width: 100%;" id="myDiv" class="animate-bottom">
 
 <!-- heading for page-->
 <div class="wrap">
   <h1>crypto<span style="color: #e6224b">charts</span></h1>
   <span style="display:block; height: 10px;"></span>
-  <p id="rubric" class="rubric">Cryptocurrency charts made using APIs and scrapers.</p>
+  <p id="rubric" class="rubric">Cryptocurrency charts made using APIs from Nomics.com and CoinAPI.io.</p>
   <span style="display:block; height: 10px;"></span>
 </div>
 
 
-<!--Grid - START ///////////////////////////////-->
+
+<!-- START - Grid of divs that will house the charts-->
 <div class="grid_items">
-
-  
-  
-<!--Chart1 - START ////////////////////////////////////-->
-<div class="grid_item" id="chartCRYP1">
-  <script>
-      var crypto1 = "charts/crypto/chart8_CryptoPricesDark.json";
-      vegaEmbed('#chartCRYP1', crypto1, {"actions": false});
-  </script>
+  <div class="grid_item" id="chart1"></div>
+  <div class="grid_item" id="chart2"></div>
+  <div class="grid_item" id="chart3"></div>
+  <div class="grid_item" id="chart4"></div>
+  <div class="grid_item" id="chart5"></div>
+  <div class="grid_item" id="chart6"></div>
+  <div class="grid_item" id="chart7"></div>
+  <div class="grid_item" id="chart8"></div>
+  <div class="grid_item" id="chart9"></div>
+  <div class="grid_item" id="chart10"></div>
+  <div class="grid_item" id="chart11"></div>
+  <div class="grid_item" id="chart12"></div>
 </div>
-<!--Chart 1 - END ///////////////////////////////////-->
-
-
-
-<!--Chart2 - START ////////////////////////////////////-->
-<div class="grid_item" id="chartCRYP2">
-  <script>
-      var crypto2 = "charts/crypto/chart9_CryptoMktCap.json";
-      vegaEmbed('#chartCRYP2', crypto2, {"actions": false});
-  </script>
-</div>
-<!--Chart 2 - END ///////////////////////////////////-->
-
-
-<!--Chart3 - START ////////////////////////////////////-->
-<div class="grid_item" id="chartCRYP3">
-  <script>
-      var crypto3 = "charts/crypto/chart10_CryptoMktCapStable.json";
-      vegaEmbed('#chartCRYP3', crypto3, {"actions": false});
-  </script>
-</div>
-<!--Chart 3 - END ///////////////////////////////////-->
-
-
-
-  
- 
-</div>
-
-<!--Grid - end ///////////////////////////////-->
+<!-- END - Grid of divs that will house the charts-->  
 
 
 <!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
@@ -130,6 +130,60 @@
     </footer>          
 </div>
 <!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+
+
+
+<!--End of Div that appears after loader ///////////////////////////////-->
+</div>
+
+
+</body>
+
+
+<script>
+  // Set the charts that we want on the page as variables, linking them to JSON files:
+  var crypto1 = "charts/crypto/chartcrypto1.json";
+  var crypto2 = "charts/crypto/chartcrypto2.json";
+  var crypto3 = "charts/crypto/chartcrypto3.json";
+  var crypto4 = "charts/crypto/chartcrypto4.json";
+  var crypto5 = "charts/crypto/chartcrypto5.json";
+  var crypto6 = "charts/crypto/chartcrypto6.json";
+  var crypto7 = "charts/crypto/chartcrypto7.json";
+  var crypto8 = "charts/crypto/chartcrypto8.json";
+  var crypto9 = "charts/crypto/chartcrypto9.json";
+  var crypto10 = "charts/crypto/chartcrypto10.json";
+  var crypto11 = "charts/crypto/chartcrypto11.json";
+  var crypto12 = "charts/crypto/chartcrypto12.json";
+
+
+  // Now embed the charts in the divs set above:
+  vegaEmbed('#chart1', crypto1, {"actions": false});   
+  vegaEmbed('#chart2', crypto2, {"actions": false});
+  vegaEmbed('#chart3', crypto3, {"actions": false});   
+  vegaEmbed('#chart4', crypto4, {"actions": false});
+  vegaEmbed('#chart5', crypto5, {"actions": false});   
+  vegaEmbed('#chart6', crypto6, {"actions": false});
+  vegaEmbed('#chart7', crypto7, {"actions": false});   
+  vegaEmbed('#chart8', crypto8, {"actions": false});
+  vegaEmbed('#chart9', crypto9, {"actions": false});   
+  vegaEmbed('#chart10', crypto10, {"actions": false});
+  vegaEmbed('#chart11', crypto11, {"actions": false});   
+  vegaEmbed('#chart12', crypto12, {"actions": false});
+
+
+  // Scipt for the loader:
+  var myVar;
+  
+  function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+  }
+  
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+
+  </script>
 
 
 

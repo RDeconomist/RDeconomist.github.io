@@ -1,0 +1,68 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    
+    "description": "NOMICS cryptocurrency chart. Number of exchanges",
+    
+    "config": {
+      "background":"#122b39",
+      "view": {
+        "stroke": "transparent"}},
+    
+    "title": {
+    "text": "Major stablecoins: Market cap",
+    "anchor": "start",
+    "color": "#179fdb",
+    "subtitle":"$ billions. Source: Nomics API",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "subtitleColor":"#179fdb"
+        },
+      
+    "data": {
+      "url": "https://api.allorigins.win/raw?url=https://api.nomics.com/v1/currencies/ticker?key=8bbf8728e16a7a780c4bffa13369437393a4da03&ids=BTC,ETH,XRP&interval=1d,30d,ytd"},
+
+      "transform":[
+        {"filter": {
+          "field": "currency", 
+          "oneOf": ["USDT","DAI", "USDC", "BUSD", "TUSD"]}
+          },
+      {"calculate": "datum.market_cap/1000000000", "as": "mktCapb"}
+        ],
+
+        "mark": {
+            "type": "bar",
+            "color":"orange"},
+          "width":300,
+          "height":300,
+          
+          "encoding": {
+            
+            "x": {
+              "field": "name", 
+              "type": "ordinal", 
+              "title": null, 
+              "sort": "y",
+              "axis": {"labelAngle": 35, "labelColor":"#00a767", "domainColor":"dimgrey"}
+              
+              },
+    
+    "y": {
+      "field": "mktCapb", 
+      "type": "quantitative", 
+      "title": null,
+      "axis": {
+        "labelColor":"#f4c245",
+        "domainColor":"dimgrey", 
+        "labelAngle": 0,
+        "format":"$.2"}
+    
+    },
+    
+    "tooltip": [
+      {"field": "name", "title": "Currency"},
+      {"field": "mktCapb", "title": "Latest market cap (£billion)"}
+      
+      
+      ]
+  }
+}   
