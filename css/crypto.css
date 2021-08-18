@@ -18,6 +18,9 @@ p {
     border-width:2px;
     border-style: solid;
     border-color: black;
+    color: #fbfeff9d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    font-size: smaller;
 
 }
 
