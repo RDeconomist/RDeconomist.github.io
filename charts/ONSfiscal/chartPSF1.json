@@ -4,7 +4,7 @@
 
     "data": {
 
-      "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/-jw2t/dataset/pusf/data",
+      "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/jw2v/dataset/pusf/data",
 
       "format": {
         "type":"json",
@@ -14,7 +14,7 @@
 
     "mark":{
 
-      "type": "bar",
+      "type": "line",
       "color": "rebeccapurple",
       "strokeWidth":2,
       "opacity":1
@@ -31,7 +31,7 @@
 
     "title": {
     "text": "Current budget deficit",
-    "subtitle": "£ million. Source: ONS",
+    "subtitle": "% GDP. Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -57,8 +57,8 @@
         "title":null
         },
         "tooltip": [
-      {"field": "date3", "type": "temporal", "title": "Date", "timeUnit": "yearmonth"},
-      {"field": "value", "type": "quantitative", "title": "GDP (£m)"}
+      {"field": "date3", "type": "temporal", "title": "Date", "timeUnit": "yearquarter"},
+      {"field": "value", "type": "quantitative", "title": "Deficit (% GDP)"}
    
     ]
 
