@@ -328,7 +328,7 @@ body {
   }
 
 
-  .dashboardButton {
+  .dashboardButton, .dashboardButtonMore {
     background-color: transparent;
     border: 1px solid rgb(126, 114, 114);
     color: rgb(126, 114, 114);
@@ -350,5 +350,11 @@ body {
     text-overflow: ellipsis;
     transition: border-color,background-color .5s ease;
     white-space: nowrap;
+  }
+
+  .dashboardButtonMore {
+    background-color: rgb(255, 173, 31);
+    border: 1px solid rgb(255, 173, 31);
+    color: rgb(126, 114, 114);
   }
   
