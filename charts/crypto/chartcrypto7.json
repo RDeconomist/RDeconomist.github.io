@@ -3,13 +3,13 @@
 
 
    "title": {
-    "text": "Ether: Price vs volume",
-    "subtitle":"Daily ETH price and volume traded",
+    "text": "Ether",
+    "subtitle":"Daily volume (x), vs Price change (y)",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
-    "color": "lightgrey",
-    "subtitleColor":"lightgrey"},
+    "color": "#179fdb",
+    "subtitleColor":"#179fdb"},
 
   "config": {
     "background":"#122b39",
@@ -18,7 +18,7 @@
  
 
 
-    "width":260,
+    "width":295,
     "height":300,
 
 
@@ -27,124 +27,47 @@
       "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/crypto/dataETH.csv"},
 
 
-    
+    "mark": {
+    "type": "circle",
+    "color":"hotpink",
+    "opacity":0.5
+  },
 
-  "transform": [
-    
-    {"calculate": "year(datum.Date)", "as": "year"},
-
-    {"filter": "datum.year>=minYear"},
-    {"filter": "datum.year<=maxYear"}
-],
-
-
- 
-
-    "params": [    
-      {"name":"minYear", "value":2016,
-         "bind":{
-           "input": "range",
-           "min": 2016, 
-           "max": 2021, 
-           "step": 1,
-           "name": "Start year:"}
-      },
-
-      {"name":"maxYear", "value":2021,
-         "bind":{
-           "input": "range",
-           "min": 2016, 
-           "max": 2021, 
-           "step": 1,
-           "name": "End year:"}
-      }
+    "transform": [
+      {"calculate":"replace(datum.Change,'%','')/100", "as": "change"},
+      {"filter":{"field":"change", "range":[-0.3,0.3]}},
+      {"calculate":"log(datum.Volume)", "as": "logVol"}
     ],
 
 
+    "encoding": {
+      
+     
+    "x": {
+      "field": "Volume",
+      "type": "quantitative",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "labelSeparation": 10,
+        "domainColor":"dimgrey",
+        "labelColor":"#00a767",
+        "tickColor":"pink",
+        "gridColor":"dimgrey"
+      }},
 
-    "encoding": {     
-        "x": {
-          "field": "Date",
-          "type": "temporal",
-          "axis": {
-            "title": null,
-            "grid": false,
-            "labelSeparation": 10,
-            "domainColor":"dimgrey",
-            "labelColor":"lightgrey",
-            "tickColor":"pink",
-            "gridColor":"dimgrey"
-          }}
-          
-          },
-          
-          
-
-     "layer":[
-
-       {"mark": {
-            "type": "line",
-            "point": false,
-            "interpolate": "linear",
-            "color":"hotpink",
-            "strokeWidth":1
-          },
-
-        "encoding": {
-            "y": {
-            "field": "Price",
-            "type": "quantitative",
-            "title": "",
-            "axis": {
-              "grid": false,
-              "domainColor":"dimgrey",
-              "labelColor":"hotpink",
-              "tickColor":"pink",
-              "gridColor":"dimgrey",
-              "format":"$,.5"}
-              },
-              
-            "color": {
-              "datum": "Price",
-              "scale": {"range": ["hotpink", "orange"]},
-              "legend":{
-                "labelColor":"lightgrey",
-                "orient": "top-left"}}
-          
-          } 
-              
-              }
-  ,
-
-
-        {"mark": {
-            "type": "line",
-            "point": false,
-            "interpolate": "linear",
-            "color":"orange",
-            "strokeWidth":1
-          },
-
-        "encoding": {
-            "y": {
-            "field": "Volume",
-            "type": "quantitative",
-            "title": "",
-            "axis": {
-              "grid": false,
-              "domainColor":"dimgrey",
-              "labelColor":"orange",
-              "tickColor":"pink",
-              "gridColor":"dimgrey",
-              "format":",.5"}
-              },
-              
-            "color": {"datum": "Volume"}
-              
-              }
+    "y": {
+      "field": "change",
+      "type": "quantitative",
+      "title": "",
+      "axis": {
+        "grid": false,
+        "domainColor":"dimgrey",
+        "labelColor":"#00a767",
+        "tickColor":"pink",
+        "gridColor":"dimgrey",
+        "format":"%"},
+      "scale":{"domain":[-0.3, 0.3]}
         }
-        
-      ],
-
-      "resolve": {"scale": {"y": "independent"}} 
- }
+      }
+    }
