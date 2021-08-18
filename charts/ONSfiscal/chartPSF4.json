@@ -4,7 +4,7 @@
 
     "data": {
 
-      "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/annx/dataset/pusf/data",
+      "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/hf6x/dataset/pusf/data",
 
       "format": {
         "type":"json",
@@ -14,7 +14,7 @@
 
     "mark":{
 
-      "type": "bar",
+      "type": "line",
       "color": "rebeccapurple",
       "strokeWidth":2,
       "opacity":1
@@ -31,7 +31,7 @@
 
     "title": {
     "text": "Net borrowing",
-    "subtitle": "£ million. Including public sector banks. Source: ONS",
+    "subtitle": "% GDP. Including public sector banks. Source: ONS",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -58,7 +58,7 @@
         },
         "tooltip": [
       {"field": "date3", "type": "temporal", "title": "Date", "timeUnit": "yearmonth"},
-      {"field": "value", "type": "quantitative", "title": "Net borrowing (£m)"}
+      {"field": "value", "type": "quantitative", "title": "Net borrowing (% GDP)"}
    
     ]
 
