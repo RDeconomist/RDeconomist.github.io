@@ -194,7 +194,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: hotpink;
+  color: rgb(255, 173, 31);
   text-decoration: none;
 }
 
@@ -357,4 +357,14 @@ body {
     border: 1px solid rgb(255, 173, 31);
     color: rgb(126, 114, 114);
   }
+
+  .darkButton {
+    background-color: null;
+    border: 0px solid rgb(255, 173, 31);
+    color: rgb(207, 204, 204) !important;
+    text-decoration: underline;
+    font-family: MetricWeb,sans-serif;
+    font-weight: 600;
+  }
+  
   
