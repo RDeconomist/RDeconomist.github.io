@@ -3,8 +3,8 @@
 
 
    "title": {
-    "text": "Dogecoin",
-    "subtitle":"Daily DOGE price in USD. Source: Coindesk",
+    "text": "Ether: long run",
+    "subtitle":"Daily ETH price in USD. Source: Investing.com",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -24,33 +24,32 @@
 
     "data": {
       "name":"myData",
-      "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/crypto/dataDOGEcoindesk.csv"},
+      "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/crypto/dataETH.csv"},
 
 
     "mark": {
     "type": "line",
     "point": false,
     "interpolate": "linear",
-    "color":"#4dcaff"
+    "color":"hotpink"
   },
 
   "transform": [
-    {"calculate": "timeParse(datum.Date, '%d/%m/%Y')", "as": "date"},
-    {"calculate": "year(datum.date)", "as": "year"},
+    
+    {"calculate": "year(datum.Date)", "as": "year"},
 
     {"filter": "datum.year>=minYear"},
     {"filter": "datum.year<=maxYear"}
 ],
 
 
-
  
 
     "params": [    
-      {"name":"minYear", "value":2019,
+      {"name":"minYear", "value":2016,
          "bind":{
            "input": "range",
-           "min": 2019, 
+           "min": 2016, 
            "max": 2021, 
            "step": 1,
            "name": "Start year:"}
@@ -59,7 +58,7 @@
       {"name":"maxYear", "value":2021,
          "bind":{
            "input": "range",
-           "min": 2019, 
+           "min": 2016, 
            "max": 2021, 
            "step": 1,
            "name": "End year:"}
@@ -72,7 +71,7 @@
       
      
     "x": {
-      "field": "date",
+      "field": "Date",
       "type": "temporal",
       "axis": {
         "title": null,
@@ -85,7 +84,7 @@
       }},
 
     "y": {
-      "field": "Closing Price (USD)",
+      "field": "Price",
       "type": "quantitative",
       "title": "",
       "axis": {

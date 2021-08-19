@@ -1,0 +1,80 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "note1": "NOMICS cryptocurrency chart. CORS does not work.",
+    "note2": "Works using the AllOrigins tool, but this then retieves all/more data than expected.", 
+    "note3": "As a consequence data needs to be filtered before charting. Example of how to get what we want from JSON data using dot notation.",
+
+    "config": {
+      "background":"#122b39",
+      "view": {
+        "stroke": "transparent"
+      }
+    },
+
+    "title": {
+    "text": "Major cryptocurrencies: 1 day price change",
+    "anchor": "start",
+    "color": "#179fdb",
+    "subtitle":"1d change. Source: Nomics API",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "subtitleColor":"#179fdb"
+    
+  },
+
+    "data": {
+      "url": " https://api.allorigins.win/raw?url=https://api.nomics.com/v1/currencies/ticker?key=8bbf8728e16a7a780c4bffa13369437393a4da03&ids=BTC,ETH,XRP&interval=1d,30d,ytd"},
+  
+
+ "transform":[
+      {"filter": {
+        "field": "currency", 
+        "oneOf": ["BTC", "ETH", "XRP", "DOGE", "BNB"]}
+        }           
+      ],
+
+    "mark": {
+      "type": "bar",
+      "color":"#e6224b"},
+  
+    "width":300,
+    "height":300,
+    
+    "encoding": {
+      
+      "x": {
+        "field": "currency", 
+        "type": "ordinal", 
+        "title": null,
+        "sort":"-y",
+        "axis":{
+          "domainColor":"dimgrey",
+          "labelColor":"#00a767",
+          "tickColor":"pink",
+          "gridColor":"hotpink",
+          "labelAngle": 35
+          }
+        },
+      
+      "y": {
+        "field": "1d.price_change_pct", 
+        "type": "quantitative", 
+        "title": null,
+          "axis":{
+            "domainColor":"dimgrey",
+            "labelColor":"#f4c245",
+            "tickColor":"pink",
+            "gridColor":"dimgrey",
+            "format":"%"
+          }
+  
+    },
+    "tooltip": [
+      {"field": "name", "title": "Currency"},
+      {"field": "1d.price_change_pct", "title": "Today's price change (%)"}
+      
+      
+      ]
+  }
+}

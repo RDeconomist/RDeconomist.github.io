@@ -3,7 +3,7 @@
 
 
  "title": {
-  "text": "Bitcoin",
+  "text": "Bitcoin: long run",
   "subtitle":"Daily BTC price in USD. Source: Coinbase via FRED",
   "subtitleFontStyle":"italic",
   "subtitleFontSize":10,

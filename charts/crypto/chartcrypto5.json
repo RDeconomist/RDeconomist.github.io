@@ -1,68 +1,100 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    
-    "description": "NOMICS cryptocurrency chart. Number of exchanges",
-    
-    "config": {
-      "background":"#122b39",
-      "view": {
-        "stroke": "transparent"}},
-    
-    "title": {
-    "text": "Major stablecoins: Market cap",
-    "anchor": "start",
-    "color": "#179fdb",
-    "subtitle":"$ billions. Source: Nomics API",
+
+
+   "title": {
+    "text": "Dogecoin: long run",
+    "subtitle":"Daily DOGE price in USD. Source: Coindesk",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
-    "subtitleColor":"#179fdb"
-        },
-      
+    "anchor": "start",
+    "color": "#179fdb",
+    "subtitleColor":"#179fdb"},
+
+  "config": {
+    "background":"#122b39",
+    "view": {
+      "stroke": "transparent"}},
+ 
+
+
+    "width":295,
+    "height":300,
+
+
     "data": {
-      "url": "https://api.allorigins.win/raw?url=https://api.nomics.com/v1/currencies/ticker?key=8bbf8728e16a7a780c4bffa13369437393a4da03&ids=BTC,ETH,XRP&interval=1d,30d,ytd"},
+      "name":"myData",
+      "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/crypto/dataDOGEcoindesk.csv"},
 
-      "transform":[
-        {"filter": {
-          "field": "currency", 
-          "oneOf": ["USDT","DAI", "USDC", "BUSD", "TUSD"]}
-          },
-      {"calculate": "datum.market_cap/1000000000", "as": "mktCapb"}
-        ],
 
-        "mark": {
-            "type": "bar",
-            "color":"orange"},
-          "width":300,
-          "height":300,
-          
-          "encoding": {
-            
-            "x": {
-              "field": "name", 
-              "type": "ordinal", 
-              "title": null, 
-              "sort": "y",
-              "axis": {"labelAngle": 35, "labelColor":"#00a767", "domainColor":"dimgrey"}
-              
-              },
-    
-    "y": {
-      "field": "mktCapb", 
-      "type": "quantitative", 
-      "title": null,
+    "mark": {
+    "type": "line",
+    "point": false,
+    "interpolate": "linear",
+    "color":"#4dcaff"
+  },
+
+  "transform": [
+    {"calculate": "timeParse(datum.Date, '%d/%m/%Y')", "as": "date"},
+    {"calculate": "year(datum.date)", "as": "year"},
+
+    {"filter": "datum.year>=minYear"},
+    {"filter": "datum.year<=maxYear"}
+],
+
+
+
+ 
+
+    "params": [    
+      {"name":"minYear", "value":2019,
+         "bind":{
+           "input": "range",
+           "min": 2019, 
+           "max": 2021, 
+           "step": 1,
+           "name": "Start year:"}
+      },
+
+      {"name":"maxYear", "value":2021,
+         "bind":{
+           "input": "range",
+           "min": 2019, 
+           "max": 2021, 
+           "step": 1,
+           "name": "End year:"}
+      }
+    ],
+
+
+
+    "encoding": {
+      
+     
+    "x": {
+      "field": "date",
+      "type": "temporal",
       "axis": {
-        "labelColor":"#f4c245",
-        "domainColor":"dimgrey", 
-        "labelAngle": 0,
-        "format":"$.2"}
-    
-    },
-    
-    "tooltip": [
-      {"field": "name", "title": "Currency"},
-      {"field": "mktCapb", "title": "Latest market cap (£billion)"}
-      
-      
-      ]
+        "title": null,
+        "grid": false,
+        "labelSeparation": 10,
+        "domainColor":"dimgrey",
+        "labelColor":"#00a767",
+        "tickColor":"pink",
+        "gridColor":"dimgrey"
+      }},
+
+    "y": {
+      "field": "Closing Price (USD)",
+      "type": "quantitative",
+      "title": "",
+      "axis": {
+        "grid": false,
+        "domainColor":"dimgrey",
+        "labelColor":"#00a767",
+        "tickColor":"pink",
+        "gridColor":"dimgrey",
+        "format":"$,.5"}
+        }
+     }
   }
-}   

@@ -1,10 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-  "description": "Dogecoin trading range",
+  "description": "BitCoin Price",
 
    "title": {
-    "text": "Dogecoin: this month",
+    "text": "Bitcoin: this month",
     "subtitle":"High-low trading range, 8h time periods. Source: coinapi.io",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
@@ -19,7 +19,7 @@
  
   
   "data": {
-    "url": "https://rest.coinapi.io/v1/ohlcv/DOGE/USD/history?period_id=8HRS&time_start=2021-08-01T00:00:00&limit=100&include_empty_items=false&apikey=FCB2BB27-5458-483B-88CE-926C357E0606",
+    "url": "https://rest.coinapi.io/v1/ohlcv/BTC/USD/history?period_id=8HRS&time_start=2021-08-01T00:00:00&limit=100&include_empty_items=false&apikey=FCB2BB27-5458-483B-88CE-926C357E0606",
     "format": {"type": "json"}},
   
 
@@ -31,7 +31,7 @@
     "type": "area",
     "point": false,
     "interpolate": "linear",
-    "color":"#4dcaff"
+    "color":"#f4c245"
   },
 
   
@@ -54,7 +54,7 @@
       "field": "price_low",
       "type": "quantitative",
       "title": "",
-      "XYZscale":{"domain":[30000, 50000]},
+      "scale":{"domain":[30000, 50000]},
       "axis": {
         "grid": false,
         "domainColor":"dimgrey",
@@ -62,7 +62,7 @@
         "XYZlabelSeparation":20,	
         "tickColor":"pink",
         "gridColor":"dimgrey",
-        "format":"$.2"}},
+        "format":"$.2s"}},
 
     "y2": {"field": "price_high"}
      
