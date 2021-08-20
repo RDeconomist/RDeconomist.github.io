@@ -93,6 +93,9 @@
   <div class="grid_item" id="chart10"></div>
   <div class="grid_item" id="chart11"></div>
   <div class="grid_item" id="chart12"></div>
+  <div class="grid_item" id="chart13"></div>
+  <div class="grid_item" id="chart14"></div>
+
 </div>
 <!-- END - Grid of divs that will house the charts-->  
 
@@ -160,6 +163,8 @@
   var crypto10 = "charts/crypto/chartcrypto10.json";
   var crypto11 = "charts/crypto/chartcrypto11.json";
   var crypto12 = "charts/crypto/chartcrypto12.json";
+  var crypto11 = "charts/crypto/chartcrypto13.json";
+  var crypto12 = "charts/crypto/chartcrypto14.json";
 
 
   // Now embed the charts in the divs set above:
@@ -175,6 +180,8 @@
   vegaEmbed('#chart10', crypto10, {"actions": false});
   vegaEmbed('#chart11', crypto11, {"actions": false});   
   vegaEmbed('#chart12', crypto12, {"actions": false});
+  vegaEmbed('#chart11', crypto13, {"actions": false});   
+  vegaEmbed('#chart12', crypto14, {"actions": false});
 
 
   // Scipt for the loader:
