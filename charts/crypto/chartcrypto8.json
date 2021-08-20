@@ -98,7 +98,7 @@
           "axis": {
             "grid": false,
             "domainColor":"dimgrey",
-            "labelColor":"orange",
+            "labelColor":"lemonchiffon",
             "tickColor":"pink",
             "gridColor":"dimgrey",
             "format":",.5"}
