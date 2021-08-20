@@ -5,12 +5,14 @@ body{
 
 h1 {
     color: #0063af;
+    color: #cfd2d3;
 }
 
-p {
+p  {
     color: #fbfeff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 
 
 .grid_items > div{
@@ -18,16 +20,24 @@ p {
     border-width:2px;
     border-style: solid;
     border-color: black;
+    border-color: #122b39;
     color: #fbfeff9d;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
     font-size: smaller;
 
 }
 
+
+
+
 .grid_items > div:nth-child(3n + 2) {
     background-color: #122b39;
   }
-  .grid_items > div:nth-child(3n) {
+
+  
+.grid_items > div:nth-child(3n) {
     background-color: #122b39;
-  }
+}
+
+
   

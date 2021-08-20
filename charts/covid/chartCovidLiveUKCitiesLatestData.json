@@ -3,12 +3,18 @@
 
     "description": "A cart with many tranforms to filter the data, so that we only get the data from 6 days ago, based on the 6 day lag in this data set. The color encoding is needed due to some bug in Vega, but it does not do anything meaningful to the chart",
     
-    "config": {
+    "XYZconfig": {
         "background":"white",
         "view": {
           "stroke": "transparent"
         }
       },
+
+      "config": {
+        "background":"#122b39",
+        "view": {
+          "stroke": "transparent"}},
+      
   
 
     "title": {
@@ -17,7 +23,9 @@
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
-      "color": "black"
+      "XYZcolor": "black",
+      "color":"#cbc7cf",
+      "subtitleColor":"#cbc7cf"
     },
     
      "data": {
@@ -59,9 +67,12 @@
         ],    
     
     "height": 300,
-    "width": 270,
+    "width": 260,
      
-    "mark": {"type": "bar"},
+    "mark": {
+      "type": "bar",
+      "color":"rgb(255, 173, 31)"
+    },
    
     "encoding": {
   
@@ -69,7 +80,9 @@
         "field": "newCasesBySpecimenDateRollingRate",
         "type": "quantitative",
         "title": null,
-        "axis": {"grid": false}
+        "axis": {
+          "grid": false,
+         "labelColor":"antiquewhite"}
       },
   
       "y": {
@@ -77,12 +90,15 @@
         "sort":"-x",
         "type": "ordinal",
         "title": null,
-        "axis": {"grid": false}
+        "axis": {
+          "grid": false,
+          "labelColor":"antiquewhite"}
       },
 
        "color": {
         "field": "date",
-        "scale":{"scheme":"inferno"},
+        "XYZscale":{"scheme":"oranges"},
+        "scale":{"range":["rgb(255, 173, 31)"]},
         "type": "temporal",
         "title": null,
         "legend":null

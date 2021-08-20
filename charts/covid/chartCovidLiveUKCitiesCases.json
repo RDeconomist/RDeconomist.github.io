@@ -7,15 +7,24 @@
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
-      "color": "black"
+      "XYZcolor": "black",
+      "color": "#cbc7cf",
+      "subtitleColor":"#cbc7cf"
+
     },
     
-    "config": {
+    "XYZconfig": {
       "background":"white",
       "view": {
         "stroke": "transparent"
       }
     },
+
+    "config": {
+      "background":"#122b39",
+      "view": {
+        "stroke": "transparent"}},
+    
 
      "data": {
       "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=ltla&metric=newCasesBySpecimenDateRollingRate&format=csv",
@@ -58,24 +67,33 @@
         "field": "date",
         "type": "temporal",
         "title": null,
-        "axis": {"grid": false}
+        "axis": {
+          "grid": false,
+          "labelColor":"#cbc7cf"}
       },
   
       "y": {
         "field": "newCasesBySpecimenDateRollingRate",
         "type": "quantitative",
         "title": null,
-        "axis": {"grid": false}
+        "axis": {
+          "grid": false,
+          "labelColor":"#cbc7cf"
+        }
       },
   
       "color": {
         "field": "areaName",
         "type": "nominal",
-        "scale": {"scheme": "viridis"},
+        "scale": {"scheme": "yelloworangered"},
         "title": null,
         "legend": {
           "orient": "top-left", 
-          "fillColor": "#FcFdFd"}
+          "XYZfillColor": "#FcFdFd",
+          "fillColor": "#122b39",
+          "labelColor":"antiquewhite"
+        }
       }
   }
   }
+
