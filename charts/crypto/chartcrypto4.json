@@ -18,10 +18,15 @@
       "stroke": "transparent"}},
  
   
-  "data": {
+  "XYZ_data": {
     "url": "https://rest.coinapi.io/v1/ohlcv/ETH/USD/history?period_id=8HRS&time_start=2021-08-01T00:00:00&limit=100&include_empty_items=false&apikey=FCB2BB27-5458-483B-88CE-926C357E0606",
     "format": {"type": "json"}},
   
+    "data": {
+      "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/crypto/data_ohlcv_ETH.json",
+      "format": {"type": "csv"}},
+  
+
 
   "height": 320,
   "width": 295,
