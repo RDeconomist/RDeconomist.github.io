@@ -39,5 +39,17 @@ p  {
     background-color: #122b39;
 }
 
+.textLink {
+    color: #c5bdbd !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    font-weight:400;
+    text-decoration: underline !important;
+}
+
+.textLink a:hover {
+    color: rgb(255, 173, 31) !important;
+}
+
+
 
   
