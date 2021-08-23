@@ -7,8 +7,9 @@
     <title>Public Finances</title>
 
 <!--Main Stylesheet-->
-<link rel="stylesheet" href="css/covid_live.css">
 <link rel="stylesheet" href="css/main2.css">
+<link rel="stylesheet" href="css/covid_live.css">
+
 
 <!--Allow the Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
@@ -20,9 +21,13 @@
 </head>
 
 <body>
-<h1>public finances</h1>
-<p>A dashboard on debt and deficits of the UK government, and how they are funded. Live charts running from the ONS API.</p>
 
+    <div class="wrap">
+        <h1>budget<span style="color: #86d0bb">charts</span></h1>
+        <span style="display:block; height: 10px;"></span>
+        <p id="rubric" class="rubric">A dashboard on debt and deficits of the UK government, and how they are funded. Live charts running from the ONS API.</p>
+        <span style="display:block; height: 10px;"></span>
+    </div>
 
     <div class="grid_items">
         <div class="grid_item" id="chart1"></div>
