@@ -79,8 +79,8 @@ h1, span {
 .button1  {
     width:140px;
     font-family: "Catamaran";
-	font-weight: 900;
-    background-color: rgba(40, 40, 40, 0.1);
+	  font-weight: 900;
+    background-color: rgba(31, 42, 53, 0.3);
     color:white;
     border: none;
     padding: 15px 32px;
