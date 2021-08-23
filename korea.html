@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<head>
+
+<!--Meta stuff-->
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!--Facebook meta - this comes up when you post a link to the site-->
+<meta property="og:title" content="Rapid Charts">
+<meta property="og:description" content="Live Covid charts running directly from official data. Auto-updates daily.">
+<meta property="og:image" content="XYZcovidCases.png">
+<meta property="og:url" content="http://rapidcharts.io/index.htm">
+
+<!--Favicon-->
+<link rel="icon" href="images/favicon.png">
+<link rel="shortcut icon" href="images/favicon.png" />
+<link rel="apple-touch-icon" href="images/favicon.png" />
+
+<!--Title - this is the bit that comes up in the tab-->
+<title>Rapid Covid</title>
+
+<!--Main Stylesheet-->
+<link rel="stylesheet" href="css/main2.css">
+<link rel="stylesheet" href="css/covid_live.css">
+
+
+<!--The next three lines allow the Vega embed-->
+<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body>
+
+<!-- heading for page-->
+<div class="wrap">
+  <h1>korea<span style="color: #ff0000">charts</span></h1>
+  <span style="display:block; height: 10px;"></span>
+  <p id="rubric" class="rubric">A dashboard of Korean data.</p>
+  <span style="display:block; height: 10px;"></span>
+</div>
+
+
+<!-- START - Grid of divs that will house the charts-->
+<div class="grid_items">
+    <div class="grid_item" id="chart1"></div>
+    <div class="grid_item" id="chart2"></div>
+    <div class="grid_item" id="chart3"></div>
+    <div class="grid_item" id="chart4"></div>
+    <div class="grid_item" id="chart5"></div>
+    <div class="grid_item" id="chart6"></div>
+    <div class="grid_item" id="chart7"></div>
+    <div class="grid_item" id="chart8"></div>
+    <div class="grid_item" id="chart9"></div>
+    <div class="grid_item" id="chart10"></div>
+    <div class="grid_item" id="chart11"></div>
+    <div class="grid_item" id="chart12"></div>
+  
+  </div>
+<!-- END - Grid of divs that will house the charts-->  
+
+
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+<span style="display:block; height: 30px;"></span>
+
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+              <div class="column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
+              </div>
+              <div class="column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://nuggetcharts.com/stream">Nugget</a></li>
+                        <li><a href="datascience">Course</a></li>
+                    </ul>
+              </div>
+              </div>
+                
+                <div class="footer-finalrow">
+                    <h3>Rapid Charts</h3>
+                    <p>Automated and interactive data analysis.</p>                    </div>
+                
+                <div class="col item social">
+                  <a href="https://www.economicsobservatory.com" class="fa fa-university"></a>
+                  <a href="https://twitter.com/RD_Economist" class="fa fa-twitter"></a>
+                  <a href="https://twitter.com/rapidcharts" class="fa fa-instagram"></a>
+                  <a href="https://www.linkedin.com/in/richard-davies-820b66a4/" class="fa fa-linkedin"></a>
+                </div>
+            
+              </div>
+            <p class="copyright">Richard Davies © 2021</p>
+      </footer>          
+</div>
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+
+</body>
+
+
+<!--/////////////////////////////////////SCRIPTS///////////////////////////////-->
+
+<script>
+    // Set the charts that we want on the page as variables, linking them to JSON files:
+    
+    var korea1 = "charts/korea/agingPopulation.json";
+    var korea2 = "charts/korea/decliningPopulation.json";
+    var korea3 = "charts/korea/covidCases.json";
+    var korea4 = "charts/korea/covidDeaths.json";
+    
+  
+  
+ // Now embed the charts in the divs set above:
+    vegaEmbed('#chart1', korea1, {"actions": false});   
+    vegaEmbed('#chart2', korea2, {"actions": false});
+    vegaEmbed('#chart3', korea3, {"actions": false});   
+    vegaEmbed('#chart4', korea4, {"actions": false});
+    vegaEmbed('#chart5', korea5, {"actions": false});   
+    vegaEmbed('#chart6', korea6, {"actions": false});
+    vegaEmbed('#chart7', korea7, {"actions": false});   
+    vegaEmbed('#chart8', korea8, {"actions": false});
+    vegaEmbed('#chart9', korea9, {"actions": false});   
+    vegaEmbed('#chart10', korea10, {"actions": false});
+    vegaEmbed('#chart11', korea11, {"actions": false});   
+    vegaEmbed('#chart12', korea12, {"actions": false});
+  
+  
+</script>
+
+<!--/////////////////////////////////////SCRIPTS///////////////////////////////-->
+
+</html>
