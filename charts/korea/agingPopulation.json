@@ -16,8 +16,8 @@
       "color": "black"
     },
   
-    "height": 400,
-    "width": 500,
+    "height": 300,
+    "width": 300,
     
     "mark": {"type": "line", "width":10},
   
