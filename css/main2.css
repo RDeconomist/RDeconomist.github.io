@@ -191,7 +191,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: rgb(255, 173, 31);
+  /* color: rgb(255, 173, 31); */
   border-color: rgb(255, 173, 31);
   text-decoration: none;
   opacity:1;
@@ -407,8 +407,10 @@ body {
   }
 
 .rapidboards a.dashPage:hover {
-    border:10px;
+    border: 2px;
+    border-style: solid;
     border-color: rgb(255, 173, 31);
+    border-radius: 10px;    
   }
 
 #colourButton {
