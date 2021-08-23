@@ -338,7 +338,7 @@ body {
     border-radius: 150px;
     box-sizing: content-box;
     align-items: flex-start;
-    display: inline-block;
+    display: inherit;
     font-size: 12px;
     margin: 1px 2px 1px 2px;
     text-decoration: none;
@@ -352,7 +352,7 @@ body {
     white-space: nowrap;
   }
 
-  .dashboardButtonMore {
+  .dashboardButtonMore, .dashPageMore {
     background-color: rgb(255, 173, 31);
     border: 1px solid rgb(255, 173, 31);
     color: rgb(37, 36, 36) !important;
@@ -371,5 +371,61 @@ body {
     font-family: MetricWeb,sans-serif;
     font-weight: 600;
   }
+
+.dashPage, .dashPageMore {
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(126, 114, 114);
+    border-radius: 10px;
+
+    margin: 1px 2px 10px 2px;
+
+    padding: 5px 12px;
+
+    max-width: 100%;
+    
+    color: rgb(126, 114, 114);
+    font-family: MetricWeb,sans-serif;
+    line-height: 16px;
+    font-weight: 600;
+    
+    box-sizing: content-box;
+    align-items: flex-start;
+    display: inherit;
+    font-size: 12px;
+    
+    text-decoration: none;
+    
+    outline-offset: 2px;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    transition: border-color,background-color .5s ease;
+    white-space: nowrap;
+  }
+
+.dashPage a:hover {
+    border:2px;
+    border-color: rgb(255, 173, 31);
+  }
+
+#colourButton {
+  background-image: linear-gradient(to left, red,orange,yellow,green,blue,indigo,violet);  
+} 
+
+
+.dashPage-title, .dashPage-rubric {
+  margin: 0;
+  font-family: MetricWeb,sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(207, 204, 204)
+}
+
+
+.dashPage-rubric{
+  font-weight: 400;
+}
+
   
   
