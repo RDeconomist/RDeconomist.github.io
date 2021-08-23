@@ -39,7 +39,6 @@
 
 
 <body>
-
 <!-- heading for page-->
 <div class="wrap">
   <h1>enviro<span style="color: #86d0bb">charts</span></h1>
@@ -49,338 +48,119 @@
 </div>
 
 
-<!--Begin Grid-->
+<!-- START - Grid of divs that will house the charts-->
 <div class="grid_items">
-
-  
-
-<!--Item 1-->
-  <div class="grid_item">
-    <div class="front">
-    <div id="chartENV1">
-      <script src="charts/environment/chartENV1.js"></script>
-    </div>
-      </div>
-
-  </div>
-<!--End Item 1-->
-
-
-<!--Item 2- ////////////////////////////////////////////////////////////-->
-<div class="grid_item">
-  
-  <div class="front">
-    <div id="chartENV2">
-      <script>
-        var ozoneChart = "charts/environment/chart9_ozoneEmissionsAPI.json";
-        vegaEmbed('#chartENV2', ozoneChart, {"actions": false});
-      </script>
-    </div>
-  </div>
-  <!-- <div class="back">
-    <h1>Chart notes</h1>
-    <p>This chart pulls live pollution data from <a href="https://emissions-api.org/">emissions-api.org</a>. The data are produced from satellite imagary. The API works nicely and has a (relatively) intuitive interface that allows you to build your own API url to make the call.</p>
-    <p>The visulisation is made in Vega Lite. Data is pulled from the API twice, once requesting data for the UK, and once for Bristol. This creates two charts, which are superimposed on the same axes using the Layer command.</p> 
-    <p>The JSON code that defines the chart is available at the RapidCharts GitHub repository, <a href= "https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/environment/chart9_ozoneEmissionsAPI.json">here.</a></p>
-    <p><strong>Richard Davies, July 2021</strong></p>
-  </div> -->
+    <div class="grid_item" id="chart1"></div>
+    <div class="grid_item" id="chart2"></div>
+    <div class="grid_item" id="chart3"></div>
+    <div class="grid_item" id="chart4"></div>
+    <div class="grid_item" id="chart5"></div>
+    <div class="grid_item" id="chart6"></div>
+    <div class="grid_item" id="chart7"></div>
+    <div class="grid_item" id="chart8"></div>
+    <div class="grid_item" id="chart9"></div>
+    <div class="grid_item" id="chart10"></div>
+    <div class="grid_item" id="chart11"></div>
+    <div class="grid_item" id="chart12"></div>
+    <div class="grid_item" id="chart13"></div>
+    <div class="grid_item" id="chart14"></div>
+    <div class="grid_item" id="chart15"></div>
+    <div class="grid_item" id="chart16"></div>
+    <div class="grid_item" id="chart17"></div>
+    <div class="grid_item" id="chart18"></div>
+    <div class="grid_item" id="chart19"></div>
+    <div class="grid_item" id="chart20"></div>
+    <div class="grid_item" id="chart21"></div>
+    <div class="grid_item" id="chart22"></div>
+    <div class="grid_item" id="chart23"></div>
+    <div class="grid_item" id="chart24"></div>
 </div>
-<!--End Item 2 ////////////////////////////////////////////////////////-->
+<!-- END - Grid of divs that will house the charts-->
+
+<script>
+    var enviro1 = "charts/environment/chartENV1.json";
+    var enviro2 = "charts/environment/chart9_ozoneEmissionsAPI.json";
+    var enviro3 = "charts/environment/chartENV3.json";
+    var enviro4 = "charts/environment/chartENV5fishing.json";
+    var enviro5 = "charts/environment/chartENV6foodemissions.json";
+    var enviro6 = "charts/environment/chartENV7renewableGeneration.json";
+    var enviro7 = "charts/environment/chartENV8coalForElectricUSStates.json";
+    var enviro8 = "charts/environment/chartENV10.json";
+    var enviro9 = "charts/environment/chartENV11.json";
+    var enviro10 = "charts/environment/chartENV12.json";
+    var enviro11 = "charts/environment/chartENV13.json";
+    var enviro12 = "charts/environment/chartENV14.json";
+    var enviro13 = "charts/environment/chartENV15.json";
+    var enviro14 = "charts/environment/chartENV16.json";
+    var enviro15 = "charts/environment/chartENV17.json";
+    var enviro16 = "charts/environment/chartENV18.json";
+    var enviro17 = "charts/environment/chartENV19.json";
+    var enviro18 = "charts/environment/chartENV20.json";
+    var enviro19 = "charts/environment/chartENV21.json";
+
+    vegaEmbed('#chart1', enviro1, {"actions": false});
+    vegaEmbed('#chart2', enviro2, {"actions": false});
+    vegaEmbed('#chart3', enviro3, {"actions": false});
+    vegaEmbed('#chart4', enviro4, {"actions": false});
+    vegaEmbed('#chart5', enviro5, {"actions": false});
+    vegaEmbed('#chart6', enviro6, {"actions": false});
+    vegaEmbed('#chart7', enviro7, {"actions": false});
+    vegaEmbed('#chart8', enviro8, {"actions": false});
+    vegaEmbed('#chart9', enviro9, {"actions": false});
+    vegaEmbed('#chart10', enviro10, {"actions": false});
+    vegaEmbed('#chart11', enviro11, {"actions": false});
+    vegaEmbed('#chart12', enviro12, {"actions": false});
+    vegaEmbed('#chart13', enviro13, {"actions": false});
+    vegaEmbed('#chart14', enviro14, {"actions": false});
+    vegaEmbed('#chart15', enviro15, {"actions": false});
+    vegaEmbed('#chart16', enviro16, {"actions": false});
+    vegaEmbed('#chart17', enviro17, {"actions": false});
+    vegaEmbed('#chart18', enviro18, {"actions": false});
+    vegaEmbed('#chart19', enviro19, {"actions": false});
+
+</script>
 
 
-<!--Item 3 ///////////////////////////////////////////////////////// -->
-<div class="grid_item">
-
-  <div id="chartENV3">
-     <script>
-          var CHARTNAME = "charts/environment/chartENV3.json";
-          vegaEmbed('#chartENV3', CHARTNAME, {"actions": false});
-    </script>
-  </div>
-    
-    <p></p>
-  
-  </div>
-<!--End Item 3 /////////////////////////////////////////////-->
-
-
-
-<!--Item 4 /////////////////////////////////////////////////-->
-<div class="grid_item">
-
-  <div id="chartENV4">
-     <script>
-          var enivro4 = "charts/environment/chartENV4.json";
-          vegaEmbed('#chartENV4', enivro4, {"actions": false});
-    </script>
-  </div>
-    
-    <p></p>
-  
-  </div>
-  
-<!--End Item 4 //////////////////////////////////////////// -->
-
-
-
-<!--Item 5 //////////////////////////////////////////////// -->
-<div class="grid_item">
-
-  <div id="chartENV5">
-     <script>
-          var enivro5 = "charts/environment/chartENV5fishing.json";
-          vegaEmbed('#chartENV5', enivro5, {"actions": false});
-    </script>
-  </div>
-    
-    <p></p>
-  
-</div>
-<!--End Item 5 ////////////////////////////////////////////// -->
-
-
-<!--Item 6 //////////////////////////////////////////////// -->
-<div class="grid_item">
-
-  <div id="chartENV6">
-     <script>
-          var enivro6 = "charts/environment/chartENV6foodemissions.json";
-          vegaEmbed('#chartENV6', enivro6, {"actions": false});
-    </script>
-  </div>
-    
-    <p></p>
-  
-</div>
-<!--End Item 6 ////////////////////////////////////////////// -->
-
-
-<!--Item 7 //////////////////////////////////////////////// -->
-<div class="grid_item">
-
-  <div id="chartENV7">
-     <script>
-          var enivro7 = "charts/environment/chartENV7renewableGeneration.json";
-          vegaEmbed('#chartENV7', enivro7, {"actions": false});
-    </script>
-  </div>
-    
-    <p></p>
-  
-</div>
-<!--End Item 7 ////////////////////////////////////////////// -->
-
-
-<!--Item 8 //////////////////////////////////////////////// -->
-<div class="grid_item">
-
-  <div id="chartENV8">
-     <script>
-          var enivro8 = "charts/environment/chartENV8coalForElectricUSStates.json";
-          vegaEmbed('#chartENV8', enivro8, {"actions": false});
-    </script>
-  </div>
-    
-    <p></p>
-  
-</div>
-<!--End Item 8 ////////////////////////////////////////////// -->
-
-
-<!--Item 10 //////////////////////////////////////////////// -->
-<div class="grid_item">
-
-  <div id="chartENV10">
-     <script>
-          var enivro10 = "charts/environment/chartENV10.json";
-          vegaEmbed('#chartENV10', enivro10, {"actions": false});
-    </script>
-  </div>  
-</div>
-<!--End Item 10 ////////////////////////////////////////////// -->
-
-
-<!--Item 11 //////////////////////////////////////////////// -->
-<div class="grid_item">
-
-  <div id="chartENV11">
-     <script>
-          var enivro11 = "charts/environment/chartENV11.json";
-          vegaEmbed('#chartENV11', enivro11, {"actions": false});
-    </script>
-  </div>  
-</div>
-<!--End Item 11 ////////////////////////////////////////////// -->
-
-
-
-<!--Item 12 //////////////////////////////////////////////// -->
-<div class="grid_item">
-
-  <div id="chartENV12">
-     <script>
-          var enivro12 = "charts/environment/chartENV12.json";
-          vegaEmbed('#chartENV12', enivro12, {"actions": false});
-    </script>
-  </div>  
-</div>
-<!--End Item 12 ////////////////////////////////////////////// -->
-
-
-<!--Item 13 //////////////////////////////////////////////// -->
-<div class="grid_item">
-
-  <div id="chartENV13">
-     <script>
-          var enivro13 = "charts/environment/chartENV13.json";
-          vegaEmbed('#chartENV13', enivro13, {"actions": false});
-    </script>
-  </div>  
-</div>
-<!--End Item 13 ////////////////////////////////////////////// -->
-
-
-<!--Item 14 //////////////////////////////////////////////// -->
-<div class="grid_item">
-  <div id="chartENV14">
-    <script>
-      var enivro14 = "charts/environment/chartENV14.json";
-      vegaEmbed('#chartENV14', enivro14, {"actions": false});
-    </script>
-  </div>  
-</div>
-<!--End Item 14 ////////////////////////////////////////////// -->
-
-
-<!--Item 15 //////////////////////////////////////////////// -->
-<div class="grid_item">
-  <div id="chartENV15">
-    <script>
-      var enivro15 = "charts/environment/chartENV15.json";
-      vegaEmbed('#chartENV15', enivro15, {"actions": false});
-    </script>
-  </div>  
-</div>
-<!--End Item 15 ////////////////////////////////////////////// -->
-
-
-<!--Item 16 //////////////////////////////////////////////// -->
-<div class="grid_item">
-  <div id="chartENV16">
-    <script>
-      var enivro16 = "charts/environment/chartENV16.json";
-      vegaEmbed('#chartENV16', enivro16, {"actions": false});
-    </script>
-  </div>  
-</div>
-<!--End Item 16 ////////////////////////////////////////////// -->
-
-
-<!--Item 17 //////////////////////////////////////////////// -->
-<div class="grid_item">
-  <div id="chartENV17">
-    <script>
-      var enivro17 = "charts/environment/chartENV17.json";
-      vegaEmbed('#chartENV17', enivro17, {"actions": false});
-    </script>
-  </div>  
-</div>
-<!--End Item 17 ////////////////////////////////////////////// -->
-
-
-<!--Item 18 //////////////////////////////////////////////// -->
-<div class="grid_item">
-  <div id="chartENV18">
-    <script>
-      var enivro18 = "charts/environment/chartENV18.json";
-      vegaEmbed('#chartENV18', enivro18, {"actions": false});
-    </script>
-  </div>  
-</div>
-<!--End Item 18 ////////////////////////////////////////////// -->
-
-
-<!--Item 19 //////////////////////////////////////////////// -->
-<div class="grid_item">
-  <div id="chartENV19">
-    <script>
-      var enivro19 = "charts/environment/chartENV19.json";
-      vegaEmbed('#chartENV19', enivro19, {"actions": false});
-    </script>
-  </div>  
-</div>
-<!--End Item 19 ////////////////////////////////////////////// -->
-
-<!--Item 20 //////////////////////////////////////////////// -->
-<div class="grid_item">
-  <div id="chartENV20">
-    <script>
-      var enivro20 = "charts/environment/chartENV20.json";
-      vegaEmbed('#chartENV20', enivro20, {"actions": false});
-    </script>
-  </div>  
-</div>
-<!--End Item 20 ////////////////////////////////////////////// -->
-
-
-<!--Item 21 //////////////////////////////////////////////// -->
-<div class="grid_item">
-  <div id="chartENV21">
-    <script>
-      var enivro21 = "charts/environment/chartENV21.json";
-      vegaEmbed('#chartENV21', enivro21, {"actions": false});
-    </script>
-  </div>  
-</div>
-<!--End Item 21 ////////////////////////////////////////////// -->
-
-
-<!--End Grid-->  
-</div>
-
-
-
-
-<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
 <!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
 <span style="display:block; height: 30px;"></span>
 
 <div class="footer-dark">
-  <footer>
-      <div class="container">
-          <div class="row">
-            <div class="column">
-              <h3>About</h3>
-              <ul>
-                  <li><a href="#">Mission</a></li>
-                  <li><a href="#">Team</a></li>
-              </ul>
-            </div>
-            <div class="column">
-                  <h3>Resources</h3>
-                  <ul>
-                      <li><a href="https://nuggetcharts.com/stream">Nugget</a></li>
-                      <li><a href="datascience.html">Course</a></li>
-                  </ul>
-            </div>
-            </div>
-              
-              <div class="footer-finalrow">
-                  <h3>Rapid Charts</h3>
-                  <p>Automated and interactive data analysis.</p>                    </div>
-              
-              <div class="col item social">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="https://twitter.com/RD_Economist" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-linkedin"></a>
+    <footer>
+        <div class="container">
+            <div class="row">
+              <div class="column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
               </div>
-          
-            </div>
-          <p class="copyright">Richard Davies © 2021</p>
-    </footer>          
+              <div class="column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://nuggetcharts.com/stream">Nugget</a></li>
+                        <li><a href="datascience">Course</a></li>
+                    </ul>
+              </div>
+              </div>
+                
+                <div class="footer-finalrow">
+                    <h3>Rapid Charts</h3>
+                    <p>Automated and interactive data analysis.</p>                    </div>
+                
+                <div class="col item social">
+                  <a href="https://www.economicsobservatory.com" class="fa fa-university"></a>
+                  <a href="https://twitter.com/RD_Economist" class="fa fa-twitter"></a>
+                  <a href="https://twitter.com/rapidcharts" class="fa fa-instagram"></a>
+                  <a href="https://www.linkedin.com/in/richard-davies-820b66a4/" class="fa fa-linkedin"></a>
+                </div>
+            
+              </div>
+            <p class="copyright">Richard Davies © 2021</p>
+      </footer>          
 </div>
 <!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+
 
 </body>
 </html>
