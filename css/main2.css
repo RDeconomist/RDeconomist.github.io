@@ -377,7 +377,7 @@ body {
 
 
 
-  
+
 /* CSS FOR THE DASHBOARDS PAGE */
 
 .dashPage, .dashPageMore {
@@ -422,7 +422,7 @@ body {
 
 #colourButton {
     border:2px;
-    border-style:solid;
+    border-style:dashed;
     border-top-color: hotpink;
     border-right-color: yellow;
     border-bottom-color: red;
@@ -431,7 +431,7 @@ body {
 
 #colourButton:hover {
   border:2px;
-  border-style:dashed;
+  border-style:dotted;
   border-color: rgb(126, 114, 114);
 } 
 
