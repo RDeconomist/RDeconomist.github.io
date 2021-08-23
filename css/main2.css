@@ -374,8 +374,14 @@ body {
     font-weight: 600;
   }
 
+
+
+
+  
+/* CSS FOR THE DASHBOARDS PAGE */
+
 .dashPage, .dashPageMore {
-    border: 1px;
+    border: 2px;
     border-style: solid;
     border-color: rgb(126, 114, 114);
     border-radius: 10px;
@@ -415,7 +421,18 @@ body {
   }
 
 #colourButton {
-  background-image: linear-gradient(to left, red,orange,yellow,green,blue,indigo,violet);  
+    border:2px;
+    border-style:solid;
+    border-top-color: hotpink;
+    border-right-color: yellow;
+    border-bottom-color: red;
+    border-left-color: orange;
+} 
+
+#colourButton:hover {
+  border:2px;
+  border-style:dashed;
+  border-color: rgb(126, 114, 114);
 } 
 
 
@@ -434,6 +451,7 @@ body {
 
 .dashIcons{
   fill:rgb(207, 204, 204);
+  /* fill:rgb(255, 173, 31); */
   position:relative;
   left:+290px;
   top:-40px;
@@ -441,7 +459,12 @@ body {
   height:40px;
 } 
 
-.dashIcons:hover{
+.dashPage:hover svg{
   fill:rgb(255, 173, 31);
-}  
-  
+  transition: fill 2000ms linear;
+} 
+
+#environment:hover svg{
+  fill:green;
+  transition: fill 2000ms linear;
+} 
