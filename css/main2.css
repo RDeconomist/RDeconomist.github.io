@@ -192,8 +192,10 @@ a:visited {
 /* mouse over link */
 a:hover {
   color: rgb(255, 173, 31);
+  border-color: rgb(255, 173, 31);
   text-decoration: none;
-  opacity:1
+  opacity:1;
+  border-color: rgb(255, 173, 31);
 }
 
 /* selected link */
@@ -338,7 +340,7 @@ body {
     border-radius: 150px;
     box-sizing: content-box;
     align-items: flex-start;
-    display: inherit;
+    display: inline-block;
     font-size: 12px;
     margin: 1px 2px 1px 2px;
     text-decoration: none;
@@ -399,13 +401,13 @@ body {
     outline-offset: 2px;
     overflow: hidden;
     text-align: left;
-    text-overflow: ellipsis;
-    transition: border-color,background-color .5s ease;
+    /* text-overflow: ellipsis;
+    transition: border-color,background-color .5s ease; */
     white-space: nowrap;
   }
 
-.dashPage a:hover {
-    border:2px;
+.rapidboards a.dashPage:hover {
+    border:10px;
     border-color: rgb(255, 173, 31);
   }
 
