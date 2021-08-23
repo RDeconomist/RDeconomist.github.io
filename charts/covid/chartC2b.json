@@ -2,8 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
 
 "title": {
-    "text": "Cases: UK regions",
-    "subtitle":"Daily new cases by publish date. Source: gov.uk",
+    "text": "Cases by specimen date: English regions",
+    "subtitle":"Daily new cases by specimen date.",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -12,13 +12,13 @@
 
   "description": "Coronavirus cases",
   "data": {
-    "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=region&metric=newCasesByPublishDate&format=csv",
+    "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=region&metric=newCasesBySpecimenDate&format=csv",
     "format": {"type": "csv"}
   },
 
   "height": 300,
   
-  "width": 280,
+  "width": 300,
   
   "mark": {"type": "bar", "width":10},
   
@@ -40,7 +40,7 @@
           "West Midlands",
           "Yorkshire and The Humber"
         ],
-        "name": "Pick a region: "
+        "name": "Pick a region:  "
       }
     }
   },
@@ -64,7 +64,7 @@
       "type": "temporal", 
       "title": null},
     "y": {
-      "field": "newCasesByPublishDate",
+      "field": "newCasesBySpecimenDate",
       "type": "quantitative",
       "title": null
     },
@@ -74,7 +74,7 @@
       "field": "areaName",
       "type": "nominal",
       "legend": null,
-      "scale": {"scheme": "inferno"}
+      "scale": {"scheme": "viridis"}
     }
   }
 }

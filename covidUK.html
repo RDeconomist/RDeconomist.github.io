@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
 
 <!--Meta stuff-->
@@ -24,7 +25,6 @@
 <!--Main Stylesheet-->
 <link rel="stylesheet" href="css/main2.css">
 <link rel="stylesheet" href="css/covid_live.css">
-<link rel="stylesheet" href="XYZcss/crypto.css">
 
 
 <!--The next three lines allow the Vega embed-->
@@ -49,159 +49,105 @@
 </div>
 
 
-<!--Begin Grid-->
+<!-- START - Grid of divs that will house the charts-->
 <div class="grid_items">
+    <div class="grid_item" id="chart1"></div>
+    <div class="grid_item" id="chart2"></div>
+    <div class="grid_item" id="chart3"></div>
+    <div class="grid_item" id="chart4"></div>
+    <div class="grid_item" id="chart5"></div>
+    <div class="grid_item" id="chart6"></div>
+    <div class="grid_item" id="chart7"></div>
+    <div class="grid_item" id="chart8"></div>
+    <div class="grid_item" id="chart9"></div>
+    <div class="grid_item" id="chart10"></div>
+    <div class="grid_item" id="chart11"></div>
+    <div class="grid_item" id="chart12"></div>
   
-<!--Item 1-->
-  <div class="grid_item">
-    <div id="chartC1">
-      <script src="charts/covid/chartC1.js"></script>
-    </div>
-    <p>Tap the country names in the legend.</p>
   </div>
-
-<!--Item 2-->
-  <div class="grid_item">
-    <div id="chartC2">
-        <script src="charts/covid/chartC2.js"></script>
-      </script>
-    </div>
-
-  </div>
-
-<!--Item Vaccine Rate /////////////////////////////////////////////////-->
-<div class="grid_item">
-  <div id="chartVacc1">
-     <script>
-          var Vacc1 = "charts/covid/chartCovidLiveVaccinationRateOldYoung.json";
-          vegaEmbed('#chartVacc1', Vacc1, {"actions": false});
-    </script>
-  </div>
-</div>  
-<!--End Vaccine Rate //////////////////////////////////////////// -->
-
-
-
-
-
-  <!--Item 6-->
-  <div class="grid_item">
-    <div id="chartD1">
-      <script src="charts/covid/chartD1.js"></script>
-    </div>
-  </div>
-
-
-
-    <!--Item 7-->
-  <div class="grid_item">
-    <div id="chartCD1">
-      <script src="charts/covid/chartCD1.js"></script>
-    </div>
-  </div>
-
-
-    <!--Item 8-->
-  <div class="grid_item">
-    <div id="chartC4">
-      <script src="charts/covid/chartC4.js"></script>
-    </div>
-  </div>
-
-      <!--Item 9-->
-  <div class="grid_item">
-    <div id="chartH1">
-      <script src="charts/covid/chartH1.js"></script>
-    </div>
-  </div>
-
-    <!--Item 10-->
-  <div class="grid_item">
-    <div id="chartD2">
-      <script src="charts/covid/chartD2.js"></script>
-    </div>
-  </div>
-
-
-  <!--Begin Grid-->
-  <div class="grid_items">
-    <div class="grid_item" id="secondVis">
-      <script>
-        var Vis2 = "charts/covid/chartCovidLiveUKCitiesLatestData.json";
-        vegaEmbed('#secondVis', Vis2, {"actions":false});
-      </script>
-    </div>
-</div>
-
-      <!--Item 12-->
-  <div class="grid_item">
-    <div id="chartCD2">
-      <script src="charts/covid/chartCD2.js"></script>
-    </div>
-  </div>
-
-    <!--Item 3-->
-    <div class="grid_item">
-      <div id="chartC2b">
-          <script src="charts/covid/chartC2b.js"></script>
-        </script>
-      </div>
-    </div>
-  
-  <!--Item 4-->
-    <div class="grid_item">
-      <div id="chartC3">
-          <script src="charts/covid/chartC3.js"></script>
-        </script>
-      </div>
-    </div>
-  
-
-
-
-<!--End Grid-->  
-</div>
-
+<!-- END - Grid of divs that will house the charts-->  
 
 
 <!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
 <span style="display:block; height: 30px;"></span>
 
 <div class="footer-dark">
-  <footer>
-      <div class="container">
-          <div class="row">
-            <div class="column">
-              <h3>About</h3>
-              <ul>
-                  <li><a href="#">Mission</a></li>
-                  <li><a href="#">Team</a></li>
-              </ul>
-            </div>
-            <div class="column">
-                  <h3>Resources</h3>
-                  <ul>
-                      <li><a href="https://nuggetcharts.com/stream">Nugget</a></li>
-                      <li><a href="datascience.html">Course</a></li>
-                  </ul>
-            </div>
-            </div>
-              
-              <div class="footer-finalrow">
-                  <h3>Rapid Charts</h3>
-                  <p>Automated and interactive data analysis.</p>                    </div>
-              
-              <div class="col item social">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="https://twitter.com/RD_Economist" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-linkedin"></a>
+    <footer>
+        <div class="container">
+            <div class="row">
+              <div class="column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
               </div>
-          
-            </div>
-          <p class="copyright">Richard Davies © 2021</p>
-    </footer>          
+              <div class="column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://nuggetcharts.com/stream">Nugget</a></li>
+                        <li><a href="datascience">Course</a></li>
+                    </ul>
+              </div>
+              </div>
+                
+                <div class="footer-finalrow">
+                    <h3>Rapid Charts</h3>
+                    <p>Automated and interactive data analysis.</p>                    </div>
+                
+                <div class="col item social">
+                  <a href="https://www.economicsobservatory.com" class="fa fa-university"></a>
+                  <a href="https://twitter.com/RD_Economist" class="fa fa-twitter"></a>
+                  <a href="https://twitter.com/rapidcharts" class="fa fa-instagram"></a>
+                  <a href="https://www.linkedin.com/in/richard-davies-820b66a4/" class="fa fa-linkedin"></a>
+                </div>
+            
+              </div>
+            <p class="copyright">Richard Davies © 2021</p>
+      </footer>          
 </div>
 <!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+
 </body>
+
+
+<!--/////////////////////////////////////SCRIPTS///////////////////////////////-->
+
+<script>
+    // Set the charts that we want on the page as variables, linking them to JSON files:
+    var covid1 = "charts/covid/chartC1.json";
+    var covid2 = "charts/covid/chartC2.json";
+    var covid3 = "charts/covid/chartCovidLiveVaccinationRateOldYoung.json";
+    var covid4 = "charts/covid/chartD1.json";
+    var covid5 = "charts/covid/chartH1.json";
+    var covid6 = "charts/covid/chartC4.json";
+    var covid7 = "charts/covid/chartCovidLiveUKCitiesLatestData.json";
+    // var covid7 = "charts/covid/chartCD1.json";
+    // var covid8 = "charts/covid/chartCD2.json";
+    var covid8 = "charts/covid/chartCovidLiveUKCitiesCases.json";
+    var covid9 = "charts/covid/chartR1.json";
+    var covid10 = "charts/covid/chartD2.json";
+    var covid11 = "charts/covid/chartD3.json";
+    var covid12 = "charts/covid/chartR1.json";
+  
+  
+ // Now embed the charts in the divs set above:
+    vegaEmbed('#chart1', covid1, {"actions": false});   
+    vegaEmbed('#chart2', covid2, {"actions": false});
+    vegaEmbed('#chart3', covid3, {"actions": false});   
+    vegaEmbed('#chart4', covid4, {"actions": false});
+    vegaEmbed('#chart5', covid5, {"actions": false});   
+    vegaEmbed('#chart6', covid6, {"actions": false});
+    vegaEmbed('#chart7', covid7, {"actions": false});   
+    vegaEmbed('#chart8', covid8, {"actions": false});
+    vegaEmbed('#chart9', covid9, {"actions": false});   
+    vegaEmbed('#chart10', covid10, {"actions": false});
+    vegaEmbed('#chart11', covid11, {"actions": false});   
+    vegaEmbed('#chart12', covid12, {"actions": false});
+  
+  
+</script>
+
+<!--/////////////////////////////////////SCRIPTS///////////////////////////////-->
+
 </html>
