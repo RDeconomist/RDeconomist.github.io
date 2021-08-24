@@ -37,11 +37,7 @@
         {"calculate":"replace(datum.date10, ' NOV', '-11')", "as":"date11"},
         {"calculate":"replace(datum.date11, ' DEC', '-12')", "as":"date12"},
     
-        {"calculate":"timeParse(datum.date12, '%Y-%m')", "as": "dateClean"},
-      
-    
-        {"filter": "datum.year>minYear"},
-        {"filter": "datum.year<maxYear"}
+        {"calculate":"timeParse(datum.date12, '%Y-%m')", "as": "dateClean"}
       ],
 
       "mark":{"type": "line", "color":"red"},
@@ -67,11 +63,7 @@
         {"calculate":"replace(datum.date10, ' NOV', '-11')", "as":"date11"},
         {"calculate":"replace(datum.date11, ' DEC', '-12')", "as":"date12"},
     
-        {"calculate":"timeParse(datum.date12, '%Y-%m')", "as": "dateClean"},
-      
-    
-        {"filter": "datum.year>minYear"},
-        {"filter": "datum.year<maxYear"}
+        {"calculate":"timeParse(datum.date12, '%Y-%m')", "as": "dateClean"}
       ],
 
       "mark":{"type": "line", "color":"blue"},

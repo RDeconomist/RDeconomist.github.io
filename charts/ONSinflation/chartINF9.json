@@ -51,19 +51,14 @@
         {"calculate":"replace(datum.date11, ' DEC', '-12')", "as":"date12"},
     
         {"calculate":"timeParse(datum.date12, '%Y-%m')", "as": "dateClean"},
-      
-    
-        {"filter": "datum.year>minYear"},
-        {"filter": "datum.year<maxYear"}
+
+        {"calculate":"replace(datum.quarter, '', 'Meat')", "as": "name"}
       ],
 
       "mark":{"type": "line", "color":"blue"},
 
-      "encoding": {"y": {"field": "value", "type": "quantitative","title":null}},
-
-      "transform": [
-        {"calculate":"replace(datum.quarter, '', 'Meat')", "as": "name"}
-      ]
+      "encoding": {"y": {"field": "value", "type": "quantitative","title":null}}
+     
     },
 
     {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/master/MM23-D7HJ.json",
@@ -85,19 +80,14 @@
         {"calculate":"replace(datum.date11, ' DEC', '-12')", "as":"date12"},
     
         {"calculate":"timeParse(datum.date12, '%Y-%m')", "as": "dateClean"},
+
+        {"calculate":"replace(datum.quarter, '', 'Fish')", "as": "name"}
       
-    
-        {"filter": "datum.year>minYear"},
-        {"filter": "datum.year<maxYear"}
       ],
 
       "mark":{"type": "line", "color":"green"},
 
-      "encoding": {"y": {"field": "value", "type": "quantitative","title":null}},
-
-      "transform": [
-        {"calculate":"replace(datum.quarter, '', 'Fish')", "as": "name"}
-      ]
+      "encoding": {"y": {"field": "value", "type": "quantitative","title":null}}
     }
     
   ]
