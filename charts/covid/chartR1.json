@@ -66,6 +66,6 @@
   
   "xxconfig": {"background": "#FcFdFd"},
   "height": 300,
-  "width": 280,
+  "width": 270,
   "mark": {"type": "circle", "opacity": 0.4, "color":"blue"}
 }

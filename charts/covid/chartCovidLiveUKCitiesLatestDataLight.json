@@ -1,0 +1,108 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "description": "A chart with many tranforms to filter the data, so that we only get the data from 6 days ago, based on the 6 day lag in this data set. The color encoding is needed due to some bug in Vega, but it does not do anything meaningful to the chart",
+    
+    "config": {
+        "background":"white",
+        "view": {
+          "stroke": "transparent"
+        }
+      },
+
+      "XYZconfig": {
+        "background":"#122b39",
+        "view": {
+          "stroke": "transparent"}},
+      
+  
+
+    "title": {
+      "text": "Covid Live - cases in UK cities",
+      "subtitle":"New cases by specimen date, rolling rate",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black",
+      "ZYXcolor":"#cbc7cf",
+      "XYZsubtitleColor":"#cbc7cf"
+    },
+    
+     "data": {
+      "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=ltla&metric=newCasesBySpecimenDateRollingRate&format=csv",
+      "format": {"type": "csv"}
+    },
+      
+     "transform":[
+      
+        {"calculate":"date(now())", "as":"dateToday"},
+        {"calculate":"month(now())", "as":"monthToday"},
+        {"calculate":"year(now())", "as":"yearToday"},
+        
+        {"calculate":"timeOffset('date', datum.date, 6)", "as":"offsetDate"},
+        {"calculate":"date(datum.offsetDate)", "as":"dateOffset"},
+        {"calculate":"month(datum.offsetDate)", "as":"monthOffset"},
+        {"calculate":"year(datum.offsetDate)", "as":"yearOffset"},
+
+        {"calculate":"datum.dateToday===datum.dateOffset", "as":"dateSame"},
+        {"calculate":"datum.monthToday===datum.monthOffset", "as":"monthSame"},
+        {"calculate":"datum.yearToday===datum.yearOffset", "as":"yearSame"},
+        
+        {"filter":{"field": "dateSame", "equal": true}},
+        {"filter":{"field": "monthSame", "equal": true}},
+        {"filter":{"field": "yearSame", "equal": true}},
+
+        {"filter": {
+          "field": "areaName", 
+          "oneOf": [
+            "Bristol, City of", 
+            "Glasgow City", 
+            "Manchester", 
+            "Cardiff", 
+            "Birmingham", 
+            "Belfast", 
+            "Leeds", 
+            "Liverpool"]}
+          }
+        ],    
+    
+    "height": 300,
+    "width": 260,
+     
+    "mark": {
+      "type": "bar",
+      "color":"rgb(255, 173, 31)"
+    },
+   
+    "encoding": {
+  
+      "x": {
+        "field": "newCasesBySpecimenDateRollingRate",
+        "type": "quantitative",
+        "title": null,
+        "axis": {
+          "grid": false,
+         "ZYXlabelColor":"antiquewhite"}
+      },
+  
+      "y": {
+        "field": "areaName",
+        "sort":"-x",
+        "type": "ordinal",
+        "title": null,
+        "axis": {
+          "grid": false,
+          "XYZlabelColor":"antiquewhite"}
+      },
+
+       "color": {
+        "field": "date",
+        "XYZscale":{"scheme":"set1"},
+        "XYZscale":{"range":["rgb(255, 173, 31)"]},
+        "scale":{"range":["#e6224b"]},
+        "type": "temporal",
+        "title": null,
+        "legend":null
+      }
+  }
+}

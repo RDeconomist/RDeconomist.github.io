@@ -1,0 +1,99 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+  "title": {
+    "text": "Covid Live - UK cities",
+    "subtitle":"New cases by specimen date, rolling rate",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black",
+    "XYZcolor": "#cbc7cf",
+    "XYZsubtitleColor":"#cbc7cf"
+
+  },
+  
+  "config": {
+    "background":"white",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+
+  "XYZconfig": {
+    "background":"#122b39",
+    "view": {
+      "stroke": "transparent"}},
+  
+
+   "data": {
+    "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=ltla&metric=newCasesBySpecimenDateRollingRate&format=csv",
+    "format": {"type": "csv"}
+  },
+
+  "selection": {
+  "Region": {
+    "type": "single",
+    "fields": ["areaName"],
+    "bind": {
+      "input": "select",
+      "options": [null, "Bristol, City of", "Glasgow City", "Manchester", "Cardiff", "Birmingham", "Belfast", "Leeds", "Liverpool"],
+      "name": "Pick a city"
+    }
+  }
+},
+
+   "transform":[
+
+      
+      {"filter": {
+        "field": "areaName", 
+        "oneOf": ["Bristol, City of", "Glasgow City", "Manchester", "Cardiff", "Birmingham", "Belfast", "Leeds", "Liverpool"]}
+        },
+
+      {"filter": {"selection": "Region"}}
+
+
+    ],    
+  
+  "height": 300,
+  "width": 300,
+   
+  "mark": {"type": "line", "point": false},
+ 
+  "encoding": {
+
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {
+        "grid": false,
+        "XYZlabelColor":"#cbc7cf"}
+    },
+
+    "y": {
+      "field": "newCasesBySpecimenDateRollingRate",
+      "type": "quantitative",
+      "title": null,
+      "axis": {
+        "grid": false,
+        "XYZlabelColor":"#cbc7cf"
+      }
+    },
+
+    "color": {
+      "field": "areaName",
+      "type": "nominal",
+      "scale": {"scheme": "set1"},
+      "XYZscale": {"scheme": "yelloworangered"},
+      "title": null,
+      "legend": {
+        "orient": "top-left", 
+        "fillColor": "#FcFdFd",
+        "XYZfillColor": "#122b39",
+        "XYZlabelColor":"antiquewhite"
+      }
+    }
+}
+}
