@@ -1,93 +1,89 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
 
-    "title": {
-    "text": "Inflation",
-    "subtitle": "CPI inc housing (CPIH), % change over 12 months ",
-    "subtitleFontStyle":"italic",
-    "subtitleFontSize":10,
-    "anchor": "start",
-    "color": "black"
-  },
+  "title": {
+  "text": "Inflation",
+  "subtitle": "CPI inc housing (CPIH), % change over 12 months ",
+  "subtitleFontStyle":"italic",
+  "subtitleFontSize":10,
+  "anchor": "start",
+  "color": "black"
+},
 
 
-    "width":300,
-    "height":300,
+  "width":300,
+  "height":300,
 
 
-    "XYZdata": {
+  "XYZdata": {
+    "name":"myData",
+    "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/L55O/dataset/mm23/data",
+    "format": {
+      "type":"json",
+      "property": "months"
+    }},
+
+  "data": {
       "name":"myData",
-      "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/L55O/dataset/mm23/data",
+      "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/master/MM23-L550.json",
       "format": {
         "type":"json",
         "property": "months"
-      }},
-
-    "data": {
-        "name":"myData",
-        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/master/MM23-L550.json",
-        "format": {
-          "type":"json",
-          "property": "months"
-        }},  
+      }},  
 
 
-    "mark":{
-      "type": "line",
-      "color":"red",
-      "strokeWidth":2,
-      "opacity":1
+  "mark":{
+    "type": "line",
+    "color":"red",
+    "strokeWidth":2,
+    "opacity":1
+  },
+
+
+  "transform": [
+    {"filter": "datum.year>minYear"},
+    {"filter": "datum.year<maxYear"}
+  ],
+
+  "params": [    
+    {"name":"minYear", "value":1988,
+       "bind":{
+         "input": "range",
+         "min": 1988, 
+         "max": 2021, 
+         "step": 1,
+         "name": "Start year:"}
     },
 
+    {"name":"maxYear", "value":2021,
+       "bind":{
+         "input": "range",
+         "min": 1955, 
+         "max": 2021, 
+         "step": 1,
+         "name": "End year:"}
+    }
+  ],
 
-    "transform": [
-      {"calculate":"substring(datum.quarter,1)*3-1", "as": "quarter_n"},
-      {"calculate":"join([datum.year, datum.quarter_n],['-'])", "as": "date2"},
-      {"calculate":"timeParse(datum.date2, '%Y-%m')", "as": "date3"},
 
-      {"filter": "datum.year>minYear"},
-      {"filter": "datum.year<maxYear"}
-    ],
 
-    "params": [    
-      {"name":"minYear", "value":1988,
-         "bind":{
-           "input": "range",
-           "min": 1988, 
-           "max": 2021, 
-           "step": 1,
-           "name": "Start year:"}
+  "encoding": {
+    
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title":null
       },
 
-      {"name":"maxYear", "value":2021,
-         "bind":{
-           "input": "range",
-           "min": 1955, 
-           "max": 2021, 
-           "step": 1,
-           "name": "End year:"}
+    "y": {
+      "field": "value",                
+      "type": "quantitative",
+      "title":null,
+      "scale":{
+        "domain":{
+          "data": "myData", 
+          "field": "value"}}
       }
-    ],
-
-
-
-    "encoding": {
-      
-      "x": {
-        "field": "date",
-        "type": "temporal",
-        "title":null
-        },
-  
-      "y": {
-        "field": "value",                
-        "type": "quantitative",
-        "title":null,
-        "scale":{
-          "domain":{
-            "data": "myData", 
-            "field": "value"}}
-        }
-  }
+}
 }
