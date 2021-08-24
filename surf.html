@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
 
 <!--Meta stuff-->
@@ -8,26 +9,32 @@
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 <!--Facebook meta - this comes up when you post a link to the site-->
-<meta property="og:title" content="Covid Data">
-<meta property="og:description" content="A dashboard of interactive charts that runs directly from official government data. Automatically updates daily.">
-<meta property="og:image" content="linkimage.PNG">
-<meta property="og:url" content="http://coviddata.uk/index.htm">
+<meta property="og:title" content="Rapid Swell">
+<meta property="og:description" content="Live surf forecasts.">
+<meta property="og:image" content="XYZcovidCases.png">
+<meta property="og:url" content="http://rapidcharts.io/index.htm">
 
 <!--Favicon-->
-<link rel="icon" href="icon-small.PNG">
-<link rel="shortcut icon" href="icon.PNG" />
-<link rel="apple-touch-icon" href="icon.PNG" />
+<link rel="icon" href="images/favicon.png">
+<link rel="shortcut icon" href="images/favicon.png" />
+<link rel="apple-touch-icon" href="images/favicon.png" />
 
 <!--Title - this is the bit that comes up in the tab-->
-<title>surf Forecast</title>
+<title>Rapid Surf</title>
 
 <!--Main Stylesheet-->
+<link rel="stylesheet" href="css/main2.css">
 <link rel="stylesheet" href="css/covid_live.css">
+
 
 <!--The next three lines allow the Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 
@@ -35,133 +42,110 @@
 
 <!-- heading for page-->
 <div class="wrap">
-  <h1>surf<span style="color: #0BB5FF">charts</span></h1>
-  <span style="display:block; height: 10px;"></span>
-  <p class="rubric">A dashboard of surf forecasts from a few favourite spots. Data scraped from <a href="https://magicseaweed.com/"> MagicSeaweed</a> using Python and <a href="https://pypi.org/project/beautifulsoup4"> BeautifulSoup.</a></p>
-  <span style="display:block; height: 10px;"></span>
-</div>
+    <h1>surf<span style="color: #0BB5FF">charts</span></h1>
+    <span style="display:block; height: 10px;"></span>
+    <p class="rubric">A dashboard of surf forecasts from a few favourite spots. Data scraped from <a href="https://magicseaweed.com/"> MagicSeaweed</a> using Python and <a href="https://pypi.org/project/beautifulsoup4"> BeautifulSoup.</a></p>
+    <span style="display:block; height: 10px;"></span>
+  </div>
 
 
-<!--Begin Grid-->
+<!-- START - Grid of divs that will house the charts-->
 <div class="grid_items">
-
-
-<!--Item 2-->
-  <div class="grid_item">
-    <div id="chartC2">
-        <script src="charts/surf/C2_restBay.js"></script>
-      </script>
-    </div>
-  </div>
-
-
-<!--Item 3-->
-  <div class="grid_item">
-    <div id="chartC3">
-        <script src="charts/surf/C3_llangennith.js"></script>
-      </script>
-    </div>
-  </div>
-
+    <div class="grid_item" id="chart1"></div>
+    <div class="grid_item" id="chart2"></div>
+    <div class="grid_item" id="chart3"></div>
+    <div class="grid_item" id="chart4"></div>
+    <div class="grid_item" id="chart5"></div>
+    <div class="grid_item" id="chart6"></div>
+    <div class="grid_item" id="chart7"></div>
+    <div class="grid_item" id="chart8"></div>
+    <div class="grid_item" id="chart9"></div>
+    <div class="grid_item" id="chart10"></div>
+    <div class="grid_item" id="chart11"></div>
+    <div class="grid_item" id="chart12"></div>
   
-<!--Item 1-->
-  <div class="grid_item">
-    <div id="chartC1">
-      <!--Script for first chart-->
-      <script src="charts/surf/C1_croyde.js"></script>
-    </div>
   </div>
-
-<!--Item 3-->
-  <div class="grid_item">
-    <div id="chartC11">
-        <script src="charts/surf/C11_sennen.js"></script>
-      </script>
-    </div>
-  </div>
-
-  <!--Item 3-->
-  <div class="grid_item">
-    <div id="chartC9">
-        <script src="charts/surf/C9_marloes.js"></script>
-      </script>
-    </div>
-  </div>
-
-    <!--Item 3-->
-  <div class="grid_item">
-    <div id="chartC8">
-        <script src="charts/surf/C8_freshwatereast.js"></script>
-      </script>
-    </div>
-  </div>
-
-  <!--Item 3-->
-  <div class="grid_item">
-    <div id="chartC7">
-        <script src="charts/surf/C7_freshwaterwest.js"></script>
-      </script>
-    </div>
-  </div>
-
-  <!--Item 3-->
-  <div class="grid_item">
-    <div id="chartC4">
-        <script src="charts/surf/C4_minehead.js"></script>
-      </script>
-    </div>
-  </div>
-
-  <!--Item 3-->
-  <div class="grid_item">
-    <div id="chartC5">
-        <script src="charts/surf/C5_brighton.js"></script>
-      </script>
-    </div>
-  </div>
-
-  <!--Item 3-->
-  <div class="grid_item">
-    <div id="chartC6">
-        <script src="charts/surf/C6_kimmeridge.js"></script>
-      </script>
-    </div>
-  </div>
-
-
-  <!--Item 3-->
-  <div class="grid_item">
-    <div id="chartC10">
-        <script src="charts/C10_westdale.js"></script>
-      </script>
-    </div>
-  </div>
-
-
-<!--End Grid-->  
-</div>
-
+<!-- END - Grid of divs that will house the charts-->  
 
 
 <!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+<span style="display:block; height: 30px;"></span>
 
-<!-- White space across the page --> 
-  <span style="display:block; height: 30px;"></span>
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+              <div class="column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
+              </div>
+              <div class="column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://nuggetcharts.com/stream">Nugget</a></li>
+                        <li><a href="datascience">Course</a></li>
+                    </ul>
+              </div>
+              </div>
+                
+                <div class="footer-finalrow">
+                    <h3>Rapid Charts</h3>
+                    <p>Automated and interactive data analysis.</p>                    </div>
+                
+                <div class="col item social">
+                  <a href="https://www.economicsobservatory.com" class="fa fa-university"></a>
+                  <a href="https://twitter.com/RD_Economist" class="fa fa-twitter"></a>
+                  <a href="https://twitter.com/rapidcharts" class="fa fa-instagram"></a>
+                  <a href="https://www.linkedin.com/in/richard-davies-820b66a4/" class="fa fa-linkedin"></a>
+                </div>
+            
+              </div>
+            <p class="copyright">Richard Davies © 2021</p>
+      </footer>          
+</div>
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
 
-<!-- footer section -->
-<p><a href="https://wwww.richarddavies.io"> Richard Davies</a> &nbsp; | &nbsp; <a href="https://twitter.com/RD_Economist"> @RD_Economist </a> &nbsp; | &nbsp; <a href="mailto:rd@richarddavies.io"> rd@richarddavies.io </a> &nbsp; | &nbsp; <a href="mailto:richard.davies@bristol.ac.uk"> richard.davies@bristol.ac.uk</a></p>
-
-<span style="display:block; height: 30px;"></span> 
-
-<!-- footer section --> 
-
-<!-- JS FILES --> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/jquery.fancybox.pack.js"></script> 
-<script src="js/jquery.waypoints.min.js"></script> 
-<script src="js/retina.min.js"></script> 
-<script src="js/modernizr.js"></script> 
-<script src="js/main.js"></script>
 </body>
+
+
+
+<!--/////////////////////////////////////SCRIPTS///////////////////////////////-->
+<script>
+    // Set the charts that we want on the page as variables, linking them to JSON files:
+    
+    var surf1 ="charts/surf/C1_croyde.json";
+    var surf2 ="charts/surf/C2_restBay.json";
+    var surf3 ="charts/surf/C3_llangennith.json";
+    var surf4 ="charts/surf/C4_minehead.json";
+    var surf5 ="charts/surf/C5_brighton.json";
+    var surf6 ="charts/surf/C6_kimmeridge.json";
+    var surf7 ="charts/surf/C7_freshwaterwest.json";
+    var surf8 ="charts/surf/C8_freshwatereast.json";
+    var surf9 ="charts/surf/C9_marloes.json";
+    var surf10 ="charts/surf/C10_westdale.json";
+    var surf11 ="charts/surf/C11_sennen.json";
+    var surf12 ="charts/surf/C12_XYZ.json";
+
+  
+ // Now embed the charts in the divs set above:
+    vegaEmbed('#chart1', surf1, {"actions": false});   
+    vegaEmbed('#chart2', surf2, {"actions": false});
+    vegaEmbed('#chart3', surf3, {"actions": false});   
+    vegaEmbed('#chart4', surf4, {"actions": false});
+    vegaEmbed('#chart5', surf5, {"actions": false});   
+    vegaEmbed('#chart6', surf6, {"actions": false});
+    vegaEmbed('#chart7', surf7, {"actions": false});   
+    vegaEmbed('#chart8', surf8, {"actions": false});
+    vegaEmbed('#chart9', surf9, {"actions": false});   
+    vegaEmbed('#chart10', surf10, {"actions": false});
+    vegaEmbed('#chart11', surf11, {"actions": false});   
+    vegaEmbed('#chart12', surf12, {"actions": false});
+
+</script>
+
+<!--/////////////////////////////////////SCRIPTS///////////////////////////////-->
+
 </html>
