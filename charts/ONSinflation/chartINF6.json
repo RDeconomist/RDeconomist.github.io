@@ -16,13 +16,22 @@
     "height":300,
 
 
-    "data": {
+    "XYZdata": {
       "name":"myData",
       "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/CDSI/dataset/mm23/data",
       "format": {
         "type":"json",
         "property": "years"
       }},
+
+      "data": {
+        "name":"myData",
+        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/master/MM23-CDSI.json",
+        "format": {
+          "type":"json",
+          "property": "years"
+        }},
+  
 
 
     "mark":{

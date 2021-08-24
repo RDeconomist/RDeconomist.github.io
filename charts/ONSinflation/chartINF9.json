@@ -32,7 +32,7 @@
 
     "layer":[
       
-    {"data": {"url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/d7hi/dataset/mm23/data",
+    {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/master/MM23-D7HI.json",
       "format": {"type":"json", "property": "months"}},
 
       "mark":{"type": "line", "color":"blue"},
@@ -44,7 +44,7 @@
       ]
     },
 
-    {"data": {"url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/d7hj/dataset/mm23/data",
+    {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/master/MM23-D7HJ.json",
       "format": {"type":"json", "property": "months"}},
 
       "mark":{"type": "line", "color":"green"},
