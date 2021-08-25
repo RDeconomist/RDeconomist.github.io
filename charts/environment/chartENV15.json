@@ -13,7 +13,7 @@
     "anchor": "start",
     "color": "black"
   },
-  "width": {"step": 11},
+  "width": {"step": 10},
   "height": 300,
   "mark": "bar",
   "encoding": {
