@@ -48,7 +48,7 @@
     "encoding": {"y": {"field": "value", "type": "quantitative","title":null}}
   },
 
-  {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/master/MM23-L7LN.json",
+  {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L7LN.json",
     "format": {"type":"json", "property": "months"}},
 
     "transform": [
@@ -74,7 +74,7 @@
     "encoding": {"y": {"field": "value", "type": "quantitative","title":null}}
   },
 
-  {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/master/MM23-L7LO.json",
+  {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L7LO.json.json",
     "format": {"type":"json", "property": "months"}},
 
     "transform": [

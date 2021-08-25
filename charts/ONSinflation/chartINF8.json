@@ -33,7 +33,7 @@
 
   "layer":[
     
-    {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/master/data_MM23-D7GA.json",
+    {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-D7GA.json",
     "format": {"type":"json", "property": "months"}},
 
     "transform": [
@@ -91,7 +91,7 @@
     "encoding": {"y": {"field": "value", "type": "quantitative","title":null}}
   },
 
-  {"data": {"url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/d7gh/dataset/mm23/data",
+  {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-D7GH.json",
     "format": {"type":"json", "property": "months"}},
 
     "transform": [
