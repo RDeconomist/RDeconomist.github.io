@@ -52,7 +52,7 @@
 <div class="grid_items">
   <div class="grid_item" id="chart1"></div>
   <div class="grid_item" id="chart2"></div>
-  <!-- <div class="grid_item" id="chart3"></div>
+  <div class="grid_item" id="chart3"></div>
   <div class="grid_item" id="chart4"></div>
   <div class="grid_item" id="chart5"></div>
   <div class="grid_item" id="chart6"></div>
@@ -61,8 +61,7 @@
   <div class="grid_item" id="chart9"></div>
   <div class="grid_item" id="chart10"></div>
   <div class="grid_item" id="chart11"></div>
-  <div class="grid_item" id="chart12"></div> -->
-
+  <div class="grid_item" id="chart12"></div>
 </div>
 <!-- END - Grid of divs that will house the charts-->  
 
@@ -81,9 +80,23 @@
 <!-- Note: the steps order below actually does not matter. The order of actions is defined in the final fucntion, which "waits" for the data !-->
     <script>
 
-        ////// Regular embedding:
+        ////// Regular embedding /////////////////////////
+        
+        // Defining the chart specs:
         var US1 = "charts/usa/chartUS1.json";
+        var US2 = "charts/usa/chartUS2.json";
+        var US3 = "charts/usa/chartUS3.json";
+        var US4 = "charts/usa/chartUS4.json";
+        var US5 = "charts/usa/chartUS5.json";
+        var US6 = "charts/usa/chartUS6.json";
+
+        // Embedding these charts:
         vegaEmbed('#chart1', US1, {"actions": false});
+        vegaEmbed('#chart2', US2, {"actions": false});
+        // vegaEmbed('#chart3', US3, {"actions": false});
+        vegaEmbed('#chart4', US4, {"actions": false});
+        vegaEmbed('#chart5', US5, {"actions": false});
+        vegaEmbed('#chart6', US6, {"actions": false});
 
 
         // More complex: 
@@ -102,14 +115,16 @@
     
         /////////////////////////
         // STEP 2. Define the spec for the chart. 
-        var US2 = "charts/usa/FREDinflation2.json";
+        // var US2 = "charts/usa/FREDinflation2.json";
         ////////////////////////////
     
         ///////////////////
         // STEP 3. Define the chart drawing function:
+        // This is a regular Vega Embed, as above
+        // But with the addition that we insert data variable into the position 'myData', which is defined in the chart.
         async function chartIt(){
             const data = await getData();
-            vegaEmbed('#chart2', US2,{"actions": false}).then(res =>
+            vegaEmbed('#chart3', US3, {"actions": false}).then(res =>
                 res.view
                 .insert('myData', data)
                 .run()
