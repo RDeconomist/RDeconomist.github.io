@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!--Meta stuff-->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!--Facebook meta - this comes up when you post a link to the site-->
+    <meta property="og:title" content="Rapid Charts">
+    <meta property="og:description" content="Live price charts running directly from official data. Auto-updates daily.">
+    <meta property="og:image" content="covidCases.png">
+    <meta property="og:url" content="http://rapidcharts.io/index.htm">
+    
+    <!--Favicon-->
+    <link rel="icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="apple-touch-icon" href="images/favicon.png" />
+    
+    <!--Title - this is the bit that comes up in the tab-->
+    <title>Rapid Prices</title>
+    
+    <!--Main Stylesheet-->
+    <link rel="stylesheet" href="css/main2.css">
+    <link rel="stylesheet" href="css/covid_live.css">
+    
+    
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+    
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+
+
+<body>
+
+
+
+<!-- heading for page-->
+    <div class="wrap">
+        <h1>growth<span style="color: #86d0bb">charts</span></h1>
+        <span style="display:block; height: 10px;"></span>
+        <p id="rubric" class="rubric">Charts on GDP growth, a staging post for monthly updates on the Economics Observatory Data Hub.</p>
+        <span style="display:block; height: 10px;"></span>
+    </div>
+  
+
+
+<!-- Grid of divs that will house the charts-->
+    <div class="grid_items">
+        <div class="grid_item" id="chart1"></div>
+        <div class="grid_item" id="chart2"></div>
+        <div class="grid_item" id="chart3"></div>
+        <div class="grid_item" id="chart4"></div>
+        <div class="grid_item" id="chart5"></div>
+        <div class="grid_item" id="chart6"></div>
+        <div class="grid_item" id="chart7"></div>
+        <div class="grid_item" id="chart8"></div>
+        <div class="grid_item" id="chart9"></div>
+        <div class="grid_item" id="chart10"></div>
+        <div class="grid_item" id="chart11"></div>
+        <div class="grid_item" id="chart12"></div>
+    </div> 
+</div> 
+
+
+
+<script>
+    // Set the charts that we want on the page as variables, linking them to JSON files:
+    var GDP1 = "charts/ONSgdp/chartGDP1.json";
+    var GDP2 = "charts/ONSgdp/chartGDP2.json";
+    var GDP3 = "charts/ONSgdp/chartGDP3.json";
+    var GDP4 = "charts/ONSgdp/chartGDP4.json";
+    var GDP5 = "charts/ONSgdp/chartGDP5.json";
+    var GDP6 = "charts/ONSgdp/chartGDP6.json";
+    var GDP7 = "charts/ONSgdp/chartGDP7.json";
+    var GDP8 = "charts/ONSgdp/chartGDP8.json";
+    var GDP9 = "charts/ONSgdp/chartGDP9.json";
+    var GDP10 = "charts/ONSgdp/chartGDP10.json";
+    var GDP11 = "charts/ONSgdp/chartGDP11.json";
+    var GDP12 = "charts/ONSgdp/chartGDP12.json";
+   
+
+    // Now embed the charts in the divs set above:
+    vegaEmbed('#chart1', GDP1, {"actions": false});   
+    vegaEmbed('#chart2', GDP2, {"actions": false});
+    vegaEmbed('#chart3', GDP3, {"actions": false});   
+    vegaEmbed('#chart4', GDP4, {"actions": false});
+    vegaEmbed('#chart5', GDP5, {"actions": false});   
+    vegaEmbed('#chart6', GDP6, {"actions": false});
+    vegaEmbed('#chart7', GDP7, {"actions": false});   
+    vegaEmbed('#chart8', GDP8, {"actions": false});
+    vegaEmbed('#chart9', GDP9, {"actions": false});   
+    vegaEmbed('#chart10', GDP10, {"actions": false});
+    vegaEmbed('#chart11', GDP11, {"actions": false});   
+    vegaEmbed('#chart12', GDP12, {"actions": false}); 
+</script>
+
+
+
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+<span style="display:block; height: 30px;"></span>
+
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+              <div class="column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
+              </div>
+              <div class="column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://nuggetcharts.com/stream">Nugget</a></li>
+                        <li><a href="datascience">Course</a></li>
+                    </ul>
+              </div>
+              </div>
+                
+                <div class="footer-finalrow">
+                    <h3>Rapid Charts</h3>
+                    <p>Automated and interactive data analysis.</p>                    </div>
+                
+                <div class="col item social">
+                  <a href="https://www.economicsobservatory.com" class="fa fa-university"></a>
+                  <a href="https://twitter.com/RD_Economist" class="fa fa-twitter"></a>
+                  <a href="https://twitter.com/rapidcharts" class="fa fa-instagram"></a>
+                  <a href="https://www.linkedin.com/in/richard-davies-820b66a4/" class="fa fa-linkedin"></a>
+                </div>
+            
+              </div>
+            <p class="copyright">Richard Davies © 2021</p>
+      </footer>          
+</div>
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+</body>
+
+
+</html>
