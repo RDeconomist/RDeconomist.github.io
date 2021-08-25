@@ -26,7 +26,7 @@
 
       "data": {
         "name":"myData",
-        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/master/MM23-CDSI.json",
+        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/MM23-CDSI.json",
         "format": {
           "type":"json",
           "property": "years"
