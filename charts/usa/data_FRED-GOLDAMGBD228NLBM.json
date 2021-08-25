@@ -1,0 +1,4 @@
+{
+    "error_code": 404,
+    "error_message": "Not Found.  The data for this series is not available via the API;\n                 the data can be found on the FRED website."
+}
