@@ -24,7 +24,7 @@
   
 
     "data": {
-      "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/master/data_ohlcv_CRO.json",
+      "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/crypto/data_ohlcv_CRO.json",
       "format": {"type": "json"}},
   
   
