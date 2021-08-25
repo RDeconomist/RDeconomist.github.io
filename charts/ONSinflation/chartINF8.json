@@ -33,7 +33,7 @@
 
   "layer":[
     
-    {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/master/MM23-D7GA.json",
+    {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/master/data_MM23-D7GA.json",
     "format": {"type":"json", "property": "months"}},
 
     "transform": [
@@ -63,7 +63,7 @@
     
   },
 
-  {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/MM23-D7GD.json",
+  {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-D7GD.json",
     "format": {"type":"json", "property": "months"}},
 
     "transform": [
