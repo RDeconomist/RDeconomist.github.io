@@ -4,8 +4,8 @@
     "description": "US 10y bond yield",
   
      "title": {
-      "text": "Bond yield (government)",
-      "subtitle":"10-Year Treasury Constant Maturity Rate (FRED: DGS10)",
+      "text": "Real GDP - per capita",
+      "subtitle":"Chained 2012 Dollars, Seasonally Adjusted Annual Rate (BEA via FRED)",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
@@ -13,7 +13,7 @@
     },
     
     "data": {
-      "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/usa/data_FRED-DGS10.json",
+      "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/usa/data_FRED-A939RX0Q048SBEA.json",
       "format": {
           "type": "json", 
           "property": "observations"}

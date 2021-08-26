@@ -4,8 +4,8 @@
     "description": "US 10y bond yield",
   
      "title": {
-      "text": "Bond yield (government)",
-      "subtitle":"10-Year Treasury Constant Maturity Rate (FRED: DGS10)",
+      "text": "Unemployment",
+      "subtitle":"Number unemployed as % of labor force (FRED: UNRATE)",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
@@ -13,7 +13,7 @@
     },
     
     "data": {
-      "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/usa/data_FRED-DGS10.json",
+      "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/usa/data_FRED-UNRATE.json",
       "format": {
           "type": "json", 
           "property": "observations"}
