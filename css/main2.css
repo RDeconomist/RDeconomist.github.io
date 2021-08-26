@@ -468,3 +468,15 @@ body {
   fill:green;
   transition: fill 2000ms linear;
 } 
+
+
+/* ////// SPINNING FOOTBALL ///// */
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% {  transform: rotate(359deg); }
+}
+#football {
+  animation: spin 4s linear infinite;
+}
+/* ////// SPINNING FOOTBALL ///// */
