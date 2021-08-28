@@ -2,8 +2,8 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   
     "title": {
-      "text": "Price distributions - select an item",
-      "subtitle":["UK prices. Colours set by decile. Shaded area is 10th to 90th deciles.", ""],
+      "text": "Price distributions - pick an item",
+      "subtitle":["Prices (£), colours set by decile for the 10th to 90th deciles"],
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "subtitlePadding":5,
@@ -39,7 +39,7 @@
             "Men's socks",
             "Pub Meal"        
           ],
-          "name": "Choose:"
+          "name": "Pick and item:"
         }
       }
     },
@@ -61,7 +61,7 @@
         "aggregate":"sum",
         "field": "p",
         "type": "quantitative",
-        "title":"Price (£)"
+        "title":null
       },
       "color": {
         "legend":null,

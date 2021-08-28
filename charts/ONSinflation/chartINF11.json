@@ -28,7 +28,9 @@
             "color": {"field": "series", 
                       "type": "nominal", 
                       "scale": {"scheme": "set1"},
+                      "legend":{"orient": "top-right"},
                       "title":"Index"},
+                      
             "y": {"field": "Value_s", "type": "quantitative", "title":""}},
             "layer": [
             {"mark": "line"},
