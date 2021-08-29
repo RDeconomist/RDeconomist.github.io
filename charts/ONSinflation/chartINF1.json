@@ -36,6 +36,7 @@
   "mark":{
     "type": "line",
     "color":"red",
+    "width": 10,
     "strokeWidth":2,
     "opacity":1
   },
@@ -64,7 +65,7 @@
   ],
 
   "params": [    
-    {"name":"minYear", "value":1988,
+    {"name":"minYear", "value":2015,
        "bind":{
          "input": "range",
          "min": 1988, 
@@ -96,11 +97,6 @@
     "y": {
       "field": "value",                
       "type": "quantitative",
-      "title":null,
-      "scale":{
-        "domain":{
-          "data": "myData", 
-          "field": "value"}}
+      "title":null}
       }
-}
 }
