@@ -35,7 +35,7 @@
 
   "mark":{
     "type": "line",
-    "color":"red",
+    "color":"#00BFFF",
     "width": 10,
     "strokeWidth":2,
     "opacity":1
