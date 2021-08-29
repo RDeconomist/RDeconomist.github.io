@@ -59,8 +59,8 @@
     {"calculate":"timeParse(datum.date12, '%Y-%m')", "as": "dateClean"},
   
 
-    {"filter": "datum.year>minYear"},
-    {"filter": "datum.year<maxYear"}
+    {"filter": "datum.year>=minYear"},
+    {"filter": "datum.year<=maxYear"}
   ],
 
   "params": [    
