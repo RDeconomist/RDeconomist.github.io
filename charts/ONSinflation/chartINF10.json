@@ -14,7 +14,7 @@
     "format": {"type": "csv"}
   },
   "height": 300,
-  "width": 185,
+  "width": 300,
   "mark": {"type": "bar", "width": 3},
   "transform": [{"filter": {"selection": "pickSeries"}}],
   "selection": {
@@ -48,8 +48,8 @@
     "color": {
       "field": "series",
       "type": "nominal",
-      "legend": {"orient": "right", "columns":1},
-      "scale": {"scheme": "inferno"},
+      "legend": {"orient": "bottom", "columns":2},
+      "scale": {"scheme": "blues"},
       "title": ""
     }
   }
