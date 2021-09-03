@@ -1,87 +1,211 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
 
-<!-- ////////////////////////////// START HEAD //////////////////////////////-->
+<html lang="en">
+
 <head>
-<!--Meta stuff-->
-<meta charset="utf-8">
-<meta name="description" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!--Facebook meta - this comes up when you post a link to the site-->
-<meta property="og:title" content="Rapid Charts">
-<meta property="og:description" content="Automated, verifiable, beautiful">
-<meta property="og:image" content="chart1.png">
-<meta property="og:url" content="http://rapidcharts.io/index.htm">
-
-<!--Favicon-->
-<link rel="icon" href="images/icon.png">
-<link rel="shortcut icon" href="images/icon.png" />
-<link rel="apple-touch-icon" href="images/icon.png" />
-
-
-<title>Rapid Charts</title>
-
-<!--Main Stylesheet-->
-<link rel="stylesheet" href="css/covid_live.css">
-
-
-<!--Code to allow Vega embed-->
-<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
-
+    <!--Meta stuff-->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!--Facebook meta - this comes up when you post a link to the site-->
+    <meta property="og:title" content="Charts & Art">
+    <meta property="og:description" content="Live price charts running directly from official data. Auto-updates daily.">
+    <meta property="og:image" content="covidCases.png">
+    <meta property="og:url" content="http://rapidcharts.io/index.htm">
+    
+    <!--Favicon-->
+    <link rel="icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="apple-touch-icon" href="images/favicon.png" />
+    
+    <!--Title - this is the bit that comes up in the tab-->
+    <title>Charts & Art</title>
+    
+    <!--Main Stylesheet-->
+    <link rel="stylesheet" href="css/main2.css">
+    <link rel="stylesheet" href="css/covid_live.css">
+    
+    
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+    
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
-<!-- ////////////////////////////// END HEAD //////////////////////////////-->
 
 
 
-<!-- ////////////////////////////// START BODY //////////////////////////////-->
+<!-- <body onload="myFunction()" style="margin:0;"> -->
+
 <body>
 
+
+
+
+<!--Div with the loader ///////////////////////////////////// -->
+    <!-- <div id="loader" class="loader">
+        
+        <svg id="preloader" width="240px" height="120px" viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path id="loop-normal" class="st1" d="M120.5,60.5L146.48,87.02c14.64,14.64,38.39,14.65,53.03,0s14.64-38.39,0-53.03s-38.39-14.65-53.03,0L120.5,60.5
+          L94.52,87.02c-14.64,14.64-38.39,14.64-53.03,0c-14.64-14.64-14.64-38.39,0-53.03c14.65-14.64,38.39-14.65,53.03,0z">
+              <animate attributeName="stroke-dasharray" from="5, 5" to="500, 500" begin="0s" dur="4s" repeatCount="indefinite" />
+              <animate attributeName="stroke-dashoffset" from="0" to="0" begin="0s" dur="4s" repeatCount="indefinite" />
+            </path>
+          
+            <path id="loop-offset" d="M146.48,87.02c14.64,14.64,38.39,14.65,53.03,0s14.64-38.39,0-53.03s-38.39-14.65-53.03,0L120.5,60.5L94.52,87.02c-14.64,14.64-38.39,14.64-53.03,0c-14.64-14.64-14.64-38.39,0-53.03c14.65-14.64,38.39-14.65,53.03,0L120.5,60.5L146.48,87.02z">
+            </path>            
+        </svg>
+        
+        <div class="credit">
+            <a href="https://nuggetcharts.com" target="_blank">fetching live data</a>
+        </div>
+     </div> -->
+<!--End of loader /////////////////////////////////// -->
+
+
+<!--Page content begins ///////////////////////////////-->
+<!-- <div style="display:none; background-color:#ebe5e5; width: 100%;" id="myDiv" class="animate-bottom"> -->
+  
+
 <!-- heading for page-->
-<div class="wrap">
-  <h1>colour<span style="color: #ff0000"></span></h1>
-  <span style="display:block; height: 10px;"></span>
-  <p id="rubric" class="rubric">This page has some charts that allow comparison of colours. The button next to the chart allows you to open and edit it, and play with colour palettes.</p>
-  <span style="display:block; height: 10px;"></span>
-</div> 
-  
-
-<!--Begin Grid-->
-<div class="grid_items">
-  
-
-
-<!--Albers Start-->
-    <div class="grid_item" id="visAlbers">
-    <script>
-      var albers = "charts/colour/albers.json";
-      vegaEmbed('#visAlbers', albers);
-      </script>
+    <div class="wrap">
+        <h1>art<span style="color: #86d0bb">charts</span></h1>
+        <span style="display:block; height: 10px;"></span>
+        <p id="rubric" class="rubric">This page has some charts that allow comparison of colours. The button next to the chart allows you to open and edit it, and play with colour palettes..</p>
+        <span style="display:block; height: 10px;"></span>
     </div>
-<!--Albers End-->
+  
 
 
-<!--Pyramid Start-->
-<div class="grid_item" id="visPyramid">
-  <script>
-    var pyramid = "charts/colour/pyramid.json";
-    vegaEmbed('#visPyramid', pyramid);
-    </script>
-  </div>
-<!--Pyramid End-->
+
+<!-- Grid of divs that will house the charts-->
+    <div class="grid_items">
+        <div class="grid_item" id="chart1"></div>
+        <div class="grid_item" id="chart2"></div>
+        <div class="grid_item" id="chart3"></div>
+        <div class="grid_item" id="chart4"></div>
+        <!-- <div class="grid_item" id="chart5"></div>
+        <div class="grid_item" id="chart6"></div>
+        <div class="grid_item" id="chart7"></div>
+        <div class="grid_item" id="chart8"></div>
+        <div class="grid_item" id="chart9"></div>
+        <div class="grid_item" id="chart10"></div>
+        <div class="grid_item" id="chart11"></div>
+        <div class="grid_item" id="chart12"></div>
+        <div class="grid_item" id="chart13"></div>
+        <div class="grid_item" id="chart14"></div>
+        <div class="grid_item" id="chart15"></div>
+        <div class="grid_item" id="chart16"></div>
+        <div class="grid_item" id="chart17"></div>
+        <div class="grid_item" id="chart18"></div>
+        <div class="grid_item" id="chart19"></div>
+        <div class="grid_item" id="chart20"></div>
+        <div class="grid_item" id="chart21"></div> -->
+  
+    </div> 
+</div> 
 
 
-  </div>
 
-<!-- JS FILES --> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/jquery.fancybox.pack.js"></script> 
-<script src="js/jquery.waypoints.min.js"></script> 
-<script src="js/retina.min.js"></script> 
-<script src="js/modernizr.js"></script> 
-<script src="js/main.js"></script>
+<script>
+    // Set the charts that we want on the page as variables, linking them to JSON files:
+    var colour1 = "charts/colour/chartColour1.json";
+    var colour2 = "charts/colour/chartColour2.json";
+    var colour3 = "charts/colour/chartColour3.json";
+    var colour4 = "charts/colour/chartColour4.json";
+    // var colour5 = "charts/colour/chartColour5.json";
+    // var colour6 = "charts/colour/chartColour6.json";
+    // var colour7 = "charts/colour/chartColour7.json";
+    // var colour8 = "charts/colour/chartColour8.json";
+    // var colour9 = "charts/colour/chartColour9.json";
+    // var colour10 = "charts/colour/chartColour10.json";
+    // var colour11 = "charts/colour/chartColour11.json";
+    // var colour12 = "charts/colour/chartColour12.json";
+    // var colour13 = "charts/colour/chartColour13.json";
+    // var colour14 = "charts/colour/chartColour14.json";
+    // var colour15 = "charts/colour/chartColour15.json";
+    // var colour16 = "charts/colour/chartColour16.json";
+    // var colour17 = "charts/colour/chartColour17.json";
+    // var colour18 = "charts/colour/chartColour18.json";
+    // var colour19 = "charts/colour/chartColour19.json";
+    // var colour20 = "charts/colour/chartColour10.json";
+    // var colour21 = "charts/colour/chartColour11.json";
+    // var colour22 = "charts/colour/chartColour12.json";
+   
+
+    // Now embed the charts in the divs set above:
+    vegaEmbed('#chart1', colour1, {"actions": false});   
+    vegaEmbed('#chart2', colour2, {"actions": false});
+    vegaEmbed('#chart3', colour3, {"actions": false});   
+    vegaEmbed('#chart4', colour4, {"actions": false});
+    // vegaEmbed('#chart5', colour5, {"actions": false});   
+    // vegaEmbed('#chart6', colour6, {"actions": false});
+    // vegaEmbed('#chart7', colour7, {"actions": false});   
+    // vegaEmbed('#chart8', colour8, {"actions": false});
+    // vegaEmbed('#chart9', colour9, {"actions": false});   
+    // vegaEmbed('#chart10', colour10, {"actions": false});
+    // vegaEmbed('#chart11', colour11, {"actions": false});   
+    // vegaEmbed('#chart12', colour12, {"actions": false}); 
+    // vegaEmbed('#chart13', colour13, {"actions": false});   
+    // vegaEmbed('#chart14', colour14, {"actions": false});
+    // vegaEmbed('#chart15', colour15, {"actions": false});   
+    // vegaEmbed('#chart16', colour16, {"actions": false});
+    // vegaEmbed('#chart17', colour17, {"actions": false});   
+    // vegaEmbed('#chart18', colour18, {"actions": false});  
+    // vegaEmbed('#chart19', colour19, {"actions": false});   
+    // vegaEmbed('#chart20', colour20, {"actions": false});  
+    // vegaEmbed('#chart21', colour21, {"actions": false});  
+
+</script>
+
+
+
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+<span style="display:block; height: 30px;"></span>
+
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+              <div class="column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
+              </div>
+              <div class="column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://nuggetcharts.com/stream">Nugget</a></li>
+                        <li><a href="datascience">Course</a></li>
+                    </ul>
+              </div>
+              </div>
+                
+                <div class="footer-finalrow">
+                    <h3>Rapid Charts</h3>
+                    <p>Automated and interactive data analysis.</p>                    </div>
+                
+                <div class="col item social">
+                  <a href="https://www.economicsobservatory.com" class="fa fa-university"></a>
+                  <a href="https://twitter.com/RD_Economist" class="fa fa-twitter"></a>
+                  <a href="https://twitter.com/rapidcharts" class="fa fa-instagram"></a>
+                  <a href="https://www.linkedin.com/in/richard-davies-820b66a4/" class="fa fa-linkedin"></a>
+                </div>
+            
+              </div>
+            <p class="copyright">Richard Davies © 2021</p>
+      </footer>          
+</div>
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
 </body>
+
+
 </html>
