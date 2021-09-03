@@ -69,7 +69,14 @@
         "gridColor":"dimgrey",
         "format":"$.2s"}},
 
-    "y2": {"field": "price_high"}
+    "y2": {"field": "price_high"},
+
+    "tooltip":[
+      {"field":"time_period_start", "title": "Date", "type":"temporal" },
+      {"field":"price_low", "title": "Low", "format":"$,.2d" },
+      {"field":"price_high", "title": "High", "format":"$,.2d" }
+
+    ]
      
      }
 }
