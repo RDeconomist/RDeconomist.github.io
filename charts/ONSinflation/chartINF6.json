@@ -36,7 +36,7 @@
 
     "mark":{
       "type": "line",
-      "color":"dodgerblue",
+      "color":"#00BFFF",
       "strokeWidth":2,
       "opacity":1
     },
