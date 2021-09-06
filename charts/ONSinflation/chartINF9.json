@@ -3,8 +3,8 @@
 
 
     "title": {
-    "text": "The price of protein: fish vs meat",
-    "subtitle": "Percentage 12-month change, CPI divisions",
+    "text": "Fish vs meat",
+    "subtitle": "Percentage 12-month change",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -23,11 +23,15 @@
         "type": "temporal", 
         "title":null},
       
-      "color": {
-        "field": "name", 
-        "type": "ordinal", 
-        "title":null,
-        "scale":{"scheme":"magma"}}},
+        "color": {
+          "field": "name", 
+          "type": "ordinal", 
+          "title":null,
+          "legend":{"orient": "bottom"},
+          "scale":{"range": ["#00BFFF", "#0276FD", "#63D1F4"]}
+        }
+
+      },
 
 
     "layer":[

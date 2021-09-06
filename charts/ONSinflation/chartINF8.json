@@ -28,7 +28,9 @@
       "type": "ordinal", 
       "title":null,
       "legend":{"orient": "bottom"},
-      "scale":{"scheme":"set1"}}},
+      "scale":{"range": ["#00BFFF", "#0276FD", "#63D1F4"]}
+    }
+    },
 
 
   "layer":[
