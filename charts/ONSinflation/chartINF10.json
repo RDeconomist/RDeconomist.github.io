@@ -60,7 +60,7 @@
       "field": "series",
       "type": "nominal",
       "legend": {"orient": "bottom", "columns":2},
-      "scale": {"range": ["#D9D9F3", "#00BFFF", "#0276FD", "#000080", "#002199"]},
+      "scale": {"range": ["#D9D9F3", "#00BFFF", "#0276FD", "#000080", "#002199", "#63D1F4"]},
       "title": ""
     }
   }
