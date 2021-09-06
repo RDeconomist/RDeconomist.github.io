@@ -3,7 +3,7 @@
 
 
   "title": {
-  "text": "Inflation",
+  "text": "Inflation - official measure",
   "subtitle": "CPI, % change over 12 months ",
   "subtitleFontStyle":"italic",
   "subtitleFontSize":10,
@@ -34,7 +34,7 @@
 
 
   "mark":{
-    "type": "line",
+    "type": "line",    
     "color":"#00BFFF",
     "width": 10,
     "strokeWidth":2,

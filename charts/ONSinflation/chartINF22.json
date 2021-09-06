@@ -3,8 +3,8 @@
 
 
   "title": {
-  "text": "CPI - three headline indices",
-  "subtitle": "Percentage change, 12-months",
+  "text": "Inflation - comparing three measures",
+  "subtitle": "CPI, CPIH and RPI, percentage change, 12-months, 1948-present",
   "subtitleFontStyle":"italic",
   "subtitleFontSize":10,
   "anchor": "start",
@@ -14,6 +14,27 @@
 
   "width":300,
   "height":300,
+
+    "params": [    
+    {"name":"minYear", "value":1989,
+       "bind":{
+         "input": "range",
+         "min": 1948, 
+         "max": 2021, 
+         "step": 1,
+         "name": "Start year:"}
+    },
+
+    {"name":"maxYear", "value":2021,
+       "bind":{
+         "input": "range",
+         "min": 1948, 
+         "max": 2021, 
+         "step": 1,
+         "name": "End year:"}
+    }
+  ],
+
 
   "encoding": {"x": {"field": "dateClean", "type": "temporal", "title":null},
 
@@ -47,7 +68,10 @@
   
       {"calculate":"timeParse(datum.date12, '%Y-%m')", "as": "dateClean"},
 
-      {"calculate":"replace(datum.quarter, '', 'CPIH')", "as": "name"}
+      {"calculate":"replace(datum.quarter, '', 'CPIH')", "as": "name"},
+
+      {"filter": "datum.year>=minYear"},
+      {"filter": "datum.year<=maxYear"}
     ],
 
     "mark":{"type": "line"},
@@ -75,7 +99,10 @@
   
       {"calculate":"timeParse(datum.date12, '%Y-%m')", "as": "dateClean"},
 
-      {"calculate":"replace(datum.quarter, '', 'RPI')", "as": "name"}
+      {"calculate":"replace(datum.quarter, '', 'RPI')", "as": "name"},
+
+      {"filter": "datum.year>=minYear"},
+      {"filter": "datum.year<=maxYear"}
     ],
 
     "mark":{"type": "line"},
@@ -103,7 +130,10 @@
   
       {"calculate":"timeParse(datum.date12, '%Y-%m')", "as": "dateClean"},
 
-      {"calculate":"replace(datum.quarter, '', 'CPI')", "as": "name"}
+      {"calculate":"replace(datum.quarter, '', 'CPI')", "as": "name"},
+
+      {"filter": "datum.year>=minYear"},
+      {"filter": "datum.year<=maxYear"}
     ],
 
     "mark":{"type": "line"},
