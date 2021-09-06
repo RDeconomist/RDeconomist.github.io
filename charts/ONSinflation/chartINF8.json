@@ -56,7 +56,7 @@
       {"calculate":"replace(datum.quarter, '', 'Clothing & footwear')", "as": "name"}
     ],
 
-    "mark":{"type": "line", "color":"red"},
+    "mark":{"type": "line", "color":"#0276FD"},
 
     "encoding": {"y": {"field": "value", "type": "quantitative","title":null}}
 
@@ -86,7 +86,7 @@
       {"calculate":"replace(datum.quarter, '', 'Health')", "as": "name"}
     ],
 
-    "mark":{"type": "line", "color":"blue"},
+    "mark":{"type": "line", "color":"#00BFFF"},
 
     "encoding": {"y": {"field": "value", "type": "quantitative","title":null}}
   },

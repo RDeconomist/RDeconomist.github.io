@@ -15,15 +15,18 @@
   "width":300,
   "height":300,
 
-  "encoding": {"x": {"field": "dateClean", "type": "temporal", "title":null},
-
-  "color": {
+  
+  "encoding": {
+    "x": {"field": "dateClean", "type": "temporal", "title":null},
+    
+    "color": {
       "field": "name", 
       "type": "ordinal", 
       "title":null,
-      "scale":{"scheme":"inferno"},
+      "scale":{"range": ["#00BFFF", "#0276FD"]},
       "legend":{"orient": "top-right"}}
       },
+
 
   "layer":[
     

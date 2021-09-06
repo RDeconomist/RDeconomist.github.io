@@ -43,7 +43,7 @@
       
     ],
 
-    "mark":{"type": "line", "color":"red"},
+    "mark":{"type": "line", "color":"#00BFFF"},
 
     "encoding": {"y": {"field": "value", "type": "quantitative","title":null}}
   },
@@ -95,7 +95,7 @@
       {"calculate":"timeParse(datum.date12, '%Y-%m')", "as": "dateClean"}
     ],
 
-    "mark":{"type": "line", "color":"lightgoldenrodyellow"},
+    "mark":{"type": "line", "color":"#0276FD"},
 
     "encoding": {"y": {"field": "value", "type": "quantitative","title":null}}
   }

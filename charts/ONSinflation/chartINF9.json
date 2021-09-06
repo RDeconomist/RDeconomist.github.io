@@ -85,7 +85,7 @@
       
       ],
 
-      "mark":{"type": "line", "color":"green"},
+      "mark":{"type": "line", "color":"#00BFFF"},
 
       "encoding": {"y": {"field": "value", "type": "quantitative","title":null}}
     }
