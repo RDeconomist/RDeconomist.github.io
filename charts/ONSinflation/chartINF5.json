@@ -24,7 +24,7 @@
       "type": "ordinal", 
       "title":null,
       "scale":{"range": ["#00BFFF", "#0276FD"]},
-      "legend":{"orient": "top-right"}}
+      "legend":{"orient": "bottom"}}
       },
 
 
