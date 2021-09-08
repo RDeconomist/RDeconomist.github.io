@@ -3,7 +3,7 @@
 
 
   "title": {
-  "text": "Inflation - official measure",
+  "text": "Inflation - official target",
   "subtitle": "CPI, % change over 12 months ",
   "subtitleFontStyle":"italic",
   "subtitleFontSize":10,
@@ -16,14 +16,6 @@
   "height":300,
 
 
-  "XYZdata": {
-    "name":"myData",
-    "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/L55O/dataset/mm23/data",
-    "format": {
-      "type":"json",
-      "property": "months"
-    }},
-
   "data": {
       "name":"myData",
       "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-D7G7.json",
@@ -31,15 +23,6 @@
         "type":"json",
         "property": "months"
       }},  
-
-
-  "mark":{
-    "type": "line",    
-    "color":"#00BFFF",
-    "width": 10,
-    "strokeWidth":2,
-    "opacity":1
-  },
 
 
   "transform": [
@@ -84,19 +67,67 @@
     }
   ],
 
+  "layer":[
+    {
 
+      "mark":{
+        "type": "line",    
+        "color":"#00BFFF",
+        "width": 10,
+        "strokeWidth":2,
+        "opacity":1},
 
-  "encoding": {
+      "encoding": {
+
+        "x": {
+          "field": "dateClean",
+          "type": "temporal",
+          "title":null},
+
+        "y": {
+          "field": "value",                
+          "type": "quantitative",
+          "title":null}
+        }
+    },
+
     
-    "x": {
-      "field": "dateClean",
-      "type": "temporal",
-      "title":null
+
+    {
+      "encoding": {
+        
+        "x": {
+          "aggregate": "max", 
+          "field": "dateClean", 
+          "type": "temporal"},
+        
+        "y": {
+          "aggregate": {"argmax": "dateClean"},
+          "field": "value",
+          "type": "quantitative"
+        },
+
+        "text": {
+          "aggregate": {"argmax": "dateClean"},
+          "field": "value", 
+          "type": "nominal"}
       },
 
-    "y": {
-      "field": "value",                
-      "type": "quantitative",
-      "title":null}
-      }
+      "layer": [
+        {"mark": {
+          "type": "circle",
+          "color":"#00BFFF",
+       
+          "size":100}},
+
+        {"mark": {
+          "type": "text", 
+          "align": "left", 
+          "dx": 8,
+          "color":"#00BFFF"
+       }}
+      ]
+    }
+
+  ]
 }
