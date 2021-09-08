@@ -73,7 +73,8 @@
         {"field": "item_desc", "type": "nominal", "title": "Description"},
         {"field": "p", "type": "quantitative", "title": "Price (median)", "format": ".0f"},
         {"field": "up_sh", "type": "quantitative", "title": "Share rising", "format": ",.2%"},
-        {"field": "down_sh", "type": "quantitative", "title": "Share falling", "format": ",.2%"}
+        {"field": "down_sh", "type": "quantitative", "title": "Share falling", "format": ",.2%"},
+        {"field": "downRank", "type": "quantitative", "title": "Down Rank", "format": ".0f"}
       ]
   }
   }
