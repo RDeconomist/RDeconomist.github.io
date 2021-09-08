@@ -3,8 +3,8 @@
 
 
   "title": {
-  "text": "Inflation - comparing three measures",
-  "subtitle": "CPI, CPIH and RPI, percentage change, 12-months, 1948-present",
+  "text": "Tea v Coffee v Hot Cholocolate",
+  "subtitle": "Percentage 12-month price change for CPI items",
   "subtitleFontStyle":"italic",
   "subtitleFontSize":10,
   "anchor": "start",
@@ -15,40 +15,11 @@
   "width":300,
   "height":300,
 
-    "params": [    
-    {"name":"minYear", "value":1989,
-       "bind":{
-         "input": "range",
-         "min": 1948, 
-         "max": 2021, 
-         "step": 1,
-         "name": "Start year:"}
-    },
-
-    {"name":"maxYear", "value":2021,
-       "bind":{
-         "input": "range",
-         "min": 1948, 
-         "max": 2021, 
-         "step": 1,
-         "name": "End year:"}
-    }
-  ],
-
-
-  "encoding": {"x": {"field": "dateClean", "type": "temporal", "title":null},
-
-  "color": {
-      "field": "name", 
-      "type": "ordinal", 
-      "title":null,
-      "scale": {"range": ["#000080","#00BFFF", "#0276FD"]},
-      "legend":{"orient": "top-right"}}
-      },
+  "encoding": {"x": {"field": "dateClean", "type": "temporal", "title":null}},
 
   "layer":[
     
-    {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L55O.json",
+    {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L7LM.json",
     "format": {"type":"json", "property": "months"}},
 
     "transform": [
@@ -66,20 +37,18 @@
       {"calculate":"replace(datum.date10, ' NOV', '-11')", "as":"date11"},
       {"calculate":"replace(datum.date11, ' DEC', '-12')", "as":"date12"},
   
-      {"calculate":"timeParse(datum.date12, '%Y-%m')", "as": "dateClean"},
-
-      {"calculate":"replace(datum.quarter, '', 'CPIH')", "as": "name"},
-
-      {"filter": "datum.year>=minYear"},
-      {"filter": "datum.year<=maxYear"}
+      {"calculate":"timeParse(datum.date12, '%Y-%m')", "as": "dateClean"}
+    
+  
+      
     ],
 
-    "mark":{"type": "line"},
+    "mark":{"type": "line", "color":"#00BFFF"},
 
     "encoding": {"y": {"field": "value", "type": "quantitative","title":null}}
   },
 
-  {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-CZBH.json",
+  {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L7LN.json",
     "format": {"type":"json", "property": "months"}},
 
     "transform": [
@@ -97,20 +66,15 @@
       {"calculate":"replace(datum.date10, ' NOV', '-11')", "as":"date11"},
       {"calculate":"replace(datum.date11, ' DEC', '-12')", "as":"date12"},
   
-      {"calculate":"timeParse(datum.date12, '%Y-%m')", "as": "dateClean"},
-
-      {"calculate":"replace(datum.quarter, '', 'RPI')", "as": "name"},
-
-      {"filter": "datum.year>=minYear"},
-      {"filter": "datum.year<=maxYear"}
+      {"calculate":"timeParse(datum.date12, '%Y-%m')", "as": "dateClean"}
     ],
 
-    "mark":{"type": "line"},
+    "mark":{"type": "line", "color":"blue"},
 
     "encoding": {"y": {"field": "value", "type": "quantitative","title":null}}
   },
 
-  {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-D7G7.json",
+  {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L7LO.json.json",
     "format": {"type":"json", "property": "months"}},
 
     "transform": [
@@ -128,15 +92,10 @@
       {"calculate":"replace(datum.date10, ' NOV', '-11')", "as":"date11"},
       {"calculate":"replace(datum.date11, ' DEC', '-12')", "as":"date12"},
   
-      {"calculate":"timeParse(datum.date12, '%Y-%m')", "as": "dateClean"},
-
-      {"calculate":"replace(datum.quarter, '', 'CPI')", "as": "name"},
-
-      {"filter": "datum.year>=minYear"},
-      {"filter": "datum.year<=maxYear"}
+      {"calculate":"timeParse(datum.date12, '%Y-%m')", "as": "dateClean"}
     ],
 
-    "mark":{"type": "line"},
+    "mark":{"type": "line", "color":"#0276FD"},
 
     "encoding": {"y": {"field": "value", "type": "quantitative","title":null}}
   }

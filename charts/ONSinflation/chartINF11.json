@@ -1,76 +1,70 @@
-{"$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-
-  "title": {
-      "text": "CPI - three headline inidces",
-      "subtitle":"RPI, CPI and CPIH",
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    
+    "description": "Prices by region",
+  
+    "title": {
+      "text": "UK price data. Prices collected by region",
+      "subtitle":"Number of useable prices in the LRPD.",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
       "color": "black"
     },
   
-    "description": "Inflaiton indices",
-  
-    "data": {
-      "url": "https://raw.githubusercontent.com/RDeconomist/teaching2/main/cpiThreeIndMonthly.csv",
-      "format": {"type": "csv"}
-    },
-  
-    "height": 300,
-    "width": 300,
+   "data": {"url": "https://raw.githubusercontent.com/RDeconomist/prices/master/dbPricesByRegion.csv"},
     
-   
-    "encoding": {"x": {"field": "Date", "type": "temporal", "title":null}},
-   
-    "layer": [
-      {
-        "encoding": {
-          "color": {"field": "series", 
-                    "type": "nominal", 
-                    "scale": {"range": ["#000080","#00BFFF", "#0276FD"]},
-                    "legend":{"orient": "top-right"},
-                    "title":"Index"},
-                    
-          "y": {"field": "Value_s", "type": "quantitative", "title":""}},
-          "layer": [
-          {"mark": "line"},
-          {"transform": [{"filter": {"selection": "hover"}}], 
-              "mark": {
-                "type":"circle",
-                "filled":true,
-                "size":200,
-                "stroke":"#DCDCDC",
-                "fillOpacity":1,
-                "strokeOpacity":0.8,
-                "strokeWidth":5}}
-        ]
+    "height": 300,
+    "width": "container",
+    
+    
+    "mark": {"type": "line", "point": false},
+    
+    "selection": {
+      "region": {"type": "multi", "fields": ["region"], "bind": "legend"}
       },
-         
+    
+    "transform": [
       {
-        "transform": [{"pivot": "series", "value": "Value_s", "groupby": ["Date"]}],
-        "mark": "rule",
-        "encoding": {
-          "opacity": {
-            "condition": {"value": 0, "selection": "hover"},
-            "value": 0
-          },
-          "tooltip": [
-            {"field": "Date", "type": "temporal", "format": "%b-%Y"},
-            {"field": "CPI", "type": "quantitative", "format": ",.1f", "title":"CPI(%)"},
-            {"field": "CPIH", "type": "quantitative", "format": ",.1f", "title":"CPIH(%)"},
-            {"field": "RPI", "type": "quantitative", "format": ",.1f", "title":"RPI(%)"}
+        "filter": {
+          "field": "date",
+          "range": [
+            {"year": 2018, "month": "jan", "date": 1},
+            {"year": 2030, "month": "dec", "date": 30}
           ]
-        },
-        "selection": {
-          "hover": {
-            "type": "single",
-            "fields": ["Date"],
-            "nearest": true,
-            "on": "mouseover",
-            "empty": "none",
-            "clear": "mouseout"
-          }
         }
       }
-    ]
+    ],
+    "encoding": {
+  
+      "x": {
+          "field": "date", 
+          "type": "temporal", 
+          "title": "Year",
+          "axis": {"format": "%Y"}
+          },
+      
+      "y": {
+        "field": "prices",
+        "type": "quantitative",
+        "title": "Number of price observations"
+      },
+  
+      "color": {
+        "field": "region",
+        "type": "nominal",
+        "scale": {"scheme": "set1"},
+        "title": "Region",
+        "legend": {"orient": "right"}
+      },
+  
+      "opacity": {"condition": {"selection": "region", "value": 1}, "value": 0.1},
+  
+      "tooltip": [
+            {"field": "date", "type": "temporal", "title": "Date"},
+            {"field": "region", "type": "nominal", "title": "Region"},
+            {"field": "prices", "type": "nominal", "title": "Prices", "format": ",.0f"},
+            {"field": "obs", "type": "quantitative", "title": "Total prices (UK)", "format": ",.0f"}
+      ]
+    }
   }

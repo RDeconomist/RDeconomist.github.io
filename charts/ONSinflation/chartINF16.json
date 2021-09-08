@@ -1,176 +1,81 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-
-
-  "title": {
-  "text": "What is official inflation based on?",
-  "subtitle": "CPIH, weighted shares of UK consumer basket",
-  "subtitleFontStyle":"italic",
-  "subtitleFontSize":10,
-  "anchor": "start",
-  "color": "black"
-},
-
-
-  "width":300,
-  "height":300,
-
-
-  "encoding": {
-
-    "x": {
-      "field": "name", 
-      "type": "ordinal", 
-      "title":null},
-
-    "y": {
-     "field": "percent",
-     "type": "quantitative",
-     "scale":{
-       "domain":[0,0.35]
-     },
-     "title":null,
-     "axis":{"format":"%"},
-     "stack":true
-     },
-
-    "color": {
-      "field": "selectedDate", 
-      "type": "ordinal", 
-      "title":null,
-      "legend":null,
-      "scale":{"scheme":"yellowgreenblue"}},
-
-    
-
-    "tooltip":[
-      {"field":"name", "title":"Division"},
-      {"field":"year", "title":"Year", "type": "temporal", "format":"%Y"},
-      {"field":"percent", "title":"Share of basket", "format":",.1%"}
-    ]
-  },
- 
-  "params": [    
-    {"name":"selectedDate", "value":2021,
-       "bind":{
-         "input": "range",
-         "min": 1988, 
-         "max": 2021, 
-         "step": 1,
-         "name": "Select year:"}
-    }],
-
-
-  "layer":[
-    
-  {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L5CZ.json",
-    "format": {"type":"json", "property": "years"}},
-    "transform": [
-      {"calculate":"replace(datum.quarter, '', 'Food')", "as": "name"},
-      {"calculate":"datum.value/1000", "as": "percent"},
-      {"filter": "datum.date==selectedDate"}
-    ],
-    "mark":{"type": "bar"}},
-
-    {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L5D2.json",
-    "format": {"type":"json", "property": "years"}},
-    "transform": [
-      {"calculate":"replace(datum.quarter, '', 'Alcohol & Tobacco')", "as": "name"},
-      {"calculate":"datum.value/1000", "as": "percent"},
-      {"filter": "datum.date==selectedDate"}
-    ],
-    "mark":{"type": "bar"}},
-
-    {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L5D3.json",
-    "format": {"type":"json", "property": "years"}},
-    "transform": [
-      {"calculate":"replace(datum.quarter, '', 'Clothing & Footwear')", "as": "name"},
-      {"calculate":"datum.value/1000", "as": "percent"},
-      {"filter": "datum.date==selectedDate"}
-  ],
-    "mark":{"type": "bar"}},
-
-    {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L5D4.json",
-    "format": {"type":"json", "property": "years"}},
-    "transform": [
-      {"calculate":"replace(datum.quarter, '', 'Housing & Utilities')", "as": "name"},
-      {"calculate":"datum.value/1000", "as": "percent"},
-      {"filter": "datum.date==selectedDate"}
-    ],
-    "mark":{"type": "bar"}},
-
-    {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L5D5.json",
-    "format": {"type":"json", "property": "years"}},
-    "transform": [
-      {"calculate":"replace(datum.quarter, '', 'Furniture & maintenance')", "as": "name"},
-      {"calculate":"datum.value/1000", "as": "percent"},
-      {"filter": "datum.date==selectedDate"}
-    ],
-    "mark":{"type": "bar"}},
-
-    {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L5D6.json",
-    "format": {"type":"json", "property": "years"}},
-    "transform": [
-      {"calculate":"replace(datum.quarter, '', 'Health')", "as": "name"},
-      {"calculate":"datum.value/1000", "as": "percent"},
-      {"filter": "datum.date==selectedDate"}
-    ],
-    "mark":{"type": "bar"}},
-
-    {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L5D7.json",
-    "format": {"type":"json", "property": "years"}},
-    "transform": [
-      {"calculate":"replace(datum.quarter, '', 'Transport')", "as": "name"},
-      {"calculate":"datum.value/1000", "as": "percent"},
-      {"filter": "datum.date==selectedDate"}
-    ],
-    "mark":{"type": "bar"}},
-
-    {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L5D8.json",
-    "format": {"type":"json", "property": "years"}},
-    "transform": [
-      {"calculate":"replace(datum.quarter, '', 'Communication')", "as": "name"},
-      {"calculate":"datum.value/1000", "as": "percent"},
-      {"filter": "datum.date==selectedDate"}
-    ],
-    "mark":{"type": "bar"}},
-
-    {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L5D9.json",
-    "format": {"type":"json", "property": "years"}},
-    "transform": [
-      {"calculate":"replace(datum.quarter, '', 'Recreation')", "as": "name"},
-      {"calculate":"datum.value/1000", "as": "percent"},
-      {"filter": "datum.date==selectedDate"}
-    ],
-    "mark":{"type": "bar"}},
-
-    {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L5DA.json",
-    "format": {"type":"json", "property": "years"}},
-    "transform": [
-      {"calculate":"replace(datum.quarter, '', 'Education')", "as": "name"},
-      {"calculate":"datum.value/1000", "as": "percent"},
-      {"filter": "datum.date==selectedDate"}
-    ],
-    "mark":{"type": "bar"}},
-
-    {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L5DB.json",
-    "format": {"type":"json", "property": "years"}},
-    "transform": [
-      {"calculate":"replace(datum.quarter, '', 'Hotels')", "as": "name"},
-      {"calculate":"datum.value/1000", "as": "percent"},
-      {"filter": "datum.date==selectedDate"}
-    ],
-    "mark":{"type": "bar"}},
-
-    {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L5DC.json",
-    "format": {"type":"json", "property": "years"}},
-    "transform": [
-      {"calculate":"replace(datum.quarter, '', 'Misc')", "as": "name"},
-      {"calculate":"datum.value/1000", "as": "percent"},
-      {"filter": "datum.date==selectedDate"}
-    ],
-    "mark":{"type": "bar"}}
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
-]
- 
-}
+    "description": "UK CPI data visualisation",
+  
+    "title": {
+      "text": "All items - price rises and cuts - [Hover for detail]",
+      "subtitle": "Share of prices rising and falling for each consumer item",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+  
+    "data": {
+      "url": "https://raw.githubusercontent.com/RDeconomist/prices/master/dbLatestRelease.csv"
+    },
+  
+    "height":600,
+    "width":300,
+  
+    "transform": [
+      {"calculate":"datum.down_sh*(-1)", "as": "down"}
+    ],
+  
+    "encoding": {"y": {
+          "field": "upRank",
+          "type": "quantitative",
+          "axis":{"grid": false},
+          "scale": {"zero": false},
+          "title": null}},
+  
+      
+    "layer":[{
+      "mark":{"type":"circle",
+      "opacity":0.5,
+      "color":"orange"
+    },
+  
+    "selection": {
+        "paintbrush": {"type": "multi", "on": "mouseover", "nearest": true}
+        },
+      
+  
+    "encoding": {
+      "x": {
+        "field": "up_sh",
+        "type": "quantitative",
+        "axis":{"grid": false},
+        "scale": {"zero": true},
+        "title": "Prices cut"
+      },
+  
+      "tooltip": [
+        {"field": "item_desc", "type": "nominal", "title": "Description"},
+        {"field": "item_id", "type": "nominal", "title": "Item ID", "format": ".0f"},
+        {"field": "p", "type": "quantitative", "title": "Price (median)", "format": ".0f"},
+        {"field": "up_sh", "type": "quantitative", "title": "Share rising", "format": ",.2%"},
+        {"field": "down_sh", "type": "quantitative", "title": "Share falling", "format": ",.2%"}
+      ]
+    }
+    },
+  
+    {
+      "mark":{"type":"circle",
+      "opacity":0.5,
+      "color":"blue"
+    },    
+  
+    "encoding": {
+      "x": {
+        "field": "down",
+        "type": "quantitative",
+        "axis":{"grid": false},
+        "scale": {"zero": true},
+        "title": "Prices cut"
+      }
+    }
+    }
+  ]
+  }

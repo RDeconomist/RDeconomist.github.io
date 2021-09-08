@@ -3,8 +3,8 @@
 
 
     "title": {
-    "text": "Clothing and footwear",
-    "subtitle": "CPI division 3, % change over 12 months ",
+    "text": "Inflation - since 1800",
+    "subtitle": "RPI: long series: annual percentage change ",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -18,19 +18,20 @@
 
     "XYZdata": {
       "name":"myData",
-      "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/D7GA/dataset/mm23/data",
+      "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/CDSI/dataset/mm23/data",
       "format": {
         "type":"json",
-        "property": "months"
+        "property": "years"
       }},
 
       "data": {
         "name":"myData",
-        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-D7GA.json",
+        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-CDSI.json",
         "format": {
           "type":"json",
-          "property": "months"
-        }},  
+          "property": "years"
+        }},
+  
 
 
     "mark":{
@@ -40,34 +41,16 @@
       "opacity":1
     },
 
-
     "transform": [
-
-      {"calculate":"replace(datum.date, ' JAN', '-01')", "as":"date1"},
-      {"calculate":"replace(datum.date1, ' FEB', '-02')", "as":"date2"},
-      {"calculate":"replace(datum.date2, ' MAR', '-03')", "as":"date3"},
-      {"calculate":"replace(datum.date3, ' APR', '-04')", "as":"date4"},
-      {"calculate":"replace(datum.date4, ' MAY', '-05')", "as":"date5"},
-      {"calculate":"replace(datum.date5, ' JUN', '-06')", "as":"date6"},
-      {"calculate":"replace(datum.date6, ' JUL', '-07')", "as":"date7"},
-      {"calculate":"replace(datum.date7, ' AUG', '-08')", "as":"date8"},
-      {"calculate":"replace(datum.date8, ' SEP', '-09')", "as":"date9"},
-      {"calculate":"replace(datum.date9, ' OCT', '-10')", "as":"date10"},
-      {"calculate":"replace(datum.date10, ' NOV', '-11')", "as":"date11"},
-      {"calculate":"replace(datum.date11, ' DEC', '-12')", "as":"date12"},
-  
-      {"calculate":"timeParse(datum.date12, '%Y-%m')", "as": "dateClean"},
-    
-  
-      {"filter": "datum.year>=minYear"},
-      {"filter": "datum.year<=maxYear"}
+      {"filter": "datum.year>minYear"},
+      {"filter": "datum.year<maxYear"}
     ],
 
     "params": [    
-      {"name":"minYear", "value":1988,
+      {"name":"minYear", "value":1800,
          "bind":{
            "input": "range",
-           "min": 1988, 
+           "min": 1800, 
            "max": 2021, 
            "step": 1,
            "name": "Start year:"}
@@ -76,7 +59,7 @@
       {"name":"maxYear", "value":2021,
          "bind":{
            "input": "range",
-           "min": 1955, 
+           "min": 1800, 
            "max": 2021, 
            "step": 1,
            "name": "End year:"}
@@ -84,11 +67,10 @@
     ],
 
 
-
     "encoding": {
       
       "x": {
-        "field": "dateClean",
+        "field": "date",
         "type": "temporal",
         "title":null
         },
