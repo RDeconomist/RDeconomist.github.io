@@ -855,12 +855,72 @@
         "time_period_start": "2021-09-07T16:00:00.0000000Z",
         "time_period_end": "2021-09-08T00:00:00.0000000Z",
         "time_open": "2021-09-07T16:00:00.1937530Z",
-        "time_close": "2021-09-07T18:09:10.4720000Z",
+        "time_close": "2021-09-07T23:59:59.5007290Z",
         "price_open": 46755.6,
         "price_high": 47775.26,
-        "price_low": 46385.084,
-        "price_close": 46760.31,
-        "volume_traded": 10101.004091773,
-        "trades_count": 137196
+        "price_low": 45959.7,
+        "price_close": 46894.5,
+        "volume_traded": 23828.376100404,
+        "trades_count": 369820
+    },
+    {
+        "time_period_start": "2021-09-08T00:00:00.0000000Z",
+        "time_period_end": "2021-09-08T08:00:00.0000000Z",
+        "time_open": "2021-09-08T00:00:00.0997290Z",
+        "time_close": "2021-09-08T07:59:59.9141710Z",
+        "price_open": 46894.49,
+        "price_high": 47393.0,
+        "price_low": 45000.0,
+        "price_close": 45075.97,
+        "volume_traded": 13725.11831495,
+        "trades_count": 240197
+    },
+    {
+        "time_period_start": "2021-09-08T08:00:00.0000000Z",
+        "time_period_end": "2021-09-08T16:00:00.0000000Z",
+        "time_open": "2021-09-08T08:00:00.1150000Z",
+        "time_close": "2021-09-08T15:59:59.3200000Z",
+        "price_open": 45069.0,
+        "price_high": 46871.89,
+        "price_low": 44419.5,
+        "price_close": 46071.79,
+        "volume_traded": 14580.221822091,
+        "trades_count": 221475
+    },
+    {
+        "time_period_start": "2021-09-08T16:00:00.0000000Z",
+        "time_period_end": "2021-09-09T00:00:00.0000000Z",
+        "time_open": "2021-09-08T16:00:00.1042970Z",
+        "time_close": "2021-09-08T23:59:59.8988630Z",
+        "price_open": 46095.96,
+        "price_high": 46805.76,
+        "price_low": 45764.08,
+        "price_close": 46060.36,
+        "volume_traded": 8369.111600459,
+        "trades_count": 175861
+    },
+    {
+        "time_period_start": "2021-09-09T00:00:00.0000000Z",
+        "time_period_end": "2021-09-09T08:00:00.0000000Z",
+        "time_open": "2021-09-09T00:00:00.1108430Z",
+        "time_close": "2021-09-09T07:59:59.9780110Z",
+        "price_open": 46059.94,
+        "price_high": 46401.87,
+        "price_low": 45498.7,
+        "price_close": 46280.67,
+        "volume_traded": 6412.331185943,
+        "trades_count": 139410
+    },
+    {
+        "time_period_start": "2021-09-09T08:00:00.0000000Z",
+        "time_period_end": "2021-09-09T16:00:00.0000000Z",
+        "time_open": "2021-09-09T08:00:00.0916310Z",
+        "time_close": "2021-09-09T14:14:51.0360370Z",
+        "price_open": 46280.66,
+        "price_high": 47280.4,
+        "price_low": 45624.5,
+        "price_close": 47072.28,
+        "volume_traded": 9991.373435923,
+        "trades_count": 135144
     }
 ]
