@@ -15,7 +15,7 @@
    "data": {"url": "https://raw.githubusercontent.com/RDeconomist/prices/master/dbPricesByRegion.csv"},
     
     "height": 300,
-    "width": 300,
+    "width": 290,
     
     
     "mark": {"type": "line", "point": false},
@@ -40,21 +40,21 @@
       "x": {
           "field": "date", 
           "type": "temporal", 
-          "title": "Year",
+          "title": null,
           "axis": {"format": "%Y"}
           },
       
       "y": {
         "field": "prices",
         "type": "quantitative",
-        "title": "Number of price observations"
+        "title": null,
       },
   
       "color": {
         "field": "region",
         "type": "nominal",
         "scale": {"scheme": "set1"},
-        "title": "Region",
+        "title": null,
         "legend": {
           "orient": "bottom",
           "columns":2
