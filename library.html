@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!--Meta stuff-->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!--Facebook meta - this comes up when you post a link to the site-->
+    <meta property="og:title" content="Rapid Charts">
+    <meta property="og:description" content="Live price charts running directly from official data. Auto-updates daily.">
+    <meta property="og:image" content="covidCases.png">
+    <meta property="og:url" content="http://rapidcharts.io/index.htm">
+    
+    <!--Favicon-->
+    <link rel="icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="apple-touch-icon" href="images/favicon.png" />
+    
+    <!--Title - this is the bit that comes up in the tab-->
+    <title>Rapid Prices</title>
+    
+    <!--Main Stylesheet-->
+    <link rel="stylesheet" href="css/main2.css">
+    <link rel="stylesheet" href="css/covid_live.css">
+    
+    
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+    
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+
+<body>
+
+    
+
+<!-- heading for page-->
+    <div class="wrap">
+        <h1>chart<span style="color: #86d0bb">library</span></h1>
+        <span style="display:block; height: 10px;"></span>
+        <p id="rubric" class="rubric">A collection of charts types used by the Observatory team.</p>
+        <span style="display:block; height: 10px;"></span>
+    </div>
+  
+
+<!-- Line charts -->
+    <div class="wrap">
+    <p class="rubric"><strong>Line charts</strong></p>
+    </div>
+    
+    <div class="grid_items">
+        <div class="grid_item" id="chartLine1"></div>
+        <div class="grid_item" id="chartLine2"></div>
+        <div class="grid_item" id="chartLine3"></div>
+        <div class="grid_item" id="chartLine4"></div>
+        <div class="grid_item" id="chartLine5"></div>
+        <div class="grid_item" id="chartLine6"></div>
+        <div class="grid_item" id="chartLine7"></div>
+        <div class="grid_item" id="chartLine8"></div>
+        <div class="grid_item" id="chartLine9"></div>
+        <div class="grid_item" id="chartLine10"></div>
+        <div class="grid_item" id="chartLine11"></div>
+        <div class="grid_item" id="chartLine12"></div>
+        <div class="grid_item" id="chartLine13"></div>
+        <div class="grid_item" id="chartLine14"></div>
+        <div class="grid_item" id="chartLine15"></div>
+        <div class="grid_item" id="chartLine16"></div>
+    </div> 
+
+
+
+
+<script>
+    // Set the charts that we want on the page as variables, linking them to JSON files:
+    var line1 = "charts/library/chartLine1.json";
+    var line2 = "charts/library/chartLine2.json";
+    var line3 = "charts/library/chartLine3.json";
+    var line4 = "charts/library/chartLine4.json";
+    var line5 = "charts/library/chartLine5.json";
+    var line6 = "charts/library/chartLine6.json";
+    var line7 = "charts/library/chartLine7.json";
+    var line8 = "charts/library/chartLine8.json";
+    var line9 = "charts/library/chartLine9.json";
+    var line10 = "charts/library/chartLine10.json";
+    var line11 = "charts/library/chartLine11.json";
+    var line12 = "charts/library/chartLine12.json";
+    var line13 = "charts/library/chartLine13.json";
+    var line14 = "charts/library/chartLine14.json";
+    var line15 = "charts/library/chartLine15.json";
+    var line16 = "charts/library/chartLine16.json";
+    // var inf17 = "charts/ONSinflation/chartINF17.json";
+    // var inf18 = "charts/ONSinflation/chartINF18.json";
+    // var inf19 = "charts/ONSinflation/chartINF19.json";
+    // var inf20 = "charts/ONSinflation/chartINF20.json";
+    // var inf21 = "charts/ONSinflation/chartINF21.json";
+    // var inf22 = "charts/ONSinflation/chartINF22.json";
+   
+
+    // Now embed the charts in the divs set above:
+    vegaEmbed('#chart1', line1, {"actions": false});   
+    vegaEmbed('#chart2', line2, {"actions": false});
+    vegaEmbed('#chart3', line3, {"actions": false});   
+    vegaEmbed('#chart4', line4, {"actions": false});
+    vegaEmbed('#chart5', line5, {"actions": false});   
+    vegaEmbed('#chart6', line6, {"actions": false});
+    vegaEmbed('#chart7', line7, {"actions": false});   
+    vegaEmbed('#chart8', line8, {"actions": false});
+    vegaEmbed('#chart9', line9, {"actions": false});   
+    vegaEmbed('#chart10', line10, {"actions": false});
+    vegaEmbed('#chart11', line11, {"actions": false});   
+    vegaEmbed('#chart12', line12, {"actions": false}); 
+    vegaEmbed('#chart13', line13, {"actions": false});   
+    vegaEmbed('#chart14', line14, {"actions": false});
+    vegaEmbed('#chart15', line15, {"actions": false});   
+    vegaEmbed('#chart16', line16, {"actions": false});
+    // vegaEmbed('#chart17', inf17, {"actions": false});   
+    // vegaEmbed('#chart18', inf18, {"actions": false});  
+    // vegaEmbed('#chart19', inf19, {"actions": false});   
+    // vegaEmbed('#chart20', inf20, {"actions": false});  
+    // vegaEmbed('#chart21', inf21, {"actions": false});  
+    // vegaEmbed('#chart22', inf22, {"actions": false});
+
+</script>
+
+
+
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+<span style="display:block; height: 30px;"></span>
+
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+              <div class="column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
+              </div>
+              <div class="column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://nuggetcharts.com/stream">Nugget</a></li>
+                        <li><a href="datascience">Course</a></li>
+                    </ul>
+              </div>
+              </div>
+                
+                <div class="footer-finalrow">
+                    <h3>Rapid Charts</h3>
+                    <p>Automated and interactive data analysis.</p>                    </div>
+                
+                <div class="col item social">
+                  <a href="https://www.economicsobservatory.com" class="fa fa-university"></a>
+                  <a href="https://twitter.com/RD_Economist" class="fa fa-twitter"></a>
+                  <a href="https://twitter.com/rapidcharts" class="fa fa-instagram"></a>
+                  <a href="https://www.linkedin.com/in/richard-davies-820b66a4/" class="fa fa-linkedin"></a>
+                </div>
+            
+              </div>
+            <p class="copyright">Richard Davies © 2021</p>
+      </footer>          
+</div>
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+</body>
+
+
+</html>
