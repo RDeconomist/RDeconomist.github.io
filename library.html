@@ -59,7 +59,40 @@
     </div>
     
     <div class="grid_items">
-        <div class="grid_item" id="chart1"></div>
+        
+        <div class="grid_item">
+            <p><strong>One line</strong></p>
+            <p>The simplest line chart, in this case running live from the ONS API.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chart1"></div>        
+        </div>
+        
+        <div class="grid_item">
+            <p><strong>Many lines # 1</strong></p>
+            <p>This chart uses "long form" data, which is the ideal format if working with csv files.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chart2"></div>        
+        </div>
+
+        <div class="grid_item">
+            <p><strong>Many lines # 2</strong></p>
+            <p>This chart uses "wide form" data, which is familiar from Excel. It is a little more complex to use in most visualisation libraries.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chart3"></div>        
+        </div>
+
+        <div class="grid_item">
+            <p><strong>Many lines # 3</strong></p>
+            <p>Some APIs return only one series. This chart runs from JSON data, and uses "layers" to add each country. It is in effect four charts, one for each country, overlaid on one another.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chart4"></div>        
+        </div>
+
+
         <div class="grid_item" id="chart2"></div>
         <div class="grid_item" id="chart3"></div>
         <div class="grid_item" id="chart4"></div>
