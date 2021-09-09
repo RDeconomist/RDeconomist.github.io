@@ -4,84 +4,76 @@
   "description": "UK CPI data visualisation",
 
   "title": {
-    "text": "This month - top risers",
-    "subtitle": "Hover for item detail. Bubble size based on median price",
+    "text": "All items - price rises and cuts - [Hover for detail]",
+    "subtitle": "Share of prices rising and falling for each consumer item",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
     "color": "black"
   },
 
-  "config": {
-  "background":"white",
-  "view": {
-    "stroke": "transparent"}},
-
 
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/prices/master/dbLatestRelease.csv"
   },
 
-  "height":400,
+  "height":300,
   "width":300,
+
+  "mark":{
+    "type":"circle",
+    "opacity":0.8,
+    "color":"rgb(0, 47, 167)"
+  },
 
   "selection": {
       "paintbrush": {"type": "multi", "on": "mouseover", "nearest": true}
       },
 
-  "transform": [
-    {"calculate":"datum.down_sh*(-1)", "as": "down"},
-    {"filter":"datum.upRank>550"}
-  ],
-
-  "mark":{
-      "type":"circle",
-      "opacity":0.8,
-      "XYZcolor":"#f4a245",
-      "size":60
-  },
-
   "encoding": {
-    
-    "y": {
-        "field": "upRank",
-        "type": "quantitative",
-        "axis":{
-          "grid": false,
-          "labels":false},
-        "scale": {"zero": false},
-        "title": null},
-
     "x": {
+      "field": "down_sh",
+      "type": "quantitative",
+      "axis":{"grid": false},
+      "scale": {"zero": true},
+      "title": "Prices cut"
+    },
+
+    "y": {
       "field": "up_sh",
       "type": "quantitative",
-      "axis":{
-        "grid": false,
-        "format":",.0%"},
-      "scale": {"zero": true},
-      "title": "Share of prices rising"},
+      "axis":{"grid": false},
+      "scale": {"zero": false},
+      "title": "Prices rising"
+    },
 
-    "size": {
+     "size": {
       "field": "p",
       "type": "quantitative",
       "title": "Price",
-      "legend":{"orient": "bottom-left"}
+      "legend":{"orient": "top-right"},
+      "scale": { "range": [20, 500] },
+      "XYZlegend":null
       },
 
-      "color":{
+      "Xcolor":{
         "field": "name1",
         "type": "ordinal",
-        "title": "Item type",
-        "legend":{"orient": "top-left"},
+        "Xtitle": "Item type",
+        "title":null,
+        "legend":{
+          "orient": "top-right",
+          "columns":2},
+        "xlegend":null,
         "scale": {"scheme": "set1"}
       },
 
-
     "tooltip": [
       {"field": "item_desc", "type": "nominal", "title": "Description"},
+      {"field": "item_id", "type": "nominal", "title": "Item ID", "format": ".0f"},
       {"field": "p", "type": "quantitative", "title": "Price (median)", "format": ".0f"},
       {"field": "up_sh", "type": "quantitative", "title": "Share rising", "format": ",.2%"},
       {"field": "down_sh", "type": "quantitative", "title": "Share falling", "format": ",.2%"}
     ]
-}
+  }
 }
