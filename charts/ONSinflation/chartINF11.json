@@ -15,7 +15,7 @@
    "data": {"url": "https://raw.githubusercontent.com/RDeconomist/prices/master/dbPricesByRegion.csv"},
     
     "height": 300,
-    "width": "container",
+    "width": 300,
     
     
     "mark": {"type": "line", "point": false},
@@ -55,7 +55,10 @@
         "type": "nominal",
         "scale": {"scheme": "set1"},
         "title": "Region",
-        "legend": {"orient": "right"}
+        "legend": {
+          "orient": "bottom",
+          "columns":2
+        }
       },
   
       "opacity": {"condition": {"selection": "region", "value": 1}, "value": 0.1},
