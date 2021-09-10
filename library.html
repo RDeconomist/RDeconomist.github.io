@@ -60,56 +60,77 @@
     
     <div class="grid_items">
         
+
         <div class="grid_item">
             <p><strong>One line</strong></p>
             <p>The simplest line chart, in this case running live from the ONS API.</p>
             <hr>
             <span style="display:block; height: 10px;"></span>
-            <div id="chart1"></div>
+            <div id="chartLine1"></div>
+            <span style="display:block; height: 10px;"></span>
             <hr>
             <a class="libraryButton" href="https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/mgsc/dataset/lms/data">Data</a>
             <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartLine1.json">Code</a>
             <a class="libraryButton" href="jobs">Dashboard</a>                           
         </div>
         
+
         <div class="grid_item">
             <p><strong>Many lines | Long Form</strong></p>
             <p>This chart uses "long form" data, which is the ideal format if working with csv files.</p>
-            <a class="dashboardButton" href="https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/mgsc/dataset/lms/data">Data</a>
-            <a class="dashboardButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartLine1.json">Code</a>
             <hr>
             <span style="display:block; height: 10px;"></span>
-            <div id="chart2"></div>        
+            <div id="chartLine2"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr>       
+            <a class="libraryButton" href="https://api.coronavirus.data.gov.uk/v2/data?areaType=nation&metric=newCasesByPublishDateRollingRate&format=csv">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartLine2.json">Code</a>
+            <a class="libraryButton" href="covidUK">Dashboard</a>  
         </div>
+
 
         <div class="grid_item">
             <p><strong>Many lines | Wide Form</strong></p>
             <p>This chart uses "wide form" data, which is familiar from Excel. It is a little more complex to use in most visualisation libraries.</p>
-            <a class="dashboardButton" href="https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/mgsc/dataset/lms/data">Data</a>
-            <a class="dashboardButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartLine1.json">Code</a>
             <hr>
             <span style="display:block; height: 10px;"></span>
-            <div id="chart3"></div>        
+            <div id="chartLine3"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/demographicsUNPopChange.cs">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartLine3.json">Code</a>
+            <a class="libraryButton" href="korea">Dashboard</a>    
         </div>
+
 
         <div class="grid_item">
             <p><strong>Many lines | Multiple sources</strong></p>
             <p>Some APIs return only one series. This chart runs from JSON data, and uses "layers" to add each country. It is in effect four charts, one for each country, overlaid on one another.</p>
-            <a class="dashboardButton" href="https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/mgsc/dataset/lms/data">Data</a>
-            <a class="dashboardButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartLine1.json">Code</a>
             <hr>
             <span style="display:block; height: 10px;"></span>
-            <div id="chart4"></div>        
+            <div id="chartLine4"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://api.covid19api.com/total/country/korea-south/status/confirmed">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartLine4.json">Code</a>
+            <a class="libraryButton" href="korea">Dashboard</a>             
+        </div>
+
+        <div class="grid_item">
+            <p><strong>Lines with two y-axes</strong></p>
+            <p>When plotting two lines with very different scales is may be helpful to separate the y dimesion for each line.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartLine5"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/crypto/dataETH.csv">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartLine5.json">Code</a>
+            <a class="libraryButton" href="crypto">Dashboard</a>             
         </div>
 
 
-        <div class="grid_item" id="chart2"></div>
-        <div class="grid_item" id="chart3"></div>
-        <div class="grid_item" id="chart4"></div>
-        <div class="grid_item" id="chart5"></div>
-        <div class="grid_item" id="chart6"></div>
-        <div class="grid_item" id="chart7"></div>
-        <div class="grid_item" id="chart8"></div>
+        
     </div> 
 
 <!-- Bar charts -->
@@ -118,14 +139,92 @@
     </div>
     
     <div class="grid_items">
-        <div class="grid_item" id="chart9"></div>
-        <div class="grid_item" id="chart10"></div>
-        <div class="grid_item" id="chart11"></div>
-        <div class="grid_item" id="chart12"></div>
-        <div class="grid_item" id="chart13"></div>
-        <div class="grid_item" id="chart14"></div>
-        <div class="grid_item" id="chart15"></div>
-        <div class="grid_item" id="chart16"></div>
+        
+        <div class="grid_item">
+            <p><strong>[Title]</strong></p>
+            <p>[Description]</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartBar1"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href={Data}>Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartBar1.json">Code</a>
+            <a class="libraryButton" href="{Dashboard}">Dashboard</a>             
+        </div>
+
+        <div class="grid_item">
+            <p><strong>[Title]</strong></p>
+            <p>[Description]</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartBar2"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href={Data}>Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartBar2.json">Code</a>
+            <a class="libraryButton" href="{Dashboard}">Dashboard</a>             
+        </div>
+
+        <div class="grid_item">
+            <p><strong>[Title]</strong></p>
+            <p>[Description]</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartBar3"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href={Data}>Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartBar3.json">Code</a>
+            <a class="libraryButton" href="{Dashboard}">Dashboard</a>             
+        </div>
+
+        <div class="grid_item">
+            <p><strong>[Title]</strong></p>
+            <p>[Description]</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartBar4"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href={Data}>Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartBar4.json">Code</a>
+            <a class="libraryButton" href="{Dashboard}">Dashboard</a>             
+        </div>
+
+        <div class="grid_item">
+            <p><strong>[Title]</strong></p>
+            <p>[Description]</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartBar5"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href={Data}>Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartBar5.json">Code</a>
+            <a class="libraryButton" href="{Dashboard}">Dashboard</a>             
+        </div>
+
+        <div class="grid_item">
+            <p><strong>[Title]</strong></p>
+            <p>[Description]</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartBar6"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href={Data}>Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartBar6.json">Code</a>
+            <a class="libraryButton" href="{Dashboard}">Dashboard</a>             
+        </div>
+
+
+
+
+
+
+        
+        
     </div>
     
 
@@ -171,31 +270,44 @@
     var line14 = "charts/library/chartLine14.json";
     var line15 = "charts/library/chartLine15.json";
     var line16 = "charts/library/chartLine16.json";
-    // var inf17 = "charts/ONSinflation/chartINF17.json";
-    // var inf18 = "charts/ONSinflation/chartINF18.json";
-    // var inf19 = "charts/ONSinflation/chartINF19.json";
-    // var inf20 = "charts/ONSinflation/chartINF20.json";
-    // var inf21 = "charts/ONSinflation/chartINF21.json";
-    // var inf22 = "charts/ONSinflation/chartINF22.json";
+
+    // Set the charts that we want on the page as variables, linking them to JSON files:
+    var bar1 = "charts/library/chartBar1.json";
+    var bar2 = "charts/library/chartBar2.json";
+    var bar3 = "charts/library/chartBar3.json";
+    var bar4 = "charts/library/chartBar4.json";
+    var bar5 = "charts/library/chartBar5.json";
+    var bar6 = "charts/library/chartBar6.json";
+    var bar7 = "charts/library/chartBar7.json";
+    var bar8 = "charts/library/chartBar8.json";
+    var bar9 = "charts/library/chartBar9.json";
+    var bar10 = "charts/library/chartBar10.json";
+    var bar11 = "charts/library/chartBar11.json";
+    var bar12 = "charts/library/chartBar12.json";
+    var bar13 = "charts/library/chartBar13.json";
+    var bar14 = "charts/library/chartBar14.json";
+    var bar15 = "charts/library/chartBar15.json";
+    var bar16 = "charts/library/chartBar16.json";
+    
    
 
     // Now embed the charts in the divs set above:
-    vegaEmbed('#chart1', line1, {"actions": false});   
-    vegaEmbed('#chart2', line2, {"actions": false});
-    vegaEmbed('#chart3', line3, {"actions": false});   
-    vegaEmbed('#chart4', line4, {"actions": false});
-    vegaEmbed('#chart5', line5, {"actions": false});   
-    vegaEmbed('#chart6', line6, {"actions": false});
-    vegaEmbed('#chart7', line7, {"actions": false});   
-    vegaEmbed('#chart8', line8, {"actions": false});
-    vegaEmbed('#chart9', line9, {"actions": false});   
-    vegaEmbed('#chart10', line10, {"actions": false});
-    vegaEmbed('#chart11', line11, {"actions": false});   
-    vegaEmbed('#chart12', line12, {"actions": false}); 
-    vegaEmbed('#chart13', line13, {"actions": false});   
-    vegaEmbed('#chart14', line14, {"actions": false});
-    vegaEmbed('#chart15', line15, {"actions": false});   
-    vegaEmbed('#chart16', line16, {"actions": false});
+    vegaEmbed('#chartLine1', line1, {"actions": false});   
+    vegaEmbed('#chartLine2', line2, {"actions": false});
+    vegaEmbed('#chartLine3', line3, {"actions": false});   
+    vegaEmbed('#chartLine4', line4, {"actions": false});
+    vegaEmbed('#chartLine5', line5, {"actions": false});   
+    vegaEmbed('#chartLine6', line6, {"actions": false});
+    vegaEmbed('#chartLine7', line7, {"actions": false});   
+    vegaEmbed('#chartLine8', line8, {"actions": false});
+    vegaEmbed('#chartLine9', line9, {"actions": false});   
+    vegaEmbed('#chartLine10', line10, {"actions": false});
+    vegaEmbed('#chartLine11', line11, {"actions": false});   
+    vegaEmbed('#chartLine12', line12, {"actions": false}); 
+    vegaEmbed('#chartLine13', line13, {"actions": false});   
+    vegaEmbed('#chartLine14', line14, {"actions": false});
+    vegaEmbed('#chartLine15', line15, {"actions": false});   
+    vegaEmbed('#chartLine16', line16, {"actions": false});
     // vegaEmbed('#chart17', inf17, {"actions": false});   
     // vegaEmbed('#chart18', inf18, {"actions": false});  
     // vegaEmbed('#chart19', inf19, {"actions": false});   
