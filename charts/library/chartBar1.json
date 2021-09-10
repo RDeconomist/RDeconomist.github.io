@@ -64,7 +64,7 @@
 
         "type": "nominal",
 
-        "sort": "",
+        
 
         "axis": {
 
@@ -94,21 +94,7 @@
 
         "axis": {"grid": false}
 
-      },
-
- 
-
-      "tooltip": [
-
-      {"field": "Time", "type": "nominal", "title": "Election"},
-
-      {"field": "", "type": "nominal"},
-
-      {"field": "Value", "type": "quantitative", "title": "Green seats in EU Parliament (%)"}
-
-     
-
-      ]
+      }
 
 
 
