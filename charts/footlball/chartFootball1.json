@@ -1,0 +1,35 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "data": {"url": "https://app.sportdataapi.com/api/v1/soccer/matches?apikey=b8bb8050-f3d3-11eb-808b-334144de1112&season_id=352&date_from=2020-09-19",
+    "format":{
+      "type": "json",
+      "property": "data"
+    }
+    },
+  
+    "mark": "line",
+
+    "height":100,
+    "width":100,
+    
+    "encoding": {
+  
+      "x": {
+        "field": "match_start", 
+        "type": "temporal",
+        "title":null},
+  
+      "y": {
+        "field": "stats.home_score", 
+        "type": "quantitative",
+        "title":null},
+  
+       "facet":{
+         "field": "home_team.name",
+         "columns": 3,
+         "title":null
+       } 
+    }
+  }
+  
