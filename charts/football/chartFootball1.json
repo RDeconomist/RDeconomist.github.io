@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "data": {"url": "https://app.sportdataapi.com/api/v1/soccer/matches?apikey=b8bb8050-f3d3-11eb-808b-334144de1112&season_id=352&date_from=2020-09-19",
+  "format":{
+    "type": "json",
+    "property": "data"
+  }
+  },
+
+    "title": {
+    "text": "Premiership - goals",
+    "subtitle":["Goals scored at home, 20/21 season",""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+
+  },
+
+  "transform": [
+    {"filter":{"field":"home_team.name", "oneOf": ["Chelsea FC", "Liverpool FC", "Manchester City", "Manchester United", "Tottenham Hotspur", "Leicester City"]}}
+  ],
+
+  "mark": {
+    "type":"bar",
+    "color":"rgb(0,67,167)"},
+
+  "height":100,
+  "width":150,
+  "padding":{
+    "top":0,
+    "bottom":0,
+    "right":0,
+    "left":0
+  },
+  
+  "encoding": {
+
+    "x": {
+      "field": "match_start", 
+      "type": "temporal",
+      "title":null},
+
+    "y": {
+      "field": "stats.home_score", 
+      "type": "quantitative",
+      "title":null},
+
+     "facet":{
+       "field": "home_team.name",
+       "columns": 2,
+       "title":null,
+       "spacing":15
+     } 
+  }
+}
