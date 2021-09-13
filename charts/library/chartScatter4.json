@@ -16,10 +16,10 @@
       "format":{"type":"csv"}},
   
     "mark": {
-      "type":"circle",
+      "type":"point",
       "size":150,
       "color":"rgb(0,67,167)",
-      "opacity":0.6},
+      "opacity":1},
     
     "height": 300,
     "width": 250,
@@ -36,7 +36,7 @@
         "type": "quantitative",
         "title":null},
   
-      "color": {
+      "shape": {
         "field": "GeographicDivision", 
         "type": "ordinal",
         "scale": {"scheme": "set1"},
@@ -47,6 +47,13 @@
         "field": "PrisonRate", 
         "type": "quantitative",
         "title":"Prison Rate",
-        "scale": { "range": [5, 300]}}
+        "scale": { "range": [5, 300]}},
+  
+      "color": {
+        "field": "Gini", 
+        "type": "quantitative",
+        "title":"Gini",
+        "scale": { "scheme": "turbo"}}
+   
      }
   }
