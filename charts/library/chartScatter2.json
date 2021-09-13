@@ -25,26 +25,22 @@
   "width": 300,
 
   "encoding": {
-
     "x": {
       "field": "medIncome", 
       "type": "quantitative",
       "scale": {"domain": [40000, 80000]},
-      "title":null
-      },
+      "title":null},
 
     "y": {
       "field": "FirearmDeaths", 
       "type": "quantitative",
-      "title":null
-      },
+      "title":null},
 
     "color": {
       "field": "GeographicDivision", 
       "type": "ordinal",
       "scale": {"scheme": "set1"},
       "legend": {"orient":"bottom"},
-      "title":null
-      }
+      "title":null}
    }
 }
