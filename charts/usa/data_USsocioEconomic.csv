@@ -1,4 +1,4 @@
-State,StateInitials,Gini,DeathRate,Firearms_vs_avg, medIncome,Income_vs_med,ImprisonmentRate,PrisonRate,ImprisonmentRate,FirearmDeaths,GeographicDivision
+State,StateInitials,Gini,DeathRate,Firearms_vs_avg,medIncome,Income_vs_med,ImprisonmentRate,PrisonRate,ImprisonmentRate,FirearmDeaths,GeographicDivision
 Alabama,AL,0.472,21.5,1.64700475,47221,0.799827233,736,1.264604811,0.736,0.215,South
 Alaska,AK,0.422,23.3,1.784893519,75723,1.282592862,376,0.64604811,0.376,0.233,West
 Arizona,AZ,0.455,15.2,1.164394055,57100,0.967157303,764,1.312714777,0.764,0.152,West
