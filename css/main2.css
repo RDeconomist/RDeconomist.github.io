@@ -489,13 +489,30 @@ body {
 } 
 
 
-/* ////// SPINNING FOOTBALL ///// */
+/* ////// SPINNING FOOTBALL, SHAKING HOUSE ///// */
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% {  transform: rotate(359deg); }
 }
+
+@keyframes houseShake {
+  0% { transform: rotate(0); }
+  15% { transform: rotate(15deg); }
+  30% { transform: rotate(-12deg); }
+  45% { transform: rotate(10deg); }
+  60% { transform: rotate(-8deg); }
+  75% { transform: rotate(6deg); }
+  85% { transform: rotate(-4deg); }
+  92% { transform: rotate(2deg); }
+  100% { transform: rotate(-1deg); }
+}
+
 #football {
   animation: spin 4s linear infinite;
 }
-/* ////// SPINNING FOOTBALL ///// */
+
+#housing {
+  animation: houseShake 1s linear infinite;
+}
+/* ////// SPINNING FOOTBALL, SHAKING HOUSE ///// */
