@@ -1,78 +1,51 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
+  "description": "BitCoin Price",
 
-    "title": {
-    "text": "Inflation - since 1800",
-    "subtitle": "RPI: long series: annual percentage change ",
+   "title": {
+    "text": "Bitcoin: trading range",
+    "subtitle":"High-low range, 8h time periods. Source: coinapi.io",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
-    "anchor": "start",
-    "color": "black"
+    "anchor": "start"},
+  
+   
+  "data": {
+      "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/crypto/data_ohlcv_BTC.json",
+      "format": {"type": "json"}},
+  
+
+  "height": 300,
+  "width": 300,
+  
+
+  "mark": {
+    "type": "area",
+    "point": false,
+    "color":"#f4c245"
   },
 
-
-    "width":300,
-    "height":300,
-
-    "data": {
-        "name":"myData",
-        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-CDSI.json",
-        "format": {
-          "type":"json",
-          "property": "years"
-        }},
   
+  "encoding": {
+    
+    "x": {
+      "field": "time_period_start",
+      "type": "temporal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "labelSeparation": 10}},
 
-    "mark":{
-      "type": "line",
-      "color":"#00BFFF",
-      "strokeWidth":2,
-      "opacity":1
-    },
+    "y": {
+      "field": "price_low",
+      "type": "quantitative",
+      "title": "",
+      "scale":{"domain":[30000, 60000]},
+      "axis": {
+        "grid": false,
+        "format":"$.2s"}},
 
-    "transform": [
-      {"filter": "datum.year>minYear"},
-      {"filter": "datum.year<maxYear"}
-    ],
-
-    "params": [    
-      {"name":"minYear", "value":1800,
-         "bind":{
-           "input": "range",
-           "min": 1800, 
-           "max": 2021, 
-           "step": 1,
-           "name": "Start year:"}
-      },
-
-      {"name":"maxYear", "value":2021,
-         "bind":{
-           "input": "range",
-           "min": 1800, 
-           "max": 2021, 
-           "step": 1,
-           "name": "End year:"}
-      }
-    ],
-
-
-    "encoding": {
-      
-      "x": {
-        "field": "date",
-        "type": "temporal",
-        "title":null
-        },
-  
-      "y": {
-        "field": "value",                
-        "type": "quantitative",
-        "title":null,
-        "scale":{
-          "domain":{
-            "data": "myData", 
-            "field": "value"}}
-        }
+    "y2": {"field": "price_high"}       
   }
 }
