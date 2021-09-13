@@ -37,14 +37,6 @@
       "field": "FirearmDeaths", 
       "type": "quantitative",
       "title":null
-      },
-
-    "color": {
-      "field": "GeographicDivision", 
-      "type": "ordinal",
-      "scale": {"scheme": "set1"},
-      "legend": {"orient":"bottom"},
-      "title":null
       }
    }
 }
