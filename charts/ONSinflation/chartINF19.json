@@ -4,7 +4,7 @@
   
   "description": "Price adjustment - monthly",
   "height": 300,
-  "width": 300,
+  "width": 280,
   
   "title": {
           "text": "Price changes vs inflation",
