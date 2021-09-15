@@ -19,7 +19,9 @@
     
   "transform":[
      {"calculate":"timeParse(datum.date3, '%d-%m-%Y')", "as": "date4"},
-     {"filter":{"field":"year", "gt":1989}}],
+     {"filter":{"field":"year", "gt":1989}},
+     {"filter":{"field":"change_sh", "lt":0.40}}
+     ],
   
   "mark":{
     "type": "point",
@@ -43,13 +45,17 @@
     "y": {
       "field": "change_sh", 
       "type": "quantitative", 
-      "title":null},
+      "title":null,
+      "scale":{
+          "domain":[0,0.35]
+
+      }},
   
-    "color": {
+    "size": {
               "condition": {
                 "test": {"selection": "paintbrush"}, 
-                "value": "rgba(0,67,167,1)"},
-                "value": "rgba(0,67,167,0.7)"},
+                "value": 150},
+                "value": 90},
       
     "tooltip": [
       {"field": "date4", "type": "temporal", "format": "%b-%Y", "title":"Date"},  
@@ -57,4 +63,3 @@
   
    }
   }
-   
