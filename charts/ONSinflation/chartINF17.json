@@ -7,7 +7,7 @@
   
   "title": {
           "text": "Price adjustment",
-          "subtitle": "Share of prices changing month-on-month",
+          "subtitle": ["Share of prices changing month-on-month",""],
           "subtitleFontStyle":"italic",
           "subtitleFontSize":10,
           "anchor": "start",
@@ -19,7 +19,10 @@
              "type":"csv"}},
   
   "transform":[
-        {"calculate":"timeParse(datum.date3, '%d-%m-%Y')", "as": "date4"}],
+        {"calculate":"timeParse(datum.date3, '%d-%m-%Y')", "as": "date4"},
+        {"filter":{"field":"change_sh", "gt":0}},
+        {"filter":{"field":"change_sh", "lt":0.31}}
+        ],
   
   
   "encoding": {"x": {"field": "date4", "type": "temporal", "title":null}},
