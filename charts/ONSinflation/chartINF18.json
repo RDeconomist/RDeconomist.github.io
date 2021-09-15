@@ -1,82 +1,87 @@
 {
 
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-         
-    "description": "Price adjustment - monthly",
-    
-    
-    "title": {
-            "text": "UK prices: up or down?",
-            "subtitle": ["Consumer prices vs their level 12 months ago",""],
-            "subtitleFontStyle":"italic",
-            "subtitleFontSize":10,
-            "anchor": "start",
-            "color": "black"},
-      
-    "data": {
-           "url": "https://raw.githubusercontent.com/RDeconomist/prices/master/db_AdjustmentFrequency.csv",
-           "format": {
-               "type":"csv"}},
-    
-    
-    "transform":[
-        {"calculate":"timeParse(datum.date3, '%d-%m-%Y')", "as": "date4"},
-    
-        {"filter": "datum.year>=minYear"},
-        {"filter": "datum.year<=maxYear"}
-      ],
-    
-      "params": [    
-        {"name":"minYear", "value":2020,
-           "bind":{
-             "input": "range",
-             "min": 1988, 
-             "max": 2021, 
-             "step": 1,
-             "name": "Start year:"}
-        },
-    
-        {"name":"maxYear", "value":2021,
-           "bind":{
-             "input": "range",
-             "min": 1988, 
-             "max": 2021, 
-             "step": 1,
-             "name": "End year:"}
-        }
-      ],
-    
-    
-    "repeat": {"layer": ["up12_sh", "down12_sh"]},
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
        
-        "spec": {
-            
-            "height": 300,
-            "width": 300,
-     
-            "mark": {
-                "type":"line",
-                "strokeWidth":2},    
-      
-            "encoding": {
-                "x": {
-                    "field": "date4",
-                    "type": "temporal",
-                    "title":null},
-        
-                "y": {
-                    "field": {"repeat": "layer"},
-                    "type": "quantitative",
-                    "title": null},
-        
-                "color": {
-                    "datum": {"repeat": "layer"},
-                    "scale": {"range": ["#000080","#00BFFF"]},
-                    "legend":{
-                      "orient": "top",
-                      "labelExpr": "{'up12_sh': 'Rising prices', 'down12_sh': 'Falling prices'}[datum.label]"
-                      }
-                    }
-              } 
-          }
+  "description": "Price adjustment - monthly",
+  
+  
+  "title": {
+          "text": "UK prices: up, down or both?",
+          "subtitle": ["Share of consumer prices moving vs level 12 months ago",""],
+          "subtitleFontStyle":"italic",
+          "subtitleFontSize":10,
+          "anchor": "start",
+          "color": "black"},
+    
+  "data": {
+         "url": "https://raw.githubusercontent.com/RDeconomist/prices/master/db_AdjustmentFrequency.csv",
+         "format": {
+             "type":"csv"}},
+  
+  
+  "transform":[
+      {"calculate":"timeParse(datum.date3, '%d-%m-%Y')", "as": "date4"},
+
+      {"filter":{"field":"up12_sh", "gt": 0}},
+  
+      {"filter": "datum.year>=minYear"},
+      {"filter": "datum.year<=maxYear"}
+    ],
+  
+    "params": [    
+      {"name":"minYear", "value":2020,
+         "bind":{
+           "input": "range",
+           "min": 1988, 
+           "max": 2021, 
+           "step": 1,
+           "name": "Start year:"}
+      },
+  
+      {"name":"maxYear", "value":2021,
+         "bind":{
+           "input": "range",
+           "min": 1988, 
+           "max": 2021, 
+           "step": 1,
+           "name": "End year:"}
       }
+    ],
+  
+  
+  "repeat": {"layer": ["up12_sh", "down12_sh"]},
+     
+      "spec": {
+          
+          "height": 300,
+          "width": 300,
+   
+          "mark": {
+              "type":"line",
+              "strokeWidth":2},    
+    
+          "encoding": {
+              "x": {
+                  "field": "date4",
+                  "type": "temporal",
+                  "title":null},
+      
+              "y": {
+                  "field": {"repeat": "layer"},
+                  "type": "quantitative",
+                  "axis":{
+                      "format":"%"
+                  },
+                  "title": null},
+      
+              "color": {
+                  "datum": {"repeat": "layer"},
+                  "scale": {"range": ["#000080","#00BFFF"]},
+                  "legend":{
+                    "orient": "top",
+                    "labelExpr": "{'up12_sh': 'Rising prices', 'down12_sh': 'Falling prices'}[datum.label]"
+                    }
+                  }
+            } 
+        }
+    }
