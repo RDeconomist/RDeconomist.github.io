@@ -3,14 +3,14 @@
         "cdid": "D7GA",
         "contact": {
             "email": "cpi@ons.gov.uk",
-            "name": "Philip Gooding",
+            "name": "Chris Payne",
             "telephone": "Consumer price inflation enquiries: +44 1633 456900. Consumer price inflation recorded message (available after 8:00 on release day): + 44 800 011 3703 "
         },
         "datasetId": "MM23",
         "datasetUri": "/economy/inflationandpriceindices/datasets/consumerpriceindices",
-        "date": "2021 JUL",
+        "date": "2021 AUG",
         "nextRelease": "15 September 2021",
-        "number": "1.7",
+        "number": "1.3",
         "preUnit": "",
         "releaseDate": "2021-08-17T23:00:00.000Z",
         "sampleSize": "0",
@@ -3928,6 +3928,16 @@
             "updateDate": "2021-08-17T23:00:00.000Z",
             "value": "1.7",
             "year": "2021"
+        },
+        {
+            "date": "2021 AUG",
+            "label": "2021 AUG",
+            "month": "August",
+            "quarter": "",
+            "sourceDataset": "MM23",
+            "updateDate": "2021-08-17T23:00:00.000Z",
+            "value": "1.3",
+            "year": "2021"
         }
     ],
     "quarters": [
@@ -5670,6 +5680,12 @@
             "label": "v69",
             "updateDate": "2021-08-18T06:00:00.000Z",
             "uri": "/economy/inflationandpriceindices/timeseries/d7ga/mm23/previous/v69"
+        },
+        {
+            "correctionNotice": "",
+            "label": "v70",
+            "updateDate": "2021-09-15T06:00:00.000Z",
+            "uri": "/economy/inflationandpriceindices/timeseries/d7ga/mm23/previous/v70"
         }
     ],
     "years": [
