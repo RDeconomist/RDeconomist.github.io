@@ -33,14 +33,14 @@ body {
 -------------------------------------------------------------------------------*/
 
 .grid_items {
-  padding: 2px;
+  padding: 3px;
   display: grid;
   grid-template-columns: 100%;
   max-width: 800px; 
-  margin: 0 auto 0 auto !important;
-  padding: 0 5 0 5; 
+  margin: 0 auto 0 auto !important; 
   grid-column-gap: 5px;
   grid-row-gap: 20px;
+  
 }
 
 .grid_items > div {
@@ -53,7 +53,7 @@ body {
 }
 
 .grid_items > div:nth-child(3n + 2) {
-  background-color: #122b39;
+  background-color: pink;
    padding: 3px;
    border-radius: 10px;
    width: 340px;
@@ -71,7 +71,7 @@ body {
   
 
 .lecture {
-    background-color: background-color: #122b39;
+    background-color: #122b39;
     border-radius: 10px;
     border-style:solid;
     /* border-color: #320064; */
@@ -80,20 +80,20 @@ body {
 }
 
 .practical {
-    background-color: background-color: #122b39;
+    background-color:#122b39;
     border-radius: 10px;
     border-style:solid;
-    /* border-color: #ff0b54; */
-    border-width: 1px;
+    border-color: #122b39;
+    border-width: 0px;
     height:100%;
 }
 
 .admin {
   background-color: #122b39;
   border-radius: 10px;
-  border-style:dotted;
+  border-style:solid;
   /* border-color: #ff0b54; */
-  border-width: 4px;
+  border-width: 2px;
   height:100%;
 }
 
@@ -148,7 +148,7 @@ body {
     text-align: center;
   }
   .grid_items > div {
-    padding: 5px;
+    padding: 3px;
   }
   .rubric {
     text-align: left;
@@ -172,7 +172,7 @@ body {
     text-align: center;
   }
   .grid_items > div {
-    padding: 10px;
+    padding: 3px;
     }
     .wrap {
         grid-template-columns: 100%;
