@@ -88,6 +88,16 @@ body {
     height:100%;
 }
 
+.admin {
+  background-color: #122b39;
+  border-radius: 10px;
+  border-style:dotted;
+  /* border-color: #ff0b54; */
+  border-width: 4px;
+  height:100%;
+}
+
+
 .fly, .description, .concepts {
   text-align:left;
 }
@@ -294,3 +304,17 @@ body {
 .footer {
   height:300px
 }
+
+.officeHour{
+  list-style-type: circle;
+  text-align: left;
+  color:#ebe5e5;
+  padding: 20px 5px 20px 5px;
+  font-size: 14px;
+	margin: 5px 5px;
+	line-height: 22.4px;
+  margin: 20;
+  list-style-position: left;
+   
+}
+
