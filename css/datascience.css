@@ -88,6 +88,15 @@ body {
     height:100%;
 }
 
+.project {
+  background-color:#122b39;
+  border-radius: 10px;
+  border-style:solid;
+  border-color: #e6224b;
+  border-width: 2px;
+  height:100%;
+}
+
 .admin {
   background-color: #122b39;
   border-radius: 10px;
