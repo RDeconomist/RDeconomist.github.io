@@ -88,13 +88,20 @@ body {
     height:100%;
 }
 
+@keyframes border-pulsate {
+  0%   { border-color: rgba(230, 34, 75, 1); }
+  50%  { border-color: rgba(230, 34, 75, 0); }
+  100% { border-color: rgba(230, 34, 75, 1); }
+}
+
 .project {
   background-color:#122b39;
   border-radius: 10px;
   border-style:solid;
   border-color: #e6224b;
-  border-width: 2px;
+  border-width: 5px;
   height:100%;
+  animation: border-pulsate 3s infinite;
 }
 
 .admin {
@@ -316,6 +323,19 @@ body {
 
 .officeHour{
   list-style-type: circle;
+  text-align: left;
+  color:#ebe5e5;
+  padding: 20px 5px 20px 5px;
+  font-size: 14px;
+	margin: 5px 5px;
+	line-height: 22.4px;
+  margin: 20;
+  list-style-position: left;
+   
+}
+
+.videos{
+  list-style-type: none;
   text-align: left;
   color:#ebe5e5;
   padding: 20px 5px 20px 5px;
