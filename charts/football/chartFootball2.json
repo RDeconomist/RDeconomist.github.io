@@ -17,7 +17,7 @@
 
   },
 
-  "params": [
+  "XXparams": [
       {"name": "highlight", "select": {"type": "point", "on": "mouseover"}}
   ],
 
@@ -41,7 +41,7 @@
       "type": "ordinal",
       "title":null},
 
-     "fillOpacity": {
+     "XXfillOpacity": {
       "condition": {"param": "highlight", "value": 1},
       "value": 0.6
     },
