@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/vega/master/Albers.csv"
+    },
+
+    "title": {
+      "text": "Josef Albers",
+      "subtitle": "Homage to the Square: Ascending (1953)",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+
+  "config":{
+    "background": "#FAFAFA"
+     
+    },
+
+  "height": 300,
+  "width": 300,
+
+  "mark":{
+     "type": "bar",
+     "width":30},
+
+  "encoding": {
+
+    "x": {
+      "field": "Stacks", 
+      "type": "ordinal",
+      "axis": null
+      },
+
+    "y": {
+      "field": "Height", 
+      "type": "quantitative",
+      "sort":"descending",
+      "axis": null
+      },
+
+    "color": {
+      "field": "Tone", 
+      "type": "ordinal",
+      "legend":null,
+      "scale": {
+        "domain": ["a","b","c","d","e","f","g"],
+        "range": ["rgb(130,200,234)","rgb(196,197,191)","rgb(251,253,239)","rgb(251,226,11)","rgb(251,253,239)","rgb(196,197,191)","rgb(130,200,234)"]
+            }
+          }
+        }
+}

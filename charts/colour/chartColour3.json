@@ -1,13 +1,13 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-    "data": {
-    "url": "https://raw.githubusercontent.com/RDeconomist/vega/master/Albers.csv"
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/colour/martin.csv"
     },
 
-    "title": {
-      "text": "Josef Albers",
-      "subtitle": "Homage to the Square: Ascending (1953)",
+  "title": {
+      "text": "Agnes Martin",
+      "subtitle": ["Happy Holiday (1999)",""],
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
@@ -15,40 +15,42 @@
     },
 
   "config":{
-    "background": "#FAFAFA"
-     
-    },
+    "background": "#FAFAFA",
+    "view": {
+      "stroke": "black",
+      "strokeWidth":5}},
 
   "height": 300,
-  "width": 300,
+  "width": 290,
+
+  "transform":[
+    {"calculate": "datum.height*2", "as":"higher"}
+  ],
 
   "mark":{
      "type": "bar",
-     "width":30},
+     "width":290},
 
   "encoding": {
 
     "x": {
-      "field": "Stacks", 
+      "field": "height", 
       "type": "ordinal",
       "axis": null
       },
 
     "y": {
-      "field": "Height", 
+      "field": "height", 
       "type": "quantitative",
       "sort":"descending",
       "axis": null
       },
 
     "color": {
-      "field": "Tone", 
+      "field": "name", 
       "type": "ordinal",
       "legend":null,
       "scale": {
-        "domain": ["a","b","c","d","e","f","g"],
-        "range": ["rgb(130,200,234)","rgb(196,197,191)","rgb(251,253,239)","rgb(251,226,11)","rgb(251,253,239)","rgb(196,197,191)","rgb(130,200,234)"]
-            }
-          }
-        }
+        "range": ["rgb(227,220,214)", "rgb(226,203,179)"]}}
+  }
 }
