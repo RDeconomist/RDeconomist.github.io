@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "data": {"url": "https://app.sportdataapi.com/api/v1/soccer/matches?apikey=b8bb8050-f3d3-11eb-808b-334144de1112&season_id=1980",
+  "format":{
+    "type": "json",
+    "property": "data"}},
+
+    "title": {
+    "text": "Premiership - home advantage?",
+    "subtitle":["Cumulative goals scored by home and away teams",""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+
+  },
+
+  "transform": [
+
+    {"calculate": "now()", "as": "today"},
+    {"calculate": "datum.match_start - datum.today", "as":"futureTest"},
+    {"filter":"datum.futureTest<0"},
+
+    {"window": [
+      {"op": "sum","field": "stats.home_score", "as": "homeRolling"},
+      {"op": "sum","field": "stats.away_score", "as": "awayRolling"}],
+      "sort": [{"field":"match_start", "order":"ascending"}]}],
+
+  "height":300,
+  "width":300,         
+
+  "encoding": {"x": {"field": "match_start", "type": "temporal","title":null}},
+
+  "layer":[
+
+    {"mark": {"type":"circle","color":"red"},
+     "encoding": {"y": {"field": "homeRolling", "type": "quantitative","title":null}}},
+
+     {"mark": {"type":"circle","color":"blue"},
+     "encoding": {"y": {"field": "awayRolling", "type": "quantitative","title":null}}}
+     ]
+}
