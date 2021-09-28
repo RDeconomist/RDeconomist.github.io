@@ -23,8 +23,8 @@
     {"filter":"datum.futureTest<0"},
 
     {"window": [
-      {"op": "sum","field": "stats.home_score", "as": "homeRolling"},
-      {"op": "sum","field": "stats.away_score", "as": "awayRolling"}],
+      {"op": "sum","field": "stats.home_score", "as": "Home"},
+      {"op": "sum","field": "stats.away_score", "as": "Away"}],
       "sort": [{"field":"match_start", "order":"ascending"}]}],
 
   "height":300,
@@ -34,10 +34,22 @@
 
   "layer":[
 
-    {"mark": {"type":"circle","color":"red"},
-     "encoding": {"y": {"field": "homeRolling", "type": "quantitative","title":null}}},
+    {"mark": {"type":"circle", "size":100},
+     
+     "encoding": {
+       "y": {"field": "Home", "type": "quantitative","title":null},
+        "color": {
+        "datum": "Home",
+            "scale": {"range": ["green", "blue"]},
+            "legend":{
+              "orient": "top-left",
+              "fillColor":"white"}}}},
 
-     {"mark": {"type":"circle","color":"blue"},
-     "encoding": {"y": {"field": "awayRolling", "type": "quantitative","title":null}}}
+
+    {"mark": {"type":"circle", "size":100},
+     
+     "encoding": {
+       "y": {"field": "Away", "type": "quantitative","title":null},
+      "color": {"datum": "Away"}}}
      ]
 }
