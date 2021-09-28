@@ -1,16 +1,14 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-  "data": {"url": "https://app.sportdataapi.com/api/v1/soccer/matches?apikey=b8bb8050-f3d3-11eb-808b-334144de1112&season_id=352&date_from=2020-09-19",
+  "data": {"url": "https://app.sportdataapi.com/api/v1/soccer/matches?apikey=b8bb8050-f3d3-11eb-808b-334144de1112&season_id=1980",
   "format":{
     "type": "json",
-    "property": "data"
-  }
-  },
+    "property": "data"}},
 
     "title": {
-    "text": "Premiership - goals",
-    "subtitle":["Goals scored at home, 20/21 season",""],
+    "text": "Premiership - home advantage?",
+    "subtitle":["Cumulative goals scored by home and away teams",""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -19,39 +17,39 @@
   },
 
   "transform": [
-    {"filter":{"field":"home_team.name", "oneOf": ["Chelsea FC", "Liverpool FC", "Manchester City", "Manchester United", "Tottenham Hotspur", "Leicester City"]}}
-  ],
 
-  "mark": {
-    "type":"bar",
-    "color":"rgb(0,67,167)"},
+    {"calculate": "now()", "as": "today"},
+    {"calculate": "datum.match_start - datum.today", "as":"futureTest"},
+    {"filter":"datum.futureTest<0"},
 
-  "height":100,
-  "width":150,
-  "padding":{
-    "top":0,
-    "bottom":0,
-    "right":0,
-    "left":0
-  },
-  
-  "encoding": {
+    {"window": [
+      {"op": "sum","field": "stats.home_score", "as": "Home"},
+      {"op": "sum","field": "stats.away_score", "as": "Away"}],
+      "sort": [{"field":"match_start", "order":"ascending"}]}],
 
-    "x": {
-      "field": "match_start", 
-      "type": "temporal",
-      "title":null},
+  "height":300,
+  "width":300,         
 
-    "y": {
-      "field": "stats.home_score", 
-      "type": "quantitative",
-      "title":null},
+  "encoding": {"x": {"field": "match_start", "type": "temporal","title":null}},
 
-     "facet":{
-       "field": "home_team.name",
-       "columns": 2,
-       "title":null,
-       "spacing":15
-     } 
-  }
+  "layer":[
+
+    {"mark": {"type":"circle", "size":100},
+     
+     "encoding": {
+       "y": {"field": "Home", "type": "quantitative","title":null},
+        "color": {
+        "datum": "Home",
+            "scale": {"range": ["green", "blue"]},
+            "legend":{
+              "orient": "top-left",
+              "fillColor":"white"}}}},
+
+
+    {"mark": {"type":"circle", "size":100},
+     
+     "encoding": {
+       "y": {"field": "Away", "type": "quantitative","title":null},
+      "color": {"datum": "Away"}}}
+     ]
 }

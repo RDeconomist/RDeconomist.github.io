@@ -1,15 +1,16 @@
-
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
   "data": {"url": "https://app.sportdataapi.com/api/v1/soccer/matches?apikey=b8bb8050-f3d3-11eb-808b-334144de1112&season_id=352&date_from=2020-09-19",
   "format":{
     "type": "json",
-    "property": "data"}},
+    "property": "data"
+  }
+  },
 
     "title": {
-    "text": "Premiership - venues",
-    "subtitle":["Stadium capacity, 20/21 season",""],
+    "text": "Premiership - goals",
+    "subtitle":["Goals scored at home, 20/21 season",""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -17,39 +18,40 @@
 
   },
 
-  "XXparams": [
-      {"name": "highlight", "select": {"type": "point", "on": "mouseover"}}
+  "transform": [
+    {"filter":{"field":"home_team.name", "oneOf": ["Chelsea FC", "Liverpool FC", "Manchester City", "Manchester United", "Tottenham Hotspur", "Leicester City"]}}
   ],
 
   "mark": {
     "type":"bar",
-    "color":"rgba(0,67,167, 1)"},
+    "color":"rgb(0,67,167)"},
 
-  "height":300,
+  "height":100,
   "width":150,
+  "padding":{
+    "top":0,
+    "bottom":0,
+    "right":0,
+    "left":0
+  },
   
   "encoding": {
 
     "x": {
-      "field": "venue.capacity", 
-      "type": "quantitative",
-      "aggregate":"mean",
+      "field": "match_start", 
+      "type": "temporal",
       "title":null},
 
     "y": {
-      "field": "venue.name", 
-      "type": "ordinal",
+      "field": "stats.home_score", 
+      "type": "quantitative",
       "title":null},
 
-     "XXfillOpacity": {
-      "condition": {"param": "highlight", "value": 1},
-      "value": 0.6
-    },
-
-    "tooltip":[
-      {"field":"home_team.name", "title":"Team"},
-      {"field":"venue.city", "title":"City"}
-    ]
- 
+     "facet":{
+       "field": "home_team.name",
+       "columns": 2,
+       "title":null,
+       "spacing":15
+     } 
   }
 }
