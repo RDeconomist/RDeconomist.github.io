@@ -104,6 +104,30 @@ body {
   animation: border-pulsate 3s infinite;
 }
 
+
+@keyframes border-pulsate2 {
+  0%   { border-color: #22e68b}
+  10%  { border-color: rgba(230, 34, 75, 0)}
+  20%  { border-color: rgba(230, 34, 75)}
+  30%  { border-color: rgba(230, 34, 75, 0)}
+  40%  { border-color: rgba(0, 47, 167)}
+  50%  { border-color: rgba(230, 34, 75, 0)}
+  60%  { border-color: rgba(250, 250, 0)}
+  70%  { border-color: rgba(230, 34, 75, 0)}
+  80% { border-color: #22e68b}
+}
+
+
+.readingWeek {
+  background-color:#122b39;
+  border-radius: 10px;
+  border-style:dotted;
+  border-color: #22e68b;
+  border-width: 5px;
+  height:100%;
+  animation: border-pulsate2 2s infinite;
+}
+
 .admin {
   background-color: #122b39;
   border-radius: 10px;

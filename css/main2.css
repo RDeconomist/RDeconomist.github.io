@@ -393,6 +393,21 @@ body {
     font-weight: 600;
   }
 
+  .readingList {
+    background-color:none;
+    font-family: MetricWeb,sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    max-width: 200px;
+    color: rgb(0, 170, 50) !important;
+    opacity: 0.8;
+    text-decoration: none !important;
+  }
+
+  .readingList a:hover {
+    opacity: 1;
+  }
+
   
 
 
