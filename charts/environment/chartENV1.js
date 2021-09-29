@@ -6,7 +6,7 @@ var chartENV1 =
 
 "title": {
     "text": "CO2 Emissions",
-    "subtitle":"Tonnes per capita. Source: Our World in Data",
+    "subtitle":"Tonnes per capita. Source: Global Carbon Project",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
