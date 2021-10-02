@@ -2,53 +2,42 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
       "data": {
-      "url": "https://raw.githubusercontent.com/RDeconomist/vega/master/Albers.csv"
+      "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/colour/dataHirst.csv"
       },
-
+  
       "title": {
-        "text": "Yves Klein",
-        "subtitle": "IKB 79 (1959)",
+        "text": "Damien Hirst",
+        "subtitle": ["Untitled (with Black Dot), 1988",""],
         "subtitleFontStyle":"italic",
         "subtitleFontSize":10,
         "anchor": "start",
         "color": "black"
       },
   
-    "config":{
-      "background": "#FAFAFA"
-       
-      },
+      "config":{
+        "background": "#FAFAFA",
+        "view": {"stroke":null}},
   
     "height": 300,
     "width": 300,
   
     "mark":{
-       "type": "bar",
-       "width":30},
+       "type": "circle",
+       "size":100},
   
     "encoding": {
-  
       "x": {
-        "field": "Stacks", 
-        "type": "ordinal",
-        "axis": null
-        },
-  
-      "y": {
-        "field": "Height", 
+        "field": "x", 
         "type": "quantitative",
-        "sort":"descending",
-        "axis": null
-        },
-  
+        "axis": null},
+      "y": {
+        "field": "y", 
+        "type": "quantitative",
+        "axis": null},
       "color": {
-        "field": "Tone", 
-        "type": "ordinal",
+        "field": "random", 
+        "type": "quantitative",
         "legend":null,
-        "scale": {
-          "domain": ["a","b","c","d","e","f","g"],
-          "range": ["rgb(0,47,167)"]
-              }
-            }
-          }
+        "scale": {"scheme":"set1"}}
+      }
   }
