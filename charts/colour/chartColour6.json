@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/colour/dataHirst.csv"
+    },
+
+    "title": {
+      "text": "Damien Hirst",
+      "subtitle": "Untitled (with Black Dot), 1988",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+
+  "config":{
+    "background": "#FAFAFA"
+     
+    },
+
+  "height": 300,
+  "width": 300,
+
+  "mark":{
+     "type": "circle",
+     "width":30},
+
+  "encoding": {
+
+    "x": {
+      "field": "x", 
+      "type": "quantitative",
+      "axis": null
+      },
+
+    "y": {
+      "field": "y", 
+      "type": "quantitative",
+      "sort":"descending",
+      "axis": null
+      },
+
+    "xcolor": {
+      "field": "Tone", 
+      "type": "ordinal",
+      "legend":null,
+      "scale": {
+        "domain": ["a","b","c","d","e","f","g"],
+        "range": ["rgb(130,200,234)","rgb(196,197,191)","rgb(251,253,239)","rgb(251,226,11)","rgb(251,253,239)","rgb(196,197,191)","rgb(130,200,234)"]
+            }
+          }
+        }
+}
