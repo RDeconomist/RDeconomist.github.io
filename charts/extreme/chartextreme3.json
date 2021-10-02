@@ -1,0 +1,76 @@
+{
+  
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/extreme/data_Estonia_DESI.csv"
+  },
+
+  "config": {
+    "background":"#122b39",
+    "view": {
+      "stroke": "transparent"}},
+
+  "transform": [
+    {"filter":"datum.time_period==2020"},
+    {"filter":{"field":"indicator","equal":"desi_5_dps" }}
+  ],
+    
+  "width": 300,
+  "height": 300,
+
+  "mark":{
+    "type":"bar",
+    "color":"#f4c245"
+  },
+  
+  "title": {
+    "text": "Estonia - the digital state",
+    "subtitle": ["DESI index 2020: Digital Public Services. Source:EU",""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#179fdb",
+    "subtitleColor":"#179fdb"},
+
+  "encoding": {
+    "x": {
+      "field": "ref_area",
+       "sort": "-y", 
+       "type": "ordinal", 
+       "title": null,
+       "axis": {
+        "title": null,
+        "grid": false,
+        "labelSeparation": 10,
+        "domainColor":"dimgrey",
+        "labelColor":"#00a767",
+        "tickColor":"pink",
+        "gridColor":"dimgrey"
+      }},
+    
+    "y": {
+      "field": "value",
+      "title": null,
+      "type": "quantitative",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "labelSeparation": 10,
+        "domainColor":"dimgrey",
+        "labelColor":"#00a767",
+        "tickColor":"pink",
+        "gridColor":"dimgrey"}
+        },
+
+    "Xcolor": {
+      "field": "time_period",
+      "type": "nominal",
+      "legend": {
+        "orient": "top-right",
+        "columns":2},
+      "scale": {"scheme": "yellowgreenblue"},
+      "title": null
+    }
+  }
+}
