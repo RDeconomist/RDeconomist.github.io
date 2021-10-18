@@ -1,11 +1,4 @@
-date,growth,label,,
-2000-2004,0.033551411,Pre-tsunami,,
-2004-2008,0.047868984,Rebuild,,
-2008-2012,0.057196189,Aid withdrawal,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
-,,,,
+date,growth,label
+2000-2004,0.033551411,Pre-tsunami
+2004-2008,0.047868984,Rebuild
+2008-2012,0.057196189,Aid withdrawal
