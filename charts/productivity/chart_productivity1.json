@@ -41,7 +41,7 @@
         "type": "nominal",
         "scale": {"scheme": "set1"},
         "title": "Employees:",
-        "legend": {"orient": "right"}
+        "legend": {"orient": "bottom"}
    
      }
   }
