@@ -65,7 +65,9 @@
       "type": "nominal",
       "scale": {"scheme": "set2"},
       "title": "Employees:",
-      "legend": {"orient": "top"}
+      "legend": {
+        "orient": "top-right",
+        "columns": 1}
  
    }
 }
