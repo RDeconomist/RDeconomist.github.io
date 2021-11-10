@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "data": {"url": "https://raw.githubusercontent.com/RDeconomist/prices/master/db_AdjustmentFrequency.csv"},
+
+  "title": {
+  "text": "Price flexbility - all items",
+  "subtitle": "Share of prices changing each month. Source: LRPD (2021)",
+  "subtitleFontStyle":"italic",
+  "subtitleFontSize":10,
+  "anchor": "start",
+  "color": "black"
+},
+
+"mark":{
+    "type":"bar",
+    "color":"orange"
+  },
+
+  "width":300,
+  "height":300,
+
+  "encoding": {
+    "x": {
+      "bin":true,
+      "field": "change_sh",
+      "title":null
+    },
+    "y": {
+      "aggregate": "count",
+      "title":null}
+  }
+}
