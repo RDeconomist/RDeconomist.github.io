@@ -21,6 +21,7 @@
 
   "mark": {
     "type":"circle",
+    "color":"rgb(0,47,167)",
     "size":100},
  
 
@@ -40,7 +41,7 @@
   }},
 
     {
-      "mark": {"type": "line", "color": "firebrick"},
+      "mark": {"type": "line", "color": "grey"},
 
       "transform": [{"regression": "Firearm deaths", "on": "Med income"}],
          
