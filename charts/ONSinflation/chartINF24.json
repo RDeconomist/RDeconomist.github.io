@@ -1,0 +1,61 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+   
+     "data": {"url": "https://raw.githubusercontent.com/RDeconomist/prices/master/priceChangesByDivision.csv"},
+  
+  
+    "mark": "rect",
+    "width": 300,
+    "height": 300,
+  
+    "transform": [
+      {"filter":"datum.up_sh<0.20"},
+      {"filter":"datum.down_sh<0.20"}
+    ],
+    
+    "encoding": {
+     
+      "x": {
+        "bin": {"maxbins":10},
+        "field": "up_sh",
+        "type": "quantitative",
+        "scale":{"domain":[0, 0.20]},
+        "title":"Rising prices",
+        "axis":null
+      },
+  
+      "y": {
+        "bin": {"maxbins": 10},
+        "field": "down_sh",
+        "type": "quantitative",
+        "scale":{"domain":[0, 0.20]},
+        "title":"Falling prices",
+        "axis":null
+      },
+     
+      "color": {
+        "aggregate": "count",
+        "type": "quantitative",
+        "legend":null,
+        "scale":{"scheme":"magma"}
+      },
+  
+      "Xfacet": {
+        "field": "division_sh",
+        "title":null,
+        "columns": 4,
+        "header":{
+          "title":null,
+          "labelColor":"white"
+        },
+        "spacing":0}
+  
+  
+    },
+    "config": {
+      "view": {
+        "stroke": "transparent"
+      }
+    }
+  }
+  
