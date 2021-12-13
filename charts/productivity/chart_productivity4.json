@@ -59,7 +59,7 @@
           
           "tooltip": [
           {"field": "date3", "type": "temporal", "format": "%b-%Y", "title":"Date"},  
-          {"field": "value", "type": "quantitative", "format": ",.0f", "title":"Index"}
+          {"field": "value", "type": "quantitative", "format": ",.0f", "title":"Value (£m)"}
             ]
            },
 
