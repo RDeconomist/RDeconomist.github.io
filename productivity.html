@@ -65,6 +65,8 @@
 <div class="grid_items">
     <div class="grid_item" id="chart1"></div>
     <div class="grid_item" id="chart2"></div>
+    <div class="grid_item" id="chart3"></div>
+    <div class="grid_item" id="chart4"></div>
     <!-- <div class="grid_item" id="chart5"></div>
     <div class="grid_item" id="chart6"></div>
     <div class="grid_item" id="chart7"></div>
@@ -79,8 +81,8 @@
 
 <!-- START - Grid of divs that will house the charts-->
 <div class="grid_items">
-  <div class="grid_item" id="chart3"></div>
-  <div class="grid_item" id="chart4"></div>
+  <div class="grid_item" id="chartPL1"></div>
+  <div class="grid_item" id="chartPL2"></div>
 
   <!-- <div class="grid_item" id="chart5"></div>
   <div class="grid_item" id="chart6"></div>
@@ -100,6 +102,9 @@
     var productivity7 = "charts/productivity/chart_productivity7.json";
     var productivity8 = "charts/productivity/chart_productivity8.json";
 
+    var productivityPL1 = "charts/productivity/chart_productivityPL1.json";
+    var productivityPL2 = "charts/productivity/chart_productivityPL2.json";
+
 
     vegaEmbed('#chart1', productivity1, {"actions": false});
     vegaEmbed('#chart2', productivity2, {"actions": false});
@@ -109,8 +114,9 @@
     vegaEmbed('#chart6', productivity6, {"actions": false});
     vegaEmbed('#chart7', productivity7, {"actions": false});
     vegaEmbed('#chart8', productivity8, {"actions": false});
-    vegaEmbed('#chart9', productivity9, {"actions": false});
-    vegaEmbed('#chart10', productivity10, {"actions": false});
+
+    vegaEmbed('#chartPL1', productivityPL1, {"actions": false});
+    vegaEmbed('#chartPL2', productivityPL2, {"actions": false});
 
 
 </script>

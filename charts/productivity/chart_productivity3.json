@@ -1,50 +1,78 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-    "title": {
-      "text": "Back from the brink",
-      "subtitle":["Proportion of firms deemed 'At Risk' of failure","Source: ONS (2021), Van Reenen and Lambert (2021)",""],
-      "subtitleFontStyle":"italic",
-      "subtitleFontSize":10,
-      "anchor": "start",
-      "color": "black"},
+  "description": "LINK FOR THE DATASET: https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/labourproductivity/timeseries/lzvb/prdy",
 
-    
-    "data": {
-      "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/productivity/atRiskFirmsBySizeLong.csv",
-      "format": {"type": "csv"}
+  "title": {
+    "text": "Total investment",
+    "subtitle": ["Total Gross Fixed Capital Formation, £m", "ONS series: CNXV-L62T", ""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"},
+
+  "width":300,
+  "height":300,
+
+  "data": {
+      "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/L62T/dataset/cxnv/data",
+      "format": {
+        "type":"json",
+        "property": "quarters"}},
+
+  "transform": [
+    {"calculate": "substring(datum.quarter,1)*3-1", "as": "quarter_n"},
+    {"calculate": "join([datum.year, datum.quarter_n],['-'])", "as": "date2"},
+    {"calculate": "timeParse(datum.date2, '%Y-%m')", "as": "date3"},
+    {"filter":"datum.year>1996"}]
+    ,
+ 
+  "encoding": {"x": {"field": "date3", "type": "temporal", "title":null}},
+
+  "layer": [
+      {"encoding": {
+        "y": {
+          "field": "value", 
+          "type": "quantitative", 
+          "title":null}
+        },
+        
+        "layer": [
+          
+          {"mark":{"type": "line","color": "red"}},
+          
+          {"transform": 
+            [{"filter": {"selection": "hover"}}], 
+               "mark": {
+                 "type":"circle",
+                 "size":150,
+                 "color":"red"}}
+      ]
     },
-   
-    "height": 300,
-    "width": 280,
-   
-    "mark": {"type": "line", "point": true},
     
-    "encoding": {
-      
-      "x": {
-        "field": "dateUTC",
-        "type": "temporal",
-        "title": null,
-        "axis": {"grid": false}},
-   
-      "y": {
-        "field": "value",
-        "type": "quantitative",
-        "title": null,
-        "axis": {
-          "grid": true,
-          "format":"%"}},
+    {"mark": "rule", 
+      "encoding": {
+         "opacity": {
+           "condition": {"value": 0.3, "selection": "hover"},
+           "value": 0
+             },
+          
+          "tooltip": [
+          {"field": "date3", "type": "temporal", "format": "%b-%Y", "title":"Date"},  
+          {"field": "value", "type": "quantitative", "format": ",.0f", "title":"Value (£m)"}
+            ]
+           },
 
-      "color": {
-        "field": "employees",
-        "type": "nominal",
-        "scale": {"scheme": "set1"},
-        "title": "Employees:",
-        "legend": {
-          "orient": "top-right",
-          "columns": 1}
-   
-     }
-  }
+      "selection": {
+        "hover": {
+          "type": "single",
+          "fields": ["date3"],
+          "nearest": true,
+          "on": "mouseover",
+          "empty": "none",
+          "clear": "mouseout"
+        }
+      }
+    }
+  ]
 }
