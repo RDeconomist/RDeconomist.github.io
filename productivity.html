@@ -54,39 +54,50 @@
 <body>
 <!-- heading for page-->
 <div class="wrap">
-  <h1><span style="color: #fa3f06">productivity</span></h1>
+  <h1><span style="color: #0c0544">productivity</span></h1>
   <span style="display:block; height: 10px;"></span>
-  <p id="rubric" class="rubric">Charts on UK productivity. The first set are charts are headline metrics. They are linked to the ONS's API and so auto-update when new data is released.</p>
+  <p id="rubric" class="rubric">Charts on UK productivity...</p>
   <span style="display:block; height: 10px;"></span>
 </div>
 
+
+
+<!-- PETER LAMBERT AND JOHN VAN REENEN SECTION -->
+
+<div class="wrap">
+  <span style="display:block; height: 10px;"></span>
+  <p id="rubric" class="rubric">Some interactive charts based on research by John Van Reenen and Peter Lambert as part of the LSE's new productivity hub, <a href="https://poid.lse.ac.uk/">POID</a> .</p>
+  <span style="display:block; height: 10px;"></span>
+</div>
+
+<!-- START - Grid of divs that will house the charts-->
+<div class="grid_items">
+  <div class="grid_item" id="chartPL1"></div>
+  <div class="grid_item" id="chartPL2"></div>
+</div>
+<!-- PETER LAMBERT AND JOHN VAN REENEN SECTION -->
+
+<hr>
+
+<div class="wrap">
+  <span style="display:block; height: 10px;"></span>
+  <p id="rubric" class="rubric">A dashboard of useful charts for people thinking about productivity in the UK. I have lined these to the ONS's API so they should update automatically when new data is released.</a> .</p>
+  <span style="display:block; height: 10px;"></span>
+</div>
 
 <!-- START - Grid of divs that will house the charts-->
 <div class="grid_items">
     <div class="grid_item" id="chart1"></div>
     <div class="grid_item" id="chart2"></div>
-    <!-- <div class="grid_item" id="chart5"></div>
+    <div class="grid_item" id="chart3"></div>
+    <div class="grid_item" id="chart4"></div>
+    <div class="grid_item" id="chart5"></div>
     <div class="grid_item" id="chart6"></div>
     <div class="grid_item" id="chart7"></div>
-    <div class="grid_item" id="chart8"></div> -->
+    
 </div>
 
-<div class="wrap">
-  <span style="display:block; height: 10px;"></span>
-  <p id="rubric" class="rubric">Some interactive charts based on ongoing research by John Van Reenen and Peter Lambert as part of the LSE's new productivity hub, <a href="https://poid.lse.ac.uk/">POID</a> .</p>
-  <span style="display:block; height: 10px;"></span>
-</div>
 
-<!-- START - Grid of divs that will house the charts-->
-<div class="grid_items">
-  <div class="grid_item" id="chart3"></div>
-  <div class="grid_item" id="chart4"></div>
-
-  <!-- <div class="grid_item" id="chart5"></div>
-  <div class="grid_item" id="chart6"></div>
-  <div class="grid_item" id="chart7"></div>
-  <div class="grid_item" id="chart8"></div> -->
-</div>
 
 <!-- END - Grid of divs that will house the charts-->
 
@@ -100,6 +111,9 @@
     var productivity7 = "charts/productivity/chart_productivity7.json";
     var productivity8 = "charts/productivity/chart_productivity8.json";
 
+    var productivityPL1 = "charts/productivity/chart_productivityPL1.json";
+    var productivityPL2 = "charts/productivity/chart_productivityPL2.json";
+
 
     vegaEmbed('#chart1', productivity1, {"actions": false});
     vegaEmbed('#chart2', productivity2, {"actions": false});
@@ -109,8 +123,9 @@
     vegaEmbed('#chart6', productivity6, {"actions": false});
     vegaEmbed('#chart7', productivity7, {"actions": false});
     vegaEmbed('#chart8', productivity8, {"actions": false});
-    vegaEmbed('#chart9', productivity9, {"actions": false});
-    vegaEmbed('#chart10', productivity10, {"actions": false});
+
+    vegaEmbed('#chartPL1', productivityPL1, {"actions": false});
+    vegaEmbed('#chartPL2', productivityPL2, {"actions": false});
 
 
 </script>

@@ -4,8 +4,8 @@
   "description": "LINK FOR THE DATASET: https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/labourproductivity/timeseries/lzvb/prdy",
 
   "title": {
-    "text": "Productivity",
-    "subtitle": ["Output per worker, whole economy", "Index, 2019=100; ONS-series: PRDY-A4YM", ""],
+    "text": "Total investment",
+    "subtitle": ["Total Gross Fixed Capital Formation, £m", "ONS series: CNXV-L62T", ""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -15,7 +15,7 @@
   "height":300,
 
   "data": {
-      "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/a4ym/dataset/prdy/data",
+      "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/L62T/dataset/cxnv/data",
       "format": {
         "type":"json",
         "property": "quarters"}},
@@ -23,7 +23,9 @@
   "transform": [
     {"calculate": "substring(datum.quarter,1)*3-1", "as": "quarter_n"},
     {"calculate": "join([datum.year, datum.quarter_n],['-'])", "as": "date2"},
-    {"calculate": "timeParse(datum.date2, '%Y-%m')", "as": "date3"}],
+    {"calculate": "timeParse(datum.date2, '%Y-%m')", "as": "date3"},
+    {"filter":"datum.year>1996"}]
+    ,
  
   "encoding": {"x": {"field": "date3", "type": "temporal", "title":null}},
 
@@ -32,8 +34,7 @@
         "y": {
           "field": "value", 
           "type": "quantitative", 
-          "title":null,
-          "scale":{"domain":[40, 110]}}
+          "title":null}
         },
         
         "layer": [
@@ -58,7 +59,7 @@
           
           "tooltip": [
           {"field": "date3", "type": "temporal", "format": "%b-%Y", "title":"Date"},  
-          {"field": "value", "type": "quantitative", "format": ",.0f", "title":"Index"}
+          {"field": "value", "type": "quantitative", "format": ",.0f", "title":"Value (£m)"}
             ]
            },
 
@@ -75,4 +76,3 @@
     }
   ]
 }
-
