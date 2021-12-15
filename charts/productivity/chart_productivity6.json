@@ -1,73 +1,46 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text": "Productivity, OECD countries",
+    "subtitle":["GDP per hour worked. US dollars, 1970-2020. Source: OECD", "Legend: UK = black, Ireland = green",""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"},
+
   
-    "description": "LINK FOR THE DATASET: https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/labourproductivity/timeseries/lzvb/prdy",
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/productivity/data_GDPperHourOECD_All.csv",
+    "format": {"type": "csv"}
+  },
+ 
+  "height": 300,
+  "width": 300,
+ 
+  "mark": {"type": "line", "point": false},
   
-    "title": {
-      "text": "Business investment, UK",
-      "subtitle": ["Chained volume measure (£m); ONS series: CNXV-NPEN", ""],
-      "subtitleFontStyle":"italic",
-      "subtitleFontSize":10,
-      "anchor": "start",
-      "color": "black"},
-  
-    "width":300,
-    "height":300,
-  
-    "data": {
-        "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/eqdn/dataset/cxnv/data",
-        "format": {
-          "type":"json",
-          "property": "years"}},
-  
-   
-    "encoding": {"x": {"field": "date", "type": "temporal", "title":null}},
-  
-    "layer": [
-        {"encoding": {
-          "y": {
-            "field": "value", 
-            "type": "quantitative", 
-            "title":null}
-          },
-          
-          "layer": [
-            
-            {"mark":{"type": "line","color": "red"}},
-            
-            {"transform": 
-              [{"filter": {"selection": "hover"}}], 
-                 "mark": {
-                   "type":"circle",
-                   "size":150,
-                   "color":"red"}}
-        ]
-      },
-      
-      {"mark": "rule", 
-        "encoding": {
-           "opacity": {
-             "condition": {"value": 0.3, "selection": "hover"},
-             "value": 0
-               },
-            
-            "tooltip": [
-            {"field": "date", "type": "temporal", "format": "%Y", "title":"Date"},  
-            {"field": "value", "type": "quantitative", "format": ",.0f", "title":"Value (£m)"}
-              ]
-             },
-  
-        "selection": {
-          "hover": {
-            "type": "single",
-            "fields": ["date"],
-            "nearest": true,
-            "on": "mouseover",
-            "empty": "none",
-            "clear": "mouseout"
-          }
-        }
-      }
-    ]
-  }
-  
+  "encoding": {
+    
+    "x": {
+      "field": "TIME",
+      "type": "temporal",
+      "title": null,
+      "axis": {"grid": false}},
+ 
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": null,
+      "axis": {"grid": false}},
+
+    "color": {
+      "field": "LOCATION",
+      "type": "nominal",
+      "scale": {"range": ["lightgrey", "lightgrey", "lightgrey", "lightgrey", "lightgrey", "lightgrey","lightgrey", "lightgrey", "lightgrey","lightgrey", "lightgrey", "lightgrey","lightgrey", "lightgrey", "lightgrey","black", "lightgrey", "lightgrey","green", "lightgrey", "lightgrey","lightgrey", "lightgrey", "lightgrey","lightgrey", "lightgrey", "lightgrey","lightgrey", "lightgrey", "lightgrey"]},
+      "title": null,
+      "legend": null
+ 
+   }
+}
+}
