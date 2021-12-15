@@ -88,7 +88,7 @@
 
 <div class="wrap">
   <span style="display:block; height: 10px;"></span>
-  <p id="rubric" class="rubric">A dashboard of useful charts for people thinking about productivity in the UK. I have lined these to the ONS's API so they should update automatically when new data is released.</a> .</p>
+  <p id="rubric" class="rubric">A dashboard of useful charts for people thinking about productivity in the UK. Where possible I have linked these to APIs so they will update automatically when new data is released.</a> .</p>
   <span style="display:block; height: 10px;"></span>
 </div>
 
@@ -104,6 +104,7 @@
     <div class="grid_item" id="chart8"></div>
     <div class="grid_item" id="chart9"></div>
     <div class="grid_item" id="chart10"></div>    
+    <div class="grid_item" id="chart11"></div>    
 </div>
 
 
@@ -121,6 +122,7 @@
     var productivity8 = "charts/productivity/chart_productivity8.json";
     var productivity9 = "charts/productivity/chart_productivity9.json";
     var productivity10 = "charts/productivity/chart_productivity10.json";
+    var productivity11 = "charts/productivity/chart_productivity11.json";
 
     var productivityPL1 = "charts/productivity/chart_productivityPL1.json";
     var productivityPL2 = "charts/productivity/chart_productivityPL2.json";
@@ -136,6 +138,7 @@
     vegaEmbed('#chart8', productivity8, {"actions": false});
     vegaEmbed('#chart9', productivity9, {"actions": false});
     vegaEmbed('#chart10', productivity10, {"actions": false});
+    vegaEmbed('#chart11', productivity11, {"actions": false});
 
     vegaEmbed('#chartPL1', productivityPL1, {"actions": false});
     vegaEmbed('#chartPL2', productivityPL2, {"actions": false});
