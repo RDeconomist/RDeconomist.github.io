@@ -1,0 +1,369 @@
+% RICHARD DAVIES
+% UK FIRM DYNAMICS 
+% PAPER, FEBRURARY 2022
+
+%------------------------------------------------------------
+%------------------------------------------------------------
+%Setting up the document
+
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+\useinnertheme{circles}
+
+\definecolor{Logo1}{rgb}{0.208, 0.2865, 0.373}
+\definecolor{Logo2}{rgb}{0.000, 0.674, 0.863}
+
+\setbeamercolor*{palette primary}{bg=Logo1, fg=white}
+\setbeamercolor*{palette secondary}{bg=Logo2, fg=white}
+\setbeamercolor*{palette tertiary}{bg=white, fg=Logo1}
+\setbeamercolor*{palette quaternary}{bg=Logo1,fg=white}
+\setbeamercolor{structure}{fg=Logo1} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=Logo1} % TOC sections
+
+%------------------------------------------------------------
+%------------------------------------------------------------
+%This block of code defines the information to appear in the
+%Title page
+\title[UK productivity] %optional
+{The UK productivity puzzle}
+
+\subtitle{Declining firm dynamism}
+
+\author[Richard Davies] % (optional)
+{Richard Davies}
+
+\institute[] % (optional)
+{
+  Economics Observatory\\
+  U Bristol and CEP
+}
+
+\date[Declining dynamism] % (optional)
+{POID presentation, February 2022}
+
+
+%\logo{\includegraphics[height=.5cm]{logo-footer.png}}
+
+%End of title page configuration block
+%------------------------------------------------------------
+
+
+
+%------------------------------------------------------------
+%The next block of commands puts the table of contents at the 
+%beginning of each section and highlights the current section:
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Overview}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+%------------------------------------------------------------
+
+
+\begin{document}
+
+%The next statement creates the title page.
+\frame{\titlepage}
+
+
+%---------------------------------------------------------
+%This block of code is for the table of contents after
+%the title page
+\begin{frame}
+\frametitle{Overview}
+\tableofcontents
+\end{frame}
+%---------------------------------------------------------
+
+
+%---------------------------------------------------------
+%---------------------------------------------------------
+% FIRST SECTION
+
+\section{Motivation: the two puzzles}
+
+
+%---------------------------------------------------------
+%---------------------------------------------------------
+% Slide 1 - productivity puzzle - THE OLD PUZZLE
+\begin{frame}
+\frametitle{The UK productivity puzzle I}
+
+\begin{figure}
+%\caption{Caption for figure}
+%\label{Graph1}
+\centering
+\includegraphics[width=0.75\textwidth]{ukGermany.PNG}
+\end{figure}
+
+\href{https://cep.lse.ac.uk/pubs/download/special/cepsp34.pdf}{\beamergotobutton{Bernick, Davies, Valero (2017)}}
+
+\end{frame}
+%---------------------------------------------------------
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+%---------------------------------------------------------
+% Slide 2 - productivity puzzle - THE OLD PUZZLE
+\begin{frame}
+\frametitle{The UK productivity puzzle I}
+
+The history of a British obsession:
+\vspace{0.3cm}
+ 
+\begin{itemize}
+\item 1929. Macmillan Committee [Keynes]
+\item 1942-1965. National Production Advisory Council
+\item 1957. Council on Prices, Productivity and Incomes. [Cohen]
+\item 1960s. "Declinist" literature
+\item 1962-1992. National Economic Development Council (NEDC) 
+\end{itemize}
+
+\vspace{0.3cm}
+Principal concerns the "gap" between the UK and US, Germany.
+\vspace{0.3cm}
+
+
+\end{frame}
+%---------------------------------------------------------
+%---------------------------------------------------------
+
+
+%---------------------------------------------------------
+%---------------------------------------------------------
+% Slide 6 - Stylised Facts 1
+\begin{frame}
+\frametitle{Minding the Gap}
+
+\begin{columns}
+
+\column{0.5\textwidth}
+
+\begin{figure}
+%\caption{Caption for figure}
+%\label{Graph1}
+\centering
+\includegraphics[width=1\textwidth]{chart_ProdGap.PNG}
+\end{figure}
+
+\column{0.5\textwidth}
+
+\begin{itemize}
+\item Gap between the US and UK became a concern in the 1940s.
+\item Since the 1970s has been stable. 
+\item Compared to G7 countries the UK is mid-tier. Better than 50 years ago.
+\item Note: Italy... 
+
+\item \href{https://www.rapidcharts.io/productivity}{\beamergotobutton{Live chart}}
+\end{itemize}
+
+
+
+\end{columns}
+\end{frame}
+%---------------------------------------------------------
+%---------------------------------------------------------
+
+
+%---------------------------------------------------------
+%---------------------------------------------------------
+% Slide 6 - Stylised Facts 1
+\begin{frame}
+\frametitle{Minding the Gap II}
+
+\begin{columns}
+
+\column{0.5\textwidth}
+
+\begin{figure}
+%\caption{Caption for figure}
+%\label{Graph1}
+\centering
+\includegraphics[width=1\textwidth]{chart_ProdGap_OECD.JPG}
+\end{figure}
+
+\column{0.5\textwidth}
+
+\begin{itemize}
+\item Same chart but for a wider group - the OECD.
+\item UK is again mid-tier.
+\item Note: Ireland... 
+
+\item \href{https://www.rapidcharts.io/productivity}{\beamergotobutton{Live chart}}
+\end{itemize}
+
+
+
+\end{columns}
+\end{frame}
+%---------------------------------------------------------
+%---------------------------------------------------------
+
+
+
+%---------------------------------------------------------
+%---------------------------------------------------------
+% Slide 3 - productivity puzzle - time series
+\begin{frame}
+\frametitle{The UK productivity puzzle}
+
+\begin{figure}
+%\caption{Caption for figure}
+%\label{Graph1}
+\centering
+\includegraphics[width=0.5\textwidth]{prodPuzzle.PNG}
+\end{figure}
+
+\href{https://www.rapidcharts.io/productivity}{\beamergotobutton{Live and interactive chart}}
+
+\end{frame}
+%---------------------------------------------------------
+%---------------------------------------------------------
+
+
+
+
+
+%---------------------------------------------------------
+%---------------------------------------------------------
+% Slide 3 - productivity facts
+\begin{frame}
+\frametitle{Productivity facts}
+
+\begin{itemize}
+    \item<1-> Output per hour grew by XX between YEAR and YEAR, and annual rate of X per cent.
+    \item<2-> Since then it has grown by X per year. 
+    \item<3-> XYZ
+    \item<4-> XYZ
+\end{itemize}
+
+\end{frame}
+%---------------------------------------------------------
+%---------------------------------------------------------
+
+
+
+
+%---------------------------------------------------------
+%---------------------------------------------------------
+% SECTION 2 - OVERVIEW OF PAPER
+
+\section{Paper Overview}
+
+
+%---------------------------------------------------------
+%---------------------------------------------------------
+% Slide 5 - This paper
+\begin{frame}
+\frametitle{This paper}
+
+\begin{itemize}
+    \item<1-> Use firm-level data for the population of UK firms, taken from the BSD. XYZ observations for XYZ firms. 
+    \item<2-> Construct descriptive statistics on business dynamics: birth rate, death rate, entry, age. Compare these with US literature.  
+    \item<3-> Produce new facts on job reallocation. 
+    \item<4-> Estimate simple model of firm responsiveness. This has declined in the UK. 
+    \item<5-> Propose new heterogeneous firm model in which financial frictions drive lumpy reactions.  
+    \item<6-> Estimate this model using BSD data on firms and Land Registry data on asset values.
+\end{itemize}
+
+\end{frame}
+%---------------------------------------------------------
+%---------------------------------------------------------
+
+
+%---------------------------------------------------------
+%---------------------------------------------------------
+% SECTION 3 - DATA AND STYLISED FACTS
+
+\section{Data and new facts}
+
+
+%---------------------------------------------------------
+%---------------------------------------------------------
+% Slide 5 - This paper
+\begin{frame}
+\frametitle{Data}
+
+\begin{itemize}
+    \item<1-> X
+\end{itemize}
+
+\end{frame}
+%---------------------------------------------------------
+%---------------------------------------------------------
+
+%---------------------------------------------------------
+%---------------------------------------------------------
+% Slide 6 - Stylised Facts 1
+\begin{frame}
+\frametitle{Births and Deaths}
+
+\begin{columns}
+
+\column{0.5\textwidth}
+
+\begin{figure}
+%\caption{Caption for figure}
+%\label{Graph1}
+\centering
+\includegraphics[width=1\textwidth]{prodPuzzle.PNG}
+\end{figure}
+
+\column{0.5\textwidth}
+
+\begin{itemize}
+\item About the fact 1
+\item More about the fact
+\item \href{https://www.rapidcharts.io/productivity}{\beamergotobutton{Live chart}}
+\end{itemize}
+
+
+
+\end{columns}
+\end{frame}
+%---------------------------------------------------------
+%---------------------------------------------------------
+
+
+
+\section{Job reallocation}
+
+\section{Is dynamism declining?}
+
+\section{A model}
+
+\section{Linking the BSD and HMRC data}
+
+\section{Dynamism and asset prices}
+
+
+
+%---------------------------------------------------------
+%Highlighting text
+\begin{frame}
+\frametitle{Ongoing work}
+
+This is work in \alert{progress} please send any comments or questions.
+
+\begin{block}{Plan}
+Set out the plan
+\end{block}
+
+\begin{alertblock}{Problems}
+Set out main problems
+\end{alertblock}
+
+\begin{examples}{Economy 2030}
+Set out the findings for the Economy 2030 project.
+\end{examples}
+\end{frame}
+%---------------------------------------------------------
+
+
+\end{document}
