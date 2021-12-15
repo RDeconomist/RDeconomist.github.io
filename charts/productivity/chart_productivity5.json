@@ -1,46 +1,79 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-
-  "title": {
-    "text": "Productivity, OECD countries",
-    "subtitle":["GDP per hour worked. US dollars, 1970-2020. Source: OECD", "Legend: UK = black, Ireland = green",""],
-    "subtitleFontStyle":"italic",
-    "subtitleFontSize":10,
-    "anchor": "start",
-    "color": "black"},
-
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
-  "data": {
-    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/productivity/data_GDPperHourOECD_All.csv",
-    "format": {"type": "csv"}
-  },
- 
-  "height": 300,
-  "width": 300,
- 
-  "mark": {"type": "line", "point": false},
+    "description": "LINK FOR THE DATASET: https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/labourproductivity/timeseries/lzvb/prdy",
   
-  "encoding": {
-    
-    "x": {
-      "field": "TIME",
-      "type": "temporal",
-      "title": null,
-      "axis": {"grid": false}},
- 
-    "y": {
-      "field": "Value",
-      "type": "quantitative",
-      "title": null,
-      "axis": {"grid": false}},
-
-    "color": {
-      "field": "LOCATION",
-      "type": "nominal",
-      "scale": {"range": ["lightgrey", "lightgrey", "lightgrey", "lightgrey", "lightgrey", "lightgrey","lightgrey", "lightgrey", "lightgrey","lightgrey", "lightgrey", "lightgrey","lightgrey", "lightgrey", "lightgrey","black", "lightgrey", "lightgrey","green", "lightgrey", "lightgrey","lightgrey", "lightgrey", "lightgrey","lightgrey", "lightgrey", "lightgrey","lightgrey", "lightgrey", "lightgrey"]},
-      "title": null,
-      "legend": null
- 
-   }
-}
-}
+    "title": {
+      "text": "Hours worked",
+      "subtitle": ["Total actual weekly hours worked (millions)", "Seasonally adjusted; ONS series: LMS-YBUS", ""],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"},
+  
+    "width":300,
+    "height":300,
+  
+    "data": {
+        "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/ybus/dataset/lms/data",
+        "format": {
+          "type":"json",
+          "property": "quarters"}},
+  
+    "transform": [
+      {"calculate": "substring(datum.quarter,1)*3-1", "as": "quarter_n"},
+      {"calculate": "join([datum.year, datum.quarter_n],['-'])", "as": "date2"},
+      {"calculate": "timeParse(datum.date2, '%Y-%m')", "as": "date3"}],
+   
+    "encoding": {"x": {"field": "date3", "type": "temporal", "title":null}},
+  
+    "layer": [
+        {"encoding": {
+          "y": {
+            "field": "value", 
+            "type": "quantitative", 
+            "title":null,
+            "scale":{"domain":[700, 1100]}}
+          },
+          
+          "layer": [
+            
+            {"mark":{"type": "line","color": "red"}},
+            
+            {"transform": 
+              [{"filter": {"selection": "hover"}}], 
+                 "mark": {
+                   "type":"circle",
+                   "size":150,
+                   "color":"red"}}
+        ]
+      },
+      
+      {"mark": "rule", 
+        "encoding": {
+           "opacity": {
+             "condition": {"value": 0.3, "selection": "hover"},
+             "value": 0
+               },
+            
+            "tooltip": [
+            {"field": "date3", "type": "temporal", "format": "%b-%Y", "title":"Date"},  
+            {"field": "value", "type": "quantitative", "format": ",.0f", "title":"Index"}
+              ]
+             },
+  
+        "selection": {
+          "hover": {
+            "type": "single",
+            "fields": ["date3"],
+            "nearest": true,
+            "on": "mouseover",
+            "empty": "none",
+            "clear": "mouseout"
+          }
+        }
+      }
+    ]
+  }
+  
+  
