@@ -2,7 +2,7 @@
  
   "title": {
      "text": "Covid Cases: English regions - click on legend",
-     "subtitle":"New cases by publish date. Rolling weekly rate per 100k population.",
+     "subtitle":"New cases by specimen date. Rolling weekly rate per 100k population.",
      "subtitleFontStyle":"italic",
      "subtitleFontSize":10,
      "anchor": "start",
@@ -13,7 +13,7 @@
    "description": "Coronavirus cases",
  
    "data": {
-     "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=region&metric=newCasesByPublishDateRollingRate&format=csv",
+     "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=region&metric=newCasesBySpecimenDateRollingRate&format=csv",
      "format": {"type": "csv"}
    },
    
@@ -35,7 +35,7 @@
        },
  
      "y": {
-       "field": "newCasesByPublishDateRollingRate",
+       "field": "newCasesBySpecimenDateRollingRate",
        "type": "quantitative",
        "title": null,
        "axis":{"grid":false}
