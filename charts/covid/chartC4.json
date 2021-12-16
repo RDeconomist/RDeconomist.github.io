@@ -50,8 +50,8 @@
       "field": "areaName",
       "type": "nominal",
       "scale": {"scheme": "set1"},
-      "title": "Region",
-      "legend": {"orient": "top-right", "fillColor": "#FfFfFf"}
+      "title": null,
+      "legend": {"orient": "bottom", "columns": 2}
     },
     "opacity": {"condition": {"selection": "region", "value": 1}, "value": 0.1},
     "tooltip": [
