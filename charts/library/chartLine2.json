@@ -11,7 +11,7 @@
 
     
     "data": {
-      "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=nation&metric=newCasesByPublishDateRollingRate&format=csv",
+      "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=nation&metric=newCasesBySpecimenDateRollingRate&format=csv",
       "format": {"type": "csv"}
     },
    
@@ -29,7 +29,7 @@
         "axis": {"grid": false}},
    
       "y": {
-        "field": "newCasesByPublishDateRollingRate",
+        "field": "newCasesBySpecimenDateRollingRate",
         "type": "quantitative",
         "title": null,
         "axis": {"grid": false}},
