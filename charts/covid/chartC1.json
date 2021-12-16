@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": {
     "text": "Cases: UK nations",
-    "subtitle":"New cases by publish date, rolling rate",
+    "subtitle":"New cases by specimen date, rolling rate",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -10,7 +10,7 @@
   },
   "description": "Coronavirus cases",
   "data": {
-    "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=nation&metric=newCasesByPublishDateRollingRate&format=csv",
+    "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=nation&metric=newCasesBySpecimenDateRollingRate&format=csv",
     "format": {"type": "csv"}
   },
   "height": 300,
@@ -39,7 +39,7 @@
       "axis": {"grid": false}
     },
     "y": {
-      "field": "newCasesByPublishDateRollingRate",
+      "field": "newCasesBySpecimenDateRollingRate",
       "type": "quantitative",
       "title": null,
       "axis": {"grid": false}
@@ -49,14 +49,14 @@
       "type": "nominal",
       "scale": {"scheme": "set1"},
       "title": null,
-      "legend": {"orient": "top-right", "fillColor": "#FcFdFd"}
+      "legend": {"orient": "top-left", "fillColor": "#FcFdFd"}
     },
     "opacity": {"condition": {"selection": "region", "value": 1}, "value": 0.1},
     "tooltip": [
       {"field": "date", "type": "temporal", "title": "Date"},
       {"field": "areaName", "type": "nominal", "title": "Region"},
       {
-        "field": "newCasesByPublishDateRollingRate",
+        "field": "newCasesBySpecimenDateRollingRate",
         "type": "nominal",
         "title": "New cases",
         "format": ".0f"
