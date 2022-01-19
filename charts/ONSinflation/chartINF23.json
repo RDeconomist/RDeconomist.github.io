@@ -14,8 +14,8 @@
 
 
   "mark": "rect",
-  "width": 70,
-  "height": 70,
+  "width": 55,
+  "height": 55,
 
   "transform": [
     {"filter":"datum.up_sh<0.25"},

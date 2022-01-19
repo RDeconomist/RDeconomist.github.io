@@ -1,42 +1,71 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+   
+     "data": {"url": "https://raw.githubusercontent.com/RDeconomist/prices/master/priceChangesByDivision.csv"},
 
-  "data": {"url": "https://raw.githubusercontent.com/RDeconomist/prices/master/priceChangesByDivision.csv"},
-
-  "title": {
-  "text": "Price flexbility: rising and falling",
-  "subtitle": "Share of prices changing each month. Source: LRPD (2021)",
-  "subtitleFontStyle":"italic",
-  "subtitleFontSize":10,
-  "anchor": "start",
-  "color": "black"
-},
-
-"width":300,
-"height":300,
-
-  "transform": [
-    {"filter":"datum.up_sh<0.25"},
-    {"filter":"datum.down_sh<0.25"}
-  ],
- 
-
-"encoding": {"y": {"aggregate": "count","title":null}},
-
-"layer":[
-  
-  {"mark":{"type":"line","color":"orange","opacity":0.4},
-  "encoding":{"x": {
-                "bin": {"maxbins":100},
-                "field": "up_sh",
-                "axis":{"format":".0%"},
-                "title":null}}},
-
-  {"mark":{"type":"line","color":"blue", "opacity":0.4},
-  "encoding":{"x": {
-                "bin": {"maxbins":100},
-                "field": "down_sh",
-                "title":null}}}             
+     "title": {
+      "text": "For fun - prices as Art",
+      "subtitle": ["",""],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
     
-    ]
-}
+  
+  
+    "mark": "rect",
+    "width": 300,
+    "height": 300,
+  
+    "transform": [
+      {"filter":"datum.up_sh<0.20"},
+      {"filter":"datum.down_sh<0.20"}
+    ],
+    
+    "encoding": {
+     
+      "x": {
+        "bin": {"maxbins":10},
+        "field": "up_sh",
+        "type": "quantitative",
+        "scale":{"domain":[0, 0.20]},
+        "title":"Rising prices",
+        "axis":null
+      },
+  
+      "y": {
+        "bin": {"maxbins": 10},
+        "field": "down_sh",
+        "type": "quantitative",
+        "scale":{"domain":[0, 0.20]},
+        "title":"Falling prices",
+        "axis":null
+      },
+     
+      "color": {
+        "aggregate": "count",
+        "type": "quantitative",
+        "legend":null,
+        "scale":{"scheme":"magma"}
+      },
+  
+      "Xfacet": {
+        "field": "division_sh",
+        "title":null,
+        "columns": 4,
+        "header":{
+          "title":null,
+          "labelColor":"white"
+        },
+        "spacing":0}
+  
+  
+    },
+    "config": {
+      "view": {
+        "stroke": "transparent"
+      }
+    }
+  }
+  
