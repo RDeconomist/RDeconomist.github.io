@@ -32,8 +32,8 @@
       "division": {"type": "multi", "fields": ["division"], "bind": "legend"}
     },
   
-    "height":600,
-    "width":600,
+    "height":300,
+    "width":300,
   
     "mark": "circle",
   
