@@ -131,7 +131,12 @@
 <div class="grid_items">
   <div class="grid_item" id="chartBSD1"></div>
   <div class="grid_item" id="chartBSD2"></div>
-  <div class="grid_item" id="chartBSD3"></div>         
+  <div class="grid_item" id="chartBSD3"></div> 
+  <div class="grid_item" id="chartBSD4"></div>   
+  <div class="grid_item" id="chartBSD5"></div>   
+  <div class="grid_item" id="chartBSD6"></div>   
+  <div class="grid_item" id="chartBSD7"></div>   
+  <div class="grid_item" id="chartBSD8"></div>           
 </div>
 
 <!-----------------------------MICRO DATA SECTION----------------------------->
@@ -158,9 +163,14 @@
     var productivityPL2 = "charts/productivity/chart_productivityPL2.json";
 
     // Charts for my BSD paper:
-    var productivityBSD1 = "charts/productivity/chart_BSD_EnterExitAnnual.json";
-    var productivityBSD2 = "charts/productivity/chart_BSD_RLPwithTrendAnnual.json";
-    var productivityBSD3 = "charts/productivity/chart_BSD_RLPweightedAges.json";
+    var productivityBSD1 = "charts/productivity/chart_BSD1_EnterExitAnnual.json";
+    var productivityBSD2 = "charts/productivity/chart_BSD2_RLPwithTrendAnnual.json";
+    var productivityBSD3 = "charts/productivity/chart_BSD3_RLPweightedAges.json";
+    var productivityBSD4 = "charts/productivity/chart_BSD4_EntryExitIndustries.json";
+    var productivityBSD5 = "charts/productivity/chart_BSD5_EntryIndustries.json";
+    var productivityBSD6 = "charts/productivity/chart_BSD6_AgeSizeHireFire.json";
+    var productivityBSD7 = "charts/productivity/chart_BSD7_AgeSizeRLP.json";
+    var productivityBSD8 = "charts/productivity/chart_BSD8_CohortsTurnover.json";
 
 
     // Embed all these charts:
@@ -183,6 +193,12 @@
     vegaEmbed('#chartBSD1', productivityBSD1, {"actions": false});
     vegaEmbed('#chartBSD2', productivityBSD2, {"actions": false});
     vegaEmbed('#chartBSD3', productivityBSD3, {"actions": false});
+    vegaEmbed('#chartBSD4', productivityBSD4, {"actions": false});
+    vegaEmbed('#chartBSD5', productivityBSD5, {"actions": false});
+    vegaEmbed('#chartBSD6', productivityBSD6, {"actions": false});
+    vegaEmbed('#chartBSD7', productivityBSD7, {"actions": false});
+    vegaEmbed('#chartBSD8', productivityBSD8, {"actions": false});
+
 
 </script>
 <!-----------------------------END: SCRIPT TO DEFINE AND EMBED CHARTS----------------------------->
