@@ -129,7 +129,8 @@
 
 <!-- START - Grid of divs that will house the charts-->
 <div class="grid_items">
-  <div class="grid_item" id="chartBSD1"></div>    
+  <div class="grid_item" id="chartBSD1"></div>
+  <div class="grid_item" id="chartBSD2"></div>       
 </div>
 
 <!-----------------------------MICRO DATA SECTION----------------------------->
@@ -157,7 +158,9 @@
 
     // Charts for my BSD paper:
     var productivityBSD1 = "charts/productivity/chart_BSD_EnterExitAnnual.json";
+    var productivityBSD2 = "charts/productivity/chart_BSD_RLPwithTrendAnnual.json";
 
+    
     // Embed all these charts:
     vegaEmbed('#chart1', productivity1, {"actions": false});
     vegaEmbed('#chart2', productivity2, {"actions": false});
@@ -176,6 +179,7 @@
     vegaEmbed('#chartPL2', productivityPL2, {"actions": false});
 
     vegaEmbed('#chartBSD1', productivityBSD1, {"actions": false});
+    vegaEmbed('#chartBSD2', productivityBSD2, {"actions": false});
 
 </script>
 <!-----------------------------END: SCRIPT TO DEFINE AND EMBED CHARTS----------------------------->
