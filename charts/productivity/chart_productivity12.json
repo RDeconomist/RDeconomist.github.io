@@ -4,8 +4,8 @@
     "description": "LINK FOR THE DATASET: https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/labourproductivity/timeseries/lzvb/prdy",
   
     "title": {
-      "text": "Business investment, UK",
-      "subtitle": ["Chained volume measure (£m); ONS series: CNXV-NPEN", ""],
+      "text": "GFCF - Government, UK",
+      "subtitle": ["Chained volume measure (£m); ONS series: CNXV-EQDN", ""],
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",

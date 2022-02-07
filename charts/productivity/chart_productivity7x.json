@@ -1,11 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-  "description": "LINK FOR THE DATASET: https://www.ons.gov.uk/economy/grossdomesticproductgdp/timeseries/npqx/ukea",
+  "description": "LINK FOR THE DATASET: https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/labourproductivity/timeseries/lzvb/prdy",
 
   "title": {
     "text": "Total investment",
-    "subtitle": ["Total Gross Fixed Capital Formation, £m", "ONS series: CNXV-NPQX", ""],
+    "subtitle": ["Total Gross Fixed Capital Formation, £m", "ONS series: CNXV-L62T", ""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -15,7 +15,7 @@
   "height":300,
 
   "data": {
-      "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/NPQX/dataset/cxnv/data",
+      "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/L62T/dataset/cxnv/data",
       "format": {
         "type":"json",
         "property": "quarters"}},
