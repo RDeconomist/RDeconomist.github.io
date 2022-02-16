@@ -48,8 +48,12 @@
 
   "layer":[
     
-    {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L55O.json",
+    {"XXdata": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-L55O.json",
     "format": {"type":"json", "property": "months"}},
+
+    "data": {
+      "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/L55O/dataset/mm23/data",
+      "format": {"type":"json", "property": "months"}},
 
     "transform": [
 
@@ -79,8 +83,12 @@
     "encoding": {"y": {"field": "value", "type": "quantitative","title":null}}
   },
 
-  {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-CZBH.json",
+  {"XXdata": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-CZBH.json",
     "format": {"type":"json", "property": "months"}},
+
+    "data": {
+      "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/czbh/dataset/mm23/data",
+      "format": {"type":"json", "property": "months"}},
 
     "transform": [
 
@@ -110,8 +118,12 @@
     "encoding": {"y": {"field": "value", "type": "quantitative","title":null}}
   },
 
-  {"data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-D7G7.json",
+  {"XYZdata": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-D7G7.json",
     "format": {"type":"json", "property": "months"}},
+
+    "data": {
+      "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/d7g7/dataset/mm23/data",
+      "format": {"type":"json", "property": "months"}},
 
     "transform": [
 

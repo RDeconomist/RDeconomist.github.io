@@ -17,9 +17,7 @@
 
   "data": {
       "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/d7g7/dataset/mm23/data",
-      "format": {
-        "type":"json",
-        "property": "months"}},
+      "format": {"type":"json", "property": "months"}},
 
 
   "xxSTATICdata": {
