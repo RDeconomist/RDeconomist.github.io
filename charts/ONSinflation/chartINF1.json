@@ -15,8 +15,14 @@
   "width":280,
   "height":300,
 
-
   "data": {
+      "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/d7g7/dataset/mm23/data",
+      "format": {
+        "type":"json",
+        "property": "months"}},
+
+
+  "xxSTATICdata": {
       "name":"myData",
       "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-D7G7.json",
       "format": {
