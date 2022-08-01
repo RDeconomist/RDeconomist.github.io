@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Adding Style Sheet-->
+    <link rel="stylesheet" href="css/form.css">
+
+    
+      <!--The next three lines allow the Vega embed-->
+      <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    
+</head>
+
+
+<body>
+
+  <div class="row">
+    <div class="column">
+    
+
+    <section class="contact-form">
+        <h1>CHART OPTIONS</h1>
+        <p>Pick your options below</p>
+        
+        <form>
+
+          <input name="$schema" type="hidden" value="https://vega.github.io/schema/vega-lite/v5.json"/>  
+
+          <fieldset>
+
+            <legend>Data</legend>
+
+        <div class="input-group">
+            <!-- <label for="name">Data</label> -->
+            <input 
+              id="url" 
+              name="dataUrl" 
+              type="text"
+              placeholder="Paste data link here"/>
+        </div>
+
+        <div class="input-group">
+          <input id="salutation-mr" name="dataFormatType" type="radio" value="csv"/>
+          <label class="inline" for="salutation-mr">CSV</label>
+          
+          <input id="salutation-mrs" name="dataFormatType" type="radio" value="json"/>
+          <label class="inline" for="salutation-mrs">JSON</label>
+      
+        </div>
+
+        </fieldset>
+
+        <fieldset>
+
+          <legend>Appearance</legend>
+
+          <div class="input-group">
+            <label for="subject">Chart type</label>
+            <select id="subject" name="mark">
+              <option>line</option>
+              <option>bar</option>
+              <option>area</option>
+              <option>point</option>
+             </select>
+        </div>
+
+      <div class="input-group">
+          <!-- <label for="name">Data</label> -->
+          <input 
+            id="title" 
+            name="title" 
+            type="text"
+            placeholder="Title"/>
+      </div>
+
+      <div class="input-group">
+        <div id="left">
+        <!-- <label for="name">Data</label> -->
+        <input 
+          id="title" 
+          name="height" 
+          type="text"
+          placeholder="Height"/>
+        </div>
+
+    
+      <!-- <label for="name">Data</label> -->
+      <div id="right">
+      <input 
+        id="title" 
+        name="width" 
+        type="text"
+        placeholder="Width"/>
+    </div>
+  </div>
+
+
+
+      </fieldset>
+
+
+      <fieldset>
+
+        <legend>Variables</legend>
+
+      <div class="input-group">
+        <label for="name" class="">X</label>
+        <input id="name" name="xField" type="text"/>
+        <select id="subject" name="xType">
+          <option>temporal</option>
+          <option>quantitative</option>
+          <option>ordinal</option>
+          <option>nominal</option>
+         </select>
+    </div>
+
+    <div class="input-group">
+      <label for="name" class="">Y</label>
+      <input id="name" name="yField" type="text"/>
+      <select id="subject" name="yType">
+        <option>temporal</option>
+          <option>quantitative</option>
+          <option>ordinal</option>
+          <option>nominal</option>
+       </select>
+  </div>
+
+  <!-- <div class="input-group">
+    <label for="name" class="">Color</label>
+    <input id="name" name="colorField" type="text"/>
+    <select id="subject" name="colorType">
+      <option>temporal</option>
+      <option>quantitative</option>
+      <option>ordinal</option>
+      <option>nominal</option>
+     </select>
+</div>
+
+<div class="input-group">
+  <label for="name" class="">Size</label>
+  <input id="name" name="sizeField" type="text"/>
+  <select id="subject" name="sizeType">
+    <option>temporal</option>
+    <option>quantitative</option>
+    <option>ordinal</option>
+    <option>nominal</option>
+   </select>
+</div> -->
+
+</fieldset>
+          
+   
+
+      
+          <button type="submit">Build Chart</button>
+        </form>
+      </section>
+
+
+      
+    </div>
+
+    <div class="column">
+       
+      <div class="results">
+        <h1>CHART CODE</h1>
+        <p>Your chart code in JSON format:</p>
+        <pre></pre>
+      </div>
+      
+    </div>
+
+      <div class="column">
+        <div class="results">
+            <h1>YOUR CHART</h1>
+                <p>Your visualisation:</p>
+            <!--Set the Div that the chart is going in-->
+          <div id="chart"></div>
+      </div>
+
+      </div>
+    </div>
+
+</body>
+
+<!--Adding javascript-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.13.0/polyfill.min.js"></script>
+<script type="text/javascript" src="js/formSubmission.js"></script>
+
+<!-- <script>
+vegaEmbed('#chart', chartSpec, {"actions": false});
+</script> -->
+
+</html>
