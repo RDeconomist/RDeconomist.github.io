@@ -37,11 +37,18 @@ h1 {
 }
 
 /* Set up general layout rules for outer containers. */
-.contact-form,
+.contact-form {
+    width: 90vw;
+    max-width: 550px;
+    margin: 20px auto;
+  }
+}
+
+
 .results {
   width: 90vw;
   max-width: 550px;
-  margin: 0;
+  margin: auto;
 }
 
 p {
@@ -71,6 +78,20 @@ p {
 .input-group {
   margin-top: 0.1rem;
   padding: 0.1rem 0.1rem;
+}
+
+.input-group-right {
+  margin-top: 0.1rem;
+  padding: 0.1rem 0.1rem;
+  float:right; 
+  width:48%;
+}
+
+.input-group-left {
+  margin-top: 0.1rem;
+  padding: 0.1rem 0.1rem;
+  float:left; 
+  width:48%;
 }
 
 .contact-form label {
@@ -181,3 +202,28 @@ p {
   display: table;
   clear: both;
 }
+
+
+.submitButton {
+  background-color: transparent;
+  border: 1px solid rgb(126, 114, 114);
+  color: #6a3ce7;
+  line-height: 16px;
+  font-weight: 300;
+  border-radius: 5px;
+  box-sizing: content-box;
+  align-items: flex-start;
+  display: inline-block;
+  font-size: 12px;
+  margin: auto;
+  text-decoration: none;
+  max-width: 200px;
+  outline-offset: 2px;
+  overflow: hidden;
+  padding: 5px 12px;
+  text-align: left;
+  text-overflow: ellipsis;
+  transition: border-color,background-color .5s ease;
+  white-space: nowrap;
+}
+

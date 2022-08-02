@@ -16,8 +16,8 @@
     
       <!--The next three lines allow the Vega embed-->
       <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
     
 </head>
 <!-- //////////////////// HEAD, END ///////////////////////////////-->
@@ -64,9 +64,9 @@
 
             <legend>Appearance</legend>
 
-            <div class="input-group">
-              <label for="subject">Chart type</label>
-              <select id="subject" name="mark">
+            <div class="input-group-left">
+              <!-- <label for="subject">Chart type</label> -->
+              <select id="subject" name="mark" placeholder="Title">
                 <option>line</option>
                 <option>bar</option>
                 <option>area</option>
@@ -74,7 +74,7 @@
               </select>
           </div>
 
-        <div class="input-group">
+        <div class="input-group-right">
             <!-- <label for="name">Data</label> -->
             <input 
               id="title" 
@@ -83,8 +83,7 @@
               placeholder="Title"/>
         </div>
 
-        <div class="input-group">
-          <div id="left">
+        <div class="input-group-left">
           <!-- <label for="name">Data</label> -->
           <input 
             id="title" 
@@ -94,41 +93,37 @@
           </div>
 
       
-        <!-- <label for="name">Data</label> -->
-        <div id="right">
-        <input 
-          id="title" 
-          name="width" 
-          type="text"
-          placeholder="Width"/>
-      </div>
-    </div>
-
-
-
-          </fieldset>
+          <!-- <label for="name">Data</label> -->
+          <div class="input-group-right">
+          <input 
+            id="title" 
+            name="width" 
+            type="text"
+            placeholder="Width"/>
+          </div>
+        </fieldset>
 
           <fieldset>
 
             <legend>Variables</legend>
 
-          <div class="input-group">
+          <div class="input-group-left">
             <label for="name" class="">X</label>
             <input id="name" name="xField" type="text"/>
             <select id="subject" name="xType">
-              <option>temporal</option>
-              <option>quantitative</option>
+              <option value="temporal">Date</option>
+              <option value="quantitative">Number</option>
               <option>ordinal</option>
               <option>nominal</option>
             </select>
         </div>
 
-        <div class="input-group">
+        <div class="input-group-right">
           <label for="name" class="">Y</label>
           <input id="name" name="yField" type="text"/>
           <select id="subject" name="yType">
-            <option>temporal</option>
-              <option>quantitative</option>
+              <option value="temporal">Date</option>
+              <option value="quantitative">Number</option>
               <option>ordinal</option>
               <option>nominal</option>
           </select>
@@ -139,7 +134,8 @@
           </fieldset>
           
           <!-- Finally the submit button -->
-          <button type="submit">Build Chart</button>
+          <button type="submit" class="submitButton">Build Chart</button>
+          
           </form>
         </section>
       </div>

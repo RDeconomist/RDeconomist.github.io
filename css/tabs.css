@@ -38,9 +38,27 @@ body {
 
 h1 {
   text-align: center;
-  font-weight: 100;
-  font-size: 60px;
-  color: #e74c3c;
+  font-weight: 800;
+  font-size: 40px;
+  color: #6a3ce7;
+}
+
+legend {
+  -webkit-font-smoothing: antialiased;
+  background: #ecf0f1;
+  font-family: "Raleway";
+  font-size: 18px;
+}
+
+fieldset {
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: 2px groove (internal value);
 }
 
 .pc-tab {
