@@ -41,7 +41,7 @@ h1 {
 .results {
   width: 90vw;
   max-width: 550px;
-  margin: 8vh auto;
+  margin: 0;
 }
 
 p {
@@ -53,7 +53,7 @@ p {
   margin-top: 1rem;
   padding: 0.5rem 1rem;
   background: $color-lightest;
-  border: 1px solid var(--color-gray-light);
+  border: 0px;
   overflow-x: scroll;
   font-size: 80%;
 }
@@ -166,4 +166,18 @@ p {
   float:right; 
   background:white;
   width:48%;
+}
+
+
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
