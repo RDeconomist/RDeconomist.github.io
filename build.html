@@ -39,7 +39,7 @@
 
           <!-- Now three field sets for the inputs:  -->
           <fieldset>
-            <legend>Data</legend>
+            <legend>data</legend>
             <div class="input-group">
             <!-- <label for="name">Data</label> -->
             <input 
@@ -55,6 +55,8 @@
           
           <input id="salutation-mrs" name="dataFormatType" type="radio" value="json"/>
           <label class="inline" for="salutation-mrs">JSON</label>
+
+          <button class="inline" onclick="testURL()">Fetch Data</button>
       
         </div>
 
@@ -62,7 +64,7 @@
 
           <fieldset>
 
-            <legend>Appearance</legend>
+            <legend>appearance</legend>
 
             <div class="input-group-left">
               <!-- <label for="subject">Chart type</label> -->
@@ -105,7 +107,7 @@
 
           <fieldset>
 
-            <legend>Variables</legend>
+            <legend>variables</legend>
 
           <div class="input-group-left">
             <label for="name" class="">X</label>
@@ -178,7 +180,7 @@
               <!-- <div class="results"> -->
                 <p>The dataset you loaded:</p>
                 <!--Div for data to go in-->
-                <div id="data"></div>
+                <div class="dataLoaded" id="dataLoaded"></div>
               <!-- </div> -->
             </div>
 
@@ -201,7 +203,13 @@
 
 <!--Adding javascript-->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.13.0/polyfill.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<!-- Files that I have written -->
 <script type="text/javascript" src="js/formSubmission.js"></script>
+<script type="text/javascript" src="js/testURL.js"></script>
+
 
 
 </html>

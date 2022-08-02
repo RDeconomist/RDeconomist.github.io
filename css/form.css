@@ -65,6 +65,21 @@ p {
   font-size: 80%;
 }
 
+.dataLoaded{
+  width: 90vw;
+  max-width: 550px;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: $color-lightest;
+  border: 0px;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  font-size: 80%; 
+  max-height:550px; 
+}
+
+
 .contact-form form {
   position: relative;
   display: block;
@@ -225,5 +240,34 @@ p {
   text-overflow: ellipsis;
   transition: border-color,background-color .5s ease;
   white-space: nowrap;
+}
+
+fieldset {
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top: 5px;
+  margin-bottom:5px;
+  padding-top: 0.35em;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border-width: 1px;
+  border-radius: 0px;
+  border-color: #f6f8f7;
+  border: 1px solid #ddd;
+  background-color:rgb(255, 255, 255);
+}
+
+fieldset:hover {
+  border-color:#6a3ce7;
+}
+
+legend {
+	float: left;
+  margin-bottom: .5em;
+  width: 100%;
+  background-color:rgb(255, 255, 255) !important;
+  font-variant: small-caps;
 }
 
