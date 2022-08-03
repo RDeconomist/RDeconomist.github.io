@@ -129,3 +129,30 @@ footer a {
   color: #AAA;
   text-decoration: none;
 }
+
+
+#csvTable {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+
+  white-space:nowrap;
+  width: 100%;
+}
+
+#csvTable td, #csvTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#csvTable tr:nth-child(even){background-color: #f2f2f2;}
+
+#csvTable tr:hover {background-color: #ddd;}
+
+#csvTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}

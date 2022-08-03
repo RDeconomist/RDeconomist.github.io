@@ -1,4 +1,8 @@
-async function testURL() {
+
+// Two similar functions for fetching JSON and CSV and injecting into page:
+
+
+async function fetchJSON() {
     
   //Grab the URL from the page:
   var url = document.querySelector('#url').value;

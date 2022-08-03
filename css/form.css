@@ -109,8 +109,17 @@ p {
   width:48%;
 }
 
+.input-group-data {
+  margin-top: 0.1rem;
+  padding: 0.1rem 0.1rem;
+  display:flex; 
+  justify-content: center;
+  align-items: center;
+  width:100%;
+}
+
 .contact-form label {
-  display: block;
+  display: inline-flexbox;
   color: $color-gray-dark;
   font-family: Lato, sans-serif;
   font-size: 90%;
@@ -125,7 +134,8 @@ p {
 
 .contact-form label.inline {
   display: inline-block;
-  margin-left: 0.25rem;
+  margin-left: 0.5rem;
+  margin-top: 0.25rem;
 }
 
 .contact-form input,
@@ -220,7 +230,7 @@ p {
 
 
 .submitButton {
-  background-color: transparent;
+  background-color:  #6a3ce7 !important;
   border: 1px solid rgb(126, 114, 114);
   color: #6a3ce7;
   line-height: 16px;
@@ -230,7 +240,7 @@ p {
   align-items: flex-start;
   display: inline-block;
   font-size: 12px;
-  margin: auto;
+  margin: auto !important;
   text-decoration: none;
   max-width: 200px;
   outline-offset: 2px;
@@ -240,6 +250,32 @@ p {
   text-overflow: ellipsis;
   transition: border-color,background-color .5s ease;
   white-space: nowrap;
+}
+
+.fetchButton {
+  background-color:  #6a3ce7 !important;
+  border: 1px solid rgb(126, 114, 114);
+  color: #6a3ce7;
+  line-height: 16px;
+  font-weight: 100;
+  border-radius: 5px;
+  box-sizing: content-box;
+  align-items: flex-start;
+  display: inline-block;
+  font-size: 10px;
+  margin-left: 1rem !important;
+  margin-top: 0.25rem !important;
+  text-decoration: none;
+  max-width: 200px;
+  outline-offset: 2px;
+  overflow: hidden;
+  padding: 0px 4px !important;
+  text-align: left;
+  text-overflow: ellipsis;
+  transition: border-color,background-color .5s ease;
+  white-space: nowrap;
+  font-family: Lato, sans-serif !important;
+  font-size: 90% !important;
 }
 
 fieldset {

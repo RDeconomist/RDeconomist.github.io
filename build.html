@@ -14,10 +14,18 @@
     <link rel="stylesheet" href="css/tabs.css">
 
     
+       <!-- STUFF NEEDED ON PAGE FROM CDN -->
+       <!-- (Content devliery networks) -->
+
       <!--The next three lines allow the Vega embed-->
       <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
       <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
       <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+      <!--Papa Parse - for dealing with CSVs-->
+      <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
+
     
 </head>
 <!-- //////////////////// HEAD, END ///////////////////////////////-->
@@ -49,14 +57,18 @@
               placeholder="Paste data link here"/>
             </div>
 
-        <div class="input-group">
+        <div class="input-group-data">
           <input id="salutation-mr" name="dataFormatType" type="radio" value="csv"/>
           <label class="inline" for="salutation-mr">CSV</label>
+          <button class="fetchButton" onclick="fetchCSV()">Fetch CSV</button>
+
           
           <input id="salutation-mrs" name="dataFormatType" type="radio" value="json"/>
           <label class="inline" for="salutation-mrs">JSON</label>
+          <button class="fetchButton" onclick="fetchJSON()">Fetch JSON</button>
 
-          <button class="inline" onclick="testURL()">Fetch Data</button>
+          
+          
       
         </div>
 
@@ -180,7 +192,10 @@
               <!-- <div class="results"> -->
                 <p>The dataset you loaded:</p>
                 <!--Div for data to go in-->
-                <div class="dataLoaded" id="dataLoaded"></div>
+                <div class="dataLoaded" id="dataLoaded">
+                  <!-- (B) GENERATE HTML TABLE HERE -->
+                    <table id="csvTable"></table>
+                </div>
               <!-- </div> -->
             </div>
 
@@ -208,7 +223,7 @@
 
 <!-- Files that I have written -->
 <script type="text/javascript" src="js/formSubmission.js"></script>
-<script type="text/javascript" src="js/testURL.js"></script>
+<script type="text/javascript" src="js/fetchData.js"></script>
 
 
 
