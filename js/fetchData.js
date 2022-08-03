@@ -42,7 +42,7 @@ async function fetchCSV() {
     var url = document.querySelector('#url').value;
  
     // (A) GET HTML TABLE
-    let table = document.getElementById("demoTable");
+    let table = document.getElementById("csvTable");
  
     // (B) AJAX FETCH CSV FILE
     fetch(url)
