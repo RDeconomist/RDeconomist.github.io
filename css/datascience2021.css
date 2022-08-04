@@ -3,12 +3,30 @@
 	Typography
 -------------------------------------------------------------------------------*/
 
+/* Old fonts not used:
+@import url(http://fonts.googleapis.com/css?family=Cutive%20Mono:400);
+@import url(https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap); 
+*/
+
+/*@import url(https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap);*/
 
 @import url(https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap);
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
 
+p {
+	font-size: 16px;
+	margin: 5px 5px;
+	line-height: 22.4px;
+	color: #323232;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+
+body {
+  background-color: #ebe5e5;
+ }
 
 /* ------------------------------------------------------------------------------
 	Grid stuff
@@ -26,87 +44,66 @@
 }
 
 .grid_items > div {
-  background-color: #212121;
-  
-  border-top-color: #9E9E9E;
-  border-bottom-color: #616161;
-  
-  border-top-width: 1px;
-  border-right-width: 0px;
-  border-left-width: 0px;
-  border-bottom-width: 1px;
-  
+  background-color: #122b39;
   padding: 3px;
-  border-radius: 0px;
+  border-radius: 10px;
   width: 340px;
   height: 340px;
   margin:auto;
 }
 
 .grid_items > div:nth-child(3n + 2) {
-  background-color: #212121;
+  background-color: pink;
    padding: 3px;
-   border-radius: 0px;
+   border-radius: 10px;
    width: 340px;
    height: 340px;
    margin:auto;
   }
   .grid_items > div:nth-child(3n) {
-    background-color: #212121;
+    background-color: #122b39;
    padding: 3px;
-   border-radius: 0px;
+   border-radius: 10px;
    width: 340px;
    height: 340px;
    margin:auto;
   }
-
-/* ------------------------------------------------------------------------------
-	Main containers, font types etc.
--------------------------------------------------------------------------------*/
-
-body {
-    background-color: #121212;
-   }  
-
-p {
-	font-size: 16px;
-	margin: 5px 5px;
-	line-height: 22.4px;
-	color: #E0E0E0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-
-.lecture, .admin, .practical {
-    background-color: #212121;
-    border-radius: 0px;
-    border-style:solid;
-    border-width: 0px;
-    height:99%;
-}
-
-
-
-.project {
-    background-color:##212121;
-    border-radius: 1px;
-    border-style:solid;
-    border-color: #e6224b;
-    border-width: 5px;
-    height:97%;
-    animation: border-pulsate 1s infinite;
-  }
-
- 
   
 
+.lecture {
+    background-color: #122b39;
+    border-radius: 10px;
+    border-style:solid;
+    /* border-color: #320064; */
+    border-width: 1px;
+    height:100%;
+}
 
-  /* PUSLING BORDERS */
+.practical {
+    background-color:#122b39;
+    border-radius: 10px;
+    border-style:solid;
+    border-color: #122b39;
+    border-width: 0px;
+    height:100%;
+}
+
 @keyframes border-pulsate {
   0%   { border-color: rgba(230, 34, 75, 1); }
   50%  { border-color: rgba(230, 34, 75, 0); }
   100% { border-color: rgba(230, 34, 75, 1); }
 }
+
+.project {
+  background-color:#122b39;
+  border-radius: 10px;
+  border-style:solid;
+  border-color: #e6224b;
+  border-width: 5px;
+  height:100%;
+  animation: border-pulsate 3s infinite;
+}
+
 
 @keyframes border-pulsate2 {
   0%   { border-color: #22e68b}
@@ -119,7 +116,6 @@ p {
   70%  { border-color: rgba(230, 34, 75, 0)}
   80% { border-color: #22e68b}
 }
-/* PULSING BORDERS */
 
 
 .readingWeek {
@@ -128,11 +124,18 @@ p {
   border-style:dotted;
   border-color: #22e68b;
   border-width: 5px;
-  height:97%;
+  height:100%;
   animation: border-pulsate2 2s infinite;
 }
 
-
+.admin {
+  background-color: #122b39;
+  border-radius: 10px;
+  border-style:solid;
+  /* border-color: #ff0b54; */
+  border-width: 2px;
+  height:100%;
+}
 
 
 .fly, .description, .concepts {
@@ -149,9 +152,8 @@ p {
   text-align:center;
   padding:15px 0 2px 0;
   /* text-decoration: underline; */
-  font-weight: 600;
+  font-weight: bold;
   color: #00a767;
-  font-variant: small-caps;
 }
 
 .concepts{
@@ -258,7 +260,7 @@ h1 {
 	font-family: "Catamaran";
 	font-variant: small-caps;
 	font-size: 60px;
-	color: #E0E0E0;
+	color: #320064;
 	font-weight: 900;
 	font-kerning: 50;
 	margin: 0px 0px 30px 0px  ;
@@ -371,9 +373,6 @@ body {
 	line-height: 22.4px;
   margin: 20;
   list-style-position: left;
-  width: 90%;
-  display: flex;
-  flex-wrap: wrap;
    
 }
 
