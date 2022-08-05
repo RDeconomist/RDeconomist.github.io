@@ -13,20 +13,37 @@
     <script type="text/javascript" src="js/getMyData.js"></script>
     <script type="text/javascript" src="js/getMyBanks.js"></script>
     <script type="text/javascript" src="js/getMyWaves.js"></script>
+    <script type="text/javascript" src="js/getMyNews.js"></script>
+
+    <link rel="stylesheet" href="css/prices.css">
 
 
 </head>
 <body>
 
     <div class="getter">
-        <button class="fetchButton" onclick="getMyData()">get my data</button>
+    <button class="fetchButton" onclick="getMyData()">get my data</button>
     </div>
 
-    <div id="bankName"></div>
-    <div id="bankPrice"></div>
-    <div id="waveLocation"></div>
-    <div id="waveHeight"></div>
+    <div class="grid">
 
+        <div class="gridItem" id="banks">
+            <p>portfolio</p>
+            <div class="gridItem" id="bankName"></div>
+            <div class="gridItem" id="bankPrice"></div>          
+        </div>
+        
+        <div class="gridItem" id="waves">
+            <p>surfing</p>
+            <div class="gridItem" id="waveLocation"></div>
+            <div class="gridItem" id="waveHeight"></div>
+        </div>
+
+        <div class="gridItem" id="news">
+            <p>news</p>
+            <div class="gridItem" id="newsFT"></div>
+        </div>
+    </div>
 
 
     

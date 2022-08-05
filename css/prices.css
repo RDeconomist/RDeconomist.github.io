@@ -16,12 +16,16 @@ body {
     background-color: #121212;
    }  
 
-p {
+p, .gridItem {
 	font-size: 16px;
 	margin: 5px 5px;
 	line-height: 22.4px;
 	color: #E0E0E0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.gridItem{
+background-color: #282d32;
 }
 
 h1 {
@@ -48,6 +52,10 @@ h1 {
     grid-row-gap: 40px;
     text-align: center;
   }
+
+.grid{
+  display:grid
+}  
 
 
 
