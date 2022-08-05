@@ -8,42 +8,35 @@
 async function getMyNews() {
   
     // Build the URL, by adding the CORE helper:
-
     var corsHelper = 'https://api.allorigins.win/raw?url=';
-    var url = 'https://www.ft.com/';
-    var urlCORS = corsHelper + url;
 
-    // See what we have:
-    console.log(urlCORS);
+    var url1 = 'https://www.ft.com/';
+    var url2 = 'https://www.nytimes.com/';
 
-    // Get the HTML:    
+    var urlCORS1 = corsHelper + url1;
+    var urlCORS2 = corsHelper + url2;
 
-    $.get(urlCORS, function(html) {
-        //Stuff we need to match:
+    // Check our URLs are formed correctly:   
+    console.log(urlCORS1);
+    console.log(urlCORS2);
 
-        // <span class="text text--color-black text-display--scale-7 text--weight-500" id="">US adds 528,000 jobs in surprise gain for labour market</span>
+    // Get the HTML:  
 
-
-        // <div role="heading" aria-level="1" class="zzDege">Lloyds Banking Group PLC</div>
-        // <div class="YMlKec fxKbKc">GBX&nbsp;44.91</div>
-
-        const headline = $(html).find(".text.text--color-black.text-display--scale-7.text--weight-500").text();
-        // const bankPrice = $(html).find(".YMlKec.fxKbKc").text();
-
-        console.log(headline);
-        
-        //Now turn the results into JSON:
-        // outputJSON = JSON.stringify(output, null, 2); 
-        // console.log(outputJSON)
-
-        //Now display the JSON on the page:
-        // document.body.innerHTML = dataJSON;
+    // Financial Times:
+    $.get(urlCORS1, function(html1) {
+        const headline1 = $(html1).find(".text.text--color-black.text-display--scale-7.text--weight-500").text();
+        console.log(headline1);
         var x1 = document.getElementById("newsFT");
-        // var x2 = document.getElementById("bankPrice");
-        
-        x1.innerText = headline;
-        // x2.innerText = bankPrice;
-       
+        x1.innerText = headline1;      
+    });
+
+    // New York Times:
+        // <h3 class="indicate-hover css-vip0cf">Democrats’ Long-Sought Plan for Lowering Drug Costs Is at Hand</h3>
+    $.get(urlCORS2, function(html2) {
+        const headline2 = $(html2).find(".indicate-hover.css-vip0cf").text();
+        console.log(headline2);
+        var x2 = document.getElementById("newsNYT");
+        x2.innerText = headline2;      
     });
 
 }

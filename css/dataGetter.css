@@ -1,0 +1,31 @@
+body {
+    background-color: #121212;
+   }  
+
+.grid{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    max-width: 500px;
+    margin: auto;
+  }
+
+.gridItem{
+    background-color: #282d32;
+    border-radius: 2px;
+    }
+
+p, .gridItem {
+	font-size: 16px;
+	margin: 5px 5px;
+	line-height: 22.4px;
+	color: #E0E0E0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title{
+    font-variant: small-caps;
+    display: flex;
+    justify-content: center;
+}
+
+
