@@ -36,9 +36,7 @@
 
 
 <!--Main Stylesheet-->
-<link rel="stylesheet" href="css/main2.css">
-<link rel="stylesheet" href="css/crypto.css">
-<link rel="stylesheet" href="css/datascience.css">
+<link rel="stylesheet" href="css/prices.css">
 
 
 <!-- Add icon library -->
@@ -49,6 +47,8 @@
 <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
 
@@ -67,15 +67,35 @@
 
 
 
+
 <!-- DIV FOR THE VISUALISATION -->
 
 <div id="chart1"></div>
 </div>
 
+
+
+
+<!-- CONDITIONAL SCRIPT TO EMBED BASED ON SCREEN WIDTH -->
 <script>
-    var prices1 = "charts/ONSinflation/distributionsPerrenials_Dark.json";
-    vegaEmbed('#chart1', prices1, {"actions": false});   
+
+// Find the current screen width:
+let width = screen.width;
+
+// Use an if function to pick the approprite visualisation:
+if (width > 950) {
+  prices1 = "charts/ONSinflation/distributionsPerrenials_DarkWide.json";
+} else if (width > 450) {
+  prices1 = "charts/ONSinflation/distributionsPerrenials_DarkMedium.json";
+} else {
+  prices1 = "charts/ONSinflation/distributionsPerrenials_DarkNarrow.json";
+}
+
+// Now embed the chart, which will vary based on screen width:
+vegaEmbed('#chart1', prices1, {"actions": false});   
+    
 </script>
+<!-- END - CONDITIONAL SCRIPT TO EMBED BASED ON SCREEN WIDTH -->
 
 
 
