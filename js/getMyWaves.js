@@ -27,12 +27,16 @@ async function getMyWaves() {
         // results = soup.find_all("span", class_="h3 font-sans-serif heavy nomargin text-white")
 
         // Target element:  <li class="rating-text text-dark">    2-3<small>ft</small>   </li>
-           
+
+        // Target element 2:
+                  
         const waves = $(html).find(".rating-text.text-dark").text();
         const forecast = $(html).find(".h3.font-sans-serif.heavy.nomargin.text-white").text();
+        const nearbySpots = $(html).find(".list-group-item.list-group-item-block").text();
         
         console.log(waves);
         console.log(forecast);
+        console.log(nearbySpots)
        
         //Now turn the results into JSON:
         // outputJSON = JSON.stringify(output, null, 2); 
@@ -43,9 +47,11 @@ async function getMyWaves() {
 
         var x1 = document.getElementById("waveLocation");
         var x2 = document.getElementById("waveHeight");
+        var x3 = document.getElementById("nearbySpots");
         
         x1.innerText = "Rest Bay";
         x2.innerText = waves;
+        x3.innerText = nearbySpots
        
     });
 
@@ -54,6 +60,3 @@ async function getMyWaves() {
 /////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////
 
-
-    
-                 

@@ -28,4 +28,24 @@ p, .gridItem {
     justify-content: center;
 }
 
+.getter{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
 
+.fetchButton{
+    background-color:#E0E0E0;
+    color: #121212;
+    font-size: 20px;
+    font-variant: small-caps;
+	margin: auto;
+	line-height: 22.4px;
+    border-radius: 10px;
+    border-width: 0;
+    padding:7px;
+	
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}

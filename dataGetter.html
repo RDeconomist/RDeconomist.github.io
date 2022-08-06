@@ -19,24 +19,28 @@
 
 
 </head>
+
+
 <body>
 
-    <div class="getter">
-    <button class="fetchButton" onclick="getMyData()">get my data</button>
-    </div>
+
 
     <div class="grid">
 
         <div class="gridItem" id="banks">
             <p class="title">portfolio</p>
-            <div class="gridItem" id="bankName"></div>
-            <div class="gridItem" id="bankPrice"></div>          
+            <div class="gridItem" id="bankName1"></div>
+            <div class="gridItem" id="bankPrice1"></div> 
+            <div class="gridItem" id="bankName2"></div>
+            <div class="gridItem" id="bankPrice2"></div>          
         </div>
-        
+
         <div class="gridItem" id="waves">
             <p class="title">surfing</p>
             <div class="gridItem" id="waveLocation"></div>
             <div class="gridItem" id="waveHeight"></div>
+            <div class="gridItem" id="nearbySpots"></div>
+
         </div>
 
         <div class="gridItem" id="news">
@@ -44,6 +48,10 @@
             <div class="gridItem" id="newsFT"></div>
             <div class="gridItem" id="newsNYT"></div>
         </div>
+    </div>
+
+    <div class="getter">
+        <button class="fetchButton" onclick="getMyData()">update</button>
     </div>
 
 
