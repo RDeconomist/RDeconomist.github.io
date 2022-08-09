@@ -12,6 +12,7 @@ async function getMyData() {
     getMyBanks();
     getMyWaves();
     getMyNews();
+    getMyWeather();
  
 
 }

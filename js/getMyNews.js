@@ -1,7 +1,6 @@
 
 // Functions for getting my data:
 
-
 ///////////////////////////////////////////////////////////////////////
 ///////////////////////////////JSON////////////////////////////////////
 
@@ -12,16 +11,16 @@ async function getMyNews() {
 
     var url1 = 'https://www.ft.com/';
     var url2 = 'https://www.nytimes.com/';
-    var url3 = 'https://www.bbc.co.uk/weather/2654675';
+    
 
     var urlCORS1 = corsHelper + url1;
     var urlCORS2 = corsHelper + url2;
-    var urlCORS3 = corsHelper + url3;
+    
 
     // Check our URLs are formed correctly:   
     console.log(urlCORS1);
     console.log(urlCORS2);
-    console.log(urlCORS3);
+    
 
     // Get the HTML:  
 
@@ -42,17 +41,6 @@ async function getMyNews() {
         x2.innerText = headline2;      
     });
 
-    // BBC weather:
-
-    // wr-day-carousel__list wr-js-day-carousel-list clearfix
-    // <span class="wr-value--temperature--c">24°</span>
-       
-    $.get(urlCORS3, function(html3) {
-        const headline3 = $(html3).find(".wr-value--temperature--c").text();
-        console.log(headline3);
-        var x3 = document.getElementById("newsGuardian");
-        x3.innerText = headline3;      
-    });
 
     //Guardian:
        
