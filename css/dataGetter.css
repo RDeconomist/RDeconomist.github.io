@@ -22,8 +22,12 @@ body {
     border-style: solid;
     }
 
+.gridResult{
+    margin-left: 3px;
+    }
+
 p, .gridItem {
-	font-size: 16px;
+	font-size: 12px;
 	margin: 5px 5px;
 	line-height: 22.4px;
 	color: #E0E0E0;
@@ -36,8 +40,10 @@ p, .gridItem {
 
 .title{
     font-variant: small-caps;
+    font-size: 14px;
     display: flex;
     justify-content: center;
+    color: rgb(240, 255, 150);
 }
 
 .getter{
@@ -59,4 +65,8 @@ p, .gridItem {
     padding:7px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
+}
+
+#swellDetails{
+    font-style: italic;
 }

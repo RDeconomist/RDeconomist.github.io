@@ -31,12 +31,13 @@ async function getMyWaves() {
         // Target element 2:
                   
         const waves = $(html).find(".rating-text.text-dark").text();
+        const swellDetails = $(html).find(".list-group-item.list-group-item-block").text();
+
         const forecast = $(html).find(".h3.font-sans-serif.heavy.nomargin.text-white").text();
-        const nearbySpots = $(html).find(".list-group-item.list-group-item-block").text();
-        
+                
         console.log(waves);
         console.log(forecast);
-        console.log(nearbySpots)
+        console.log(swellDetails)
        
         //Now turn the results into JSON:
         // outputJSON = JSON.stringify(output, null, 2); 
@@ -47,11 +48,11 @@ async function getMyWaves() {
 
         var x1 = document.getElementById("waveLocation");
         var x2 = document.getElementById("waveHeight");
-        var x3 = document.getElementById("nearbySpots");
+        var x3 = document.getElementById("swellDetails");
         
-        x1.innerText = "Rest Bay";
-        x2.innerText = waves;
-        x3.innerText = nearbySpots
+        x1.innerText = "Rest Bay: " + waves;
+        // x2.innerText = waves;
+        x3.innerText = swellDetails
        
     });
 
