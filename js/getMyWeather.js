@@ -76,7 +76,7 @@ async function getMyWeather() {
             "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
             "title": {
-                "text": "Max temp, next 10 days",
+                "text": "Bristol, peak temp next 10 days",
                 "fontWeight":200,
                 "fontSize":9,
                 "subtitle":["Source: BBC weather",""],
@@ -87,7 +87,7 @@ async function getMyWeather() {
                 "subtitleColor":"whitesmoke"},
             
 
-            "width": 150, "height": 60,
+            "width": 120, "height": 60,
 
             "config": {
                 "background":"#282d32",
