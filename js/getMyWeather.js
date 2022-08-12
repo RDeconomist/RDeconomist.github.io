@@ -24,7 +24,7 @@ async function getMyWeather() {
     // <span class="wr-value--temperature--c">24°</span>
        
     $.get(urlCORS, function(html) {
-        const headline = $(html).find(".wr-value--temperature--c").text();
+        var headline = $(html).find(".wr-value--temperature--c").text();
         console.log(headline);
 
         // Get rid of unwanted characters:

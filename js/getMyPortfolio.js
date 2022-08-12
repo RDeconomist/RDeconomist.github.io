@@ -45,7 +45,7 @@ async function getMyPortfolio() {
         console.log(tickerPrice1);
         // GBX 45.44
 
-        const tickerResult1 = tickerName1 + ": " + tickerPrice1
+        var tickerResult1 = tickerName1 + ": " + tickerPrice1
         console.log(tickerResult1)
        
         //Now turn the results into JSON:
@@ -76,7 +76,7 @@ async function getMyPortfolio() {
 
         tickerName2 = tickerName2.replace(" (BTC / USD)", "");
 
-        const tickerResult2 = tickerName2 + ": " + tickerPrice2
+        var tickerResult2 = tickerName2 + ": " + tickerPrice2
         console.log(tickerResult2)
        
         //Now turn the results into JSON:

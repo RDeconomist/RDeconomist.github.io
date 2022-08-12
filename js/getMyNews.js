@@ -26,7 +26,7 @@ async function getMyNews() {
 
     // Financial Times:
     $.get(urlCORS1, function(html1) {
-        const headline1 = $(html1).find(".text.text--color-black.text-display--scale-7.text--weight-500").text();
+        var headline1 = $(html1).find(".text.text--color-black.text-display--scale-7.text--weight-500").text();
         console.log(headline1);
         var x1 = document.getElementById("newsFT");
         const publication1 = "FT"
@@ -37,7 +37,7 @@ async function getMyNews() {
     // New York Times:
         // <h3 class="indicate-hover css-vip0cf">Democrats’ Long-Sought Plan for Lowering Drug Costs Is at Hand</h3>
     $.get(urlCORS2, function(html2) {
-        const headline2 = $(html2).find(".indicate-hover.css-vip0cf").text();
+        var headline2 = $(html2).find(".indicate-hover.css-vip0cf").text();
         console.log(headline2);
         var x2 = document.getElementById("newsNYT");
         const publication2 = "NYT"
