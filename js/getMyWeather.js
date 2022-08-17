@@ -68,36 +68,49 @@ async function getMyWeather() {
         console.log(result);
 
         // To JOSN
-        var maxTempJSON = JSON.stringify(result);
-        console.log(maxTempJSON)
+        var myData = JSON.stringify(result);
+        console.log(myData)
+        // return myData
 
 
-        var x = document.getElementById("weather");
-        x.innerText = maxTempJSON;
+        // var x = document.getElementById("weather");
+        // x.innerText = maxTempJSON;
         
             // Now define and plot the chart:
-        var weatherChart = {
-            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-            "data": {
-                "name": "myData"
-            },
-            "mark": "line",
-            "encoding": {
-            "x": {"field": "day", "type": "quantitative"},
-            "y": {"field": "temperature", "type": "quantitative"}
-            }
-        }
+        
+
+     
+
+    
         
   
     // Now embed the charts in the divs set above:
     //    vegaEmbed('#weather', weatherChart, {"actions": false});
 
-       vegaEmbed('#weather', weatherChart, {"actions": false}).then(res =>
-        res.view
-          .insert('myData', maxTempJSON)
-          .run()
-      );
-  
+    //    vegaEmbed('#weather', weatherChart, {"actions": false}).then(res =>
+    //     res.view
+    //       .insert('myData', maxTempJSON)
+    //       .run()
+    //   );
+ 
+    var weatherChart = {
+                "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+                "data": {
+                    "name": "myData"
+                },
+                "mark": "line",
+                "encoding": {
+                "x": {"field": "day", "type": "quantitative"},
+                "y": {"field": "temperature", "type": "quantitative"}
+                }
+            }
+            // const data = await getMyWeather();
+            // console.log(data);
+            vegaEmbed('#weather', weatherChart, {"actions": false}).then(res =>
+                res.view
+                .insert('myData', myData)
+                .run()
+                );
   
   
   
@@ -105,10 +118,37 @@ async function getMyWeather() {
   
     });
 
+}
+
+    ///////////////////
+        // STEP 3. Define the chart drawing function:
+        // This is a regular Vega Embed, as above
+        // But with the addition that we insert data variable into the position 'myData', which is defined in the chart.
+        // async function chartIt(){
+        //     var weatherChart = {
+        //         "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+        //         "data": {
+        //             "name": "myData"
+        //         },
+        //         "mark": "line",
+        //         "encoding": {
+        //         "x": {"field": "day", "type": "quantitative"},
+        //         "y": {"field": "temperature", "type": "quantitative"}
+        //         }
+        //     }
+        //     const data = await getMyWeather();
+        //     console.log(data);
+        //     vegaEmbed('#weather', weatherChart, {"actions": false}).then(res =>
+        //         res.view
+        //         .insert('myData', data)
+        //         .run()
+        //         );
+        //     }
+
 
        
 
-}
+
 
 
 
