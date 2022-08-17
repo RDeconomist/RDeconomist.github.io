@@ -1,0 +1,33 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "width": 150, "height": 60,
+
+    "config": {
+        "background":"#282d32",
+        "view": {
+          "stroke": "transparent"}},
+
+    "data": {
+        "name": "myData"
+    },
+    "mark": {"type":"circle", "color":"#E0E0E0"},
+    "encoding": {
+        "x": {
+            "field": "day", 
+            "type": "quantitative",
+            "axis": {
+                "title": null,
+                "grid": false,
+                "labelColor":"rgb(100,100,100)",
+                "tickColor":"rgb(100,100,100)"}},
+        "y": {
+            "field": "temperature", 
+            "type": "quantitative",
+            "axis": {
+                "title": null,
+                "grid": false,
+                "labelColor":"rgb(100,100,100)",
+                "tickColor":"rgb(100,100,100)"}}
+        }
+    }

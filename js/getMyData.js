@@ -9,7 +9,7 @@ async function getMyData() {
   
     // Get my Banks:
 
-    getMyBanks();
+    getMyPortfolio();
     getMyWaves();
     getMyNews();
     getMyWeather();

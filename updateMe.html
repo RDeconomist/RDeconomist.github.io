@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- START ANALYTICS -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- This stuff provided by Google from the Admin page of Analysics account -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP82FVH378"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JP82FVH378');
+    </script>
+    <!-- END ANALYTICS -->
+
+
+    <!-- SCREENS, FAVICONS ETC -->
+    <!--Meta stuff-->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!--Facebook meta - this comes up when you post a link to the site-->
+    <meta property="og:title" content="Update Me">
+    <meta property="og:description" content="Minimalist news, scraped by your browser">
+    <!-- <meta property="og:image" content="images/prices.PNG"> -->
+    <meta property="og:url" content="http://www.rapidcharts.io/updateMe">
+
+    <!--Favicon-->
+    <link rel="icon" href="icon-small.PNG">
+    <link rel="shortcut icon" href="icon.PNG" />
+    <link rel="apple-touch-icon" href="icon.PNG" />
+
+    <!--Title - this is the bit that comes up in the tab-->
+    <title>Update Me</title>
+    <!-- SCREENS, FAVICONS ETC -->
+    
+    
+    <!-- SCRIPTS TO LOAD FOR USE ON PAGE. -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Specific scripts, data getting pages that run here -->
+    <script type="text/javascript" src="js/getMyData.js"></script>
+    <script type="text/javascript" src="js/getMyPortfolio.js"></script>
+    <script type="text/javascript" src="js/getMyWaves.js"></script>
+    <script type="text/javascript" src="js/getMyNews.js"></script>
+    <script type="text/javascript" src="js/getMyWeather.js"></script>
+
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+    <!-- SCRIPTS TO LOAD FOR USE ON PAGE. -->
+
+
+    <!-- STYLE SHEETS -->
+    <link rel="stylesheet" href="css/dataGetter.css">
+    <!-- STYLE SHEETS-->
+
+</head>
+
+
+<body>
+
+    <!-- START THE GRID FOR WHOLE PAGE -->
+    <div class="grid">
+
+
+        <div class="gridItem" id="banks">
+            <p class="title">portfolio</p>
+            <div class="gridResult" id="tickerResult1"></div>
+            <div class="gridResult" id="tickerResult2"></div>           
+        </div>
+
+
+        <div class="gridItem" id="waves">
+            <p class="title">surfing</p>
+            <div class="gridResult" id="waveLocation"></div>
+            <div class="gridResult" id="swellDetails"></div>
+            <div class="gridResult" id="nearbySpots"></div>
+        </div>
+
+
+        <div class="gridItem news" id="news">
+            <p class="title">news</p>
+            <div class="gridResult" id="newsFT"></div>
+            <div class="gridResult" id="newsNYT"></div>
+            <div class="gridResult" id="newsGuardian"></div>
+        </div>
+
+
+        <div class="gridItem" id="">
+            <p class="title">weather</p>
+            <div class="gridResult" id="weather"></div>
+        </div>
+    <!-- END OF GRID -->
+    </div>
+
+    <div class="getter">
+        <button class="fetchButton" onclick="getMyData()">update</button>
+    </div>
+</body>
+</html>
