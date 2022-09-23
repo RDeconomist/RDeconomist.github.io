@@ -21,7 +21,7 @@ var c = canvas.getContext('2d');
 var sp1 = 5;
 var sp2 = 7;
 
-var n1 = 50;
+var n1 = 500;
 var n2 = 15;
 
 var w1 = 0.005;

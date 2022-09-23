@@ -1,2 +1,5 @@
 # RDeconomist.github.io
-Chart test site
+
+Site used to demonstrate Data Science and visualisation techniques. 
+
+Richard Davies
