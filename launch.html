@@ -39,8 +39,10 @@
 
 <!--Main Stylesheet-->
 <link rel="stylesheet" href="css/main2.css">
-<link rel="stylesheet" href="css/crypto.css">
+<link rel="stylesheet" href="css/covid_live.css">
 <link rel="stylesheet" href="css/preload.css">
+<link rel="stylesheet" href="css/crypto.css">
+<link rel="stylesheet" href="css/firstPage.css">
 
 <!--Code to allow Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
@@ -97,14 +99,15 @@
 <div class="wrap">
   <h1>rapid<span style="color: #ff9a00">charts</span></h1>
   <span style="display:block; height: 20px;"></span>
-  <p class="rubric-launch">Live and intereactive charts. From Covid to surfing, find your data dashboard here.</p>
+  <p class="rubric-launch">Live and intereactive charts. From inflation to Covid, find your data dashboard here.</p>
     <span style="display:block; height: 5px;"></span>
 
   <!-- topics sub heading clickable links -->
   <p>
+    <a class="dashboardButton" href="inflation">Inflation</a>
     <a class="dashboardButton" href="covidUK">Covid</a>
     <a class="dashboardButton" href="crypto">Crypto</a> 
-    <a class="dashboardButton" href="inflation">Prices</a> 
+ 
     <a class="dashboardButton" href="jobs">Jobs</a>
     <a class="dashboardButton" href="gdp">GDP</a>
     <a class="dashboardButton" href="environment">Environment</a>
@@ -128,14 +131,10 @@
 
 
 
-  <!--Begin Grid-->
+<!--Begin first Grid-->
 <div class="grid_items">
-    <div class="grid_item" id="firstVis">
-      <script>
-        var openingVis = "charts/covid/chartCovidLiveUKCitiesCases.json";
-        vegaEmbed('#firstVis', openingVis, {"actions":false});
-      </script>
-    </div>
+    <div class="grid_item" id="firstVis"></div>
+    <div class="grid_item" id="secondVis"></div>
 </div>
 
 
@@ -143,21 +142,11 @@
 <span style="display:block; height: 10px;"></span>
 
 <div class="wrap">
-  <p class="rubric-launch">The charts here auto-update daily. You can use the drop-down box above to compare locations. The latest case numbers for major cities are shown in the live chart below. More coronavirus analysis is <a class="textLink" href="covidUK"> here</a>.</p> 
+  <p class="rubric-launch">The charts here auto-update when new data are released. You can use the sliders and drop-down box to investigate the data.</p> 
 </div>
 
 <!-- White space across the page --> 
 <span style="display:block; height: 10px;"></span>
-
-  <!--Begin Grid-->
-  <div class="grid_items">
-    <div class="grid_item" id="secondVis">
-      <script>
-        var Vis2 = "charts/covid/chartCovidLiveUKCitiesLatestData.json";
-        vegaEmbed('#secondVis', Vis2, {"actions":false});
-      </script>
-    </div>
-</div>
 
 
 <!-- White space across the page --> 
@@ -165,8 +154,16 @@
 
 
 
+<!-- SCRIPT FOR THE CHARTS -->
+<script>
+  var Vis1 = "charts/ONSinflation/chartINF1_dark.json";
+  //var Vis2 = "charts/covid/chartCovidLiveUKCitiesLatestData.json";
+  var Vis2 = "charts/covid/chartCovidLiveUKCitiesCases.json";
 
-
+  vegaEmbed('#firstVis', Vis1, {"actions":false});
+  vegaEmbed('#secondVis', Vis2, {"actions":false});
+</script>
+<!-- SCRIPT FOR THE CHARTS -->
 
 
 <!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->

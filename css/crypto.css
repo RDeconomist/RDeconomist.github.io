@@ -1,4 +1,10 @@
 
+/* RICHARD DAVIES
+RAPID CHARTS
+DATA SCIENCE FOR ECONOMISTS
+CSS FOR DARK THEMED PAGES */
+
+
 body{
     /* background-color: rgb(0, 0, 40); */
     background-color: rgb(21, 32, 43);
@@ -30,8 +36,6 @@ p  {
 }
 
 
-
-
 .grid_items > div:nth-child(3n + 2) {
     background-color: #122b39;
   }
@@ -51,6 +55,31 @@ p  {
 .textLink a:hover {
     color: rgb(255, 173, 31) !important;
 }
+
+/* unvisited link */
+a:link {
+    color: #c5bdbd;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #c5bdbd;
+    text-decoration: none;
+    border-color: rgb(255, 173, 31);
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+    text-decoration: none;
+  }
 
 
 
