@@ -64,7 +64,7 @@ a:link {
   
   /* visited link */
   a:visited {
-    color: black;
+    color: #c5bdbd;
     text-decoration: none;
   }
   
