@@ -14,7 +14,7 @@
   "width": 300, 
   "height": 300,
   
-  "data": {"url": "https://raw.githubusercontent.com/RDeconomist/prices/master/newSelectedItems_1.csv"},
+  "data": {"url": "https://raw.githubusercontent.com/RDeconomist/prices/master/newItems.csv"},
 
     "transform": [
       {"filter": {"selection": "chooseItem"}},
