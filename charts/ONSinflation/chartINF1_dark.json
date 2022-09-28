@@ -41,7 +41,7 @@
     {"filter": "datum.year<=maxYear"}],
 
   "params": [    
-    {"name":"minYear", "value":2015,
+    {"name":"minYear", "value":1988,
        "bind":{
          "input": "range",
          "min": 1988, 
