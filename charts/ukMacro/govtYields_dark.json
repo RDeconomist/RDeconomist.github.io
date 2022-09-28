@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+   
+"title": {
+  "text": "Borrowing costs - UK government",
+  "subtitle": ["Spot Curve, Nominal, Source:BoE", ""],
+  "subtitleFontStyle":"italic",
+  "subtitleFontSize":10,
+  "anchor": "start",
+  "color": "#cbc7cf",
+  "subtitleColor":"#cbc7cf"},
+
+  "width":280,
+  "height":300,
+
+"config": {
+  "background":"#122b39",
+  "view": {"stroke": "transparent"}},
+  
+    "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/ukYieldCurve.csv"
+  },
+
+  "transform": [  
+    {"filter": "datum.five!=0"}
+    ],
+  
+  "repeat": {"layer": ["one", "ten"]},
+ 
+  "spec": {
+      
+      "height": 300,
+      "width": 240,
+
+      "mark": {
+          "type":"line",
+          "strokeWidth":2},    
+
+      "encoding": {
+          "x": {
+          "field": "Date2",
+          "type": "temporal",
+          "title": null,
+          "axis": {
+          "grid": false,
+          "labelColor":"#cbc7cf"}},
+  
+          "y": {
+          "field": {"repeat": "layer"},               
+          "type": "quantitative",
+          "title":null,
+          "axis": {
+              "grid": false,
+              "labelColor":"#cbc7cf"}},
+  
+          "color": {
+              "datum": {"repeat": "layer"},
+              "legend":{
+                "labelExpr": "{'one': '1-year', 'ten': '10-year'}[datum.label]",
+                "orient": "top-left",
+                "labelColor":"#cbc7cf",
+                "title":"Maturity",
+                "titleColor":"#cbc7cf"
+              },
+              "scale": 
+                {"range": ["red", "orange"]}}
+        } 
+    }
+}
