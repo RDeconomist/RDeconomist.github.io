@@ -81,7 +81,7 @@
                 "labelExpr": "{'us10y': 'US', 'y10': 'UK'}[datum.label]",
                 "orient": "top-right",
                 "labelColor":"#cbc7cf",
-                "title":"Maturity",
+                "title":"Country",
                 "titleColor":"#cbc7cf"}
               } 
           }
