@@ -10,10 +10,7 @@
   "color": "#cbc7cf",
   "subtitleColor":"#cbc7cf"},
 
-  "width":300,
-  "height":300,
-
-"config": {
+  "config": {
   "background":"#122b39",
   "view": {"stroke": "transparent"}},
   
@@ -22,10 +19,34 @@
   },
 
   "transform": [  
-    {"filter": "datum.five!=0"}
-    ],
+    {"calculate":"year(datum.Date)", "as": "year"},
   
-  "repeat": {"layer": ["one", "ten"]},
+    {"filter": "datum.year>=minYear"},
+    {"filter": "datum.year<=maxYear"},
+    
+    {"filter": "datum.y1!=0"}
+    ],
+
+  "params": [    
+    {"name":"minYear", "value":1979,
+       "bind":{
+         "input": "range",
+         "min": 1979, 
+         "max": 2022, 
+         "step": 1,
+         "name": "Start year:"}
+    },
+
+    {"name":"maxYear", "value":2022,
+       "bind":{
+         "input": "range",
+         "min": 1979, 
+         "max": 2022, 
+         "step": 1,
+         "name": "End year:"}}],
+
+  
+  "repeat": {"layer": ["y1", "y10"]},
  
   "spec": {
       
@@ -38,7 +59,7 @@
 
       "encoding": {
           "x": {
-          "field": "Date2",
+          "field": "Date",
           "type": "temporal",
           "title": null,
           "axis": {
@@ -55,15 +76,14 @@
   
           "color": {
               "datum": {"repeat": "layer"},
+              "scale": {"range": ["red", "orange"]},
               "legend":{
-                "labelExpr": "{'one': '1-year', 'ten': '10-year'}[datum.label]",
-                "orient": "top-left",
+                "labelExpr": "{'y1': '1-year', 'y10': '10-year'}[datum.label]",
+                "orient": "top-right",
                 "labelColor":"#cbc7cf",
                 "title":"Maturity",
-                "titleColor":"#cbc7cf"
-              },
-              "scale": 
-                {"range": ["red", "orange"]}}
-        } 
-    }
+                "titleColor":"#cbc7cf"}
+              } 
+          }
+        }
 }
