@@ -35,7 +35,7 @@
         "grid":true,
         "gridColor":"aliceblue",
         "gridWidth":0.5,
-        "gridDash":1,
+        "gridDash":[1],
         "labelColor":"#cbc7cf"
         },"title":null}}
       },
