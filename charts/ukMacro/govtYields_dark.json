@@ -28,7 +28,7 @@
     ],
 
   "params": [    
-    {"name":"minYear", "value":1979,
+    {"name":"minYear", "value":2005,
        "bind":{
          "input": "range",
          "min": 1979, 
