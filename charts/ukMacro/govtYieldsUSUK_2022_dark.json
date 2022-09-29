@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+   
+"title": {
+  "text": "Borrowing costs - the UK effect",
+  "subtitle": ["Spread, UK vs US 10y bonds. Source: FRED and BoE", ""],
+  "subtitleFontStyle":"italic",
+  "subtitleFontSize":10,
+  "anchor": "start",
+  "color": "#cbc7cf",
+  "subtitleColor":"#cbc7cf"},
+
+  "config": {
+  "background":"#122b39",
+  "view": {"stroke": "transparent"}},
+  
+    "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/ukYieldCurve.csv"
+  },
+
+  "transform": [  
+    {"calculate":"year(datum.Date)", "as": "year"},
+    {"calculate":"month(datum.Date)", "as": "month"},
+    {"calculate":"datum.y10-datum.us10y", "as": "spread"},
+  
+    {"filter": "datum.year>2021"},
+    {"filter": "datum.month>4"},
+    
+    {"filter": "datum.y1!=0"}
+    ],
+
+
+      
+      "height": 300,
+      "width": 300,
+
+      "mark": {
+          "type":"line",
+          "strokeWidth":2,
+          "color":"orangered"},    
+
+      "encoding": {
+          "x": {
+          "field": "Date",
+          "type": "temporal",
+          "title": null,
+          "axis": {
+          "grid": false,
+          "labelColor":"#cbc7cf"}},
+  
+          "y": {
+          "field": "spread",          
+          "type": "quantitative",
+          "title":null,
+          "axis": {
+              "grid": false,
+              "labelColor":"#cbc7cf"}}
+        
+              } 
+          }
+        
