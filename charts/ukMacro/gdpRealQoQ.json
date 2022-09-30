@@ -1,7 +1,7 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
   "title": {
-    "text": "GDP - quarterly growth rates",
+    "text": "GDP - quarterly growth rates (1955-2022)",
     "subtitle": ["Chained volume measure, Q-o-Q rate. Source: ONS (IHYQ)", ""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,

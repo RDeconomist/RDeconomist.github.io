@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
    
 "title": {
-  "text": "Borrowing costs - UK government",
+  "text": "Borrowing costs - UK government (1979-2022)",
   "subtitle": ["Spot Curve, Nominal, Source:BoE", ""],
   "subtitleFontStyle":"italic",
   "subtitleFontSize":10,

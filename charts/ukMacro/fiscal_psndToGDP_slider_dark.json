@@ -1,7 +1,7 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
   "title": {
-    "text": "Public Sector Debt - UK",
+    "text": "Public Sector Debt (1993-2022)",
     "subtitle": ["Net Debt, % of GDP. Source: ONS (HS6X)", ""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,

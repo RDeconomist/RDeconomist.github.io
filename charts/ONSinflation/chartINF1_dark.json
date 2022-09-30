@@ -1,7 +1,7 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
   "title": {
-    "text": "Inflation - UK",
+    "text": "Inflation (1988-2022)",
     "subtitle": ["CPI, % change over 12 months", ""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,

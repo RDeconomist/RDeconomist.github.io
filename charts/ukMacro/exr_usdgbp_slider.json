@@ -2,7 +2,7 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
   "title": {
-    "text": "Sterling exchange rate",
+    "text": "Sterling to Dollar exchange rate (1975-2022)",
     "subtitle": ["USD into GBP, BoE Series: XUDLUSS",""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
