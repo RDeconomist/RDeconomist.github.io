@@ -85,4 +85,4 @@
       {"field": "downRank", "type": "quantitative", "title": "Down Rank", "format": ".0f"}
     ]
 }
-}
+} 
