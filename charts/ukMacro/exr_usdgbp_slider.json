@@ -31,7 +31,7 @@
 
 
   "params": [    
-    {"name":"minYear", "value":2016,
+    {"name":"minYear", "value":1975,
        "bind":{
          "input": "range",
          "min": 1975, 

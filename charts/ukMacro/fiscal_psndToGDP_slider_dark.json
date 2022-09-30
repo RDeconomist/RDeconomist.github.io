@@ -1,8 +1,8 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
   "title": {
-    "text": "Inflation - UK",
-    "subtitle": ["CPI, % change over 12 months", ""],
+    "text": "Public Sector Debt - UK",
+    "subtitle": ["Net Debt, % of GDP. Source: ONS (HS6X)", ""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -18,7 +18,7 @@
         "stroke": "transparent"}},
 
   "data": {
-      "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/d7g7/dataset/mm23/data",
+      "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/hf6x/dataset/pusf/data",
       "format": {"type":"json", "property": "months"}},
 
   "transform": [
@@ -41,10 +41,10 @@
     {"filter": "datum.year<=maxYear"}],
 
   "params": [    
-    {"name":"minYear", "value":1988,
+    {"name":"minYear", "value":1993,
        "bind":{
          "input": "range",
-         "min": 1988, 
+         "min": 1993, 
          "max": 2022, 
          "step": 1,
          "name": "Start year:"}
