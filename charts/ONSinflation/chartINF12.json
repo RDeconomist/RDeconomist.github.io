@@ -13,7 +13,7 @@
   },
 
   
-  "data": {"url": "https://raw.githubusercontent.com/RDeconomist/prices/master/newSelectedItems_2.csv"},
+  "data": {"url": "https://raw.githubusercontent.com/RDeconomist/prices/master/newItems_2.csv"},
 
     "transform": [
     {
@@ -35,13 +35,13 @@
   "encoding": {
 
     "facet":{
-    "field":"itemname",
+    "field":"itemName",
     "columns": 2,
     "title":null
   },
   
     "x": {
-      "field": "newdate",
+      "field": "newDate",
       "type": "temporal",
       "title": null
     },
