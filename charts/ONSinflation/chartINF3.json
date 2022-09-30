@@ -1,5 +1,5 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
   "title": {
     "text": "Price distributions - pick an item",
@@ -29,15 +29,15 @@
 "selection": {
     "chooseItem": {
       "type": "single",
-      "init": {"itemname": "Pub meal"},
-      "fields": ["itemname"],
+      "init": {"itemName": "Pub Meal"},
+      "fields": ["itemName"],
       "bind": {
         "input": "select",
         "options": [
           "Cigarettes",
           "Lettuce",
           "Men's socks",
-          "Pub meal"        
+          "Pub Meal"        
         ],
         "name": "Pick an item:"
       }
@@ -53,7 +53,7 @@
   
   "encoding": {  
     "x": {
-      "field": "newdate",
+      "field": "newDate",
       "type": "temporal",
       "title": null
     },
