@@ -1,0 +1,80 @@
+
+/* ------------------------------------------------------------------------------
+	START Typography
+-------------------------------------------------------------------------------*/
+
+@import url(https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
+
+h1 {
+	font-family: "Catamaran";
+	font-variant: small-caps;
+	font-size: 60px;
+	color: rgb(0,47,167);
+	font-weight: 900;
+	font-kerning: 50;
+	margin: 0px 0px 30px 0px  ;
+	height: 40px;
+}
+
+
+p {
+	font-size: 16px;
+	margin: 5px 5px;
+	line-height: 22.4px;
+	color: #323232; 
+}
+
+/* ------------------------------------------------------------------------------
+	END Typography
+-------------------------------------------------------------------------------*/
+
+
+/* ------------------------------------------------------------------------------
+	Grid stuff
+-------------------------------------------------------------------------------*/
+
+.grid_items {
+  padding: 2px;
+  display: grid;
+  grid-template-columns: 100%;
+  max-width: 800px; 
+  margin: 0 auto 0 auto !important;
+  padding: 0 5 0 5; 
+  grid-column-gap: 5px;
+  grid-row-gap: 20px;
+}
+
+.grid_items > div {
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 10px;
+  width: 720px;
+  margin:auto;
+}
+
+
+body {
+    background-color: #ebe5e5;
+   }
+  
+  .rubric-launch{
+    color:#b3abab
+  }
+  
+
+.rubric {
+    text-align: left;
+  }
+
+.wrap {
+    grid-template-columns: 100%;
+    max-width: 360px; 
+    margin: 0 auto 0 auto !important;
+	padding: 0 5 0 5; 
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    text-align: center;
+  }
+
+
