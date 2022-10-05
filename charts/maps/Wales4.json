@@ -1,0 +1,55 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text": "Wales Map",
+    "subtitle":["Local authorities by starting letter of place name",""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  
+  "width": 300,
+  "height": 300,
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/wales.json",
+        "format": {
+          "type": "topojson",
+          "feature": "wards"}
+      },
+
+  "transform": [
+    {"calculate": "slice(datum.properties.WD13NM, 0, 1)", "as": "name"},
+    {"Xfilter":{"field": "name", "oneOf":["L"]}}
+  ],    
+  
+  "mark": {
+      "type": "arc",
+      "innerRadius":100},
+  
+  "encoding": {
+
+    "theta":{
+      "aggregate":"count",
+      "field":"name"
+    },
+    
+  "color": {
+   "field": "name",
+   "type": "nominal",
+    "scale": {"scheme": "inferno"},
+    "legend": {
+      "title": "Letter",
+      "columns":2},
+    "sort":{
+      "field": "name", 
+      "order":"descending",
+      "op":"count"}},
+
+    "order": {
+      "aggregate":"count",
+      "field": "_count", 
+      "type": "quantitative", 
+      "sort": "descending"}}
+}
