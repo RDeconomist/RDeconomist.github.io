@@ -65,6 +65,7 @@
 <!-- START - Grid of divs that will house the charts-->
 <div class="grid_items">
     <div class="grid_item" id="map1"></div>
+    <div class="grid_item" id="map2"></div>
 
   
   </div>
@@ -118,8 +119,10 @@
 <script>
     // Set the charts that we want on the page as variables, linking them to JSON files:
     var map1 = "charts/maps/WorldMap1.json";
+    var map2 = "charts/maps/Wales1.json";
 
     vegaEmbed('#map1', map1, {"actions": false});
+    vegaEmbed('#map2', map2, {"actions": false});
  
   
   

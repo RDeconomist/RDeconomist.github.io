@@ -1,0 +1,29 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text": "Wales Map",
+    "subtitle":["Mercator Projection",""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  
+  "width": 500,
+  "height": 500,
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/wales.json",
+        "format": {
+          "type": "topojson",
+          "feature": "wards"}
+      },
+
+  "projection": {
+    "type": "mercator"},
+    "mark": {
+      "type": "geoshape",
+      "fill": "lightgray",
+      "stroke": "white",
+      "strokeWidth":0.1}
+}
