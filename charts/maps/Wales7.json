@@ -1,0 +1,63 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text": "Wales Map",
+    "subtitle":["Local authorities by starting letter of place name",""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "middle",
+    "color": "rgb(200, 200, 200)",
+    "subtitleColor": "rgb(200, 200, 200)"
+  },
+
+    "config": {
+    "background":"rgb(15, 15, 15)",
+    "view": {
+      "stroke": "transparent"}},
+ 
+  
+  
+  "width": 300,
+  "height": 300,
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/wales.json",
+        "format": {
+          "type": "topojson",
+          "feature": "wards"}
+      },
+
+  "transform": [
+    {"calculate": "slice(datum.properties.WD13NM, 0, 1)", "as": "name"},
+    {"calculate": "length(datum.properties.WD13NM)", "as": "nameLength"},
+    {"fxilter":{"field": "name", "oneOf":["L", "C", "P", "B", "T"]}}
+  ],    
+
+  "projection": {"type": "mercator"},
+  
+  "mark": {
+      "type": "geoshape",
+      "stroke": "white",
+      "strokeWidth":0.1},
+  
+  "encoding": {
+    "color": {
+      "field": "nameLength",
+      "type": "quantitative",
+      "scale": {"scheme": "turbo"},
+      "legend": {
+        "title": "Letter",
+        "columns":1,
+        "labelColor":"rgb(200,200,200)",
+        "titleColor":"rgb(200,200,200)"},
+      "sort":{
+        "field": "name", 
+        "order":"descending",
+        "op":"count"}},
+    
+    "tooltip":{
+      "field":"properties.WD13NM",
+      "type": "nominal"
+    }
+  }
+}
