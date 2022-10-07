@@ -143,6 +143,8 @@
     <div class="grid_item" id="vis8"></div>
     <div class="grid_item" id="vis9"></div>
     <div class="grid_item" id="vis10"></div>
+    <div class="grid_item" id="vis11"></div>
+    <div class="grid_item" id="vis12"></div>
 </div>
 
 
@@ -160,7 +162,7 @@
 <!-- White space across the page --> 
   <span style="display:block; height: 20px;"></span>
 
-
+ 
 
 <!-- SCRIPT FOR THE CHARTS -->
 <script>
@@ -174,6 +176,8 @@
   var Vis8 = "charts/ukMacro/govtYieldsUSUKGer_2022_dark.json";
   var Vis9 = "charts/ukMacro/bankRate.json";
   var Vis10 = "charts/ukMacro/gdpRealQoQ.json";
+  var Vis11 = "charts/ukMacro/BoE_liabilities.json";
+  var Vis12 = "charts/politics/chart_approvalRatingsUK.json"
   //var Vis2 = "charts/covid/chartCovidLiveUKCitiesLatestData.json";
   //var Vis2 = "charts/covid/chartCovidLiveUKCitiesCases.json";
   
@@ -187,6 +191,8 @@
   vegaEmbed('#vis8', Vis8, {"actions":false});
   vegaEmbed('#vis9', Vis9, {"actions":false});
   vegaEmbed('#vis10', Vis10, {"actions":false});
+  vegaEmbed('#vis11', Vis11, {"actions":false});
+  vegaEmbed('#vis12', Vis12, {"actions":false});
 </script>
 <!-- SCRIPT FOR THE CHARTS -->
 
