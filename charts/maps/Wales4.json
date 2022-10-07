@@ -2,54 +2,42 @@
 
   "title": {
     "text": "Wales Map",
-    "subtitle":["Local authorities by starting letter of place name",""],
+    "subtitle":["Wards - population",""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "middle",
-    "color": "black"
-  },
+    "color": "black"},
+
+  "config": {
+    "background":"white",
+    "view": {"stroke": "transparent"}},
   
   "width": 300,
   "height": 300,
   
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/wales.json",
-        "format": {
-          "type": "topojson",
-          "feature": "wards"}
-      },
+        "format": {"type": "topojson", "feature": "wards"}},
 
-  "transform": [
-    {"calculate": "slice(datum.properties.WD13NM, 0, 1)", "as": "name"},
-    {"Xfilter":{"field": "name", "oneOf":["L"]}}
-  ],    
+  "transform": [{
+    "lookup": "properties.WD13NM",
+    "from": {
+      "key": "wardName",
+      "fields": ["Population", "Lacode"],
+      "data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/walesPopulationWards.csv"}}
+      }],
+
+  "projection": {"type": "mercator"},
   
   "mark": {
-      "type": "arc",
-      "innerRadius":100},
+      "type": "geoshape",
+      "stroke": "white",
+      "strokeWidth":0.1},
   
-  "encoding": {
-
-    "theta":{
-      "aggregate":"count",
-      "field":"name"
-    },
-    
-  "color": {
-   "field": "name",
-   "type": "nominal",
-    "scale": {"scheme": "inferno"},
-    "legend": {
-      "title": "Letter",
-      "columns":2},
-    "sort":{
-      "field": "name", 
-      "order":"descending",
-      "op":"count"}},
-
-    "order": {
-      "aggregate":"count",
-      "field": "_count", 
-      "type": "quantitative", 
-      "sort": "descending"}}
+  "encoding":{
+    "color":{
+      "field":"Population",
+      "type": "quantitative",
+      "scale":{"scheme":"lightmulti"}}
+    }
 }

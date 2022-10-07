@@ -2,15 +2,19 @@
 
   "title": {
     "text": "Wales Map",
-    "subtitle":["Mercator Projection",""],
+    "subtitle":["Local authorities by starting letter of place name",""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "middle",
     "color": "black"
   },
+
+  "config": {
+    "background":"white",
+    "view": {"stroke": "transparent"}},
   
-  "width": 500,
-  "height": 500,
+  "width": 300,
+  "height": 300,
   
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/wales.json",
@@ -18,6 +22,10 @@
           "type": "topojson",
           "feature": "wards"}
       },
+
+  "transform": [
+    {"calculate": "slice(datum.properties.WD13NM, 0, 1)", "as": "name"}
+  ],    
 
   "projection": {"type": "mercator"},
   
@@ -28,11 +36,12 @@
   
   "encoding": {
     "color": {
-     "field": "id",
+     "field": "name",
      "type": "nominal",
-     "scale": {"scheme": "Oranges"},
+     "scale": {"scheme": "inferno"},
        "legend": {
-        "title": "My Scale"
+        "title": "Letter",
+        "columns":2
     }
   }
 }

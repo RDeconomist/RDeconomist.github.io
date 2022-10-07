@@ -8,10 +8,6 @@
     "anchor": "middle",
     "color": "black"
   },
-
-  "config": {
-    "background":"white",
-    "view": {"stroke": "transparent"}},
   
   "width": 300,
   "height": 300,
@@ -25,27 +21,35 @@
 
   "transform": [
     {"calculate": "slice(datum.properties.WD13NM, 0, 1)", "as": "name"},
-    {"filter":{"field": "name", "oneOf":["L", "C", "P", "B", "T"]}}
+    {"Xfilter":{"field": "name", "oneOf":["L"]}}
   ],    
-
-  "projection": {"type": "mercator"},
   
   "mark": {
-      "type": "geoshape",
-      "stroke": "white",
-      "strokeWidth":0.1},
+      "type": "arc",
+      "innerRadius":100},
   
   "encoding": {
-    "color": {
+
+    "theta":{
+      "aggregate":"count",
+      "field":"name"
+    },
+    
+  "color": {
    "field": "name",
    "type": "nominal",
     "scale": {"scheme": "inferno"},
     "legend": {
       "title": "Letter",
-      "columns":1},
+      "columns":2},
     "sort":{
       "field": "name", 
       "order":"descending",
-      "op":"count"}}
-}
+      "op":"count"}},
+
+    "order": {
+      "aggregate":"count",
+      "field": "_count", 
+      "type": "quantitative", 
+      "sort": "descending"}}
 }

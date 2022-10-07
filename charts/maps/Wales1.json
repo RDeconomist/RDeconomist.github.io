@@ -7,9 +7,13 @@
     "subtitleFontSize":10,
     "anchor": "middle",
     "color": "black"},
+
+  "config": {
+      "background":"white",
+      "view": {"stroke": "transparent"}},
   
-  "width": 500,
-  "height": 500,
+  "width": 300,
+  "height": 300,
   
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/wales.json",

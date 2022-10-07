@@ -56,22 +56,50 @@
 <!-- heading for page-->
 <div class="wrap">
   <h1>rapid<span style="color: #ff0000">maps</span></h1>
-  <span style="display:block; height: 10px;"></span>
-  <p id="rubric" class="rubric">An introduction to mapping.</p>
-  <span style="display:block; height: 10px;"></span>
+  <span style="display:block; height: 30px;"></span>
+ 
+  <p id="rubric" class="rubric">A short guide to mapping.</p>
+  <span style="display:block; height: 5px;"></span>
+  <p id="rubric" class="rubric">The maps of Wales are a useful tutorial in the various steps you will take when using geographic data.</p>
 </div>
 
 
-<!-- START - Grid of divs that will house the charts-->
-<div class="grid_items">
-    <div class="grid_item" id="map1"></div>
-    <div class="grid_item" id="map2"></div>
-    <div class="grid_item" id="map3"></div>
-    <div class="grid_item" id="map4"></div>
-
-  
-  </div>
+<!-- START - Container that will house everything-->
+<div class="mapContainer">
+    <div class="map" id="map1"></div>
+    <div class="map" id="map2"></div>
+    <div class="map" id="map3"></div>
+    <div class="map" id="map4"></div>
+</div>
 <!-- END - Grid of divs that will house the charts-->  
+
+<!-- heading for page-->
+<div class="wrap">
+  
+  <p id="rubric" class="rubric">
+    <ul>
+      <li><b> Map 1.</b> The first step is to locate a JSON file that contains the coordinates needed to draw the map. This is then loaded in the usual way, either directly from an API, or saved to a hosting service such as GitHub and delivered to your page as a raw file.</li>
+      <span style="display:block; height: 10px;"></span> 
+      <li><b> Map 2.</b> The second map adds colour. In many of the GEOJSON files that you access there may be interesting data that you wish to use to colour your chart. To do this you need to access those value and use this field to supply the colour to your graph. In this teaching example, I am using the first name of the place to add colour.</li>
+      <span style="display:block; height: 10px;"></span> 
+      <li><b> Map 3.</b> The third map show how you can filter geographic data, to exclude areas that you do not want to show. In this case I ranked the place names and only want to include the top 5. The other areas of the map are not shown at all.</li>
+      <span style="display:block; height: 10px;"></span>
+      <li><b> Map 4.</b> The fourth map forms the basis of most maps. It combines the JSON that specifies the boundaries of each of the wards, and then matches these using “lookup”, with the values in a csv file of population. </li>
+  </ul>  
+  </p>
+</div>
+
+<div class="mapContainer">
+   <div class="mapBig" id="map5"></div>
+</div>
+
+
+
+
+
+
+
+
 
 <span style="display:block; height: 40px;"></span>
 <!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
@@ -120,16 +148,22 @@
 
 <script>
     // Set the charts that we want on the page as variables, linking them to JSON files:
-    var map1 = "charts/maps/WorldMap1.json";
-    var map2 = "charts/maps/Wales1.json";
+    
+    var map1 = "charts/maps/Wales1.json";
+    var map2 = "charts/maps/Wales2.json";
     var map3 = "charts/maps/Wales3.json";
-    var map4 = "charts/maps/Wales_pop.json";
+    var map4 = "charts/maps/Wales4.json";
+
+    var map5 = "charts/maps/WorldMap1.json";
 
     vegaEmbed('#map1', map1, {"actions": false});
     vegaEmbed('#map2', map2, {"actions": false});
     vegaEmbed('#map3', map3, {"actions": false});
     vegaEmbed('#map4', map4, {"actions": false});
- 
+    vegaEmbed('#map5', map5, {"actions": false});
+
+
+    
   
   
 </script>

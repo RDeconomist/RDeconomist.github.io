@@ -17,12 +17,28 @@ h1 {
 	height: 40px;
 }
 
+.wrap {
+  grid-template-columns: 100%;
+  max-width: 820px; 
+  margin: 0 auto 0 auto !important;
+  padding: 0 5 0 5; 
+  grid-column-gap: 10px;
+  grid-row-gap: 40px;
+}
+
 
 p {
 	font-size: 16px;
 	margin: 5px 5px;
 	line-height: 22.4px;
 	color: #323232; 
+}
+
+ul, li {
+  justify-content: left;
+  margin: 10;
+  padding: 20;
+
 }
 
 /* ------------------------------------------------------------------------------
@@ -34,28 +50,46 @@ p {
 	Grid stuff
 -------------------------------------------------------------------------------*/
 
-.grid_items {
-  padding: 2px;
-  display: grid;
-  grid-template-columns: 100%;
-  max-width: 800px; 
-  margin: 0 auto 0 auto !important;
-  padding: 0 5 0 5; 
-  grid-column-gap: 5px;
-  grid-row-gap: 20px;
+.mapContainer {
+  display: block;
+  margin: auto;
+ 
+  padding: 20px;
+
+  background-color: rgb(220, 220, 220);
+  border-radius: 10px;
+  
+  max-width: 820px; 
+  
 }
 
-.grid_items > div {
+.map {
   background-color: #ffffff;
-  padding: 5px;
+
+  display:inline-block;
+  justify-content: center;
+  
   border-radius: 10px;
-  width: 720px;
-  margin:auto;
+  
+  padding: 5px;
+  margin:5px;
 }
+
+.mapBig {
+  
+  background-color: #ffffff;
+  
+  border-radius: 20px;
+  
+  padding: 5px;
+  margin:40px
+
+}
+
 
 
 body {
-    background-color: #ebe5e5;
+    background-color: rgba(230,230,230);
    }
   
   .rubric-launch{
@@ -67,14 +101,6 @@ body {
     text-align: left;
   }
 
-.wrap {
-    grid-template-columns: 100%;
-    max-width: 360px; 
-    margin: 0 auto 0 auto !important;
-	padding: 0 5 0 5; 
-    grid-column-gap: 10px;
-    grid-row-gap: 40px;
-    text-align: center;
-  }
+
 
 
