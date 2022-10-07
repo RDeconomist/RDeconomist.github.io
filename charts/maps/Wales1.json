@@ -6,22 +6,18 @@
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "middle",
-    "color": "black"
-  },
+    "color": "black"},
   
   "width": 500,
   "height": 500,
   
   "data": {
     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/wales.json",
-        "format": {
-          "type": "topojson",
-          "feature": "wards"}
-      },
+        "format": {"type": "topojson", "feature": "wards"}},
 
-  "projection": {
-    "type": "mercator"},
-    "mark": {
+  "projection": {"type": "mercator"},
+  
+  "mark": {
       "type": "geoshape",
       "fill": "lightgray",
       "stroke": "white",
