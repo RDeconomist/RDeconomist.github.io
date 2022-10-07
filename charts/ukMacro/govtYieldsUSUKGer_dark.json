@@ -2,8 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
    
 "title": {
-  "text": "Borrowing costs - Britain vs America",
-  "subtitle": ["Yields, 10y bonds. Source: FRED and BoE", ""],
+  "text": "Borrowing costs - UK, US, Germany",
+  "subtitle": ["Yields, 10y bonds. Source: FRED, BoE, Bundesbank", ""],
   "subtitleFontStyle":"italic",
   "subtitleFontSize":10,
   "anchor": "start",
