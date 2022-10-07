@@ -7,6 +7,10 @@
     "subtitleFontSize":10,
     "anchor": "middle",
     "color": "black"},
+
+  "config": {
+    "background":"white",
+    "view": {"stroke": "transparent"}},
   
   "width": 300,
   "height": 300,
