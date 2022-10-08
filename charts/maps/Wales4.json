@@ -39,7 +39,7 @@
       "field":"Population",
       "type": "quantitative",
       "scale":{"scheme":"lightmulti"},
-      "orient":{"top-left"}
+      "legend":{"orient":"top-left"}
     }
     }
 }
