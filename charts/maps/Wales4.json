@@ -38,6 +38,8 @@
     "color":{
       "field":"Population",
       "type": "quantitative",
-      "scale":{"scheme":"lightmulti"}}
+      "scale":{"scheme":"lightmulti"},
+      "orient":{"top-left"}
+    }
     }
 }
