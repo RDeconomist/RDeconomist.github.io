@@ -40,8 +40,9 @@
      "type": "nominal",
      "scale": {"scheme": "inferno"},
        "legend": {
-        "title": "Letter",
-        "columns":2
+        "title": null,
+        "columns":2,
+        "orient":"top-left"
     }
   }
 }
