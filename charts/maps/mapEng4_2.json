@@ -2,7 +2,7 @@
 
   "title": {
     "text": "England: house prices",
-    "subtitle":["By electoral ward, Source: ONS",""],
+    "subtitle":["Median price, by electoral ward, Source: ONS",""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "middle",
