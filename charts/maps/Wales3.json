@@ -42,7 +42,8 @@
     "scale": {"scheme": "inferno"},
     "legend": {
       "title": "Letter",
-      "columns":1},
+      "columns":1,
+      "orient":"top-left"},
     "sort":{
       "field": "name", 
       "order":"descending",
