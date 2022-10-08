@@ -8,8 +8,12 @@
     "anchor": "middle",
     "color": "black"
   },
+
+  "config": {
+    "background":"white",
+    "view": {"stroke": "transparent"}},
   
-  "width": 700,
+  "width": 610,
   "height": 500,
   
   "data": {
