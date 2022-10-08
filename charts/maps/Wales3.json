@@ -17,7 +17,7 @@
   "height": 300,
   
   "data": {
-    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/wales.json",
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/geoWalWards.json",
         "format": {
           "type": "topojson",
           "feature": "wards"}

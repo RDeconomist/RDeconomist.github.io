@@ -17,7 +17,7 @@
   "height": 300,
   
   "data": {
-    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/geoWalWards.json",
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/geoEngWards.json",
         "format": {
           "type": "topojson",
           "feature": "wards"}

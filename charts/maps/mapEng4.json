@@ -1,8 +1,8 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
   "title": {
-    "text": "Wales Map",
-    "subtitle":["Wards - population",""],
+    "text": "England: house prices",
+    "subtitle":["By electoral ward, Source: ONS",""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "middle",
@@ -16,16 +16,19 @@
   "height": 300,
   
   "data": {
-    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/geoWalWards.json",
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/geoEngWards.json",
         "format": {"type": "topojson", "feature": "wards"}},
 
   "transform": [{
     "lookup": "properties.WD13NM",
     "from": {
-      "key": "wardName",
-      "fields": ["Population", "Lacode"],
-      "data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/walesPopulationWards.csv"}}
-      }],
+      "key": "WardName",
+      "fields": ["y2022"],
+      "data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/housePrices.csv"}}
+      },
+    {"calculate":"parseInt(datum.y2022)", "as": "housePrice"}
+      
+      ],
 
   "projection": {"type": "mercator"},
   
@@ -36,7 +39,7 @@
   
   "encoding":{
     "color":{
-      "field":"Population",
+      "field":"housePrice",
       "type": "quantitative",
       "scale":{"scheme":"lightmulti"}}
     }

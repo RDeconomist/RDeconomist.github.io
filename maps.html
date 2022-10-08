@@ -66,6 +66,7 @@
 
 <!-- START - Container that will house everything-->
 <div class="mapContainer">
+  <p>Wales</p>
     <div class="map" id="map1"></div>
     <div class="map" id="map2"></div>
     <div class="map" id="map3"></div>
@@ -89,8 +90,18 @@
   </p>
 </div>
 
+<!-- START - Container that will house everything-->
 <div class="mapContainer">
-   <div class="mapBig" id="map5"></div>
+  <p>England</p>
+  <div class="map" id="map5"></div>
+  <div class="map" id="map6"></div>
+  <div class="map" id="map7"></div>
+  <div class="map" id="map8"></div>
+</div>
+<!-- END - Grid of divs that will house the charts-->  
+
+<div class="mapContainer">
+   <div class="mapBig" id="map9"></div>
 </div>
 
 
@@ -149,18 +160,32 @@
 <script>
     // Set the charts that we want on the page as variables, linking them to JSON files:
     
+    // Wales
     var map1 = "charts/maps/Wales1.json";
     var map2 = "charts/maps/Wales2.json";
     var map3 = "charts/maps/Wales3.json";
     var map4 = "charts/maps/Wales4.json";
 
-    var map5 = "charts/maps/WorldMap1.json";
+    // England
+    var map5 = "charts/maps/mapEng1.json";
+    var map6 = "charts/maps/mapEng2.json";
+    var map7 = "charts/maps/mapEng3.json";
+    var map8 = "charts/maps/mapEng4.json";
 
+    // World
+    var map9 = "charts/maps/WorldMap1.json";
+
+    // Embed all
     vegaEmbed('#map1', map1, {"actions": false});
     vegaEmbed('#map2', map2, {"actions": false});
     vegaEmbed('#map3', map3, {"actions": false});
     vegaEmbed('#map4', map4, {"actions": false});
     vegaEmbed('#map5', map5, {"actions": false});
+    vegaEmbed('#map6', map6, {"actions": false});
+    vegaEmbed('#map7', map7, {"actions": false});
+    vegaEmbed('#map8', map8, {"actions": false});
+    vegaEmbed('#map9', map9, {"actions": false});
+  
 
 
     
