@@ -41,7 +41,8 @@
      "scale": {"scheme": "inferno"},
        "legend": {
         "title": "Letter",
-        "columns":2
+        "columns":2,
+        "orient": "top-left"
     }
   }
 }

@@ -38,7 +38,10 @@
     "color":{
       "field":"Population",
       "type": "quantitative",
-      "scale":{"scheme":"lightmulti"}},
-    "tooltip":{"field":"properties.WD13NM"}
+      "scale":{"scheme":"lightmulti"},
+      "legend":{"orient": "top-left"}
+    },
+    
+      "tooltip":{"field":"properties.WD13NM"}
     }
 }

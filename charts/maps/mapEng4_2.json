@@ -62,7 +62,10 @@
     
     "color":{
       "field":"yearSelected",
-      "legend":{"title": "Price"},
+      "legend":{
+        "title": "Price",
+        "orient": "top-left"
+      },
       "type": "quantitative",
       "scale":{
         "scheme":"lightmulti",
