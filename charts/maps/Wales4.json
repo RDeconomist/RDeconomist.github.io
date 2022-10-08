@@ -24,7 +24,7 @@
     "from": {
       "key": "wardName",
       "fields": ["Population", "Lacode"],
-      "data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/walesPopulationWards.csv"}}
+      "data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataWalesPopWards.csv"}}
       }],
 
   "projection": {"type": "mercator"},

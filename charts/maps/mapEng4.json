@@ -24,7 +24,7 @@
     "from": {
       "key": "WardName",
       "fields": ["y2022"],
-      "data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/housePrices.csv"}}
+      "data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataUKHousePrices.csv"}}
       },
     {"calculate":"parseInt(datum.y2022)", "as": "housePrice"}
       
