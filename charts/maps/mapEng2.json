@@ -32,7 +32,7 @@
   "mark": {
       "type": "geoshape",
       "stroke": "white",
-      "strokeWidth":0.1},
+      "strokeWidth":0},
   
   "encoding": {
     "color": {
