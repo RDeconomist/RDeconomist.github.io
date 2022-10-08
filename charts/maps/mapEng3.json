@@ -1,8 +1,8 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
   "title": {
-    "text": "Wales Map",
-    "subtitle":["Wards - population",""],
+    "text": "England - population",
+    "subtitle":["Population by electoral ward. Source: ONS",""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "middle",
@@ -24,7 +24,7 @@
     "from": {
       "key": "wardName",
       "fields": ["Population", "Lacode"],
-      "data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataWalesPopWards.csv"}}
+      "data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataUKPopWards.csv"}}
       }],
 
   "projection": {"type": "mercator"},

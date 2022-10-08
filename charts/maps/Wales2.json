@@ -1,7 +1,7 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
   "title": {
-    "text": "Wales Map",
+    "text": "Wales - place names",
     "subtitle":["Local authorities by starting letter of place name",""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
