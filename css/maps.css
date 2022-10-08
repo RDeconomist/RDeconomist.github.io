@@ -3,18 +3,37 @@
 	START Typography
 -------------------------------------------------------------------------------*/
 
-@import url(https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap);
+/* @import url(https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap); */
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
 
 h1 {
 	font-family: "Catamaran";
 	font-variant: small-caps;
 	font-size: 60px;
-	color: rgb(0,47,167);
+	color: rgb(100,100,200);
 	font-weight: 900;
 	font-kerning: 50;
 	margin: 0px 0px 30px 0px  ;
 	height: 40px;
+  justify-content: center;
+}
+
+h2 {
+	font-family: "Tangerine";
+	font-size: 40px;
+	color: rgba(100,100,100);
+	margin: 10px 0 0 0;
+	font-weight: 1000;
+}
+
+.heading{
+  justify-content: center !important;
+  max-width: 820px; 
+  margin: 0 auto 0 auto !important;
+  padding: 0 5 0 5; 
+  background-color:rgba(230,230,230);
+  text-align: center;
 }
 
 .wrap {
