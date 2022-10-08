@@ -64,7 +64,8 @@
       "field":"yearSelected",
       "legend":{
         "title": "Price",
-        "orient": "top-left"
+        "orient": "top-left",
+        "direction": "vertical"
       },
       "type": "quantitative",
       "scale":{

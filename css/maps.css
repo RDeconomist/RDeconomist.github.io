@@ -38,7 +38,7 @@ h2 {
 
 .wrap {
   grid-template-columns: 100%;
-  max-width: 820px; 
+  max-width: 650px; 
   margin: 0 auto 0 auto !important;
   padding: 0 5 0 5; 
   grid-column-gap: 10px;
@@ -78,7 +78,7 @@ ul, li {
   background-color: rgb(220, 220, 220);
   border-radius: 10px;
   
-  max-width: 820px; 
+  max-width: 665px; 
   
 }
 
