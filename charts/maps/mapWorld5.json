@@ -62,7 +62,8 @@
       "scale":{
         "scheme":"inferno"},
       "legend":{
-        "orient": "top-left"}}
+        "orient": "top-left",
+        "direction": "vertical"}}
 
 
   }
