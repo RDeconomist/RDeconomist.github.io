@@ -4,16 +4,18 @@
 
   "title": {
     "text": "World Map",
-    "subtitle":"With country names tooltip",
+    "subtitle":"With tooltip (Country Names). Natural Earth Projection",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "middle",
     "color": "black"
   },
 
+  "view": {"fill":"rgb(210,230,250)"},
+
   "config": {
     "background":"white",
-    "view": {"stroke": "transparent"}},
+    "view": {"stroke": "trasparent"}},
   
   "width": 610,
   "height": 500,
@@ -42,8 +44,8 @@
   
   "mark": {
       "type": "geoshape",
-      "fill": "lightgray",
-      "stroke": "white",
+      "fill": "rgb(190, 190, 190)",
+      "stroke": "rgb(50, 50, 50)",
       "strokeWidth":0.1},
   
   "encoding": {
