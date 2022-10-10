@@ -1,10 +1,10 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-  "description": "This version mends the problem match caused by one variable being a number and the other being string. See 004 Afghanistan for example",
+  "description": "Names of countries imperfectly matched. US vs USA for example",
 
   "title": {
     "text": "World Map",
-    "subtitle":"With country names tooltip",
+    "subtitle":"Matching problem 2",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "middle",
