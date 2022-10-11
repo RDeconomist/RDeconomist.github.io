@@ -2,7 +2,7 @@
 
   "title": {
     "text": "World Map",
-    "subtitle":"With country names tooltip",
+    "subtitle":"Matching problem 1",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "middle",
@@ -31,6 +31,7 @@
       "fields": ["name"],
       "data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataWorldCountryNamesIDs.json"}}
       }
+
       
       ],    
 
@@ -39,12 +40,25 @@
   
   "mark": {
       "type": "geoshape",
-      "fill": "lightgray",
       "stroke": "white",
       "strokeWidth":0.1},
   
   "encoding": {
-    "tooltip":{"field":"name"}
+    "tooltip":{"field":"name"},
+
+    "color":{
+      
+      "condition": {
+        "test": "datum['name'] === null",
+        "value": "rgb(255, 255, 255)"
+      },
+
+      "field":"name",
+      "scale":{"scheme":"oranges"},
+
+      "legend":null
+      
+      }
   }
 
 }
