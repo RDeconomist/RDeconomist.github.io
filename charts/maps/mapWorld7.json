@@ -1,0 +1,85 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+"link": "https://stackoverflow.com/questions/68420295/filtering-chloropleth-data-using-a-slider-for-annual-data-in-vega-lite",
+
+  "description": "Names of countries imperfectly matched. US vs USA for example",
+
+  "title": {
+    "text": "World Map",
+    "subtitle":"GDP per capita",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "middle",
+    "color": "black"
+  },
+
+  "config": {
+    "background":"white",
+    "view": {"stroke": "transparent"}},
+  
+  "width": 300,
+  "height": 250,
+  
+  "data": {
+    "url": "https://unpkg.com/world-atlas@1.1.4/world/110m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "countries"}
+      },
+
+  "params": [    
+      {"name":"thisYear", "value":2010,
+        "bind":{
+           "input": "range",
+          "min": 1980, 
+          "max": 2022, 
+          "step": 1,
+          "name": "Start year:"}}],
+
+
+      "transform": [
+
+      {"calculate":"parseInt(datum.id)", "as":"id_N"},
+    
+      {"fxilter": "datum.date==thisYear"},
+    
+      {"lookup": "id_N",
+        "from": {
+          "key": "id",
+          "fields": ["alpha3"],
+          "data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataWorldCountryNamesIDs.json"}}
+          },
+
+      {"lookup": "alpha3",
+        "from": {
+          "key": "iso",
+          "fields": ["value", "date"],
+          "filter":"",
+          "data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/weoLongUnemp.csv"}}
+          }    
+      
+      ],    
+
+  "projection": {
+    "type": "naturalEarth1"},
+  
+  "mark": {
+      "type": "geoshape",
+      "stroke": "white",
+      "strokeWidth":0.1},
+  
+  "encoding": {
+
+    "tooltip":{"field":"name"},
+
+    "color":{
+      "field":"value",
+      "type": "quantitative",
+      "scale":{
+        "scheme":"turbo",
+        "domain":[0,60]},
+      "legend":{
+        "orient": "top-left",
+        "direction": "vertical"}}
+  }
+}
