@@ -17,7 +17,7 @@
       "view": {
         "stroke": "transparent"}},
   
-  "data": {"url": "https://raw.githubusercontent.com/RDeconomist/prices/master/db_percentilesPerennials.csv"},
+  "data": {"url": "https://raw.githubusercontent.com/RDeconomist/prices/analysis/master/db_percentilesPerennials.csv"},
 
  
   "mark": {
