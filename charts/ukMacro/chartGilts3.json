@@ -12,7 +12,7 @@
     "color": "black"},
   
     "height":300,
-    "width":300,
+    "width":290,
 
     "transform": [
       {"calculate": "slice(datum.issueDate, -4)", "as": "temp1"},
@@ -31,11 +31,13 @@
       "x": {
         "field": "year", 
         "type": "temporal",
-        "title":null},
+        "title":null,
+        "axis":{"grid": false}},
   
       "y": {
         "field": "issueAmount", 
         "type": "quantitative",
+        "aggregate":"sum",
         "title":null
         }
       }

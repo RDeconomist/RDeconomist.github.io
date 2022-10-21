@@ -5,14 +5,14 @@
      
     "title": {
     "text": "UK debt - by duration at issue",
-    "subtitle": ["Source: DMO",""],
+    "subtitle": ["£ millions. Source: DMO",""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
     "color": "black"},
   
     "height":300,
-    "width":300,
+    "width":290,
 
     "transform": [
       {"calculate": "slice(datum.issueDate, -4)", "as": "issue"},
@@ -37,6 +37,7 @@
       "y": {
         "field": "issueAmount", 
         "type": "quantitative",
+        "aggregate":"sum",
         "title":null
         }
       }
