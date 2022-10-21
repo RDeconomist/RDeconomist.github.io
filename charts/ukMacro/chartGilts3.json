@@ -5,7 +5,7 @@
      
     "title": {
     "text": "UK debt - by issue date",
-    "subtitle": ["Source: DMO",""],
+    "subtitle": ["£ millions. Source: DMO",""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
