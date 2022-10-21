@@ -105,6 +105,9 @@ destring issueYear, replace
 sort issueYear
 gen totalCumulative = sum(issueAmount)
 
+/// Give each bond a number:
+gen id = _n
+
 
 export delimited using "C:\Users\hi19329\OneDrive - University of Bristol\Documents\GitHub\RDeconomist.github.io\data\GiltsInIssueClean.csv", replace
 
