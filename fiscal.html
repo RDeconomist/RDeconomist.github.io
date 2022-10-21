@@ -44,6 +44,20 @@
         <span style="display:block; height: 10px;"></span>
     </div>
 
+    <p>The Gilt Market</p>
+
+    <div class="grid_items">
+        <div class="grid_item" id="chartGilt1"></div>
+        <div class="grid_item" id="chartGilt2"></div>
+        <div class="grid_item" id="chartGilt3"></div>
+        <div class="grid_item" id="chartGilt4"></div>
+        <div class="grid_item" id="chartGilt5"></div>
+        <div class="grid_item" id="chartGilt6"></div>
+        <div class="grid_item" id="chartGilt7"></div>
+        
+    </div>   
+
+
     <div class="grid_items">
         <div class="grid_item" id="chart1"></div>
         <div class="grid_item" id="chart2"></div>
@@ -63,6 +77,16 @@
 
 <script>
     // Set the charts that we want on the page as variables, linking them to JSON files:
+
+    var gilt1 = "charts/ukMacro/chartGilts1.json"
+    var gilt2 = "charts/ukMacro/chartGilts2.json"
+    var gilt3 = "charts/ukMacro/chartGilts3.json"
+    var gilt4 = "charts/ukMacro/chartGilts4.json"
+    var gilt5 = "charts/ukMacro/chartGilts5.json"
+    var gilt6 = "charts/ukMacro/chartGilts6.json"
+    var gilt7 = "charts/ukMacro/chartGilts7.json"
+    
+
     var PSF1 = "charts/ONSfiscal/chartPSF1.json";
     var PSF2 = "charts/ONSfiscal/chartPSF2.json";
     var PSF3 = "charts/ONSfiscal/chartPSF3.json";
@@ -80,6 +104,17 @@
 
 
     // Now embed the charts in the divs set above:
+
+    vegaEmbed('#chartGilts1', gilt1, {"actions": false});   
+    vegaEmbed('#chartGilts2', gilt2, {"actions": false});
+    vegaEmbed('#chartGilts3', gilt3, {"actions": false});
+    vegaEmbed('#chartGilts4', gilt4, {"actions": false});
+    vegaEmbed('#chartGilts5', gilt5, {"actions": false});
+    vegaEmbed('#chartGilts6', gilt6, {"actions": false});
+    vegaEmbed('#chartGilts7', gilt7, {"actions": false});
+
+
+
     vegaEmbed('#chart1', PSF1, {"actions": false});   
     vegaEmbed('#chart2', PSF2, {"actions": false});
     vegaEmbed('#chart3', PSF3, {"actions": false});
@@ -106,15 +141,16 @@
               <div class="column">
                 <h3>About</h3>
                 <ul>
-                    <li><a href="#">Mission</a></li>
+                    <li><a href="mission">Mission</a></li>
                     <li><a href="#">Team</a></li>
                 </ul>
               </div>
               <div class="column">
                     <h3>Resources</h3>
                     <ul>
-                        <li><a href="https://nuggetcharts.com/stream">Nugget</a></li>
-                        <li><a href="datascience">Course</a></li>
+                      <li><a href="datascience">Course</a></li>  
+                      <li><a href="build">Chart Builder</a></li>
+                        
                     </ul>
               </div>
               </div>
@@ -131,7 +167,7 @@
                 </div>
             
               </div>
-            <p class="copyright">Richard Davies © 2021</p>
+            <p class="copyright">Richard Davies © 2022</p>
       </footer>          
 </div>
 <!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
