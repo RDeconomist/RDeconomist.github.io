@@ -97,6 +97,15 @@ rename type rawType
 drop type*
 
 
+/// Calculate issue date:
+gen issueYear = substr(issueDate, 9, 4)
+destring issueYear, replace
+
+/// Sort and gen cumlative:
+sort issueYear
+gen totalCumulative = sum(issueAmount)
+
+
 export delimited using "C:\Users\hi19329\OneDrive - University of Bristol\Documents\GitHub\RDeconomist.github.io\data\GiltsInIssueClean.csv", replace
 
 ////////////////////////////////////////////////////////////////////////////////////
