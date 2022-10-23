@@ -1,0 +1,105 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "collapsed_sections": [],
+      "authorship_tag": "ABX9TyN1dVAjyUQAevc1Jh7Ep+XX",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/RDeconomist/RDeconomist.github.io/blob/main/data/accessAPIwithJS\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Richard Davies\n",
+        "Data Science for Economists\n",
+        "\n",
+        "Fetching data from APIs directly using JavaScript.\n",
+        "\n",
+        "Simple example: https://javascript.plainenglish.io/how-to-fetch-data-from-an-api-in-javascript-a-guide-for-beginners-c7cb351fce57\n",
+        "\n",
+        "Deadling with CORS problems: https://stackoverflow.com/questions/43262121/trying-to-use-fetch-and-pass-in-mode-no-cors\n",
+        "\n",
+        "One CORS solution: https://api.allorigins.win/raw? "
+      ],
+      "metadata": {
+        "id": "ZluQb-B42hkA"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "%%javascript\n",
+        "\n",
+        "// Define the URL: \n",
+        "let url1 = \"https://api.stlouisfed.org/fred/series/observations?series_id=PCEPI&api_key=22ee7a76e736e32f54f5df0a7171538d&file_type=json\"; \n",
+        "let url2 = \"https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/d7g7/dataset/mm23/data\" \n",
+        "let url3 = \"https://api.allorigins.win/raw?ttps://api.stlouisfed.org/fred/series/observations?series_id=PCEPI&api_key=22ee7a76e736e32f54f5df0a7171538d&file_type=json\";\n",
+        "\n",
+        "// Get the data: \n",
+        "  fetch(url3).then((response) => { \n",
+        "    return response.json()\n",
+        "    }).then((data) => { \n",
+        "      console.log(data) \n",
+        "      })\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "Sgm7RZYF51pC",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 17
+        },
+        "outputId": "0bf94157-a811-4037-8f40-8089bfa71fa0"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.Javascript object>"
+            ],
+            "application/javascript": [
+              "\n",
+              "// Define the URL: \n",
+              "let url1 = \"https://api.stlouisfed.org/fred/series/observations?series_id=PCEPI&api_key=22ee7a76e736e32f54f5df0a7171538d&file_type=json\"; \n",
+              "let url2 = \"https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/d7g7/dataset/mm23/data\" \n",
+              "let url3 = \"https://api.allorigins.win/raw?ttps://api.stlouisfed.org/fred/series/observations?series_id=PCEPI&api_key=22ee7a76e736e32f54f5df0a7171538d&file_type=json\";\n",
+              "\n",
+              "// Get the data: \n",
+              "  fetch(url3).then((response) => { \n",
+              "    return response.json()\n",
+              "    }).then((data) => { \n",
+              "      console.log(data) \n",
+              "      })\n",
+              "\n",
+              "\n"
+            ]
+          },
+          "metadata": {}
+        }
+      ]
+    }
+  ]
+}
