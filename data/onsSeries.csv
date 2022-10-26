@@ -6,11 +6,11 @@ ABMI,QNA,GDP - volume,Volume measure,GBP trillion,Headline,pink,1980,quarters
 IHYO,QNA,GDP growth,Market prices,y-o-y growth,Headline,pink,1980,quarters
 IHYR,QNA,GDP growth - volume,Volume measure,y-o-y growth,Headline,pink,1980,quarters
 RUTO,PUSF,Debt,Public Sector Net Debt,% of GDP,Headline,black,1955,quarters
-JW2V,PUSF,Deficit,Public Sector Current Budget Deficit,% of GDP,Headline,black,1955,quarters
-HF6X,PUSF,Debt,Public Sector Net Debt - Ex Banks,GBP trillion,Headline,black,1955,quarters
-CPOA,PUSF,Debt,Public Sector Net Debt - Excluding BoE and PS Banks,GBP trillion,Headline,black,1955,quarters
-ANBV,PUSF,Income,Total central government current receipts,GBP trillion,Headline,black,1955,quarters
-ANLP,PUSF,Spending,Total current government expenditure,GBP trillion,Headline,black,1955,quarters
+JW2V,PUSF,Deficit,PS current budget deficit,% of GDP,Headline,black,1955,quarters
+HF6X,PUSF,Debt,PSND Ex banks,GBP trillion,Headline,black,1955,quarters
+CPOA,PUSF,Debt,PSND Ex BoE and banks,GBP trillion,Headline,black,1955,quarters
+ANBV,PUSF,Income,Total current receipts,GBP trillion,Headline,black,1955,quarters
+ANLP,PUSF,Spending,Total current expenditure,GBP trillion,Headline,black,1955,quarters
 MF6R,PUSF,Income,Total revenue,GBP trillion,Income,blue,1955,quarters
 MF6U,PUSF,Spending,Total expenditure,GBP trillion,Income,blue,1955,quarters
 NMBY,PUSF,Taxes,Taxes on production,GBP trillion,Income,blue,1955,quarters
