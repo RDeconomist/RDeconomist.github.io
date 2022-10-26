@@ -1,7 +1,7 @@
 Series,Dataset,Title,SubTitle,Type,Colour,startDate
 JW2V,PUSF,Deficit,Public Sector Current Budget Deficit,Headline,black,1955
 HF6X,PUSF,Debt,Public Sector Net Debt,Headline,black,1955
-CP0A,PUSF,Debt,"Public Sector Net Debt, Excluding BoE, Excluding PS Banks",Headline,black,1955
+CPOA,PUSF,Debt,"Public Sector Net Debt, Excluding BoE, Excluding PS Banks",Headline,black,1955
 ANBV,PUSF,Income,Total central government current receipts,Headline,black,1955
 ANLP,PUSF,Spending,Total current government expenditure,Headline,black,1955
 MF6R,PUSF,Income,Total revenue,Income,blue,1955

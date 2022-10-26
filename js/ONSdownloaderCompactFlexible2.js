@@ -63,7 +63,7 @@ for(let i=1; i<seriesList.length; i++){
     spec.data.url = urlUse // adding the URL
     spec.title.text = seriesList[i][2] // adding the title
     spec.title.subtitle[0] = seriesList[i][3] // adding the subtitle (to first part of subtitle array)
-    spec.mark.color = seriesList[i][4] // adds the colour
+    spec.mark.color = seriesList[i][5] // adds the colour
 
     // Next add a new div, this will house our new chart:
     var newDiv = document.createElement("div"); // create the div
