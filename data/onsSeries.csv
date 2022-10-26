@@ -7,8 +7,8 @@ IHYO,QNA,GDP growth,Market prices,y-o-y growth,Headline,pink,1980,quarters
 IHYR,QNA,GDP growth - volume,Volume measure,y-o-y growth,Headline,pink,1980,quarters
 RUTO,PUSF,Debt,Public Sector Net Debt,% of GDP,Headline,black,1955,quarters
 JW2V,PUSF,Deficit,Public Sector Current Budget Deficit,% of GDP,Headline,black,1955,quarters
-HF6X,PUSF,Debt,"Public Sector Net Debt, Ex Banks",GBP trillion,Headline,black,1955,quarters
-CPOA,PUSF,Debt,"Public Sector Net Debt, Excluding BoE, Excluding PS Banks",GBP trillion,Headline,black,1955,quarters
+HF6X,PUSF,Debt,Public Sector Net Debt - Ex Banks,GBP trillion,Headline,black,1955,quarters
+CPOA,PUSF,Debt,Public Sector Net Debt - Excluding BoE and PS Banks,GBP trillion,Headline,black,1955,quarters
 ANBV,PUSF,Income,Total central government current receipts,GBP trillion,Headline,black,1955,quarters
 ANLP,PUSF,Spending,Total current government expenditure,GBP trillion,Headline,black,1955,quarters
 MF6R,PUSF,Income,Total revenue,GBP trillion,Income,blue,1955,quarters
@@ -16,8 +16,8 @@ MF6U,PUSF,Spending,Total expenditure,GBP trillion,Income,blue,1955,quarters
 NMBY,PUSF,Taxes,Taxes on production,GBP trillion,Income,blue,1955,quarters
 NZGF,PUSF,VAT,Of which VAT,GBP trillion,Income,blue,1955,quarters
 LIBR,PUSF,Income Tax,Income and capital gains,GBP trillion,Income,blue,1955,quarters
-LIBP,PUSF,Income and CG,Other income and c gains,GBP trillion,Income,blue,1955,quarters
-AIIH,PUSF,NI payments,Compulsotry SS contirbutions,GBP trillion,Income,blue,1955,quarters
+LIBP,PUSF,Income and CG,Other income and capital gains,GBP trillion,Income,blue,1955,quarters
+AIIH,PUSF,NI payments,Compulsory SS contirbutions,GBP trillion,Income,blue,1955,quarters
 NMFX,PUSF,Interest payments,Interest,GBP trillion,Spending,red,1955,quarters
 GZSJ,PUSF,Benefits,Net Social Benefits,GBP trillion,Spending,red,1955,quarters
 LIQS,PUSF,Other,Other,GBP trillion,Spending,red,1955,quarters
