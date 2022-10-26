@@ -51,12 +51,12 @@ for(let i=1; i<seriesList.length; i++){
         "data":{
             "url": "",
             "format":{"type": "json","property": "years"}},
-        "height": 300,
-        "width": 260,
+        "height": 120,
+        "width": 110,
         "mark": {"type": "line",  "color": "rgb(0,47,167"},
         "encoding": {
-            "x":{"field":"date", "type": "temporal"},
-            "y":{"field":"value", "type": "quantitative"}}} 
+            "x":{"field":"date", "type": "temporal", "title":null},
+            "y":{"field":"value", "type": "quantitative", "title":null}}} 
   
 
     // Now change the base spec, adding the url, and the titles
