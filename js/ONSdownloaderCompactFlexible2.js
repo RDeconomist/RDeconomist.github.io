@@ -52,7 +52,7 @@ for(let i=1; i<seriesList.length; i++){
             "url": "",
             "format":{"type": "json","property": "years"}},
         "height": 120,
-        "width": 110,
+        "width": 100,
         "mark": {"type": "line",  "color": "rgb(0,47,167"},
         "encoding": {
             "x":{"field":"date", "type": "temporal", "title":null},
