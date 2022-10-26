@@ -1,20 +1,20 @@
-Series,Dataset,Title,SubTitle,Type,Colour
-JW2V,PUSF,Deficit,Public Sector Current Budget Deficit,Headline,black
-HF6X,PUSF,Debt,Public Sector Net Debt,Headline,black
-CP0A,PUSF,Debt,"Public Sector Net Debt, Excluding BoE, Excluding PS Banks",Headline,black
-ANBV,PUSF,Income,Total central government current receipts,Headline,black
-ANLP,PUSF,Spending,Total current government expenditure,Headline,black
-MF6R,PUSF,Income,Total revenue,Income,blue
-MF6U,PUSF,Spending,Total expenditure,Income,blue
-NMBY,PUSF,Taxes,Taxes on production,Income,blue
-NZGF,PUSF,VAT,Of which VAT,Income,blue
-LIBR,PUSF,Income Tax,Income and capital gains,Income,blue
-LIBP,PUSF,Income and CG,Other income and c gains,Income,blue
-AIIH,PUSF,NI payments,Compulsotry SS contirbutions,Income,blue
-NMFX,PUSF,Interest payments,Interest,Spending,red
-GZSJ,PUSF,Benefits,Net Social Benefits,Spending,red
-LIQS,PUSF,Other,Other,Spending,red
-ANLP,PUSF,Total,Total,Spending,red
-ANNS,PUSF,Investment,Net investment,capEx,green
-NSRN,PUSF,Depreciation,Depreciation,capEx,green
-MF6T,PUSF,Total,Total,capEx,green
+Series,Dataset,Title,SubTitle,Type,Colour,startDate
+JW2V,PUSF,Deficit,Public Sector Current Budget Deficit,Headline,black,1955
+HF6X,PUSF,Debt,Public Sector Net Debt,Headline,black,1955
+CP0A,PUSF,Debt,"Public Sector Net Debt, Excluding BoE, Excluding PS Banks",Headline,black,1955
+ANBV,PUSF,Income,Total central government current receipts,Headline,black,1955
+ANLP,PUSF,Spending,Total current government expenditure,Headline,black,1955
+MF6R,PUSF,Income,Total revenue,Income,blue,1955
+MF6U,PUSF,Spending,Total expenditure,Income,blue,1955
+NMBY,PUSF,Taxes,Taxes on production,Income,blue,1955
+NZGF,PUSF,VAT,Of which VAT,Income,blue,1955
+LIBR,PUSF,Income Tax,Income and capital gains,Income,blue,1955
+LIBP,PUSF,Income and CG,Other income and c gains,Income,blue,1955
+AIIH,PUSF,NI payments,Compulsotry SS contirbutions,Income,blue,1955
+NMFX,PUSF,Interest payments,Interest,Spending,red,1955
+GZSJ,PUSF,Benefits,Net Social Benefits,Spending,red,1955
+LIQS,PUSF,Other,Other,Spending,red,1955
+ANLP,PUSF,Total,Total,Spending,red,1955
+ANNS,PUSF,Investment,Net investment,capEx,green,1955
+NSRN,PUSF,Depreciation,Depreciation,capEx,green,1955
+MF6T,PUSF,Total,Total,capEx,green,1955
