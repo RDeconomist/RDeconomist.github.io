@@ -57,10 +57,10 @@ for(let i=1; i<seriesList.length; i++){
 
             {"calculate":"year(datum.date3)", "as": "year"},
 
-            {"filter":{"field":"year", "gt":1988}}],
+            {"filter":{"field":"year", "gt":""}}],
             
         "height": 120,
-        "width": 120,
+        "width": 135,
         "mark": {"type": "line",  "color": "rgb(0,47,167"},
         "encoding": {
             "x":{"field":"date3", "type": "temporal", "title":null, "axis": {"grid": false,}},
@@ -73,6 +73,7 @@ for(let i=1; i<seriesList.length; i++){
     spec.title.subtitle[0] = seriesList[i][3] // adding the subtitle (to first part of subtitle array)
     spec.title.subtitle[1] = seriesList[i][4] // adding the subtitle (to first part of subtitle array)
     spec.mark.color = seriesList[i][6] // adds the colour
+    spec.transform[5].filter.gt = seriesList[i][7] // adds the start year
 
     // Amend value variable if in GBP, this is to prevent values with lots of ,000:
     if(seriesList[i][4]=="GBP trillion"){
@@ -110,9 +111,6 @@ for(let i=1; i<seriesList.length; i++){
     aTag2.className = "libraryButtonAPI"
     console.log(aTag2);
     myDiv.appendChild(aTag2);
-
-
-    
 
     // Embed the chart made in this iteration of the loop, into the div made in this iteration of the loop:
     vegaEmbed("#chart"+i, spec, {"actions": false})
