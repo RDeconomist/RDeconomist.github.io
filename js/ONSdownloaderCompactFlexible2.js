@@ -3,31 +3,33 @@
 
 // PURPOSE: JS DOWNLOADER THAT RUNS FROM ONS AND MAKES DIVS TO ACCOMODATE CHARTS
 
-///// # Looping series into an API:
-var seriesList = [
-  ["JW2V", "PUSF", "Budget Deficit", "Public Sector Current Budget Deficit"],
-  ["HF6X", "PUSF"],
-  ["CPOA", "PUSF"],
-]
+// ///// # Looping series into an API:
+// var seriesList = [
+//   ["JW2V", "PUSF", "Budget Deficit", "Public Sector Current Budget Deficit"],
+//   ["HF6X", "PUSF"],
+//   ["CPOA", "PUSF"],
+// ]
 
+////////////////////////////
 //// Read in the info on the series that we want:
-var url = "https://gist.githubusercontent.com/guest271314/c4eebf14b4a3cfd36f58/raw/37b82a07ec91e9f35396a23ee7aac26b8dd52c23/file.csv";
+var urlCharts = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/onsSeries.csv";
 
 var request = new XMLHttpRequest();  
-request.open("GET", url, false);   
+request.open("GET", urlCharts, false);   
 request.send(null);  
 
-var csvData = new Array();
+var seriesList = new Array();
 var jsonObject = request.responseText.split(/\r?\n|\r/);
 for (var i = 0; i < jsonObject.length; i++) {
-  csvData.push(jsonObject[i].split(','));
+    seriesList.push(jsonObject[i].split(','));
 }
 // Retrived data from csv file content
-console.log(csvData);
+console.log(seriesList);
+/////////////////////////////////
 
 //// # LOOP ACROSS THESE SERIES
 
-for(let i=0; i<seriesList.length; i++){
+for(let i=1; i<seriesList.length; i++){
   
     // Make the URL:
     let x = seriesList[i][0]; // Thie selects out series
