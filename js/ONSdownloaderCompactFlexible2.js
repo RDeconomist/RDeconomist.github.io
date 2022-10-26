@@ -3,13 +3,6 @@
 
 // PURPOSE: JS DOWNLOADER THAT RUNS FROM ONS AND MAKES DIVS TO ACCOMODATE CHARTS
 
-// ///// # Looping series into an API:
-// var seriesList = [
-//   ["JW2V", "PUSF", "Budget Deficit", "Public Sector Current Budget Deficit"],
-//   ["HF6X", "PUSF"],
-//   ["CPOA", "PUSF"],
-// ]
-
 ////////////////////////////
 //// Read in the info on the series that we want:
 var urlCharts = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/onsSeries.csv";
@@ -49,14 +42,27 @@ for(let i=1; i<seriesList.length; i++){
             "anchor": "start",
             "color": "black"},
         "data":{
-            "url": "",
-            "format":{"type": "json","property": "years"}},
-        "transform": [{"calculate": "datum.value", "as": "valuePlot"}],
+            "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/L55O/dataset/MM23/data",
+            "format":{
+                "type": "json",
+                "property": "quarters"}},
+
+        "transform": [
+            {"calculate": "datum.value", "as": "valuePlot"},
+            
+            {"calculate":"substring(datum.quarter,1)*3-1", "as": "quarter_n"},
+            {"calculate":"join([datum.year, datum.quarter_n],['-'])", "as": "date2"},
+            {"calculate":"timeParse(datum.date2, '%Y-%m')", "as": "date3"},
+
+            {"calculate":"year(datum.date3)", "as": "year"},
+
+            {"filter":{"field":"year", "gt":1988}}],
+            
         "height": 120,
         "width": 100,
         "mark": {"type": "line",  "color": "rgb(0,47,167"},
         "encoding": {
-            "x":{"field":"date", "type": "temporal", "title":null},
+            "x":{"field":"date3", "type": "temporal", "title":null},
             "y":{"field":"valuePlot", "type": "quantitative", "title":null}}} 
   
 
