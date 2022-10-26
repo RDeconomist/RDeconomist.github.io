@@ -35,14 +35,15 @@ for(let i=1; i<seriesList.length; i++){
     let spec = {
         "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
         "title": {
-            "text": "",
-            "subtitle": ["",""],
+            "text": "", // This is injected via code, added from cssv
+            "subtitle": ["",""], // Added from csv
             "subtitleFontStyle":"italic",
             "subtitleFontSize":10,
             "anchor": "start",
             "color": "black"},
+        "view": {"stroke": "transparent"}, // Make box around chart clear
         "data":{
-            "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/L55O/dataset/MM23/data",
+            "url": "", // Added from csv
             "format":{
                 "type": "json",
                 "property": "quarters"}},
