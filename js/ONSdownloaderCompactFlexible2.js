@@ -79,19 +79,31 @@ for(let i=1; i<seriesList.length; i++){
         spec.transform[0].calculate = "datum.value/1000000"
     }
 
-    // Next add a new div, this will house our new chart:
+    // Next add a new div, this will house our CHART AND BUTTONS:
     var newDiv = document.createElement("div"); // create the div
-    newDiv.id = "chart"+i; // Give it a unique id
+    newDiv.id = "chartHousing"+i; // Give it a unique id
     newDiv.className = 'grid_item'; // Give it a common class
     // document.body.appendChild(newDiv); // This line adds the div to the body
     document.querySelector('.grid_items').appendChild(newDiv); // Add the div WITHIN the existing div that has class grid_items
 
+    // Next add a new div, this will house our CHART
+    var newInnerDiv = document.createElement("div"); // create the div
+    newInnerDiv.id = "chart"+i; // Give it a unique id
+    newInnerDiv.className = 'grid_InnerItem'; // Give it a common class
+    // document.body.appendChild(newDiv); // This line adds the div to the body
+    document.getElementById('chartHousing'+i).appendChild(newInnerDiv); // Add the div WITHIN the existing div that has class grid_items
+
     // Next add an a tag within this new div.
-    var myDiv = document.getElementById("chart"+i);
+    var myDiv = document.getElementById('chartHousing'+i);
+    console.log(myDiv);
+    
     var aTag = document.createElement('a');            // generate node
-    aTag.setAttribute('href', seriesList[i][10]);      // set attribute
+    aTag.setAttribute('href', seriesList[i][9]);      // set attribute
     aTag.textContent = "Data";
-    myDiv.appendChild(aTag) ;                        // assign some text
+    aTag.className = "libraryButton"
+    console.log(aTag);
+    myDiv.appendChild(aTag);
+    // document.getElementsByTagName('chart'+i)[0].appendChild(aTag);
     
 
     // Embed the chart made in this iteration of the loop, into the div made in this iteration of the loop:
