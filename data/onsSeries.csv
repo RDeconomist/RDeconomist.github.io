@@ -1,27 +1,27 @@
-Series,Dataset,Title,SubTitle,SubTitle2,Type,Colour,startDate
-YBEU,QNA,GDP index,Gross Domestic Product - Market Prices,Index 2019=100,Headline,pink,1980
-YBEZ,QNA,GDP index - volume,Gross Domestic Product - Volume measure,Index 2019=100,Headline,pink,1980
-YBHA,QNA,GDP,Gross Domestic Product - Market Prices,£ million,Headline,pink,1980
-ABMI,QNA,GDP - volume,Gross Domestic Product -Volume measure,£ million,Headline,pink,1980
-IHYO,QNA,GDP growth,Gross Domestic Product - Market Prices,y-o-y growth,Headline,pink,1980
-IHYR,QNA,GDP growth - volume,Gross Domestic Product - Volume measure,y-o-y growth,Headline,pink,1980
-RUTO,PUSF,Debt,Public Sector Net Debt,% of GDP,Headline,black,1955
-JW2V,PUSF,Deficit,Public Sector Current Budget Deficit,% of GDP,Headline,black,1955
-HF6X,PUSF,Debt,"Public Sector Net Debt, Ex Banks",£ million,Headline,black,1955
-CPOA,PUSF,Debt,"Public Sector Net Debt, Excluding BoE, Excluding PS Banks",£ million,Headline,black,1955
-ANBV,PUSF,Income,Total central government current receipts,£ million,Headline,black,1955
-ANLP,PUSF,Spending,Total current government expenditure,£ million,Headline,black,1955
-MF6R,PUSF,Income,Total revenue,£ million,Income,blue,1955
-MF6U,PUSF,Spending,Total expenditure,£ million,Income,blue,1955
-NMBY,PUSF,Taxes,Taxes on production,£ million,Income,blue,1955
-NZGF,PUSF,VAT,Of which VAT,£ million,Income,blue,1955
-LIBR,PUSF,Income Tax,Income and capital gains,£ million,Income,blue,1955
-LIBP,PUSF,Income and CG,Other income and c gains,£ million,Income,blue,1955
-AIIH,PUSF,NI payments,Compulsotry SS contirbutions,£ million,Income,blue,1955
-NMFX,PUSF,Interest payments,Interest,£ million,Spending,red,1955
-GZSJ,PUSF,Benefits,Net Social Benefits,£ million,Spending,red,1955
-LIQS,PUSF,Other,Other,£ million,Spending,red,1955
-ANLP,PUSF,Total,Total,£ million,Spending,red,1955
-ANNS,PUSF,Investment,Net investment,£ million,capEx,green,1955
-NSRN,PUSF,Depreciation,Depreciation,£ million,capEx,green,1955
-MF6T,PUSF,Total,Total,£ million,capEx,green,1955
+Series,Dataset,Title,SubTitle,SubTitle2,Type,Colour,startDate,frequency
+YBEU,QNA,GDP index,Gross Domestic Product - Market Prices,Index 2019=100,Headline,pink,1980,quarters
+YBEZ,QNA,GDP index - volume,Gross Domestic Product - Volume measure,Index 2019=100,Headline,pink,1980,quarters
+YBHA,QNA,GDP,Gross Domestic Product - Market Prices,£ million,Headline,pink,1980,quarters
+ABMI,QNA,GDP - volume,Gross Domestic Product -Volume measure,£ million,Headline,pink,1980,quarters
+IHYO,QNA,GDP growth,Gross Domestic Product - Market Prices,y-o-y growth,Headline,pink,1980,quarters
+IHYR,QNA,GDP growth - volume,Gross Domestic Product - Volume measure,y-o-y growth,Headline,pink,1980,quarters
+RUTO,PUSF,Debt,Public Sector Net Debt,% of GDP,Headline,black,1955,quarters
+JW2V,PUSF,Deficit,Public Sector Current Budget Deficit,% of GDP,Headline,black,1955,quarters
+HF6X,PUSF,Debt,"Public Sector Net Debt, Ex Banks",£ million,Headline,black,1955,quarters
+CPOA,PUSF,Debt,"Public Sector Net Debt, Excluding BoE, Excluding PS Banks",£ million,Headline,black,1955,quarters
+ANBV,PUSF,Income,Total central government current receipts,£ million,Headline,black,1955,quarters
+ANLP,PUSF,Spending,Total current government expenditure,£ million,Headline,black,1955,quarters
+MF6R,PUSF,Income,Total revenue,£ million,Income,blue,1955,quarters
+MF6U,PUSF,Spending,Total expenditure,£ million,Income,blue,1955,quarters
+NMBY,PUSF,Taxes,Taxes on production,£ million,Income,blue,1955,quarters
+NZGF,PUSF,VAT,Of which VAT,£ million,Income,blue,1955,quarters
+LIBR,PUSF,Income Tax,Income and capital gains,£ million,Income,blue,1955,quarters
+LIBP,PUSF,Income and CG,Other income and c gains,£ million,Income,blue,1955,quarters
+AIIH,PUSF,NI payments,Compulsotry SS contirbutions,£ million,Income,blue,1955,quarters
+NMFX,PUSF,Interest payments,Interest,£ million,Spending,red,1955,quarters
+GZSJ,PUSF,Benefits,Net Social Benefits,£ million,Spending,red,1955,quarters
+LIQS,PUSF,Other,Other,£ million,Spending,red,1955,quarters
+ANLP,PUSF,Total,Total,£ million,Spending,red,1955,quarters
+ANNS,PUSF,Investment,Net investment,£ million,capEx,green,1955,quarters
+NSRN,PUSF,Depreciation,Depreciation,£ million,capEx,green,1955,quarters
+MF6T,PUSF,Total,Total,£ million,capEx,green,1955,quarters
