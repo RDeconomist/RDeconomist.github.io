@@ -51,12 +51,13 @@ for(let i=1; i<seriesList.length; i++){
         "data":{
             "url": "",
             "format":{"type": "json","property": "years"}},
+        "transform": [{"calculate": "datum.value", "as": "valuePlot"}],
         "height": 120,
         "width": 100,
         "mark": {"type": "line",  "color": "rgb(0,47,167"},
         "encoding": {
             "x":{"field":"date", "type": "temporal", "title":null},
-            "y":{"field":"value", "type": "quantitative", "title":null}}} 
+            "y":{"field":"valuePlot", "type": "quantitative", "title":null}}} 
   
 
     // Now change the base spec, adding the url, and the titles
@@ -65,6 +66,11 @@ for(let i=1; i<seriesList.length; i++){
     spec.title.subtitle[0] = seriesList[i][3] // adding the subtitle (to first part of subtitle array)
     spec.title.subtitle[1] = seriesList[i][4] // adding the subtitle (to first part of subtitle array)
     spec.mark.color = seriesList[i][6] // adds the colour
+
+    // Amend value variable if in GBP, this is to prevent values with lots of ,000:
+    if(seriesList[i][4]=="GBP trillion"){
+        spec.transform[0].calculate = "datum.value/1000000"
+    }
 
     // Next add a new div, this will house our new chart:
     var newDiv = document.createElement("div"); // create the div
