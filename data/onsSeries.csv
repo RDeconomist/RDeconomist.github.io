@@ -1,10 +1,10 @@
 Series,Dataset,Title,SubTitle,SubTitle2,Type,Colour,startDate,frequency
-YBEU,QNA,GDP index,Gross Domestic Product - Market Prices,Index 2019=100,Headline,pink,1980,quarters
-YBEZ,QNA,GDP index - volume,Gross Domestic Product - Volume measure,Index 2019=100,Headline,pink,1980,quarters
-YBHA,QNA,GDP,Gross Domestic Product - Market Prices,£ million,Headline,pink,1980,quarters
-ABMI,QNA,GDP - volume,Gross Domestic Product -Volume measure,£ million,Headline,pink,1980,quarters
-IHYO,QNA,GDP growth,Gross Domestic Product - Market Prices,y-o-y growth,Headline,pink,1980,quarters
-IHYR,QNA,GDP growth - volume,Gross Domestic Product - Volume measure,y-o-y growth,Headline,pink,1980,quarters
+YBEU,QNA,GDP index,Market prices,Index 2019=100,Headline,pink,1980,quarters
+YBEZ,QNA,GDP index - volume,Volume measure,Index 2019=100,Headline,pink,1980,quarters
+YBHA,QNA,GDP,Market prices,£ million,Headline,pink,1980,quarters
+ABMI,QNA,GDP - volume,Volume measure,£ million,Headline,pink,1980,quarters
+IHYO,QNA,GDP growth,Market prices,y-o-y growth,Headline,pink,1980,quarters
+IHYR,QNA,GDP growth - volume,Volume measure,y-o-y growth,Headline,pink,1980,quarters
 RUTO,PUSF,Debt,Public Sector Net Debt,% of GDP,Headline,black,1955,quarters
 JW2V,PUSF,Deficit,Public Sector Current Budget Deficit,% of GDP,Headline,black,1955,quarters
 HF6X,PUSF,Debt,"Public Sector Net Debt, Ex Banks",£ million,Headline,black,1955,quarters
