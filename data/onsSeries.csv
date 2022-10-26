@@ -1,4 +1,5 @@
 Series,Dataset,Title,SubTitle,SubTitle2,Type,Colour,startDate,frequency
+L55O,MM23,Inflation,All items,CPIH annual,Headline,black,1980,quarters
 YBEU,QNA,GDP index,Market prices,Index 2019=100,Headline,pink,1980,quarters
 YBEZ,QNA,GDP index - volume,Volume measure,Index 2019=100,Headline,pink,1980,quarters
 YBHA,QNA,GDP,Market prices,GBP trillion,Headline,pink,1980,quarters
