@@ -1,27 +1,27 @@
 Series,Dataset,Title,SubTitle,SubTitle2,Type,Colour,startDate,frequency
 YBEU,QNA,GDP index,Market prices,Index 2019=100,Headline,pink,1980,quarters
 YBEZ,QNA,GDP index - volume,Volume measure,Index 2019=100,Headline,pink,1980,quarters
-YBHA,QNA,GDP,Market prices,£ million,Headline,pink,1980,quarters
-ABMI,QNA,GDP - volume,Volume measure,£ million,Headline,pink,1980,quarters
+YBHA,QNA,GDP,Market prices,GBP million,Headline,pink,1980,quarters
+ABMI,QNA,GDP - volume,Volume measure,GBP million,Headline,pink,1980,quarters
 IHYO,QNA,GDP growth,Market prices,y-o-y growth,Headline,pink,1980,quarters
 IHYR,QNA,GDP growth - volume,Volume measure,y-o-y growth,Headline,pink,1980,quarters
 RUTO,PUSF,Debt,Public Sector Net Debt,% of GDP,Headline,black,1955,quarters
 JW2V,PUSF,Deficit,Public Sector Current Budget Deficit,% of GDP,Headline,black,1955,quarters
-HF6X,PUSF,Debt,"Public Sector Net Debt, Ex Banks",£ million,Headline,black,1955,quarters
-CPOA,PUSF,Debt,"Public Sector Net Debt, Excluding BoE, Excluding PS Banks",£ million,Headline,black,1955,quarters
-ANBV,PUSF,Income,Total central government current receipts,£ million,Headline,black,1955,quarters
-ANLP,PUSF,Spending,Total current government expenditure,£ million,Headline,black,1955,quarters
-MF6R,PUSF,Income,Total revenue,£ million,Income,blue,1955,quarters
-MF6U,PUSF,Spending,Total expenditure,£ million,Income,blue,1955,quarters
-NMBY,PUSF,Taxes,Taxes on production,£ million,Income,blue,1955,quarters
-NZGF,PUSF,VAT,Of which VAT,£ million,Income,blue,1955,quarters
-LIBR,PUSF,Income Tax,Income and capital gains,£ million,Income,blue,1955,quarters
-LIBP,PUSF,Income and CG,Other income and c gains,£ million,Income,blue,1955,quarters
-AIIH,PUSF,NI payments,Compulsotry SS contirbutions,£ million,Income,blue,1955,quarters
-NMFX,PUSF,Interest payments,Interest,£ million,Spending,red,1955,quarters
-GZSJ,PUSF,Benefits,Net Social Benefits,£ million,Spending,red,1955,quarters
-LIQS,PUSF,Other,Other,£ million,Spending,red,1955,quarters
-ANLP,PUSF,Total,Total,£ million,Spending,red,1955,quarters
-ANNS,PUSF,Investment,Net investment,£ million,capEx,green,1955,quarters
-NSRN,PUSF,Depreciation,Depreciation,£ million,capEx,green,1955,quarters
-MF6T,PUSF,Total,Total,£ million,capEx,green,1955,quarters
+HF6X,PUSF,Debt,"Public Sector Net Debt, Ex Banks",GBP million,Headline,black,1955,quarters
+CPOA,PUSF,Debt,"Public Sector Net Debt, Excluding BoE, Excluding PS Banks",GBP million,Headline,black,1955,quarters
+ANBV,PUSF,Income,Total central government current receipts,GBP million,Headline,black,1955,quarters
+ANLP,PUSF,Spending,Total current government expenditure,GBP million,Headline,black,1955,quarters
+MF6R,PUSF,Income,Total revenue,GBP million,Income,blue,1955,quarters
+MF6U,PUSF,Spending,Total expenditure,GBP million,Income,blue,1955,quarters
+NMBY,PUSF,Taxes,Taxes on production,GBP million,Income,blue,1955,quarters
+NZGF,PUSF,VAT,Of which VAT,GBP million,Income,blue,1955,quarters
+LIBR,PUSF,Income Tax,Income and capital gains,GBP million,Income,blue,1955,quarters
+LIBP,PUSF,Income and CG,Other income and c gains,GBP million,Income,blue,1955,quarters
+AIIH,PUSF,NI payments,Compulsotry SS contirbutions,GBP million,Income,blue,1955,quarters
+NMFX,PUSF,Interest payments,Interest,GBP million,Spending,red,1955,quarters
+GZSJ,PUSF,Benefits,Net Social Benefits,GBP million,Spending,red,1955,quarters
+LIQS,PUSF,Other,Other,GBP million,Spending,red,1955,quarters
+ANLP,PUSF,Total,Total,GBP million,Spending,red,1955,quarters
+ANNS,PUSF,Investment,Net investment,GBP million,capEx,green,1955,quarters
+NSRN,PUSF,Depreciation,Depreciation,GBP million,capEx,green,1955,quarters
+MF6T,PUSF,Total,Total,GBP million,capEx,green,1955,quarters
