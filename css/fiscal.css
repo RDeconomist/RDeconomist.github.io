@@ -43,8 +43,8 @@ body {
 }
 .grid_items > div {
   background-color: #ffffff;
-  padding: 5px;
-  border-radius: 10px;
+  padding: 2px;
+  border-radius: 2px;
   width: 180px;
   margin:auto;
 }
@@ -86,7 +86,7 @@ body {
     text-align: center;
   }
   .grid_items > div {
-    padding: 10px;
+    padding: 2px;
   }
   .rubric {
     text-align: left;
@@ -105,7 +105,7 @@ body {
     text-align: left;
   }
   .grid_items > div {
-    padding: 10px;
+    padding: 2px;
   }
 }
 
@@ -154,21 +154,7 @@ h2 {
 	margin: 0;
 	font-weight: 1000;
 }
-h3 {
-	font-size: 28px;
-	color: #2d3033;
-	font-weight: 300;
-}
-h4 {
-	font-size: 22px;
-	color: #2d3033;
-	font-weight: 400;
-}
-h5 {
-	font-size: 14px;
-	color: #2d3033;
-	font-weight: 700;
-}
+
 
 /* ------------------------------------------------------------------------------
 	Global Styles
