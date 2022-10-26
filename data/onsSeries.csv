@@ -1,27 +1,27 @@
 Series,Dataset,Title,SubTitle,SubTitle2,Type,Colour,startDate
-YBEU,QNA,GDP index - nominal,"Gross Domestic Product, Market Prices",Index 2019=100,Headline,green,1980
-YBEZ,QNA,GDP index - real,"Gross Domestic Product, Volume measure",Index 2019=100,Headline,green,1980
-YBHA,QNA,GDP - nomial,"Gross Domestic Product, Market Prices",£ million,Headline,green,1980
-ABMI,QNA,GDP -real ,"Gross Domestic Product, Volume measure",£ million,Headline,green,1980
-IHYO,QNA,GDP growth,"Gross Domestic Product, Market Prices",y-o-y growth,Headline,green,1980
-IHYR,QNA,GDP growth - real ,"Gross Domestic Product, Volume measure",y-o-y growth,Headline,green,1980
+YBEU,QNA,GDP index - nominal,"Gross Domestic Product, Market Prices",Index 2019=100,Headline,pink,1980
+YBEZ,QNA,GDP index - real,"Gross Domestic Product, Volume measure",Index 2019=100,Headline,pink,1980
+YBHA,QNA,GDP - nomial,"Gross Domestic Product, Market Prices",£ million,Headline,pink,1980
+ABMI,QNA,GDP -real ,"Gross Domestic Product, Volume measure",£ million,Headline,pink,1980
+IHYO,QNA,GDP growth,"Gross Domestic Product, Market Prices",y-o-y growth,Headline,pink,1980
+IHYR,QNA,GDP growth - real ,"Gross Domestic Product, Volume measure",y-o-y growth,Headline,pink,1980
 RUTO,PUSF,Debt,Public Sector Net Debt,% of GDP,Headline,black,1955
 JW2V,PUSF,Deficit,Public Sector Current Budget Deficit,% of GDP,Headline,black,1955
-HF6X,PUSF,Debt,"Public Sector Net Debt, Ex Banks",,Headline,black,1955
-CPOA,PUSF,Debt,"Public Sector Net Debt, Excluding BoE, Excluding PS Banks",,Headline,black,1955
-ANBV,PUSF,Income,Total central government current receipts,,Headline,black,1955
-ANLP,PUSF,Spending,Total current government expenditure,,Headline,black,1955
-MF6R,PUSF,Income,Total revenue,,Income,blue,1955
-MF6U,PUSF,Spending,Total expenditure,,Income,blue,1955
-NMBY,PUSF,Taxes,Taxes on production,,Income,blue,1955
-NZGF,PUSF,VAT,Of which VAT,,Income,blue,1955
-LIBR,PUSF,Income Tax,Income and capital gains,,Income,blue,1955
-LIBP,PUSF,Income and CG,Other income and c gains,,Income,blue,1955
-AIIH,PUSF,NI payments,Compulsotry SS contirbutions,,Income,blue,1955
-NMFX,PUSF,Interest payments,Interest,,Spending,red,1955
-GZSJ,PUSF,Benefits,Net Social Benefits,,Spending,red,1955
-LIQS,PUSF,Other,Other,,Spending,red,1955
-ANLP,PUSF,Total,Total,,Spending,red,1955
-ANNS,PUSF,Investment,Net investment,,capEx,green,1955
-NSRN,PUSF,Depreciation,Depreciation,,capEx,green,1955
-MF6T,PUSF,Total,Total,,capEx,green,1955
+HF6X,PUSF,Debt,"Public Sector Net Debt, Ex Banks",£ million,Headline,black,1955
+CPOA,PUSF,Debt,"Public Sector Net Debt, Excluding BoE, Excluding PS Banks",£ million,Headline,black,1955
+ANBV,PUSF,Income,Total central government current receipts,£ million,Headline,black,1955
+ANLP,PUSF,Spending,Total current government expenditure,£ million,Headline,black,1955
+MF6R,PUSF,Income,Total revenue,£ million,Income,blue,1955
+MF6U,PUSF,Spending,Total expenditure,£ million,Income,blue,1955
+NMBY,PUSF,Taxes,Taxes on production,£ million,Income,blue,1955
+NZGF,PUSF,VAT,Of which VAT,£ million,Income,blue,1955
+LIBR,PUSF,Income Tax,Income and capital gains,£ million,Income,blue,1955
+LIBP,PUSF,Income and CG,Other income and c gains,£ million,Income,blue,1955
+AIIH,PUSF,NI payments,Compulsotry SS contirbutions,£ million,Income,blue,1955
+NMFX,PUSF,Interest payments,Interest,£ million,Spending,red,1955
+GZSJ,PUSF,Benefits,Net Social Benefits,£ million,Spending,red,1955
+LIQS,PUSF,Other,Other,£ million,Spending,red,1955
+ANLP,PUSF,Total,Total,£ million,Spending,red,1955
+ANNS,PUSF,Investment,Net investment,£ million,capEx,green,1955
+NSRN,PUSF,Depreciation,Depreciation,£ million,capEx,green,1955
+MF6T,PUSF,Total,Total,£ million,capEx,green,1955
