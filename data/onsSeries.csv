@@ -1,4 +1,5 @@
 Series,Dataset,Title,SubTitle,SubTitle2,Type,Colour,startDate,frequency,link
+LQAD,BB,Exports,Trade in Goods,Worldwide - current prices,Trade,purple,1980,quarters,
 MGSX,LMS,Unemployment,Ages 16 and over,% of workforce,Headline,red,1980,quarters,https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/unemployment/timeseries/mgsx/lms
 L55O,MM23,Inflation,All items,CPIH annual,Headline,black,1980,quarters,
 LF4T,LMS,Inactivity,Age 16-54,% of workforce,Headline,red,1980,quarters,https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/economicinactivity/timeseries/lf4t/lms
