@@ -103,7 +103,15 @@ for(let i=1; i<seriesList.length; i++){
     aTag.className = "libraryButton"
     console.log(aTag);
     myDiv.appendChild(aTag);
-    // document.getElementsByTagName('chart'+i)[0].appendChild(aTag);
+
+    var aTag2 = document.createElement('a');            // generate node
+    aTag2.setAttribute('href', seriesList[i][10]);      // set attribute
+    aTag2.textContent = "Articles";
+    aTag2.className = "libraryButtonAPI"
+    console.log(aTag2);
+    myDiv.appendChild(aTag2);
+
+
     
 
     // Embed the chart made in this iteration of the loop, into the div made in this iteration of the loop:
