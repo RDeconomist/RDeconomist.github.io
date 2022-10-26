@@ -86,6 +86,14 @@ for(let i=1; i<seriesList.length; i++){
     // document.body.appendChild(newDiv); // This line adds the div to the body
     document.querySelector('.grid_items').appendChild(newDiv); // Add the div WITHIN the existing div that has class grid_items
 
+    // Next add an a tag within this new div.
+    var myDiv = document.getElementById("chart"+i);
+    var aTag = document.createElement('a');            // generate node
+    aTag.setAttribute('href', seriesList[i][10]);      // set attribute
+    aTag.textContent = "Data";
+    myDiv.appendChild(aTag) ;                        // assign some text
+    
+
     // Embed the chart made in this iteration of the loop, into the div made in this iteration of the loop:
     vegaEmbed("#chart"+i, spec, {"actions": false})
 
