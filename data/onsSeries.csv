@@ -5,8 +5,8 @@ YBHA,QNA,GDP - nomial,"Gross Domestic Product, Market Prices",£ million,Headline
 ABMI,QNA,GDP -real ,"Gross Domestic Product, Volume measure",£ million,Headline,green,1980
 IHYO,QNA,GDP growth,"Gross Domestic Product, Market Prices",y-o-y growth,Headline,green,1980
 IHYR,QNA,GDP growth - real ,"Gross Domestic Product, Volume measure",y-o-y growth,Headline,green,1980
-RUTO,PUSF,Debt,"Public Sector Net Debt, % of GDP",,Headline,black,1955
-JW2V,PUSF,Deficit,"Public Sector Current Budget Deficit, % GDP",,Headline,black,1955
+RUTO,PUSF,Debt,Public Sector Net Debt,% of GDP,Headline,black,1955
+JW2V,PUSF,Deficit,Public Sector Current Budget Deficit,% of GDP,Headline,black,1955
 HF6X,PUSF,Debt,"Public Sector Net Debt, Ex Banks",,Headline,black,1955
 CPOA,PUSF,Debt,"Public Sector Net Debt, Excluding BoE, Excluding PS Banks",,Headline,black,1955
 ANBV,PUSF,Income,Total central government current receipts,,Headline,black,1955
