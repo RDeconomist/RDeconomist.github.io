@@ -1,20 +1,20 @@
 Series,Dataset,Title,SubTitle,Type,Colour
-JW2V,PUSF,Deficit,Public Sector Current Budget Deficit,Headline,Black
-HF6X,PUSF,Debt,Public Sector Net Debt,Headline,Black
-CP0A,PUSF,Debt,"Public Sector Net Debt, Excluding BoE, Excluding PS Banks",Headline,Black
-ANBV,PUSF,Income,Total central government current receipts,Headline,Black
-ANLP,PUSF,Spending,Total current government expenditure,Headline,Black
-MF6R,PUSF,Income,Total revenue,Income,Blue
-MF6U,PUSF,Spending,Total expenditure,Income,Blue
-NMBY,PUSF,Taxes,Taxes on production,Income,Blue
-NZGF,PUSF,VAT,Of which VAT,Income,Blue
-LIBR,PUSF,Income Tax,Income and capital gains,Income,Blue
-LIBP,PUSF,Income and CG,Other income and c gains,Income,Blue
-AIIH,PUSF,NI payments,Compulsotry SS contirbutions,Income,Blue
-NMFX,PUSF,Interest payments,Interest,Spending,Red
-GZSJ,PUSF,Benefits,Net Social Benefits,Spending,Red
-LIQS,PUSF,Other,Other,Spending,Red
-ANLP,PUSF,Total,Total,Spending,Red
-ANNS,PUSF,Investment,Net investment,capEx,Green
-NSRN,PUSF,Depreciation,Depreciation,capEx,Green
-MF6T,PUSF,Total,Total,capEx,Green
+JW2V,PUSF,Deficit,Public Sector Current Budget Deficit,Headline,black
+HF6X,PUSF,Debt,Public Sector Net Debt,Headline,black
+CP0A,PUSF,Debt,"Public Sector Net Debt, Excluding BoE, Excluding PS Banks",Headline,black
+ANBV,PUSF,Income,Total central government current receipts,Headline,black
+ANLP,PUSF,Spending,Total current government expenditure,Headline,black
+MF6R,PUSF,Income,Total revenue,Income,blue
+MF6U,PUSF,Spending,Total expenditure,Income,blue
+NMBY,PUSF,Taxes,Taxes on production,Income,blue
+NZGF,PUSF,VAT,Of which VAT,Income,blue
+LIBR,PUSF,Income Tax,Income and capital gains,Income,blue
+LIBP,PUSF,Income and CG,Other income and c gains,Income,blue
+AIIH,PUSF,NI payments,Compulsotry SS contirbutions,Income,blue
+NMFX,PUSF,Interest payments,Interest,Spending,red
+GZSJ,PUSF,Benefits,Net Social Benefits,Spending,red
+LIQS,PUSF,Other,Other,Spending,red
+ANLP,PUSF,Total,Total,Spending,red
+ANNS,PUSF,Investment,Net investment,capEx,green
+NSRN,PUSF,Depreciation,Depreciation,capEx,green
+MF6T,PUSF,Total,Total,capEx,green
