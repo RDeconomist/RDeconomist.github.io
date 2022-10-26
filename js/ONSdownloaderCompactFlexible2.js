@@ -59,11 +59,11 @@ for(let i=1; i<seriesList.length; i++){
             {"filter":{"field":"year", "gt":1988}}],
             
         "height": 120,
-        "width": 100,
+        "width": 120,
         "mark": {"type": "line",  "color": "rgb(0,47,167"},
         "encoding": {
-            "x":{"field":"date3", "type": "temporal", "title":null},
-            "y":{"field":"valuePlot", "type": "quantitative", "title":null}}} 
+            "x":{"field":"date3", "type": "temporal", "title":null, "axis": {"grid": false,}},
+            "y":{"field":"valuePlot", "type": "quantitative", "title":null, "axis": {"grid": false,}}}} 
   
 
     // Now change the base spec, adding the url, and the titles
