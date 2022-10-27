@@ -61,7 +61,7 @@ for(let i=1; i<seriesList.length -1; i++){
             
         "height": 120,
         "width": 135,
-        "mark": {"type": "line",  "color": "rgb(0,47,167"},
+        "mark": {"type": "line",  "color": "rgb(0,47,167", "interpolate":""},
         "encoding": {
             "x":{"field":"date3", "type": "temporal", "title":null, "axis": {"grid": false,}},
             "y":{"field":"valuePlot", "type": "quantitative", "title":null, "axis": {"grid": false,"format":"s", }}}} 
@@ -82,6 +82,11 @@ for(let i=1; i<seriesList.length -1; i++){
     //     spec.transform[0].calculate = "datum.value*1000000"
     //     spec.encoding.y.axis.format = "£s";
     // }
+
+    if(seriesList[i][2]=="Base Rate"){
+        // Make the interpolation step wise
+        spec.mark.interpolate = "step"
+    };
 
     // Charts that do not have an ONS API.
     // Record their series numbers as XYZ
