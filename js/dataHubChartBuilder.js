@@ -64,7 +64,7 @@ for(let i=1; i<seriesList.length; i++){
         "mark": {"type": "line",  "color": "rgb(0,47,167"},
         "encoding": {
             "x":{"field":"date3", "type": "temporal", "title":null, "axis": {"grid": false,}},
-            "y":{"field":"valuePlot", "type": "quantitative", "title":null, "axis": {"grid": false,}}}} 
+            "y":{"field":"valuePlot", "type": "quantitative", "title":null, "axis": {"grid": false,"format":"s", }}}} 
   
 
     // BUILDING THE SPEC UP INTO A SPECIFIC CHART:
@@ -95,6 +95,7 @@ for(let i=1; i<seriesList.length; i++){
         delete spec.transform;
         // Correct the encoding:
         spec.encoding.y.field = "value";
+        spec.encoding.y.axis.format = "s";
     }
 
     console.log(spec)
