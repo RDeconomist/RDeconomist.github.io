@@ -35,7 +35,7 @@ for(let i=1; i<seriesList.length; i++){
     let spec = {
         "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
         "title": {
-            "text": "", // This is injected via code, added from cssv
+            "text": "", // This is injected via code, added from the csv that we load above.
             "subtitle": ["",""], // Added from csv
             "subtitleFontStyle":"italic",
             "subtitleFontSize":10,
@@ -67,6 +67,7 @@ for(let i=1; i<seriesList.length; i++){
             "y":{"field":"valuePlot", "type": "quantitative", "title":null, "axis": {"grid": false,}}}} 
   
 
+    // BUILDING THE SPEC UP INTO A SPECIFIC CHART:
     // Now change the base spec, adding the url, and the titles
     spec.data.url = urlUse // adding the URL
     spec.title.text = seriesList[i][2] // adding the title
@@ -79,6 +80,26 @@ for(let i=1; i<seriesList.length; i++){
     if(seriesList[i][4]=="GBP trillion"){
         spec.transform[0].calculate = "datum.value/1000000"
     }
+
+    // Charts that do not have an ONS API.
+    // Record their series numbers as XYZ
+    if(seriesList[i][1]=="XYZ"){
+        // Correct the URL:
+        spec.data.url = seriesList[i][11];
+        // Correct the data type:
+        spec.data.format.type = seriesList[i][12];
+        // Correct the x encoding:
+        // Note that cannot use "year", since this is made above
+        spec.encoding.x.field = "dateYear";
+        // Cull the transform:
+        delete spec.transform;
+        // Correct the encoding:
+        spec.encoding.y.field = "value";
+    }
+
+    console.log(spec)
+
+    ///////////////////
 
     // Next add a new div, this will house our CHART AND BUTTONS:
     var newDiv = document.createElement("div"); // create the div
