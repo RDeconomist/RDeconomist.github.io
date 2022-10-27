@@ -1,5 +1,6 @@
 Series,Dataset,Title,SubTitle,SubTitle2,Type,Colour,startDate,frequency,pageLink,articlesECO,dataLink,dataType
-XYZ,XYZ,Inequality,Gini coefficient - disposable income,,Income,red,1977,annual,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_GINI.csv,csv
+XYZ,XYZ,House Prices,Average,,Housing,black,1986,annual,https://www.ons.gov.uk/economy/inflationandpriceindices/datasets/housepriceindexannualtables2039,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_HousePrices.csv,csv
+XYZ,XYZ,Inequality,Gini coefficient - disposable income,,Income,red,1977,annual,https://www.ons.gov.uk/peoplepopulationandcommunity/personalandhouseholdfinances/incomeandwealth/datasets/householddisposableincomeandinequality ,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_GINI.csv,csv
 C9LL,PSE,HM Forces,Total employment,Thousands,Public Sector,green,1980,quarters,https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/publicsectorpersonnel/timeseries/c9ll/pse,https://www.economicsobservatory.com/what-would-be-the-economic-consequences-of-a-military-stalemate-in-ukraine,,json
 G7G3,PSE,Public Sector Jobs,Total employment,Thousands,Public Sector,green,1980,quarters,https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/publicsectorpersonnel/timeseries/g7g3/pse,,,json
 LQAD,UKEA,Exports,Goods - worldwide,GBP trillion,Trade,purple,1980,quarters,https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/timeseries/lqad/ukea,,,json
