@@ -1,5 +1,10 @@
 /* FOOTER */
 
+
+.footer {
+  height:300px
+}
+
 .footer-dark {
     padding:20px 0;
     color:#f0f9ff;

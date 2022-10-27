@@ -125,14 +125,14 @@ for(let i=1; i<seriesList.length; i++){
     var aTag = document.createElement('a');            // generate node
     aTag.setAttribute('href', seriesList[i][9]);      // set attribute
     aTag.textContent = "Data";
-    aTag.className = "libraryButton"
+    aTag.className = "hubButtonData"
     console.log(aTag);
     myDiv.appendChild(aTag);
 
     var aTag2 = document.createElement('a');            // generate node
     aTag2.setAttribute('href', seriesList[i][10]);      // set attribute
     aTag2.textContent = "Articles";
-    aTag2.className = "libraryButtonAPI"
+    aTag2.className = "hubButtonArticles"
     console.log(aTag2);
     myDiv.appendChild(aTag2);
 
