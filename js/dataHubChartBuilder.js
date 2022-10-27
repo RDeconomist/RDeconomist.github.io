@@ -77,8 +77,9 @@ for(let i=1; i<seriesList.length; i++){
     spec.transform[5].filter.gt = seriesList[i][7] // adds the start year
 
     // Amend value variable if in GBP, this is to prevent values with lots of ,000:
-    if(seriesList[i][4]=="GBP trillion"){
-        spec.transform[0].calculate = "datum.value/1000000"
+    if(seriesList[i][4]=="GBP million"){
+        spec.transform[0].calculate = "datum.value*1000000"
+        spec.encoding.y.axis.format = "£s";
     }
 
     // Charts that do not have an ONS API.
