@@ -1,33 +1,34 @@
-Series,Dataset,Title,SubTitle,SubTitle2,Type,Colour,startDate,frequency,link,articles
-C9LL,PSE,HM Forces,Total employment,Thousands,Public Sector,green,1980,quarters,https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/publicsectorpersonnel/timeseries/c9ll/pse,https://www.economicsobservatory.com/what-would-be-the-economic-consequences-of-a-military-stalemate-in-ukraine
-G7G3,PSE,Public Sector Jobs,Total employment,Thousands,Public Sector,green,1980,quarters,https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/publicsectorpersonnel/timeseries/g7g3/pse,
-LQAD,UKEA,Exports,Goods - worldwide,GBP trillion,Trade,purple,1980,quarters,https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/timeseries/lqad/ukea,
-MGSX,LMS,Unemployment,Ages 16 and over,% of workforce,Headline,red,1980,quarters,https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/unemployment/timeseries/mgsx/lms,
-L55O,MM23,Inflation,All items,CPIH annual,Headline,black,1980,quarters,,
-LF4T,LMS,Inactivity,Age 16-54,% of workforce,Headline,red,1980,quarters,https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/economicinactivity/timeseries/lf4t/lms,
-YBEU,QNA,GDP index,Market prices,Index 2019=100,Headline,pink,1980,quarters,,
-YBEZ,QNA,GDP index - volume,Volume measure,Index 2019=100,Headline,pink,1980,quarters,,
-YBHA,QNA,GDP,Market prices,GBP trillion,Headline,pink,1980,quarters,,
-ABMI,QNA,GDP - volume,Volume measure,GBP trillion,Headline,pink,1980,quarters,,
-IHYO,QNA,GDP growth,Market prices,y-o-y growth,Headline,pink,1980,quarters,,
-IHYR,QNA,GDP growth - volume,Volume measure,y-o-y growth,Headline,pink,1980,quarters,,
-RUTO,PUSF,Debt,Public Sector Net Debt,% of GDP,Headline,black,2000,quarters,,
-JW2V,PUSF,Deficit,PS current budget deficit,% of GDP,Headline,black,2000,quarters,,
-HF6X,PUSF,Debt,PSND Ex banks,GBP trillion,Headline,black,2000,quarters,,
-CPOA,PUSF,Debt,PSND Ex BoE and banks,GBP trillion,Headline,black,2000,quarters,,
-ANBV,PUSF,Income,Total current receipts,GBP trillion,Headline,black,2000,quarters,,
-ANLP,PUSF,Spending,Total current expenditure,GBP trillion,Headline,black,2000,quarters,,
-MF6R,PUSF,Income,Total revenue,GBP trillion,Income,blue,2000,quarters,,
-MF6U,PUSF,Spending,Total expenditure,GBP trillion,Income,blue,2000,quarters,,
-NMBY,PUSF,Taxes,Taxes on production,GBP trillion,Income,blue,2000,quarters,,
-NZGF,PUSF,VAT,Of which VAT,GBP trillion,Income,blue,2000,quarters,,
-LIBR,PUSF,Income Tax,Income and capital gains,GBP trillion,Income,blue,2000,quarters,,
-LIBP,PUSF,Income and CG,Other income and capital gains,GBP trillion,Income,blue,2000,quarters,,
-AIIH,PUSF,NI payments,Compulsory SS contirbutions,GBP trillion,Income,blue,2000,quarters,,
-NMFX,PUSF,Interest payments,Interest,GBP trillion,Spending,red,2000,quarters,,
-GZSJ,PUSF,Benefits,Net Social Benefits,GBP trillion,Spending,red,2000,quarters,,
-LIQS,PUSF,Other,Other,GBP trillion,Spending,red,2000,quarters,,
-ANLP,PUSF,Total,Total,GBP trillion,Spending,red,2000,quarters,,
-ANNS,PUSF,Investment,Net investment,GBP trillion,capEx,green,2000,quarters,,
-NSRN,PUSF,Depreciation,Depreciation,GBP trillion,capEx,green,2000,quarters,,
-MF6T,PUSF,Total,Total,GBP trillion,capEx,green,2000,quarters,,
+Series,Dataset,Title,SubTitle,SubTitle2,Type,Colour,startDate,frequency,pageLink,articlesECO,dataLink,dataType
+XYZ,XYZ,Inequality,Gini coefficient - disposable income,,Income,red,1977,annual,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_GINI.csv,csv
+C9LL,PSE,HM Forces,Total employment,Thousands,Public Sector,green,1980,quarters,https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/publicsectorpersonnel/timeseries/c9ll/pse,https://www.economicsobservatory.com/what-would-be-the-economic-consequences-of-a-military-stalemate-in-ukraine,,json
+G7G3,PSE,Public Sector Jobs,Total employment,Thousands,Public Sector,green,1980,quarters,https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/publicsectorpersonnel/timeseries/g7g3/pse,,,json
+LQAD,UKEA,Exports,Goods - worldwide,GBP trillion,Trade,purple,1980,quarters,https://www.ons.gov.uk/economy/nationalaccounts/balanceofpayments/timeseries/lqad/ukea,,,json
+MGSX,LMS,Unemployment,Ages 16 and over,% of workforce,Headline,red,1980,quarters,https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/unemployment/timeseries/mgsx/lms,,,json
+L55O,MM23,Inflation,All items,CPIH annual,Headline,black,1980,quarters,,,,json
+LF4T,LMS,Inactivity,Age 16-54,% of workforce,Headline,red,1980,quarters,https://www.ons.gov.uk/employmentandlabourmarket/peoplenotinwork/economicinactivity/timeseries/lf4t/lms,,,json
+YBEU,QNA,GDP index,Market prices,Index 2019=100,Headline,pink,1980,quarters,,,,json
+YBEZ,QNA,GDP index - volume,Volume measure,Index 2019=100,Headline,pink,1980,quarters,,,,json
+YBHA,QNA,GDP,Market prices,GBP trillion,Headline,pink,1980,quarters,,,,json
+ABMI,QNA,GDP - volume,Volume measure,GBP trillion,Headline,pink,1980,quarters,,,,json
+IHYO,QNA,GDP growth,Market prices,y-o-y growth,Headline,pink,1980,quarters,,,,json
+IHYR,QNA,GDP growth - volume,Volume measure,y-o-y growth,Headline,pink,1980,quarters,,,,json
+RUTO,PUSF,Debt,Public Sector Net Debt,% of GDP,Headline,black,2000,quarters,,,,json
+JW2V,PUSF,Deficit,PS current budget deficit,% of GDP,Headline,black,2000,quarters,,,,json
+HF6X,PUSF,Debt,PSND Ex banks,GBP trillion,Headline,black,2000,quarters,,,,json
+CPOA,PUSF,Debt,PSND Ex BoE and banks,GBP trillion,Headline,black,2000,quarters,,,,json
+ANBV,PUSF,Income,Total current receipts,GBP trillion,Headline,black,2000,quarters,,,,json
+ANLP,PUSF,Spending,Total current expenditure,GBP trillion,Headline,black,2000,quarters,,,,json
+MF6R,PUSF,Income,Total revenue,GBP trillion,Income,blue,2000,quarters,,,,json
+MF6U,PUSF,Spending,Total expenditure,GBP trillion,Income,blue,2000,quarters,,,,json
+NMBY,PUSF,Taxes,Taxes on production,GBP trillion,Income,blue,2000,quarters,,,,json
+NZGF,PUSF,VAT,Of which VAT,GBP trillion,Income,blue,2000,quarters,,,,json
+LIBR,PUSF,Income Tax,Income and capital gains,GBP trillion,Income,blue,2000,quarters,,,,json
+LIBP,PUSF,Income and CG,Other income and capital gains,GBP trillion,Income,blue,2000,quarters,,,,json
+AIIH,PUSF,NI payments,Compulsory SS contirbutions,GBP trillion,Income,blue,2000,quarters,,,,json
+NMFX,PUSF,Interest payments,Interest,GBP trillion,Spending,red,2000,quarters,,,,json
+GZSJ,PUSF,Benefits,Net Social Benefits,GBP trillion,Spending,red,2000,quarters,,,,json
+LIQS,PUSF,Other,Other,GBP trillion,Spending,red,2000,quarters,,,,json
+ANLP,PUSF,Total,Total,GBP trillion,Spending,red,2000,quarters,,,,json
+ANNS,PUSF,Investment,Net investment,GBP trillion,capEx,green,2000,quarters,,,,json
+NSRN,PUSF,Depreciation,Depreciation,GBP trillion,capEx,green,2000,quarters,,,,json
+MF6T,PUSF,Total,Total,GBP trillion,capEx,green,2000,quarters,,,,json
