@@ -5,7 +5,7 @@
 
 ////////////////////////////
 //// Read in the info on the series that we want:
-var urlCharts = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/onsSeries.csv";
+var urlCharts = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/onsDataHubSeries.csv";
 
 var request = new XMLHttpRequest();  
 request.open("GET", urlCharts, false);   
