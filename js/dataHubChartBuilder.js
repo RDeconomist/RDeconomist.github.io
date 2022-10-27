@@ -76,11 +76,12 @@ for(let i=1; i<seriesList.length; i++){
     spec.mark.color = seriesList[i][6] // adds the colour
     spec.transform[5].filter.gt = seriesList[i][7] // adds the start year
 
+    // TO DO - DEAL WITH BILLIONS SOMEHOW
     // Amend value variable if in GBP, this is to prevent values with lots of ,000:
-    if(seriesList[i][4]=="GBP million"){
-        spec.transform[0].calculate = "datum.value*1000000"
-        spec.encoding.y.axis.format = "£s";
-    }
+    // if(seriesList[i][4]=="GBP million"){
+    //     spec.transform[0].calculate = "datum.value*1000000"
+    //     spec.encoding.y.axis.format = "£s";
+    // }
 
     // Charts that do not have an ONS API.
     // Record their series numbers as XYZ
