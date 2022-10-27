@@ -22,7 +22,7 @@ console.log(seriesList);
 
 //// # LOOP ACROSS THESE SERIES
 
-for(let i=1; i<seriesList.length; i++){
+for(let i=1; i<seriesList.length -1; i++){
   
     // Make the URL:
     let x = seriesList[i][0]; // Thie selects out series
