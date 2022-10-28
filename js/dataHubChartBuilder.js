@@ -82,7 +82,7 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
             
         "height": 120,
         "width": 135,
-        "mark": {"type": "line",  "color": "rgb(0,47,167", "interpolate":""},
+        "mark": {"type": "line",  "color": "", "interpolate":""},
         "encoding": {
             "x":{"field":"date3", "type": "temporal", "title":null, "axis": {"grid": false,}},
             "y":{"field":"valuePlot", "type": "quantitative", "title":null, "axis": {"grid": false,"format":"s", }}}} 
@@ -96,6 +96,7 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
     spec.title.subtitle[1] = seriesList[i][4] // adding the subtitle (to first part of subtitle array)
     spec.mark.color = seriesList[i][6] // adds the colour
     spec.transform[5].filter.gt = seriesList[i][7] // adds the start year
+    spec.mark.type = seriesList[i][14] // adds the mark type: line, bar etc.
 
     // STEP 2a - TWEAKS TO CHARTS 
     // TO DO - DEAL WITH BILLIONS SOMEHOW
