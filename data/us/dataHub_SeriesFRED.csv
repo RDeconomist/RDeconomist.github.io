@@ -2,7 +2,7 @@ Series,Source,Title,SubTitle,SubTitle2,Type,Colour,startDate,frequency,pageLink,
 UNRATE,FRED,Unemployment,Ages 16 and over - %,,Headline,red,1980,monthly,https://fred.stlouisfed.org/series/UNRATE,https://www.economicsobservatory.com/is-work-in-the-uk-becoming-more-insecure,,json,1,line,1,0
 CPIAUCSL,FRED,Inflation,CPI all urban consumers,,Headline,red,1980,monthly,https://fred.stlouisfed.org/series/CPIAUCSL,https://www.economicsobservatory.com/is-inflation-avoidable,,json,1,line,2,12
 CPILFESL,FRED,Inflation - core,CPI ex food and energy,,,red,1980,monthly,,,,json,1,line,3,12
-GDPC1,FRED,GDP,Real GDP,,Headline,red,2000,quarters,https://fred.stlouisfed.org/series/GDPC1,https://www.economicsobservatory.com/what-do-the-latest-uk-data-reveal-about-regional-gdp,,json,1,bar,4,4
+GDPC1,FRED,Growth,Real GDP,,Headline,red,2005,quarters,https://fred.stlouisfed.org/series/GDPC1,https://www.economicsobservatory.com/what-do-the-latest-uk-data-reveal-about-regional-gdp,,json,1,bar,4,4
 OPHNFB,FRED,Productivity,Output per hour,,,red,1955,quarters,https://fred.stlouisfed.org/series/OPHNFB,,,json,1,line,5,0
 USSTHPI,FRED,House Prices,Average,,Housing,red,1986,annual,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_HousePrices.csv,json,1,line,6,0
 SIPOVGINIUSA,FRED,Inequality,Gini coefficient - disposable income,,Income,red,1977,annual,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_GINI.csv,json,1,line,7,0
