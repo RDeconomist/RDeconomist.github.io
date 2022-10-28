@@ -16,7 +16,7 @@ LES1252881600Q,FRED,Pay,Median - inflation adjusted,,,red,1960,,https://fred.stl
 PSAVERT,FRED,Saving rate,As % of disposale income,,,red,1960,,https://fred.stlouisfed.org/series/PSAVERT,,,json,4,line,15,0
 EXPGS,FRED,Exports,Goods - GBP million,,Trade,red,1980,quarters,https://fred.stlouisfed.org/series/EXPGS,https://www.economicsobservatory.com/how-has-the-pandemic-affected-international-trade-across-the-uk,,json,2,line,16,0
 IMPGS,FRED,Imports,Goods - GBP million,,Trade,red,1980,quarters,https://fred.stlouisfed.org/series/IMPGS,,,json,2,line,17,0
-B4380C0A173NBEA,FRED,Army-Navy-Air Force,Employment - thousands,,Public Sector,red,1930,quarters,https://fred.stlouisfed.org/series/B4380C0A173NBEA,https://www.economicsobservatory.com/what-would-be-the-economic-consequences-of-a-military-stalemate-in-ukraine,,json,3,line,18,0
+B4380C0A173NBEA,FRED,Military,Employment - thousands,,Public Sector,red,1930,quarters,https://fred.stlouisfed.org/series/B4380C0A173NBEA,https://www.economicsobservatory.com/what-would-be-the-economic-consequences-of-a-military-stalemate-in-ukraine,,json,3,line,18,0
 ,,Affordability,House price to income ratio,,Housing,red,1969,annual,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_HousePricesToIncomeRatio.csv,json,5,line,,0
 ,,Redundancies,UK - thousands,,Labour market,red,1997,quarters,,https://www.economicsobservatory.com/how-has-the-uk-labour-market-fared-in-recessions-and-recoveries-since-1872,,json,5,line,,0
 ,,Long weeks,45+ hours work - % employees,,Labour market,red,1992,quarters,,https://www.economicsobservatory.com/coronavirus-careers-and-mental-health-what-are-links,,json,5,line,,0
