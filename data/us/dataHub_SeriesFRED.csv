@@ -17,7 +17,7 @@ PAYEMS,,Employment,Non-farm payroll,,Headline,darkviolet,1960,monthly,,,,,,,,0
 ,,Long weeks,45+ hours work - % employees,,Labour market,darkviolet,1992,quarters,,https://www.economicsobservatory.com/coronavirus-careers-and-mental-health-what-are-links,,json,1,line,14,0
 ,,Exports,Goods - GBP million,,Trade,darkviolet,1980,quarters,,https://www.economicsobservatory.com/how-has-the-pandemic-affected-international-trade-across-the-uk,,json,2,line,15,0
 ,,Imports,Goods - GBP million,,Trade,darkviolet,1980,quarters,,,,,2,line,16,0
-,,Army-Navy-Air Force,Employment - thousands,,Public Sector,darkviolet,1980,quarters,,https://www.economicsobservatory.com/what-would-be-the-economic-consequences-of-a-military-stalemate-in-ukraine,,json,3,line,17,0
+B4380C0A173NBEA,,Army-Navy-Air Force,Employment - thousands,,Public Sector,darkviolet,1930,quarters,https://fred.stlouisfed.org/series/B4380C0A173NBEA,https://www.economicsobservatory.com/what-would-be-the-economic-consequences-of-a-military-stalemate-in-ukraine,,json,3,line,17,0
 ,,Public Sector,Employment - thousands,,Public Sector,darkviolet,1980,quarters,,https://www.economicsobservatory.com/who-has-financed-higher-government-spending-during-pandemic,,json,3,line,18,0
 ,,Police,Employment - thousands,,Public Sector,darkviolet,1999,quarters,,https://www.economicsobservatory.com/how-are-crime-trends-in-england-and-wales-changing-during-the-pandemic,,json,3,line,19,0
 ,,Teachers,Employment - thousands,,Public Sector,darkviolet,1999,quarters,,https://www.economicsobservatory.com/how-best-should-school-resources-be-deployed-response-covid-19-crisis,,json,3,line,20,0
@@ -25,3 +25,5 @@ PAYEMS,,Employment,Non-farm payroll,,Headline,darkviolet,1960,monthly,,,,,,,,0
 ,,Divorces,Per thousand - male,,Society,darkviolet,1950,annual,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_DivorceRate.csv,csv,3,line,22,0
 ,,Holidays,UK visits abroad - thousand,,Consumption,darkviolet,1986,years,,https://www.economicsobservatory.com/update-how-is-covid-19-affecting-international-travel-and-tourism,,json,4,line,23,0
 ,,Tourists,Foreign visitors to UK - thousand,,Consumption,darkviolet,1986,years,,https://www.economicsobservatory.com/update-how-is-covid-19-affecting-international-travel-and-tourism,,json,4,line,24,0
+LES1252881600Q,,Pay,Median - inflation adjusted,,,,,,https://fred.stlouisfed.org/series/LES1252881600Q,,,,,,,
+PSAVERT,,Saving rate,As % of disposale income,,,,,,https://fred.stlouisfed.org/series/PSAVERT,,,,,,,
