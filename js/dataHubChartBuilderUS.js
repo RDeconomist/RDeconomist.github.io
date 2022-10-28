@@ -67,7 +67,8 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
 
     // Turn indexes into rates of change:
     // Look for the indicator, in column 16, that this needs to be done.
-    if(seriesList[i][16]==1){
+    if(seriesList[i][16]==12 || seriesList[i][16]==4){
+        var adj = seriesList[i][16] // This is the adjusment months, wll be = 12 or 4. Used below. 
         console.log(seriesList[i][0] + " Index to %") // Print out which series is being altered.
 
         let x = seriesList[i][0]; // Thie selects our series
@@ -79,9 +80,9 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
         var json2 = JSON.parse(request2.responseText);
 
         // Now rename the value index, and calculate the % change between the idex, calling thi value
-        for (var j = 12; j<json2.observations.length; j++){
+        for (var j = adj; j<json2.observations.length; j++){
             json2.observations[j].index = json2.observations[j].value 
-            json2.observations[j].value = (json2.observations[j].index/json2.observations[j-12].index)-1
+            json2.observations[j].value = (json2.observations[j].index/json2.observations[j-adj].index)-1
             }
         console.log(json2.observations[60])}
 
