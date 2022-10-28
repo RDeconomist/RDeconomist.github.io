@@ -129,7 +129,7 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
 
     // Index charts:
     // Keep the daily data, but use it monthly and show the mean value:
-    if(seriesList[i][16] == 1) {
+    if(seriesList[i][16] == 12 || seriesList[i][16] == 4) {
         delete spec.data.url;
         delete spec.data.format;
         spec.data.values = json2.observations;
