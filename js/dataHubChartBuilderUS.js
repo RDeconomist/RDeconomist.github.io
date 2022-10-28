@@ -153,6 +153,24 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
         spec.encoding.y.aggregate = "mean"
     }
 
+    // Charts that do not have an ONS API.
+    // Record their series numbers as XYZ
+    if(seriesList[i][0]=="XYZ"){
+        // Correct the URL:
+        spec.data.url = seriesList[i][11];
+        // Correct the data type:
+        spec.data.format.type = seriesList[i][12];
+        // Correct the x encoding:
+        // Note that cannot use "year", since this is made above
+        spec.encoding.x.field = "dateYear";
+        // Cull the transform and property, as not needed:
+        delete spec.transform;
+        delete spec.data.format.property;
+        // Correct the encoding:
+        spec.encoding.y.field = "value";
+        spec.encoding.y.axis.format = "s";
+    }
+
 
     console.log(spec)
 
