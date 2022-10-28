@@ -43,11 +43,10 @@ console.log(seriesList);
 for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there is a header row. And end at length -1 for same reason.
   
     // Make the URL:
-    // Working example: https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/ABMI/dataset/UKEA/data
-    let x = seriesList[i][0]; // Thie selects out series
-    let y = seriesList[i][1]; // This selects our dataset
-    let urlRaw = `https://api.ons.gov.uk/timeseries/${x}/dataset/${y}/data`; // This a "template literal" that we will fill in each iteration of the loop.
-    let corsHelper = "https://api.allorigins.win/raw?url="; // This is a helper url that helps us get past "CORS" problems
+    // Working example: https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/us/data_US_FRED-DGS10.json
+    let x = seriesList[i][0]; // Thie selects our series
+    let urlRaw = `https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/us/data_US_FRED-${x}.json`; // This a "template literal" that we will fill in each iteration of the loop.
+    let corsHelper = ""; // Not needed
     let urlUse = corsHelper+urlRaw; // The final URL that we will use in this iteration of the loop. 
 
     // Set a base spec::
