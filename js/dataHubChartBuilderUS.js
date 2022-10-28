@@ -107,7 +107,9 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
 
         "transform": [
             {"calculate":"year(datum.date)", "as": "year"},
-            {"filter":{"field":"year", "gt":""}}],
+            {"filter":{"field":"year", "gt":""}},
+            {"calculate": "datum.value=='.' ? null : datum.value", "as":"value"}
+        ],
             
         "height": 120,
         "width": 135,
