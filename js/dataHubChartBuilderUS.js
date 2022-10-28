@@ -44,27 +44,7 @@ console.log(seriesList);
 /// Loop across all series
 for (var i = 1; i < seriesList.length-1; i++) {
 
-    // Look for the indicator, in column 16, that this needs to be done.
-    if(seriesList[i][16]==1){
-        console.log(seriesList[i][0]) // Print out which series is being altered.
-
-        let x = seriesList[i][0]; // Thie selects our series
-        let urlRaw = `https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/us/data_US_FRED-${x}.json`; // This a "template literal" that we will fill in each iteration of the loop.
-
-        var request2 = new XMLHttpRequest();  
-        request2.open("GET", urlRaw, false);   
-        request2.send(null);
-        var json2 = JSON.parse(request2.responseText);
-
-        // Now rename the value index, and calculate the % change between the idex, calling thi value
-        for (var i = 12; i<json2.observations.length; i++){
-            json2.observations[i].index = json2.observations[i].value 
-            json2.observations[i].value = json2.observations[i].value/json2.observations[i-12].value
-            }
-console.log(json2.observations[60])
-
     
-    }
 }
 
 
@@ -84,6 +64,26 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
     let urlRaw = `https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/us/data_US_FRED-${x}.json`; // This a "template literal" that we will fill in each iteration of the loop.
     let corsHelper = ""; // Not needed
     let urlUse = corsHelper+urlRaw; // The final URL that we will use in this iteration of the loop. 
+
+    // Turn indexes into rates of change:
+    // Look for the indicator, in column 16, that this needs to be done.
+    if(seriesList[i][16]==1){
+        console.log(seriesList[i][0] + " Index to %") // Print out which series is being altered.
+
+        let x = seriesList[i][0]; // Thie selects our series
+        let urlRaw = `https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/us/data_US_FRED-${x}.json`; // This a "template literal" that we will fill in each iteration of the loop.
+
+        var request2 = new XMLHttpRequest();  
+        request2.open("GET", urlRaw, false);   
+        request2.send(null);
+        var json2 = JSON.parse(request2.responseText);
+
+        // Now rename the value index, and calculate the % change between the idex, calling thi value
+        for (var j = 12; j<json2.observations.length; j++){
+            json2.observations[j].index = json2.observations[j].value 
+            json2.observations[j].value = (json2.observations[j].index/json2.observations[j-12].index)-1
+            }
+        console.log(json2.observations[60])}
 
     // Set a base spec::
     // This has lots of gaps in it, that the subsequent code will fill up. 
@@ -126,13 +126,16 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
     spec.transform[1].filter.gt = seriesList[i][7] // adds the start year
     spec.mark.type = seriesList[i][14] // adds the mark type: line, bar etc.
 
-    // STEP 2a - TWEAKS TO CHARTS 
-    // TO DO - DEAL WITH BILLIONS SOMEHOW
-    // Amend value variable if in GBP, this is to prevent values with lots of ,000:
-    // if(seriesList[i][4]=="GBP million"){
-    //     spec.transform[0].calculate = "datum.value*1000000"
-    //     spec.encoding.y.axis.format = "£s";
-    // }
+    // Index charts:
+    // Keep the daily data, but use it monthly and show the mean value:
+    if(seriesList[i][16] == 1) {
+        delete spec.data.url;
+        delete spec.data.format;
+        spec.data.values = json2.observations;
+        spec.encoding.y.axis.format = "%";
+
+    }
+
 
     // Daily data charts:
     // Keep the daily data, but use it monthly and show the mean value:
