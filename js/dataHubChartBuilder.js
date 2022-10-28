@@ -97,6 +97,7 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
     spec.mark.color = seriesList[i][6] // adds the colour
     spec.transform[5].filter.gt = seriesList[i][7] // adds the start year
 
+    // STEP 2a - TWEAKS TO CHARTS 
     // TO DO - DEAL WITH BILLIONS SOMEHOW
     // Amend value variable if in GBP, this is to prevent values with lots of ,000:
     // if(seriesList[i][4]=="GBP million"){
@@ -104,10 +105,18 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
     //     spec.encoding.y.axis.format = "£s";
     // }
 
+    // Base Rate chart - interpolation:
     if(seriesList[i][2]=="Base Rate"){
         // Make the interpolation step wise
         spec.mark.interpolate = "step"
     };
+
+    // Daily data charts:
+    // Keep the daily data, but use it monthly and show the mean value:
+    if(seriesList[i][8] = "daily"){
+        spec.encoding.x.timeUnit = "year"
+        spec.encoding.y.aggregate = "mean"
+    }
 
     // Charts that do not have an ONS API.
     // Record their series numbers as XYZ
@@ -119,8 +128,9 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
         // Correct the x encoding:
         // Note that cannot use "year", since this is made above
         spec.encoding.x.field = "dateYear";
-        // Cull the transform:
+        // Cull the transform and property, as not needed:
         delete spec.transform;
+        delete spec.data.format.property;
         // Correct the encoding:
         spec.encoding.y.field = "value";
         spec.encoding.y.axis.format = "s";
