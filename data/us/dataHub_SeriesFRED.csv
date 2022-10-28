@@ -1,26 +1,27 @@
-Series,Dataset,Title,SubTitle,SubTitle2,Type,Colour,startDate,frequency,pageLink,articlesECO,dataLink,dataType,rank,mark,order
-UNRATE,,Unemployment,Ages 16 and over - %,,Headline,darkviolet,1980,monthly,https://fred.stlouisfed.org/series/UNRATE,https://www.economicsobservatory.com/is-work-in-the-uk-becoming-more-insecure,,json,1,line,1
-CPIAUCSL,,Inflation,CPI all urban consumers,,Headline,darkviolet,1980,monthly,https://fred.stlouisfed.org/series/CPIAUCSL,https://www.economicsobservatory.com/is-inflation-avoidable,,json,1,line,2
-GDPC1,,GDP,Real GDP,,Headline,darkviolet,1980,quarters,https://fred.stlouisfed.org/series/GDPC1,https://www.economicsobservatory.com/what-do-the-latest-uk-data-reveal-about-regional-gdp,,json,1,bar,3
-OPHNFB,,Productivity,Output per hour,,,darkviolet,1955,quarters,https://fred.stlouisfed.org/series/OPHNFB,,,json,1,line,4
-USSTHPI,,House Prices,Average,,Housing,darkviolet,1986,annual,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_HousePrices.csv,csv,1,line,5
-,,Affordability,House price to income ratio,,Housing,darkviolet,1969,annual,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_HousePricesToIncomeRatio.csv,csv,1,line,6
-SIPOVGINIUSA,,Inequality,Gini coefficient - disposable income,,Income,darkviolet,1977,annual,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_GINI.csv,csv,1,line,7
-LRIN64TTUSQ156S,,Inactivity,Age 16-64 - % workforce,,Headline,darkviolet,1980,quarters,,https://www.economicsobservatory.com/how-has-employment-of-older-workers-changed-since-the-pandemic,,json,2,line,8
-GFDEGDQ188S,,Debt,Public Sector Net Debt - % GDP,,Headline,darkviolet,2000,quarters,,https://www.economicsobservatory.com/which-taxes-might-help-to-restore-sustainability-of-the-public-finances,,json,1,line,9
-DGS10,,Debt costs,10 year government bond yield,,Headline,darkviolet,1960,daily,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_BondYield.csv,csv,1,line,10
-DFF,,Fed Funds,Effective Federal Reserve Rate,,Headline,darkviolet,1960,annual,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_BankRate.csv,csv,1,line,11
-XYZ,,Exchange Rate,USD-GBP exchange rate,,Headline,darkviolet,1960,daily,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_exrUSDGBP.csv,csv,1,line,12
-PAYEMS,,Employment,Non-farm payroll,,Headline,darkviolet,1960,monthly,,,,,,,
-,,Redundancies,UK - thousands,,Labour market,darkviolet,1997,quarters,,https://www.economicsobservatory.com/how-has-the-uk-labour-market-fared-in-recessions-and-recoveries-since-1872,,json,1,line,13
-,,Long weeks,45+ hours work - % employees,,Labour market,darkviolet,1992,quarters,,https://www.economicsobservatory.com/coronavirus-careers-and-mental-health-what-are-links,,json,1,line,14
-,,Exports,Goods - GBP million,,Trade,darkviolet,1980,quarters,,https://www.economicsobservatory.com/how-has-the-pandemic-affected-international-trade-across-the-uk,,json,2,line,15
-,,Imports,Goods - GBP million,,Trade,darkviolet,1980,quarters,,,,,2,line,16
-,,Army-Navy-Air Force,Employment - thousands,,Public Sector,darkviolet,1980,quarters,,https://www.economicsobservatory.com/what-would-be-the-economic-consequences-of-a-military-stalemate-in-ukraine,,json,3,line,17
-,,Public Sector,Employment - thousands,,Public Sector,darkviolet,1980,quarters,,https://www.economicsobservatory.com/who-has-financed-higher-government-spending-during-pandemic,,json,3,line,18
-,,Police,Employment - thousands,,Public Sector,darkviolet,1999,quarters,,https://www.economicsobservatory.com/how-are-crime-trends-in-england-and-wales-changing-during-the-pandemic,,json,3,line,19
-,,Teachers,Employment - thousands,,Public Sector,darkviolet,1999,quarters,,https://www.economicsobservatory.com/how-best-should-school-resources-be-deployed-response-covid-19-crisis,,json,3,line,20
-,,Marriages,Per thousand population,,Society,darkviolet,1800,annual,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_MarriageRate.csv,csv,3,line,21
-,,Divorces,Per thousand - male,,Society,darkviolet,1950,annual,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_DivorceRate.csv,csv,3,line,22
-,,Holidays,UK visits abroad - thousand,,Consumption,darkviolet,1986,years,,https://www.economicsobservatory.com/update-how-is-covid-19-affecting-international-travel-and-tourism,,json,4,line,23
-,,Tourists,Foreign visitors to UK - thousand,,Consumption,darkviolet,1986,years,,https://www.economicsobservatory.com/update-how-is-covid-19-affecting-international-travel-and-tourism,,json,4,line,24
+Series,Dataset,Title,SubTitle,SubTitle2,Type,Colour,startDate,frequency,pageLink,articlesECO,dataLink,dataType,rank,mark,order,indexToCh
+UNRATE,,Unemployment,Ages 16 and over - %,,Headline,darkviolet,1980,monthly,https://fred.stlouisfed.org/series/UNRATE,https://www.economicsobservatory.com/is-work-in-the-uk-becoming-more-insecure,,json,1,line,1,0
+CPIAUCSL,,Inflation,CPI all urban consumers,,Headline,darkviolet,1980,monthly,https://fred.stlouisfed.org/series/CPIAUCSL,https://www.economicsobservatory.com/is-inflation-avoidable,,json,1,line,2,1
+CPILFESL,,Inflation - core,CPI ex food and energy,,,darkviolet,1980,,,,,,,,,1
+GDPC1,,GDP,Real GDP,,Headline,darkviolet,1980,quarters,https://fred.stlouisfed.org/series/GDPC1,https://www.economicsobservatory.com/what-do-the-latest-uk-data-reveal-about-regional-gdp,,json,1,bar,3,0
+OPHNFB,,Productivity,Output per hour,,,darkviolet,1955,quarters,https://fred.stlouisfed.org/series/OPHNFB,,,json,1,line,4,0
+USSTHPI,,House Prices,Average,,Housing,darkviolet,1986,annual,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_HousePrices.csv,csv,1,line,5,0
+,,Affordability,House price to income ratio,,Housing,darkviolet,1969,annual,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_HousePricesToIncomeRatio.csv,csv,1,line,6,0
+SIPOVGINIUSA,,Inequality,Gini coefficient - disposable income,,Income,darkviolet,1977,annual,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_GINI.csv,csv,1,line,7,0
+LRIN64TTUSQ156S,,Inactivity,Age 16-64 - % workforce,,Headline,darkviolet,1980,quarters,,https://www.economicsobservatory.com/how-has-employment-of-older-workers-changed-since-the-pandemic,,json,2,line,8,0
+GFDEGDQ188S,,Debt,Public Sector Net Debt - % GDP,,Headline,darkviolet,2000,quarters,,https://www.economicsobservatory.com/which-taxes-might-help-to-restore-sustainability-of-the-public-finances,,json,1,line,9,0
+DGS10,,Debt costs,10 year government bond yield,,Headline,darkviolet,1960,daily,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_BondYield.csv,csv,1,line,10,0
+DFF,,Fed Funds,Effective Federal Reserve Rate,,Headline,darkviolet,1960,annual,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_BankRate.csv,csv,1,line,11,0
+XYZ,,Exchange Rate,USD-GBP exchange rate,,Headline,darkviolet,1960,daily,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_exrUSDGBP.csv,csv,1,line,12,0
+PAYEMS,,Employment,Non-farm payroll,,Headline,darkviolet,1960,monthly,,,,,,,,0
+,,Redundancies,UK - thousands,,Labour market,darkviolet,1997,quarters,,https://www.economicsobservatory.com/how-has-the-uk-labour-market-fared-in-recessions-and-recoveries-since-1872,,json,1,line,13,0
+,,Long weeks,45+ hours work - % employees,,Labour market,darkviolet,1992,quarters,,https://www.economicsobservatory.com/coronavirus-careers-and-mental-health-what-are-links,,json,1,line,14,0
+,,Exports,Goods - GBP million,,Trade,darkviolet,1980,quarters,,https://www.economicsobservatory.com/how-has-the-pandemic-affected-international-trade-across-the-uk,,json,2,line,15,0
+,,Imports,Goods - GBP million,,Trade,darkviolet,1980,quarters,,,,,2,line,16,0
+,,Army-Navy-Air Force,Employment - thousands,,Public Sector,darkviolet,1980,quarters,,https://www.economicsobservatory.com/what-would-be-the-economic-consequences-of-a-military-stalemate-in-ukraine,,json,3,line,17,0
+,,Public Sector,Employment - thousands,,Public Sector,darkviolet,1980,quarters,,https://www.economicsobservatory.com/who-has-financed-higher-government-spending-during-pandemic,,json,3,line,18,0
+,,Police,Employment - thousands,,Public Sector,darkviolet,1999,quarters,,https://www.economicsobservatory.com/how-are-crime-trends-in-england-and-wales-changing-during-the-pandemic,,json,3,line,19,0
+,,Teachers,Employment - thousands,,Public Sector,darkviolet,1999,quarters,,https://www.economicsobservatory.com/how-best-should-school-resources-be-deployed-response-covid-19-crisis,,json,3,line,20,0
+,,Marriages,Per thousand population,,Society,darkviolet,1800,annual,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_MarriageRate.csv,csv,3,line,21,0
+,,Divorces,Per thousand - male,,Society,darkviolet,1950,annual,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_DivorceRate.csv,csv,3,line,22,0
+,,Holidays,UK visits abroad - thousand,,Consumption,darkviolet,1986,years,,https://www.economicsobservatory.com/update-how-is-covid-19-affecting-international-travel-and-tourism,,json,4,line,23,0
+,,Tourists,Foreign visitors to UK - thousand,,Consumption,darkviolet,1986,years,,https://www.economicsobservatory.com/update-how-is-covid-19-affecting-international-travel-and-tourism,,json,4,line,24,0
