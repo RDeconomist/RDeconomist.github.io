@@ -12,7 +12,8 @@
 var urlCharts = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/us/dataHub_SeriesFRED.csv";
 var request = new XMLHttpRequest();  
 request.open("GET", urlCharts, false);   
-request.send(null);  
+request.send(null);
+
 
 // Now make a new array, and fill it up with the info:
 var seriesList = new Array();
@@ -21,6 +22,7 @@ for (var i = 0; i < jsonObject.length; i++) {
     seriesList.push(jsonObject[i].split(','));
 }
 console.log(seriesList); // This is our full series list:
+
 
 // Remove any rows that relate to charts we do not want to make:
 // In the CSV there is a column, rank, that runs from 1 to 5. 
@@ -34,6 +36,40 @@ for (var i = 1; i < seriesList.length-1; i++) {
 console.log(seriesList);
 // STEP 1 - END //////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
+
+
+//////////////////////////////////////////////////////////////////////////////
+/// CREATE INDICES WHERE THEY ARE MISSING
+/// THE CPI DATA IS RETURNED AS AN INDEX
+/// Loop across all series
+for (var i = 1; i < seriesList.length-1; i++) {
+
+    // Look for the indicator, in column 16, that this needs to be done.
+    if(seriesList[i][16]==1){
+        console.log(seriesList[i][0]) // Print out which series is being altered.
+
+        let x = seriesList[i][0]; // Thie selects our series
+        let urlRaw = `https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/us/data_US_FRED-${x}.json`; // This a "template literal" that we will fill in each iteration of the loop.
+
+        var request2 = new XMLHttpRequest();  
+        request2.open("GET", urlRaw, false);   
+        request2.send(null);
+        var json2 = JSON.parse(request2.responseText);
+
+        // Now rename the value index, and calculate the % change between the idex, calling thi value
+        for (var i = 12; i<json2.observations.length; i++){
+            json2.observations[i].index = json2.observations[i].value 
+            json2.observations[i].value = json2.observations[i].value/json2.observations[i-12].value
+            }
+console.log(json2.observations[60])
+
+    
+    }
+}
+
+
+
+var timeSeries = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/us/data_US_FRED-DGS10.json";
 
 
 //////////////////////////////////////////////////////////////////////////////
