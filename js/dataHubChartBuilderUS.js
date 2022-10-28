@@ -66,25 +66,18 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
             "url": "", // Added from csv
             "format":{
                 "type": "json",
-                "property": "quarters"}},
+                "property": "observations"}},
 
         "transform": [
-            {"calculate": "datum.value", "as": "valuePlot"},
-            
-            {"calculate":"substring(datum.quarter,1)*3-1", "as": "quarter_n"},
-            {"calculate":"join([datum.year, datum.quarter_n],['-'])", "as": "date2"},
-            {"calculate":"timeParse(datum.date2, '%Y-%m')", "as": "date3"},
-
-            {"calculate":"year(datum.date3)", "as": "year"},
-
+            {"calculate":"year(datum.date)", "as": "year"},
             {"filter":{"field":"year", "gt":""}}],
             
         "height": 120,
         "width": 135,
-        "mark": {"type": "line",  "color": "", "interpolate":""},
+        "mark": {"type": "line",  "color": "", "interpolate":"monotone"},
         "encoding": {
-            "x":{"field":"date3", "type": "temporal", "title":null, "axis": {"grid": false,}},
-            "y":{"field":"valuePlot", "type": "quantitative", "title":null, "axis": {"grid": false,"format":"s", }}}} 
+            "x":{"field":"date", "type": "temporal", "title":null, "axis": {"grid": false,}},
+            "y":{"field":"value", "type": "quantitative", "title":null, "axis": {"grid": false,"format":"s", }}}} 
   
 
     // BUILDING THE SPEC UP INTO A SPECIFIC CHART:
@@ -94,7 +87,7 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
     spec.title.subtitle[0] = seriesList[i][3] // adding the subtitle (to first part of subtitle array)
     spec.title.subtitle[1] = seriesList[i][4] // adding the subtitle (to first part of subtitle array)
     spec.mark.color = seriesList[i][6] // adds the colour
-    spec.transform[5].filter.gt = seriesList[i][7] // adds the start year
+    spec.transform[1].filter.gt = seriesList[i][7] // adds the start year
     spec.mark.type = seriesList[i][14] // adds the mark type: line, bar etc.
 
     // STEP 2a - TWEAKS TO CHARTS 
@@ -105,36 +98,13 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
     //     spec.encoding.y.axis.format = "£s";
     // }
 
-    // Base Rate chart - interpolation:
-    if(seriesList[i][2]=="Base Rate"){
-        // Make the interpolation step wise
-        spec.mark.interpolate = "step"
-    };
-
     // Daily data charts:
     // Keep the daily data, but use it monthly and show the mean value:
-    if(seriesList[i][8] = "daily"){
+    if(seriesList[i][8] == "daily" || seriesList[i][8] == "monthly"){
         spec.encoding.x.timeUnit = "year"
         spec.encoding.y.aggregate = "mean"
     }
 
-    // Charts that do not have an ONS API.
-    // Record their series numbers as XYZ
-    if(seriesList[i][1]=="XYZ"){
-        // Correct the URL:
-        spec.data.url = seriesList[i][11];
-        // Correct the data type:
-        spec.data.format.type = seriesList[i][12];
-        // Correct the x encoding:
-        // Note that cannot use "year", since this is made above
-        spec.encoding.x.field = "dateYear";
-        // Cull the transform and property, as not needed:
-        delete spec.transform;
-        delete spec.data.format.property;
-        // Correct the encoding:
-        spec.encoding.y.field = "value";
-        spec.encoding.y.axis.format = "s";
-    }
 
     console.log(spec)
 
