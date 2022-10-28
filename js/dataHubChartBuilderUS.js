@@ -108,7 +108,7 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
         "transform": [
             {"calculate":"year(datum.date)", "as": "year"},
             {"filter":{"field":"year", "gt":""}},
-            {"calculate": "datum.value=='.' ? null : datum.value", "as":"value"}
+            {"calculate": "datum.value=='.' ? null : datum.value", "as":"value"} // deals with missing values which will prevent mean from being calculated.
         ],
             
         "height": 120,
