@@ -1,37 +1,58 @@
 // RICHARD DAVIES
 // DATA SCIENCE FOR ECONOMISTS
 
-// PURPOSE: JS DOWNLOADER THAT RUNS FROM ONS AND MAKES DIVS TO ACCOMODATE CHARTS
+// PURPOSE: JS DOWNLOADER THAT RUNS FROM ONS AND MAKES DIVS TO ACCOMODATE CHARTS.
 
-////////////////////////////
-//// Read in the info on the series that we want:
+
+///////////////////////////////////////////////////////////////////////////////
+// STEP 1. READS IN A CSV FILE THAT HAS ALL THE INFO NEEDED TO MAKE EACH CHART.
+// ** This creates an array "SeriesList" that is used to tailor each chart spec
+
+// First, read in the info on the series that we want:
 var urlCharts = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/onsDataHubSeries.csv";
-
 var request = new XMLHttpRequest();  
 request.open("GET", urlCharts, false);   
 request.send(null);  
 
+// Now make a new array, and fill it up with the info:
 var seriesList = new Array();
 var jsonObject = request.responseText.split(/\r?\n|\r/);
 for (var i = 0; i < jsonObject.length; i++) {
     seriesList.push(jsonObject[i].split(','));
 }
+console.log(seriesList); // This is our full series list:
+
+// Remove any rows that relate to charts we do not want to make:
+// In the CSV there is a column, rank, that runs from 1 to 5. 
+// Give charts that we DO NOT want to appear, a rank of 5. 
+for (var i = 1; i < seriesList.length-1; i++) {
+    if(seriesList[i][13]>4){
+        delete seriesList[i]
+    }
+}
 // Retrived data from csv file content
 console.log(seriesList);
-/////////////////////////////////
+// STEP 1 - END //////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
 
-//// # LOOP ACROSS THESE SERIES
 
-for(let i=1; i<seriesList.length -1; i++){
+//////////////////////////////////////////////////////////////////////////////
+// STEP 2 - LOOP ACROSS THE SERIES TO MAKE THE CHARTS
+
+
+for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there is a header row. And end at length -1 for same reason.
   
     // Make the URL:
+    // Working example: https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/ABMI/dataset/UKEA/data
     let x = seriesList[i][0]; // Thie selects out series
     let y = seriesList[i][1]; // This selects our dataset
     let urlRaw = `https://api.ons.gov.uk/timeseries/${x}/dataset/${y}/data`; // This a "template literal" that we will fill in each iteration of the loop.
-    let corsHelper = "https://api.allorigins.win/raw?url="; // This is a helper that helps us get past CORS problems
+    let corsHelper = "https://api.allorigins.win/raw?url="; // This is a helper url that helps us get past "CORS" problems
     let urlUse = corsHelper+urlRaw; // The final URL that we will use in this iteration of the loop. 
 
     // Set a base spec::
+    // This has lots of gaps in it, that the subsequent code will fill up. 
+    // This is how we take one spec, and end up with different tailored charts.
     let spec = {
         "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
         "title": {
@@ -143,6 +164,6 @@ for(let i=1; i<seriesList.length -1; i++){
 
     // Embed the chart made in this iteration of the loop, into the div made in this iteration of the loop:
     vegaEmbed("#chart"+i, spec, {"actions": false})
-
 }
-//////
+
+/// END ////////////////////////////////////////////////////////////////////////////////////////////
