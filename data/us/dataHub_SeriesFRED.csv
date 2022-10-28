@@ -1,7 +1,7 @@
 Series,Dataset,Title,SubTitle,SubTitle2,Type,Colour,startDate,frequency,pageLink,articlesECO,dataLink,dataType,rank,mark,order,indexToCh
 UNRATE,,Unemployment,Ages 16 and over - %,,Headline,darkviolet,1980,monthly,https://fred.stlouisfed.org/series/UNRATE,https://www.economicsobservatory.com/is-work-in-the-uk-becoming-more-insecure,,json,1,line,1,0
 CPIAUCSL,,Inflation,CPI all urban consumers,,Headline,darkviolet,1980,monthly,https://fred.stlouisfed.org/series/CPIAUCSL,https://www.economicsobservatory.com/is-inflation-avoidable,,json,1,line,2,1
-CPILFESL,,Inflation - core,CPI ex food and energy,,,darkviolet,1980,,,,,,,,,1
+CPILFESL,,Inflation - core,CPI ex food and energy,,,darkviolet,1980,,,,,,q,line,,1
 GDPC1,,GDP,Real GDP,,Headline,darkviolet,1980,quarters,https://fred.stlouisfed.org/series/GDPC1,https://www.economicsobservatory.com/what-do-the-latest-uk-data-reveal-about-regional-gdp,,json,1,bar,3,0
 OPHNFB,,Productivity,Output per hour,,,darkviolet,1955,quarters,https://fred.stlouisfed.org/series/OPHNFB,,,json,1,line,4,0
 USSTHPI,,House Prices,Average,,Housing,darkviolet,1986,annual,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_HousePrices.csv,csv,1,line,5,0
