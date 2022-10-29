@@ -16,14 +16,4 @@ M7.HSR.10.AUS.Q,ANA_AGG,Saving rate,,,Headline,blue,1960,quartNonAdj,,,,csv,1,li
 M5.GVA_MKT_PHW.10.AUS.Q,ANA_AGG,Productivity,Output per hour - index,,Headline,blue,1960,Q,,,,csv,1,line,15,0
 M5.TTR.10.AUS.Q,ANA_AGG,Terms of Trade,Index,,Headline,blue,1980,Q,,https://www.economicsobservatory.com/how-has-the-pandemic-affected-international-trade-across-the-uk,,csv,1,line,16,0
 3.3.1GSYD.Q,RPPI,House prices - Sydney,% change,,Headline,blue,1980,Q,,,,csv,1,line,17,0
-3.3.100.Q,RPPI,House prices,"% change, eight capitals",,Headline,blue,1930,Q,,https://www.economicsobservatory.com/what-would-be-the-economic-consequences-of-a-military-stalemate-in-ukraine,,csv,1,line,18,0
-,,Affordability,House price to income ratio,,Headline,blue,1969,,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_HousePricesToIncomeRatio.csv,csv,5,line,,0
-,,Redundancies,UK - thousands,,Headline,blue,1997,,,https://www.economicsobservatory.com/how-has-the-uk-labour-market-fared-in-recessions-and-recoveries-since-1872,,csv,5,line,,0
-,,Long weeks,45+ hours work - % employees,,Headline,blue,1992,,,https://www.economicsobservatory.com/coronavirus-careers-and-mental-health-what-are-links,,csv,5,line,,0
-,,Public Sector,Employment - thousands,,Headline,blue,1980,,,https://www.economicsobservatory.com/who-has-financed-higher-government-spending-during-pandemic,,csv,5,line,,0
-,,Police,Employment - thousands,,Headline,blue,1999,,,https://www.economicsobservatory.com/how-are-crime-trends-in-england-and-wales-changing-during-the-pandemic,,csv,5,line,,0
-,,Teachers,Employment - thousands,,Headline,blue,1999,,,https://www.economicsobservatory.com/how-best-should-school-resources-be-deployed-response-covid-19-crisis,,csv,5,line,,0
-,,Marriages,Per thousand population,,Headline,blue,1800,,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_MarriageRate.csv,csv,5,line,,0
-,,Divorces,Per thousand - male,,Headline,blue,1950,,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_DivorceRate.csv,csv,5,line,,0
-,,Holidays,UK visits abroad - thousand,,Headline,blue,1986,,,https://www.economicsobservatory.com/update-how-is-covid-19-affecting-international-travel-and-tourism,,csv,5,line,,0
-,,Tourists,Foreign visitors to UK - thousand,,Headline,blue,1986,,,https://www.economicsobservatory.com/update-how-is-covid-19-affecting-international-travel-and-tourism,,csv,5,line,,0
+3.3.100.Q,RPPI,House prices,% change -eight capitals,,Headline,blue,1930,Q,,https://www.economicsobservatory.com/what-would-be-the-economic-consequences-of-a-military-stalemate-in-ukraine,,csv,1,line,18,0
