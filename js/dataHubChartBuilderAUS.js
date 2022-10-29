@@ -9,7 +9,7 @@
 // ** This creates an array "SeriesList" that is used to tailor each chart spec
 
 // First, read in the info on the series that we want:
-var urlCharts = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/us/dataHub_AUS.csv";
+var urlCharts = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/aus/dataHub_AUS.csv";
 var request = new XMLHttpRequest();  
 request.open("GET", urlCharts, false);   
 request.send(null);
