@@ -106,7 +106,7 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
     spec.title.subtitle[0] = seriesList[i][3] // adding the subtitle (to first part of subtitle array)
     spec.title.subtitle[1] = seriesList[i][4] // adding the subtitle (to first part of subtitle array)
     spec.mark.color = seriesList[i][6] // adds the colour
-    spec.transform[1].filter.gt = seriesList[i][7] // adds the start year
+    spec.transform[4].filter.gt = seriesList[i][7] // adds the start year
     spec.mark.type = seriesList[i][14] // adds the mark type: line, bar etc.
 
     delete spec.transform
