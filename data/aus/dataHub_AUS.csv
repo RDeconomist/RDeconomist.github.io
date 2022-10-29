@@ -12,9 +12,9 @@ M26.AUS.TOTAL.A,ABS_LABOUR_ACCT,Inactive,LFS,,Headline,blue,1980,A,,https://www.
 3.40087.10.50.Q,CPI,Inflation - beer,Effective Federal Reserve Rate,,Headline,blue,1960,Q,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_BankRate.csv,csv,1,line,11,0
 M1.GPM.10.AUS.Q,ANA_AGG,GDP,Volume measure,,Headline,blue,1960,quartNonAdj,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_exrUSDGBP.csv,csv,1,line,12,0
 M1.GPM_PCA.10.AUS.Q,ANA_AGG,GDP per capita,,,Headline,blue,1960,quartNonAdj,,,,csv,1,line,13,0
-M1.HSR.10.AUS.Q,ANA_AGG,Saving rate,,,Headline,blue,1960,Q,,,,csv,1,line,14,0
-M1.GVA_MKT_PHW.10.AUS.Q,ANA_AGG,Productivity,Output per hour,,Headline,blue,1960,Q,,,,csv,1,line,15,0
-M1.TTR.10.AUS.Q,ANA_AGG,Terms of Trade,,,Headline,blue,1980,Q,,https://www.economicsobservatory.com/how-has-the-pandemic-affected-international-trade-across-the-uk,,csv,1,line,16,0
+M7.HSR.10.AUS.Q,ANA_AGG,Saving rate,,,Headline,blue,1960,Q,,,,csv,1,line,14,0
+M5.GVA_MKT_PHW.10.AUS.Q,ANA_AGG,Productivity,"Output per hour, index",,Headline,blue,1960,Q,,,,csv,1,line,15,0
+M5.TTR.10.AUS.Q,ANA_AGG,Terms of Trade,Index,,Headline,blue,1980,Q,,https://www.economicsobservatory.com/how-has-the-pandemic-affected-international-trade-across-the-uk,,csv,1,line,16,0
 3.3.1GSYD.Q,RPPI,House prices - Sydney,% change,,Headline,blue,1980,Q,,,,csv,1,line,17,0
 3.3.AUS.Q,RPPI,House prices,% change,,Headline,blue,1930,Q,,https://www.economicsobservatory.com/what-would-be-the-economic-consequences-of-a-military-stalemate-in-ukraine,,csv,1,line,18,0
 ,,Affordability,House price to income ratio,,Headline,blue,1969,,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_HousePricesToIncomeRatio.csv,csv,5,line,,0
