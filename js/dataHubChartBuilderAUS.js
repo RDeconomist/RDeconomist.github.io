@@ -138,7 +138,7 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
 
     // Daily data charts:
     // Keep the daily data, but use it monthly and show the mean value:
-    if(seriesList[i][8] == "daily" || seriesList[i][8] == "monthly"){
+    if(seriesList[i][8] == "daily" || seriesList[i][8] == "monthly" || seriesList[i][8] == "quartNonAdj"){
         spec.encoding.x.timeUnit = "year"
         spec.encoding.y.aggregate = "mean"
     }
