@@ -82,7 +82,7 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
                 "property": "observations"}},
 
         "transform": [
-            {},
+            {"caculate":"", "as":""},
             {},
             {},
             {"calculate":"year(datum.date)", "as": "year"},
@@ -158,13 +158,17 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
 
     // Charts that have the Quarterly data problem, 2000-Q1 etc:
 
-    if(seriesList[i][X]=="Q"){
+    if(seriesList[i][8]=="Q"){
+        spec.transform = [{}, {}, {}]
         spec.transform[0].calculate = "split(datum.TIME_PERIOD, '-Q')"
         spec.transform[0].as = "temp1"
         spec.transform[1].calculate = "datum.temp1[0]+'-'+datum.temp1[1]*3"
         spec.transform[1].as = "temp2"
         spec.transform[2].calculate = "toDate(datum.temp2)"
         spec.transform[2].as = "date"
+
+        spec.encoding.x.field = "date";
+
     }
 
 
