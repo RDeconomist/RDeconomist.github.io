@@ -1,29 +1,29 @@
 Series,Source,Title,SubTitle,SubTitle2,Type,Colour,startDate,frequency,dataPage,articlesECO,dataLink,dataType,rank,mark,order,indexToCh
-M9.AUS.TOTAL.A,ABS_LABOUR_ACCT,Employment,Total jobs all industries,,Headline,red,1980,A,https://fred.stlouisfed.org/series/UNRATE,https://www.economicsobservatory.com/is-work-in-the-uk-becoming-more-insecure,,csv,1,line,1,0
-3.10001.10.50.Q,CPI,Inflation,CPI all,,Headline,red,1950,Q,https://fred.stlouisfed.org/series/CPIAUCSL,https://www.economicsobservatory.com/is-inflation-avoidable,,csv,1,line,2,0
-,,Inflation - core,CPI ex food and energy,,,red,1980,,https://fred.stlouisfed.org/series/CPILFESL,,,csv,5,line,3,0
-,,Growth,Real GDP,,Headline,red,2005,,https://fred.stlouisfed.org/series/GDPC1,https://www.economicsobservatory.com/what-do-the-latest-uk-data-reveal-about-regional-gdp,,csv,5,bar,4,0
-,,Productivity,Output per hour,,,red,1955,,https://fred.stlouisfed.org/series/OPHNFB,,,csv,5,line,5,0
-,,House Prices,Average,,Housing,red,1986,,https://fred.stlouisfed.org/series/USSTHPI,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_HousePrices.csv,csv,5,line,6,0
-,,Inequality,Gini coefficient - disposable income,,Income,red,1995,,https://fred.stlouisfed.org/series/SIPOVGINIUSA,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_GINI.csv,csv,5,line,7,0
-,,Inactivity,Age 16-64 - % workforce,,Headline,red,1980,,https://fred.stlouisfed.org/series/LRIN64TTUSQ156S,https://www.economicsobservatory.com/how-has-employment-of-older-workers-changed-since-the-pandemic,,csv,5,line,8,0
-,,Debt,Public Sector Net Debt - % GDP,,Headline,red,2000,,https://fred.stlouisfed.org/series/GFDEGDQ188S,https://www.economicsobservatory.com/which-taxes-might-help-to-restore-sustainability-of-the-public-finances,,csv,5,line,9,0
-,,Debt costs,10 year government bond yield,,Headline,red,1960,,https://fred.stlouisfed.org/series/DGS10,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_BondYield.csv,csv,5,line,10,0
-,,Fed Funds,Effective Federal Reserve Rate,,Headline,red,1960,,https://fred.stlouisfed.org/series/DFF,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_BankRate.csv,csv,5,line,11,0
-,,Exchange Rate,GBP-USD rate,,Headline,red,1960,,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_exrUSDGBP.csv,csv,5,line,12,0
-,,Employment,Non-farm payroll,,Headline,red,1960,,https://fred.stlouisfed.org/series/PAYEMS,,,csv,5,line,13,0
-,,Pay,Median - inflation adjusted,,,red,1960,,https://fred.stlouisfed.org/series/LES1252881600Q,,,csv,5,line,14,0
-,,Saving rate,As % of disposale income,,,red,1960,,https://fred.stlouisfed.org/series/PSAVERT,,,csv,5,line,15,0
-,,Exports,Goods - GBP million,,Trade,red,1980,,https://fred.stlouisfed.org/series/EXPGS,https://www.economicsobservatory.com/how-has-the-pandemic-affected-international-trade-across-the-uk,,csv,5,line,16,0
-,,Imports,Goods - GBP million,,Trade,red,1980,,https://fred.stlouisfed.org/series/IMPGS,,,csv,5,line,17,0
-,,Military,Employment - thousands,,Public Sector,red,1930,,https://fred.stlouisfed.org/series/B4380C0A173NBEA,https://www.economicsobservatory.com/what-would-be-the-economic-consequences-of-a-military-stalemate-in-ukraine,,csv,5,line,18,0
-,,Affordability,House price to income ratio,,Housing,red,1969,,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_HousePricesToIncomeRatio.csv,csv,5,line,,0
-,,Redundancies,UK - thousands,,Labour market,red,1997,,,https://www.economicsobservatory.com/how-has-the-uk-labour-market-fared-in-recessions-and-recoveries-since-1872,,csv,5,line,,0
-,,Long weeks,45+ hours work - % employees,,Labour market,red,1992,,,https://www.economicsobservatory.com/coronavirus-careers-and-mental-health-what-are-links,,csv,5,line,,0
-,,Public Sector,Employment - thousands,,Public Sector,red,1980,,,https://www.economicsobservatory.com/who-has-financed-higher-government-spending-during-pandemic,,csv,5,line,,0
-,,Police,Employment - thousands,,Public Sector,red,1999,,,https://www.economicsobservatory.com/how-are-crime-trends-in-england-and-wales-changing-during-the-pandemic,,csv,5,line,,0
-,,Teachers,Employment - thousands,,Public Sector,red,1999,,,https://www.economicsobservatory.com/how-best-should-school-resources-be-deployed-response-covid-19-crisis,,csv,5,line,,0
-,,Marriages,Per thousand population,,Society,red,1800,,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_MarriageRate.csv,csv,5,line,,0
-,,Divorces,Per thousand - male,,Society,red,1950,,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_DivorceRate.csv,csv,5,line,,0
-,,Holidays,UK visits abroad - thousand,,Consumption,red,1986,,,https://www.economicsobservatory.com/update-how-is-covid-19-affecting-international-travel-and-tourism,,csv,5,line,,0
-,,Tourists,Foreign visitors to UK - thousand,,Consumption,red,1986,,,https://www.economicsobservatory.com/update-how-is-covid-19-affecting-international-travel-and-tourism,,csv,5,line,,0
+M9.AUS.TOTAL.A,ABS_LABOUR_ACCT,Employment,Total jobs all industries,,Headline,blue,1980,A,https://fred.stlouisfed.org/series/UNRATE,https://www.economicsobservatory.com/is-work-in-the-uk-becoming-more-insecure,,csv,1,line,1,0
+3.10001.10.50.Q,CPI,Inflation,CPI all,,Headline,blue,1950,Q,https://fred.stlouisfed.org/series/CPIAUCSL,https://www.economicsobservatory.com/is-inflation-avoidable,,csv,1,line,2,0
+M1.AUS.TOTAL.A,ABS_LABOUR_ACCT,Income,Average,,Headline,blue,1980,A,https://fred.stlouisfed.org/series/CPILFESL,,,csv,5,line,3,0
+M6.AUS.TOTAL.A,ABS_LABOUR_ACCT,Hours,Average per job,,Headline,blue,1980,A,https://fred.stlouisfed.org/series/GDPC1,https://www.economicsobservatory.com/what-do-the-latest-uk-data-reveal-about-regional-gdp,,csv,5,bar,4,0
+M10.AUS.TOTAL.A,ABS_LABOUR_ACCT,Vacancies,Number,,Headline,blue,1980,A,https://fred.stlouisfed.org/series/OPHNFB,,,csv,5,line,5,0
+M24.AUS.TOTAL.A,ABS_LABOUR_ACCT,Unemployed,LFS,,Headline,blue,1980,A,https://fred.stlouisfed.org/series/USSTHPI,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_HousePrices.csv,csv,5,line,6,0
+M27.AUS.TOTAL.A,ABS_LABOUR_ACCT,Underemployed,LFS,,Headline,blue,1980,A,https://fred.stlouisfed.org/series/SIPOVGINIUSA,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_GINI.csv,csv,5,line,7,0
+M26.AUS.TOTAL.A,ABS_LABOUR_ACCT,Inactive,LFS,,Headline,blue,1980,A,https://fred.stlouisfed.org/series/LRIN64TTUSQ156S,https://www.economicsobservatory.com/how-has-employment-of-older-workers-changed-since-the-pandemic,,csv,5,line,8,0
+,,Debt,Public Sector Net Debt - % GDP,,Headline,blue,2000,,https://fred.stlouisfed.org/series/GFDEGDQ188S,https://www.economicsobservatory.com/which-taxes-might-help-to-restore-sustainability-of-the-public-finances,,csv,5,line,9,0
+,,Debt costs,10 year government bond yield,,Headline,blue,1960,,https://fred.stlouisfed.org/series/DGS10,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_BondYield.csv,csv,5,line,10,0
+,,Fed Funds,Effective Federal Reserve Rate,,Headline,blue,1960,,https://fred.stlouisfed.org/series/DFF,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_BankRate.csv,csv,5,line,11,0
+,,Exchange Rate,GBP-USD rate,,Headline,blue,1960,,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_exrUSDGBP.csv,csv,5,line,12,0
+,,Employment,Non-farm payroll,,Headline,blue,1960,,https://fred.stlouisfed.org/series/PAYEMS,,,csv,5,line,13,0
+,,Pay,Median - inflation adjusted,,,blue,1960,,https://fred.stlouisfed.org/series/LES1252881600Q,,,csv,5,line,14,0
+,,Saving rate,As % of disposale income,,,blue,1960,,https://fred.stlouisfed.org/series/PSAVERT,,,csv,5,line,15,0
+,,Exports,Goods - GBP million,,Trade,blue,1980,,https://fred.stlouisfed.org/series/EXPGS,https://www.economicsobservatory.com/how-has-the-pandemic-affected-international-trade-across-the-uk,,csv,5,line,16,0
+,,Imports,Goods - GBP million,,Trade,blue,1980,,https://fred.stlouisfed.org/series/IMPGS,,,csv,5,line,17,0
+,,Military,Employment - thousands,,Public Sector,blue,1930,,https://fred.stlouisfed.org/series/B4380C0A173NBEA,https://www.economicsobservatory.com/what-would-be-the-economic-consequences-of-a-military-stalemate-in-ukraine,,csv,5,line,18,0
+,,Affordability,House price to income ratio,,Housing,blue,1969,,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_HousePricesToIncomeRatio.csv,csv,5,line,,0
+,,Redundancies,UK - thousands,,Labour market,blue,1997,,,https://www.economicsobservatory.com/how-has-the-uk-labour-market-fared-in-recessions-and-recoveries-since-1872,,csv,5,line,,0
+,,Long weeks,45+ hours work - % employees,,Labour market,blue,1992,,,https://www.economicsobservatory.com/coronavirus-careers-and-mental-health-what-are-links,,csv,5,line,,0
+,,Public Sector,Employment - thousands,,Public Sector,blue,1980,,,https://www.economicsobservatory.com/who-has-financed-higher-government-spending-during-pandemic,,csv,5,line,,0
+,,Police,Employment - thousands,,Public Sector,blue,1999,,,https://www.economicsobservatory.com/how-are-crime-trends-in-england-and-wales-changing-during-the-pandemic,,csv,5,line,,0
+,,Teachers,Employment - thousands,,Public Sector,blue,1999,,,https://www.economicsobservatory.com/how-best-should-school-resources-be-deployed-response-covid-19-crisis,,csv,5,line,,0
+,,Marriages,Per thousand population,,Society,blue,1800,,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_MarriageRate.csv,csv,5,line,,0
+,,Divorces,Per thousand - male,,Society,blue,1950,,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_DivorceRate.csv,csv,5,line,,0
+,,Holidays,UK visits abroad - thousand,,Consumption,blue,1986,,,https://www.economicsobservatory.com/update-how-is-covid-19-affecting-international-travel-and-tourism,,csv,5,line,,0
+,,Tourists,Foreign visitors to UK - thousand,,Consumption,blue,1986,,,https://www.economicsobservatory.com/update-how-is-covid-19-affecting-international-travel-and-tourism,,csv,5,line,,0
