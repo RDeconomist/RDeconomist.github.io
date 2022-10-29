@@ -109,10 +109,15 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
     spec.transform[4].filter.gt = seriesList[i][7] // adds the start year
     spec.mark.type = seriesList[i][14] // adds the mark type: line, bar etc.
 
-    delete spec.transform
+    
     spec.data.format.type = seriesList[i][12]
     spec.data.format.type = "csv"
     delete spec.data.format.property
+
+    // Deal with missing values:
+    spec.transform = [{"calculate": "datum.OBS_VALUE=='' ? null : datum.OBS_VALUE", "as":"value"}];
+    spec.encoding.y.field = "value"
+
 
     // Base Rate chart - interpolation:
         if(seriesList[i][2]=="Fed Funds"){
@@ -159,13 +164,16 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
     // Charts that have the Quarterly data problem, 2000-Q1 etc:
 
     if(seriesList[i][8]=="Q"){
-        spec.transform = [{}, {}, {}]
+        spec.transform = [{}, {}, {}, {}]
         spec.transform[0].calculate = "split(datum.TIME_PERIOD, '-Q')"
         spec.transform[0].as = "temp1"
         spec.transform[1].calculate = "datum.temp1[0]+'-'+datum.temp1[1]*3"
         spec.transform[1].as = "temp2"
         spec.transform[2].calculate = "toDate(datum.temp2)"
         spec.transform[2].as = "date"
+
+        // Same one from above, to deal with blanks:
+        spec.transform[3] = {"calculate": "datum.OBS_VALUE=='' ? null : datum.OBS_VALUE", "as":"value"}
 
         spec.encoding.x.field = "date";
 
