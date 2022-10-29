@@ -105,6 +105,10 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
     spec.transform[1].filter.gt = seriesList[i][7] // adds the start year
     spec.mark.type = seriesList[i][14] // adds the mark type: line, bar etc.
 
+    delete spec.transform
+    spec.data.format.type = seriesList[i][12]
+    delete spec.data.format.property
+
     // Base Rate chart - interpolation:
         if(seriesList[i][2]=="Fed Funds"){
             // Make the interpolation step wise
