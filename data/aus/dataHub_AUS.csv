@@ -1,22 +1,22 @@
 Series,Source,Title,SubTitle,SubTitle2,Type,Colour,startDate,frequency,dataPage,articlesECO,dataLink,dataType,rank,mark,order,indexToCh
-M9.AUS.TOTAL.A,ABS_LABOUR_ACCT,Employment,Total jobs all industries,,Headline,blue,1980,A,https://fred.stlouisfed.org/series/UNRATE,https://www.economicsobservatory.com/is-work-in-the-uk-becoming-more-insecure,,csv,1,line,1,0
-3.10001.10.50.Q,CPI,Inflation,CPI all,,Headline,blue,1950,Q,https://fred.stlouisfed.org/series/CPIAUCSL,https://www.economicsobservatory.com/is-inflation-avoidable,,csv,1,line,2,0
-M1.AUS.TOTAL.A,ABS_LABOUR_ACCT,Income,Average,,Headline,blue,1980,A,https://fred.stlouisfed.org/series/CPILFESL,,,csv,1,line,3,0
-M6.AUS.TOTAL.A,ABS_LABOUR_ACCT,Hours,Average per job,,Headline,blue,1980,A,https://fred.stlouisfed.org/series/GDPC1,https://www.economicsobservatory.com/what-do-the-latest-uk-data-reveal-about-regional-gdp,,csv,1,line,4,0
-M10.AUS.TOTAL.A,ABS_LABOUR_ACCT,Vacancies,Number,,Headline,blue,1980,A,https://fred.stlouisfed.org/series/OPHNFB,,,csv,1,line,5,0
-M24.AUS.TOTAL.A,ABS_LABOUR_ACCT,Unemployed,LFS,,Headline,blue,1980,A,https://fred.stlouisfed.org/series/USSTHPI,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_HousePrices.csv,csv,1,line,6,0
-M27.AUS.TOTAL.A,ABS_LABOUR_ACCT,Underemployed,LFS,,Headline,blue,1980,A,https://fred.stlouisfed.org/series/SIPOVGINIUSA,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_GINI.csv,csv,1,line,7,0
-M26.AUS.TOTAL.A,ABS_LABOUR_ACCT,Inactive,LFS,,Headline,blue,1980,A,https://fred.stlouisfed.org/series/LRIN64TTUSQ156S,https://www.economicsobservatory.com/how-has-employment-of-older-workers-changed-since-the-pandemic,,csv,1,line,8,0
-3.20001.10.50.Q,CPI,Inflation - food,And non-alcoholic drink,,Headline,blue,2000,Q,https://fred.stlouisfed.org/series/GFDEGDQ188S,https://www.economicsobservatory.com/which-taxes-might-help-to-restore-sustainability-of-the-public-finances,,csv,1,line,9,0
-3.131197.10.50.Q,CPI,Inflation - core,Ex food and energy,,Headline,blue,1960,Q,https://fred.stlouisfed.org/series/DGS10,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_BondYield.csv,csv,1,line,10,0
-3.40087.10.50.Q,CPI,Inflation - beer,Effective Federal Reserve Rate,,Headline,blue,1960,Q,https://fred.stlouisfed.org/series/DFF,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_BankRate.csv,csv,1,line,11,0
+M9.AUS.TOTAL.A,ABS_LABOUR_ACCT,Employment,Total jobs all industries,,Headline,blue,1980,A,,https://www.economicsobservatory.com/is-work-in-the-uk-becoming-more-insecure,,csv,1,line,1,0
+3.10001.10.50.Q,CPI,Inflation,CPI all,,Headline,blue,1950,Q,,https://www.economicsobservatory.com/is-inflation-avoidable,,csv,1,line,2,0
+M1.AUS.TOTAL.A,ABS_LABOUR_ACCT,Income,Average,,Headline,blue,1980,A,,,,csv,1,line,3,0
+M6.AUS.TOTAL.A,ABS_LABOUR_ACCT,Hours,Average per job,,Headline,blue,1980,A,,https://www.economicsobservatory.com/what-do-the-latest-uk-data-reveal-about-regional-gdp,,csv,1,line,4,0
+M10.AUS.TOTAL.A,ABS_LABOUR_ACCT,Vacancies,Number,,Headline,blue,1980,A,,,,csv,1,line,5,0
+M24.AUS.TOTAL.A,ABS_LABOUR_ACCT,Unemployed,LFS,,Headline,blue,1980,A,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_HousePrices.csv,csv,1,line,6,0
+M27.AUS.TOTAL.A,ABS_LABOUR_ACCT,Underemployed,LFS,,Headline,blue,1980,A,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_GINI.csv,csv,1,line,7,0
+M26.AUS.TOTAL.A,ABS_LABOUR_ACCT,Inactive,LFS,,Headline,blue,1980,A,,https://www.economicsobservatory.com/how-has-employment-of-older-workers-changed-since-the-pandemic,,csv,1,line,8,0
+3.20001.10.50.Q,CPI,Inflation - food,And non-alcoholic drink,,Headline,blue,2000,Q,,https://www.economicsobservatory.com/which-taxes-might-help-to-restore-sustainability-of-the-public-finances,,csv,1,line,9,0
+3.131197.10.50.Q,CPI,Inflation - core,Ex food and energy,,Headline,blue,1960,Q,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_BondYield.csv,csv,1,line,10,0
+3.40087.10.50.Q,CPI,Inflation - beer,Effective Federal Reserve Rate,,Headline,blue,1960,Q,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_BankRate.csv,csv,1,line,11,0
 M1.GDP.10.AUS.A,ANA_AGG,GDP,Volume measure,,Headline,blue,1960,A,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_exrUSDGBP.csv,csv,1,line,12,0
-,,Employment,Non-farm payroll,,Headline,blue,1960,,https://fred.stlouisfed.org/series/PAYEMS,,,csv,5,line,13,0
-,,Pay,Median - inflation adjusted,,,blue,1960,,https://fred.stlouisfed.org/series/LES1252881600Q,,,csv,5,line,14,0
-,,Saving rate,As % of disposale income,,,blue,1960,,https://fred.stlouisfed.org/series/PSAVERT,,,csv,5,line,15,0
-,,Exports,Goods - GBP million,,Trade,blue,1980,,https://fred.stlouisfed.org/series/EXPGS,https://www.economicsobservatory.com/how-has-the-pandemic-affected-international-trade-across-the-uk,,csv,5,line,16,0
-,,Imports,Goods - GBP million,,Trade,blue,1980,,https://fred.stlouisfed.org/series/IMPGS,,,csv,5,line,17,0
-,,Military,Employment - thousands,,Public Sector,blue,1930,,https://fred.stlouisfed.org/series/B4380C0A173NBEA,https://www.economicsobservatory.com/what-would-be-the-economic-consequences-of-a-military-stalemate-in-ukraine,,csv,5,line,18,0
+M1.GPM_PCA.10.AUS.A,ANA_AGG,GDP per capita,,,Headline,blue,1960,,,,,csv,5,line,13,0
+M1.HSR.10.AUS.A,ANA_AGG,Saving rate,,,,blue,1960,,,,,csv,5,line,14,0
+M1.GVA_MKT_PHW.10.AUS.A,ANA_AGG,Productivity,Output per hour,,,blue,1960,,,,,csv,5,line,15,0
+M1.TTR.10.AUS.A,ANA_AGG,Terms of Trade,,,Trade,blue,1980,,,https://www.economicsobservatory.com/how-has-the-pandemic-affected-international-trade-across-the-uk,,csv,5,line,16,0
+,,Imports,Goods - GBP million,,Trade,blue,1980,,,,,csv,5,line,17,0
+,,Military,Employment - thousands,,Public Sector,blue,1930,,,https://www.economicsobservatory.com/what-would-be-the-economic-consequences-of-a-military-stalemate-in-ukraine,,csv,5,line,18,0
 ,,Affordability,House price to income ratio,,Housing,blue,1969,,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_HousePricesToIncomeRatio.csv,csv,5,line,,0
 ,,Redundancies,UK - thousands,,Labour market,blue,1997,,,https://www.economicsobservatory.com/how-has-the-uk-labour-market-fared-in-recessions-and-recoveries-since-1872,,csv,5,line,,0
 ,,Long weeks,45+ hours work - % employees,,Labour market,blue,1992,,,https://www.economicsobservatory.com/coronavirus-careers-and-mental-health-what-are-links,,csv,5,line,,0
