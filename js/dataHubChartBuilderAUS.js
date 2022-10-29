@@ -107,6 +107,7 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
 
     delete spec.transform
     spec.data.format.type = seriesList[i][12]
+    spec.data.format.type = "csv"
     delete spec.data.format.property
 
     // Base Rate chart - interpolation:
