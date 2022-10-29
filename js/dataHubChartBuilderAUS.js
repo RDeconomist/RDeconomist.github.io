@@ -163,7 +163,7 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
 
     // Charts that have the Quarterly data problem, 2000-Q1 etc:
 
-    if(seriesList[i][8]=="Q"){
+    if(seriesList[i][8]=="Q" || seriesList[i][8]=="quartNonAdj"){
         spec.transform = [{}, {}, {}, {}]
         spec.transform[0].calculate = "split(datum.TIME_PERIOD, '-Q')"
         spec.transform[0].as = "temp1"
