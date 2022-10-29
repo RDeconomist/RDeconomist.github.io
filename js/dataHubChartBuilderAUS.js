@@ -82,8 +82,12 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
                 "property": "observations"}},
 
         "transform": [
+            {},
+            {},
+            {},
             {"calculate":"year(datum.date)", "as": "year"},
             {"filter":{"field":"year", "gt":""}},
+            
             {"calculate": "datum.value=='.' ? null : datum.value", "as":"value"} // deals with missing values which will prevent mean from being calculated.
         ],
             
@@ -150,6 +154,17 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
         // Correct the encoding:
         spec.encoding.y.field = "value";
         spec.encoding.y.axis.format = "s";
+    }
+
+    // Charts that have the Quarterly data problem, 2000-Q1 etc:
+
+    if(seriesList[i][X]=="Q"){
+        spec.transform[0].calculate = "split(datum.TIME_PERIOD, '-Q')"
+        spec.transform[0].as = "temp1"
+        spec.transform[1].calculate = "datum.temp1[0]+'-'+datum.temp1[1]*3"
+        spec.transform[1].as = "temp2"
+        spec.transform[2].calculate = "toDate(datum.temp2)"
+        spec.transform[2].as = "date"
     }
 
 
