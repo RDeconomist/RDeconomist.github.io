@@ -179,7 +179,8 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
 
     }
 
-
+    // Log the spec for debuggin each chart:
+    console.log("This is chart" + i)
     console.log(spec)
 
     ///////////////////
