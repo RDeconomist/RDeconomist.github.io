@@ -82,7 +82,7 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
                 "property": "[0]object.vectorDataPoint"}},
         "transform":[
             {"calculate":"year(datum.refPer)", "as":"year"},
-            {"filter":{"field":year, "gt":""}}],          
+            {"filter":{"field":"year", "gt":""}}],          
         "height": 120,
         "width": 135,
         "mark": {"type": "line",  "color": "", "interpolate":"monotone"},
