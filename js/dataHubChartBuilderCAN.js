@@ -80,8 +80,9 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
             "format":{
                 "type": "json",
                 "property": "[0]object.vectorDataPoint"}},
-
-          
+        "transform":[
+            {"calculate":"year(datum.refPer)", "as":"year"},
+            {"filter":{"field":year, "gt":""}}],          
         "height": 120,
         "width": 135,
         "mark": {"type": "line",  "color": "", "interpolate":"monotone"},
@@ -97,63 +98,9 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
     spec.title.subtitle[0] = seriesList[i][3] // adding the subtitle (to first part of subtitle array)
     spec.title.subtitle[1] = seriesList[i][4] // adding the subtitle (to first part of subtitle array)
     spec.mark.color = seriesList[i][6] // adds the colour
-    // spec.transform[4].filter.gt = seriesList[i][7] // adds the start year
+    spec.transform[1].filter.gt = seriesList[i][7] // adds the start year
     spec.mark.type = seriesList[i][14] // adds the mark type: line, bar etc.
 
-
-    // Index charts:
-    // Keep the daily data, but use it monthly and show the mean value:
-    if(seriesList[i][16] == 12 || seriesList[i][16] == 4) {
-        delete spec.data.url;
-        delete spec.data.format;
-        spec.data.values = json2.observations;
-        spec.encoding.y.axis.format = "%";
-
-    }
-
-
-    // Daily data charts:
-    // Keep the daily data, but use it monthly and show the mean value:
-    if(seriesList[i][8] == "daily" || seriesList[i][8] == "monthly" || seriesList[i][8] == "quartNonAdj"){
-        spec.encoding.x.timeUnit = "year"
-        spec.encoding.y.aggregate = "mean"
-    }
-
-    // Charts that do not have an ONS API.
-    // Record their series numbers as XYZ
-    if(seriesList[i][0]=="XYZ"){
-        // Correct the URL:
-        spec.data.url = seriesList[i][11];
-        // Correct the data type:
-        spec.data.format.type = seriesList[i][12];
-        // Correct the x encoding:
-        // Note that cannot use "year", since this is made above
-        spec.encoding.x.field = "dateYear";
-        // Cull the transform and property, as not needed:
-        delete spec.transform;
-        delete spec.data.format.property;
-        // Correct the encoding:
-        spec.encoding.y.field = "value";
-        spec.encoding.y.axis.format = "s";
-    }
-
-    // Charts that have the Quarterly data problem, 2000-Q1 etc:
-
-    if(seriesList[i][8]=="Q" || seriesList[i][8]=="quartNonAdj"){
-        spec.transform = [{}, {}, {}, {}]
-        spec.transform[0].calculate = "split(datum.TIME_PERIOD, '-Q')"
-        spec.transform[0].as = "temp1"
-        spec.transform[1].calculate = "datum.temp1[0]+'-'+datum.temp1[1]*3"
-        spec.transform[1].as = "temp2"
-        spec.transform[2].calculate = "toDate(datum.temp2)"
-        spec.transform[2].as = "date"
-
-        // Same one from above, to deal with blanks:
-        spec.transform[3] = {"calculate": "datum.OBS_VALUE=='' ? null : datum.OBS_VALUE", "as":"value"}
-
-        spec.encoding.x.field = "date";
-
-    }
 
     // Log the spec for debuggin each chart:
     console.log("This is chart" + i)

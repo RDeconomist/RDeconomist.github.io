@@ -1,5 +1,5 @@
 Series,Source,Title,SubTitle,SubTitle2,Type,Colour,startDate,frequency,dataPage,articlesECO,dataLink,dataType,rank,mark,order,indexToCh
-108785713,CPI,Inflation,CPI all,,Headline,green,1950,,,https://www.economicsobservatory.com/is-inflation-avoidable,,json,1,line,2,0
+108785713,CPI,Inflation,CPI all,,Headline,green,1990,,,https://www.economicsobservatory.com/is-inflation-avoidable,,json,1,line,2,0
 ,,,,,Headline,blue,2000,Q,,https://www.economicsobservatory.com/which-taxes-might-help-to-restore-sustainability-of-the-public-finances,,csv,5,line,9,0
 ,,,,,Headline,blue,1960,Q,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_BondYield.csv,csv,5,line,10,0
 ,,,,,Headline,blue,1960,Q,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_BankRate.csv,csv,5,line,11,0
