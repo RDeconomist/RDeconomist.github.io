@@ -40,3 +40,21 @@ Series,Source,Title,SubTitle,SubTitle2,Type,Colour,startDate,frequency,dataPage,
 62305751,,Statistical discrepancy,CAD millions,,,,,,,,,,1,,,,v62305751
 62305752,,Gross domestic product at market prices,CAD millions,,,,,,,,,,1,,,,v62305752
 62305753,,Final domestic demand,CAD millions,,,,,,,,,,1,,,,v62305753
+96439636,,Inequality,Adjusted market income,,,,,,,,,,,,,,v96439636
+96439637,,Inequality,Adjusted total income,,,,,,,,,,,,,,v96439637
+96439638,,Inequality,Adjusted after-tax income,,,,,,,,,,,,,,v96439638
+96411851,,Median market income,All,,,,,,,,,,,,,,v96411851
+96411852,,Median market income,Economic families,,,,,,,,,,,,,,v96411852
+96411864,,Median market income,Non family,,,,,,,,,,,,,,v96411864
+96411891,,Median government transfers,All,,,,,,,,,,,,,,v96411891
+96411892,,Median government transfers,Economic families,,,,,,,,,,,,,,v96411892
+96411904,,Median government transfers,Non family,,,,,,,,,,,,,,v96411904
+96411931,,Median total income,All,,,,,,,,,,,,,,v96411931
+96411932,,Median total income,Economic families,,,,,,,,,,,,,,v96411932
+96411944,,Median total income,Non family,,,,,,,,,,,,,,v96411944
+96411971,,Median income tax,All,,,,,,,,,,,,,,v96411971
+96411972,,Median income tax,Economic families,,,,,,,,,,,,,,v96411972
+96411984,,Median income tax,Non family,,,,,,,,,,,,,,v96411984
+96412011,,Median after-tax income,All,,,,,,,,,,,,,,v96412011
+96412012,,Median after-tax income,Economic families,,,,,,,,,,,,,,v96412012
+96412024,,Median after-tax income,Non family,,,,,,,,,,,,,,v96412024
