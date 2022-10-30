@@ -56,7 +56,7 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
   
     // Make the URL:
     // Working example: "https://api.data.abs.gov.au/data/ABS_LABOUR_ACCT/M9.AUS.TOTAL.A?detail=dataonly&format=csv"
-    let x = seriesList[i][0]; // Thie selects our series - vector ID.
+    let x = seriesList[i][0]; // This selects our series - vector ID.
     // let y = seriesList[i][1]; // This selects our dataset. Not needed.
     let urlRaw = `https://www150.statcan.gc.ca/t1/wds/rest/getDataFromVectorByReferencePeriodRange?vectorIds=${x}&startRefPeriod=1900-01-01&endReferencePeriod=2025-01-01`; // This a "template literal" that we will fill in each iteration of the loop.
     let corsHelper = ""; // Not needed
