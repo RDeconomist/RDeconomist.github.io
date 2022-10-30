@@ -21,7 +21,7 @@ Series,Source,Title,SubTitle,SubTitle2,Type,Colour,startDate,frequency,dataPage,
 62305732,,Investment,GFCF - CAD millions,,Headline,blue,1980,Q,,,,json,1,line,,,v62305732
 62305733,,Business investment,GFCF - CAD millions,,Headline,blue,1980,Q,,,,json,1,line,,,v62305733
 62305734,,Residential structures,CAD millions,,Headline,blue,1980,Q,,,,json,1,line,,,v62305734
-62305735,,"Non-residential structures, machinery and equipment",CAD millions,,Headline,blue,1980,Q,,,,json,1,line,,,v62305735
+62305735,,Non-residential structures - machinery and equipment,CAD millions,,Headline,blue,1980,Q,,,,json,1,line,,,v62305735
 62305736,,Non-residential structures,CAD millions,,Headline,blue,1980,Q,,,,json,1,line,,,v62305736
 62305737,,Machinery and equipment,CAD millions,,Headline,blue,1980,Q,,,,json,1,line,,,v62305737
 62305738,,Intellectual property products,CAD millions,,Headline,blue,1980,Q,,,,json,1,line,,,v62305738
