@@ -9,7 +9,7 @@
 // ** This creates an array "SeriesList" that is used to tailor each chart spec
 
 // First, read in the info on the series that we want:
-var urlCharts = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/aus/dataHub_CAN.csv";
+var urlCharts = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/can/dataHub_CAN.csv";
 var request = new XMLHttpRequest();  
 request.open("GET", urlCharts, false);   
 request.send(null);
@@ -97,7 +97,7 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
     spec.title.subtitle[0] = seriesList[i][3] // adding the subtitle (to first part of subtitle array)
     spec.title.subtitle[1] = seriesList[i][4] // adding the subtitle (to first part of subtitle array)
     spec.mark.color = seriesList[i][6] // adds the colour
-    spec.transform[4].filter.gt = seriesList[i][7] // adds the start year
+    // spec.transform[4].filter.gt = seriesList[i][7] // adds the start year
     spec.mark.type = seriesList[i][14] // adds the mark type: line, bar etc.
 
     
