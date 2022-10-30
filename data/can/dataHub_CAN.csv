@@ -17,44 +17,44 @@ Series,Source,Title,SubTitle,SubTitle2,Type,Colour,startDate,frequency,dataPage,
 62305728,,Non-durable goods,CAD millions,,Headline,blue,1980,Q,,https://www.economicsobservatory.com/how-has-the-pandemic-affected-international-trade-across-the-uk,,json,1,line,16,0,v62305728
 62305729,,Services,CAD millions,,Headline,blue,1980,Q,,,,json,1,line,17,0,v62305729
 62305730,,Non-profit institutions serving households' final consumption expenditure,CAD millions,,Headline,blue,1930,Q,,https://www.economicsobservatory.com/what-would-be-the-economic-consequences-of-a-military-stalemate-in-ukraine,,json,5,line,18,0,v62305730
-62305731,,General governments final consumption expenditure,CAD millions,,,,,,,,,json,1,line,,,v62305731
-62305732,,Investment,GFCF - CAD millions,,,,,,,,,json,1,line,,,v62305732
-62305733,,Business investment,GFCF - CAD millions,,,,,,,,,json,1,line,,,v62305733
-62305734,,Residential structures,CAD millions,,,,,,,,,json,1,line,,,v62305734
-62305735,,"Non-residential structures, machinery and equipment",CAD millions,,,,,,,,,json,5,line,,,v62305735
-62305736,,Non-residential structures,CAD millions,,,,,,,,,json,1,line,,,v62305736
-62305737,,Machinery and equipment,CAD millions,,,,,,,,,json,1,line,,,v62305737
-62305738,,Intellectual property products,CAD millions,,,,,,,,,json,1,line,,,v62305738
-62305739,,Non-profit institutions serving households' gross fixed capital formation,CAD millions,,,,,,,,,json,5,line,,,v62305739
-62305740,,Government investment,GFCF - CAD millions,,,,,,,,,json,1,line,,,v62305740
-62305741,,Inventory investment,CAD millions,,,,,,,,,json,1,line,,,v62305741
-62305742,,Of which: business investment in inventories,CAD millions,,,,,,,,,json,5,line,,,v62305742
-62305743,,Non-farm,CAD millions,,,,,,,,,json,1,line,,,v62305743
-62305744,,Farm,CAD millions,,,,,,,,,json,1,line,,,v62305744
-62305745,,Exports,Goods and services - m,,,,,,,,,json,1,line,,,v62305745
-62305746,,Exports of goods,CAD millions,,,,,,,,,json,1,line,,,v62305746
-62305747,,Exports of services,CAD millions,,,,,,,,,json,1,line,,,v62305747
-62305748,,Less: imports of goods and services,CAD millions,,,,,,,,,json,5,line,,,v62305748
-62305749,,Imports of goods,CAD millions,,,,,,,,,json,1,line,,,v62305749
-62305750,,Imports of services,CAD millions,,,,,,,,,json,1,line,,,v62305750
-62305751,,Statistical discrepancy,CAD millions,,,,,,,,,json,5,line,,,v62305751
-62305752,,GDP,Market prices - CAD million,,,,,,,,,json,1,line,,,v62305752
-62305753,,Final domestic demand,CAD millions,,,,,,,,,json,1,line,,,v62305753
-96439636,,Inequality,Adjusted market income,,,,,,,,,json,1,line,,,v96439636
-96439637,,Inequality,Adjusted total income,,,,,,,,,json,1,line,,,v96439637
-96439638,,Inequality,Adjusted after-tax income,,,,,,,,,json,1,line,,,v96439638
-96411851,,Median income,All,,,,,,,,,json,1,line,,,v96411851
-96411852,,Median income,Economic families,,,,,,,,,json,1,line,,,v96411852
-96411864,,Median income,Non family,,,,,,,,,json,1,line,,,v96411864
-96411891,,Median government transfers,All,,,,,,,,,json,1,line,,,v96411891
-96411892,,Median government transfers,Economic families,,,,,,,,,json,1,line,,,v96411892
-96411904,,Median government transfers,Non family,,,,,,,,,json,1,line,,,v96411904
-96411931,,Median total income,All,,,,,,,,,json,1,line,,,v96411931
-96411932,,Median total income,Economic families,,,,,,,,,json,1,line,,,v96411932
-96411944,,Median total income,Non family,,,,,,,,,json,1,line,,,v96411944
-96411971,,Median income tax,All,,,,,,,,,json,1,line,,,v96411971
-96411972,,Median income tax,Economic families,,,,,,,,,json,1,line,,,v96411972
-96411984,,Median income tax,Non family,,,,,,,,,json,1,line,,,v96411984
-96412011,,Median after-tax income,All,,,,,,,,,json,1,line,,,v96412011
-96412012,,Median after-tax income,Economic families,,,,,,,,,json,1,line,,,v96412012
-96412024,,Median after-tax income,Non family,,,,,,,,,json,1,line,,,v96412024
+62305731,,General governments final consumption expenditure,CAD millions,,Headline,blue,1980,Q,,,,json,1,line,,,v62305731
+62305732,,Investment,GFCF - CAD millions,,Headline,blue,1980,Q,,,,json,1,line,,,v62305732
+62305733,,Business investment,GFCF - CAD millions,,Headline,blue,1980,Q,,,,json,1,line,,,v62305733
+62305734,,Residential structures,CAD millions,,Headline,blue,1980,Q,,,,json,1,line,,,v62305734
+62305735,,"Non-residential structures, machinery and equipment",CAD millions,,Headline,blue,1980,Q,,,,json,5,line,,,v62305735
+62305736,,Non-residential structures,CAD millions,,Headline,blue,1980,Q,,,,json,1,line,,,v62305736
+62305737,,Machinery and equipment,CAD millions,,Headline,blue,1980,Q,,,,json,1,line,,,v62305737
+62305738,,Intellectual property products,CAD millions,,Headline,blue,1980,Q,,,,json,1,line,,,v62305738
+62305739,,Non-profit institutions serving households' gross fixed capital formation,CAD millions,,Headline,blue,1980,Q,,,,json,5,line,,,v62305739
+62305740,,Government investment,GFCF - CAD millions,,Headline,blue,1980,Q,,,,json,1,line,,,v62305740
+62305741,,Inventory investment,CAD millions,,Headline,blue,1980,Q,,,,json,1,line,,,v62305741
+62305742,,Of which: business investment in inventories,CAD millions,,Headline,blue,1980,Q,,,,json,5,line,,,v62305742
+62305743,,Non-farm,CAD millions,,Headline,blue,1980,Q,,,,json,1,line,,,v62305743
+62305744,,Farm,CAD millions,,Headline,blue,1980,Q,,,,json,1,line,,,v62305744
+62305745,,Exports,Goods and services - m,,Headline,blue,1980,Q,,,,json,1,line,,,v62305745
+62305746,,Exports of goods,CAD millions,,Headline,blue,1980,Q,,,,json,1,line,,,v62305746
+62305747,,Exports of services,CAD millions,,Headline,blue,1980,Q,,,,json,1,line,,,v62305747
+62305748,,Less: imports of goods and services,CAD millions,,Headline,blue,1980,Q,,,,json,5,line,,,v62305748
+62305749,,Imports of goods,CAD millions,,Headline,blue,1980,Q,,,,json,1,line,,,v62305749
+62305750,,Imports of services,CAD millions,,Headline,blue,1980,Q,,,,json,1,line,,,v62305750
+62305751,,Statistical discrepancy,CAD millions,,Headline,blue,1980,Q,,,,json,5,line,,,v62305751
+62305752,,GDP,Market prices - CAD million,,Headline,blue,1980,Q,,,,json,1,line,,,v62305752
+62305753,,Final domestic demand,CAD millions,,Headline,blue,1980,Q,,,,json,1,line,,,v62305753
+96439636,,Inequality,Adjusted market income,,Headline,blue,1980,Q,,,,json,1,line,,,v96439636
+96439637,,Inequality,Adjusted total income,,Headline,blue,1980,Q,,,,json,1,line,,,v96439637
+96439638,,Inequality,Adjusted after-tax income,,Headline,blue,1980,Q,,,,json,1,line,,,v96439638
+96411851,,Median income,All,,Headline,blue,1980,Q,,,,json,1,line,,,v96411851
+96411852,,Median income,Economic families,,Headline,blue,1980,Q,,,,json,1,line,,,v96411852
+96411864,,Median income,Non family,,Headline,blue,1980,Q,,,,json,1,line,,,v96411864
+96411891,,Median government transfers,All,,Headline,blue,1980,Q,,,,json,1,line,,,v96411891
+96411892,,Median government transfers,Economic families,,Headline,blue,1980,Q,,,,json,1,line,,,v96411892
+96411904,,Median government transfers,Non family,,Headline,blue,1980,Q,,,,json,1,line,,,v96411904
+96411931,,Median total income,All,,Headline,blue,1980,Q,,,,json,1,line,,,v96411931
+96411932,,Median total income,Economic families,,Headline,blue,1980,Q,,,,json,1,line,,,v96411932
+96411944,,Median total income,Non family,,Headline,blue,1980,Q,,,,json,1,line,,,v96411944
+96411971,,Median income tax,All,,Headline,blue,1980,Q,,,,json,1,line,,,v96411971
+96411972,,Median income tax,Economic families,,Headline,blue,1980,Q,,,,json,1,line,,,v96411972
+96411984,,Median income tax,Non family,,Headline,blue,1980,Q,,,,json,1,line,,,v96411984
+96412011,,Median after-tax income,All,,Headline,blue,1980,Q,,,,json,1,line,,,v96412011
+96412012,,Median after-tax income,Economic families,,Headline,blue,1980,Q,,,,json,1,line,,,v96412012
+96412024,,Median after-tax income,Non family,,Headline,blue,1980,Q,,,,json,1,line,,,v96412024
