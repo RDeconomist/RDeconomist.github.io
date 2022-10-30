@@ -100,21 +100,6 @@ for(let i=1; i<seriesList.length -1; i++){ // Start the loop at 1, since there i
     // spec.transform[4].filter.gt = seriesList[i][7] // adds the start year
     spec.mark.type = seriesList[i][14] // adds the mark type: line, bar etc.
 
-    
-    spec.data.format.type = seriesList[i][12]
-    spec.data.format.type = "csv"
-    delete spec.data.format.property
-
-    // Deal with missing values:
-    spec.transform = [{"calculate": "datum.OBS_VALUE=='' ? null : datum.OBS_VALUE", "as":"value"}];
-    spec.encoding.y.field = "value"
-
-
-    // Base Rate chart - interpolation:
-        if(seriesList[i][2]=="Fed Funds"){
-            // Make the interpolation step wise
-            spec.mark.interpolate = "step"
-        };
 
     // Index charts:
     // Keep the daily data, but use it monthly and show the mean value:
