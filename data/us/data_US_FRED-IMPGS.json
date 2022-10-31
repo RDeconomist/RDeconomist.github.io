@@ -1,0 +1,1858 @@
+{
+    "realtime_start": "2022-10-28",
+    "realtime_end": "2022-10-28",
+    "observation_start": "1600-01-01",
+    "observation_end": "9999-12-31",
+    "units": "lin",
+    "output_type": 1,
+    "file_type": "json",
+    "order_by": "observation_date",
+    "sort_order": "asc",
+    "count": 307,
+    "offset": 0,
+    "limit": 100000,
+    "observations": [
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1946-01-01",
+            "value": "."
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1946-04-01",
+            "value": "."
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1946-07-01",
+            "value": "."
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1946-10-01",
+            "value": "."
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1947-01-01",
+            "value": "7.519"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1947-04-01",
+            "value": "8.203"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1947-07-01",
+            "value": "7.663"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1947-10-01",
+            "value": "8.347"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1948-01-01",
+            "value": "9.624"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1948-04-01",
+            "value": "10.036"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1948-07-01",
+            "value": "10.456"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1948-10-01",
+            "value": "10.124"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1949-01-01",
+            "value": "9.604"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1949-04-01",
+            "value": "9.364"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1949-07-01",
+            "value": "8.936"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1949-10-01",
+            "value": "9.092"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1950-01-01",
+            "value": "9.501"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1950-04-01",
+            "value": "10.229"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1950-07-01",
+            "value": "13.033"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1950-10-01",
+            "value": "13.685"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1951-01-01",
+            "value": "14.866"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1951-04-01",
+            "value": "15.178"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1951-07-01",
+            "value": "14.31"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1951-10-01",
+            "value": "13.99"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1952-01-01",
+            "value": "14.958"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1952-04-01",
+            "value": "14.63"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1952-07-01",
+            "value": "15.25"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1952-10-01",
+            "value": "16.342"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1953-01-01",
+            "value": "15.795"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1953-04-01",
+            "value": "16.447"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1953-07-01",
+            "value": "16.307"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1953-10-01",
+            "value": "15.507"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1954-01-01",
+            "value": "14.78"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1954-04-01",
+            "value": "16.184"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1954-07-01",
+            "value": "15.304"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1954-10-01",
+            "value": "15.46"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1955-01-01",
+            "value": "16.169"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1955-04-01",
+            "value": "17.097"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1955-07-01",
+            "value": "17.421"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1955-10-01",
+            "value": "18.109"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1956-01-01",
+            "value": "18.925"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1956-04-01",
+            "value": "18.973"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1956-07-01",
+            "value": "19.253"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1956-10-01",
+            "value": "18.541"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1957-01-01",
+            "value": "20.1"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1957-04-01",
+            "value": "20.27"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1957-07-01",
+            "value": "19.762"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1957-10-01",
+            "value": "19.634"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1958-01-01",
+            "value": "19.455"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1958-04-01",
+            "value": "20.075"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1958-07-01",
+            "value": "19.739"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1958-10-01",
+            "value": "20.823"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1959-01-01",
+            "value": "21.396"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1959-04-01",
+            "value": "22.544"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1959-07-01",
+            "value": "22.868"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1959-10-01",
+            "value": "22.504"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1960-01-01",
+            "value": "23.288"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1960-04-01",
+            "value": "23.455"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1960-07-01",
+            "value": "22.879"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1960-10-01",
+            "value": "21.742"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1961-01-01",
+            "value": "21.658"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1961-04-01",
+            "value": "21.899"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1961-07-01",
+            "value": "23.326"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1961-10-01",
+            "value": "23.87"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1962-01-01",
+            "value": "24.314"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1962-04-01",
+            "value": "24.884"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1962-07-01",
+            "value": "25.111"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1962-10-01",
+            "value": "25.55"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1963-01-01",
+            "value": "25.185"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1963-04-01",
+            "value": "25.89"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1963-07-01",
+            "value": "26.704"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1963-10-01",
+            "value": "26.764"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1964-01-01",
+            "value": "26.978"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1964-04-01",
+            "value": "27.726"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1964-07-01",
+            "value": "28.429"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1964-10-01",
+            "value": "29.285"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1965-01-01",
+            "value": "28.457"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1965-04-01",
+            "value": "31.679"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1965-07-01",
+            "value": "32.03"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1965-10-01",
+            "value": "33.948"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1966-01-01",
+            "value": "34.99"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1966-04-01",
+            "value": "36.24"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1966-07-01",
+            "value": "38.171"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1966-10-01",
+            "value": "38.829"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1967-01-01",
+            "value": "39.432"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1967-04-01",
+            "value": "39.02"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1967-07-01",
+            "value": "39.543"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1967-10-01",
+            "value": "41.652"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1968-01-01",
+            "value": "44.399"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1968-04-01",
+            "value": "45.416"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1968-07-01",
+            "value": "48.24"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1968-10-01",
+            "value": "48.17"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1969-01-01",
+            "value": "43.804"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1969-04-01",
+            "value": "52.671"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1969-07-01",
+            "value": "52.365"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1969-10-01",
+            "value": "53.126"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1970-01-01",
+            "value": "53.517"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1970-04-01",
+            "value": "55.204"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1970-07-01",
+            "value": "56.431"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1970-10-01",
+            "value": "57.888"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1971-01-01",
+            "value": "58.651"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1971-04-01",
+            "value": "63.296"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1971-07-01",
+            "value": "65.482"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1971-10-01",
+            "value": "61.939"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1972-01-01",
+            "value": "72.173"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1972-04-01",
+            "value": "71.409"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1972-07-01",
+            "value": "74.09"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1972-10-01",
+            "value": "79.19"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1973-01-01",
+            "value": "85.36"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1973-04-01",
+            "value": "89.468"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1973-07-01",
+            "value": "91.139"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1973-10-01",
+            "value": "98.669"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1974-01-01",
+            "value": "110.315"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1974-04-01",
+            "value": "129.382"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1974-07-01",
+            "value": "133.61"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1974-10-01",
+            "value": "136.552"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1975-01-01",
+            "value": "124.888"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1975-04-01",
+            "value": "115.245"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1975-07-01",
+            "value": "122.055"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1975-10-01",
+            "value": "128.73"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1976-01-01",
+            "value": "138.938"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1976-04-01",
+            "value": "147.116"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1976-07-01",
+            "value": "155.848"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1976-10-01",
+            "value": "162.68"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1977-01-01",
+            "value": "176.433"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1977-04-01",
+            "value": "183.042"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1977-07-01",
+            "value": "182.904"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1977-10-01",
+            "value": "187.391"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1978-01-01",
+            "value": "203.282"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1978-04-01",
+            "value": "208.84"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1978-07-01",
+            "value": "215.062"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1978-10-01",
+            "value": "221.815"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1979-01-01",
+            "value": "229.828"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1979-04-01",
+            "value": "243.097"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1979-07-01",
+            "value": "257.306"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1979-10-01",
+            "value": "280.466"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1980-01-01",
+            "value": "304.311"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1980-04-01",
+            "value": "292.6"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1980-07-01",
+            "value": "279.202"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1980-10-01",
+            "value": "299.2"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1981-01-01",
+            "value": "319.726"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1981-04-01",
+            "value": "321.963"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1981-07-01",
+            "value": "309.9"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1981-10-01",
+            "value": "319.445"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1982-01-01",
+            "value": "309.478"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1982-04-01",
+            "value": "299.115"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1982-07-01",
+            "value": "309.282"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1982-10-01",
+            "value": "294.861"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1983-01-01",
+            "value": "295.251"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1983-04-01",
+            "value": "317.949"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1983-07-01",
+            "value": "343.381"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1983-10-01",
+            "value": "357.972"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1984-01-01",
+            "value": "387.978"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1984-04-01",
+            "value": "406.501"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1984-07-01",
+            "value": "409.591"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1984-10-01",
+            "value": "416.359"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1985-01-01",
+            "value": "397.308"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1985-04-01",
+            "value": "418.571"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1985-07-01",
+            "value": "414.168"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1985-10-01",
+            "value": "438.867"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1986-01-01",
+            "value": "439.418"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1986-04-01",
+            "value": "443.99"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1986-07-01",
+            "value": "459.432"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1986-10-01",
+            "value": "468.628"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1987-01-01",
+            "value": "477.685"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1987-04-01",
+            "value": "502.337"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1987-07-01",
+            "value": "517.318"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1987-10-01",
+            "value": "537.511"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1988-01-01",
+            "value": "542.714"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1988-04-01",
+            "value": "546.098"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1988-07-01",
+            "value": "552.849"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1988-10-01",
+            "value": "574.314"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1989-01-01",
+            "value": "586.154"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1989-04-01",
+            "value": "595.389"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1989-07-01",
+            "value": "584.427"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1989-10-01",
+            "value": "598.152"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1990-01-01",
+            "value": "626.767"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1990-04-01",
+            "value": "614.759"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1990-07-01",
+            "value": "630.102"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1990-10-01",
+            "value": "647.282"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1991-01-01",
+            "value": "620.317"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1991-04-01",
+            "value": "613.921"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1991-07-01",
+            "value": "621.669"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1991-10-01",
+            "value": "638.27"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1992-01-01",
+            "value": "645.823"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1992-04-01",
+            "value": "658.951"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1992-07-01",
+            "value": "677.853"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1992-10-01",
+            "value": "688.536"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1993-01-01",
+            "value": "699.31"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1993-04-01",
+            "value": "716.281"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1993-07-01",
+            "value": "719.251"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1993-10-01",
+            "value": "745.049"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1994-01-01",
+            "value": "761.827"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1994-04-01",
+            "value": "797.56"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1994-07-01",
+            "value": "833.751"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1994-10-01",
+            "value": "860.559"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1995-01-01",
+            "value": "886.899"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1995-04-01",
+            "value": "908.343"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1995-07-01",
+            "value": "905.843"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1995-10-01",
+            "value": "909.201"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1996-01-01",
+            "value": "936.735"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1996-04-01",
+            "value": "952.751"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1996-07-01",
+            "value": "973.757"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1996-10-01",
+            "value": "992.62"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1997-01-01",
+            "value": "1027.213"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1997-04-01",
+            "value": "1039.651"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1997-07-01",
+            "value": "1070.888"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1997-10-01",
+            "value": "1085.344"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1998-01-01",
+            "value": "1098.236"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1998-04-01",
+            "value": "1109.626"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1998-07-01",
+            "value": "1109.897"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1998-10-01",
+            "value": "1145.0"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1999-01-01",
+            "value": "1173.324"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1999-04-01",
+            "value": "1222.126"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1999-07-01",
+            "value": "1281.712"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "1999-10-01",
+            "value": "1332.679"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2000-01-01",
+            "value": "1409.487"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2000-04-01",
+            "value": "1455.86"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2000-07-01",
+            "value": "1518.869"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2000-10-01",
+            "value": "1524.52"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2001-01-01",
+            "value": "1499.464"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2001-04-01",
+            "value": "1422.028"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2001-07-01",
+            "value": "1369.536"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2001-10-01",
+            "value": "1323.208"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2002-01-01",
+            "value": "1356.041"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2002-04-01",
+            "value": "1432.413"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2002-07-01",
+            "value": "1463.107"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2002-10-01",
+            "value": "1499.335"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2003-01-01",
+            "value": "1529.463"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2003-04-01",
+            "value": "1527.336"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2003-07-01",
+            "value": "1556.304"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2003-10-01",
+            "value": "1615.376"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2004-01-01",
+            "value": "1699.644"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2004-04-01",
+            "value": "1787.734"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2004-07-01",
+            "value": "1832.856"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2004-10-01",
+            "value": "1921.78"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2005-01-01",
+            "value": "1955.063"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2005-04-01",
+            "value": "2002.063"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2005-07-01",
+            "value": "2053.275"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2005-10-01",
+            "value": "2155.529"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2006-01-01",
+            "value": "2204.784"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2006-04-01",
+            "value": "2253.809"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2006-07-01",
+            "value": "2298.702"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2006-10-01",
+            "value": "2269.198"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2007-01-01",
+            "value": "2317.264"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2007-04-01",
+            "value": "2368.569"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2007-07-01",
+            "value": "2414.664"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2007-10-01",
+            "value": "2480.413"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2008-01-01",
+            "value": "2584.568"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2008-04-01",
+            "value": "2681.686"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2008-07-01",
+            "value": "2709.569"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2008-10-01",
+            "value": "2328.779"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2009-01-01",
+            "value": "1932.761"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2009-04-01",
+            "value": "1879.461"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2009-07-01",
+            "value": "2018.722"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2009-10-01",
+            "value": "2176.763"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2010-01-01",
+            "value": "2269.069"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2010-04-01",
+            "value": "2362.255"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2010-07-01",
+            "value": "2431.195"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2010-10-01",
+            "value": "2495.702"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2011-01-01",
+            "value": "2608.884"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2011-04-01",
+            "value": "2697.224"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2011-07-01",
+            "value": "2723.903"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2011-10-01",
+            "value": "2751.911"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2012-01-01",
+            "value": "2792.253"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2012-04-01",
+            "value": "2780.827"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2012-07-01",
+            "value": "2750.817"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2012-10-01",
+            "value": "2753.373"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2013-01-01",
+            "value": "2755.277"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2013-04-01",
+            "value": "2759.783"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2013-07-01",
+            "value": "2767.183"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2013-10-01",
+            "value": "2783.259"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2014-01-01",
+            "value": "2853.69"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2014-04-01",
+            "value": "2900.572"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2014-07-01",
+            "value": "2888.549"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2014-10-01",
+            "value": "2906.969"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2015-01-01",
+            "value": "2824.356"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2015-04-01",
+            "value": "2807.521"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2015-07-01",
+            "value": "2801.398"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2015-10-01",
+            "value": "2746.123"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2016-01-01",
+            "value": "2693.609"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2016-04-01",
+            "value": "2710.632"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2016-07-01",
+            "value": "2750.495"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2016-10-01",
+            "value": "2798.701"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2017-01-01",
+            "value": "2872.685"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2017-04-01",
+            "value": "2903.468"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2017-07-01",
+            "value": "2902.948"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2017-10-01",
+            "value": "3020.875"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2018-01-01",
+            "value": "3094.479"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2018-04-01",
+            "value": "3107.441"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2018-07-01",
+            "value": "3154.175"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2018-10-01",
+            "value": "3168.569"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2019-01-01",
+            "value": "3142.585"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2019-04-01",
+            "value": "3165.27"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2019-07-01",
+            "value": "3118.162"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2019-10-01",
+            "value": "3042.922"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2020-01-01",
+            "value": "2935.383"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2020-04-01",
+            "value": "2343.723"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2020-07-01",
+            "value": "2798.97"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2020-10-01",
+            "value": "3026.384"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2021-01-01",
+            "value": "3177.739"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2021-04-01",
+            "value": "3337.485"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2021-07-01",
+            "value": "3442.476"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2021-10-01",
+            "value": "3647.745"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2022-01-01",
+            "value": "3927.908"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2022-04-01",
+            "value": "4074.409"
+        },
+        {
+            "realtime_start": "2022-10-28",
+            "realtime_end": "2022-10-28",
+            "date": "2022-07-01",
+            "value": "3961.413"
+        }
+    ]
+}

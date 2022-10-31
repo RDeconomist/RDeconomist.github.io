@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+<head>
+<!-- //////////////////////////////////////  HEAD START //////////////////////////////////////// -->
+  <!-- Generic page view stuff -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Hub Canada</title>
+
+<!--Stylesheets-->
+   <link rel="stylesheet" href="css/dataHub.css">
+   <link rel="stylesheet" href="css/footer.css">
+
+<!-- START GOOGLE ANALYTICS -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- This stuff provided by Google from the Admin page of Analysics account -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP82FVH378"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JP82FVH378');
+    </script>
+<!-- END GOOGLE ANALYTICS -->
+
+<!--Allow the Vega embed-->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+<!-- Add icon library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- //////////////////////////////////////  HEAD END //////////////////////////////////////// -->
+
+
+  
+
+</head>
+
+
+<!-- //////////////////////////////////////  BODY //////////////////////////////////////// -->
+<body>
+    <div class="wrap">
+        <h1>canada<span style="color: #86d0bb">hub</span></h1>
+        <span style="display:block; height: 10px;"></span>
+        <p id="rubric" class="rubric">A Canadian dashboard. By Richard Davies</p>
+        <span style="display:block; height: 10px;"></span>
+    </div>
+ 
+  <!-- Div to house the charts -->
+  <div class="grid_items"><!-- INJECT GRID ITEMS HERE, WITH A CLASS "grid_item"--></div>   
+<!-- ////////////////////////////////////// END BODY //////////////////////////////////////// -->
+  
+
+
+
+
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+<span style="display:block; height: 40px;"></span>
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+              <div class="column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="mission">Mission</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
+              </div>
+              <div class="column">
+                    <h3>Resources</h3>
+                    <ul>
+                      <li><a href="datascience">Course</a></li>  
+                      <li><a href="build">Chart Builder</a></li>
+                        
+                    </ul>
+              </div>
+              </div>
+                
+                <div class="footer-finalrow">
+                    <h3>Rapid Charts</h3>
+                    <p>Automated and interactive data analysis.</p>                    </div>
+                
+                <div class="col item social">
+                  <a href="https://www.economicsobservatory.com" class="fa fa-university"></a>
+                  <a href="https://twitter.com/RD_Economist" class="fa fa-twitter"></a>
+                  <a href="https://www.instagram.com/rapidcharts" class="fa fa-instagram"></a>
+                  <a href="https://www.linkedin.com/in/rd-economist" class="fa fa-linkedin"></a>
+                </div>
+            
+              </div>
+            <p class="copyright">Richard Davies © 2022</p>
+      </footer>          
+</div>
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+</body>
+
+<!-- Chart injector code: -->
+<script src="js/dataHubChartBuilderCAN.js">
+
+  
+</script>
+
+</html>

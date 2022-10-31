@@ -1,0 +1,19 @@
+Series,Source,Title,SubTitle,SubTitle2,Type,Colour,startDate,frequency,dataPage,articlesECO,dataLink,dataType,rank,mark,order,indexToCh
+3.10001.10.50.Q,CPI,Inflation,CPI all,,Headline,blue,1950,Q,,https://www.economicsobservatory.com/is-inflation-avoidable,,csv,1,line,2,0
+3.20001.10.50.Q,CPI,Inflation - food,And non-alcoholic drink,,Headline,blue,2000,Q,,https://www.economicsobservatory.com/which-taxes-might-help-to-restore-sustainability-of-the-public-finances,,csv,1,line,9,0
+3.131197.10.50.Q,CPI,Inflation - core,Ex food and energy,,Headline,blue,1960,Q,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_BondYield.csv,csv,1,line,10,0
+3.40087.10.50.Q,CPI,Inflation - beer,Effective Federal Reserve Rate,,Headline,blue,1960,Q,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_BankRate.csv,csv,1,line,11,0
+M9.AUS.TOTAL.A,ABS_LABOUR_ACCT,Employment,Total jobs all industries,,Headline,blue,1980,A,,https://www.economicsobservatory.com/is-work-in-the-uk-becoming-more-insecure,,csv,1,line,1,0
+M1.AUS.TOTAL.A,ABS_LABOUR_ACCT,Income,Average,,Headline,blue,1980,A,,,,csv,1,line,3,0
+M6.AUS.TOTAL.A,ABS_LABOUR_ACCT,Hours,Average per job,,Headline,blue,1980,A,,https://www.economicsobservatory.com/what-do-the-latest-uk-data-reveal-about-regional-gdp,,csv,1,line,4,0
+M10.AUS.TOTAL.A,ABS_LABOUR_ACCT,Vacancies,Number,,Headline,blue,1980,A,,,,csv,1,line,5,0
+M24.AUS.TOTAL.A,ABS_LABOUR_ACCT,Unemployed,LFS,,Headline,blue,1980,A,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_HousePrices.csv,csv,1,line,6,0
+M27.AUS.TOTAL.A,ABS_LABOUR_ACCT,Underemployed,LFS,,Headline,blue,1980,A,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_GINI.csv,csv,1,line,7,0
+M26.AUS.TOTAL.A,ABS_LABOUR_ACCT,Inactive,LFS,,Headline,blue,1980,A,,https://www.economicsobservatory.com/how-has-employment-of-older-workers-changed-since-the-pandemic,,csv,1,line,8,0
+M1.GPM.10.AUS.Q,ANA_AGG,GDP,Volume measure,,Headline,blue,1960,quartNonAdj,,,https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/uk/data_UK_exrUSDGBP.csv,csv,1,line,12,0
+M1.GPM_PCA.10.AUS.Q,ANA_AGG,GDP per capita,,,Headline,blue,1960,quartNonAdj,,,,csv,1,line,13,0
+M7.HSR.10.AUS.Q,ANA_AGG,Saving rate,,,Headline,blue,1960,quartNonAdj,,,,csv,1,line,14,0
+M5.GVA_MKT_PHW.10.AUS.Q,ANA_AGG,Productivity,Output per hour - index,,Headline,blue,1960,Q,,,,csv,1,line,15,0
+M5.TTR.10.AUS.Q,ANA_AGG,Terms of Trade,Index,,Headline,blue,1980,Q,,https://www.economicsobservatory.com/how-has-the-pandemic-affected-international-trade-across-the-uk,,csv,1,line,16,0
+3.3.1GSYD.Q,RPPI,House prices - Sydney,% change,,Headline,blue,1980,Q,,,,csv,1,line,17,0
+3.3.100.Q,RPPI,House prices,% change -eight capitals,,Headline,blue,1930,Q,,https://www.economicsobservatory.com/what-would-be-the-economic-consequences-of-a-military-stalemate-in-ukraine,,csv,1,line,18,0
