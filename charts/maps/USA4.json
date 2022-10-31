@@ -6,9 +6,9 @@
     "view": {"stroke": "transparent"},
   
     "title": {
-        "text": "Crime in the USA",
+        "text": "Heading West",
         "fontSize": 12,
-        "subtitle":["Offences per 100k population. Source FBI, 2019", ""],
+        "subtitle":["Population by State, US, 1900-2021", ""],
         "subtitleFontStyle":"italic",
         "subtitleFontSize":10, "anchor": "middle"},
   
