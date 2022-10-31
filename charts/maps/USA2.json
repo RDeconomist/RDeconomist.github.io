@@ -3,6 +3,7 @@
   
     "width": 500,
     "height": 300,
+    "view": {"stroke": "transparent"}},
   
      "title": {
       "text": "Car theft in the USA",
