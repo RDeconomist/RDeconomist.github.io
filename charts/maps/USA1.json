@@ -1,0 +1,25 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 500,
+  "height": 300,
+  "title": {
+    "text": "USA - base map",
+    "subtitle":["Albers USA projection"],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "subtitlePadding":5,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/geoUSStates.json",
+    "format": {"property": "features"}
+  },
+  "projection": {"type": "albersUsa"},
+  "mark": {
+      "type": "geoshape",
+      "fill": "lightgrey",
+      "stroke": "darkgray",
+      "strokeWidth":0.5},
+  "encoding": {"tooltip":{"field":"properties.NAME"}}
+}
