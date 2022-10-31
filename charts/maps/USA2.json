@@ -3,7 +3,7 @@
   
     "width": 500,
     "height": 300,
-    "view": {"stroke": "transparent"}},
+    "view": {"stroke": "transparent"},
   
      "title": {
       "text": "Car theft in the USA",
@@ -43,5 +43,4 @@
         {"field":"properties.NAME", "title": "State"},
         {"field":"Motor Vehicle Theft", "title": "Offences:", "format": ",d"}
       ]
-    }
-  }
+    }}
