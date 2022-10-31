@@ -1,0 +1,60 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "width": 500,
+    "height": 300,
+    "view": {"stroke": "transparent"},
+  
+    "title": {
+        "text": "Crime in the USA",
+        "fontSize": 12,
+        "subtitle":["Offences per 100k population. Source FBI, 2019", ""],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10, "anchor": "middle"},
+  
+    "params": [    
+    {"name":"yearSelector", "value":2015,
+       "bind":{
+         "input": "range",
+         "min": 1900, 
+         "max": 2021, 
+         "step": 5,
+         "name": "Year:"}
+    }],
+    
+    "data": {
+        "url":"https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataUSstatesPopulationLong.csv",
+        "format": {"type": "csv"}},
+  
+    "transform":[
+  
+      {"filter":"datum.Year == yearSelector"},
+        
+  
+  
+        {"lookup": "State",
+            "from": {
+                "data": {
+                    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/geoUSStates.json",
+                    "format":{"property":"features"}},
+            "key": "properties.NAME",
+                "fields": [       
+                    "properties",
+                    "type",
+                    "geometry"]}}],
+  
+    "projection": {"type": "albersUsa"},
+    "mark": "geoshape", 
+  
+    "encoding":{
+      
+        "color":{
+            "field":"Value",
+            "legend":{
+                "title":null,
+                "orient": "right",
+                "direction": "vertical"},
+            "type": "quantitative",
+            "scale":{"scheme":"lightgreyred"}}
+    }
+  }
