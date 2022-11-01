@@ -4,7 +4,7 @@
 
   "title": {
     "text": "World Map",
-    "subtitle":"Matching problem 2",
+    "subtitle":"GDP per capita",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "middle",
@@ -31,15 +31,15 @@
       {"lookup": "id_N",
         "from": {
           "key": "id",
-          "fields": ["name"],
+          "fields": ["alpha3"],
           "data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataWorldCountryNamesIDs.json"}}
           },
 
-      {"lookup": "name",
+      {"lookup": "alpha3",
         "from": {
-          "key": "Country",
+          "key": "country2",
           "fields": ["BCA", "NGDPDPC"],
-          "data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataWEOallWide.csv"}}
+          "data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataWEOallWideCountryCodes.csv"}}
           }    
       
       ],    
@@ -60,12 +60,10 @@
       "field":"NGDPDPC",
       "type": "quantitative",
       "scale":{
-        "scheme":"inferno"},
+        "scheme":"turbo",
+        "domain":[0,80000]},
       "legend":{
         "orient": "top-left",
         "direction": "vertical"}}
-
-
   }
-
 }

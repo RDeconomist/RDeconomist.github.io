@@ -1,10 +1,10 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-  "description": "Names of countries imperfectly matched. US vs USA for example",
+  "description": "This version mends the problem match caused by one variable being a number and the other being string. See 004 Afghanistan for example",
 
   "title": {
     "text": "World Map",
-    "subtitle":"GDP per capita",
+    "subtitle":"With country names tooltip",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "middle",
@@ -31,15 +31,15 @@
       {"lookup": "id_N",
         "from": {
           "key": "id",
-          "fields": ["alpha3"],
+          "fields": ["name"],
           "data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataWorldCountryNamesIDs.json"}}
           },
 
-      {"lookup": "alpha3",
+      {"lookup": "name",
         "from": {
-          "key": "country2",
-          "fields": ["BCA", "NGDPDPC"],
-          "data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataWEOallWideCountryCodes.csv"}}
+          "key": "Country",
+          "fields": ["Value"],
+          "data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataWEOApr2022all.csv"}}
           }    
       
       ],    
@@ -57,13 +57,11 @@
     "tooltip":{"field":"name"},
 
     "color":{
-      "field":"NGDPDPC",
+      "field":"id_N",
       "type": "quantitative",
-      "scale":{
-        "scheme":"turbo",
-        "domain":[0,80000]},
-      "legend":{
-        "orient": "top-left",
-        "direction": "vertical"}}
+      "legend":null}
+
+
   }
+
 }
