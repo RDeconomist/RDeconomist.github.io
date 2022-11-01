@@ -4,7 +4,7 @@
 
   "title": {
     "text": "World Map",
-    "subtitle":"Matching problem 2",
+    "subtitle":["Matching problem 2",""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "middle",
@@ -62,8 +62,8 @@
       "scale":{
         "scheme":"inferno"},
       "legend":{
-        "orient": "left",
-        "direction": "vertical"}}
+        "orient": "bottom",
+        "direction": "horizontal"}}
 
 
   }

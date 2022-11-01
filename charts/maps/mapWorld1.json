@@ -2,7 +2,7 @@
 
   "title": {
     "text": "World Map",
-    "subtitle":"Natural Earth Projection",
+    "subtitle":["Natural Earth Projection",""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "middle",

@@ -2,7 +2,7 @@
 
   "title": {
     "text": "World Map",
-    "subtitle":"Matching problem 1",
+    "subtitle":["Matching problem 1",""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "middle",
