@@ -23,13 +23,15 @@
     }],
     
     "data": {
-        "url":"https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataUSstatesPopulation.csv",
+        "url":"https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataUSstatesPopulationLong.csv",
         "format": {"type": "csv"}},
   
     "transform":[
-
+  
       {"filter":"datum.Year == yearSelector"},
-      
+        
+  
+  
         {"lookup": "State",
             "from": {
                 "data": {

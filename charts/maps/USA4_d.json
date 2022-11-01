@@ -21,8 +21,9 @@
          "step": 5,
          "name": "Year:"}}],    
   
-    "projection": {"type": "albersUsa"},
-    "mark": "geoshape", 
+    "mark":{
+      "type":"bar",
+      "color":"rgb(0,67,167)"},
     
     "data": {
         "url":"https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataUSstatesPopulation.csv",
@@ -32,27 +33,15 @@
       {"calculate": "toNumber(yearSelector)", "as": "yearS"},
       {"filter":"datum.yearS == datum.Year"},
 
-      {"fold":["New York", "California", "Florida", "Texas", "Alabama", "North Carolina", "Illinois"], "as": ["State", "Value"]},
+      {"fold":["New York", "California", "Florida", "Texas", "Alabama", "North Carolina", "Illinois"], "as": ["State", "Value"]}],
      
-     {"lookup": "State",
-            "from": {
-                "data": {
-                    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/geoUSStates.json",
-                    "format":{"property":"features"}},
-            "key": "properties.NAME",
-                "fields": [       
-                    "properties",
-                    "type",
-                    "geometry"]}}],
-      
     "encoding":{
-          "color":{
-            "field":"Value",
-            "legend":{
-                "title":null,
-                "orient": "right",
-                "direction": "vertical"},
-            "type": "quantitative",
-            "scale":{"scheme":"lightgreyred"}}
+      "x":{
+        "field":"State",
+        "type": "ordinal"},
+
+      "y":{
+        "field":"Value",
+        "type": "quantitative"}         
     }
-  }
+}
