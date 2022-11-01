@@ -6,19 +6,19 @@
     "view": {"stroke": "transparent"},
   
     "title": {
-        "text": "US States - Population",
+        "text": "Going West (and South)",
         "fontSize": 12,
-        "subtitle":["Population, 1900-2021", ""],
+        "subtitle":["US States, Population, 1900-2021", ""],
         "subtitleFontStyle":"italic",
         "subtitleFontSize":10, "anchor": "middle"},
 
     "params": [    
-    {"name":"yearSelector", "value":2015,
+    {"name":"yearSelector", "value":1900,
        "bind":{
          "input": "range",
          "min": 1900, 
          "max": 2021, 
-         "step": 5,
+         "step": 1,
          "name": "Year:"}}],    
   
     "projection": {"type": "albersUsa"},
