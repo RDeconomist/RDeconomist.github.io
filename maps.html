@@ -71,37 +71,59 @@
 <div class="mapContainer">
   <p><b>Wales</p></b>
   <p id="rubric" class="rubric">The maps of Wales take you through the first few steps you take when mapping economic data.</p>
+    
+    <!-- // Wales Maps -->
     <div class="map" id="map1"></div>
     <div class="map" id="map2"></div>
     <div class="map" id="map3"></div>
     <div class="map" id="map4"></div>
+
+    <!-- // Description of Wales Maps: -->
+    <p id="rubric" class="rubric">
+      <ul>
+        <li><b> Map 1.</b> The first step is to locate a JSON file that contains the coordinates needed to draw the map. This is then loaded in the usual way, either directly from an API, or saved to a hosting service such as GitHub and delivered to your page as a raw file.</li>
+        <span style="display:block; height: 10px;"></span> 
+        <li><b> Map 2.</b> The second map adds colour. In many of the GEOJSON files that you access there may be interesting data that you wish to use to colour your chart. To do this you need to access those value and use this field to supply the colour to your graph. In this teaching example, I am using the first name of the place to add colour.</li>
+        <span style="display:block; height: 10px;"></span> 
+        <li><b> Map 3.</b> The third map show how you can filter geographic data, to exclude areas that you do not want to show. In this case I ranked the place names and only want to include the top 5. The other areas of the map are not shown at all.</li>
+        <span style="display:block; height: 10px;"></span>
+        <li><b> Map 4.</b> The fourth map forms the basis of most maps. It combines the JSON that specifies the boundaries of each of the wards, and then matches these using “lookup”, with the values in a csv file of population. </li>
+    </ul>  
+    </p>
+
 </div>
 <!-- END - Grid of divs that will house the charts-->  
 
-<!-- heading for page-->
-<div class="wrap">
+
   
-  <p id="rubric" class="rubric">
-    <ul>
-      <li><b> Map 1.</b> The first step is to locate a JSON file that contains the coordinates needed to draw the map. This is then loaded in the usual way, either directly from an API, or saved to a hosting service such as GitHub and delivered to your page as a raw file.</li>
-      <span style="display:block; height: 10px;"></span> 
-      <li><b> Map 2.</b> The second map adds colour. In many of the GEOJSON files that you access there may be interesting data that you wish to use to colour your chart. To do this you need to access those value and use this field to supply the colour to your graph. In this teaching example, I am using the first name of the place to add colour.</li>
-      <span style="display:block; height: 10px;"></span> 
-      <li><b> Map 3.</b> The third map show how you can filter geographic data, to exclude areas that you do not want to show. In this case I ranked the place names and only want to include the top 5. The other areas of the map are not shown at all.</li>
-      <span style="display:block; height: 10px;"></span>
-      <li><b> Map 4.</b> The fourth map forms the basis of most maps. It combines the JSON that specifies the boundaries of each of the wards, and then matches these using “lookup”, with the values in a csv file of population. </li>
-  </ul>  
-  </p>
-</div>
+  
+
 
 <!-- START - Container that will house everything-->
 <div class="mapContainer">
   <p><b>England</p></b>
   <p id="rubric" class="rubric">Start to build more interactive maps using tooltips and year selectors.</p>
+  
+  <!-- // England Maps: -->
   <div class="map" id="map5"></div>
   <div class="map" id="map6"></div>
   <div class="map" id="map7"></div>
   <div class="map" id="map8"></div>
+
+   <!-- // Description of England Maps: -->
+   <p id="rubric" class="rubric">
+    <ul>
+      <li><b> Map 1.</b> Again the first step is to check our base map works as we want it to.</li>
+      <span style="display:block; height: 10px;"></span> 
+      <li><b> Map 2.</b> As with the Wales example this map adds colour, picking colours based on the first letter of the place name. This is done using a string function.</li>
+      <span style="display:block; height: 10px;"></span> 
+      <li><b> Map 3.</b> Population. This map uses a secondary data set that contains information on population by wards. The cities can clearly be seen. The tooltip has been added, so you can hover over the areas. However, some areas are white, since the match between the dataset and the map is imperfect.</li>
+      <span style="display:block; height: 10px;"></span>
+      <li><b> Map 4.</b> House prices. This map matches house prices in an interactive way. The drop down box acts as a filter, so the map can be drawn for different years. </li>
+  </ul>  
+  </p>
+
+
 </div>
 <!-- END - Grid of divs that will house the charts-->  
 
