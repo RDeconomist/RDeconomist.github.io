@@ -15,8 +15,8 @@
     "background":"white",
     "view": {"stroke": "transparent"}},
   
-  "width": 610,
-  "height": 500,
+  "width": 600,
+  "height": 300,
   
   "data": {
     "url": "https://unpkg.com/world-atlas@1.1.4/world/110m.json",
@@ -31,7 +31,7 @@
       {"lookup": "id_N",
         "from": {
           "key": "id",
-          "fields": ["alpha3"],
+          "fields": ["alpha3", "name"],
           "data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/dataWorldCountryNamesIDs.json"}}
           },
 
@@ -54,16 +54,19 @@
   
   "encoding": {
 
-    "tooltip":{"field":"name"},
+    "tooltip":[
+        {"field":"name", "title":"Country"},
+        {"field":"NGDPDPC", "title":"GDP per capita", "type":"quantitative","format":"$,.0f"}],
 
     "color":{
       "field":"NGDPDPC",
+      "title":"US Dollars",
       "type": "quantitative",
       "scale":{
         "scheme":"turbo",
         "domain":[0,80000]},
       "legend":{
-        "orient": "top-left",
+        "orient": "left",
         "direction": "vertical"}}
   }
 }
