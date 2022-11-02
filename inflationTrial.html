@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- START ANALYTICS -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- This stuff provided by Google from the Admin page of Analysics account -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP82FVH378"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JP82FVH378');
+    </script>
+    <!-- END ANALYTICS -->
+
+
+    <!--Meta stuff-->
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!--Facebook meta - this comes up when you post a link to the site-->
+    <meta property="og:title" content="Rapid Charts">
+    <meta property="og:description" content="Live price charts running directly from official data. Auto-updates daily.">
+    <meta property="og:image" content="covidCases.png">
+    <meta property="og:url" content="http://rapidcharts.io/index.htm">
+    
+    <!--Favicon-->
+    <link rel="icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="apple-touch-icon" href="images/favicon.png" />
+    
+    <!--Title - this is the bit that comes up in the tab-->
+    <title>Rapid Prices</title>
+    
+    <!--Main Stylesheet-->
+    <link rel="stylesheet" href="css/main2.css">
+    <link rel="stylesheet" href="css/covid_live.css">
+    
+    
+    <!--The next three lines allow the Vega embed-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+    
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+<!-- heading for page-->
+    <div class="wrap">
+        <h1>price<span style="color: #86d0bb">charts</span></h1>
+        <span style="display:block; height: 10px;"></span>
+        <p id="rubric" class="rubric">Charts on prices and inflation, running direct from the ONS API. Prepared for the Economics Observatory data hub.</p>
+        <span style="display:block; height: 10px;"></span>
+    </div>
+  
+<!-- Grid of divs that will house the charts-->
+    <div class="grid_items">
+        <div class="grid_item" id="chart1"></div> 
+    </div> 
+</div> 
+
+<script>
+
+// Set the charts that we want on the page as variables, linking them to JSON files:
+    var inf1 = {
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+        "width":280,
+        "height":300,
+        "data": {
+            "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/d7g7/dataset/mm23/data",
+            "format": {"type":"json", "property": "years"}},
+        "transform": [{"filter": "datum.year<=1990"}],
+        "mark":{
+            "type": "line",
+            "color":"#00BFFF",
+            "width": 10,"strokeWidth":2,"opacity":1},
+        "encoding": {
+        "x": {
+            "field": "date",
+            "type": "quantitative",
+            "title":null,
+            "scale":{"domain":[1988, 2022]},
+            "axis":{"format":""}
+            },
+        "y": {
+            "field": "value",                
+            "type": "quantitative",
+            "title":null
+            }}}
+    
+    // Returns a Promise that resolves after "ms" Milliseconds
+    const timer = ms => new Promise(res => setTimeout(res, ms))
+
+    async function load () { // We need to wrap the loop into an async function for this to work
+        for(let i=1990; i<2023; i++){
+            // console.log(i);
+            let x = `datum.year<=${i}`;
+            console.log(x);
+            inf1.transform[0].filter = x;
+            console.log(inf1.transform[0].filter)
+            vegaEmbed('#chart1', inf1, {"actions": false});
+            await timer(100); // then the created Promise can be awaited
+        }
+        }
+
+load();
+
+</script>
+
+
+
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+<span style="display:block; height: 40px;"></span>
+<div class="footer-dark">
+    <footer>
+        <div class="container">
+            <div class="row">
+              <div class="column">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
+              </div>
+              <div class="column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="https://nuggetcharts.com/stream">Nugget</a></li>
+                        <li><a href="datascience">Course</a></li>
+                    </ul>
+              </div>
+              </div>
+                
+                <div class="footer-finalrow">
+                    <h3>Rapid Charts</h3>
+                    <p>Automated and interactive data analysis.</p>                    </div>
+                
+                <div class="col item social">
+                  <a href="https://www.economicsobservatory.com" class="fa fa-university"></a>
+                  <a href="https://twitter.com/RD_Economist" class="fa fa-twitter"></a>
+                  <a href="https://www.instagram.com/rapidcharts" class="fa fa-instagram"></a>
+                  <a href="https://www.linkedin.com/in/rd-economist" class="fa fa-linkedin"></a>
+                </div>
+            
+              </div>
+            <p class="copyright">Richard Davies © 2021</p>
+      </footer>          
+</div>
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+</body>
+
+
+</html>

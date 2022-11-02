@@ -20,15 +20,6 @@
       "format": {"type":"json", "property": "months"}},
 
 
-  "xxSTATICdata": {
-      "name":"myData",
-      "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-D7G7.json",
-      "format": {
-        "type":"json",
-        "property": "months"
-      }},  
-
-
   "transform": [
 
     {"calculate":"replace(datum.date, ' JAN', '-01')", "as":"date1"},
