@@ -3,7 +3,7 @@
   "description": "International Territorial Level Map, to change regional hierarchy: replace x in 'ITLx_2021_20m' in URL, and 'ITLx21NM' in tooltip, with 1, 2 or 3.",
 
   "title": {
-    "text": "UK map",
+    "text": "United Kingdom",
     "subtitle":["ITL3 regions, Mercator Projection",""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
@@ -14,7 +14,7 @@
       "background":"white",
       "view": {"stroke": "transparent"}},
   
-  "width": 350,
+  "width": 200,
   "height": 400,
   
   "data": {
