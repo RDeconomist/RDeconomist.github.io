@@ -1,0 +1,36 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "International Territorial Level Map, to change regional hierarchy: replace x in 'ITLx_2021_20m' in URL, and 'ITLx21NM' in tooltip, with 1, 2 or 3.",
+
+  "title": {
+    "text": "UK map",
+    "subtitle":["ITL3 regions, Mercator Projection",""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "middle",
+    "color": "black"},
+
+  "config": {
+      "background":"white",
+      "view": {"stroke": "transparent"}},
+  
+  "width": 350,
+  "height": 400,
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/UK%20Map%20Data/ITL3_2021_20m.geojson",
+        "format": {"property": "features"}},
+
+  "projection": {"type": "mercator"},
+  
+  "mark": {
+      "type": "geoshape",
+      "fill": "rgb(50,50,50)",
+      "stroke": "white",
+      "strokeWidth":0.5},
+
+  "encoding": {
+    "tooltip": 
+      {"field": "properties.ITL321NM"}
+  }
+}
