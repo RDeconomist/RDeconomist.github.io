@@ -175,7 +175,20 @@
    <div class="mapBig" id="map19"></div>
    <div class="mapBig" id="map20"></div>
   <p id="rubric" class="rubric">These maps show the NUTS-1, -2 and -3 breakdown for the UK. Also the ITL1, 2 and 3.</p>
+  <div class="mapBig" id="map21"></div>
+  <div class="mapBig" id="map22"></div>
    
+</div>
+
+
+<span style="display:block; height: 30px;"></span>
+<div class="mapContainer">
+  <p><b>London | Bikes and Crimes</p></b>
+  <p id="rubric" class="rubric">Maps of London - by Josh Hellings.</p>
+  <p id="rubric" class="rubric">Plotting bike docking stations and suspected crimes on a map.</p>
+   <div class="mapBig" id="map23"></div>
+   <div class="mapBig" id="map24"></div>
+    
 </div>
 
 
@@ -263,6 +276,13 @@
     var map18 = "charts/maps/UK1.json";
     var map19 = "charts/maps/UK2.json";
     var map20 = "charts/maps/UK3.json";
+    var map21 = "charts/maps/UK4.json";
+    var map22 = "charts/maps/UK5.json";
+
+    // London:
+    var map23 = "charts/maps/London1.json";
+    var map24 = "charts/maps/London1.json";
+
 
     // Embed all
     vegaEmbed('#map1', map1, {"actions": false});
@@ -289,6 +309,10 @@
     vegaEmbed('#map18', map18, {"actions": false});
     vegaEmbed('#map19', map19, {"actions": false});
     vegaEmbed('#map20', map20, {"actions": false});
+    vegaEmbed('#map21', map21, {"actions": false});
+    vegaEmbed('#map22', map22, {"actions": false});
+    vegaEmbed('#map23', map23, {"actions": false});
+    vegaEmbed('#map24', map24, {"actions": false});
 
 
 </script>
