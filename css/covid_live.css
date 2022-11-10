@@ -46,7 +46,6 @@ body {
   padding: 5px;
   border-radius: 10px;
   width: 360px;
-  height: 360px;
   margin:auto;
 }
 .grid_items > div:nth-child(3n + 2) {
