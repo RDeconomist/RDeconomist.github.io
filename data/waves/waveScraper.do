@@ -1,16 +1,18 @@
 
 
 ***Richard Davies
-***Bristol University
-***Wave Scraper
-***February 2021
+***Data Science for Economists
+***Demo: Wave Scraper
+
 
 ***Description: Access and clean the data needed for Richard's wave alert page.
+***Purpose: A demo of Python used in Stata, with loops and a scraper.
 
 
 ***************************************************************************
 *************************PYTHON********************************************
 ***************************************************************************
+// Note: for Python to work within Stata, some set up is requred. See Stata/Python's own guidance pages.
 
 python
 # /// Import tools that we will need:
