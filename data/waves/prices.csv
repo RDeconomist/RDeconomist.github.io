@@ -1,0 +1,626 @@
+,Price,Desc,All,Type,Date
+0,£2.20,b'Aspall Premier Cru Dry Cyder',b'Aspall Premier Cru Dry Cyder 500ml \xc2\xa32.20/unit \xc2\xa34.40/ltr',Cider,2021-03-01
+1,£2.00,b'Henry Westons Vintage Cider',b'Henry Westons Vintage Cider 500ml \xc2\xa32.00/unit \xc2\xa34.00/ltr',Cider,2021-03-01
+2,£1.80,b'Kopparberg Strawberry & Lime Cider',b'Kopparberg Strawberry & Lime Cider 500ml \xc2\xa31.80/unit \xc2\xa33.60/ltr',Cider,2021-03-01
+3,£2.20,b'Aspall Draught Cyder',b'Aspall Draught Cyder 500ml \xc2\xa32.20/unit \xc2\xa34.40/ltr',Cider,2021-03-01
+4,£2.50,"b""Sainsbury's Original Dry Cider""","b""Sainsbury's Original Dry Cider 2L \xc2\xa32.50/unit \xc2\xa31.25/ltr""",Cider,2021-03-01
+5,£1.80,b'Kopparberg Mixed Fruit Cider',b'Kopparberg Mixed Fruit Cider 500ml \xc2\xa31.80/unit \xc2\xa33.60/ltr',Cider,2021-03-01
+6,£12.00,b'Strongbow Original Cider Cans',b'Strongbow Original Cider Cans 18 x 440ml \xc2\xa312.00/unit \xc2\xa31.52/ltr',Cider,2021-03-01
+7,£2.20,"b""Sainsbury's Original Dry Cider""","b""Sainsbury's Original Dry Cider 4x440ml \xc2\xa32.20/unit \xc2\xa31.25/ltr""",Cider,2021-03-01
+8,£1.90,b'Frome Valley Dry Cider',b'Frome Valley Dry Cider 500ml \xc2\xa31.90/unit \xc2\xa33.80/ltr',Cider,2021-03-01
+9,£4.25,b'Thatchers Gold Cider',b'Thatchers Gold Cider 4x440ml \xc2\xa34.25/unit \xc2\xa32.41/ltr',Cider,2021-03-01
+10,£1.80,b'Old Mout Cider Kiwi & Lime Bottle',b'Old Mout Cider Kiwi & Lime Bottle 500ml \xc2\xa31.80/unit \xc2\xa33.60/ltr',Cider,2021-03-01
+11,£10.00,b'Strongbow Dark Fruit Cider Cans',b'Strongbow Dark Fruit Cider Cans 10 x 440ml \xc2\xa310.00/unit \xc2\xa32.27/ltr',Cider,2021-03-01
+12,£3.75,b'Symonds Scrumpy Jack Premium British Cider Cans',b'Symonds Scrumpy Jack Premium British Cider Cans 4 x 440ml \xc2\xa33.75/unit \xc2\xa32.13/ltr',Cider,2021-03-01
+13,£12.00,b'Kopparberg Mixed Fruit Cider',b'Kopparberg Mixed Fruit Cider 10x330ml \xc2\xa312.00/unit \xc2\xa33.64/ltr',Cider,2021-03-01
+14,£5.00,b'Kopparberg Mixed Fruit Cider',b'Kopparberg Mixed Fruit Cider 4x330ml \xc2\xa35.00/unit \xc2\xa33.79/ltr',Cider,2021-03-01
+15,£9.00,b'Thatchers Gold Cider',b'Thatchers Gold Cider 10x440ml \xc2\xa39.00/unit \xc2\xa32.05/ltr',Cider,2021-03-01
+16,£1.80,b'Kopparberg Pear Premium Cider',b'Kopparberg Pear Premium Cider 500ml \xc2\xa31.80/unit \xc2\xa33.60/ltr',Cider,2021-03-01
+17,£1.90,b'Thatchers Gold Cider',b'Thatchers Gold Cider 500ml \xc2\xa31.90/unit \xc2\xa33.80/ltr',Cider,2021-03-01
+18,£2.20,b'Thatchers Katy Cider',b'Thatchers Katy Cider 500ml \xc2\xa32.20/unit \xc2\xa34.40/ltr',Cider,2021-03-01
+19,£7.00,b'Bulmers Original Cider Bottles',b'Bulmers Original Cider Bottles 8 x 500ml \xc2\xa37.00/unit \xc2\xa31.75/ltr',Cider,2021-03-01
+20,£3.50,b'Strongbow Original Cider Cans',b'Strongbow Original Cider Cans 4 x 440ml \xc2\xa33.50/unit \xc2\xa31.99/ltr',Cider,2021-03-01
+21,£1.80,"b""Healey's Cornish Rattler Cyder""","b""Healey's Cornish Rattler Cyder 500ml \xc2\xa31.80/unit \xc2\xa33.60/ltr""",Cider,2021-03-01
+22,£4.75,b'Kopparberg Pear Cider',b'Kopparberg Pear Cider 4x440ml \xc2\xa34.75/unit \xc2\xa32.70/ltr',Cider,2021-03-01
+23,£1.75,"b""Sainsbury's Vintage Cider, Taste the Difference""","b""Sainsbury's Vintage Cider, Taste the Difference 500ml \xc2\xa31.75/unit \xc2\xa33.50/ltr""",Cider,2021-03-01
+24,£1.30,"b""Sainsbury's Medium Dry Low Alcohol Apple Cider""","b""Sainsbury's Medium Dry Low Alcohol Apple Cider 500ml \xc2\xa31.30/unit \xc2\xa32.60/ltr""",Cider,2021-03-01
+25,£5.00,b'Kopparberg Strawberry & Lime Cider',b'Kopparberg Strawberry & Lime Cider 4x330ml \xc2\xa35.00/unit \xc2\xa33.79/ltr',Cider,2021-03-01
+26,£4.00,b'Thatchers Haze Cloudy Cider',b'Thatchers Haze Cloudy Cider 4x440ml \xc2\xa34.00/unit \xc2\xa32.27/ltr',Cider,2021-03-01
+27,£1.80,b'Old Mout Cider Berries & Cherries Bottle',b'Old Mout Cider Berries & Cherries Bottle 500ml \xc2\xa31.80/unit \xc2\xa33.60/ltr',Cider,2021-03-01
+28,£1.00,b'Bulmers Original Cider Bottle',b'Bulmers Original Cider Bottle 500ml Only \xc2\xa31.00: Save 50p \xc2\xa31.00/unit \xc2\xa32.00/ltr',Cider,2021-03-01
+29,£2.00,b'Thatchers Vintage Cider',b'Thatchers Vintage Cider 500ml \xc2\xa32.00/unit \xc2\xa34.00/ltr',Cider,2021-03-01
+30,£7.00,b'Bulmers Crushed Red Berries & Lime Cider Bottles',b'Bulmers Crushed Red Berries & Lime Cider Bottles 6 x 500ml \xc2\xa37.00/unit \xc2\xa32.33/ltr',Cider,2021-03-01
+31,£4.50,b'Strongbow Dark Fruit Cider Cans',b'Strongbow Dark Fruit Cider Cans 4 x 440ml \xc2\xa34.50/unit \xc2\xa32.56/ltr',Cider,2021-03-01
+32,£1.30,b'Kopparberg Pear Alcohol Free Cider',b'Kopparberg Pear Alcohol Free Cider 500ml \xc2\xa31.30/unit \xc2\xa32.60/ltr',Cider,2021-03-01
+33,£3.75,b'Magners Irish Cider Original Cans',b'Magners Irish Cider Original Cans 4x440ml \xc2\xa33.75/unit \xc2\xa32.13/ltr',Cider,2021-03-01
+34,£9.00,b'Thatchers Haze Cloudy Somerset Cider',b'Thatchers Haze Cloudy Somerset Cider 10x440ml \xc2\xa39.00/unit \xc2\xa32.05/ltr',Cider,2021-03-01
+35,£1.80,b'Old Mout Cider Pineapple & Raspberry Bottle',b'Old Mout Cider Pineapple & Raspberry Bottle 500ml \xc2\xa31.80/unit \xc2\xa33.60/ltr',Cider,2021-03-01
+36,£1.50,b'Bulmers Crushed Red Berries & Lime Cider Bottle',b'Bulmers Crushed Red Berries & Lime Cider Bottle 500ml \xc2\xa31.50/unit \xc2\xa33.00/ltr',Cider,2021-03-01
+37,£1.00,b'Strongbow Rose Cider',b'Strongbow Rose Cider 500ml Only \xc2\xa31.00: Save 80p \xc2\xa31.00/unit \xc2\xa32.00/ltr',Cider,2021-03-01
+38,£1.30,b'Kopparberg Strawberry & Lime Alcohol Free Cider',b'Kopparberg Strawberry & Lime Alcohol Free Cider 500ml \xc2\xa31.30/unit \xc2\xa32.60/ltr',Cider,2021-03-01
+39,£1.80,b'Kopparberg Rhubarb Cider',b'Kopparberg Rhubarb Cider 500ml \xc2\xa31.80/unit \xc2\xa33.60/ltr',Cider,2021-03-01
+40,£10.00,b'Strongbow Original Cider Can',b'Strongbow Original Cider Can 12x440ml \xc2\xa310.00/unit \xc2\xa31.89/ltr',Cider,2021-03-01
+41,£3.75,"b""Sainsbury's Dark Fruit Cider""","b""Sainsbury's Dark Fruit Cider 4x440ml \xc2\xa33.75/unit \xc2\xa32.13/ltr""",Cider,2021-03-01
+42,£5.50,b'Thatchers Ros\xc3\xa9 Sweet Sparkling Somerset Cider',b'Thatchers Ros\xc3\xa9 Sweet Sparkling Somerset Cider 4x440ml \xc2\xa35.50/unit \xc2\xa33.13/ltr',Cider,2021-03-01
+43,£3.50,b'Kopparberg Mixed Fruits Alcohol Free Cider',b'Kopparberg Mixed Fruits Alcohol Free Cider 4x330ml \xc2\xa33.50/unit \xc2\xa32.65/ltr',Cider,2021-03-01
+44,£1.25,b'Old Mout Berries & Cherries Alcohol Free Cider',b'Old Mout Berries & Cherries Alcohol Free Cider 500ml \xc2\xa31.25/unit \xc2\xa32.50/ltr',Cider,2021-03-01
+45,£9.00,b'Strongbow Cloudy Apple',b'Strongbow Cloudy Apple 10x440ml \xc2\xa39.00/unit \xc2\xa32.05/ltr',Cider,2021-03-01
+46,£1.90,b'Thatchers Rascal Cider',b'Thatchers Rascal Cider 500ml \xc2\xa31.90/unit \xc2\xa33.80/ltr',Cider,2021-03-01
+47,£2.50,b'Aspall Imperial Cyder',b'Aspall Imperial Cyder 500ml \xc2\xa32.50/unit \xc2\xa35.00/ltr',Cider,2021-03-01
+48,£1.80,b'Kopparberg Premium Cider with Cherry',b'Kopparberg Premium Cider with Cherry 500ml \xc2\xa31.80/unit \xc2\xa33.60/ltr',Cider,2021-03-01
+49,£10.00,b'Strongbow Rose Cider',b'Strongbow Rose Cider 10x440ml Only \xc2\xa310.00: Save \xc2\xa31.00 \xc2\xa310.00/unit \xc2\xa32.27/ltr',Cider,2021-03-01
+50,£2.10,b'Sxollie Granny Smith Cider',b'Sxollie Granny Smith Cider 500ml \xc2\xa32.10/unit \xc2\xa34.20/ltr',Cider,2021-03-01
+51,£2.10,b'Dunkertons Organic Black Fox Medium Dry Cider',b'Dunkertons Organic Black Fox Medium Dry Cider 500ml \xc2\xa32.10/unit \xc2\xa34.20/ltr',Cider,2021-03-01
+52,£1.90,b'Kopparberg Rose Cider',b'Kopparberg Rose Cider 500ml \xc2\xa31.90/unit \xc2\xa33.80/ltr',Cider,2021-03-01
+53,£7.00,b'Henry Westons Vintage Cider',b'Henry Westons Vintage Cider 4x500ml \xc2\xa37.00/unit \xc2\xa33.50/ltr',Cider,2021-03-01
+54,£3.50,b'Kopparberg Strawberry & Lime Alcohol Free Cider',b'Kopparberg Strawberry & Lime Alcohol Free Cider 4x330ml \xc2\xa33.50/unit \xc2\xa32.65/ltr',Cider,2021-03-01
+55,£5.50,b'Thatchers Cloudy Lemon Cider',b'Thatchers Cloudy Lemon Cider 4x440ml \xc2\xa35.50/unit \xc2\xa33.13/ltr',Cider,2021-03-01
+56,£12.00,b'Thatchers Ros\xc3\xa9',b'Thatchers Ros\xc3\xa9 10x440ml \xc2\xa312.00/unit \xc2\xa32.73/ltr',Cider,2021-03-01
+57,£2.10,b'Sxollie Golden Delicious Cider',b'Sxollie Golden Delicious Cider 500ml \xc2\xa32.10/unit \xc2\xa34.20/ltr',Cider,2021-03-01
+58,£3.75,b'Strongbow Cloudy Apple Cider',b'Strongbow Cloudy Apple Cider 440ml Can \xc2\xa33.75/unit \xc2\xa32.13/ltr',Cider,2021-03-01
+59,£2.00,b'Thatchers Ros\xc3\xa9 Cider',b'Thatchers Ros\xc3\xa9 Cider 500ml \xc2\xa32.00/unit \xc2\xa34.00/ltr',Cider,2021-03-01
+0,£10.00,b'Bud Light Lager Beer cans',b'Bud Light Lager Beer cans 18x440ml Only \xc2\xa310.00: Save \xc2\xa35.00 \xc2\xa310.00/unit \xc2\xa31.26/ltr',Lager,2021-03-01
+1,£4.50,b'Hop House',b'Hop House 13 Lager 4x330ml Only \xc2\xa34.50: Save 50p \xc2\xa34.50/unit \xc2\xa33.41/ltr',Lager,2021-03-01
+2,£16.00,b'Stella Artois Premium Lager Beer Cans',b'Stella Artois Premium Lager Beer Cans 18x440ml \xc2\xa316.00/unit \xc2\xa32.02/ltr',Lager,2021-03-01
+3,£8.00,b'Budweiser Lager Beer Bottles',b'Budweiser Lager Beer Bottles 15x300ml Only \xc2\xa38.00: Save \xc2\xa34.00 \xc2\xa38.00/unit \xc2\xa31.78/ltr',Lager,2021-03-01
+4,£16.50,b'Peroni Nastro Azzurro Lager',b'Peroni Nastro Azzurro Lager 12x330ml \xc2\xa316.50/unit \xc2\xa34.17/ltr',Lager,2021-03-01
+5,£13.00,"b""Foster's Lager Beer Cans""","b""Foster's Lager Beer Cans 18 x 440ml \xc2\xa313.00/unit \xc2\xa31.64/ltr""",Lager,2021-03-01
+6,£2.50,b'Corona Extra Premium Lager Beer Bottles',b'Corona Extra Premium Lager Beer Bottles 12x330ml Only \xc2\xa310.00: Save \xc2\xa33.00 \xc2\xa310.00/unit \xc2\xa32.52/ltr',Lager,2021-03-01
+7,£9.50,b'Stella Artois Premium Lager Beer Bottles',b'Stella Artois Premium Lager Beer Bottles 15x284ml Only \xc2\xa39.50: Save \xc2\xa31.50 \xc2\xa39.50/unit \xc2\xa32.23/ltr',Lager,2021-03-01
+8,£11.00,b'Kronenbourg',b'Kronenbourg 1664 Lager Beer Bottles 15 x 275ml \xc2\xa311.00/unit \xc2\xa32.67/ltr',Lager,2021-03-01
+9,£9.00,b'San Miguel Especial Premium Lager Bottles',b'San Miguel Especial Premium Lager Bottles 12x330ml Only \xc2\xa39.00: Save \xc2\xa33.00 \xc2\xa39.00/unit \xc2\xa32.27/ltr',Lager,2021-03-01
+10,£16.00,b'Budweiser Lager Beer Cans',b'Budweiser Lager Beer Cans 18x440ml \xc2\xa316.00/unit \xc2\xa32.02/ltr',Lager,2021-03-01
+11,£2.50,b'Carling Original Lager Beer Cans x',b'Carling Original Lager Beer Cans x18 440ml \xc2\xa313.00/unit \xc2\xa31.64/ltr',Lager,2021-03-01
+12,£1.00,b'Birra Moretti Lager Beer Bottles',b'Birra Moretti Lager Beer Bottles 4 x 330ml \xc2\xa35.00/unit \xc2\xa33.79/ltr',Lager,2021-03-01
+13,£1.90,b'Birra Moretti Lager Beer Bottle',b'Birra Moretti Lager Beer Bottle 660ml \xc2\xa31.90/unit \xc2\xa32.88/ltr',Lager,2021-03-01
+14,£1.25,b'Depot No.',b'Depot No.90 Lager 4x440ml \xc2\xa31.25/unit 71p/ltr',Lager,2021-03-01
+15,£2.00,b'Peroni Nastro Azzurro Lager',b'Peroni Nastro Azzurro Lager 18x330ml \xc2\xa323.00/unit \xc2\xa33.87/ltr',Lager,2021-03-01
+16,£5.25,b'Stella Artois Premium Lager Beer Cans',b'Stella Artois Premium Lager Beer Cans 4x568ml \xc2\xa35.25/unit \xc2\xa32.31/ltr',Lager,2021-03-01
+17,£11.00,b'Coors Light Lager Beer Bottles x',b'Coors Light Lager Beer Bottles x15 330ml \xc2\xa311.00/unit \xc2\xa32.22/ltr',Lager,2021-03-01
+18,£12.00,b'Birra Moretti Lager Beer Bottles',b'Birra Moretti Lager Beer Bottles 12 x 330ml Only \xc2\xa312.00: Save \xc2\xa32.00 \xc2\xa312.00/unit \xc2\xa33.03/ltr',Lager,2021-03-01
+19,£9.00,b'Heineken Premium Lager Beer Bottles',b'Heineken Premium Lager Beer Bottles 12x330ml Only \xc2\xa39.00: Save \xc2\xa33.00 \xc2\xa39.00/unit \xc2\xa32.27/ltr',Lager,2021-03-01
+20,£5.00,b'Peroni Nastro Azzurro Lager',b'Peroni Nastro Azzurro Lager 4x330ml Only \xc2\xa35.00: Save 75p \xc2\xa35.00/unit \xc2\xa33.79/ltr',Lager,2021-03-01
+21,£16.00,b'Corona Extra Premium Lager Beer bottles',b'Corona Extra Premium Lager Beer bottles 18x330ml \xc2\xa316.00/unit \xc2\xa32.69/ltr',Lager,2021-03-01
+22,£5.00,b'Corona Extra Premium Lager Beer bottles',b'Corona Extra Premium Lager Beer bottles 4x330ml \xc2\xa35.00/unit \xc2\xa33.79/ltr',Lager,2021-03-01
+23,£4.50,b'Kronenbourg',b'Kronenbourg 1664 Lager Beer Cans 4 x 440ml \xc2\xa34.50/unit \xc2\xa32.56/ltr',Lager,2021-03-01
+24,£4.00,b'San Miguel Especial Premium Lager Cans',b'San Miguel Especial Premium Lager Cans 4x440ml \xc2\xa34.00/unit \xc2\xa32.27/ltr',Lager,2021-03-01
+25,£1.90,b'San Miguel Especial Premium Lager Bottle',b'San Miguel Especial Premium Lager Bottle 660ml \xc2\xa31.90/unit \xc2\xa32.88/ltr',Lager,2021-03-01
+26,£2.20,b'Peroni Nastro Azzurro Lager',b'Peroni Nastro Azzurro Lager 620ml \xc2\xa32.20/unit \xc2\xa33.55/ltr',Lager,2021-03-01
+27,£5.25,b'Heineken Premium Lager Beer Cans',b'Heineken Premium Lager Beer Cans 6 x 330ml \xc2\xa35.25/unit \xc2\xa32.65/ltr',Lager,2021-03-01
+28,£3.49,"b""Foster's Lager Beer Cans""","b""Foster's Lager Beer Cans 4 x 440ml \xc2\xa33.49/unit \xc2\xa31.98/ltr""",Lager,2021-03-01
+29,£4.25,b'Stella Artois Premium Lager Beer Cans',b'Stella Artois Premium Lager Beer Cans 4x440ml \xc2\xa34.25/unit \xc2\xa32.41/ltr',Lager,2021-03-01
+30,£4.05,b'Holsten Pils Lager',b'Holsten Pils Lager 4x440ml \xc2\xa34.05/unit \xc2\xa32.30/ltr',Lager,2021-03-01
+31,£1.50,"b""Sainsbury's Czech Pilsner Lager""","b""Sainsbury's Czech Pilsner Lager 500ml \xc2\xa31.50/unit \xc2\xa33.00/ltr""",Lager,2021-03-01
+32,£14.00,b'Estrella Damm Lager',b'Estrella Damm Lager 12x330ml \xc2\xa314.00/unit \xc2\xa33.54/ltr',Lager,2021-03-01
+33,£1.90,b'Singha Premium Thai Lager',b'Singha Premium Thai Lager 630ml \xc2\xa31.90/unit \xc2\xa33.02/ltr',Lager,2021-03-01
+34,£4.60,b'Desperados Tequila Lager Beer Bottles',b'Desperados Tequila Lager Beer Bottles 3 x 330ml \xc2\xa34.60/unit \xc2\xa34.65/ltr',Lager,2021-03-01
+35,£7.50,b'Carlsberg Special Brew Lager',b'Carlsberg Special Brew Lager 4x440ml \xc2\xa37.50/unit \xc2\xa34.26/ltr',Lager,2021-03-01
+36,£1.90,b'Stella Artois Premium Lager Beer Bottle',b'Stella Artois Premium Lager Beer Bottle 660ml \xc2\xa31.90/unit \xc2\xa32.88/ltr',Lager,2021-03-01
+37,£1.90,b'Staropramen Premium Czech Lager',b'Staropramen Premium Czech Lager 660ml \xc2\xa31.90/unit \xc2\xa32.88/ltr',Lager,2021-03-01
+38,£13.00,b'Staropramen Premium Czech Lager',b'Staropramen Premium Czech Lager 12x330ml \xc2\xa313.00/unit \xc2\xa33.28/ltr',Lager,2021-03-01
+39,£1.90,b'Cobra Premium Beer',b'Cobra Premium Beer 620ml \xc2\xa31.90/unit \xc2\xa33.06/ltr',Lager,2021-03-01
+40,£3.80,b'San Miguel Especial Premium Lager Bottles',b'San Miguel Especial Premium Lager Bottles 4x330ml \xc2\xa33.80/unit \xc2\xa32.88/ltr',Lager,2021-03-01
+41,£4.50,"b""Beck's German Pilsner Beer Bottles""","b""Beck's German Pilsner Beer Bottles 6x275ml \xc2\xa34.50/unit \xc2\xa32.73/ltr""",Lager,2021-03-01
+42,£1.80,b'Tiger Beer',b'Tiger Beer 640ml \xc2\xa31.80/unit \xc2\xa32.81/ltr',Lager,2021-03-01
+43,£5.50,b'Estrella Damm Beer',b'Estrella Damm Beer 4x330ml \xc2\xa35.50/unit \xc2\xa34.17/ltr',Lager,2021-03-01
+44,£10.00,b'Amstel Lager Beer Bottles',b'Amstel Lager Beer Bottles 15 x 300ml \xc2\xa310.00/unit \xc2\xa32.22/ltr',Lager,2021-03-01
+45,£4.50,b'Budweiser Lager Beer Bottles',b'Budweiser Lager Beer Bottles 6x300ml \xc2\xa34.50/unit \xc2\xa32.50/ltr',Lager,2021-03-01
+46,£1.80,"b""Beck's German Pilsner Beer bottle""","b""Beck's German Pilsner Beer bottle 660ml \xc2\xa31.80/unit \xc2\xa32.73/ltr""",Lager,2021-03-01
+47,£10.00,b'Hop House',b'Hop House 13 Lager 12x330ml Only \xc2\xa310.00: Save \xc2\xa32.00 \xc2\xa310.00/unit \xc2\xa32.52/ltr',Lager,2021-03-01
+48,£5.75,b'Birra Moretti Lager Beer Cans',b'Birra Moretti Lager Beer Cans 6 x 330ml \xc2\xa35.75/unit \xc2\xa32.90/ltr',Lager,2021-03-01
+49,£3.60,b'Carling Original Lager Beer Cans x',b'Carling Original Lager Beer Cans x4 440ml \xc2\xa33.60/unit \xc2\xa32.05/ltr',Lager,2021-03-01
+50,£1.80,b'Heineken Premium Lager Beer Bottle',b'Heineken Premium Lager Beer Bottle 650ml \xc2\xa31.80/unit \xc2\xa32.77/ltr',Lager,2021-03-01
+51,£4.00,b'Budweiser Lager Beer Cans',b'Budweiser Lager Beer Cans 4x440ml \xc2\xa34.00/unit \xc2\xa32.27/ltr',Lager,2021-03-01
+52,£1.75,b'Tsingtao Beer',b'Tsingtao Beer 640ml Only \xc2\xa31.75: Save 15p \xc2\xa31.75/unit \xc2\xa32.74/ltr',Lager,2021-03-01
+53,£2.20,b'Estrella Damm Lager',b'Estrella Damm Lager 660ml \xc2\xa32.20/unit \xc2\xa33.33/ltr',Lager,2021-03-01
+54,£1.90,b'Hop House',b'Hop House 13 Lager 650ml \xc2\xa31.90/unit \xc2\xa32.92/ltr',Lager,2021-03-01
+55,£7.00,b'Estrella Damm Lager',b'Estrella Damm Lager 6x330ml \xc2\xa37.00/unit \xc2\xa33.54/ltr',Lager,2021-03-01
+56,£1.90,b'Warsteiner Beer',b'Warsteiner Beer 660ml \xc2\xa31.90/unit \xc2\xa32.88/ltr',Lager,2021-03-01
+57,£2.75,"b""Sainsbury's Crown Lager""","b""Sainsbury's Crown Lager 4x440ml \xc2\xa32.75/unit \xc2\xa31.56/ltr""",Lager,2021-03-01
+58,£4.00,b'Stella Artois Premium Lager Beer Bottles',b'Stella Artois Premium Lager Beer Bottles 4x330ml \xc2\xa34.00/unit \xc2\xa33.03/ltr',Lager,2021-03-01
+59,£3.75,b'Amstel Lager Beer Cans',b'Amstel Lager Beer Cans 4 x 440ml \xc2\xa33.75/unit \xc2\xa32.13/ltr',Lager,2021-03-01
+0,£10.00,"b""Sainsbury's Conegliano Prosecco, Taste the Differe""","b""Sainsbury's Conegliano Prosecco, Taste the Difference 75cl \xc2\xa310.00/unit \xc2\xa310.00/75cl""",Champagne,2021-03-01
+1,£11.50,"b""Sainsbury's Cr\xc3\xa9mant De Loire, Taste the Differenc""","b""Sainsbury's Cr\xc3\xa9mant De Loire, Taste the Difference 75cl \xc2\xa311.50/unit \xc2\xa311.50/75cl""",Champagne,2021-03-01
+2,£5.00,b'Mo\xc3\xabt & Chandon Imp\xc3\xa9rial Brut Non Vintage Champag',b'Mo\xc3\xabt & Chandon Imp\xc3\xa9rial Brut Non Vintage Champagne 75cl \xc2\xa337.00/unit \xc2\xa337.00/75cl',Champagne,2021-03-01
+3,£14.00,b'Graham Beck The Joshua Brut',b'Graham Beck The Joshua Brut 750ml \xc2\xa314.00/unit \xc2\xa314.00/75cl',Champagne,2021-03-01
+4,£9.00,b'Canti Prosecco',b'Canti Prosecco 75cl \xc2\xa39.00/unit \xc2\xa39.00/75cl',Champagne,2021-03-01
+5,£8.50,b'Valdo Prosecco Marca Oro',b'Valdo Prosecco Marca Oro 75cl \xc2\xa38.50/unit \xc2\xa38.50/75cl',Champagne,2021-03-01
+6,£6.25,b'Edizione',b'Edizione 789 Di Mondelli Prosecco 75cl \xc2\xa36.25/unit \xc2\xa36.25/75cl',Champagne,2021-03-01
+7,£7.50,b'Maschio Prosecco Doc Brut',b'Maschio Prosecco Doc Brut 75cl Only \xc2\xa37.50: Save \xc2\xa32.50 \xc2\xa37.50/unit \xc2\xa37.50/75cl',Champagne,2021-03-01
+8,£6.00,"b""Sainsbury's Prosecco Frizzante""","b""Sainsbury's Prosecco Frizzante 75cl \xc2\xa36.00/unit \xc2\xa36.00/75cl""",Champagne,2021-03-01
+9,£8.50,b'I Heart Prosecco',b'I Heart Prosecco 75cl \xc2\xa38.50/unit \xc2\xa38.50/75cl',Champagne,2021-03-01
+10,£8.00,b'Freixenet Cordon Negro Brut Cava',b'Freixenet Cordon Negro Brut Cava 75cl Only \xc2\xa38.00: Save \xc2\xa33.00 \xc2\xa38.00/unit \xc2\xa38.00/75cl',Champagne,2021-03-01
+11,£16.00,"b'Etienne Dumont Brut Champagne, Non Vintage'","b'Etienne Dumont Brut Champagne, Non Vintage 75cl \xc2\xa316.00/unit \xc2\xa316.00/75cl'",Champagne,2021-03-01
+12,£6.00,"b""Sainsbury's Ros\xc3\xa9 Cava""","b""Sainsbury's Ros\xc3\xa9 Cava 75cl \xc2\xa36.00/unit \xc2\xa36.00/75cl""",Champagne,2021-03-01
+13,£2.75,"b""Sainsbury's Alcohol Free Sparkling Wine""","b""Sainsbury's Alcohol Free Sparkling Wine 75cl \xc2\xa32.75/unit \xc2\xa32.75/75cl""",Champagne,2021-03-01
+14,£12.00,b'Freixenet Prosecco',b'Freixenet Prosecco 75cl \xc2\xa312.00/unit \xc2\xa312.00/75cl',Champagne,2021-03-01
+15,£6.00,"b""Sainsbury's Cava Medium Dry""","b""Sainsbury's Cava Medium Dry 75cl \xc2\xa36.00/unit \xc2\xa36.00/75cl""",Champagne,2021-03-01
+16,£7.50,"b""Sainsbury's Cava Brut Nature, Taste the Difference""","b""Sainsbury's Cava Brut Nature, Taste the Difference 75cl Only \xc2\xa37.50: Save \xc2\xa31.50 \xc2\xa37.50/unit \xc2\xa37.50/""",Champagne,2021-03-01
+17,£45.00,"b'Bollinger Special Cuvee, Non Vintage Champagne'","b'Bollinger Special Cuvee, Non Vintage Champagne 75cl \xc2\xa345.00/unit \xc2\xa345.00/75cl'",Champagne,2021-03-01
+18,£5.75,"b""Sainsbury's Asti""","b""Sainsbury's Asti 75cl \xc2\xa35.75/unit \xc2\xa35.75/75cl""",Champagne,2021-03-01
+19,£25.00,b'Lanson Le Black Label Brut',b'Lanson Le Black Label Brut 75cl Only \xc2\xa325.00: Save \xc2\xa310.00 \xc2\xa325.00/unit \xc2\xa325.00/75cl',Champagne,2021-03-01
+20,£42.00,b'Veuve Clicquot Yellow Label Brut Non Vintage Champ',b'Veuve Clicquot Yellow Label Brut Non Vintage Champagne 75cl \xc2\xa342.00/unit \xc2\xa342.00/75cl',Champagne,2021-03-01
+21,£35.00,b'Piper-Heidsieck Champagne Brut',b'Piper-Heidsieck Champagne Brut 75cl \xc2\xa335.00/unit \xc2\xa335.00/75cl',Champagne,2021-03-01
+22,£8.00,b'Asti Martini',b'Asti Martini 75cl \xc2\xa38.00/unit \xc2\xa38.00/75cl',Champagne,2021-03-01
+23,£40.00,"b'Laurent-Perrier La Cuv\xc3\xa9e Champagne, Non Vintage'","b'Laurent-Perrier La Cuv\xc3\xa9e Champagne, Non Vintage 75cl \xc2\xa340.00/unit \xc2\xa340.00/75cl'",Champagne,2021-03-01
+24,£23.00,"b'Mumm Cordon Rouge Champagne Brut, Non Vintage'","b'Mumm Cordon Rouge Champagne Brut, Non Vintage 75cl Only \xc2\xa323.00: Save \xc2\xa312.00 \xc2\xa323.00/unit \xc2\xa323.00/7'",Champagne,2021-03-01
+25,£19.00,"b""Sainsbury's Blanc De Noirs Champagne, Taste the Di""","b""Sainsbury's Blanc De Noirs Champagne, Taste the Difference 75cl Only \xc2\xa319.00: Save \xc2\xa32.00 \xc2\xa319.00/un""",Champagne,2021-03-01
+26,£21.00,"b""Sainsbury's Conegliano Prosecco, Taste the Differe""","b""Sainsbury's Conegliano Prosecco, Taste the Difference 1.5L \xc2\xa321.00/unit \xc2\xa310.50/75cl""",Champagne,2021-03-01
+27,£19.00,b'Nicholas Feuillate Champagne',b'Nicholas Feuillate Champagne 75cl Only \xc2\xa319.00: Save \xc2\xa32.00 \xc2\xa319.00/unit \xc2\xa319.00/75cl',Champagne,2021-03-01
+28,£2.75,b'Cantine Maschio Prosecco',b'Cantine Maschio Prosecco 20cl \xc2\xa32.75/unit \xc2\xa310.31/75cl',Champagne,2021-03-01
+29,£3.75,b'Nosecco Alcohol Free Sparkling Wine',b'Nosecco Alcohol Free Sparkling Wine 75cl \xc2\xa33.75/unit \xc2\xa33.75/75cl',Champagne,2021-03-01
+30,£8.00,b'Freixenet Cordon Rosado Cava',b'Freixenet Cordon Rosado Cava 75cl Only \xc2\xa38.00: Save \xc2\xa33.00 \xc2\xa38.00/unit \xc2\xa38.00/75cl',Champagne,2021-03-01
+31,£10.00,"b""Sainsbury's Prosecco Rose, Taste the Difference""","b""Sainsbury's Prosecco Rose, Taste the Difference 75ml \xc2\xa310.00/unit \xc2\xa310.00/75cl""",Champagne,2021-03-01
+32,£50.00,b'Laurent-Perrier Cuve\xc3\xa9 Ros\xc3\xa9 Champagne',b'Laurent-Perrier Cuve\xc3\xa9 Ros\xc3\xa9 Champagne 75cl Only \xc2\xa350.00: Save \xc2\xa312.00 \xc2\xa350.00/unit \xc2\xa350.00/75cl',Champagne,2021-03-01
+33,£2.75,"b""Sainsbury's Fairtrade Moscato Sparkling Ros\xc3\xa9, Tas""","b""Sainsbury's Fairtrade Moscato Sparkling Ros\xc3\xa9, Taste the Difference (Small bottle) 18.7cl \xc2\xa32.75/uni""",Champagne,2021-03-01
+34,£12.00,b'Freixenet Italian Sparkling Rose Extra Dry Wine',b'Freixenet Italian Sparkling Rose Extra Dry Wine 75cl \xc2\xa312.00/unit \xc2\xa312.00/75cl',Champagne,2021-03-01
+35,£7.50,b'McGuigan Black Label Premium Release Sparkling Shi',b'McGuigan Black Label Premium Release Sparkling Shiraz 750ml \xc2\xa37.50/unit \xc2\xa37.50/75cl',Champagne,2021-03-01
+36,£20.00,b'Chapel Down Non Vintage Reserve Brut Sparkling Win',b'Chapel Down Non Vintage Reserve Brut Sparkling Wine 75cl Only \xc2\xa320.00: Save \xc2\xa33.00 \xc2\xa320.00/unit \xc2\xa320',Champagne,2021-03-01
+37,£20.00,b'Heidsieck Monopole Blue Top Brut Champagne',b'Heidsieck Monopole Blue Top Brut Champagne 75cl Only \xc2\xa320.00: Save \xc2\xa38.00 \xc2\xa320.00/unit \xc2\xa320.00/75cl',Champagne,2021-03-01
+38,£38.00,b'Taittinger Brut R\xc3\xa9serve Champagne',b'Taittinger Brut R\xc3\xa9serve Champagne 750ml \xc2\xa338.00/unit \xc2\xa338.00/75cl',Champagne,2021-03-01
+39,£30.00,b'Lanson Le Ros\xc3\xa9',b'Lanson Le Ros\xc3\xa9 75cl Only \xc2\xa330.00: Save \xc2\xa39.00 \xc2\xa330.00/unit \xc2\xa330.00/75cl',Champagne,2021-03-01
+40,£54.00,b'Veuve Clicquot Vintage Reserve',b'Veuve Clicquot Vintage Reserve 75cl \xc2\xa354.00/unit \xc2\xa354.00/75cl',Champagne,2021-03-01
+41,£11.50,"b""Sainsbury's Cremant De Loire Rose, Taste the Diffe""","b""Sainsbury's Cremant De Loire Rose, Taste the Difference 75cl \xc2\xa311.50/unit \xc2\xa311.50/75cl""",Champagne,2021-03-01
+42,£10.00,b'Mionetto Orange Label Prosecco',b'Mionetto Orange Label Prosecco 75cl \xc2\xa310.00/unit \xc2\xa310.00/75cl',Champagne,2021-03-01
+43,£10.00,b'Oyster Bay Sparkling Cuv\xc3\xa9e Brut',b'Oyster Bay Sparkling Cuv\xc3\xa9e Brut 75cl Only \xc2\xa310.00: Save \xc2\xa33.00 \xc2\xa310.00/unit \xc2\xa310.00/75cl',Champagne,2021-03-01
+44,£47.00,b'Veuve Clicquot Ros\xc3\xa9 Non Vintage Champagne',b'Veuve Clicquot Ros\xc3\xa9 Non Vintage Champagne 75cl \xc2\xa347.00/unit \xc2\xa347.00/75cl',Champagne,2021-03-01
+45,£19.00,"b""Sainsbury's Demi-sec Champagne, Non Vintage""","b""Sainsbury's Demi-sec Champagne, Non Vintage 75cl \xc2\xa319.00/unit \xc2\xa319.00/75cl""",Champagne,2021-03-01
+46,£18.00,"b""Sainsbury's Brut Non Vintage Champagne, Taste the ""","b""Sainsbury's Brut Non Vintage Champagne, Taste the Difference 75cl \xc2\xa318.00/unit \xc2\xa318.00/75cl""",Champagne,2021-03-01
+47,£10.00,b'Lanson Le Black Label Brut',b'Lanson Le Black Label Brut 20cl \xc2\xa310.00/unit \xc2\xa337.50/75cl',Champagne,2021-03-01
+48,£47.00,b'Mo\xc3\xabt & Chandon',b'Mo\xc3\xabt & Chandon 2012 Vintage Champagne 75cl \xc2\xa347.00/unit \xc2\xa347.00/75cl',Champagne,2021-03-01
+49,£1.50,b'Nosecco Spumante',b'Nosecco Spumante 20cl \xc2\xa31.50/unit \xc2\xa35.63/75cl',Champagne,2021-03-01
+50,£85.00,b'Veuve Clicquot Yellow Label Brut Non Vintage Champ',b'Veuve Clicquot Yellow Label Brut Non Vintage Champagne 1.5L \xc2\xa385.00/unit \xc2\xa342.50/75cl',Champagne,2021-03-01
+51,£8.00,b'Yellow Tail Bubbles Rose',b'Yellow Tail Bubbles Rose 75cl Only \xc2\xa38.00: Save \xc2\xa32.00 \xc2\xa38.00/unit \xc2\xa38.00/75cl',Champagne,2021-03-01
+52,£4.50,b'Freixenet 0.0% Alcohol Free Sparkling Ros\xc3\xa9',b'Freixenet 0.0% Alcohol Free Sparkling Ros\xc3\xa9 75cl \xc2\xa34.50/unit \xc2\xa34.50/75cl',Champagne,2021-03-01
+53,£2.25,b'I Heart Ros\xc3\xa9 Frizzante Can',b'I Heart Ros\xc3\xa9 Frizzante Can 20cl \xc2\xa32.25/unit \xc2\xa38.44/75cl',Champagne,2021-03-01
+54,£80.00,b'Mo\xc3\xabt & Chandon Imp\xc3\xa9rial Brut Non Vintage Champag',b'Mo\xc3\xabt & Chandon Imp\xc3\xa9rial Brut Non Vintage Champagne 1.5L \xc2\xa380.00/unit \xc2\xa340.00/75cl',Champagne,2021-03-01
+55,£11.00,b'Louis Bouillot Cr\xc3\xa9mant de Bourgogne Brut',b'Louis Bouillot Cr\xc3\xa9mant de Bourgogne Brut 75cl Introductory Offer: Only \xc2\xa311.00 \xc2\xa311.00/unit \xc2\xa311.00',Champagne,2021-03-01
+56,£7.50,b'I Heart Prosecco Rose',b'I Heart Prosecco Rose 75cl Introductory Offer: Only \xc2\xa37.50 \xc2\xa37.50/unit \xc2\xa37.50/75cl',Champagne,2021-03-01
+57,£24.00,b'Ellercombe English Quality Sparkling Wine',b'Ellercombe English Quality Sparkling Wine 75cl \xc2\xa324.00/unit \xc2\xa324.00/75cl',Champagne,2021-03-01
+58,£5.00,b'Gourmet Cocktails Champagne & Prosecco Toppers',b'Gourmet Cocktails Champagne & Prosecco Toppers 280ml \xc2\xa35.00/unit \xc2\xa317.86/ltr',Champagne,2021-03-01
+59,£22.00,"b""Sainsbury's Cr\xc3\xa9mant De Loire, Taste the Differenc""","b""Sainsbury's Cr\xc3\xa9mant De Loire, Taste the Difference 1.5L \xc2\xa322.00/unit \xc2\xa311.00/75cl""",Champagne,2021-03-01
+0,£9.50,b'Brancott Estate Sauvignon Blanc',b'Brancott Estate Sauvignon Blanc 75cl \xc2\xa39.50/unit \xc2\xa39.50/75cl',White wine,2021-03-01
+1,£8.25,b'Villa Maria Private Bin Sauvignon Blanc',b'Villa Maria Private Bin Sauvignon Blanc 75cl Only \xc2\xa38.25: Save \xc2\xa31.75 \xc2\xa38.25/unit \xc2\xa38.25/75cl',White wine,2021-03-01
+2,£9.00,b'Oyster Bay Sauvignon Blanc',b'Oyster Bay Sauvignon Blanc 75cl \xc2\xa39.00/unit \xc2\xa39.00/75cl',White wine,2021-03-01
+3,£7.50,"b""Sainsbury's Languedoc White Wine, Taste the Differ""","b""Sainsbury's Languedoc White Wine, Taste the Difference 75cl \xc2\xa37.50/unit \xc2\xa37.50/75cl""",White wine,2021-03-01
+4,£6.50,"b""Sainsbury's Rioja Blanco, Taste the Difference""","b""Sainsbury's Rioja Blanco, Taste the Difference 75cl Only \xc2\xa36.50: Save \xc2\xa31.50 \xc2\xa36.50/unit \xc2\xa36.50/75cl""",White wine,2021-03-01
+5,£8.00,"b""Sainsbury's Touraine Sauvignon Blanc, Taste the Di""","b""Sainsbury's Touraine Sauvignon Blanc, Taste the Difference 75cl \xc2\xa38.00/unit \xc2\xa38.00/75cl""",White wine,2021-03-01
+6,£7.75,b'Most Wanted Albarino',b'Most Wanted Albarino 75cl Only \xc2\xa37.75: Save \xc2\xa31.25 \xc2\xa37.75/unit \xc2\xa37.75/75cl',White wine,2021-03-01
+7,£8.50,b'Brancott Estate Flight Sauvignon Blanc',b'Brancott Estate Flight Sauvignon Blanc 75cl \xc2\xa38.50/unit \xc2\xa38.50/75cl',White wine,2021-03-01
+8,£5.00,b'Phantom River Sauvignon Blanc',b'Phantom River Sauvignon Blanc 75cl \xc2\xa35.00/unit \xc2\xa35.00/75cl',White wine,2021-03-01
+9,£5.50,b'Clearsprings Sauvignon Blanc',b'Clearsprings Sauvignon Blanc 75cl \xc2\xa35.50/unit \xc2\xa35.50/75cl',White wine,2021-03-01
+10,£6.00,"b""Sainsbury's Pinot Grigio, Taste the Difference""","b""Sainsbury's Pinot Grigio, Taste the Difference 75cl Only \xc2\xa36.00: Save \xc2\xa31.00 \xc2\xa36.00/unit \xc2\xa36.00/75cl""",White wine,2021-03-01
+11,£4.50,"b""Sainsbury's House Pinot Grigio""","b""Sainsbury's House Pinot Grigio 75cl \xc2\xa34.50/unit \xc2\xa34.50/75cl""",White wine,2021-03-01
+12,£5.10,b'McGuigan Estate Chardonnay',b'McGuigan Estate Chardonnay 75cl \xc2\xa35.10/unit \xc2\xa35.10/75cl',White wine,2021-03-01
+13,£5.75,b'Barefoot Pinot Grigio',b'Barefoot Pinot Grigio 75cl Only \xc2\xa35.75: Save \xc2\xa31.00 \xc2\xa35.75/unit \xc2\xa35.75/75cl',White wine,2021-03-01
+14,£5.00,b'Mondelli',b'Mondelli 789 Pinot Grigio 75cl \xc2\xa35.00/unit \xc2\xa35.00/75cl',White wine,2021-03-01
+15,£5.00,b'Vina Maipo Sauvignon Blanc',b'Vina Maipo Sauvignon Blanc 75cl \xc2\xa35.00/unit \xc2\xa35.00/75cl',White wine,2021-03-01
+16,£4.00,b'Mondelli Pinot Grigio',b'Mondelli Pinot Grigio 75cl Only \xc2\xa34.00: Save 85p \xc2\xa34.00/unit \xc2\xa34.00/75cl',White wine,2021-03-01
+17,£7.00,b'Bergerac Grande Reserve Sauvignon Blanc Semillon',b'Bergerac Grande Reserve Sauvignon Blanc Semillon 75cl \xc2\xa37.00/unit \xc2\xa37.00/75cl',White wine,2021-03-01
+18,£8.00,"b""Sainsbury's Coolwater Bay Marlborough Sauvignon, T""","b""Sainsbury's Coolwater Bay Marlborough Sauvignon, Taste the Difference 75cl \xc2\xa38.00/unit \xc2\xa38.00/75cl""",White wine,2021-03-01
+19,£5.30,b'Hardys Varietal Chardonnay',b'Hardys Varietal Chardonnay 75cl \xc2\xa35.30/unit \xc2\xa35.30/75cl',White wine,2021-03-01
+20,£6.00,"b""Sainsbury's Chilean Sauvignon Blanc, Taste the Dif""","b""Sainsbury's Chilean Sauvignon Blanc, Taste the Difference 75cl Only \xc2\xa36.00: Save \xc2\xa31.50 \xc2\xa36.00/unit """,White wine,2021-03-01
+21,£7.50,b'Torres Vina Sol',b'Torres Vina Sol 75cl \xc2\xa37.50/unit \xc2\xa37.50/75cl',White wine,2021-03-01
+22,£4.50,"b""Sainsbury's House Soave""","b""Sainsbury's House Soave 75cl \xc2\xa34.50/unit \xc2\xa34.50/75cl""",White wine,2021-03-01
+23,£6.00,b'Oxford Landing Sauvignon Blanc',b'Oxford Landing Sauvignon Blanc 75cl \xc2\xa36.00/unit \xc2\xa36.00/75cl',White wine,2021-03-01
+24,£8.00,b'Elegant Frog Viognier',b'Elegant Frog Viognier 75cl \xc2\xa38.00/unit \xc2\xa38.00/75cl',White wine,2021-03-01
+25,£5.25,b'Mondelli Pinot Grigio Blush',b'Mondelli Pinot Grigio Blush 75cl Only \xc2\xa35.25: Save 50p \xc2\xa35.25/unit \xc2\xa35.25/75cl',White wine,2021-03-01
+26,£4.60,b'Wollemi Chardonnay',b'Wollemi Chardonnay 75cl \xc2\xa34.60/unit \xc2\xa34.60/75cl',White wine,2021-03-01
+27,£5.25,b'I Heart Pinot Grigio',b'I Heart Pinot Grigio 75cl \xc2\xa35.25/unit \xc2\xa35.25/75cl',White wine,2021-03-01
+28,£7.50,b'Porcupine Ridge Sauvignon Blanc',b'Porcupine Ridge Sauvignon Blanc 75cl \xc2\xa37.50/unit \xc2\xa37.50/75cl',White wine,2021-03-01
+29,£5.00,b'Blossom Hill White',b'Blossom Hill White 75cl \xc2\xa35.00/unit \xc2\xa35.00/75cl',White wine,2021-03-01
+30,£6.00,b'Yellow Tail Chardonnay',b'Yellow Tail Chardonnay 75cl Only \xc2\xa36.00: Save \xc2\xa31.00 \xc2\xa36.00/unit \xc2\xa36.00/75cl',White wine,2021-03-01
+31,£5.25,b'Torretta Di Mondelli Pinot Grigio',b'Torretta Di Mondelli Pinot Grigio 75cl \xc2\xa35.25/unit \xc2\xa35.25/75cl',White wine,2021-03-01
+32,£7.50,b'Casillero Del Diablo Sauvignon Blanc',b'Casillero Del Diablo Sauvignon Blanc 75cl \xc2\xa37.50/unit \xc2\xa37.50/75cl',White wine,2021-03-01
+33,£13.00,"b""Sainsbury's House Soave""","b""Sainsbury's House Soave 2.25L \xc2\xa313.00/unit \xc2\xa34.33/75cl""",White wine,2021-03-01
+34,£5.10,b'Mcguigan Estate Pinot Grigio',b'Mcguigan Estate Pinot Grigio 75cl \xc2\xa35.10/unit \xc2\xa35.10/75cl',White wine,2021-03-01
+35,£7.00,"b""Sainsbury's Bordeaux Sauvignon Blanc, Taste the Di""","b""Sainsbury's Bordeaux Sauvignon Blanc, Taste the Difference 75cl \xc2\xa37.00/unit \xc2\xa37.00/75cl""",White wine,2021-03-01
+36,£6.00,b'McGuigan Reserve Chardonnay',b'McGuigan Reserve Chardonnay 75cl Only \xc2\xa36.00: Save \xc2\xa31.00 \xc2\xa36.00/unit \xc2\xa36.00/75cl',White wine,2021-03-01
+37,£6.75,b'Silver Moki Sauvignon Blanc',b'Silver Moki Sauvignon Blanc 75cl \xc2\xa36.75/unit \xc2\xa36.75/75cl',White wine,2021-03-01
+38,£7.00,b'Wolf Blass Red Label Chardonnay Semillon',b'Wolf Blass Red Label Chardonnay Semillon 75cl \xc2\xa37.00/unit \xc2\xa37.00/75cl',White wine,2021-03-01
+39,£1.95,"b""Sainsbury's House Pinot Grigio (Small bottle)""","b""Sainsbury's House Pinot Grigio (Small bottle) 18.7cl \xc2\xa31.95/unit \xc2\xa37.82/75cl""",White wine,2021-03-01
+40,£2.75,"b""Sainsbury's Alcohol Free White Wine""","b""Sainsbury's Alcohol Free White Wine 75cl \xc2\xa32.75/unit \xc2\xa32.75/75cl""",White wine,2021-03-01
+41,£4.95,b'Montpierre Reserve Sauvignon Blanc',b'Montpierre Reserve Sauvignon Blanc 75cl \xc2\xa34.95/unit \xc2\xa34.95/75cl',White wine,2021-03-01
+42,£8.00,b'Wolf Blass Yellow Label Chardonnay',b'Wolf Blass Yellow Label Chardonnay 75cl \xc2\xa38.00/unit \xc2\xa38.00/75cl',White wine,2021-03-01
+43,£6.00,"b""Sainsbury's Pinot Grigio Dolomiti Blush, Taste the""","b""Sainsbury's Pinot Grigio Dolomiti Blush, Taste the Difference 75cl Only \xc2\xa36.00: Save \xc2\xa31.50 \xc2\xa36.00/u""",White wine,2021-03-01
+44,£8.50,b'Dark Horse Chardonnay',b'Dark Horse Chardonnay 75cl \xc2\xa38.50/unit \xc2\xa38.50/75cl',White wine,2021-03-01
+45,£7.00,"b""Sainsbury's Verdicchio Dei Castelli Di Jesi, Taste""","b""Sainsbury's Verdicchio Dei Castelli Di Jesi, Taste the Difference 75cl \xc2\xa37.00/unit \xc2\xa37.00/75cl""",White wine,2021-03-01
+46,£8.50,"b""Sainsbury's Albarino, Taste the Difference""","b""Sainsbury's Albarino, Taste the Difference 75cl \xc2\xa38.50/unit \xc2\xa38.50/75cl""",White wine,2021-03-01
+47,£5.10,b'McGuigan Estate Sauvignon Blanc',b'McGuigan Estate Sauvignon Blanc 75cl \xc2\xa35.10/unit \xc2\xa35.10/75cl',White wine,2021-03-01
+48,£8.00,b'Baron De Guers Picpoul De Pinet',b'Baron De Guers Picpoul De Pinet 75cl \xc2\xa38.00/unit \xc2\xa38.00/75cl',White wine,2021-03-01
+49,£8.00,"b""Sainsbury's Macon Villages, Taste the Difference""","b""Sainsbury's Macon Villages, Taste the Difference 75cl \xc2\xa38.00/unit \xc2\xa38.00/75cl""",White wine,2021-03-01
+50,£7.50,"b""Sainsbury's Chenin Blanc, Taste the Difference""","b""Sainsbury's Chenin Blanc, Taste the Difference 75cl \xc2\xa37.50/unit \xc2\xa37.50/75cl""",White wine,2021-03-01
+51,£5.35,b'McGuigan Classic Sauvignon Blanc',b'McGuigan Classic Sauvignon Blanc 75cl \xc2\xa35.35/unit \xc2\xa35.35/75cl',White wine,2021-03-01
+52,£12.00,"b""Sainsbury's Chablis, Taste the Difference""","b""Sainsbury's Chablis, Taste the Difference 75cl \xc2\xa312.00/unit \xc2\xa312.00/75cl""",White wine,2021-03-01
+53,£5.25,b'Black Tower White',b'Black Tower White 75cl \xc2\xa35.25/unit \xc2\xa35.25/75cl',White wine,2021-03-01
+54,£6.00,b'Country Manor Perry',b'Country Manor Perry 3L \xc2\xa36.00/unit \xc2\xa31.50/75cl',White wine,2021-03-01
+55,£5.25,b'Alvorado Vinho Verde',b'Alvorado Vinho Verde 75cl \xc2\xa35.25/unit \xc2\xa35.25/75cl',White wine,2021-03-01
+56,£10.50,"b""Sainsbury's Petit Chablis, Taste the Difference""","b""Sainsbury's Petit Chablis, Taste the Difference 75cl \xc2\xa310.50/unit \xc2\xa310.50/75cl""",White wine,2021-03-01
+57,£1.95,"b""Sainsbury's House Chardonnay (Small bottle)""","b""Sainsbury's House Chardonnay (Small bottle) 18.7cl \xc2\xa31.95/unit \xc2\xa37.82/75cl""",White wine,2021-03-01
+58,£7.00,b'Yellow Tail Pinot Grigio',b'Yellow Tail Pinot Grigio 75cl \xc2\xa37.00/unit \xc2\xa37.00/75cl',White wine,2021-03-01
+59,£2.75,b'Brancott Estate Sauvignon Blanc (Small bottle)',b'Brancott Estate Sauvignon Blanc (Small bottle) 18.7cl \xc2\xa32.75/unit \xc2\xa311.03/75cl',White wine,2021-03-01
+0,£7.50,"b""Sainsbury's Languedoc Red, Taste the Difference""","b""Sainsbury's Languedoc Red, Taste the Difference 75cl \xc2\xa37.50/unit \xc2\xa37.50/75cl""",Red wine,2021-03-01
+1,£7.00,b'Brancott Estate Hawkes Bay Merlot Red Wine',b'Brancott Estate Hawkes Bay Merlot Red Wine 75cl Only \xc2\xa37.00: Save \xc2\xa31.00 \xc2\xa37.00/unit \xc2\xa37.00/75cl',Red wine,2021-03-01
+2,£5.10,b'McGuigan Estate Merlot',b'McGuigan Estate Merlot 75cl \xc2\xa35.10/unit \xc2\xa35.10/75cl',Red wine,2021-03-01
+3,£5.10,b'McGuigan Estate South Australian Shiraz',b'McGuigan Estate South Australian Shiraz 75cl \xc2\xa35.10/unit \xc2\xa35.10/75cl',Red wine,2021-03-01
+4,£6.00,b'Yellow Tail Shiraz',b'Yellow Tail Shiraz 75cl Only \xc2\xa36.00: Save \xc2\xa31.00 \xc2\xa36.00/unit \xc2\xa36.00/75cl',Red wine,2021-03-01
+5,£5.75,b'Barefoot Merlot',b'Barefoot Merlot 75cl Only \xc2\xa35.75: Save \xc2\xa31.00 \xc2\xa35.75/unit \xc2\xa35.75/75cl',Red wine,2021-03-01
+6,£5.00,b'Vina Maipo Merlot',b'Vina Maipo Merlot 75cl \xc2\xa35.00/unit \xc2\xa35.00/75cl',Red wine,2021-03-01
+7,£6.75,b'Barefoot Malbec',b'Barefoot Malbec 75cl \xc2\xa36.75/unit \xc2\xa36.75/75cl',Red wine,2021-03-01
+8,£6.00,b'La Patrie Cahors Malbec',b'La Patrie Cahors Malbec 75cl Only \xc2\xa36.00: Save \xc2\xa31.00 \xc2\xa36.00/unit \xc2\xa36.00/75cl',Red wine,2021-03-01
+9,£6.75,b'Bouchard Aine Et Fils Pinot Noir',b'Bouchard Aine Et Fils Pinot Noir 75cl Only \xc2\xa36.75: Save 75p \xc2\xa36.75/unit \xc2\xa36.75/75cl',Red wine,2021-03-01
+10,£5.00,b'Blossom Hill Red',b'Blossom Hill Red 75cl \xc2\xa35.00/unit \xc2\xa35.00/75cl',Red wine,2021-03-01
+11,£5.75,b'Carta Roja Gran Reserva',b'Carta Roja Gran Reserva 75cl \xc2\xa35.75/unit \xc2\xa35.75/75cl',Red wine,2021-03-01
+12,£4.60,b'Wollemi Shiraz-Merlot',b'Wollemi Shiraz-Merlot 75cl \xc2\xa34.60/unit \xc2\xa34.60/75cl',Red wine,2021-03-01
+13,£7.00,b'McGuigan Reserve Shiraz',b'McGuigan Reserve Shiraz 75cl \xc2\xa37.00/unit \xc2\xa37.00/75cl',Red wine,2021-03-01
+14,£10.00,b'Campo Viejo Rioja Reserva',b'Campo Viejo Rioja Reserva 75cl \xc2\xa310.00/unit \xc2\xa310.00/75cl',Red wine,2021-03-01
+15,£7.00,b'Wolf Blass Red Label Shiraz Cabernet',b'Wolf Blass Red Label Shiraz Cabernet 75cl \xc2\xa37.00/unit \xc2\xa37.00/75cl',Red wine,2021-03-01
+16,£6.00,b'Yellow Tail Merlot',b'Yellow Tail Merlot 75cl Only \xc2\xa36.00: Save \xc2\xa31.00 \xc2\xa36.00/unit \xc2\xa36.00/75cl',Red wine,2021-03-01
+17,£7.75,"b""Sainsbury's Vinedos Barrihuelo Rioja Crianza, Tast""","b""Sainsbury's Vinedos Barrihuelo Rioja Crianza, Taste the Difference 75cl \xc2\xa37.75/unit \xc2\xa37.75/75cl""",Red wine,2021-03-01
+18,£5.10,b'McGuigan Estate Cabernet Sauvignon',b'McGuigan Estate Cabernet Sauvignon 75cl \xc2\xa35.10/unit \xc2\xa35.10/75cl',Red wine,2021-03-01
+19,£8.50,"b""Sainsbury's Morador Malbec, Taste the Difference""","b""Sainsbury's Morador Malbec, Taste the Difference 75cl \xc2\xa38.50/unit \xc2\xa38.50/75cl""",Red wine,2021-03-01
+20,£7.50,b'Graffigna Reserve Malbec',b'Graffigna Reserve Malbec 75cl Only \xc2\xa37.50: Save \xc2\xa31.50 \xc2\xa37.50/unit \xc2\xa37.50/75cl',Red wine,2021-03-01
+21,£1.95,"b""Sainsbury's House Merlot (Small bottle)""","b""Sainsbury's House Merlot (Small bottle) 18.7cl \xc2\xa31.95/unit \xc2\xa37.82/75cl""",Red wine,2021-03-01
+22,£5.75,b'Terres De Galets C\xc3\xb4tes du Rh\xc3\xb4ne',b'Terres De Galets C\xc3\xb4tes du Rh\xc3\xb4ne 75cl \xc2\xa35.75/unit \xc2\xa35.75/75cl',Red wine,2021-03-01
+23,£5.75,b'Barefoot Shiraz',b'Barefoot Shiraz 75cl Only \xc2\xa35.75: Save \xc2\xa31.00 \xc2\xa35.75/unit \xc2\xa35.75/75cl',Red wine,2021-03-01
+24,£5.75,b'Gallo Family Vineyards Merlot',b'Gallo Family Vineyards Merlot 75cl \xc2\xa35.75/unit \xc2\xa35.75/75cl',Red wine,2021-03-01
+25,£7.50,b'Cono Sur Pinot Noir',b'Cono Sur Pinot Noir 75cl \xc2\xa37.50/unit \xc2\xa37.50/75cl',Red wine,2021-03-01
+26,£6.50,b'Prestige de Calvet Bordeaux',b'Prestige de Calvet Bordeaux 75cl Only \xc2\xa36.50: Save \xc2\xa31.00 \xc2\xa36.50/unit \xc2\xa36.50/75cl',Red wine,2021-03-01
+27,£4.50,"b""Sainsbury's House Red""","b""Sainsbury's House Red 75cl \xc2\xa34.50/unit \xc2\xa34.50/75cl""",Red wine,2021-03-01
+28,£8.00,"b""Apothic Winemakers' Blend Red""","b""Apothic Winemakers' Blend Red 75cl Only \xc2\xa38.00: Save \xc2\xa31.00 \xc2\xa38.00/unit \xc2\xa38.00/75cl""",Red wine,2021-03-01
+29,£2.75,"b""Sainsbury's Alcohol Free Red Wine""","b""Sainsbury's Alcohol Free Red Wine 75cl \xc2\xa32.75/unit \xc2\xa32.75/75cl""",Red wine,2021-03-01
+30,£7.00,b'Yellow Tail Malbec',b'Yellow Tail Malbec 75cl \xc2\xa37.00/unit \xc2\xa37.00/75cl',Red wine,2021-03-01
+31,£2.25,b'Campo Viejo Rioja Tempranillo Red Wine',b'Campo Viejo Rioja Tempranillo Red Wine 187ml \xc2\xa32.25/unit \xc2\xa39.02/75cl',Red wine,2021-03-01
+32,£5.85,b'Era Costana Crianza Rioja',b'Era Costana Crianza Rioja 75cl \xc2\xa35.85/unit \xc2\xa35.85/75cl',Red wine,2021-03-01
+33,£8.50,b'Dark Horse Cabernet Sauvignon',b'Dark Horse Cabernet Sauvignon 75cl \xc2\xa38.50/unit \xc2\xa38.50/75cl',Red wine,2021-03-01
+34,£6.00,b'Beyerskloof Pinotage',b'Beyerskloof Pinotage 75cl Only \xc2\xa36.00: Save \xc2\xa32.00 \xc2\xa36.00/unit \xc2\xa36.00/75cl',Red wine,2021-03-01
+35,£5.75,"b""Sainsbury's Cabernet Sauvignon, SO Organic""","b""Sainsbury's Cabernet Sauvignon, SO Organic 75cl Only \xc2\xa35.75: Save 75p \xc2\xa35.75/unit \xc2\xa35.75/75cl""",Red wine,2021-03-01
+36,£7.00,b'McGuigan Reserve Cabernet Sauvignon',b'McGuigan Reserve Cabernet Sauvignon 75cl \xc2\xa37.00/unit \xc2\xa37.00/75cl',Red wine,2021-03-01
+37,£3.85,b'Penguin Sands Shiraz',b'Penguin Sands Shiraz 75cl \xc2\xa33.85/unit \xc2\xa33.85/75cl',Red wine,2021-03-01
+38,£13.00,"b""Sainsbury's House Cabernet Sauvignon""","b""Sainsbury's House Cabernet Sauvignon 2.25L \xc2\xa313.00/unit \xc2\xa34.33/75cl""",Red wine,2021-03-01
+39,£6.25,b'Porcupine Ridge Shiraz',b'Porcupine Ridge Shiraz 75cl Only \xc2\xa36.25: Save \xc2\xa31.25 \xc2\xa36.25/unit \xc2\xa36.25/75cl',Red wine,2021-03-01
+40,£8.00,b'Wolf Blass Yellow Label Cabernet',b'Wolf Blass Yellow Label Cabernet 75cl \xc2\xa38.00/unit \xc2\xa38.00/75cl',Red wine,2021-03-01
+41,£9.00,b'Georges Duboeuf Fleurie',b'Georges Duboeuf Fleurie 75cl Only \xc2\xa39.00: Save \xc2\xa31.00 \xc2\xa39.00/unit \xc2\xa39.00/75cl',Red wine,2021-03-01
+42,£7.50,"b""Sainsbury's Rioja Reserva, Taste the Difference""","b""Sainsbury's Rioja Reserva, Taste the Difference 75cl Only \xc2\xa37.50: Save \xc2\xa31.50 \xc2\xa37.50/unit \xc2\xa37.50/75c""",Red wine,2021-03-01
+43,£4.40,"b""Sainsbury's House Cabernet Sauvignon""","b""Sainsbury's House Cabernet Sauvignon 75cl \xc2\xa34.40/unit \xc2\xa34.40/75cl""",Red wine,2021-03-01
+44,£10.50,b'Oyster Bay Merlot',b'Oyster Bay Merlot 75cl \xc2\xa310.50/unit \xc2\xa310.50/75cl',Red wine,2021-03-01
+45,£6.00,"b""Sainsbury's Maipo Merlot, Taste the Difference""","b""Sainsbury's Maipo Merlot, Taste the Difference 75cl Only \xc2\xa36.00: Save \xc2\xa31.00 \xc2\xa36.00/unit \xc2\xa36.00/75cl""",Red wine,2021-03-01
+46,£4.85,b'Stamford Brook Merlot',b'Stamford Brook Merlot 75cl \xc2\xa34.85/unit \xc2\xa34.85/75cl',Red wine,2021-03-01
+47,£8.00,"b""Sainsbury's Beaujolais Sup\xc3\xa9rieur, Taste the Diffe""","b""Sainsbury's Beaujolais Sup\xc3\xa9rieur, Taste the Difference 75cl \xc2\xa38.00/unit \xc2\xa38.00/75cl""",Red wine,2021-03-01
+48,£18.00,b'Ch\xc3\xa2teauneuf Du Pape Les Courlandes',b'Ch\xc3\xa2teauneuf Du Pape Les Courlandes 75cl \xc2\xa318.00/unit \xc2\xa318.00/75cl',Red wine,2021-03-01
+49,£7.00,"b""Sainsbury's Chilean Pinot Noir, Taste the Differen""","b""Sainsbury's Chilean Pinot Noir, Taste the Difference 75cl Only \xc2\xa37.00: Save \xc2\xa31.50 \xc2\xa37.00/unit \xc2\xa37.0""",Red wine,2021-03-01
+50,£9.00,b'Oyster Bay Pinot Noir',b'Oyster Bay Pinot Noir 75cl Only \xc2\xa39.00: Save \xc2\xa32.00 \xc2\xa39.00/unit \xc2\xa39.00/75cl',Red wine,2021-03-01
+51,£2.25,b'McGuigan Estate Shiraz (Small bottle)',b'McGuigan Estate Shiraz (Small bottle) 18.7cl \xc2\xa32.25/unit \xc2\xa39.02/75cl',Red wine,2021-03-01
+52,£8.50,b'Dark Horse Merlot',b'Dark Horse Merlot 75cl \xc2\xa38.50/unit \xc2\xa38.50/75cl',Red wine,2021-03-01
+53,£7.00,b'McGuigan Reserve Merlot',b'McGuigan Reserve Merlot 75cl \xc2\xa37.00/unit \xc2\xa37.00/75cl',Red wine,2021-03-01
+54,£12.00,b'DV Catena Malbec',b'DV Catena Malbec 75cl \xc2\xa312.00/unit \xc2\xa312.00/75cl',Red wine,2021-03-01
+55,£5.00,"b""Sainsbury's House Claret""","b""Sainsbury's House Claret 75cl \xc2\xa35.00/unit \xc2\xa35.00/75cl""",Red wine,2021-03-01
+56,£8.00,b'Campo Viejo Rioja Garnacha Red Wine',b'Campo Viejo Rioja Garnacha Red Wine 75cl \xc2\xa38.00/unit \xc2\xa38.00/75cl',Red wine,2021-03-01
+57,£8.25,"b""Sainsbury's C\xc3\xb4tes du Rh\xc3\xb4ne Villages, Taste the D""","b""Sainsbury's C\xc3\xb4tes du Rh\xc3\xb4ne Villages, Taste the Difference 75cl \xc2\xa38.25/unit \xc2\xa38.25/75cl""",Red wine,2021-03-01
+58,£6.75,"b'Sainsbury\xe2\x80\x99s Western Australian Shiraz, Taste the'","b'Sainsbury\xe2\x80\x99s Western Australian Shiraz, Taste the Difference 75cl Only \xc2\xa36.75: Save 75p \xc2\xa36.75/unit'",Red wine,2021-03-01
+59,£5.85,"b'Mavrodaphni of Patra, Kourtaki'","b'Mavrodaphni of Patra, Kourtaki 75cl \xc2\xa35.85/unit \xc2\xa35.85/75cl'",Red wine,2021-03-01
+0,£5.25,b'Mondelli Pinot Grigio Blush',b'Mondelli Pinot Grigio Blush 75cl Only \xc2\xa35.25: Save 50p \xc2\xa35.25/unit \xc2\xa35.25/75cl',Rose wine,2021-03-01
+1,£8.50,"b""Sainsbury's C\xc3\xb4tes De Provence Ros\xc3\xa9, Taste the Di""","b""Sainsbury's C\xc3\xb4tes De Provence Ros\xc3\xa9, Taste the Difference 75cl Only \xc2\xa38.50: Save \xc2\xa31.25 \xc2\xa38.50/unit""",Rose wine,2021-03-01
+2,£6.00,"b""Sainsbury's Pinot Grigio Dolomiti Blush, Taste the""","b""Sainsbury's Pinot Grigio Dolomiti Blush, Taste the Difference 75cl Only \xc2\xa36.00: Save \xc2\xa31.50 \xc2\xa36.00/u""",Rose wine,2021-03-01
+3,£8.00,"b""Sainsbury's Bordeaux Ros\xc3\xa9, Taste the Difference""","b""Sainsbury's Bordeaux Ros\xc3\xa9, Taste the Difference 75cl \xc2\xa38.00/unit \xc2\xa38.00/75cl""",Rose wine,2021-03-01
+4,£7.00,"b""Sainsbury's Fronton Negrette Ros\xc3\xa9, Taste The Diff""","b""Sainsbury's Fronton Negrette Ros\xc3\xa9, Taste The Difference 75cl \xc2\xa37.00/unit \xc2\xa37.00/75cl""",Rose wine,2021-03-01
+5,£5.50,b'Gallo Family Vineyards White Zinfandel',b'Gallo Family Vineyards White Zinfandel 75cl \xc2\xa35.50/unit \xc2\xa35.50/75cl',Rose wine,2021-03-01
+6,£5.60,b'Blossom Hill White Zinfandel Ros\xc3\xa9',b'Blossom Hill White Zinfandel Ros\xc3\xa9 75cl \xc2\xa35.60/unit \xc2\xa35.60/75cl',Rose wine,2021-03-01
+7,£5.75,b'Barefoot White Zinfandel',b'Barefoot White Zinfandel 75cl Only \xc2\xa35.75: Save \xc2\xa31.00 \xc2\xa35.75/unit \xc2\xa35.75/75cl',Rose wine,2021-03-01
+8,£5.50,b'Palastri Pinot Grigio Blush',b'Palastri Pinot Grigio Blush 75cl \xc2\xa35.50/unit \xc2\xa35.50/75cl',Rose wine,2021-03-01
+9,£5.60,b'Gallo Family Vineyards White Grenache',b'Gallo Family Vineyards White Grenache 75cl \xc2\xa35.60/unit \xc2\xa35.60/75cl',Rose wine,2021-03-01
+10,£6.00,b'Mateus Ros\xc3\xa9',b'Mateus Ros\xc3\xa9 75cl \xc2\xa36.00/unit \xc2\xa36.00/75cl',Rose wine,2021-03-01
+11,£4.50,"b""Sainsbury's House Zinfandel Ros\xc3\xa9""","b""Sainsbury's House Zinfandel Ros\xc3\xa9 75cl \xc2\xa34.50/unit \xc2\xa34.50/75cl""",Rose wine,2021-03-01
+12,£5.00,b'Blossom Hill Rose',b'Blossom Hill Rose 75cl \xc2\xa35.00/unit \xc2\xa35.00/75cl',Rose wine,2021-03-01
+13,£6.75,b'Barefoot Pink Moscato',b'Barefoot Pink Moscato 75cl \xc2\xa36.75/unit \xc2\xa36.75/75cl',Rose wine,2021-03-01
+14,£2.75,"b""Sainsbury's Alcohol Free Ros\xc3\xa9""","b""Sainsbury's Alcohol Free Ros\xc3\xa9 75cl \xc2\xa32.75/unit \xc2\xa32.75/75cl""",Rose wine,2021-03-01
+15,£4.80,b'Alvorada Portuguese Ros\xc3\xa9',b'Alvorada Portuguese Ros\xc3\xa9 75cl \xc2\xa34.80/unit \xc2\xa34.80/75cl',Rose wine,2021-03-01
+16,£3.75,b'Echo Falls Fruit Fusion Summer Berries Rose Wine',b'Echo Falls Fruit Fusion Summer Berries Rose Wine 75cl \xc2\xa33.75/unit \xc2\xa33.75/75cl',Rose wine,2021-03-01
+17,£2.25,b'Blossom Hill White Zinfandel Ros\xc3\xa9 (Small bottle)',b'Blossom Hill White Zinfandel Ros\xc3\xa9 (Small bottle) 18.7cl \xc2\xa32.25/unit \xc2\xa39.02/75cl',Rose wine,2021-03-01
+18,£5.00,b'Black Tower Ros\xc3\xa9',b'Black Tower Ros\xc3\xa9 75cl \xc2\xa35.00/unit \xc2\xa35.00/75cl',Rose wine,2021-03-01
+19,£3.00,"b""Sainsbury's Lambrusco Rosato""","b""Sainsbury's Lambrusco Rosato 75cl \xc2\xa33.00/unit \xc2\xa33.00/75cl""",Rose wine,2021-03-01
+20,£4.50,"b""Sainsbury's House Dry Ros\xc3\xa9""","b""Sainsbury's House Dry Ros\xc3\xa9 75cl \xc2\xa34.50/unit \xc2\xa34.50/75cl""",Rose wine,2021-03-01
+21,£13.00,"b""Sainsbury's House Zinfandel Ros\xc3\xa9""","b""Sainsbury's House Zinfandel Ros\xc3\xa9 2.25L \xc2\xa313.00/unit \xc2\xa34.33/75cl""",Rose wine,2021-03-01
+22,£4.75,b'Gallo Family Vineyards Summer Ros\xc3\xa9',b'Gallo Family Vineyards Summer Ros\xc3\xa9 75cl \xc2\xa34.75/unit \xc2\xa34.75/75cl',Rose wine,2021-03-01
+23,£13.00,b'Sancerre Ros\xc3\xa9 Les Caillotes',b'Sancerre Ros\xc3\xa9 Les Caillotes 75cl \xc2\xa313.00/unit \xc2\xa313.00/75cl',Rose wine,2021-03-01
+24,£5.60,b'Gallo Family Vineyards Pink Moscato',b'Gallo Family Vineyards Pink Moscato 75cl \xc2\xa35.60/unit \xc2\xa35.60/75cl',Rose wine,2021-03-01
+25,£2.50,b'Mateus Ros\xc3\xa9 (Small bottle)',b'Mateus Ros\xc3\xa9 (Small bottle) 18.7cl \xc2\xa32.50/unit \xc2\xa310.03/75cl',Rose wine,2021-03-01
+26,£4.95,b'Montpierre R\xc3\xa9serve Shiraz Ros\xc3\xa9',b'Montpierre R\xc3\xa9serve Shiraz Ros\xc3\xa9 75cl \xc2\xa34.95/unit \xc2\xa34.95/75cl',Rose wine,2021-03-01
+27,£6.50,"b""Sainsbury's Barrihuelo Rioja Rosado, Taste the Dif""","b""Sainsbury's Barrihuelo Rioja Rosado, Taste the Difference 75cl Only \xc2\xa36.50: Save \xc2\xa31.00 \xc2\xa36.50/unit """,Rose wine,2021-03-01
+28,£2.75,"b""Sainsbury's Fairtrade Moscato Sparkling Ros\xc3\xa9, Tas""","b""Sainsbury's Fairtrade Moscato Sparkling Ros\xc3\xa9, Taste the Difference (Small bottle) 18.7cl \xc2\xa32.75/uni""",Rose wine,2021-03-01
+29,£12.00,b'Freixenet Italian Sparkling Rose Extra Dry Wine',b'Freixenet Italian Sparkling Rose Extra Dry Wine 75cl \xc2\xa312.00/unit \xc2\xa312.00/75cl',Rose wine,2021-03-01
+30,£7.00,"b""Sainsbury's Touraine Rose, Taste the Difference""","b""Sainsbury's Touraine Rose, Taste the Difference 75cl \xc2\xa37.00/unit \xc2\xa37.00/75cl""",Rose wine,2021-03-01
+31,£13.00,b'Baron Gassier Provence St V Rose',b'Baron Gassier Provence St V Rose 75cl \xc2\xa313.00/unit \xc2\xa313.00/75cl',Rose wine,2021-03-01
+32,£11.50,"b""Sainsbury's Cremant De Loire Rose, Taste the Diffe""","b""Sainsbury's Cremant De Loire Rose, Taste the Difference 75cl \xc2\xa311.50/unit \xc2\xa311.50/75cl""",Rose wine,2021-03-01
+33,£8.00,"b""La Terrasse Ros\xc3\xa9 Pays d'Oc""","b""La Terrasse Ros\xc3\xa9 Pays d'Oc 75cl Only \xc2\xa38.00: Save \xc2\xa32.00 \xc2\xa38.00/unit \xc2\xa38.00/75cl""",Rose wine,2021-03-01
+34,£2.25,b'Mondelli Pinot Grigio Blush (Small bottle)',b'Mondelli Pinot Grigio Blush (Small bottle) 18.7cl \xc2\xa32.25/unit \xc2\xa39.02/75cl',Rose wine,2021-03-01
+35,£3.65,b'Time Keeper Ros\xc3\xa9 Wine',b'Time Keeper Ros\xc3\xa9 Wine 75cl \xc2\xa33.65/unit \xc2\xa33.65/75cl',Rose wine,2021-03-01
+36,£4.00,b'Blossom Hill Spritz Raspberry & Blackcurrant',b'Blossom Hill Spritz Raspberry & Blackcurrant 75cl \xc2\xa34.00/unit \xc2\xa34.00/75cl',Rose wine,2021-03-01
+37,£4.00,b'Mondelli Puglia Rosato',b'Mondelli Puglia Rosato 75cl Only \xc2\xa34.00: Save \xc2\xa31.00 \xc2\xa34.00/unit \xc2\xa34.00/75cl',Rose wine,2021-03-01
+38,£5.00,b'Echo Falls',b'Echo Falls 187ml & Lindt Lindor Truffles Gift Set \xc2\xa35.00/unit \xc2\xa35.00/ea',Rose wine,2021-03-01
+39,£11.00,b'Chapel Down English Ros\xc3\xa9',b'Chapel Down English Ros\xc3\xa9 75cl Only \xc2\xa311.00: Save \xc2\xa32.00 \xc2\xa311.00/unit \xc2\xa311.00/75cl',Rose wine,2021-03-01
+40,£3.75,b'Gallo Spritz Raspberry & Lime',b'Gallo Spritz Raspberry & Lime 75cl \xc2\xa33.75/unit \xc2\xa33.75/75cl',Rose wine,2021-03-01
+41,£7.00,b'Yellow Tail Rose',b'Yellow Tail Rose 750ml \xc2\xa37.00/unit \xc2\xa37.00/75cl',Rose wine,2021-03-01
+42,£2.25,b'PinotPinot Pinot Grigio Pink Fizz',b'PinotPinot Pinot Grigio Pink Fizz 200ml \xc2\xa32.25/unit \xc2\xa38.44/75cl',Rose wine,2021-03-01
+43,£2.25,b'I Heart Ros\xc3\xa9 Frizzante Can',b'I Heart Ros\xc3\xa9 Frizzante Can 20cl \xc2\xa32.25/unit \xc2\xa38.44/75cl',Rose wine,2021-03-01
+44,£11.00,b'Mirabeau Forever Summer',b'Mirabeau Forever Summer 75cl \xc2\xa311.00/unit \xc2\xa311.00/75cl',Rose wine,2021-03-01
+45,£9.00,b'Freixenet Italian Still Rose',b'Freixenet Italian Still Rose 75cl \xc2\xa39.00/unit \xc2\xa39.00/75cl',Rose wine,2021-03-01
+46,£5.75,b'Campo Viejo Ros\xc3\xa9 Wine',b'Campo Viejo Ros\xc3\xa9 Wine 750ml Only \xc2\xa35.75: Save \xc2\xa32.25 \xc2\xa35.75/unit \xc2\xa35.75/75cl',Rose wine,2021-03-01
+47,£2.50,"b""Calvet Cap d'Adge Ros\xc3\xa9""","b""Calvet Cap d'Adge Ros\xc3\xa9 187ml \xc2\xa32.50/unit \xc2\xa310.03/75cl""",Rose wine,2021-03-01
+48,£7.50,b'I Heart Prosecco Rose',b'I Heart Prosecco Rose 75cl Introductory Offer: Only \xc2\xa37.50 \xc2\xa37.50/unit \xc2\xa37.50/75cl',Rose wine,2021-03-01
+49,£6.00,b'Most Wanted Pale Rose',b'Most Wanted Pale Rose 75cl Only \xc2\xa36.00: Save \xc2\xa31.50 \xc2\xa36.00/unit \xc2\xa36.00/75cl',Rose wine,2021-03-01
+50,£2.25,b'Minivino Ros\xc3\xa9',b'Minivino Ros\xc3\xa9 18.7cl \xc2\xa32.25/unit \xc2\xa39.02/75cl',Rose wine,2021-03-01
+51,£14.00,"b""La Terrasse Ros\xc3\xa9 Pays d'Oc""","b""La Terrasse Ros\xc3\xa9 Pays d'Oc 150cl Only \xc2\xa314.00: Save \xc2\xa36.00 \xc2\xa314.00/unit \xc2\xa37.00/75cl""",Rose wine,2021-03-01
+52,£2.65,b'Nice Pale Ros\xc3\xa9',b'Nice Pale Ros\xc3\xa9 25cl \xc2\xa32.65/unit \xc2\xa37.95/75cl',Rose wine,2021-03-01
+53,£2.00,b'Vandra Ros\xc3\xa9 Can',b'Vandra Ros\xc3\xa9 Can 250ml Only \xc2\xa32.00: Save 65p \xc2\xa32.00/unit \xc2\xa36.00/75cl',Rose wine,2021-03-01
+54,£14.00,b'Calvet South Of France Rose',b'Calvet South Of France Rose 1.5L \xc2\xa314.00/unit \xc2\xa37.00/75cl',Rose wine,2021-03-01
+55,£2.50,b'Minivino Ros\xc3\xa9 Fizz',b'Minivino Ros\xc3\xa9 Fizz 200ml \xc2\xa32.50/unit \xc2\xa39.38/75cl',Rose wine,2021-03-01
+56,£12.00,b'Bird in Hand Sparkling',b'Bird in Hand Sparkling 750ml Introductory Offer: Only \xc2\xa312.00 \xc2\xa312.00/unit \xc2\xa312.00/75cl',Rose wine,2021-03-01
+57,£9.50,b'Villa Maria Sauvignon Blanc Blush',b'Villa Maria Sauvignon Blanc Blush 75cl \xc2\xa39.50/unit \xc2\xa39.50/75cl',Rose wine,2021-03-01
+58,£2.15,b'Babe Sparkling Rose Can',b'Babe Sparkling Rose Can 20cl \xc2\xa32.15/unit \xc2\xa38.06/75cl',Rose wine,2021-03-01
+59,£14.00,b'La Terrasse Sparkling Rose',b'La Terrasse Sparkling Rose 75cl \xc2\xa314.00/unit \xc2\xa314.00/75cl',Rose wine,2021-03-01
+0,£6.00,"b""Sainsbury's Pinot Grigio, Taste the Difference""","b""Sainsbury's Pinot Grigio, Taste the Difference 75cl Only \xc2\xa36.00: Save \xc2\xa31.00 \xc2\xa36.00/unit \xc2\xa36.00/75cl""",Vegan wine,2021-03-01
+1,£4.50,"b""Sainsbury's House Pinot Grigio""","b""Sainsbury's House Pinot Grigio 75cl \xc2\xa34.50/unit \xc2\xa34.50/75cl""",Vegan wine,2021-03-01
+2,£8.00,"b""Sainsbury's Coolwater Bay Marlborough Sauvignon, T""","b""Sainsbury's Coolwater Bay Marlborough Sauvignon, Taste the Difference 75cl \xc2\xa38.00/unit \xc2\xa38.00/75cl""",Vegan wine,2021-03-01
+3,£6.00,"b""Sainsbury's Chilean Sauvignon Blanc, Taste the Dif""","b""Sainsbury's Chilean Sauvignon Blanc, Taste the Difference 75cl Only \xc2\xa36.00: Save \xc2\xa31.50 \xc2\xa36.00/unit """,Vegan wine,2021-03-01
+4,£7.50,"b""Sainsbury's Languedoc White Wine, Taste the Differ""","b""Sainsbury's Languedoc White Wine, Taste the Difference 75cl \xc2\xa37.50/unit \xc2\xa37.50/75cl""",Vegan wine,2021-03-01
+5,£7.75,"b""Sainsbury's Vinedos Barrihuelo Rioja Crianza, Tast""","b""Sainsbury's Vinedos Barrihuelo Rioja Crianza, Taste the Difference 75cl \xc2\xa37.75/unit \xc2\xa37.75/75cl""",Vegan wine,2021-03-01
+6,£6.00,"b""Sainsbury's Ros\xc3\xa9 Cava""","b""Sainsbury's Ros\xc3\xa9 Cava 75cl \xc2\xa36.00/unit \xc2\xa36.00/75cl""",Vegan wine,2021-03-01
+7,£8.50,"b""Sainsbury's Morador Malbec, Taste the Difference""","b""Sainsbury's Morador Malbec, Taste the Difference 75cl \xc2\xa38.50/unit \xc2\xa38.50/75cl""",Vegan wine,2021-03-01
+8,£13.00,"b""Sainsbury's House Soave""","b""Sainsbury's House Soave 2.25L \xc2\xa313.00/unit \xc2\xa34.33/75cl""",Vegan wine,2021-03-01
+9,£7.00,"b""Sainsbury's Bordeaux Sauvignon Blanc, Taste the Di""","b""Sainsbury's Bordeaux Sauvignon Blanc, Taste the Difference 75cl \xc2\xa37.00/unit \xc2\xa37.00/75cl""",Vegan wine,2021-03-01
+10,£6.00,"b""Sainsbury's Cava Medium Dry""","b""Sainsbury's Cava Medium Dry 75cl \xc2\xa36.00/unit \xc2\xa36.00/75cl""",Vegan wine,2021-03-01
+11,£3.50,"b""Sainsbury's Ginger Wine""","b""Sainsbury's Ginger Wine 70cl \xc2\xa33.50/unit \xc2\xa33.75/75cl""",Vegan wine,2021-03-01
+12,£8.50,"b""Sainsbury's C\xc3\xb4tes De Provence Ros\xc3\xa9, Taste the Di""","b""Sainsbury's C\xc3\xb4tes De Provence Ros\xc3\xa9, Taste the Difference 75cl Only \xc2\xa38.50: Save \xc2\xa31.25 \xc2\xa38.50/unit""",Vegan wine,2021-03-01
+13,£1.95,"b""Sainsbury's House Pinot Grigio (Small bottle)""","b""Sainsbury's House Pinot Grigio (Small bottle) 18.7cl \xc2\xa31.95/unit \xc2\xa37.82/75cl""",Vegan wine,2021-03-01
+14,£7.00,"b""Sainsbury's Verdicchio Dei Castelli Di Jesi, Taste""","b""Sainsbury's Verdicchio Dei Castelli Di Jesi, Taste the Difference 75cl \xc2\xa37.00/unit \xc2\xa37.00/75cl""",Vegan wine,2021-03-01
+15,£5.75,"b""Sainsbury's Cabernet Sauvignon, SO Organic""","b""Sainsbury's Cabernet Sauvignon, SO Organic 75cl Only \xc2\xa35.75: Save 75p \xc2\xa35.75/unit \xc2\xa35.75/75cl""",Vegan wine,2021-03-01
+16,£8.50,"b""Sainsbury's Albarino, Taste the Difference""","b""Sainsbury's Albarino, Taste the Difference 75cl \xc2\xa38.50/unit \xc2\xa38.50/75cl""",Vegan wine,2021-03-01
+17,£8.00,"b""Sainsbury's Touraine Sauvignon Blanc, Taste the Di""","b""Sainsbury's Touraine Sauvignon Blanc, Taste the Difference 75cl \xc2\xa38.00/unit \xc2\xa38.00/75cl""",Vegan wine,2021-03-01
+18,£8.00,"b""Sainsbury's Bordeaux Ros\xc3\xa9, Taste the Difference""","b""Sainsbury's Bordeaux Ros\xc3\xa9, Taste the Difference 75cl \xc2\xa38.00/unit \xc2\xa38.00/75cl""",Vegan wine,2021-03-01
+19,£8.00,"b""Sainsbury's Macon Villages, Taste the Difference""","b""Sainsbury's Macon Villages, Taste the Difference 75cl \xc2\xa38.00/unit \xc2\xa38.00/75cl""",Vegan wine,2021-03-01
+20,£12.00,"b""Sainsbury's Chablis, Taste the Difference""","b""Sainsbury's Chablis, Taste the Difference 75cl \xc2\xa312.00/unit \xc2\xa312.00/75cl""",Vegan wine,2021-03-01
+21,£7.50,"b""Sainsbury's Rioja Reserva, Taste the Difference""","b""Sainsbury's Rioja Reserva, Taste the Difference 75cl Only \xc2\xa37.50: Save \xc2\xa31.50 \xc2\xa37.50/unit \xc2\xa37.50/75c""",Vegan wine,2021-03-01
+22,£5.25,b'Alvorado Vinho Verde',b'Alvorado Vinho Verde 75cl \xc2\xa35.25/unit \xc2\xa35.25/75cl',Vegan wine,2021-03-01
+23,£10.50,"b""Sainsbury's Petit Chablis, Taste the Difference""","b""Sainsbury's Petit Chablis, Taste the Difference 75cl \xc2\xa310.50/unit \xc2\xa310.50/75cl""",Vegan wine,2021-03-01
+24,£1.95,"b""Sainsbury's House Chardonnay (Small bottle)""","b""Sainsbury's House Chardonnay (Small bottle) 18.7cl \xc2\xa31.95/unit \xc2\xa37.82/75cl""",Vegan wine,2021-03-01
+25,£4.80,b'Alvorada Portuguese Ros\xc3\xa9',b'Alvorada Portuguese Ros\xc3\xa9 75cl \xc2\xa34.80/unit \xc2\xa34.80/75cl',Vegan wine,2021-03-01
+26,£6.00,"b""Sainsbury's Maipo Merlot, Taste the Difference""","b""Sainsbury's Maipo Merlot, Taste the Difference 75cl Only \xc2\xa36.00: Save \xc2\xa31.00 \xc2\xa36.00/unit \xc2\xa36.00/75cl""",Vegan wine,2021-03-01
+27,£7.00,"b""Sainsbury's Pecorino, Taste The Difference""","b""Sainsbury's Pecorino, Taste The Difference 75cl \xc2\xa37.00/unit \xc2\xa37.00/75cl""",Vegan wine,2021-03-01
+28,£7.00,"b""Sainsbury's Chilean Pinot Noir, Taste the Differen""","b""Sainsbury's Chilean Pinot Noir, Taste the Difference 75cl Only \xc2\xa37.00: Save \xc2\xa31.50 \xc2\xa37.00/unit \xc2\xa37.0""",Vegan wine,2021-03-01
+29,£7.50,"b""Sainsbury's Muscadet de Sevre et Maine, Taste the ""","b""Sainsbury's Muscadet de Sevre et Maine, Taste the Difference 75cl \xc2\xa37.50/unit \xc2\xa37.50/75cl""",Vegan wine,2021-03-01
+30,£3.00,"b""Sainsbury's Lambrusco Rosato""","b""Sainsbury's Lambrusco Rosato 75cl \xc2\xa33.00/unit \xc2\xa33.00/75cl""",Vegan wine,2021-03-01
+31,£8.25,"b""Sainsbury's C\xc3\xb4tes du Rh\xc3\xb4ne Villages, Taste the D""","b""Sainsbury's C\xc3\xb4tes du Rh\xc3\xb4ne Villages, Taste the Difference 75cl \xc2\xa38.25/unit \xc2\xa38.25/75cl""",Vegan wine,2021-03-01
+32,£7.50,"b""Sainsbury's Fairtrade Pinotage, Taste the Differen""","b""Sainsbury's Fairtrade Pinotage, Taste the Difference 75cl \xc2\xa37.50/unit \xc2\xa37.50/75cl""",Vegan wine,2021-03-01
+33,£3.00,"b""Sainsbury's Lambrusco, Bianco""","b""Sainsbury's Lambrusco, Bianco 75cl \xc2\xa33.00/unit \xc2\xa33.00/75cl""",Vegan wine,2021-03-01
+34,£9.00,"b""Sainsbury's Gr\xc3\xbcner Veltliner, Taste the Differenc""","b""Sainsbury's Gr\xc3\xbcner Veltliner, Taste the Difference 75cl \xc2\xa39.00/unit \xc2\xa39.00/75cl""",Vegan wine,2021-03-01
+35,£7.00,"b""Sainsbury's Sierra de Andia Navarra, Taste the Dif""","b""Sainsbury's Sierra de Andia Navarra, Taste the Difference 75cl \xc2\xa37.00/unit \xc2\xa37.00/75cl""",Vegan wine,2021-03-01
+36,£10.50,"b""Sainsbury's Douro, Taste the Difference""","b""Sainsbury's Douro, Taste the Difference 75cl \xc2\xa310.50/unit \xc2\xa310.50/75cl""",Vegan wine,2021-03-01
+37,£18.00,"b""Sainsbury's Ch\xc3\xa2teauneuf Du Pape, Taste the Differ""","b""Sainsbury's Ch\xc3\xa2teauneuf Du Pape, Taste the Difference 75cl \xc2\xa318.00/unit \xc2\xa318.00/75cl""",Vegan wine,2021-03-01
+38,£2.75,"b""Sainsbury's Fairtrade Moscato Sparkling Ros\xc3\xa9, Tas""","b""Sainsbury's Fairtrade Moscato Sparkling Ros\xc3\xa9, Taste the Difference (Small bottle) 18.7cl \xc2\xa32.75/uni""",Vegan wine,2021-03-01
+39,£16.50,"b""Sainsbury's Amarone, Taste the Difference""","b""Sainsbury's Amarone, Taste the Difference 75cl \xc2\xa316.50/unit \xc2\xa316.50/75cl""",Vegan wine,2021-03-01
+40,£13.00,"b""Sainsbury's Pouilly Fum\xc3\xa9, Taste the Difference""","b""Sainsbury's Pouilly Fum\xc3\xa9, Taste the Difference 75cl \xc2\xa313.00/unit \xc2\xa313.00/75cl""",Vegan wine,2021-03-01
+41,£7.00,"b""Sainsbury's Madeira""","b""Sainsbury's Madeira 37.5cl \xc2\xa37.00/unit \xc2\xa314.00/75cl""",Vegan wine,2021-03-01
+42,£10.00,"b""Sainsbury's Pic Saint Loup, Taste the Difference""","b""Sainsbury's Pic Saint Loup, Taste the Difference 75cl \xc2\xa310.00/unit \xc2\xa310.00/75cl""",Vegan wine,2021-03-01
+43,£12.00,"b""Sainsbury's St-Emilion, Taste the Difference""","b""Sainsbury's St-Emilion, Taste the Difference 75cl \xc2\xa312.00/unit \xc2\xa312.00/75cl""",Vegan wine,2021-03-01
+44,£8.00,"b""Sainsbury's""","b""Sainsbury's 12 Year Old Sweet Pedro Ximenez, Taste the Difference 50cl \xc2\xa38.00/unit \xc2\xa312.00/75cl""",Vegan wine,2021-03-01
+45,£6.50,b'Sturmwolken Riesling',b'Sturmwolken Riesling 75ml Only \xc2\xa36.50: Save \xc2\xa31.00 \xc2\xa36.50/unit \xc2\xa36.50/75cl',Vegan wine,2021-03-01
+46,£12.00,b'Beronia Rioja Reserva',b'Beronia Rioja Reserva 750ml Only \xc2\xa312.00: Save \xc2\xa33.00 \xc2\xa312.00/unit \xc2\xa312.00/75cl',Vegan wine,2021-03-01
+47,£13.00,b'Villa Antinori Toscana',b'Villa Antinori Toscana 750ml Only \xc2\xa313.00: Save \xc2\xa32.00 \xc2\xa313.00/unit \xc2\xa313.00/75cl',Vegan wine,2021-03-01
+48,£19.00,b'Paul Jaboulet Crozes Hermitage',b'Paul Jaboulet Crozes Hermitage 750ml \xc2\xa319.00/unit \xc2\xa319.00/75cl',Vegan wine,2021-03-01
+49,£18.00,b'Saint Abel Hautes Cotes De Beaune',b'Saint Abel Hautes Cotes De Beaune 750ml \xc2\xa318.00/unit \xc2\xa318.00/75cl',Vegan wine,2021-03-01
+50,£9.00,"b""Sainsbury's Morador Cabernet Franc, Taste the Diff""","b""Sainsbury's Morador Cabernet Franc, Taste the Difference 75ml \xc2\xa39.00/unit \xc2\xa39.00/75cl""",Vegan wine,2021-03-01
+51,£25.00,b'UVC Chablis',b'UVC Chablis 1er Cru Grande Cuv\xc3\xa9e 75c \xc2\xa325.00/unit \xc2\xa325.00/75cl',Vegan wine,2021-03-01
+52,£12.00,b'Union des Viticulteurs de Chablis Gift Box',b'Union des Viticulteurs de Chablis Gift Box 75cl Only \xc2\xa312.00: Save \xc2\xa33.00 \xc2\xa312.00/unit \xc2\xa312.00/75cl',Vegan wine,2021-03-01
+53,£11.00,"b""Journey's End The Bluegum Merlot Gift Box""","b""Journey's End The Bluegum Merlot Gift Box 75cl \xc2\xa311.00/unit \xc2\xa311.00/75cl""",Vegan wine,2021-03-01
+54,£9.00,b'Cono Sur Organic Malbec',b'Cono Sur Organic Malbec 75cl \xc2\xa39.00/unit \xc2\xa39.00/75cl',Vegan wine,2021-03-01
+0,£12.50,"b""Harvey's Bristol Cream Sherry""","b""Harvey's Bristol Cream Sherry 1L \xc2\xa312.50/unit \xc2\xa39.38/75cl""",Sherry & PortBread,2021-03-01
+1,£3.50,"b""Sainsbury's Ginger Wine""","b""Sainsbury's Ginger Wine 70cl \xc2\xa33.50/unit \xc2\xa33.75/75cl""",Sherry & PortBread,2021-03-01
+2,£5.85,"b""Sainsbury's Vermouth Extra Dry""","b""Sainsbury's Vermouth Extra Dry 1L \xc2\xa35.85/unit \xc2\xa34.39/75cl""",Sherry & PortBread,2021-03-01
+3,£1.79,"b""Sainsbury's Mirin""","b""Sainsbury's Mirin 150ml \xc2\xa31.79/unit \xc2\xa38.95/75cl""",Sherry & PortBread,2021-03-01
+4,£3.00,b'Yutaka Shaoxing Rice Wine',b'Yutaka Shaoxing Rice Wine 150ml \xc2\xa33.00/unit \xc2\xa315.00/75cl',Sherry & PortBread,2021-03-01
+5,£9.00,b'Tio Pepe Fino Sherry',b'Tio Pepe Fino Sherry 75cl Only \xc2\xa39.00: Save \xc2\xa31.00 \xc2\xa39.00/unit \xc2\xa39.00/75cl',Sherry & PortBread,2021-03-01
+6,£5.50,"b""Sainsbury's Winemakers' Selection Pale Cream Briti""","b""Sainsbury's Winemakers' Selection Pale Cream British Fortified Wine 1L \xc2\xa35.50/unit \xc2\xa34.13/75cl""",Sherry & PortBread,2021-03-01
+7,£5.85,"b""Sainsbury's Vermouth Bianco""","b""Sainsbury's Vermouth Bianco 1L \xc2\xa35.85/unit \xc2\xa34.39/75cl""",Sherry & PortBread,2021-03-01
+8,£5.85,"b""Sainsbury's Vermouth Rosso""","b""Sainsbury's Vermouth Rosso 1L \xc2\xa35.85/unit \xc2\xa34.39/75cl""",Sherry & PortBread,2021-03-01
+9,£6.50,"b""Stone's Original Ginger Wine""","b""Stone's Original Ginger Wine 700ml \xc2\xa36.50/unit \xc2\xa36.96/75cl""",Sherry & PortBread,2021-03-01
+10,£10.50,b'Pellegrino Marsala Garibaldi Dolce',b'Pellegrino Marsala Garibaldi Dolce 75cl \xc2\xa310.50/unit \xc2\xa310.50/75cl',Sherry & PortBread,2021-03-01
+11,£10.50,"b""Harvey's Amontillado Sherry""","b""Harvey's Amontillado Sherry 75cl \xc2\xa310.50/unit \xc2\xa310.50/75cl""",Sherry & PortBread,2021-03-01
+12,£7.00,b'Cinzano Bianco',b'Cinzano Bianco 75cl \xc2\xa37.00/unit \xc2\xa37.00/75cl',Sherry & PortBread,2021-03-01
+13,£10.00,"b""Sainsbury's Special Reserve Port, Taste the Differ""","b""Sainsbury's Special Reserve Port, Taste the Difference 75cl \xc2\xa310.00/unit \xc2\xa310.00/75cl""",Sherry & PortBread,2021-03-01
+14,£5.50,"b""Sainsbury's Winemakers' Selection Cream British Fo""","b""Sainsbury's Winemakers' Selection Cream British Fortified Wine 1L \xc2\xa35.50/unit \xc2\xa34.13/75cl""",Sherry & PortBread,2021-03-01
+15,£12.50,b'Croft Particular Sherry',b'Croft Particular Sherry 1L \xc2\xa312.50/unit \xc2\xa39.38/75cl',Sherry & PortBread,2021-03-01
+16,£5.50,"b""Sainsbury's Winemakers' Selection Medium British F""","b""Sainsbury's Winemakers' Selection Medium British Fortified Wine 1L \xc2\xa35.50/unit \xc2\xa34.13/75cl""",Sherry & PortBread,2021-03-01
+17,£7.00,"b""Sainsbury's Madeira""","b""Sainsbury's Madeira 37.5cl \xc2\xa37.00/unit \xc2\xa314.00/75cl""",Sherry & PortBread,2021-03-01
+18,£8.00,b'Bodegas Hidalgo La Gitana Manzanilla Sherry',b'Bodegas Hidalgo La Gitana Manzanilla Sherry 500ml \xc2\xa38.00/unit \xc2\xa312.00/75cl',Sherry & PortBread,2021-03-01
+19,£8.00,"b""Sainsbury's""","b""Sainsbury's 12 Year Old Sweet Pedro Ximenez, Taste the Difference 50cl \xc2\xa38.00/unit \xc2\xa312.00/75cl""",Sherry & PortBread,2021-03-01
+20,£8.00,"b""Sainsbury's Dry Fino Sherry, Taste the Difference""","b""Sainsbury's Dry Fino Sherry, Taste the Difference 50cl \xc2\xa38.00/unit \xc2\xa312.00/75cl""",Sherry & PortBread,2021-03-01
+21,£7.30,"b""Sainsbury's Winemaker's Selection Medium Dry A Ble""","b""Sainsbury's Winemaker's Selection Medium Dry A Blend of Amontillado Sherry 1 Litre \xc2\xa37.30/unit \xc2\xa35.4""",Sherry & PortBread,2021-03-01
+22,£20.00,"b""Graham's Crusted Port""","b""Graham's Crusted Port 75cl \xc2\xa320.00/unit \xc2\xa320.00/75cl""",Sherry & PortBread,2021-03-01
+23,£28.00,"b""Graham's Malvedos Vintage Port""","b""Graham's Malvedos Vintage Port 75cl. \xc2\xa328.00/unit \xc2\xa328.00/75cl""",Sherry & PortBread,2021-03-01
+24,£11.50,"b""Cockburn's Fine White Port""","b""Cockburn's Fine White Port 75cl \xc2\xa311.50/unit \xc2\xa315.33/cl""",Sherry & PortBread,2021-03-01
+25,£9.00,b'Croft Pink Port',b'Croft Pink Port 50cl \xc2\xa39.00/unit \xc2\xa318.00/100cl',Sherry & PortBread,2021-03-01
+0,£2.90,b'Hovis Soft Medium Sliced White Bread',b'Hovis Soft Medium Sliced White Bread 800g \xc2\xa31.09/unit 14p/100g',Chicken,2021-03-01
+1,£2.00,b'Warburtons Toastie Thick Sliced White Bread',b'Warburtons Toastie Thick Sliced White Bread 800g \xc2\xa31.10/unit 14p/100g',Chicken,2021-03-01
+2,£1.10,b'Hovis Soft Thick Sliced White Bread',b'Hovis Soft Thick Sliced White Bread 800g \xc2\xa31.10/unit 14p/100g',Chicken,2021-03-01
+3,£1.35,b'Warburtons Soft Farmhouse Medium Sliced White Brea',b'Warburtons Soft Farmhouse Medium Sliced White Bread 800g \xc2\xa31.35/unit 17p/100g',Chicken,2021-03-01
+4,£2.00,"b""Sainsbury's Soft Medium Sliced White Bread""","b""Sainsbury's Soft Medium Sliced White Bread 800g 55p/unit 7p/100g""",Chicken,2021-03-01
+5,£1.10,b'Warburtons Medium Sliced White Bread',b'Warburtons Medium Sliced White Bread 800g \xc2\xa31.10/unit 14p/100g',Chicken,2021-03-01
+6,90p,b'Kingsmill Soft Medium Sliced White Bread',b'Kingsmill Soft Medium Sliced White Bread 800g 90p/unit 11p/100g',Chicken,2021-03-01
+7,85p,b'Warburtons Toastie Thick Sliced White Bread',b'Warburtons Toastie Thick Sliced White Bread 400g 85p/unit 21p/100g',Chicken,2021-03-01
+8,£1.00,b'Warburtons Lighter Medium Sliced Danish White Brea',b'Warburtons Lighter Medium Sliced Danish White Bread 400g \xc2\xa31.00/unit 25p/100g',Chicken,2021-03-01
+9,36p,"b""Daily's Medium Sliced White Bread""","b""Daily's Medium Sliced White Bread 800g 36p/unit 5p/100g""",Chicken,2021-03-01
+10,55p,"b""Sainsbury's Toastie Thick Sliced White Bread""","b""Sainsbury's Toastie Thick Sliced White Bread 800g 55p/unit 7p/100g""",Chicken,2021-03-01
+11,85p,b'Warburtons Medium Sliced White Bread',b'Warburtons Medium Sliced White Bread 400g 85p/unit 21p/100g',Chicken,2021-03-01
+12,£1.00,b'Warburtons Soft Farmhouse Medium Sliced Bread',b'Warburtons Soft Farmhouse Medium Sliced Bread 400g \xc2\xa31.00/unit 25p/100g',Chicken,2021-03-01
+13,£1.00,b'Warburtons Weight Watchers Soft Medium Sliced Dani',b'Warburtons Weight Watchers Soft Medium Sliced Danish Malted Bread 400g \xc2\xa31.00/unit 25p/100g',Chicken,2021-03-01
+14,£1.00,b'Warburtons Milk Roll Soft Medium Sliced White Brea',b'Warburtons Milk Roll Soft Medium Sliced White Bread 400g \xc2\xa31.00/unit 25p/100g',Chicken,2021-03-01
+15,£1.10,b'Warburtons Extra Thick Sliced White Bread',b'Warburtons Extra Thick Sliced White Bread 800g \xc2\xa31.10/unit 14p/100g',Chicken,2021-03-01
+16,£1.25,b'Warburtons Premium Old English White Bread',b'Warburtons Premium Old English White Bread 400g Only \xc2\xa31.25: Save 35p \xc2\xa31.25/unit 31p/100g',Chicken,2021-03-01
+17,£1.40,b'Kingsmill No Crusts Soft Medium Sliced White Bread',b'Kingsmill No Crusts Soft Medium Sliced White Bread 400g \xc2\xa31.40/unit 35p/100g',Chicken,2021-03-01
+18,£1.60,b'Warburtons Sliced White Rolls x',b'Warburtons Sliced White Rolls x12 \xc2\xa31.60/unit 13p/ea',Chicken,2021-03-01
+19,£1.10,"b""Sainsbury's Sunflower & Pumpkin, Taste the Differe""","b""Sainsbury's Sunflower & Pumpkin, Taste the Difference 800g \xc2\xa31.10/unit 14p/100g""",Chicken,2021-03-01
+20,£1.30,b'Black Sheep Craft Tiger Bloomer',b'Black Sheep Craft Tiger Bloomer 800g \xc2\xa31.30/unit 16p/100g',Chicken,2021-03-01
+21,£2.50,b'Schar White Wholesome Loaf',b'Schar White Wholesome Loaf 300g \xc2\xa32.50/unit 83p/100g',Chicken,2021-03-01
+22,£1.10,"b""Sainsbury's White Bloomer""","b""Sainsbury's White Bloomer 800g \xc2\xa31.10/unit 14p/100g""",Chicken,2021-03-01
+23,£1.10,"b""Sainsbury's Super Seeds White Farmhouse, Taste the""","b""Sainsbury's Super Seeds White Farmhouse, Taste the Difference 800g \xc2\xa31.10/unit 14p/100g""",Chicken,2021-03-01
+24,£1.25,b'Warburtons Soft Tiger Bloomer',b'Warburtons Soft Tiger Bloomer 600g \xc2\xa31.25/unit 21p/100g',Chicken,2021-03-01
+25,80p,"b""Sainsbury's White Bloomer""","b""Sainsbury's White Bloomer 400g 80p/unit 20p/100g""",Chicken,2021-03-01
+26,£2.70,b'Genius Gluten Free White Toastie Bread',b'Genius Gluten Free White Toastie Bread 500g \xc2\xa32.70/unit 54p/100g',Chicken,2021-03-01
+27,£1.55,"b""Warburtons Lancashire's Thorough Bread Medium Slic""","b""Warburtons Lancashire's Thorough Bread Medium Sliced White Bread 800g \xc2\xa31.55/unit 19p/100g""",Chicken,2021-03-01
+28,50p,"b""Sainsbury's Toastie Sliced White Bread""","b""Sainsbury's Toastie Sliced White Bread 400g 50p/unit 13p/100g""",Chicken,2021-03-01
+29,£1.10,"b""Sainsbury's Poppy Seed White Bloomer""","b""Sainsbury's Poppy Seed White Bloomer 800g \xc2\xa31.10/unit 14p/100g""",Chicken,2021-03-01
+30,85p,"b""Sainsbury's Thick Soft Multiseed Farmhouse""","b""Sainsbury's Thick Soft Multiseed Farmhouse 800g 85p/unit 11p/100g""",Chicken,2021-03-01
+31,£1.30,b'Black Sheep Craft White Bloomer',b'Black Sheep Craft White Bloomer 800g \xc2\xa31.30/unit 16p/100g',Chicken,2021-03-01
+32,75p,"b""Sainsbury's Thick Soft White Farmhouse""","b""Sainsbury's Thick Soft White Farmhouse 800g 75p/unit 9p/100g""",Chicken,2021-03-01
+33,£1.10,"b""Sainsbury's Sesame Seed White Bloomer""","b""Sainsbury's Sesame Seed White Bloomer 800g \xc2\xa31.10/unit 14p/100g""",Chicken,2021-03-01
+34,£1.10,"b""Sainsbury's White Farmhouse with Sourdough, Taste ""","b""Sainsbury's White Farmhouse with Sourdough, Taste the Difference 800g \xc2\xa31.10/unit 14p/100g""",Chicken,2021-03-01
+35,£1.15,b'Jacksons of Yorkshire White Champion Bloomer',b'Jacksons of Yorkshire White Champion Bloomer 800g Only \xc2\xa31.15: Save 35p \xc2\xa31.15/unit 15p/100g',Chicken,2021-03-01
+36,80p,"b""Sainsbury's Sesame Seed White Bloomer""","b""Sainsbury's Sesame Seed White Bloomer 400g 80p/unit 20p/100g""",Chicken,2021-03-01
+37,80p,"b""Sainsbury's Poppy Seed White Bloomer""","b""Sainsbury's Poppy Seed White Bloomer 400g 80p/unit 20p/100g""",Chicken,2021-03-01
+38,90p,b'Kingsmill Soft White Bread Thick',b'Kingsmill Soft White Bread Thick 800g 90p/unit 11p/100g',Chicken,2021-03-01
+39,£1.30,b'Black Sheep Malted Bloomer',b'Black Sheep Malted Bloomer 800g \xc2\xa31.30/unit 16p/100g',Chicken,2021-03-01
+40,£1.50,"b""Sainsbury's Wholemeal Sourdough Half Bloomer, Tast""","b""Sainsbury's Wholemeal Sourdough Half Bloomer, Taste the Difference 400g \xc2\xa31.50/unit 38p/100g""",Chicken,2021-03-01
+41,£3.00,b'BFree Sliced White Loaf',b'BFree Sliced White Loaf 400g \xc2\xa33.00/unit 75p/100g',Chicken,2021-03-01
+0,£3.60,"b""Sainsbury's British Fresh Chicken Breast Fillets S""","b""Sainsbury's British Fresh Chicken Breast Fillets Skinless & Boneless 640g \xc2\xa33.60/unit \xc2\xa35.63/kg""",Banana-Grape,2021-03-01
+1,£4.79,"b""Sainsbury's British Fresh Chicken Breast Fillets S""","b""Sainsbury's British Fresh Chicken Breast Fillets Skinless & Boneless 1kg \xc2\xa34.79/unit \xc2\xa34.79/kg""",Banana-Grape,2021-03-01
+2,£3.20,"b""Sainsbury's British Fresh Chicken Thigh Fillets Sk""","b""Sainsbury's British Fresh Chicken Thigh Fillets Skinless & Boneless 640g \xc2\xa33.20/unit \xc2\xa35.00/kg""",Banana-Grape,2021-03-01
+3,£1.00,"b""Sainsbury's British Fresh Chicken Breast Fillets S""","b""Sainsbury's British Fresh Chicken Breast Fillets Skinless & Boneless 300g \xc2\xa31.70/unit \xc2\xa35.67/kg""",Banana-Grape,2021-03-01
+4,£2.00,"b""Sainsbury's Chicken Kiev Garlic x""","b""Sainsbury's Chicken Kiev Garlic x2 260g Save 20p: Was \xc2\xa32.20 Now \xc2\xa32.00 \xc2\xa32.00/unit \xc2\xa37.69/kg""",Banana-Grape,2021-03-01
+5,£1.75,"b""Sainsbury's British Roast Chicken Breast""","b""Sainsbury's British Roast Chicken Breast 135gm x7 Slices \xc2\xa31.75/unit \xc2\xa31.30/100g""",Banana-Grape,2021-03-01
+6,£3.90,"b""Sainsbury's British Fresh Large Whole Chicken""","b""Sainsbury's British Fresh Large Whole Chicken 1.9kg \xc2\xa33.90/unit \xc2\xa32.05/kg""",Banana-Grape,2021-03-01
+7,£2.00,"b""Sainsbury's British Fresh Chicken Breast Mini Fill""","b""Sainsbury's British Fresh Chicken Breast Mini Fillets 320g \xc2\xa32.00/unit \xc2\xa36.25/kg""",Banana-Grape,2021-03-01
+8,£3.50,"b""Sainsbury's Cooked Roast Chicken Breast Fillets x""","b""Sainsbury's Cooked Roast Chicken Breast Fillets x2 240g \xc2\xa33.50/unit \xc2\xa31.46/100g""",Banana-Grape,2021-03-01
+9,£1.65,"b""Sainsbury's British Fresh Chicken Skin on Thighs""","b""Sainsbury's British Fresh Chicken Skin on Thighs 1kg \xc2\xa31.65/unit \xc2\xa31.65/kg""",Banana-Grape,2021-03-01
+10,£2.50,"b""Sainsbury's Chargrilled Chicken Breast Slices""","b""Sainsbury's Chargrilled Chicken Breast Slices 160g \xc2\xa32.50/unit \xc2\xa31.56/100g""",Banana-Grape,2021-03-01
+11,(40),"b""Sainsbury's Free Range British Chicken Thigh Fille""","b""Sainsbury's Free Range British Chicken Thigh Fillets, Taste the Difference (approx.590g) \xc2\xa39.95/kg \xc2""",Banana-Grape,2021-03-01
+12,(76),"b""Sainsbury's Free Range British Whole Chicken, Tast""","b""Sainsbury's Free Range British Whole Chicken, Taste the Difference (approx.1.7kg) \xc2\xa35.50/kg \xc2\xa35.50/k""",Banana-Grape,2021-03-01
+13,£1.00,"b""Sainsbury's British Fresh Diced Chicken Breast""","b""Sainsbury's British Fresh Diced Chicken Breast 410g \xc2\xa32.40/unit \xc2\xa35.85/kg""",Banana-Grape,2021-03-01
+14,(109),"b""Sainsbury's Free Range British Chicken Breast Fill""","b""Sainsbury's Free Range British Chicken Breast Fillets, So Organic (approx.325g) \xc2\xa320.95/kg \xc2\xa32.10/10""",Banana-Grape,2021-03-01
+15,£1.00,"b""Sainsbury's British Cooked Chicken""","b""Sainsbury's British Cooked Chicken 115g, x10 Slices \xc2\xa31.00/unit 87p/100g""",Banana-Grape,2021-03-01
+16,£4.50,"b""ainsbury's Roast in the Bag British Whole Fresh Ch""","b""ainsbury's Roast in the Bag British Whole Fresh Chicken with Pork & Sage & Onion Stuffing 1.35kg \xc2\xa34""",Banana-Grape,2021-03-01
+17,£1.10,b'Bernard Matthews Chicken Chunks',b'Bernard Matthews Chicken Chunks 90g \xc2\xa31.10/unit \xc2\xa31.22/100g',Banana-Grape,2021-03-01
+18,£2.00,"b""Sainsbury's Roast Sliced Chicken Breast""","b""Sainsbury's Roast Sliced Chicken Breast 160g \xc2\xa32.00/unit \xc2\xa31.25/100g""",Banana-Grape,2021-03-01
+19,£1.35,"b""Sainsbury's British Fresh Chicken Skin on Drumstic""","b""Sainsbury's British Fresh Chicken Skin on Drumsticks 1kg \xc2\xa31.35/unit \xc2\xa31.35/kg""",Banana-Grape,2021-03-01
+20,£2.20,"b""Sainsbury's Ham & Cheese Chicken Kiev x""","b""Sainsbury's Ham & Cheese Chicken Kiev x2 260g \xc2\xa32.20/unit \xc2\xa38.46/kg""",Banana-Grape,2021-03-01
+21,£3.30,"b""Sainsbury's British Fresh Medium Whole Chicken""","b""Sainsbury's British Fresh Medium Whole Chicken 1.6kg \xc2\xa33.30/unit \xc2\xa32.06/kg""",Banana-Grape,2021-03-01
+22,(71),"b""Sainsbury's Free Range Chicken Breast Fillets, Tas""","b""Sainsbury's Free Range Chicken Breast Fillets, Taste the Difference x2 (approx. 310g) \xc2\xa315.85/kg \xc2\xa31""",Banana-Grape,2021-03-01
+23,£1.85,"b""Sainsbury's British Fresh Chicken Thigh Fillets Sk""","b""Sainsbury's British Fresh Chicken Thigh Fillets Skinless & Boneless 320g \xc2\xa31.85/unit \xc2\xa35.78/kg""",Banana-Grape,2021-03-01
+24,£5.75,"b""Sainsbury's British Roast Boneless Chicken Breasts""","b""Sainsbury's British Roast Boneless Chicken Breasts x4 480g \xc2\xa35.75/unit \xc2\xa31.20/100g""",Banana-Grape,2021-03-01
+25,£1.60,"b""Sainsbury's Breaded Chicken Goujons""","b""Sainsbury's Breaded Chicken Goujons 270g \xc2\xa31.60/unit \xc2\xa35.93/kg""",Banana-Grape,2021-03-01
+26,£1.00,"b""Sainsbury's British Fresh Chicken Breast Mini Fill""","b""Sainsbury's British Fresh Chicken Breast Mini Fillets 640g \xc2\xa33.40/unit \xc2\xa35.31/kg""",Banana-Grape,2021-03-01
+27,£2.20,"b""Sainsbury's British Wafer Thin Cooked Chicken""","b""Sainsbury's British Wafer Thin Cooked Chicken 400g \xc2\xa32.20/unit 55p/100g""",Banana-Grape,2021-03-01
+28,£3.25,"b""Sainsbury's Just Cook British Chicken Crown with G""","b""Sainsbury's Just Cook British Chicken Crown with Garlic & Herb Butter 525g (Serves 3) Save 50p: Was """,Banana-Grape,2021-03-01
+29,(71),"b""Sainsbury's Free Range British Chicken Breast Fill""","b""Sainsbury's Free Range British Chicken Breast Fillets, Taste the Difference (approx.590g) \xc2\xa315.20/kg""",Banana-Grape,2021-03-01
+30,£2.20,"b""Sainsbury's Garlic & Herb Chicken Kiev, Be Good To""","b""Sainsbury's Garlic & Herb Chicken Kiev, Be Good To Yourself x2 260g \xc2\xa32.20/unit \xc2\xa38.46/kg""",Banana-Grape,2021-03-01
+31,£2.75,"b""Sainsbury's Roast Chicken Stuffing Topped, Taste t""","b""Sainsbury's Roast Chicken Stuffing Topped, Taste the Difference 135g \xc2\xa32.75/unit \xc2\xa32.04/100g""",Banana-Grape,2021-03-01
+32,£1.49,"b""Sainsbury's British Fresh Chicken Wings""","b""Sainsbury's British Fresh Chicken Wings 1kg \xc2\xa31.49/unit \xc2\xa31.49/kg""",Banana-Grape,2021-03-01
+33,£3.50,"b""Sainsbury's Garlic Chicken Breast Fillet Kievs""","b""Sainsbury's Garlic Chicken Breast Fillet Kievs 390g \xc2\xa33.50/unit \xc2\xa38.97/kg""",Banana-Grape,2021-03-01
+34,£2.00,"b""Sainsbury's BBQ Sliced Chicken Breast""","b""Sainsbury's BBQ Sliced Chicken Breast 160g Save 50p: Was \xc2\xa32.50 Now \xc2\xa32.00 \xc2\xa32.00/unit \xc2\xa31.25/100g""",Banana-Grape,2021-03-01
+35,(40),"b""Sainsbury's Corn Fed Whole British Chicken (approx""","b""Sainsbury's Corn Fed Whole British Chicken (approx.1.55kg) \xc2\xa34.00/kg \xc2\xa34.00/kg Price shown is the ma""",Banana-Grape,2021-03-01
+36,£2.50,"b""Sainsbury's Southern Fried Chicken Breast Mini Fil""","b""Sainsbury's Southern Fried Chicken Breast Mini Fillets 300g \xc2\xa32.50/unit \xc2\xa38.20/kg""",Banana-Grape,2021-03-01
+37,£3.25,"b""Sainsbury's Just Cook Chicken Breast Joint Butter ""","b""Sainsbury's Just Cook Chicken Breast Joint Butter Basted 500g (Serves 3) Save 50p: Was \xc2\xa33.75 Now \xc2\xa3""",Banana-Grape,2021-03-01
+38,£3.20,"b""Sainsbury's Breaded Chicken Goujons""","b""Sainsbury's Breaded Chicken Goujons 540g \xc2\xa33.20/unit \xc2\xa35.93/kg""",Banana-Grape,2021-03-01
+39,(42),"b""Sainsbury's Free Range Whole Fresh British Chicken""","b""Sainsbury's Free Range Whole Fresh British Chicken, So Organic (approx.1.7kg) \xc2\xa37.45/kg \xc2\xa37.45/kg Pr""",Banana-Grape,2021-03-01
+40,£2.50,"b""Sainsbury's Sweet Chilli Sliced Chicken Breast""","b""Sainsbury's Sweet Chilli Sliced Chicken Breast 160g \xc2\xa32.50/unit \xc2\xa31.56/100g""",Banana-Grape,2021-03-01
+41,£2.50,"b""Sainsbury's Tikka Sliced Chicken Breast""","b""Sainsbury's Tikka Sliced Chicken Breast 160g \xc2\xa32.50/unit \xc2\xa31.56/100g""",Banana-Grape,2021-03-01
+42,£2.00,"b""Sainsbury's British Fresh Small Whole Chicken""","b""Sainsbury's British Fresh Small Whole Chicken 1.3kg \xc2\xa32.80/unit \xc2\xa32.07/kg""",Banana-Grape,2021-03-01
+43,£4.45,"b""Sainsbury's Roast in the Bag British Fresh Chicken""","b""Sainsbury's Roast in the Bag British Fresh Chicken Crown with Lemon & Garlic & Thyme 700g \xc2\xa34.45/uni""",Banana-Grape,2021-03-01
+44,£4.50,"b""Sainsbury's Roast in the Bag British Whole Fresh C""","b""Sainsbury's Roast in the Bag British Whole Fresh Chicken & Garlic & Parsley Basted 1.4kg \xc2\xa34.50/unit""",Banana-Grape,2021-03-01
+45,£4.00,"b""Sainsbury's Chargrilled Chicken Breast Slices""","b""Sainsbury's Chargrilled Chicken Breast Slices 300g \xc2\xa34.00/unit \xc2\xa31.33/100g""",Banana-Grape,2021-03-01
+46,£1.75,"b""Sainsbury's British Roast Chicken & Stuffing""","b""Sainsbury's British Roast Chicken & Stuffing 100g, x4 Slices \xc2\xa31.75/unit \xc2\xa31.75/100g""",Banana-Grape,2021-03-01
+47,£3.00,"b""Sainsbury's Southern Fried Breaded Chicken Breast ""","b""Sainsbury's Southern Fried Breaded Chicken Breast Fillets x2 315g \xc2\xa33.00/unit \xc2\xa39.52/kg""",Banana-Grape,2021-03-01
+48,60p,"b""Sainsbury's British Wafer Thin Cooked Chicken""","b""Sainsbury's British Wafer Thin Cooked Chicken 70g 60p/unit 86p/100g""",Banana-Grape,2021-03-01
+49,£2.50,"b""Sainsbury's Breaded Chicken Breast Fillets x""","b""Sainsbury's Breaded Chicken Breast Fillets x2 350g Save 50p: Was \xc2\xa33.00 Now \xc2\xa32.50 \xc2\xa32.50/unit \xc2\xa37.1""",Banana-Grape,2021-03-01
+50,£3.00,"b""Sainsbury's Roast Chicken Thighs""","b""Sainsbury's Roast Chicken Thighs 500g \xc2\xa33.00/unit 60p/100g""",Banana-Grape,2021-03-01
+51,£7.50,"b""Sainsbury's British Fresh Chicken Breast Fillets S""","b""Sainsbury's British Fresh Chicken Breast Fillets Skinless & Boneless 1.6kg \xc2\xa37.50/unit \xc2\xa34.69/kg""",Banana-Grape,2021-03-01
+52,£2.85,"b""Sainsbury's British Fresh Quick Cook Chicken Breas""","b""Sainsbury's British Fresh Quick Cook Chicken Breast Sizzler Steaks 500g \xc2\xa32.85/unit \xc2\xa35.70/kg""",Banana-Grape,2021-03-01
+53,(15),"b""Sainsbury's Free Range British Chicken Thigh & Dru""","b""Sainsbury's Free Range British Chicken Thigh & Drumsticks, Taste the Difference (approx.590g) \xc2\xa36.95""",Banana-Grape,2021-03-01
+54,£1.00,"b""Sainsbury's British Fresh Chicken Livers""","b""Sainsbury's British Fresh Chicken Livers 400g \xc2\xa31.00/unit \xc2\xa32.50/kg""",Banana-Grape,2021-03-01
+55,(19),"b""Sainsbury's Free Range Chicken Thigh Fillets, SO O""","b""Sainsbury's Free Range Chicken Thigh Fillets, SO Organic (approx. 360g) \xc2\xa318.75/kg \xc2\xa318.75/kg""",Banana-Grape,2021-03-01
+56,£2.90,"b""Sainsbury's Steamed Cooked Chicken Breast Fillets ""","b""Sainsbury's Steamed Cooked Chicken Breast Fillets x2 200g \xc2\xa32.90/unit \xc2\xa31.45/100g""",Banana-Grape,2021-03-01
+57,£2.50,"b""Sainsbury's Breaded Mini Chicken Breast Fillets""","b""Sainsbury's Breaded Mini Chicken Breast Fillets 305g \xc2\xa32.50/unit \xc2\xa38.20/kg""",Banana-Grape,2021-03-01
+58,£5.00,"b""Sainsbury's Roast Whole Cooked Chicken (approx.""","b""Sainsbury's Roast Whole Cooked Chicken (approx. 1kg) \xc2\xa35.00/unit 50p/100g""",Banana-Grape,2021-03-01
+59,£2.95,"b""Sainsbury's Cajun Spiced British Fresh Chicken Bre""","b""Sainsbury's Cajun Spiced British Fresh Chicken Breast Grills x2 310g \xc2\xa32.95/unit \xc2\xa39.52/kg""",Banana-Grape,2021-03-01
+0,£2.00,"b""Sainsbury's Fairtrade Bananas Loose""","b""Sainsbury's Fairtrade Bananas Loose 73p/kg 73p/kg Purchase by: items kg""",Citrus,2021-03-01
+1,£1.10,"b""Sainsbury's Fairtrade Bananas x""","b""Sainsbury's Fairtrade Bananas x5 69p/unit 14p/ea""",Citrus,2021-03-01
+2,£1.75,"b""Sainsbury's Red Seedless Grapes""","b""Sainsbury's Red Seedless Grapes 500g \xc2\xa32.00/unit \xc2\xa34.00/kg""",Citrus,2021-03-01
+3,£1.10,"b""Sainsbury's Fairtrade Bananas x""","b""Sainsbury's Fairtrade Bananas x8 \xc2\xa31.10/unit 14p/ea""",Citrus,2021-03-01
+4,£2.00,"b""Sainsbury's White Seedless Grapes""","b""Sainsbury's White Seedless Grapes 500g \xc2\xa32.00/unit \xc2\xa34.00/kg""",Citrus,2021-03-01
+5,£1.05,"b""Sainsbury's Small Bananas, Fairtrade x""","b""Sainsbury's Small Bananas, Fairtrade x8 \xc2\xa31.05/unit 13p/ea""",Citrus,2021-03-01
+6,£1.75,"b""Sainsbury's Red & White Seedless Grapes""","b""Sainsbury's Red & White Seedless Grapes 500g Save 25p: Was \xc2\xa32.00 Now \xc2\xa31.75 \xc2\xa31.75/unit \xc2\xa33.50/kg""",Citrus,2021-03-01
+7,£2.00,"b""Sainsbury's Black Seedless Grapes""","b""Sainsbury's Black Seedless Grapes 500g \xc2\xa32.00/unit \xc2\xa34.00/kg""",Citrus,2021-03-01
+8,£1.75,"b""Sainsbury's Black Sable Seedless Grapes, Taste the""","b""Sainsbury's Black Sable Seedless Grapes, Taste the Difference 400g Save 75p: Was \xc2\xa32.50 Now \xc2\xa31.75 \xc2""",Citrus,2021-03-01
+9,£1.35,"b""Sainsbury's Fairtrade Bananas, SO Organic x""","b""Sainsbury's Fairtrade Bananas, SO Organic x6 \xc2\xa31.35/unit 23p/ea""",Citrus,2021-03-01
+10,£2.50,"b""Sainsbury's Grapes (Red or Black), SO Organic""","b""Sainsbury's Grapes (Red or Black), SO Organic 400g \xc2\xa32.50/unit \xc2\xa36.25/kg""",Citrus,2021-03-01
+11,£2.25,"b""Sainsbury's White Grapes, SO Organic""","b""Sainsbury's White Grapes, SO Organic 400g Save 75p: Was \xc2\xa33.00 Now \xc2\xa32.25 \xc2\xa32.25/unit \xc2\xa35.63/kg""",Citrus,2021-03-01
+12,£1.25,"b""Sainsbury's Red Grapes""","b""Sainsbury's Red Grapes 300g \xc2\xa31.25/unit \xc2\xa34.17/ea""",Citrus,2021-03-01
+13,£3.50,"b""Sainsbury's Mixed Grapes""","b""Sainsbury's Mixed Grapes 900g \xc2\xa33.50/unit 39p/100g""",Citrus,2021-03-01
+14,£1.25,"b""Sainsbury's White Grapes""","b""Sainsbury's White Grapes 300g \xc2\xa31.25/unit \xc2\xa34.17/kg""",Citrus,2021-03-01
+15,£2.50,"b""Sainsbury's Cotton Candy Seedless Grapes, Taste th""","b""Sainsbury's Cotton Candy Seedless Grapes, Taste the Difference, Ltd Edition 400g \xc2\xa32.50/unit \xc2\xa36.25/""",Citrus,2021-03-01
+16,£2.50,"b""Sainsbury's Vitoria Grape, Taste the Difference""","b""Sainsbury's Vitoria Grape, Taste the Difference 400g \xc2\xa32.50/unit \xc2\xa36.25/kg""",Citrus,2021-03-01
+17,£2.50,"b""Sainsbury's Seeded Grapes""","b""Sainsbury's Seeded Grapes 700g \xc2\xa32.50/unit \xc2\xa33.57/kg""",Citrus,2021-03-01
+18,£1.75,b'Imperfectly Tasty Grapes',b'Imperfectly Tasty Grapes 500g \xc2\xa31.06/unit \xc2\xa32.12/kg',Citrus,2021-03-01
+19,£2.00,"b""Sainsbury's Grapes, Limited Edition Taste the Diff""","b""Sainsbury's Grapes, Limited Edition Taste the Difference 400g \xc2\xa32.00/unit \xc2\xa35.00/kg""",Citrus,2021-03-01
+0,30p,"b""Sainsbury's Lemons""","b""Sainsbury's Lemons 30p/unit 30p/ea""",Apple,2021-03-01
+1,£1.85,"b""Sainsbury's Easy Peelers, Taste the Difference""","b""Sainsbury's Easy Peelers, Taste the Difference 600g \xc2\xa31.85/unit \xc2\xa33.08/kg""",Apple,2021-03-01
+2,£1.00,"b""Sainsbury's Easy Peelers""","b""Sainsbury's Easy Peelers 600g Only \xc2\xa31.00: Save 35p \xc2\xa31.00/unit \xc2\xa31.67/kg""",Apple,2021-03-01
+3,19p,"b""Sainsbury's Limes""","b""Sainsbury's Limes 19p/unit 19p/ea""",Apple,2021-03-01
+4,30p,"b""Sainsbury's Oranges""","b""Sainsbury's Oranges 30p/unit 30p/ea""",Apple,2021-03-01
+5,(36),"b""Sainsbury's Easy Peeler Loose \xc2\xa3""","b""Sainsbury's Easy Peeler Loose \xc2\xa31.95/kg \xc2\xa31.95/kg Purchase by: items kg""",Apple,2021-03-01
+6,£4.90,"b""Sainsbury's Lemons Unwaxed minimum""","b""Sainsbury's Lemons Unwaxed minimum 5 Save 50p: Was \xc2\xa31.50 Now \xc2\xa31.00 \xc2\xa31.00/unit 20p/ea""",Apple,2021-03-01
+7,60p,"b""Sainsbury's Red Grapefruit""","b""Sainsbury's Red Grapefruit 60p/unit 60p/ea""",Apple,2021-03-01
+8,£1.50,"b""Sainsbury's Oranges Large x""","b""Sainsbury's Oranges Large x4 Only \xc2\xa31.50: Save 35p \xc2\xa31.50/unit 37p/ea""",Apple,2021-03-01
+9,£2.00,"b""Sainsbury's Oranges, Taste the Difference x""","b""Sainsbury's Oranges, Taste the Difference x4 \xc2\xa32.00/unit 50p/ea""",Apple,2021-03-01
+10,95p,"b""Sainsbury's Limes x""","b""Sainsbury's Limes x5 95p/unit 19p/ea""",Apple,2021-03-01
+11,£2.90,"b""Sainsbury's Easy Peelers Box, Taste the Difference""","b""Sainsbury's Easy Peelers Box, Taste the Difference 1kg \xc2\xa32.90/unit \xc2\xa32.90/kg""",Apple,2021-03-01
+12,£1.65,"b""Sainsbury's Lemons Unwaxed, SO Organic x""","b""Sainsbury's Lemons Unwaxed, SO Organic x3 \xc2\xa31.65/unit 55p/ea""",Apple,2021-03-01
+13,£1.35,"b""Sainsbury's Tangerines""","b""Sainsbury's Tangerines 600g \xc2\xa31.35/unit \xc2\xa32.25/kg""",Apple,2021-03-01
+14,65p,b'Floridian Pink Grapefruit',b'Floridian Pink Grapefruit 65p/unit 65p/ea',Apple,2021-03-01
+15,60p,"b""Sainsbury's White Grapefruit""","b""Sainsbury's White Grapefruit 60p/unit 60p/ea""",Apple,2021-03-01
+16,£1.95,"b""Sainsbury's Family Size Easy Peelers""","b""Sainsbury's Family Size Easy Peelers 1kg \xc2\xa31.95/unit \xc2\xa31.95/kg""",Apple,2021-03-01
+17,£1.65,"b""Sainsbury's Oranges, SO Organic x""","b""Sainsbury's Oranges, SO Organic x4 \xc2\xa31.65/unit 41p/ea""",Apple,2021-03-01
+18,£1.75,"b""Sainsbury's Blood Oranges Min x""","b""Sainsbury's Blood Oranges Min x5 \xc2\xa31.75/unit 35p/ea""",Apple,2021-03-01
+19,£1.85,"b""Sainsbury's Easy Peelers, SO Organic x""","b""Sainsbury's Easy Peelers, SO Organic x4 \xc2\xa31.85/unit \xc2\xa31.85/ea""",Apple,2021-03-01
+20,£1.85,"b""Sainsbury's Easy Peeler With Leaves, Taste the Dif""","b""Sainsbury's Easy Peeler With Leaves, Taste the Difference 500g \xc2\xa31.85/unit \xc2\xa33.70/kg""",Apple,2021-03-01
+21,£3.00,"b""Sainsbury's Seville Marmalade Oranges""","b""Sainsbury's Seville Marmalade Oranges 1.5kg \xc2\xa33.00/unit \xc2\xa32.00/kg""",Apple,2021-03-01
+22,£1.65,b'Imperfectly Tasty Oranges x',b'Imperfectly Tasty Oranges x5 69p/unit 14p/ea',Apple,2021-03-01
+23,£2.90,b'Imperfectly Tasty Mini Easy Peelers',b'Imperfectly Tasty Mini Easy Peelers 600g 69p/unit 69p/ea',Apple,2021-03-01
+24,£1.65,b'Imperfectly Tasty Lemons x',b'Imperfectly Tasty Lemons x5 68p/unit 68p/ea',Apple,2021-03-01
+0,67p,"b""Sainsbury's Royal Gala Apples x""","b""Sainsbury's Royal Gala Apples x6 \xc2\xa31.60/unit 27p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+1,67p,"b""Sainsbury's Braeburn Apples x""","b""Sainsbury's Braeburn Apples x6 \xc2\xa31.60/unit 27p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+2,£1.50,"b""Sainsbury's Conference Pears x""","b""Sainsbury's Conference Pears x4 \xc2\xa31.50/unit \xc2\xa31.50/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+3,67p,"b""Sainsbury's Pink Lady Apples x""","b""Sainsbury's Pink Lady Apples x6 Only \xc2\xa32.00: Save 60p \xc2\xa32.00/unit 33p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+4,(10),"b""Sainsbury's British Bramley Cooking Apples Loose \xc2""","b""Sainsbury's British Bramley Cooking Apples Loose \xc2\xa31.76/kg \xc2\xa31.76/kg Purchase by: items kg""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+5,£1.60,"b""Sainsbury's Granny Smith Apples x""","b""Sainsbury's Granny Smith Apples x6 \xc2\xa31.60/unit 27p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+6,£2.00,"b""Sainsbury's Conference Pears, Ripe & Ready x""","b""Sainsbury's Conference Pears, Ripe & Ready x4 \xc2\xa32.00/unit 50p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+7,£2.10,"b""Sainsbury's Pink Lady Apples x""","b""Sainsbury's Pink Lady Apples x4 \xc2\xa32.10/unit 53p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+8,67p,"b""Sainsbury's Jazz Apples x""","b""Sainsbury's Jazz Apples x6 \xc2\xa32.30/unit 38p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+9,37p,"b""Sainsbury's Conference Pear Single""","b""Sainsbury's Conference Pear Single 37p/unit 37p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+10,£1.60,"b""Sainsbury's Golden Delicious Apples x""","b""Sainsbury's Golden Delicious Apples x6 \xc2\xa31.60/unit 27p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+11,30p,"b""Sainsbury's Braeburn Apple Single""","b""Sainsbury's Braeburn Apple Single 30p/unit 30p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+12,£1.60,"b""Sainsbury's Cox Apples x""","b""Sainsbury's Cox Apples x6 \xc2\xa31.60/unit 27p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+13,£2.30,"b""Sainsbury's Royal Gala Apples, SO Organic x""","b""Sainsbury's Royal Gala Apples, SO Organic x6 \xc2\xa32.30/unit 38p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+14,£2.00,"b""Sainsbury's Pears, Ripe & Ready x""","b""Sainsbury's Pears, Ripe & Ready x4 \xc2\xa32.00/unit 50p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+15,50p,"b""Sainsbury's Pink Lady Apple Single""","b""Sainsbury's Pink Lady Apple Single 50p/unit 50p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+16,£1.50,"b""Sainsbury's Rocha & Packham Pear Bag x""","b""Sainsbury's Rocha & Packham Pear Bag x6 \xc2\xa31.50/unit 25p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+17,30p,"b""Sainsbury's Royal Gala Apple Single""","b""Sainsbury's Royal Gala Apple Single 30p/unit 30p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+18,£2.30,"b""Sainsbury's Mini Apples x""","b""Sainsbury's Mini Apples x6 79p/unit 13p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+19,£2.30,"b""Sainsbury's Braeburn Apples, SO Organic x""","b""Sainsbury's Braeburn Apples, SO Organic x6 \xc2\xa32.30/unit 38p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+20,£1.00,"b""Sainsbury's Best Of British Apples x""","b""Sainsbury's Best Of British Apples x6 Only \xc2\xa31.00: Save 60p \xc2\xa31.00/unit 17p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+21,30p,"b""Sainsbury's Granny Smith Apples Single""","b""Sainsbury's Granny Smith Apples Single 30p/unit 30p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+22,£2.10,"b""Sainsbury's Jazz Apples x""","b""Sainsbury's Jazz Apples x4 \xc2\xa32.10/unit 53p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+23,£2.30,"b""Sainsbury's Pears, SO Organic x""","b""Sainsbury's Pears, SO Organic x4 \xc2\xa32.30/unit \xc2\xa32.30/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+24,£3.00,"b""Sainsbury's Pink Lady Apples, SO Organic x""","b""Sainsbury's Pink Lady Apples, SO Organic x6 \xc2\xa33.00/unit 50p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+25,£3.50,"b""Sainsbury's Rhubarb""","b""Sainsbury's Rhubarb 400g \xc2\xa33.50/unit \xc2\xa38.75/kg""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+26,30p,"b""Sainsbury's Cox Apple Single""","b""Sainsbury's Cox Apple Single 30p/unit 30p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+27,£2.50,"b""Sainsbury's Mini Pears""","b""Sainsbury's Mini Pears 57p/unit 11p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+28,£1.95,"b""Sainsbury's Apples""","b""Sainsbury's Apples 1kg \xc2\xa31.95/unit \xc2\xa31.95/kg""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+29,£1.50,"b""Sainsbury's Royal Gala Apples x""","b""Sainsbury's Royal Gala Apples x4 \xc2\xa31.50/unit 38p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+30,£2.00,"b""Sainsbury's Ripe & Ready Blush Pears x""","b""Sainsbury's Ripe & Ready Blush Pears x4 \xc2\xa32.00/unit 50p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+31,£1.50,"b""Sainsbury's Braeburn Apples x""","b""Sainsbury's Braeburn Apples x4 \xc2\xa31.50/unit 38p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+32,£2.00,"b""Sainsbury's Kanzi Apples x""","b""Sainsbury's Kanzi Apples x6 \xc2\xa32.00/unit 33p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+33,£1.50,"b""Sainsbury's Best Of British Apples x""","b""Sainsbury's Best Of British Apples x4 \xc2\xa31.50/unit 38p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+34,£2.50,"b""Sainsbury's Ripe & Ready Pears, So Organic \xc2\xa3""","b""Sainsbury's Ripe & Ready Pears, So Organic \xc2\xa32.50/unit 63p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+35,£1.30,"b""Sainsbury's Migo Pears x""","b""Sainsbury's Migo Pears x4 Only \xc2\xa31.30: Save 50p \xc2\xa31.30/unit 32p/ea""",BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
+36,£2.30,b'Imperfectly Tasty Gala Apples x',b'Imperfectly Tasty Gala Apples x6 93p/unit 16p/ea',BerriesApriocotsMelonMangoExoticNutsReady to EatOrganicRipe,2021-03-01
