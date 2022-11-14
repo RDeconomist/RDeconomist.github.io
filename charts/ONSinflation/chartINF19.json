@@ -15,7 +15,7 @@
           "color": "black"},
     
   "data": {
-         "url": "https://raw.githubusercontent.com/RDeconomist/prices/master/db_AdjustmentFrequency.csv",
+         "url": "https://raw.githubusercontent.com/RDeconomist/prices/master/analysis/db_AdjustmentFrequency.csv",
          "format": {
              "type":"csv"}},
   

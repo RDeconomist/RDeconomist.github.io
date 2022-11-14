@@ -4,7 +4,7 @@
     "description": "UK CPI data visualisation",
   
     "data": {
-      "url": "https://raw.githubusercontent.com/RDeconomist/prices/master/db_item.csv"
+      "url": "https://raw.githubusercontent.com/RDeconomist/prices/master/analysis/db_item.csv"
     },
   
      "title": {

@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-  "data": {"url": "https://raw.githubusercontent.com/RDeconomist/prices/master/priceChangesByDivision.csv"},
+  "data": {"url": "https://raw.githubusercontent.com/RDeconomist/prices/master/analysis/priceChangesByDivision.csv"},
 
   "title": {
   "text": "Price flexbility: rising and falling",

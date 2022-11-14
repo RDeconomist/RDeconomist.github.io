@@ -13,7 +13,7 @@
   },
 
   
-  "data": {"url": "https://raw.githubusercontent.com/RDeconomist/prices/master/newItems.csv"},
+  "data": {"url": "https://raw.githubusercontent.com/RDeconomist/prices/master/analysis/newItems.csv"},
 
     "transform": [
     {
