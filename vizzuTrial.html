@@ -17,7 +17,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Public Finances</title>
+    <title>Vizzu Trial</title>
 
 <!--Main Stylesheet-->
 <link rel="stylesheet" href="css/main2.css">
@@ -37,10 +37,7 @@
 
 <!-- <script src="https://cdn.jsdelivr.net/npm/vizzu@~0.5.0/dist/vizzu.min.js"></script> -->
 
-<script type="module">
-import Vizzu from 'https://cdn.jsdelivr.net/npm/vizzu@~0.5.0/dist/vizzu.min.js';
-import { data } from 'https://lib.vizzuhq.com/test/integration/test_data/chart_types_eu.js';
-</script>
+
 
 </head>
 
@@ -68,7 +65,15 @@ import { data } from 'https://lib.vizzuhq.com/test/integration/test_data/chart_t
     </div>   
 
 
+
+
+<script type="module">
+    import Vizzu from 'https://cdn.jsdelivr.net/npm/vizzu@~0.5.0/dist/vizzu.min.js';
+    import { data } from 'https://lib.vizzuhq.com/test/integration/test_data/chart_types_eu.js';
+</script>
+
 <script>
+
     // Set the charts that we want on the page as variables, linking them to JSON files:
     let chart1 = new Vizzu('vizzu1');
     // let chart2 = new Vizzu('vizzu2');
@@ -87,19 +92,16 @@ import { data } from 'https://lib.vizzuhq.com/test/integration/test_data/chart_t
         title: 'Line Chart',
         geometry: 'line'
     }});
-
-
-
-
-
-
-   
+  
 
 </script>
 
 
 
 <!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+
+<span style="display:block; height: 30px;"></span>
+
 <div class="footer-dark">
     <footer>
         <div class="container">
