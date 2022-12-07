@@ -55,13 +55,20 @@
 
 
     <div class="grid_items">
-        <div class="grid_item" id="vizzu1"></div>
-        <!-- <div class="grid_item" id="vizzu2"></div>
+        <div class="grid_item" id="vizzu1">
+            <p>First chart is an example from Vizzu</p>
+        </div>
+        
+        <div class="grid_item" id="vizzu2">
+            <p>Second chart changes the variables in Vizzu example</p>
+
+
+        </div>
         <div class="grid_item" id="vizzu3"></div>
         <div class="grid_item" id="vizzu4"></div>
         <div class="grid_item" id="vizzu5"></div>
         <div class="grid_item" id="vizzu6"></div>
-        <div class="grid_item" id="vizzu7"></div>       -->
+        <div class="grid_item" id="vizzu7"></div>      
     </div>   
 
 
@@ -71,10 +78,12 @@
     import Vizzu from 'https://cdn.jsdelivr.net/npm/vizzu@~0.5.0/dist/vizzu.min.js';
     import { data } from 'https://lib.vizzuhq.com/test/integration/test_data/chart_types_eu.js';
 
+    console.log(data);
+
 
     // Set the charts that we want on the page as variables, linking them to JSON files:
     let chart1 = new Vizzu('vizzu1');
-    // let chart2 = new Vizzu('vizzu2');
+    let chart2 = new Vizzu('vizzu2');
     // let chart3 = new Vizzu('vizzu3');
     // let chart4 = new Vizzu('vizzu4');
     // let chart5 = new Vizzu('vizzu5');
@@ -85,6 +94,18 @@
         channels: {
             x: { set: ['Year'] },
             y: { set: ['Value 5 (+/-)'] },
+            label: { set: ['Value 5 (+/-)'] }
+        },
+        title: 'Line Chart',
+        geometry: 'line'
+    }});
+
+    chart2.animate({
+    data: data,
+    config: {
+        channels: {
+            x: { set: ['Year'] },
+            y: { set: ['Value 2 (+)'] },
             label: { set: ['Value 5 (+/-)'] }
         },
         title: 'Line Chart',
