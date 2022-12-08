@@ -32,12 +32,6 @@
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- add a vizzu embed -->
-<!-- Question: do I need to do the import module here? -->
-
-<!-- <script src="https://cdn.jsdelivr.net/npm/vizzu@~0.5.0/dist/vizzu.min.js"></script> -->
-
-
 
 </head>
 
@@ -61,9 +55,8 @@
         
         <div class="grid_item" id="vizzu2">
             <p>Second chart changes the variables in Vizzu example</p>
-
-
         </div>
+
         <div class="grid_item" id="vizzu3"></div>
         <div class="grid_item" id="vizzu4"></div>
         <div class="grid_item" id="vizzu5"></div>
@@ -101,6 +94,42 @@
     }});
 
     chart2.animate({
+    data: data,
+    config: {
+        channels: {
+            x: { set: ['Year'] },
+            y: { set: ['Value 2 (+)'] },
+            label: { set: ['Value 5 (+/-)'] }
+        },
+        title: 'Line Chart',
+        geometry: 'line'
+    }});
+
+
+    // Chart 3
+    let dataURL = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/us/data_US_FRED-UNRATE.json"
+    console.log(dataURL)
+
+    fetch(dataURL)
+        .then(response => response.json())
+        .then(json => console.log(json));
+
+    fetch(dataURL)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            appendData(data);
+        })
+        .catch(function (err) {
+            console.log('error: ' + err);
+        });
+    
+    console.log(data)
+
+    
+    
+        chart3.animate({
     data: data,
     config: {
         channels: {
