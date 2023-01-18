@@ -43,25 +43,27 @@
         <p id="rubric" class="rubric">A dashboard of Vizzu charts.</p>
         <span style="display:block; height: 10px;"></span>
 
-        <p>Trialling a new way of making charts</p>
-    </div>
-
+        </div>
 
 
     <div class="grid_items">
-        <div class="grid_item" id="vizzu1">
-            <p>First chart is an example from Vizzu</p>
-        </div>
+        <p> Trialling a new way of making charts. First chart is an example from Vizzu</p>
+        <div class="grid_item" id="vizzu1"></div>
         
-        <div class="grid_item" id="vizzu2">
-            <p>Second chart changes the variables in Vizzu example</p>
-        </div>
+        <p>Second chart changes the variables in Vizzu example</p>
+        <div class="grid_item" id="vizzu2"> </div>
 
-        <div class="grid_item" id="vizzu3"></div>
+        <p>Third chart uses made up in-line data, manually typed into JS on the page.</p>
+        <div class="grid_item" id="vizzu3"> </div>
+
+        <p>Fourth chart is a simple Vega spec, with some external data, taken from US FRED. In this case it is coming from my GitHub account. Next try to re-create this with Vizzu.</p>
+        <div class="grid_item" id="vega1"></div>
+
+        <p>Fifth chart is Vizzu with the US data above. Quite a lot of steps needed to get the data in the right shape (taking well shaped JSON and turning it into two arrays of values). To discuss whether there is a simpler way of doing this.</p>
         <div class="grid_item" id="vizzu4"></div>
-        <div class="grid_item" id="vizzu5"></div>
-        <div class="grid_item" id="vizzu6"></div>
-        <div class="grid_item" id="vizzu7"></div>      
+
+        <p>Sixth chart is the same as the above, with formatting.</p>
+        <div class="grid_item" id="vizzu5"></div>      
     </div>   
 
 
@@ -77,8 +79,9 @@
     // Set the charts that we want on the page as variables, linking them to JSON files:
     let chart1 = new Vizzu('vizzu1');
     let chart2 = new Vizzu('vizzu2');
-    // let chart3 = new Vizzu('vizzu3');
-    // let chart4 = new Vizzu('vizzu4');
+    let chart3 = new Vizzu('vizzu3');
+    let chart4 = new Vizzu('vizzu4');
+    let chart5 = new Vizzu('vizzu5');
     // let chart5 = new Vizzu('vizzu5');
 
     chart1.animate({
@@ -99,48 +102,169 @@
         channels: {
             x: { set: ['Year'] },
             y: { set: ['Value 2 (+)'] },
-            label: { set: ['Value 5 (+/-)'] }
+            label: { set: ['Value 2 (+)'] }
         },
         title: 'Line Chart',
         geometry: 'line'
     }});
 
 
+
+    /////////////////////////////////////////////////////////////////////////////
     // Chart 3
-    let dataURL = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/us/data_US_FRED-UNRATE.json"
-    console.log(dataURL)
-
-    fetch(dataURL)
-        .then(response => response.json())
-        .then(json => console.log(json));
-
-    fetch(dataURL)
-        .then(function (response) {
-            return response.json();
-        })
-        .then(function (data) {
-            appendData(data);
-        })
-        .catch(function (err) {
-            console.log('error: ' + err);
-        });
+    let dataInline = {
+        series: [
+            {
+            name: 'Year', 
+            type: 'dimension', 
+            values: ['1995', '1996', '1997', '2020']},
+            
+            {
+            name: 'Value', 
+            type: 'measure', 
+            values: [ 78, 96, 21, 49]
+            }
+        ]
+        };
     
-    console.log(data)
+    console.log(dataInline);
 
-    
-    
-        chart3.animate({
-    data: data,
+    chart3.animate({
+    data: dataInline,
     config: {
         channels: {
             x: { set: ['Year'] },
-            y: { set: ['Value 2 (+)'] },
-            label: { set: ['Value 5 (+/-)'] }
+            y: { set: ['Value'] },
+            label: { set: ['Value'] }
         },
         title: 'Line Chart',
         geometry: 'line'
     }});
-  
+    ////////////////////////////////////////////////////////////////////////////
+
+
+
+    ///////////////////////////////////////////////////////////////////////////
+    // Chart 4: using real data:
+    let dataURL = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/us/data_US_FRED-UNRATE.json"
+    console.log(dataURL)
+
+    //Now use Fetch to get the URL:
+    const response = await fetch(dataURL); 
+    const data2 = await response.json();
+    const obs = data2.observations;
+    const series = {series: obs};
+
+    console.log(data2);
+    console.log(obs);
+    console.log(series);
+
+    //Now extract arrays from JSON.
+    let valDates = [];
+    let valValues = [];
+    for(let i=1; i<obs.length; i++){ 
+        let x = obs[i].date; // Roll through all our dates:
+        let y = obs[i].value; // Roll through all our values:
+        valDates.push(x); // Add this date to our array of dates.
+        valValues.push(y); // Add this value to our array of values.
+    }
+
+    // Place to hold this data:
+    let dataExternal = {
+        series: [
+            {
+            name: 'Year', 
+            type: 'dimension', 
+            values: []
+        },
+            
+            {
+            name: 'Value', 
+            type: 'measure', 
+            values: []
+            }
+        ]
+        };
+    
+    // Now replace the missing data above with the arrays we created:
+    dataExternal.series[0].values = valDates;
+    dataExternal.series[1].values = valValues;
+
+    console.log(dataExternal);
+
+   
+    chart4.animate({
+    data: dataExternal,
+    config: {
+        channels: {
+            x: { set: ['Year'] },
+            y: { set: ['Value'] },
+            label: { set: ['Value'] }
+        },
+        title: 'Line Chart',
+        geometry: 'line'
+    }});
+    /////////////////////////////////////////////////////////////////////////////
+
+    /////////////////////////////////////////////////////////////////////////////
+    // CHART 5 - FORMATTING
+
+    chart5.animate(
+        {
+    data: dataExternal,
+    
+    config: {
+        channels: {
+            x: { set: ['Year'] },
+            y: { set: ['Value'] }
+        },
+        title: 'US unemployment rate',
+        // subtitle: 'FRED data',
+        geometry: 'line'
+    },
+
+    style: {
+        plot: {
+            marker: {
+                colorPalette: '#9355e8FF'
+            }
+        },
+        title: { backgroundColor: '#FFF' },
+        plot: { backgroundColor: '#FFF' },
+        legend: { backgroundColor: '#FFF' },
+    }
+});
+
+    // Simple Vega chart to compare:
+
+    var VegaLineChart = {
+        "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+        "data": {
+            "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/us/data_US_FRED-UNRATE.json",
+            "format": {
+                "type":"json",
+                "property": "observations"}},
+        "title": {"text": "Simple Vega Chart"},
+        "width":300,
+        "height":300,
+        "mark":{
+        "type": "line",
+            "color":"seagreen",
+            "strokeWidth":2,
+            "opacity":1},
+        "encoding": {
+        "x": {
+            "field": "date",
+            "type": "temporal",
+            "title":null},
+        "y": {
+            "field": "value",
+            "type": "quantitative",
+            "title":null}}
+        };
+    
+     vegaEmbed('#vega1', VegaLineChart, {"actions": false});
+     
 
 </script>
 
