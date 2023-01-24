@@ -3,8 +3,8 @@
 
   "description": "A simple donut chart with embedded data.",
 
-  "height":300,
-  "width":300,
+  "height":280,
+  "width":200,
   "view": {"stroke": "transparent"},
 
   "title": {
@@ -37,7 +37,11 @@
     "color": {
         "field": "Item", 
         "type": "nominal",
-        "legend":{"title":null},
+        "legend":{
+          "title":null,
+          "orient": "top",
+          "columns":2
+        },
         "scale":{"range":["rgb(128,0,0)","rgb(118,118,118)", "rgb(214,214,206)" ]}},
     
     "tooltip":[

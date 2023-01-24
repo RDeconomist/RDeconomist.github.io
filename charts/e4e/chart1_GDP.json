@@ -4,7 +4,7 @@
   "description": "A simple donut chart with embedded data.",
 
   "height":300,
-  "width":300,
+  "width":250,
   "view": {"stroke": "transparent"},
 
   "title": {
