@@ -54,8 +54,7 @@
       
       "tooltip":[
         {"field":"Item", "title":"Item", "format":""},
-        {"field":"Value", "title":"USD billions", "format":"$,"},   
-        {"field":"Share", "title":"Share", "format":""}
+        {"field":"Value", "title":"USD billions", "format":"$,"}
       ]
     }
   }

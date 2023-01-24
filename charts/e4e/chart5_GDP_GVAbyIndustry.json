@@ -50,8 +50,8 @@
   },
   
   "tooltip":[
-      {"field":"Value", "title":"USD billions", "format":"$,"},
-      {"field":"Share", "title":"Share", "format":"%"}
+      {"field":"Item", "title":"Industry", "type":"nominal"},
+      {"field":"Value", "title":"USD billions", "format":"$,"}
   ]
 }
 }
