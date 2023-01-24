@@ -1,0 +1,24 @@
+Line,Item,shortName,pieNumber,Value
+1,Gross domestic income,GDI,,25844.7
+2,"Compensation of employees, paid",Pay,,13645.8
+3,Wages and salaries,Wages,1,11259.5
+4,To persons,,,11238.7
+5,To the rest of the world,,,20.8
+6,Supplements to wages and salaries,Bonuses,2,2386.3
+7,Taxes on production and imports,Production Tax,5,1785.1
+8,Less: Subsidies1,,,114.5
+9,Net operating surplus,Profits,3,6170.3
+10,Private enterprises,,,6176.7
+11,"Net interest and miscellaneous payments, domestic industries",,,787.4
+12,Business current transfer payments (net),,,177.7
+13,Proprietors' income with inventory valuation and capital consumption adjustments,,,1863.5
+14,Rental income of persons with capital consumption adjustment,,,794.9
+15,"Corporate profits with inventory valuation and capital consumption adjustments, domestic industries",,,2553.2
+16,Taxes on corporate income,,,457
+17,Profits after tax with inventory valuation and capital consumption adjustments,,,2096.2
+18,Net dividends,,,1239.4
+19,Undistributed corporate profits with inventory valuation and capital consumption adjustments,,,856.7
+20,Current surplus of government enterprises1,,,-6.4
+21,Consumption of fixed capital,Depreciation,4,4358.1
+22,Private,,,3631.8
+23,Government,,,726.3

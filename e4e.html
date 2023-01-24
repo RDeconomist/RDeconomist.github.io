@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<head>
+
+      <!-- START ANALYTICS -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- This stuff provided by Google from the Admin page of Analysics account -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP82FVH378"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JP82FVH378');
+    </script>
+    <!-- END ANALYTICS -->
+
+<!--Meta stuff-->
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!--Facebook meta - this comes up when you post a link to the site-->
+<meta property="og:title" content="Rapid Charts">
+<meta property="og:description" content="Live Covid charts running directly from official data. Auto-updates daily.">
+<meta property="og:image" content="covidCases.png">
+<meta property="og:url" content="http://rapidcharts.io/index.htm">
+
+<!--Favicon-->
+<link rel="icon" href="images/favicon.png">
+<link rel="shortcut icon" href="images/favicon.png" />
+<link rel="apple-touch-icon" href="images/favicon.png" />
+
+<!--Title - this is the bit that comes up in the tab-->
+<title>E4E</title>
+
+<!--Main Stylesheet-->
+<link rel="stylesheet" href="css/maps.css">
+<link rel="stylesheet" href="css/footer.css">
+
+
+<!--The next three lines allow the Vega embed-->
+<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<body>
+
+  
+
+<!-- heading for page-->
+<div class="heading">
+
+  <h1>economics<span style="color: rgba(100,200,100)">for</span></h1>
+  <span style="display:block; height: 5px;"></span>
+ 
+  <h2>Everyone</h2>
+  <span style="display:block; height: 5px;"></span>
+
+  <p>Development page for the macroeconomics course taught by Richard Davies and Greg Kaplan at the University of Chicago</p>
+  
+</div>
+
+
+<!-- Start a contanter to hold everything -->
+
+<span style="display:block; height: 30px;"></span>
+<div class="mapContainer">
+  <p><b>GDP</p></b>
+  <p id="rubric" class="rubric">Some charts of GDP. </p>
+  <p id="rubric" class="rubric">The set set of maps demonstrates how to use data filters to make your cartography interactive.</p>
+   <div class="mapBig" id="map14"></div>
+  <p id="rubric" class="rubric">The first map is a simple base map. The only addition is a tooltip: hover your mouse over each state.</p>
+   <div class="mapBig" id="map15"></div>
+  <p id="rubric" class="rubric">The second US map plots a single crime variable: motor theft. The key addition to the code is a link to a second data source, and instructions for how to match with the map (i.e., based on the state) and which variable to retrieve.</p>
+   <div class="mapBig" id="map16"></div>
+  <p id="rubric" class="rubric">The third map generalises the second. We add more data in the match [lookup] part of the code, and add a drop-down box. This sets a temporary parameter that colours the map based on the user's selection.</p>
+    <div class="mapBig" id="map17"></div>
+  <p id="rubric" class="rubric">The final map has a few more steps. First, the user selects a year, and this filters the data, so that only numbers for that year are used. Next, the code changes the data from wide to long (aka 'tidy') form using a "fold" transform. Finally, the topoJSON file is matched, based on the state name. Eash of these steps are discussed in detail in class.</p>
+   
+</div>
+
+
+
+
+
+
+
+
+
+
+<span style="display:block; height: 40px;"></span>
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+<div class="footer-dark">
+  <footer>
+      <div class="container">
+          <div class="row">
+            <div class="column">
+              <h3>About</h3>
+              <ul>
+                  <li><a href="mission">Mission</a></li>
+                  <li><a href="#">Team</a></li>
+              </ul>
+            </div>
+            <div class="column">
+                  <h3>Resources</h3>
+                  <ul>
+                    <li><a href="datascience">Course</a></li>  
+                    <li><a href="build">Chart Builder</a></li>
+                      
+                  </ul>
+            </div>
+            </div>
+              
+              <div class="footer-finalrow">
+                  <h3>Rapid Charts</h3>
+                  <p>Automated and interactive data analysis.</p>                    </div>
+              
+              <div class="col item social">
+                <a href="https://www.economicsobservatory.com" class="fa fa-university"></a>
+                <a href="https://twitter.com/RD_Economist" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/rapidcharts" class="fa fa-instagram"></a>
+                <a href="https://www.linkedin.com/in/rd-economist" class="fa fa-linkedin"></a>
+              </div>
+          
+            </div>
+          <p class="copyright">Richard Davies © 2022</p>
+    </footer>          
+</div>
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+
+</body>
+
+
+<!--/////////////////////////////////////SCRIPTS///////////////////////////////-->
+
+<script>
+    // Set the charts that we want on the page as variables, linking them to JSON files:
+    
+    // Wales
+    var map1 = "charts/maps/Wales1.json";
+    var map2 = "charts/maps/Wales2.json";
+    var map3 = "charts/maps/Wales3.json";
+    var map4 = "charts/maps/Wales4.json";
+
+    // England
+    var map5 = "charts/maps/mapEng1.json";
+    var map6 = "charts/maps/mapEng2.json";
+    var map7 = "charts/maps/mapEng3.json";
+    var map8 = "charts/maps/mapEng4_2.json";
+
+    // World
+    var map9 = "charts/maps/mapWorld1.json";
+    var map10 = "charts/maps/mapWorld2.json";
+    var map11 = "charts/maps/mapWorld3.json";
+    var map12 = "charts/maps/mapWorld4.json";
+    var map13 = "charts/maps/mapWorld5.json";
+
+    // US
+    var map14 = "charts/maps/USA1.json";
+    var map15 = "charts/maps/USA2.json";
+    var map16 = "charts/maps/USA3.json";
+    var map17 = "charts/maps/USA4.json";
+
+    // UK
+    var map18 = "charts/maps/UK1.json";
+    var map19 = "charts/maps/UK2.json";
+    var map20 = "charts/maps/UK3.json";
+    var map21 = "charts/maps/UK4.json";
+    var map22 = "charts/maps/UK5.json";
+
+    // London:
+    var map23 = "charts/maps/mapLondon1.json";
+    var map24 = "charts/maps/mapLondon2.json";
+    var map24 = "charts/maps/mapLondon3.json";
+
+
+    // Embed all
+    vegaEmbed('#map1', map1, {"actions": false});
+    vegaEmbed('#map2', map2, {"actions": false});
+    vegaEmbed('#map3', map3, {"actions": false});
+    vegaEmbed('#map4', map4, {"actions": false});
+
+    vegaEmbed('#map5', map5, {"actions": false});
+    vegaEmbed('#map6', map6, {"actions": false});
+    vegaEmbed('#map7', map7, {"actions": false});
+    vegaEmbed('#map8', map8, {"actions": false});
+    
+    vegaEmbed('#map9', map9, {"actions": false});
+    vegaEmbed('#map10', map10, {"actions": false});
+    vegaEmbed('#map11', map11, {"actions": false});
+    vegaEmbed('#map12', map12, {"actions": false});
+    vegaEmbed('#map13', map13, {"actions": false});
+
+    vegaEmbed('#map14', map14, {"actions": false});
+    vegaEmbed('#map15', map15, {"actions": false});
+    vegaEmbed('#map16', map16, {"actions": false});
+    vegaEmbed('#map17', map17, {"actions": false});
+
+    vegaEmbed('#map18', map18, {"actions": false});
+    vegaEmbed('#map19', map19, {"actions": false});
+    vegaEmbed('#map20', map20, {"actions": false});
+    vegaEmbed('#map21', map21, {"actions": false});
+    vegaEmbed('#map22', map22, {"actions": false});
+    vegaEmbed('#map23', map23, {"actions": false});
+    vegaEmbed('#map24', map24, {"actions": false});
+    vegaEmbed('#map25', map25, {"actions": false});
+
+
+</script>
+
+<!--/////////////////////////////////////SCRIPTS///////////////////////////////-->
+
+</html>
