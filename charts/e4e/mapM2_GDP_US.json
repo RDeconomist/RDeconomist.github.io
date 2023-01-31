@@ -1,0 +1,74 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "description": "GDP data from BEA, Q3 2022. Population estimate from Census Bureau, Mid-2022. District of Columbia filtered out as distorts relative differences",
+  
+    "width": 500,
+    "height": 300,
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/US_States_5m.json",
+      "format": {"property": "features"}
+    },
+    "title": {
+      "text": "GDP per capita, 2022",
+      "fontSize": 12,
+      "subtitle": ["Current GDP per capita, source: BEA; Census Bureau", ""],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 9,
+      "anchor": "middle",
+      "color": "black"
+    },
+    "projection": {"type": "albersUsa"},
+  
+    "mark": {
+      "type": "geoshape",
+      "stroke": "white",
+      "strokeWidth": 0.5
+    },
+  
+    "transform": [
+      {
+        "lookup": "properties.NAME",
+        "from": {
+          "key": "State",
+          "fields": [
+            "Current GDP",
+            "Real GDP",
+            "Population",
+            "Current GDP per capita",
+            "Real GDP per capita"
+          ],
+          "data": {
+            "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/explainer_usStates_gdp.csv"
+          }
+        }
+      },
+      {
+        "filter": "datum['properties.NAME'] != 'District of Columbia'"
+      }
+    ],
+    "encoding": {
+      "color": {
+        "field": "Current GDP per capita",
+        "legend": {
+          "title": "",
+          "legendX": 0,
+          "legendY": 0,
+          "direction": "vertical",
+          "format": "$,d"
+        },
+        "type": "quantitative",
+        "scale": {"scheme": "inferno", "reverse": false}
+      },
+      "tooltip": [
+        {"field": "properties.NAME", "title": "State"},
+        {"field": "Population", "format": ","},
+        {"field": "Real GDP", "title": "Real GDP ($m)", "format": "$,d"},
+        {
+          "field": "Real GDP per capita",
+          "title": "Real GDP per capita",
+          "format": "$,d"
+        }
+      ]
+    }
+  }
