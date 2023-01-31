@@ -17,9 +17,9 @@
   },
 
   "title": {
-    "text": "GDP per capita, 2021",
+    "text": "Global GDP",
     "fontSize": 12,
-    "subtitle": ["PPP, current $. Source: World Bank"],
+    "subtitle": ["Per capita, PPP, current $. Source: World Bank"],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 9,
     "anchor": "middle",
