@@ -69,11 +69,23 @@
 <span style="display:block; height: 30px;"></span>
 <div class="mapContainer">
   <p><b>About</p></b>
-  <p id="rubric" class="rubric">Development page for interactive charts used as part of the E4E macro course taught by Richard Davies and Greg Kaplan at the University of Chicago.</p>
+  <p id="rubric" class="rubric">Development page for interactive charts used as part of the E4E macro course taught by Richard Davies and Greg Kaplan at the University of Chicago. Research assistance by John Hellings.</p>
 </div>
 
 
-<!-- First chart container-->
+<!-- Chart container A-->
+<span style="display:block; height: 30px;"></span>
+<div class="mapContainer">
+  <p><b>Motivation: why should we care about GDP?</p></b>
+  <p id="rubric" class="rubric">Even the founder of GDP, Simon Kuznets, noted that it had shortfalls: so why should we care about GDP?</p>
+  <p id="rubric" class="rubric">As we will learn in this course GDP is a vital yardstick when setting policy: the amount of debt a country can issue at an acceptable rate of interest, for example, depends on GDP. Even those not interested in policy should care about GDP, since it has strong correlation which lots of things that we all do care about. Here are some examples (hover over the dots with your mouse to reveal the countries, and their data). </p>
+  <div class="mapBig" id="chartA1"></div>
+  <div class="mapBig" id="chartA2"></div>
+  <div class="mapBig" id="chartA3"></div>
+</div>
+
+
+<!-- Chart container B-->
 <span style="display:block; height: 30px;"></span>
 <div class="mapContainer">
   <p><b>GDP - US data - three ways</p></b>
@@ -88,7 +100,7 @@
   <div class="mapBig" id="c6"></div>
 </div>
 
-<!-- Second chart container-->
+<!-- Chart container C-->
 <span style="display:block; height: 30px;"></span>
 <div class="mapContainer">
   <p><b>GDP - US data - time series</p></b>
@@ -158,6 +170,10 @@
     var chart7 = "charts/e4e/chart7_GDP_US_longRunSlider.json";
     var chart8 = "charts/e4e/chart8_GDP_US_selector.json";
 
+    var chartA1 = "charts/e4e/chartA1_GDP_Happiness.json"
+    var chartA2 = "charts/e4e/chartA2_GDP_InfantMortality.json"
+    var chartA3 = "charts/e4e/chartA3_GDP_LifeExpectancy.json"
+
     
 
     // Embed all
@@ -169,6 +185,10 @@
     vegaEmbed('#c6', chart6, {"actions": false});
     vegaEmbed('#c7', chart7, {"actions": false});
     vegaEmbed('#c8', chart8, {"actions": false});
+
+    vegaEmbed('#chartA1', chartA1, {"actions": false});
+    vegaEmbed('#chartA2', chartA2, {"actions": false});
+    vegaEmbed('#chartA3', chartA3, {"actions": false});
 
 
 
