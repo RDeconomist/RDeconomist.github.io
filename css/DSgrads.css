@@ -1,0 +1,48 @@
+/* RICHARD DAVIES
+DATA SCIENCE FOR ECONOMISTS
+GRID PAGE FOR GRADUATES */
+
+
+/* Main Grid */
+.DSgradGrid {
+    display: grid;
+    padding: 2px;
+    grid-template-columns: 100%;
+    max-width: 800px; 
+    margin: 0 auto 0 auto !important;
+    padding: 0 5 0 5; 
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+
+ 
+/* ------------------------------------------------------------------------------
+	DIFFERENT SCREEN SIZES
+-------------------------------------------------------------------------------*/
+
+/* One column*/
+@media only screen and (min-width: 250px) {
+  .DSgradGrid {
+    grid-template-columns: 100%;
+    max-width: 420px; 
+    text-align: center;
+  }
+}
+
+/* Two columns*/
+@media only screen and (min-width: 800px) {
+  .DSgradGrid, .wrap {
+    grid-template-columns: 47.5% 47.5%;
+    max-width: 900px; 
+    margin: 0 auto 0 auto !important;
+	padding: 0 5 0 5; 
+    text-align: left;
+  }
+  .DSgradGrid > div {
+    padding: 10px;
+  }
+}
+
+.dashPage{
+    max-width: 200;
+}

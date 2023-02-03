@@ -1,0 +1,57 @@
+
+
+/* ------------------------------------------------------------------------------
+	DIFFERENT SCREEN SIZES
+-------------------------------------------------------------------------------*/
+
+/* One column*/
+@media only screen and (min-width: 250px) {
+  .grid_items {
+    grid-template-columns: 100%;
+    max-width: 420px; 
+    margin: 0 auto 0 auto !important;
+	padding: 0 5 0 5; 
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    text-align: center;
+  }
+
+  .wrap {
+    grid-template-columns: 100%;
+    max-width: 360px; 
+    margin: 0 auto 0 auto !important;
+	  padding: 0 5 0 5; 
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    text-align: center;
+  }
+  .grid_items > div {
+    padding: 10px;
+  }
+  .rubric {
+    text-align: left;
+  }
+
+
+}
+
+
+/* Two columns*/
+@media only screen and (min-width: 800px) {
+  .grid_items, .wrap {
+    grid-template-columns: 47.5% 47.5%;
+    max-width: 900px; 
+    margin: 0 auto 0 auto !important;
+	padding: 0 5 0 5; 
+    grid-column-gap: 10px;
+    grid-row-gap: 40px;
+    text-align: left;
+  }
+  .grid_items > div {
+    padding: 10px;
+  }
+}
+
+.dashpage{
+    
+}
