@@ -26,7 +26,7 @@
 
 <!--Allow the Vega embed-->
 <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
 
 <!-- Add icon library -->
@@ -221,19 +221,31 @@
         title: 'US unemployment rate',
         // subtitle: 'FRED data',
         geometry: 'line'
-    },
+        },
 
     style: {
         plot: {
             marker: {
-                colorPalette: '#9355e8FF'
-            }
-        },
+                colorPalette: '#2E8B57'
+            },
+            xAxis: {
+                color: '#FFFFFF00',
+                interlacing: { color: '#FFFFFF00' },
+                label: { color: '#FFFFFF00' }},
+            yAxis: {
+                color: '#FFFFFF00',
+                interlacing: { color: '#FFFFFF00' },
+                label: {color: '#FFFFFF00'
+			}}},
+
         title: { backgroundColor: '#FFF' },
         plot: { backgroundColor: '#FFF' },
         legend: { backgroundColor: '#FFF' },
+
+		}
     }
-});
+);
+
 
     // Simple Vega chart to compare:
 

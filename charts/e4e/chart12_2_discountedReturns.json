@@ -1,0 +1,59 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+  
+    "title": {
+      "text": "Discount factors",
+      "subtitle": ["Discount rates applied to future cashflows",""],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+  },
+  
+    "width":500,
+    "height":300,
+  
+    "data": {
+        "name":"myData",
+        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/example_bondYields.csv"},
+  
+    "transform": [
+      {"calculate": "1/datum.discountFactor", "as": "return" 
+      }
+    ],
+  
+  
+    "mark":{
+      "type": "line",
+      "strokeWidth":2,
+      "opacity":1
+    },
+  
+  
+    "encoding": {
+      "x": {
+        "field": "year",
+        "type": "quantitative",
+        "title":null
+        },
+  
+      "y": {
+        "field": "discountFactor",                
+        "type": "quantitative",
+        "title":null},
+  
+      "color":{
+        "type": "nominal",
+        "legend":{
+          "format":".0%",
+          "orient": "bottom-left",
+          "fillColor":"white",
+          "strokeColor":"rgb(128,0,0)",
+          "cornerRadius":5,
+          "padding":5},
+        "field":"riskFreeRate",
+        "title":"RF Rate"
+      }  
+    }
+  }
