@@ -11,15 +11,15 @@
     "color": "black"
 },
 
-  "width":300,
-  "height":300,
+  "width":600,
+  "height":80,
 
   "data": {
       "name":"myData",
       "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/example_bondYields.csv"},
 
   "transform": [
-    {"fold": ["wages", "asset1"], "as": ["asset", "value"]},
+    {"fold": ["wages", "asset1", "asset2"], "as": ["asset", "value"]},
     {"filter":"datum.value>0"}
   ],
 
@@ -45,11 +45,17 @@
       "type": "quantitative",
       "title":null},
 
+    "facet": {
+      "field": "asset",                
+      "type": "nominal",
+      "title":null,
+      "columns": 1},
+
    
     "color":{
       "field":"asset",
       "legend":null,
-      "scale":{"range":["blue", "rgb(128,0,0)"]}
+      "scale":{"range":["green", "blue", "rgb(128,0,0)"]}
     }
   
   }
