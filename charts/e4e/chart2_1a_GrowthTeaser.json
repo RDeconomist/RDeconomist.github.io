@@ -1,7 +1,7 @@
 {"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
          
     "title": {
-        "text": "What went right?",
+        "text": "What went so right?",
         "subtitle":["GDP per capita, rebased 1960=1. Source: World Bank.",""],
         "subtitleFontStyle":"italic",
         "subtitleFontSize":10,
@@ -32,13 +32,15 @@
             "y": {
                 "field": "GDPpc",
                 "type": "quantitative",
-                "title": null},
+                "title": null,
+                "axis":{"gridOpacity":0.3}},
     
             "color": {
                 "field": "country",
                 "scale":{"range":["green", "orange", "red", "blue", "pink", "black"]},
                 "legend":{
-                    "labelExpr": "{'BWA':'Botswana','THA':'Thailand','SGP':'Singapore','KOR':'S Korea','CHN':'China', 'WLD':'World'}[datum.label]"},
+                    "labelExpr": "{'BWA':'Botswana','THA':'Thailand','SGP':'Singapore','KOR':'S Korea','CHN':'China', 'WLD':'World'}[datum.label]",
+                "orient":"top-left"},    
                 "title":null}
     }
   }
