@@ -1,0 +1,45 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+         
+    "title": {
+        "text": "What went wrong?",
+        "subtitle":["GDP, constant prices. National currencies. Source: IMF.",""],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"},
+        
+    "height":300,
+    "width":200,    
+        
+        
+    "data": {
+        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/Global_WB_GDPperCapita.csv"
+        },
+    
+    "transform": [
+        {
+          "fold":["COD","CAF","HTI","MDG","NER","WLD"], "as": ["country", "GDPpc"]}
+            ],
+     "mark": {   
+            "type":"line",
+            "strokeWidth":1},    
+    
+    "encoding": {
+            "x": {
+                "field": "year",
+                "type": "temporal",
+                "title":null,
+                "axis":{"grid": false}},
+    
+            "y": {
+                "field": "GDPpc",
+                "type": "quantitative",
+                "title": null},
+    
+            "color": {
+                "field": "country",
+                "scale":{"scheme":"set1"},
+                "legend":{},
+                "title":null}
+    }
+  }
