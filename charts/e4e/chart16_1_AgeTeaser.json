@@ -6,7 +6,7 @@
     "format": {"type": "csv"}},
 
   "title": {
-    "text": "Getting old fast",
+    "text": "Getting older fast",
     "subtitle":[
       "Share of popluation that is aged 65+. Source: UN",
       ""],
@@ -83,10 +83,11 @@
       "field": "Region", 
       "type": "nominal",
       "legend": {
-        "orient": "right",
-        "title":null        
-      },
-      "scale": {"range": ["rgba(128,0,0,0.2)", "rgba(128,0,0,0.2)", "rgba(128,0,0,0.2)", "rgba(128,0,0,0.2)", "rgba(128,0,0,0.2)", "rgba(128,0,0,0.2)", "rgba(128,0,0,0.2)", "rgba(128,0,0,0.2)", "rgba(128,0,0,0.2)", "rgba(128,0,0,0.2)", "rgba(128,0,0,0.2)", "rgba(128,0,0,0.2)", "rgba(128,0,0,0.2)", "rgba(128,0,0,0.2)", "rgba(128,0,0,0.2)", "rgba(128,0,0,1)", "rgba(128,0,0,1)", "rgba(128,0,0,0.2)"]}
+        "orient": "top-left",
+        "columns":2,
+        "title":null,
+        "labelExpr": "{'WORLD':'World','Japan':'Japan','United States of America':'USA'}[datum.label]"},
+      "scale": {"range": ["rgba(128,0,0,0.2)", "rgba(128,0,0,0.2)", "rgba(128,0,0,0.2)", "rgba(128,0,0,0.2)", "rgba(128,0,0,0.2)", "rgba(128,0,0,0.2)", "rgba(128,0,0,0.2)", "rgba(128,0,0,0.2)", "rgba(128,0,0,0.2)", "rgba(128,0,0,0.2)", "rgba(0,150,150,1)", "rgba(128,0,0,0.2)", "rgba(128,0,0,0.2)", "rgba(128,0,0,0.2)", "rgba(0,67,167,1)", "rgba(128,0,0,1)"]}
     }
   }
 }
