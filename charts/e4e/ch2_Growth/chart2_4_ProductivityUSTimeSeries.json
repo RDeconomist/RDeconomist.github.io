@@ -1,0 +1,53 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "title": {
+      "text": "US Output per worker",
+      "subtitle": ["GDP (constant 2015 $), source: World Bank","Persons employed, source: OECD", ""],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+  
+    "width":500,
+    "height":300,
+  
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/jhellingsdata.github.io/main/Data/growth-F3_US_gdp_perWorker.csv"
+    },
+  
+  
+    "mark":{
+      "type": "line",
+      "color":"rgb(128,0,0)",
+      "strokeWidth":2,
+      "opacity":1
+    },
+  
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "title":null,
+        "axis": {
+          "grid": false
+        }
+      },
+  
+      "y": {
+        "field": "Output per worker ($)",                
+        "type": "quantitative",
+        "title": null,
+        "scale": {
+          "type":  "linear",
+          "domain": [40000, 140000]
+        },
+        "axis":{
+          "values":[40000, 50000, 60000, 70000, 80000, 90000, 100000, 110000, 120000, 130000, 140000],
+          "gridOpacity": 0.7
+        }
+      }
+        
+  }
+  }
