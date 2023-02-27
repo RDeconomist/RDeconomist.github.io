@@ -1,0 +1,43 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "data": {
+     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/Global_Wiki_TransistorTrends.csv"},
+
+  "title": {
+      "text": "Getting faster fast",
+      "subtitle": ["Number of transistors per computer chip",""],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"},
+  
+  "view": {"stroke":"transparent"},
+
+  "width":300,
+  "height":400,
+
+  "transform": [
+    {"calculate": "log(datum.count)", "as": "countLog"}
+  ],
+
+  "mark":{
+      "type": "circle",
+      "color":"rgba(128,0,0,0.5)",
+      "size":60},
+
+
+  "encoding": {
+    "x": {
+        "field": "year",
+        "type": "temporal",
+        "axis":{"grid": false},
+        "title":null},
+    "y": {
+        "field": "count",
+        "type": "quantitative",
+        "scale":{"type": "log"},
+        "axis":{"grid": false},
+        "title":null}
+  }
+}
