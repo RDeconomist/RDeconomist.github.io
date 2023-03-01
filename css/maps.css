@@ -7,6 +7,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montaga&family=Montserrat:wght@300;400&display=swap');
+
+
+
 h1 {
 	font-family: "Catamaran";
 	font-variant: small-caps;
@@ -28,12 +32,24 @@ h2 {
 }
 
 h3 {
-	font-family: "Catamaran";
+	font-family: "Montserrat";
+	font-variant: small-caps;
+	font-size: 60px;
+	color: rgb(100,100,200);
+	font-weight: 900;
+	font-kerning: 50;
+	margin: 0px 0px 30px 0px  ;
+	height: 40px;
+  justify-content: center;
+}
+
+h4 {
+	font-family: "Montserrat";
   font-variant: small-caps;
 	font-size: 30px;
-	color: rgba(100,100,100);
+	color: rgba(50,50,50);
 	margin: 10px 0 0 0;
-	font-weight: 200;
+	font-weight: 400;
 }
 
 
