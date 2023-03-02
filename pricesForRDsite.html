@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<!--Vega embed-->
+<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+<!-- DIV FOR THE VISUALISATION -->
+<div id="chart1"></div>
+
+<!-- CONDITIONAL SCRIPT TO EMBED BASED ON SCREEN WIDTH -->
+<script>
+// Find the current screen width:
+let width = screen.width;
+// Use an if function to pick the approprite visualisation:
+if (width > 950) {
+//   prices1 = "charts/ONSinflation/distributionsPerrenials_DarkWide.json";
+  prices1 = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/distributionsPerrenials_DarkWide.json"
+} else if (width > 450) {
+  prices1 = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/maincharts/ONSinflation/distributionsPerrenials_DarkMedium.json";
+} else {
+  prices1 = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/maincharts/ONSinflation/distributionsPerrenials_DarkNarrow.json";
+}
+
+// Now embed the chart, which will vary based on screen width:
+vegaEmbed('#chart1', prices1, {"actions": false});   
+   
+</script>
+<!-- END - CONDITIONAL SCRIPT TO EMBED BASED ON SCREEN WIDTH -->
+</html>
