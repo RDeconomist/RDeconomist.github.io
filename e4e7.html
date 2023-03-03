@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<head>
+
+      <!-- START ANALYTICS -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- This stuff provided by Google from the Admin page of Analysics account -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JP82FVH378"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JP82FVH378');
+    </script>
+    <!-- END ANALYTICS -->
+
+<!--Meta stuff-->
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<!--Facebook meta - this comes up when you post a link to the site-->
+<meta property="og:title" content="Rapid Charts">
+<meta property="og:description" content="Live Covid charts running directly from official data. Auto-updates daily.">
+<meta property="og:image" content="covidCases.png">
+<meta property="og:url" content="http://rapidcharts.io/index.htm">
+
+<!--Favicon-->
+<link rel="icon" href="images/favicon.png">
+<link rel="shortcut icon" href="images/favicon.png" />
+<link rel="apple-touch-icon" href="images/favicon.png" />
+
+<!--Title - this is the bit that comes up in the tab-->
+<title>E4E</title>
+
+<!--Main Stylesheet-->
+<link rel="stylesheet" href="css/maps.css">
+<link rel="stylesheet" href="css/footer.css">
+
+
+<!--The next three lines allow the Vega embed-->
+<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+
+<!-- /////////////START OF BODY////////////////////// -->
+<body>
+
+<!-- heading for page-->
+<div class="heading">
+
+  <h3><span style="color: rgba(128,0,0)">economics</span>for<span style="color: rgba(128,0,0)">everyone</span></h3>
+  <span style="display:block; height: 5px;"></span>
+ 
+  <h4>trade</h4>
+  <span style="display:block; height: 5px;"></span>
+</div>
+
+
+
+
+<!-- Chart container A-->
+<span style="display:block; height: 30px;"></span>
+<div class="mapContainer">
+  <p><b>Where do your shoes come from?</p></b>
+  <p id="rubric" class="rubric">A map of the world's 25 largest show factories, all of which happen to supply Nike or Addidas.</p>
+  <!-- <p id="rubric" class="rubric">Even the founder of GDP, Simon Kuznets, noted that it had shortfalls: so why should we care about GDP?</p>
+  <p id="rubric" class="rubric">As we will learn in this course GDP is a vital yardstick when setting policy: the amount of debt a country can issue at an acceptable rate of interest, for example, depends on GDP. Even those not interested in policy should care about GDP, since it has strong correlation which lots of things that we all do care about. Here are some examples (hover over the dots with your mouse to reveal the countries, and their data). </p> -->
+  <div class="mapBig" id="chartA1"></div>
+  <div class="mapBig" id="chartA2"></div>
+  <p id="rubric" class="rubric">xyz</p>
+  <div class="mapBig" id="chartA3"></div>
+</div>
+
+<!-- Chart container B
+<span style="display:block; height: 30px;"></span>
+<div class="mapContainer">
+  <p><b>Putting GDP on a map</p></b>
+  <p id="rubric" class="rubric">A global look at GDP.</p>
+  <div class="mapBig" id="mapM1"></div>
+  <div class="mapBig" id="mapM2"></div>
+</div> -->
+
+
+<!-- Chart container B-->
+<!-- <span style="display:block; height: 30px;"></span>
+<div class="mapContainer">
+  <p><b>GDP - US data - three ways</p></b>
+  <p id="rubric" class="rubric">Some small charts of GDP, these should look good on a smartphone</p>
+  <div class="map" id="c1"></div>
+  <div class="map" id="c2"></div>
+  <p id="rubric" class="rubric">Larger chart with GDP breakdown. Tooltip should allow student to examine data.</p>
+  <div class="mapBig" id="c4"></div>
+  <p id="rubric" class="rubric">Sectoral breakdown</p>
+  <div class="mapBig" id="c5"></div>
+  <p id="rubric" class="rubric">Income breakdown by type of income</p>
+  <div class="mapBig" id="c6"></div>
+</div> -->
+
+<!-- Chart container C-->
+<!-- <span style="display:block; height: 30px;"></span>
+<div class="mapContainer">
+  <p><b>GDP - US data - time series</p></b>
+  <p id="rubric" class="rubric">Interactive time series, allowing students to investigate data</p> 
+  <div class="mapBig" id="c7"></div>
+  <p id="rubric" class="rubric">Toggle the chart to look at log GDP and growth rates.</p>
+  <div class="mapBig" id="c8"></div>
+</div> --> 
+
+
+<!-- Start: intro container-->
+<span style="display:block; height: 30px;"></span>
+<div class="mapContainer">
+  <p><b>About</p></b>
+  <p id="rubric" class="rubric">Development page for interactive charts used as part of the E4E macro course taught by Richard Davies and Greg Kaplan at the University of Chicago.</p> 
+  <p>Research assistance by Josh Hellings.</p>
+</div>
+
+
+<!-- /////////////END OF MAIN BODY SECTION////////////////////// -->
+
+<span style="display:block; height: 40px;"></span>
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+<div class="footer-dark">
+  <footer>
+      <div class="container">
+          <div class="row">
+            <div class="column">
+              <h3>About</h3>
+              <ul>
+                  <li><a href="mission">Mission</a></li>
+                  <li><a href="#">Team</a></li>
+              </ul>
+            </div>
+            <div class="column">
+                  <h3>Resources</h3>
+                  <ul>
+                    <li><a href="datascience">Course</a></li>  
+                    <li><a href="build">Chart Builder</a></li>
+                      
+                  </ul>
+            </div>
+            </div>
+              
+              <div class="footer-finalrow">
+                  <h3>Rapid Charts</h3>
+                  <p>Automated and interactive data analysis.</p>                    </div>
+              
+              <div class="col item social">
+                <a href="https://www.economicsobservatory.com" class="fa fa-university"></a>
+                <a href="https://twitter.com/RD_Economist" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/rapidcharts" class="fa fa-instagram"></a>
+                <a href="https://www.linkedin.com/in/rd-economist" class="fa fa-linkedin"></a>
+              </div>
+          
+            </div>
+          <p class="copyright">Richard Davies © 2022</p>
+    </footer>          
+</div>
+<!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->
+
+</body>
+
+
+<!--/////////////////////////////////////SCRIPTS///////////////////////////////-->
+
+<script>
+    // Set the charts that we want on the page as variables, linking them to JSON files:
+    
+    // Wales
+    // var chart1 = "x";
+
+    var chartA1 = "charts/e4e/chX_Maps/mapM7_1_ShoeFactories.json";
+ 
+
+    // var mapM1 = "x";
+    // var mapM2 = "x";
+
+    
+
+    // Embed all
+    // vegaEmbed('#c1', chart1, {"actions": false});
+    // vegaEmbed('#c2', chart2, {"actions": false});
+    // vegaEmbed('#c3', chart3, {"actions": false});
+    // vegaEmbed('#c4', chart4, {"actions": false});
+    // vegaEmbed('#c5', chart5, {"actions": false});
+    // vegaEmbed('#c6', chart6, {"actions": false});
+    // vegaEmbed('#c7', chart7, {"actions": false});
+    // vegaEmbed('#c8', chart8, {"actions": false});
+
+    vegaEmbed('#chartA1', chartA1, {"actions": false});
+    // vegaEmbed('#chartA2', chartA2, {"actions": false});
+    // vegaEmbed('#chartA3', chartA3, {"actions": false});
+
+    // vegaEmbed('#mapM1', mapM1, {"actions": false});
+    // vegaEmbed('#mapM2', mapM2, {"actions": false});
+
+
+
+</script>
+
+<!--/////////////////////////////////////SCRIPTS///////////////////////////////-->
+
+</html>
