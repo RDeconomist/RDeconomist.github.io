@@ -4,7 +4,7 @@
 
   "title": {
     "text": "Putting a price on TikTok",
-    "subtitle":["Percentage of UChicago students that would retain TikTok.",""],
+    "subtitle":["UChicago students retaining TikTok vs monthly payments to give it up",""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -30,18 +30,18 @@
   "encoding": {
 
     "x": {
-      "field": "Keep_pct", 
+      "field": "Keep_adj", 
       "type": "quantitative",
-      "title":null,
+      "title":"Percent keeping TikTok",
       "axis":{
-        "format":"%",
+        "format":"f",
         "grid": false}
       },
 
     "y": {
-      "field": "Dollars", 
+      "field": "Dollars_adj", 
       "type": "quantitative",
-      "title":null,
+      "title":"Monthly compensation",
       "axis":{
         "format":"$.0f",
         "grid": false}
@@ -56,9 +56,26 @@
     "strokeDash":[6,3]},
 
     "encoding": {
-      "x": {"datum": 0.5}
+      "x": {"datum": 50}
       }
-  }
+  },
 
-   ]
+  {"mark": {
+    "type": "line",
+    "strokeWidth":1, 
+    "color": "rgb(128,0,0)"},
+
+  "transform": [
+    {"regression": "Dollars_adj", 
+      "on": "Keep_adj",
+      "method": "exp",
+      "extent": [0,100]}
+  ],
+
+  "encoding": {
+    "x": {"field": "Keep_adj", "type": "quantitative"},
+    "y": {"field": "Dollars_adj", "type": "quantitative"}
+  }
+}
+]
 }
