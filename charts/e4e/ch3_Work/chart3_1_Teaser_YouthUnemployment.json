@@ -3,7 +3,7 @@
   "description": "Tufte inspired chart, with white grid lines over the bars",
 
   "title": {
-    "text": "Billions without work",
+    "text": "Millions without work",
     "subtitle": ["Youth Unemployment (15-24 year olds). World's 21 most populous countries",  "Source: World Bank",""],
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 10,

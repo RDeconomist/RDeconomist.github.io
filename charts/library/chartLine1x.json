@@ -2,10 +2,10 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
     "data": {
-       "url": "https://api.economicsobservatory.com/gbr/unem",
+       "url": "https://api.allorigins.win/raw?url=https://api.ons.gov.uk/timeseries/mgsc/dataset/lms/data",
        "format": {
            "type":"json",
-           "property": "raw.years"}},
+           "property": "years"}},
 
 
     "title": {
@@ -25,6 +25,7 @@
         "strokeWidth":2,
         "opacity":1},
  
+
     "encoding": {
       "x": {
           "field": "date",
