@@ -1,0 +1,99 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Union Membership by Demographics",
+    "title": {
+      "text": "Union Membership by Demographics",
+          "fontSize": 12,
+          "subtitle": [
+        "United States, 1994-2022",
+        "Source: BLS", ""
+      ],
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+      
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/RDeconomist/data/main/e4e3/Notebooks/US%20UNIONS%20CSV%202.csv"
+    },
+    "selection": {
+      "Demographic Choice": {
+        "type": "single",
+        "fields": ["Selector"],
+        "bind": {
+          "input": "select",
+          "options": [
+            null,
+            "Overall",
+            "Male",
+            "Female",
+            "White",
+            "Black",
+            "Asian",
+            "Hispanic",
+            "Full-Time",
+            "Part-Time"
+          ],
+          "name": "Demographic"
+        }
+      }
+    },
+    "transform": [
+      {
+        "filter": {
+          "field": "Selector",
+          "oneOf": [
+            "Overall",
+            "Male",
+            "Female",
+            "White",
+            "Black",
+            "Asian",
+            "Hispanic",
+            "Full-Time",
+            "Part-Time"
+          ]
+        }
+      },
+      {"filter": {"selection": "Demographic Choice"}}
+    ],
+    "height": 300,
+    "width": 400,
+    "mark": "line",
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "title": "",
+        "axis": {"grid": false}
+      },
+      "y": {
+        "field": "Union_Membership",
+        "type": "quantitative",
+        "title": "",
+        "axis": {"grid": false}
+      },
+      "color": {
+        "field": "Selector",
+        "title": null,
+        "legend": {"orient": "right"},
+        "type": "nominal",
+        "sort": [],
+        "scale": {"domain": ["Overall", "Male", "Female", "White", "Black", "Asian", "Hispanic", "Full-Time", "Part-Time"], "range": ["#1f77b4", "#2ca02c", "#d62728", "#bcbd22", "#17becf", "e377c2", "#9467bd", "#ff7f0e", "#ee3"]}
+      },
+      "tooltip": [
+        {
+          "field": "Time",
+          "type": "temporal",
+          "timeUnit": "yearmonth",
+          "title": "Date"
+        },
+        {
+          "field": "Union_Membership",
+          "type": "quantitative",
+          "title": "Union Membership (%)"
+        },
+        {"field": "Demographic"}
+      ]
+    }
+  }
