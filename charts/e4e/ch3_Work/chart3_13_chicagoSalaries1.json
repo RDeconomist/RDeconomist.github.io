@@ -1,0 +1,37 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "data": {
+     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/ch3_Work/chicagoSalaries.csv",
+     "format": {
+         "type":"csv"}},
+
+
+  "title": {
+      "text": "Chicago Salaries",
+      "subtitle": "Public Sector Salary Workers",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"},
+
+  "width":400,
+  "height":400,
+
+  "mark":{
+      "type": "line",
+      "color":"seagreen",
+      "strokeWidth":2,
+      "opacity":1},
+
+  "encoding": {
+    "x": {
+        "field": "cumSharePeople",
+        "type": "quantitative",
+        "title":null},
+    "y": {
+        "field": "cumShareIncome",
+        "type": "quantitative",
+        "title":null}
+  }
+}
