@@ -3,7 +3,7 @@
   
     "title": {
       "text": "Income inequality, 2021",
-      "subtitle":["Source: WID"],
+      "subtitle":["Source: World Inequality Database", ""],
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
@@ -11,14 +11,14 @@
     },
   
   "data": {
-      "url": "https://raw.githubusercontent.com/maddyht20/maddyht20.github.io/main/WID%20New%201980-2021%20final%202.csv"
+      "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/ch3_Work/inequalityWID.csv"
           },
     
     "height": 300,
-    "width": 200,
+    "width": 400,
   
   "transform": [
-    {"filter":{"field": "Country", "oneOf":["Pakistan", "India", "Germany", "China", "Japan", "Korea", "UK", "Brazil", "Chile", "Argentina", "Thailand", "Bangladesh", "Philippines", "Viet Nam", "South Africa", "Congo, Democratic Republic of the", "Iran (Islamic Republic of)", "Korea, Republic of", "Russian Federation", "Nigeria", "United States of America", "United Kingdom of Great Britain and Northern Ireland", "Norway", "Mexico", "Indonesia" ]}}
+    {"filter":{"field": "Country2", "oneOf":["Pakistan", "India", "Germany", "China", "Japan", "Korea", "UK", "Brazil", "Chile", "Argentina", "Thailand", "Bangladesh", "Philippines", "Viet Nam", "South Africa", "Congo, Democratic Republic of the", "Iran", "Russia", "Nigeria", "US", "UK", "Norway", "Mexico", "Indonesia" ]}}
   ],
   
   "mark":{
@@ -33,7 +33,7 @@
         "title": "Gini Coefficient"
       },
       "y": {
-        "field": "Country",
+        "field": "Country2",
         "type": "nominal",
         "title": null,
         "sort": {"op": "sum", "field": "2021"},
