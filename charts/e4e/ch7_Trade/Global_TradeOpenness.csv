@@ -1,0 +1,153 @@
+Entity,Year,Var,Type,Value
+World,1950,Trade openness,Trade openness (share of exports and imports in GDP),19.871468
+World,1951,Trade openness,Trade openness (share of exports and imports in GDP),22.806437
+World,1952,Trade openness,Trade openness (share of exports and imports in GDP),20.580606
+World,1953,Trade openness,Trade openness (share of exports and imports in GDP),19.201504
+World,1954,Trade openness,Trade openness (share of exports and imports in GDP),19.758888
+World,1955,Trade openness,Trade openness (share of exports and imports in GDP),20.456982
+World,1956,Trade openness,Trade openness (share of exports and imports in GDP),21.436287
+World,1957,Trade openness,Trade openness (share of exports and imports in GDP),21.846004
+World,1958,Trade openness,Trade openness (share of exports and imports in GDP),20.046398
+World,1959,Trade openness,Trade openness (share of exports and imports in GDP),20.296762
+World,1960,Trade openness,Trade openness (share of exports and imports in GDP),22.452469
+World,1961,Trade openness,Trade openness (share of exports and imports in GDP),22.073483
+World,1962,Trade openness,Trade openness (share of exports and imports in GDP),21.588861
+World,1963,Trade openness,Trade openness (share of exports and imports in GDP),22.2605
+World,1964,Trade openness,Trade openness (share of exports and imports in GDP),22.499968
+World,1965,Trade openness,Trade openness (share of exports and imports in GDP),22.350416
+World,1966,Trade openness,Trade openness (share of exports and imports in GDP),22.70961
+World,1967,Trade openness,Trade openness (share of exports and imports in GDP),22.502306
+World,1968,Trade openness,Trade openness (share of exports and imports in GDP),23.061014
+World,1969,Trade openness,Trade openness (share of exports and imports in GDP),23.74553
+World,1970,Trade openness,Trade openness (share of exports and imports in GDP),25.736317
+World,1971,Trade openness,Trade openness (share of exports and imports in GDP),25.899803
+World,1972,Trade openness,Trade openness (share of exports and imports in GDP),26.4878
+World,1973,Trade openness,Trade openness (share of exports and imports in GDP),29.613424
+World,1974,Trade openness,Trade openness (share of exports and imports in GDP),35.867023
+World,1975,Trade openness,Trade openness (share of exports and imports in GDP),33.960354
+World,1976,Trade openness,Trade openness (share of exports and imports in GDP),34.94896
+World,1977,Trade openness,Trade openness (share of exports and imports in GDP),35.216984
+World,1978,Trade openness,Trade openness (share of exports and imports in GDP),34.361385
+World,1979,Trade openness,Trade openness (share of exports and imports in GDP),37.190536
+World,1980,Trade openness,Trade openness (share of exports and imports in GDP),39.995354
+World,1981,Trade openness,Trade openness (share of exports and imports in GDP),39.36169
+World,1982,Trade openness,Trade openness (share of exports and imports in GDP),37.294132
+World,1983,Trade openness,Trade openness (share of exports and imports in GDP),36.088108
+World,1984,Trade openness,Trade openness (share of exports and imports in GDP),36.697926
+World,1985,Trade openness,Trade openness (share of exports and imports in GDP),35.667137
+World,1986,Trade openness,Trade openness (share of exports and imports in GDP),33.882652
+World,1987,Trade openness,Trade openness (share of exports and imports in GDP),34.76473
+World,1988,Trade openness,Trade openness (share of exports and imports in GDP),35.56807
+World,1989,Trade openness,Trade openness (share of exports and imports in GDP),36.67448
+World,1990,Trade openness,Trade openness (share of exports and imports in GDP),38.213417
+World,1991,Trade openness,Trade openness (share of exports and imports in GDP),37.34903
+World,1992,Trade openness,Trade openness (share of exports and imports in GDP),39.312355
+World,1993,Trade openness,Trade openness (share of exports and imports in GDP),37.31754
+World,1994,Trade openness,Trade openness (share of exports and imports in GDP),38.573627
+World,1995,Trade openness,Trade openness (share of exports and imports in GDP),40.952686
+World,1996,Trade openness,Trade openness (share of exports and imports in GDP),42.00539
+World,1997,Trade openness,Trade openness (share of exports and imports in GDP),43.73862
+World,1998,Trade openness,Trade openness (share of exports and imports in GDP),43.503407
+World,1999,Trade openness,Trade openness (share of exports and imports in GDP),43.683163
+World,2000,Trade openness,Trade openness (share of exports and imports in GDP),47.301876
+World,2001,Trade openness,Trade openness (share of exports and imports in GDP),46.18835
+World,2002,Trade openness,Trade openness (share of exports and imports in GDP),46.457527
+World,2003,Trade openness,Trade openness (share of exports and imports in GDP),48.02513
+World,2004,Trade openness,Trade openness (share of exports and imports in GDP),51.550232
+World,2005,Trade openness,Trade openness (share of exports and imports in GDP),54.038536
+World,2006,Trade openness,Trade openness (share of exports and imports in GDP),57.21606
+World,2007,Trade openness,Trade openness (share of exports and imports in GDP),58.920563
+World,2008,Trade openness,Trade openness (share of exports and imports in GDP),61.490005
+World,2009,Trade openness,Trade openness (share of exports and imports in GDP),52.067303
+World,2010,Trade openness,Trade openness (share of exports and imports in GDP),56.622528
+World,2011,Trade openness,Trade openness (share of exports and imports in GDP),60.48943
+World,2012,Trade openness,Trade openness (share of exports and imports in GDP),59.99816
+World,2013,Trade openness,Trade openness (share of exports and imports in GDP),59.96131
+World,2014,Trade openness,Trade openness (share of exports and imports in GDP),59.44497
+World,2015,Trade openness,Trade openness (share of exports and imports in GDP),56.332226
+World,2016,Trade openness,Trade openness (share of exports and imports in GDP),54.26302
+World,2017,Trade openness,Trade openness (share of exports and imports in GDP),56.182137
+World,2018,Trade openness,Trade openness (share of exports and imports in GDP),57.822994
+World,2019,Trade openness,Trade openness (share of exports and imports in GDP),55.852898
+World,1820,Upper bound,"World trade - upper bound (% of GDP) (Estevadeordal, Frantz, and Taylor (2003))",9.5
+World,1820,Lower bound,"World trade - lower bound (% of GDP) (Estevadeordal, Frantz, and Taylor (2003))",2
+World,1870,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),17.57
+World,1871,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),20.469999
+World,1872,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),21.32
+World,1873,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),20.85
+World,1874,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),21.620001
+World,1875,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),21.98
+World,1876,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),22.09
+World,1877,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),22.209999
+World,1878,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),23.35
+World,1879,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),23.67
+World,1880,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),23.66
+World,1881,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),23.790001
+World,1882,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),23.870001
+World,1883,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),24.33
+World,1884,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),23.26
+World,1885,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),22.52
+World,1886,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),22.639999
+World,1887,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),22.23
+World,1888,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),22.92
+World,1889,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),24.290001
+World,1890,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),24.52
+World,1891,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),24.129999
+World,1892,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),22.049999
+World,1893,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),21.860001
+World,1894,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),22.219999
+World,1895,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),21.24
+World,1896,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),24
+World,1897,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),24.459999
+World,1898,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),24.459999
+World,1899,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),25
+World,1900,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),24.360001
+World,1901,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),24.459999
+World,1902,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),24.620001
+World,1903,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),24.68
+World,1904,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),24.99
+World,1905,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),26.290001
+World,1906,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),27.66
+World,1907,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),27.559999
+World,1908,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),26.530001
+World,1909,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),27.24
+World,1910,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),27.459999
+World,1911,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),28.629999
+World,1912,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),29.629999
+World,1913,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),29.01
+World,1914,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),17.959999
+World,1915,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),18.799999
+World,1916,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),21.809999
+World,1917,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),25.950001
+World,1918,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),23.459999
+World,1919,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),22.42
+World,1920,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),21.66
+World,1921,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),15.12
+World,1922,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),16.709999
+World,1923,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),18.02
+World,1924,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),18.48
+World,1925,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),19.360001
+World,1926,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),18.379999
+World,1927,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),18.93
+World,1928,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),19.15
+World,1929,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),18.75
+World,1930,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),15.97
+World,1931,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),13.77
+World,1932,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),10.34
+World,1933,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),10.72
+World,1934,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),13.48
+World,1935,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),13.11
+World,1936,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),13.53
+World,1937,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),15.39
+World,1938,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),12.96
+World,1939,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),12.97
+World,1940,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),13.89
+World,1941,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),12.68
+World,1942,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),11.76
+World,1943,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),12.55
+World,1944,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),11.94
+World,1945,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),10.14
+World,1946,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),15.05
+World,1947,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),19.82
+World,1948,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),17.139999
+World,1949,Estimates,World trade based on own estimates (% of GDP) (Klasing and Milionis (2014)),16.35
