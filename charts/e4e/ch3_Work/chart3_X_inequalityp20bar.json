@@ -1,0 +1,49 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.2.0.json",
+  
+    "title": {
+      "text": "Income inequality, 2021",
+      "subtitle":["Source: World Inequality Database", ""],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+  
+  "data": {
+      "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/ch3_Work/inequalityWID.csv"
+          },
+    
+    "height": 300,
+    "width": 400,
+  
+  "transform": [
+    {"filter":{"field": "Country2", "oneOf":["Pakistan", "India", "Germany", "China", "Japan", "Korea", "UK", "Brazil", "Chile", "Argentina", "Thailand", "Bangladesh", "Philippines", "Viet Nam", "South Africa", "Congo, Democratic Republic of the", "Iran", "Russia", "Nigeria", "US", "UK", "Norway", "Mexico", "Indonesia" ]}}
+  ],
+  
+  "mark":{
+    "type": "bar",
+    "color":"rgb(128,0,0)"},
+  
+    "encoding": {
+      "x": {
+        "field": "2021",
+        "type": "quantitative",
+        "scale": {"domain": [0, 1]},
+        "title": "Gini Coefficient"
+      },
+      "y": {
+        "field": "Country2",
+        "type": "nominal",
+        "title": null,
+        "sort": {"op": "sum", "field": "2021"},
+        "axis": {
+          "offset": 0,
+          "ticks": true,
+          "domain": false,
+          "labelAngle": 0,
+          "labelFontSize": 10
+        }
+      }
+    }
+  }

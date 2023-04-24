@@ -1,0 +1,47 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+     
+       "title": {
+        "text": "Population forecast 2020-2100",
+        "subtitle":["Cumulative % change in population. Source: UN.",""],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"},
+    
+      "data": {
+      "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/demographicsUNPopChange.csv"
+    },
+    
+    "repeat": {"layer": ["S Korea", "Japan", "UK", "Italy", "Spain", "China", "France", "US"]},
+   
+    "spec": {
+        
+        "height": 350,
+        "width": 250,
+ 
+        "mark": {
+            "type":"line",
+            "strokeWidth":2},    
+  
+        "encoding": {
+            "x": {
+                "field": "Year",
+                "type": "temporal",
+                "title":null},
+    
+            "y": {
+                "field": {"repeat": "layer"},
+                "type": "quantitative",
+                "title": null},
+    
+            "color": {
+                "legend":{
+                    "orient": "top-left",
+                    "columns":2
+                },
+                "datum": {"repeat": "layer"},
+                "scale": {"range": ["red", "orange", "lightblue", "pink", "yellow", "maroon", "grey", "blue"]}}
+          } 
+      }
+  }
