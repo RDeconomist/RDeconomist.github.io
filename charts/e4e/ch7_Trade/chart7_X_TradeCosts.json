@@ -1,0 +1,39 @@
+{  
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/ch7_Trade/Global_TradeCostsAirFrieghtEtc.csv"},
+
+  "width": 400, 
+  "height": 300,
+
+  "title": {
+    "text": "Transport and Communication costs",
+    "subtitle": ["Index: relative to 1930 value. OECD (2007)",""],
+    "anchor": "start",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "color": "black"},
+
+  "mark": {
+    "type": "line"},
+
+  "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "temporal",
+          "title": null,
+          "axis": {"grid": false}},
+
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "scale": {"domain": [0, 100]},
+          "sort": "ascending",
+          "title": null},
+
+       "color": {
+        "field": "Var",
+        "legend": {
+           "orient": "top-right",
+           "title": null}}}
+}
