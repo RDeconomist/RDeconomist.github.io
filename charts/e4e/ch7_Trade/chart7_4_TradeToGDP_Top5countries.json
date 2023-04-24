@@ -1,0 +1,65 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+  "data": {
+      "url": "https://raw.githubusercontent.com/JamesFKean/RA_work/main/top5v2.csv"
+    },
+    
+    "height": 350,
+    "width": 350,
+    
+    "title": {
+      "text": "Top Traders", 
+      "anchor": "start",
+      "subtitle": ["Trade as % of GDP, Top 5. Source: World Bank",""],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10},
+    
+    
+    "encoding": {
+      "x": {"field": "Year", "type": "temporal"},
+      "y": {"field": "GDP", "type": "quantitative"},
+      "color": {
+        "condition": {
+          "param": "hover",
+          "field": "Country Name",
+          "type": "nominal",
+          "legend": null,
+          "scale": {"domain": ["Malta", "Hong Kong SAR, China", "Ireland", "Singapore", "Luxembourg"], "range": ["#880000", "#D80505", "#B67F20", "#010000", "#CFBE42"]}
+        },
+        "value": "grey"
+      },
+      "opacity": {"condition": {"param": "hover", "value": 1}, "value": 0.2}
+    },
+    "layer": [
+      {
+        "params": [
+          {
+            "name": "hover",
+            "value": [{"Country Name": "Malta"}],
+            "select": {
+              "type": "point",
+              "fields": ["Country Name"],
+              "on": "mouseover"
+            }
+          }
+        ],
+        "mark": {"type": "line", "strokeWidth": 8, "stroke": "transparent"}
+        
+      },
+      {"mark": "line"},
+      {
+        "encoding": {
+          "x": {"aggregate": "max", "field": "Year", "title": "", "axis": {"gridOpacity": 0.3}},
+          "y": {"aggregate": {"argmax": "Year"}, "field": "GDP", "title": "Trade as % of GDP", "axis": {"format": "%", "gridOpacity": 0.3}}
+        },
+        "layer": [
+          {"mark": {"type": "circle"}},
+          {
+            "mark": {"type": "text", "align": "left", "dx": 4},
+            "encoding": {"text": {"field": "Country Name", "type": "nominal"}}
+          }
+        ]
+      }
+    ],
+    "config": {"view": {"stroke": null}}
+  }
