@@ -1,0 +1,52 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "Tufte inspired chart, with white grid lines over the bars",
+
+  "title": {
+    "text": "US: bilateral balances",
+    "subtitle": ["Trade Balance (goods). Top 20 partners. As a percentage of total trade. Annual to 2023",  "Source: Census Bureau",""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "view":{"stroke":"transparent"},
+
+  "width": 400,
+  "height": 300,
+ 
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/ch7_Trade/UStradePartnersGoods.csv"
+  },
+
+   "transform": [
+    {"filter":"datum.tradePartner<21"}
+   ],
+
+  "mark": {
+    "type":"bar",
+    "color":"rgb(128,0,0)"},
+     
+    "encoding": {
+    
+    "x": {
+      "field": "Balance_pctTrade",
+      "type": "quantitative", 
+      "title": null,
+      "axis":{
+        "zindex":1,
+        "gridColor":"white",
+        "gridWidth":0.5,
+        "labelAngle":0,
+        "format":"%"
+      }},
+    
+    "y": {
+      "field": "Country",
+      "title": null,
+      "type": "nominal",
+      "sort":{"field":"tradePartner"}}
+  }
+}
