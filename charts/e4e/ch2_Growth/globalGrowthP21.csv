@@ -1,22 +1,22 @@
 Country Name,Country Code,nameSimple,rGDP_2024,rGDP_2024pct,debt_to_GDP
-Bangladesh,BGD,Bangladesh,5.6,0.056,39.09
+Bangladesh,BGD,Bangladesh,5.6,0.056,0.3909
 China,CHN,China,4.5,0.045,null
 "Congo, Dem. Rep.",COD,Congo DR,6.5,0.065,null
-Germany,DEU,Germany,0.9,0.009,45.95
+Germany,DEU,Germany,0.9,0.009,0.4595
 "Egypt, Arab Rep.",EGY,Egypt,3.5,0.035,null
 Ethiopia,ETH,Ethiopia,6.5,0.065,null
-United Kingdom,GBR,UK,0.6,0.006,100.75
-Indonesia,IDN,Indonesia,4.9,0.049,39.48
-India,IND,India,6.4,0.064,55.45
-"Iran, Islamic Rep.",IRN,Iran,3.7,0.037,34.01
-Japan,JPN,Japan,0.9,0.009,214.27
-Mexico,MEX,Mexico,2.6,0.026,40.86
-Nigeria,NGA,Nigeria,3.3,0.033,34.93
-Pakistan,PAK,Pakistan,1.7,0.017,75.75
+United Kingdom,GBR,UK,0.6,0.006,1.0075
+Indonesia,IDN,Indonesia,4.9,0.049,0.3948
+India,IND,India,6.4,0.064,0.5545
+"Iran, Islamic Rep.",IRN,Iran,3.7,0.037,0.3401
+Japan,JPN,Japan,0.9,0.009,2.1427
+Mexico,MEX,Mexico,2.6,0.026,0.4086
+Nigeria,NGA,Nigeria,3.3,0.033,0.3493
+Pakistan,PAK,Pakistan,1.7,0.017,0.7575
 Philippines,PHL,Philippines,5.8,0.058,null
 Russian Federation,RUS,Russia,1.3,0.013,null
-Thailand,THA,Thailand,3.2,0.032,53.56
-Turkiye,TUR,Turkey,3.1,0.031,26.88
-United States,USA,USA,1.6,0.016,110.15
-Brazil,BRA,Brazil,1.5,0.015,81.48
+Thailand,THA,Thailand,3.2,0.032,0.5356
+Turkiye,TUR,Turkey,3.1,0.031,0.2688
+United States,USA,USA,1.6,0.016,1.1015
+Brazil,BRA,Brazil,1.5,0.015,0.8148
 Vietnam,VNM,Vietnam,5.5,0.055,null
