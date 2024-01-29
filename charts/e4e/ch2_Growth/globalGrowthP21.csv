@@ -1,22 +1,22 @@
-Country Name,Country Code,nameSimple,rGDP_2024,rGDP_2024pct
-Bangladesh,BGD,Bangladesh,5.6,0.056
-China,CHN,China,4.5,0.045
-"Congo, Dem. Rep.",COD,Congo DR,6.5,0.065
-Germany,DEU,Germany,0.9,0.009
-"Egypt, Arab Rep.",EGY,Egypt,3.5,0.035
-Ethiopia,ETH,Ethiopia,6.5,0.065
-United Kingdom,GBR,UK,0.6,0.006
-Indonesia,IDN,Indonesia,4.9,0.049
-India,IND,India,6.4,0.064
-"Iran, Islamic Rep.",IRN,Iran,3.7,0.037
-Japan,JPN,Japan,0.9,0.009
-Mexico,MEX,Mexico,2.6,0.026
-Nigeria,NGA,Nigeria,3.3,0.033
-Pakistan,PAK,Pakistan,1.7,0.017
-Philippines,PHL,Philippines,5.8,0.058
-Russian Federation,RUS,Russia,1.3,0.013
-Thailand,THA,Thailand,3.2,0.032
-Turkiye,TUR,Turkey,3.1,0.031
-United States,USA,USA,1.6,0.016
-Brazil,BRA,Brazil,1.5,0.015
-Vietnam,VNM,Vietnam,5.5,0.055
+Country Name,Country Code,nameSimple,rGDP_2024,rGDP_2024pct,debt_to_GDP
+Bangladesh,BGD,Bangladesh,5.6,0.056,39.09
+China,CHN,China,4.5,0.045,null
+"Congo, Dem. Rep.",COD,Congo DR,6.5,0.065,null
+Germany,DEU,Germany,0.9,0.009,45.95
+"Egypt, Arab Rep.",EGY,Egypt,3.5,0.035,null
+Ethiopia,ETH,Ethiopia,6.5,0.065,null
+United Kingdom,GBR,UK,0.6,0.006,100.75
+Indonesia,IDN,Indonesia,4.9,0.049,39.48
+India,IND,India,6.4,0.064,55.45
+"Iran, Islamic Rep.",IRN,Iran,3.7,0.037,34.01
+Japan,JPN,Japan,0.9,0.009,214.27
+Mexico,MEX,Mexico,2.6,0.026,40.86
+Nigeria,NGA,Nigeria,3.3,0.033,34.93
+Pakistan,PAK,Pakistan,1.7,0.017,75.75
+Philippines,PHL,Philippines,5.8,0.058,null
+Russian Federation,RUS,Russia,1.3,0.013,null
+Thailand,THA,Thailand,3.2,0.032,53.56
+Turkiye,TUR,Turkey,3.1,0.031,26.88
+United States,USA,USA,1.6,0.016,110.15
+Brazil,BRA,Brazil,1.5,0.015,81.48
+Vietnam,VNM,Vietnam,5.5,0.055,null
