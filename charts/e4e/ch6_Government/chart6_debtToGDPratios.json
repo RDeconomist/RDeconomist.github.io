@@ -1,0 +1,50 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "Tufte inspired chart, with white grid lines over the bars",
+
+  "title": {
+    "text": "The world's big debtors",
+    "subtitle": ["Debt-to-GDP ratios",  "Source: IMF. Zero values indicate missing data",""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "view":{"stroke":"transparent"},
+
+  "width": 400,
+  "height": 300,
+ 
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/ch2_Growth/globalGrowthP21.csv"
+  },
+
+  
+  "mark": {
+    "type":"bar",
+    "color":"rgb(0,47,167)"},
+     
+    "encoding": {
+    
+    "x": {
+      "field": "debt_to_GDP",
+      "type": "quantitative", 
+      "title": null,
+      "axis":{
+        "zindex":1,
+        "gridColor":"white",
+        "gridWidth":0.5,
+        "labelAngle":0,
+        "tickCount":6,
+        "format":".0%"
+      }},
+    
+    "y": {
+      "field": "nameSimple",
+      "title": null,
+      "type": "nominal",
+      "sort":"-x"}
+  }
+}
