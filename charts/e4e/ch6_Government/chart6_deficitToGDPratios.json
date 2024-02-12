@@ -1,0 +1,53 @@
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "",
+
+  "title": {
+    "text": "Government accounts - large economies",
+    "subtitle": ["General Government Primary Balance",  "Source: IMF Fiscal Monitor.",""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "view":{"stroke":"transparent"},
+
+  "width": 400,
+  "height": 300,
+ 
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/ch2_Growth/globalGrowthP21.csv"
+  },
+
+  "transform": [
+    {"calculate": "datum.govBalance/100", "as": "govBal"}],
+
+  
+  "mark": {
+    "type":"bar",
+    "color":"rgb(187,0,0)"},
+     
+    "encoding": {
+    
+    "x": {
+      "field": "govBal",
+      "type": "quantitative", 
+      "title": null,
+      "axis":{
+        "zindex":1,
+        "gridColor":"white",
+        "gridWidth":0.5,
+        "labelAngle":0,
+        "tickCount":6,
+        "format":".0%"
+      }},
+    
+    "y": {
+      "field": "nameSimple",
+      "title": null,
+      "type": "nominal",
+      "sort":"-x"}
+  }
+}
