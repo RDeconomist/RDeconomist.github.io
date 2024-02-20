@@ -1,0 +1,48 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+
+    "description": "Chart that uses repeated layers to make multiple calls to an API",
+
+
+    "title": {
+      "text": "Covid-19 - cases",
+      "subtitle":"Cumulative cases. Source: Covid19API.com",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+
+
+    "height":300,
+    "width":270,
+
+    
+    "encoding": {
+      "x": {"field": "Date", "type": "temporal", "title": null, "axis": {"grid": false}},
+      "y": {"field": "Cases", "type": "quantitative", "title": null, "axis": {"grid": false}},
+      "color":{"field":"Country", "title":null, "legend":{"orient": "top-left"}}
+    },
+
+
+
+    "layer": [
+      
+      {"data": {"url": "https://api.covid19api.com/total/country/korea-south/status/confirmed"},
+      "mark": {"type":"line", "color":"red"}
+      },
+
+      {"data": {"url": "https://api.covid19api.com/total/country/japan/status/confirmed"},
+      "mark": {"type":"line", "color":"green"}
+      },
+
+      {"data": {"url": "https://api.covid19api.com/total/country/spain/status/confirmed"},
+      "mark": {"type":"line", "color":"blue"}
+      },
+
+      {"data": {"url": "https://api.covid19api.com/total/country/italy/status/confirmed"},
+      "mark": {"type":"line", "color":"red"}
+      }
+    ]
+}
