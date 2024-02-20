@@ -75,11 +75,11 @@
 
 
         <div class="grid_item">
-            <p><strong>One line - CSV linked</strong></p>
+            <p><strong>One line | CSV data</strong></p>
             <p>The simplest line chart, running from data stored in my GitHub repository.</p>
             <hr>
             <span style="display:block; height: 10px;"></span>
-            <div id="chartLine1"></div>
+            <div id="chartLine0"></div>
             <span style="display:block; height: 10px;"></span>
             <hr>
             <a class="libraryButton" href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/library/ukProdOutPerWork.csv">Data</a>
@@ -88,7 +88,7 @@
         
 
         <div class="grid_item">
-            <p><strong>One line</strong></p>
+            <p><strong>One line | API data</strong></p>
             <p>The simplest line chart, in this case running live from the new Economics Observatory API developed with Grizzly.</p>
             <hr>
             <span style="display:block; height: 10px;"></span>
@@ -531,6 +531,7 @@
 
 <script>
     // Line charts:
+    var line0 = "charts/library/chartLine0.json";
     var line1 = "charts/library/chartLine1.json";
     var line2 = "charts/library/chartLine2.json";
     var line3 = "charts/library/chartLine3.json";
@@ -595,6 +596,7 @@
    
 
     // Now embed the charts in the divs set above:
+    vegaEmbed('#chartLine0', line0, {"actions": false});   
     vegaEmbed('#chartLine1', line1, {"actions": false});   
     vegaEmbed('#chartLine2', line2, {"actions": false});
     vegaEmbed('#chartLine3', line3, {"actions": false});   
