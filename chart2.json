@@ -1,0 +1,21 @@
+ 
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text":"US vs Congo - extremes of GDP",
+    "subtitle": ["Author: Richard. Current International USD, PPP", "Source: World Bank"]},
+
+  "width": 400,
+  "height": 300,
+ 
+  "data": {"url": "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/1/s1_example_data/chart2_GDP_pc_6_countries.csv"},
+ 
+  "mark": "line",
+ 
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal", "title":null},
+    "y": {"field": "GDP pc", "type": "quantitative", "title":null},
+    "color": {"field": "Country Name", "type": "nominal"}
+  }
+}
