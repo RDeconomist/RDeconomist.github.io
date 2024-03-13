@@ -1,0 +1,52 @@
+{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text": "A pint of bitter in London, 1988-2024",
+    "subtitle":["ONS microdata",""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/ukPrices_BitterLondon.csv",
+    "format":{"type":"csv"}},
+
+  "mark": {
+    "type":"bar",
+    "color":"rgba(0,67,167,1)"
+  },
+   
+  "height": 300,
+  "width": 500,
+
+  "params": [    
+    {"name":"selectedDate", "value":2005,
+       "bind":{
+         "input": "range",
+         "min": 1988, 
+         "max": 2024, 
+         "step": 1,
+         "name": "Select year:"}
+    }],
+
+   "transform": [     
+      {"filter": "datum.year==selectedDate"}
+    ],
+  
+  "encoding": {
+    "x": {
+      "bin": {
+        "step": 0.5,
+        "extent":[0,8]
+      },
+      "field": "price",
+      "title": "price Bins"
+    },
+    
+    "y": {
+      "aggregate": "count",
+      "title": "Number of pints"}
+  }
+}
