@@ -14,7 +14,7 @@
   "width": 300, 
   "height": 300,
   
-  "data": {"url": "https://raw.githubusercontent.com/RDeconomist/prices/master/newItems.csv"},
+  "data": {"url": "https://raw.githubusercontent.com/RDeconomist/prices/master/analysis/newItems_Updated2024.csv"},
 
     "transform": [
       {"filter": {"selection": "chooseItem"}},
@@ -29,7 +29,7 @@
 "selection": {
     "chooseItem": {
       "type": "single",
-      "init": {"itemName": "Pub Meal"},
+      "init": {"itemName": "Pub meal"},
       "fields": ["itemName"],
       "bind": {
         "input": "select",
@@ -37,7 +37,7 @@
           "Cigarettes",
           "Lettuce",
           "Men's socks",
-          "Pub Meal"        
+          "Pub meal"        
         ],
         "name": "Pick an item:"
       }
