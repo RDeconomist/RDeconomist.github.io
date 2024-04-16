@@ -4,8 +4,8 @@
    "data": {"url": "https://raw.githubusercontent.com/RDeconomist/prices/master/analysis/priceChangesByDivision.csv"},
 
   "title": {
-  "text": "Price flexbility - heat map",
-  "subtitle": ["Share of prices rising and falling each month. Source: LRPD (2021)",""],
+  "text": "Price flexbility - heat maps by division",
+  "subtitle": ["Monthly share of prices rising (x) and falling (y) each month.","Source: Davies (2024)",""],
   "subtitleFontStyle":"italic",
   "subtitleFontSize":10,
   "anchor": "start",
@@ -14,8 +14,9 @@
 
 
   "mark": "rect",
-  "width": 55,
-  "height": 55,
+  
+  "width": 125,
+  "height": 125,
 
   "transform": [
     {"filter":"datum.up_sh<0.25"},
@@ -29,7 +30,7 @@
       "field": "up_sh",
       "type": "quantitative",
       "scale":{"domain":[0, 0.25]},
-      "title":"Rising prices",
+      "title":null,
       "axis":{"format":".0%"}
     },
 
@@ -38,7 +39,7 @@
       "field": "down_sh",
       "type": "quantitative",
       "scale":{"domain":[0, 0.25]},
-      "title":"Falling prices",
+      "title":null,
       "axis":{"format":".0%"}
     },
    
@@ -51,7 +52,7 @@
     "facet": {
       "field": "division_sh",
       "title":null,
-      "columns": 3}
+      "columns": 2}
 
 
   },
