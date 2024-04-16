@@ -20,13 +20,13 @@
       "opacity":1},
 
   "data": {
-     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_OECD_inflation.csv"},
+     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_OECD_inflation2.csv"},
 
  "transform": [
       {"calculate": "datum.Value/100", "as": "value"},
       {"calculate": "year(datum.TIME)", "as": "year"},
 
-      {"filter":"datum.LOCATION!='ITA'"},
+      {"filter":"datum.LOCATION!='JPN'"},
 
       {"filter": "datum.year>=minYear"},
       {"filter": "datum.year<=maxYear"}
@@ -41,11 +41,11 @@
         "step": 1,
         "name": "Start year:"}},
 
-  {"name":"maxYear", "value":2022,
+  {"name":"maxYear", "value":2024,
      "bind":{
        "input": "range",
        "min": 1969, 
-       "max": 2022, 
+       "max": 2024, 
        "step": 1,
        "name": "End year:"}
   }
