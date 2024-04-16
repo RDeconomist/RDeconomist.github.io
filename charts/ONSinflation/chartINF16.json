@@ -13,9 +13,9 @@
   },
 
 
-  "data": {
-    "url": "https://raw.githubusercontent.com/RDeconomist/prices/master/analysis/dbLatestRelease.csv"
-  },
+    "data": {
+      "url": "https://raw.githubusercontent.com/RDeconomist/prices/master/data/db_priceChangesThisMonth.csv"
+    },
 
   "height":300,
   "width":300,
@@ -40,7 +40,7 @@
     },
 
     "y": {
-      "field": "up_sh",
+      "field": "shareRising_1m",
       "type": "quantitative",
       "axis":{"grid": false},
       "scale": {"zero": false},
@@ -69,10 +69,10 @@
       },
 
     "tooltip": [
-      {"field": "item_desc", "type": "nominal", "title": "Description"},
+      {"field": "description", "type": "nominal", "title": "Description"},
       {"field": "item_id", "type": "nominal", "title": "Item ID", "format": ".0f"},
       {"field": "p", "type": "quantitative", "title": "Price (median)", "format": ".0f"},
-      {"field": "up_sh", "type": "quantitative", "title": "Share rising", "format": ",.2%"},
+      {"field": "shareRising_1m", "type": "quantitative", "title": "Share rising", "format": ",.2%"},
       {"field": "down_sh", "type": "quantitative", "title": "Share falling", "format": ",.2%"}
     ]
   }
