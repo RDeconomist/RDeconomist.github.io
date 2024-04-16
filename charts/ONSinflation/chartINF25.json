@@ -1,71 +1,73 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-   
-     "data": {"url": "https://raw.githubusercontent.com/RDeconomist/prices/master/analysis/priceChangesByDivision.csv"},
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-     "title": {
-      "text": "For fun - prices as Art",
-      "subtitle": ["",""],
+  "title": {
+      "text": "Inflation - G7 countries",
+      "subtitle": "Source: OECD",
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "anchor": "start",
-      "color": "black"
-    },
+      "color": "black"},
+
+  "width":150,
+  "height":150,
+
+  "mark":{
+      "type": "line",
+      "smooth":false,
+      "color":"rgb(0,112,192)",
+      "strokeWidth":2,
+      "opacity":1},
+
+  "data": {
+     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_OECD_inflation.csv"},
+
+ "transform": [
+      {"calculate": "datum.Value/100", "as": "value"},
+      {"calculate": "year(datum.TIME)", "as": "year"},
+
+      {"filter":"datum.LOCATION!='ITA'"},
+
+      {"filter": "datum.year>=minYear"},
+      {"filter": "datum.year<=maxYear"}
+  ],
+
+     "params": [    
+    {"name":"minYear", "value":1989,
+      "bind":{
+         "input": "range",
+        "min": 1969, 
+        "max": 2022, 
+        "step": 1,
+        "name": "Start year:"}},
+
+  {"name":"maxYear", "value":2022,
+     "bind":{
+       "input": "range",
+       "min": 1969, 
+       "max": 2022, 
+       "step": 1,
+       "name": "End year:"}
+  }
+],    
+
+ "encoding": {
     
-  
-  
-    "mark": "rect",
-    "width": 300,
-    "height": 300,
-  
-    "transform": [
-      {"filter":"datum.up_sh<0.20"},
-      {"filter":"datum.down_sh<0.20"}
-    ],
+    "x": {
+        "field": "TIME",
+        "type": "temporal",
+        "title":null},
     
-    "encoding": {
-     
-      "x": {
-        "bin": {"maxbins":10},
-        "field": "up_sh",
+    "y": {
+        "field": "value",
         "type": "quantitative",
-        "scale":{"domain":[0, 0.20]},
-        "title":"Rising prices",
-        "axis":null
-      },
-  
-      "y": {
-        "bin": {"maxbins": 10},
-        "field": "down_sh",
-        "type": "quantitative",
-        "scale":{"domain":[0, 0.20]},
-        "title":"Falling prices",
-        "axis":null
-      },
-     
-      "color": {
-        "aggregate": "count",
-        "type": "quantitative",
-        "legend":null,
-        "scale":{"scheme":"magma"}
-      },
-  
-      "Xfacet": {
-        "field": "division_sh",
         "title":null,
-        "columns": 4,
-        "header":{
-          "title":null,
-          "labelColor":"white"
-        },
-        "spacing":0}
-  
-  
-    },
-    "config": {
-      "view": {
-        "stroke": "transparent"
-      }
+        "axis":{"format":"%"}},
+    
+    "facet":{
+      "field":"LOCATION",
+      "columns": 2,
+      "title":null
     }
   }
-  
+}

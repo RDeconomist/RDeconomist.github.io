@@ -1,64 +1,68 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
- 
-   "data": {"url": "https://raw.githubusercontent.com/RDeconomist/prices/master/analysis/priceChangesByDivision.csv"},
 
-  "title": {
-  "text": "Price flexbility - heat maps by division",
-  "subtitle": ["Monthly share of prices rising (x) and falling (y) each month.","Source: Davies (2024)",""],
-  "subtitleFontStyle":"italic",
-  "subtitleFontSize":10,
-  "anchor": "start",
-  "color": "black"
-},
+  "description": "UK CPI data visualisation",
 
-
-  "mark": "rect",
-  
-  "width": 125,
-  "height": 125,
-
-  "transform": [
-    {"filter":"datum.up_sh<0.25"},
-    {"filter":"datum.down_sh<0.25"}
-  ],
-  
-  "encoding": {
-   
-    "x": {
-      "bin": {"maxbins":5},
-      "field": "up_sh",
-      "type": "quantitative",
-      "scale":{"domain":[0, 0.25]},
-      "title":null,
-      "axis":{"format":".0%"}
-    },
-
-    "y": {
-      "bin": {"maxbins": 5},
-      "field": "down_sh",
-      "type": "quantitative",
-      "scale":{"domain":[0, 0.25]},
-      "title":null,
-      "axis":{"format":".0%"}
-    },
-   
-    "color": {
-      "aggregate": "count",
-      "type": "quantitative",
-      "legend":null
-    },
-
-    "facet": {
-      "field": "division_sh",
-      "title":null,
-      "columns": 2}
-
-
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/prices/master/data/db_priceChangesThisMonth.csv"
   },
-  "config": {
-    "view": {
-      "stroke": "transparent"
-    }
+
+   "title": {
+      "text": "Explore the CPI data [hover, zoom, click legend]",
+      "subtitle": ["Price rises and falls, size of circle = median price", ""],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"},
+
+  "selection": {
+    "paintbrush": {"type": "multi", "on": "mouseover", "nearest": true},
+    "grid": {"type": "interval", "bind": "scales"},
+    "division": {"type": "multi", "fields": ["division_sh"], "bind": "legend"}
+  },
+
+  "height":300,
+  "width":300,
+
+  "mark": "circle",
+
+  "encoding": {
+    "y": {
+      "field": "meanRise_12m",
+      "type": "quantitative",
+      "scale": {"zero": false},
+      "title":"Mean 12m rise"},
+
+    "x": {
+      "field": "shareRising_12m",
+      "type": "quantitative",
+      "scale": {"zero": false},
+      "title":"Share rising"},
+
+    "color": {
+      "field": "division_sh", 
+      "type": "nominal", 
+      "title":"Division",
+      "legend":{
+        "orient": "bottom",
+        "columns":2}, 
+      "scale": {"scheme": "turbo"}},
+
+    "opacity": {
+      "condition": {"selection": "division", "value": 0.5}, "value": 0},
+
+    "size": {
+      "condition": {"selection": "paintbrush", "value": 800},
+      "field": "n_obs", "type": "nominal", "legend":null},
+
+    "tooltip": [
+      {"field": "name5", "type": "nominal", "title": "Item"},
+      {"field": "description", "type": "nominal", "title": "ONS name"},
+      {"field": "date_quote_s", "type": "quantitative", "title": "Start", "format": ".0f"},
+      {"field": "date_quote_e", "type": "quantitative", "title": "End", "format": ".0f"},
+      {"field": "p_med", "type": "quantitative", "title": "Median price (£)", "format": ".2f"},
+      {"field": "change1_sh", "type": "quantitative", "title": "Price changes", "format": ".0%"},
+      {"field": "n_obs", "type": "quantitative", "title": "Observations", "format":","}        
+    ]
   }
 }
