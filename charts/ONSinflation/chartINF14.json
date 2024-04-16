@@ -30,7 +30,9 @@
       },
 
   "transform": [
-    {"filter":"datum.downRank12<21"}
+    {"filter":"datum.downRank12<21"},
+    {"filter":"datum.downRank12>0"}
+
   ],
 
   "mark":{
@@ -81,7 +83,8 @@
     "tooltip": [
       {"field": "description", "type": "nominal", "title": "Description"},
       {"field": "p", "type": "quantitative", "title": "Price (median)", "format": ".0f"},
-      {"field": "down_ch12", "type": "quantitative", "title": "Median increase", "format": ",.0%"}
+      {"field": "down_ch12", "type": "quantitative", "title": "Median increase", "format": ",.0%"},
+      {"field": "downRank12", "type": "quantitative", "title": "Down Rank"}
     ]
 }
 }
