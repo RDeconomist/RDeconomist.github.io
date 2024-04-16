@@ -4,7 +4,7 @@
   "description": "UK CPI data visualisation",
 
   "title": {
-    "text": "This month - top fallers by size",
+    "text": "This month - top fallers",
     "subtitle": "Hover for item detail. Bubble size based on median price",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
@@ -19,33 +19,33 @@
 
 
   "data": {
-    "url": "https://raw.githubusercontent.com/RDeconomist/prices/master/data/db_priceChangesThisMonth.csv"
+    "url": "https://raw.githubusercontent.com/RDeconomist/prices/master/analysis/dbLatestRelease.csv"
   },
 
-  "height":300,
+  "height":400,
   "width":300,
 
-  "Xselection": {
+  "selection": {
       "paintbrush": {"type": "multi", "on": "mouseover", "nearest": true}
       },
 
   "transform": [
-    {"filter":"datum.downRank12<21"}
+    {"calculate":"datum.down_sh*(-1)", "as": "down"},
+    {"filter":"datum.downRank>550"}
   ],
 
   "mark":{
-      "type":"point",
+      "type":"circle",
       "opacity":0.8,
       "XYZcolor":"#f4a245",
-      "XXsize":60
+      "size":60
   },
 
   "encoding": {
     
     "y": {
-        "field": "description",
-        "sort":"-x",
-        "type": "nominal",
+        "field": "downRank",
+        "type": "quantitative",
         "axis":{
           "grid": false,
           "labels":false},
@@ -53,35 +53,36 @@
         "title": null},
 
     "x": {
-      "field": "down_ch12",
+      "field": "down_sh",
       "type": "quantitative",
       "axis":{
         "grid": false,
         "format":",.0%"},
       "scale": {"zero": true},
-      "title": "Median price rise"},
+      "title": "Share of prices falling"},
 
-    "size": {
+       "size": {
       "field": "p",
       "type": "quantitative",
       "title": "Price",
-      "legend": null,
-      "Xlegend":{"orient": "bottom-right"}
+      "legend":{"orient": "bottom-left"}
       },
 
       "color":{
-        "field": "division_sh",
+        "field": "name1",
         "type": "ordinal",
         "title": "Item type",
-        "legend":{"orient": "bottom-left"},
+        "legend":{"orient": "top-left"},
         "scale": {"scheme": "set1"}
       },
 
 
     "tooltip": [
-      {"field": "description", "type": "nominal", "title": "Description"},
+      {"field": "item_desc", "type": "nominal", "title": "Description"},
       {"field": "p", "type": "quantitative", "title": "Price (median)", "format": ".0f"},
-      {"field": "down_ch12", "type": "quantitative", "title": "Median increase", "format": ",.0%"}
+      {"field": "up_sh", "type": "quantitative", "title": "Share rising", "format": ",.2%"},
+      {"field": "down_sh", "type": "quantitative", "title": "Share falling", "format": ",.2%"},
+      {"field": "downRank", "type": "quantitative", "title": "Down Rank", "format": ".0f"}
     ]
 }
-}
+} 
