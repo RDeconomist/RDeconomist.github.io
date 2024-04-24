@@ -1,0 +1,53 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json",
+
+  "description": "Number of households in temporary accommodation. Quarterly data from 1998 Q1 until 2023 Q3.",
+
+  "height": 250,
+  "width": 300,
+
+  "view": {"stroke": "transparent"},
+  
+  "data": {
+     "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Article%20Charts/data/UK_DLUHC_tempHousing.csv"},
+
+   "selection": {
+     "region": {"type": "multi", "fields": ["Type"], "bind": "legend"}
+   },
+     
+    
+  "mark": {"type": "area"},
+
+      "encoding": {
+        
+        "color": {
+          "field": "Type",
+          "type": "nominal",
+          "scale": {"scheme": "magma"},
+          "legend": {
+            "title": "Type of Temporary Accommodation",
+            "orient": "bottom",
+            "columns": 1,
+            "labelLimit": 0,
+            "titleLimit": 0,
+            "labelFontSize": 10}},
+
+        "x": {
+          "field": "Date", "type": "temporal",
+          "axis": {"grid": false, "title": null}},
+        
+        "y": {
+          "field": "Households",
+          "type": "quantitative",
+          "axis": {
+            "gridDash": [1, 5],
+            "titleAngle": 0,
+            "titleAlign": "left",
+            "titleFontStyle": "italic",
+            "titleY": -10
+          }
+        },
+
+        "opacity": {"condition": {"selection": "region", "value": 1}, "value": 0.1}   
+      }
+    }

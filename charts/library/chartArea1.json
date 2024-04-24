@@ -1,53 +1,58 @@
-{
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.16.3.json",
+{"$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-  "description": "Number of households in temporary accommodation. Quarterly data from 1998 Q1 until 2023 Q3.",
+  "title": {
+    "text": "Has debt finally stopped rising?",
+    "subtitle": ["Global total debt outstanding, by sector. Source: IMF",""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
 
-  "height": 250,
+  "view": {"stroke":"transparent"},
+
   "width": 300,
+  "height": 300,
 
-  "view": {"stroke": "transparent"},
   
   "data": {
-     "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Article%20Charts/data/UK_DLUHC_tempHousing.csv"},
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/e4e/Global_IMF_Debt.csv"
+  },
 
-   "selection": {
-     "region": {"type": "multi", "fields": ["Type"], "bind": "legend"}
-   },
+  "transform": [
+    {"fold":["hh", "nfc", "gov"], "as": ["var", "val"]}
+  ],
+  
+  "mark": {"type":"area"},
      
+  "encoding": {
     
-  "mark": {"type": "area"},
-
-      "encoding": {
-        
-        "color": {
-          "field": "Type",
-          "type": "nominal",
-          "scale": {"scheme": "magma"},
-          "legend": {
-            "title": "Type of Temporary Accommodation",
-            "orient": "bottom",
-            "columns": 1,
-            "labelLimit": 0,
-            "titleLimit": 0,
-            "labelFontSize": 10}},
-
-        "x": {
-          "field": "Date", "type": "temporal",
-          "axis": {"grid": false, "title": null}},
-        
-        "y": {
-          "field": "Households",
-          "type": "quantitative",
-          "axis": {
-            "gridDash": [1, 5],
-            "titleAngle": 0,
-            "titleAlign": "left",
-            "titleFontStyle": "italic",
-            "titleY": -10
-          }
-        },
-
-        "opacity": {"condition": {"selection": "region", "value": 1}, "value": 0.1}   
-      }
+    "x": {
+      "field": "year",
+      "type": "temporal", 
+      "title": null,
+      "axis":{"grid": false}},
+    
+    "y": {
+      "field": "val",
+      "title": null,
+      "type": "quantitative",
+      "axis":{
+        "format":".0%",
+        "gridColor":"lightgray",
+        "zindex": 0,
+        "gridWidth":0.5}
+    },
+    
+    "color": {
+      "field": "var",
+      "type": "nominal",
+      "legend": {
+        "orient": "top-left",
+        "columns":1,
+        "labelExpr": "{'hh':'Households','gov':'Governments','nfc':'Companies'}[datum.label]"},
+      "scale": {"scheme": "inferno"},
+      "title": null
     }
+  }
+}
