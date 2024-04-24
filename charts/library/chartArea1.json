@@ -51,7 +51,7 @@
         "orient": "top-left",
         "columns":1,
         "labelExpr": "{'hh':'Households','gov':'Governments','nfc':'Companies'}[datum.label]"},
-      "scale": {"scheme": "inferno"},
+      "scale": {"scheme": "viridis"},
       "title": null
     }
   }
