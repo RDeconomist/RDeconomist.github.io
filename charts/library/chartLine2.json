@@ -2,45 +2,55 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
   "title": {
-    "text": "Cases: UK nations",
-    "subtitle":"New cases by publish date, rolling rate",
-    "subtitleFontStyle":"italic",
-    "subtitleFontSize":10,
-    "anchor": "start",
-    "color": "black"},
+      "text": "Inflation - four G7 countries",
+      "subtitle": ["Source: OECD",""],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"},
 
-  
+  "width":400,
+  "height":400,
+
+  "mark":{
+      "type": "line",
+      "smooth":false,
+      "strokeWidth":2,
+      "opacity":1},
+
+
   "data": {
-    "url": "https://api.coronavirus.data.gov.uk/v2/data?areaType=nation&metric=newCasesBySpecimenDateRollingRate&format=csv",
-    "format": {"type": "csv"}
-  },
- 
-  "height": 300,
-  "width": 300,
- 
-  "mark": {"type": "line", "point": false},
-  
-  "encoding": {
+     "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_OECD_inflation2.csv"},
+
+
+ "transform": [
+      {"calculate": "datum.Value/100", "as": "valueToUse"},
+      {"calculate": "year(datum.TIME)", "as": "year"},
+
+      {"filter":"datum.LOCATION!='JPN'"},
+      {"filter":"datum.LOCATION!='CAN'"},
+      {"filter":"datum.LOCATION!='ITA'"},
+
+      {"filter":"datum.year >1999"}
+  ],
+
+ "encoding": {
     
     "x": {
-      "field": "date",
-      "type": "temporal",
-      "title": null,
-      "axis": {"grid": false}},
- 
+        "field": "TIME",
+        "type": "temporal",
+        "title":null},
+    
     "y": {
-      "field": "newCasesBySpecimenDateRollingRate",
-      "type": "quantitative",
-      "title": null,
-      "axis": {"grid": false}},
-
-    "color": {
-      "field": "areaName",
-      "type": "nominal",
-      "scale": {"scheme": "set1"},
-      "title": null,
+        "field": "valueToUse",
+        "type": "quantitative",
+        "title":null,
+        "axis":{"format":"%"}},
+    
+    "color":{
+      "field":"Country",
+      "title":null,
       "legend": {"orient": "top-left"}
- 
-   }
-}
+    }
+  }
 }
