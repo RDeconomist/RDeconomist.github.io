@@ -10,8 +10,12 @@
   
   "data": {
      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/Article%20Charts/data/UK_DLUHC_tempHousing.csv"},
-  
-  
+
+   "selection": {
+     "region": {"type": "multi", "fields": ["Type"], "bind": "legend"}
+   },
+     
+    
   "mark": {"type": "area"},
 
       "encoding": {
@@ -42,6 +46,8 @@
             "titleFontStyle": "italic",
             "titleY": -10
           }
-        }
+        },
+
+        "opacity": {"condition": {"selection": "region", "value": 1}, "value": 0.1}   
       }
     }
