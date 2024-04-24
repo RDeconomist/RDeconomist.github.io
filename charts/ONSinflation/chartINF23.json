@@ -16,8 +16,11 @@
       "color": "black"},
 
   "selection": {
+    
     "paintbrush": {"type": "multi", "on": "mouseover", "nearest": true},
+    
     "grid": {"type": "interval", "bind": "scales"},
+    
     "division": {"type": "multi", "fields": ["division_sh"], "bind": "legend"}
   },
 
@@ -43,26 +46,21 @@
       "field": "division_sh", 
       "type": "nominal", 
       "title":"Division",
-      "legend":{
-        "orient": "bottom",
-        "columns":2}, 
+      "legend":{"orient": "bottom","columns":2}, 
       "scale": {"scheme": "turbo"}},
 
     "opacity": {
-      "condition": {"selection": "division", "value": 0.5}, "value": 0},
+      "condition": {"param": "division", "value": 0.5}, "value": 0},
 
     "size": {
-      "condition": {"selection": "paintbrush", "value": 800},
+      "condition": {"param": "paintbrush", "value": 800},
       "field": "n_obs", "type": "nominal", "legend":null},
 
     "tooltip": [
-      {"field": "name5", "type": "nominal", "title": "Item"},
-      {"field": "description", "type": "nominal", "title": "ONS name"},
-      {"field": "date_quote_s", "type": "quantitative", "title": "Start", "format": ".0f"},
-      {"field": "date_quote_e", "type": "quantitative", "title": "End", "format": ".0f"},
-      {"field": "p_med", "type": "quantitative", "title": "Median price (£)", "format": ".2f"},
-      {"field": "change1_sh", "type": "quantitative", "title": "Price changes", "format": ".0%"},
-      {"field": "n_obs", "type": "quantitative", "title": "Observations", "format":","}        
-    ]
+      {"field": "description", "type": "nominal", "title": "Item"},
+      {"field": "division_sh", "type": "nominal", "title": "Type"},
+      {"field": "meanRise_12m", "type": "quantitative", "title": "Mean price rise", "format": ".0%"},
+      {"field": "shareRising_12m", "type": "quantitative", "title": "Share rising", "format": ".0%"}
+      ]
   }
 }
