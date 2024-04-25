@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
     "title": {
-      "text": "Pub meals in the UK - prices",
+      "text": "The price of a pub meal - UK",
       "subtitle":["Colours set by decile for the 10th to 90th deciles. Source: Davies (2024)", ""],
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
