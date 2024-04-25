@@ -1,0 +1,39 @@
+{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text": "A pint of bitter in London, 1988-2024",
+    "subtitle":["ONS microdata. Source: Davies (2024)", ""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/ukPrices_BitterLondon.csv",
+    "format":{"type":"csv"}},
+
+  "mark": {
+    "type":"circle",
+    "size":50,
+    "color":"rgb(0,67,167)",
+    "opacity":0.02},
+  
+  "height": 300,
+  "width": 300,
+
+  "encoding": {
+
+    "x": {
+      "field": "year", 
+      "type": "temporal",
+      "title":null
+      },
+
+    "y": {
+      "field": "price", 
+      "type": "quantitative",
+      "title":null
+      }
+   }
+}
