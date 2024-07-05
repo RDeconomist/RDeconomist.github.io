@@ -1,0 +1,104 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.18.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/LAD_Debt/LADs_2023.geojson",
+    "format": {"type": "json", "property": "features"}
+  },
+  "height": 600,
+  "width": 400,
+  "config": {"view": {"strokeOpacity": 0}},
+
+  "title": {
+    "text": "Population Change",
+    "subtitleFontWeight": "normal",
+    "fontSize": 16,
+    "subtitleFontSize": 13,
+    "dx": 50,
+    "subtitle": ["10-year growth by Local Authority, 2011-21", ""]
+  },
+
+  "transform": [
+    {
+      "lookup": "properties.LAD23CD",
+      "from": {
+        "fields": ["ONS code", "Assets", "Borrowing", "DebtToAssets", "DebtToPop", "Name", "PopulationChange", "Population", "YouthPopulation"],
+        "data": {
+          "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/LAD_Debt/cleanedFinanceData_2023_lads.csv"
+        },
+        "key": "ONS code"
+      }
+    },
+    {
+      "filter": "datum.properties.LAD23NM != 'Shetland Islands'"
+    }
+  ],
+  "projection": {"type": "identity", "reflectY": true},
+  "layer": [
+      {
+          "mark": {
+              "type": "geoshape",
+              "stroke": "#fff"
+          },
+          "encoding": {
+              "color": {
+                  "value": "lightgray"
+              },
+              "tooltip": [
+                  {
+                      "field": "properties.LAD23NM",
+                      "title": "Local Authority",
+                      "type": "nominal"
+                  }
+              ]
+          }
+      },
+      {
+          "mark": {
+              "type": "geoshape"
+          },
+          "encoding": {
+              "color": {
+                  "field": "PopulationChange",
+                  "type": "quantitative",
+                  "scale": {
+                    "scheme": "redyellowgreen"
+                  },
+                  "legend": {
+                    "format": "%"
+                  }
+              },
+              "tooltip": [
+                  {
+                      "field": "properties.LAD23NM",
+                      "title": "Local Authority",
+                      "type": "nominal"
+                  },
+                  {
+                      "field": "DebtToPop",
+                      "format": ".2f",
+                      "title": "Debt to Population Ratio",
+                      "type": "quantitative"
+                  },
+                  {
+                      "field": "Population",
+                      "format": ",",
+                      "title": "Population (2021)",
+                      "type": "quantitative"
+                  },
+                  {
+                      "field": "PopulationChange",
+                      "format": ".1%",
+                      "title": "Population \u0394 (2011-21)",
+                      "type": "quantitative"
+                  },
+                  {
+                      "field": "YouthPopulation",
+                      "format": ",",
+                      "title": "Youth Population (18-24yrs)",
+                      "type": "nominal"
+                  }
+              ]
+          }
+      }
+  ]
+}
