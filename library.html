@@ -35,7 +35,7 @@
     <link rel="apple-touch-icon" href="images/favicon.png" />
     
     <!--Title - this is the bit that comes up in the tab-->
-    <title>Rapid Prices</title>
+    <title>Chart Library</title>
     
     <!--Main Stylesheet-->
     <link rel="stylesheet" href="css/main2.css">
@@ -425,7 +425,7 @@
     <div class="grid_items">
         
         <div class="grid_item">
-            <p><strong>Basic scatter</strong></p>
+            <p><strong>Basic scatter | 2 variables</strong></p>
             <p>The simplest scatter plot</p>
             <hr>
             <span style="display:block; height: 10px;"></span>
@@ -438,8 +438,8 @@
         </div>
     
         <div class="grid_item">
-            <p><strong>Basic scatter</strong></p>
-            <p>The simplest scatter plot</p>
+            <p><strong>Scatter | 3 variables</strong></p>
+            <p>This scatter adds a colour encoding.</p>
             <hr>
             <span style="display:block; height: 10px;"></span>
             <div id="chartScatter2"></div>
@@ -451,8 +451,8 @@
         </div>
     
         <div class="grid_item">
-            <p><strong>Bubble: x, y, colour, size.</strong></p>
-            <p>The simplest scatter plot</p>
+            <p><strong>Bubble | 4 variables</strong></p>
+            <p>This verison uses x and y coordinates, colour and size</p>
             <hr>
             <span style="display:block; height: 10px;"></span>
             <div id="chartScatter3"></div>
@@ -464,7 +464,7 @@
         </div>
     
         <div class="grid_item">
-            <p><strong>Scatter: Five variables.</strong></p>
+            <p><strong>Scatter: 5 variables.</strong></p>
             <p>This chart takes variables to the extreme: there is probably too much going on here for it to be useful, but worth knowing it is possible.</p>
             <hr>
             <span style="display:block; height: 10px;"></span>
@@ -494,11 +494,24 @@
             <p>This chart is interactive. Click on the legend to isolate items of interest. Zoom in and out of crowded areas to inspect the data.</p>
             <hr>
             <span style="display:block; height: 10px;"></span>
-            <div id="chartScatter5"></div>
+            <div id="chartScatter6"></div>
             <span style="display:block; height: 10px;"></span>
             <hr> 
             <a class="libraryButton" href="https://github.com/RDeconomist/prices/blob/master/analysis/db_priceChangesByProductAnnualLatestYear.csv">Data</a>
             <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartScatter6.json">Code</a>
+            <a class="libraryButton" href="prices">Dashboard</a>             
+        </div>
+
+        <div class="grid_item">
+            <p><strong>UK prices: distributions.</strong></p>
+            <p>Scatter charts are one way of showing distributions. They key here is to use the opacity setting to give a sense of density.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartScatter7"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/data/ukPrices_BitterLondon.csv">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartScatter7.json">Code</a>
             <a class="libraryButton" href="prices">Dashboard</a>             
         </div>
     
@@ -539,6 +552,50 @@
             <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartArea2.json">Code</a>
                          
         </div>
+
+        <div class="grid_item">
+            <p><strong>Area | Distributions</strong></p>
+            <p>Swathe charts are a type of area chart with the first series set to have the same colour as the background.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartArea3"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://raw.githubusercontent.com/RDeconomist/prices/master/analysis/newItems_Updated2024.csv">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartArea3.json">Code</a>
+                         
+        </div>
+
+        <div class="grid_item">
+            <p><strong>Area | Interactive distributions</strong></p>
+            <p>This version includes an interactive filter, allowing the user to pick which data series they would like to plot. </p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartArea4"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://raw.githubusercontent.com/RDeconomist/prices/master/analysis/newItems_Updated2024.csv">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartArea4.json">Code</a>
+                         
+        </div>
+
+        <div class="grid_item">
+            <p><strong>Area | Dark Mode | Facet</strong></p>
+            <p>This spec also includes a filter you can adjust to select series. Colours are chosed for a web site that is using "dark mode". </p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartArea5"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://raw.githubusercontent.com/RDeconomist/prices/master/analysis/db_percentilesPerennials.csv">Data</a>
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartArea5.json">Code</a>
+                         
+        </div>
+
+
+
+
+
     </div>
 
 
@@ -588,6 +645,9 @@
     var scatter3 = "charts/library/chartScatter3.json";
     var scatter4 = "charts/library/chartScatter4.json";
     var scatter5 = "charts/library/chartScatter5.json";
+    var scatter6 = "charts/library/chartScatter6.json";
+    var scatter7 = "charts/library/chartScatter7.json";
+    var scatter8 = "charts/library/chartScatter8.json";
 
 
     // Area charts:
@@ -705,14 +765,14 @@
               <div class="column">
                     <h3>Resources</h3>
                     <ul>
-                        <li><a href="https://nuggetcharts.com/stream">Nugget</a></li>
-                        <li><a href="datascience">Course</a></li>
+                        <li><a href="#">Nugget</a></li>
+                        <li><a href="#">Course</a></li>
                     </ul>
               </div>
               </div>
                 
                 <div class="footer-finalrow">
-                    <h3>Rapid Charts</h3>
+                    <h3>Chart library</h3>
                     <p>Automated and interactive data analysis.</p>                    </div>
                 
                 <div class="col item social">
@@ -723,7 +783,7 @@
                 </div>
             
               </div>
-            <p class="copyright">Richard Davies © 2021</p>
+            <p class="copyright">Richard Davies © 2024</p>
       </footer>          
 </div>
 <!--/////////////////////////////////////END SECTION - SAME ALL PAGES//////////////////////////-->

@@ -1,0 +1,48 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "title": {
+      "text": "The price of a pub meal - UK",
+      "subtitle":["Colours set by decile for the 10th to 90th deciles. Source: Davies (2024)", ""],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "subtitlePadding":5,
+      "anchor": "start",
+      "color": "black"
+    },
+    
+    "width": 300, 
+    "height": 300,
+    
+    "data": {"url": "https://raw.githubusercontent.com/RDeconomist/prices/master/analysis/newItems_Updated2024.csv"},
+  
+      "transform": [
+        {"filter": "datum.itemName=='Pub meal'"}],
+  
+    "mark": {
+      "type":"area",
+      "orient":"vertical",
+      "opacity": 0.7
+    },
+    
+    "encoding": {  
+      "x": {
+        "field": "newDate",
+        "type": "temporal",
+        "title": null
+      },
+      "y": {
+        "aggregate":"sum",
+        "field": "p",
+        "type": "quantitative",
+        "title":null
+      },
+      "color": {
+        "legend":null,
+        "field": "price",
+        "scale": {"range": [null, "#D9D9F3", "#00BFFF", "#0276FD", "#000080", "#000080", "#0276FD", "#00BFFF", "#D9D9F3" ]}
+      },
+      "order": {"field": "price"}
+    }
+  }
+  
