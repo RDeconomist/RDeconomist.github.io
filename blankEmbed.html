@@ -1,0 +1,13 @@
+<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+<div class="grid_item" id="chart1" style="border: 1px solid; border-radius:10px; border-color:rgb(230, 230, 230);
+  left: 50%;
+  transform: translate(-50%, -0%);">
+</div>
+
+<script>
+    var UK5 = "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/maps/UK5.json";
+    vegaEmbed('#chart1', UK5, {"actions": false});
+</script>
