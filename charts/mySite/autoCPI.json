@@ -1,0 +1,133 @@
+{
+  "config": {
+    "mark": {"line": {"interpolate": "linear"}},
+    "view": {"stroke": "transparent", "width": 400, "height": 300},
+    "range": {
+      "category": [
+        "#179fdb",
+        "#e6224b",
+        "#f4c245",
+        "#122b39",
+        "#eb5c2e",
+        "#36b7b4"
+      ],
+      "diverging": ["#E6224B", "#E54753", "#C9C9C9", "#179FDB", "#122B39"],
+      "heatmap": ["#C9C9C9", "#179FDB", "#0063AF", "#122B39"],
+      "ordinal": ["#00A767", "#36B7B4", "#179FDB", "#0063AF", "#243B5A"]
+    },
+    "axisX": {
+      "labelColor": "#122b39",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "domainOpacity": 0.5,
+      "gridOpacity": 0,
+      "labelAngle": 0,
+      "labelAlign": "center",
+      "labelFontSize": 9,
+      "labelPadding": 5,
+      "tickCount": 10,
+      "tickSize": 0,
+      "title": ""
+    },
+    "axisY": {
+      "labelColor": "#122b39",
+      "tickColor": "#122b39",
+      "domainColor": "#122b39",
+      "gridColor": "#122b39",
+      "gridDash": [1, 5],
+      "gridOpacity": 0.5,
+      "labelPadding": 5,
+      "labelFontSize": 9,
+      "domainOpacity": 0.5,
+      "tickSize": 0,
+      "title": null,
+      "titleAlign": "left",
+      "titleAngle": 0,
+      "titleBaseline": "bottom",
+      "titleColor": "#122b39",
+      "titleOpacity": 0.9,
+      "titleX": 0,
+      "titleY": -7
+    }
+  },
+  "data": {"name": "data-f73ba7610c3dd5a535d7d6deb3549335"},
+  "mark": {"type": "bar"},
+  "encoding": {
+    "color": {
+      "field": "type",
+      "legend": {
+        "legendX": 0,
+        "legendY": -10,
+        "titleAnchor": "start",
+        "titleOrient": "left",
+        "orient": "top",
+        "title": "Index Type",
+        "values": ["AutoCPI", "ONS"]
+      },
+      "scale": {"domain": ["ONS", "AutoCPI"], "range": ["#122b39", "#e6224b"]},
+      "type": "nominal"
+    },
+    "column": {
+      "field": "date",
+      "header": {
+        "format": "%b %Y",
+        "labelFontWeight": "bold",
+        "labelPadding": 5,
+        "orient": "top",
+        "title": null
+      },
+      "type": "temporal"
+    },
+    "order": {"field": "date", "sort": "ascending", "type": "temporal"},
+    "x": {"field": "type", "type": "nominal"},
+    "y": {"axis": {"format": "%"}, "field": "value", "type": "quantitative"}
+  },
+  "width": 60,
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.8.0.json",
+  "datasets": {
+    "data-f73ba7610c3dd5a535d7d6deb3549335": [
+      {"date": "2023-09-01T00:00:00", "type": "ONS", "value": -0.002},
+      {"date": "2023-10-01T00:00:00", "type": "ONS", "value": 0.001},
+      {"date": "2023-11-01T00:00:00", "type": "ONS", "value": 0.003},
+      {"date": "2023-12-01T00:00:00", "type": "ONS", "value": 0.005},
+      {"date": "2024-01-01T00:00:00", "type": "ONS", "value": -0.004},
+      {"date": "2024-02-01T00:00:00", "type": "ONS", "value": 0.002},
+      {"date": "2024-03-01T00:00:00", "type": "ONS", "value": 0.002},
+      {
+        "date": "2023-09-01T00:00:00",
+        "type": "AutoCPI",
+        "value": -0.002665948831169551
+      },
+      {
+        "date": "2023-10-01T00:00:00",
+        "type": "AutoCPI",
+        "value": 0.0036117523037606514
+      },
+      {
+        "date": "2023-11-01T00:00:00",
+        "type": "AutoCPI",
+        "value": 0.0018300331492762112
+      },
+      {
+        "date": "2023-12-01T00:00:00",
+        "type": "AutoCPI",
+        "value": 0.0034663342584184687
+      },
+      {
+        "date": "2024-01-01T00:00:00",
+        "type": "AutoCPI",
+        "value": -0.002601558696804007
+      },
+      {
+        "date": "2024-02-01T00:00:00",
+        "type": "AutoCPI",
+        "value": 0.0015566864079357146
+      },
+      {
+        "date": "2024-03-01T00:00:00",
+        "type": "AutoCPI",
+        "value": 0.0028906108604123126
+      }
+    ]
+  }
+}
