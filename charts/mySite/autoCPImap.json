@@ -1,0 +1,74 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 650,
+    "height": 350,
+    "data": {
+      "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch1_GDP/data/chart1_4_world_map_gdp_world_countries.geojson",
+      "format": {"property": "features"}
+    },
+    "config": {"view": {"stroke": null}, "padding": 0},
+    "projection": {
+      "type": "naturalEarth1",
+      "translate": [285, 205],
+      "scale": 145
+    },
+    "layer": [
+      {
+        "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.3},
+        "encoding": {
+          "color": {
+            "condition": {"value": "lightgrey", "test": "!datum['Count']"},
+            "field": "ShareTotal",
+            "legend": {
+              "title": "Share of products by identified origin",
+              "titleAnchor": "middle",
+              "titleFontSize": 12,
+              "titleLimit": 1000,
+              "direction": "horizontal",
+              "format": "%",
+              "fillColor": null,
+              "orient": "none",
+              "gradientLength": 300,
+              "labelFontSize": 11,
+              "legendY": 320,
+              "legendX": 170
+            },
+            "type": "quantitative",
+            "scale": {"type": "linear", "scheme": "viridis", "reverse": true}
+          },
+          "tooltip": [
+            {"field": "properties.COUNTRY", "title": "Country"},
+            {"field": "Count", "title": "", "format": "d"},
+            {"field": "ShareImport", "title": "Import Share", "format": ".2%"}
+          ]
+        },
+        "transform": [
+          {"filter": "datum['properties.COUNTRY'] != 'United Kingdom'"}
+        ]
+      },
+      {
+        "mark": {
+          "type": "geoshape",
+          "stroke": "white",
+          "strokeWidth": 0.3,
+          "color": "#999999"
+        },
+        "transform": [
+          {"filter": "datum['properties.COUNTRY'] == 'United Kingdom'"}
+        ]
+      }
+    ],
+    "transform": [
+      {
+        "lookup": "properties.ISO3",
+        "from": {
+          "key": "ISO3",
+          "fields": ["Group", "Count", "ShareTotal", "ShareImport"],
+          "data": {
+            "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/prices/data/item_origin_country_counts.csv"
+          }
+        }
+      },
+      {"filter": "datum['properties.COUNTRY'] != 'Antarctica'"}
+    ]
+  }
