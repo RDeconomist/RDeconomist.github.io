@@ -3,7 +3,7 @@
  
   "title": {
       "text": "Debt Interest Payments - UK",
-      "subtitle":["Payments, billions. [Forecast from 2016]",""],
+      "subtitle":["Payments, % of GDP. [Forecast from 2016]",""],
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
       "subtitleColor":"black",
