@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 650,
-    "height": 350,
+    "width": 400,
+    "height": 300,
     "data": {
       "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/main/e4e/ch1_GDP/data/chart1_4_world_map_gdp_world_countries.geojson",
       "format": {"property": "features"}
@@ -9,8 +9,8 @@
     "config": {"view": {"stroke": null}, "padding": 0},
     "projection": {
       "type": "naturalEarth1",
-      "translate": [285, 205],
-      "scale": 145
+      "translate": [200, 140],
+      "scale": 90
     },
     "layer": [
       {
@@ -30,8 +30,8 @@
               "orient": "none",
               "gradientLength": 300,
               "labelFontSize": 11,
-              "legendY": 320,
-              "legendX": 170
+              "legendY": 240,
+              "legendX": 50
             },
             "type": "quantitative",
             "scale": {"type": "linear", "scheme": "viridis", "reverse": true}
