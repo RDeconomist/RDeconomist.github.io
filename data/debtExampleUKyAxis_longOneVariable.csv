@@ -1,0 +1,11 @@
+Year,Value,Variable,Type
+2014,36.2,debtInterest_bn,Actual
+2015,33,debtInterest_bn,Actual
+2016,33.4,debtInterest_bn,Actual
+2017,33.5,debtInterest_bn,Actual
+2018,40.9,debtInterest_bn,Forecast
+2019,39.8,debtInterest_bn,Forecast
+2020,39.9,debtInterest_bn,Forecast
+2021,40.4,debtInterest_bn,Forecast
+2022,42.2,debtInterest_bn,Forecast
+2023,44.3,debtInterest_bn,Forecast
