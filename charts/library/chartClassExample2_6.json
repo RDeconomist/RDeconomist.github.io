@@ -1,0 +1,53 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+   
+    "title": {
+        "text": "Debt Interest Payments - UK",
+        "subtitle":["Payments, billions",""],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "subtitleColor":"black",
+        "anchor": "start",
+        "color": "black"},
+  
+     "data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/refs/heads/main/data/debtExampleUKyAxis_long.csv"},
+   
+    "mark": {
+      "type":"bar",
+      "clip":true,
+      "color":"rgba(128,0,0,.8)",
+      "size":20},
+  
+    "height":60,
+    "width":300,
+   
+    "encoding": {
+      "x": {
+        "field": "Year", 
+        "type": "temporal",
+        "axis": {"title": null,"grid": false}
+        },
+  
+      "y": {
+        "field": "Value", 
+        "type": "quantitative",
+        "axis": {
+          "title": null,
+          "grid": false}
+        },
+      
+      "facet": {
+        "field":"Variable",
+        "columns": 1,
+        "title":null
+      },
+      
+      "color": {
+        "field": "Type", 
+        "type": "nominal",
+        "scale":{"range":["rgb(224, 17, 43)", "rgb(128, 0, 0)"]}
+       }
+   },
+  
+      "resolve": {"scale": {"y": "independent"}}
+}

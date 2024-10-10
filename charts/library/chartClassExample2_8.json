@@ -1,0 +1,64 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+   
+    "title": {
+        "text": "Debt Interest Payments - UK",
+        "subtitle":["Various measures",""],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "middle",
+        "color": "black"},
+   
+     "data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/refs/heads/main/data/debtExampleUKyAxis_long.csv"},
+
+    "selection": {
+      "chooseItem": {
+        "type": "single",
+        "init": {"itemName": "GDP_bn"},
+        "fields": ["Variable"],
+        "bind": {
+          "input": "select",
+          "options": [
+          "DebtInterestToGDP",
+          "GDP_bn",
+          "debtInterest_bn"],
+        "name": "Pick a Variable:"
+      }
+    }
+  },
+
+     "transform": [
+      {"filter": {"selection": "chooseItem"}}
+      ],
+   
+    "mark": {
+      "type":"bar",
+      "clip":true,
+      "color":"rgba(128,0,0,.8)",
+      "size":20},
+  
+    "height":270,
+    "width":300,
+   
+    "encoding": {
+      "x": {
+        "field": "Year", 
+        "type": "temporal",
+        "axis": {"title": null,"grid": false}
+        },
+  
+      "y": {
+        "field": "Value", 
+        "type": "quantitative",
+        "axis": {
+          "title": null,
+          "grid": false}
+        },
+      
+      "color": {
+        "field": "Type", 
+        "type": "nominal",
+        "scale":{"range":["rgb(224, 17, 43)", "rgb(128, 0, 0)"]}
+       }
+   }
+}
