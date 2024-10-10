@@ -54,7 +54,7 @@
       "field": "Type",
       "type": "nominal",
       "legend": {"title": "", "orient": "top"},
-      "scale": {"range": ["rgb(224, 17, 43)", "rgb(128, 0, 0)"]}
+      "scale": {"range": ["rgba(0, 47, 167, 1)", "rgba(0, 47, 167, 0.5)"]}
     }
   }
 }
