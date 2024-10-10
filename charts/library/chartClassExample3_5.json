@@ -1,0 +1,201 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "view": {"stroke": "transparent"},
+    "resolve": {
+      "axis": {"x": "independent"}
+    },
+  
+    "transform": [
+      {
+        "window": [{"op": "rank", "as": "rank"}],
+        "sort": [{"field": "value", "order": "ascending"}]
+      }
+    ],
+  
+    "title": {
+      "text": "Inspired by Alan Smith @FT",
+      "orient": "bottom",
+      "fontSize": 10,
+      "fontWeight": "normal",
+      "frame": "group",
+      "offset": 10,
+      "anchor": "start",
+      "color": "rgb(198,198,198,1)"
+    },
+  
+    "width": 270,
+    "height": 300,
+    "layer": [
+      {
+        "data": {
+          "values": [
+            {"y1": -0.03, "y2": 0.03}
+          ]
+        },
+        "mark": {
+          "type": "rect",
+          "color": "rgb(198,198,198)",
+          "opacity": 0.3
+        },
+        "encoding": {
+          "x": {
+            "field": "y1",
+            "type": "quantitative",
+            "axis": {
+              "title": "",
+              "ticks": false,
+              "labelPadding": 5,
+              "labelExpr": "format(datum.value + 1, '.2f')",
+              "values": [-0.15, -0.10, -0.05, 0, 0.05, 0.1, 0.15],
+              "domain": false,
+              "labelFontSize": 11,
+              "labelAlign": "center",
+              "gridColor": {
+                "expr": "datum.value == 0 ? 'black' : rgb(211,211,211,1)"
+              }
+            }
+          },
+          "x2": {"field": "y2"}
+        }
+      },
+      {
+        "transform": [
+          {
+            "calculate": "datum.value - 1", "as": "diff"
+          },
+          {"calculate": "datum.value ? datum.count : null", "as": "order"}
+        ],
+        "mark": {
+          "type": "bar",
+          "color": "rgb(225,40,38)"
+        },
+        "encoding": {
+          "y": {
+            "field": "country",
+            "type": "nominal", 
+            "axis": {
+              "ticks": false,
+              "labelPadding": 5,
+              "title": null
+            },
+            "sort": "x"
+          },
+          "x": {
+            "field": "diff",
+            "type": "quantitative",
+            "axis": {
+              "title": "Equality",
+              "titlePadding": 10,
+              "ticks": false,
+              "labelPadding": 5,
+              "labelExpr": "format(datum.value + 1, '.2f')",
+              "values": [-0.15, -0.10, -0.05, 0, 0.05, 0.1, 0.15],
+              "domain": false,
+              "labelFontSize": 11,
+              "labelAlign": "center",
+              "gridColor": {
+                "expr": "datum.value == 0 ? 'black' : rgb(211,211,211,1)"
+              }
+            },
+            "scale": {
+              "domain": [-0.15, 0.15],
+              "nice": false
+            }
+          },
+          "color": {
+            "condition": [
+              {
+                "test": "datum.diff < -0.035",
+                "value": "rgb(69,141,198)"
+              },
+              {
+                "test": "datum.diff > -0.035 && datum.diff <= 0.035",
+                "value": "rgb(198,198,198)"
+              },
+              {
+                "test": "datum.diff > 0.035",
+                "value": "rgb(230,142,72)"
+              }
+            ],
+            "field": "diff",
+            "type": "quantitative",
+            "legend": null
+          }
+        }
+      },
+      {
+  
+        "mark": {
+          "type": "text"
+        }
+          
+      },
+      {
+        "data": {
+          "values": [
+            {"text": "More boys enrolling ←"}
+          ]
+        },
+        "mark": {
+          "type": "text",
+          "align": "left"
+        },
+        "encoding": {
+          "text": {"field": "text"},
+          "x": {"value": 0},
+          "y": {"value": -30}
+        }
+      },
+      {
+        "data": {
+          "values": [
+            {"text": "→ More girls enrolling"}
+          ]
+        },
+        "mark": {
+          "type": "text",
+          "align": "right"
+        },
+        "encoding": {
+          "text": {"field": "text"},
+          "x": {"value": 270},
+          "y": {"value": -30}
+        }
+      }
+    ],
+    "data": {
+      "values": [
+        {"country": "Pakistan", "iso3": "PAK", "value": 0.86},
+        {"country": "Tajikistan", "iso3": "TJK", "value": 0.96},
+        {"country": "Maldives", "iso3": "MDV", "value": 0.96},
+        {"country": "Indonesia", "iso3": "IDN", "value": 0.97},
+        {"country": "Uzbekistan", "iso3": "UZB", "value": 0.97},
+        {"country": "Thailand", "iso3": "THA", "value": 0.98},
+        {"country": "Cambodia", "iso3": "KHM", "value": 0.98},
+        {"country": "Timor-Leste", "iso3": "TLS", "value": 0.98},
+        {"country": "Lao PDR", "iso3": "LAO", "value": 0.99},
+        {"country": "Iran", "iso3": "IRN", "value": 0.99},
+        {"country": "Fiji", "iso3": "FJI", "value": 1},
+        {"country": "Malaysia", "iso3": "MYS", "value": 1},
+        {"country": "Republic of Korea", "iso3": "KOR", "value": 1},
+        {"country": "Japan", "iso3": "JPN", "value": 1},
+        {"country": "Kyrgyzstan", "iso3": "KGZ", "value": 1.01},
+        {"country": "Sri Lanka", "iso3": "LKA", "value": 1.01},
+        {"country": "Cook Islands", "iso3": "COK", "value": 1.01},
+        {"country": "Mongolia", "iso3": "MNG", "value": 1.01},
+        {"country": "Kazakhstan", "iso3": "KAZ", "value": 1.01},
+        {"country": "New Zealand", "iso3": "NZL", "value": 1.01},
+        {"country": "Samoa", "iso3": "WSM", "value": 1.02},
+        {"country": "Bangladesh", "iso3": "BGD", "value": 1.02},
+        {"country": "Bhutan", "iso3": "BTN", "value": 1.02},
+        {"country": "Macao", "iso3": "MAC", "value": 1.03},
+        {"country": "Brunei Darussalam", "iso3": "BRN", "value": 1.03},
+        {"country": "Nauru", "iso3": "NRU", "value": 1.04},
+        {"country": "Australia", "iso3": "AUS", "value": 1.05},
+        {"country": "Hong Kong", "iso3": "HKG", "value": 1.07},
+        {"country": "Solomon Islands", "iso3": "SLB", "value": 1.09},
+        {"country": "Philippines", "iso3": "PHL", "value": 1.1}
+      ]
+    }
+  }
+  

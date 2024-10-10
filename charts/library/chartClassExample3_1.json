@@ -1,0 +1,98 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "view": {"stroke": "transparent"},
+    "height": 230,
+    "width": 300,
+    "layer": [
+      {
+        "data": {
+          "values": [
+            {"y1": 0.97, "y2": 1.03}
+          ]
+        },
+        "mark": {
+          "type": "rect",
+          "color": "rgb(198,198,198)"
+        },
+        "encoding": {
+          "y": {
+            "field": "y1",
+            "type": "quantitative",
+            "scale": {
+              "domain": [0.82, 1.12],
+              "clamp": true
+            }
+          },
+          "y2": {"field": "y2"}
+        }
+      },
+      {
+        "mark": {
+          "type": "bar",
+          "color": "rgb(225,40,38)"
+        },
+        "encoding": {
+          "x": {
+            "field": "country",
+            "type": "nominal", 
+            "axis": {
+              "ticks": false,
+              "labelPadding": 5,
+              "title": null
+            },
+            "sort": "y"
+          },
+          "y": {
+            "field": "value",
+            "type": "quantitative",
+            "axis": {
+              "title": "GPI",
+              "ticks": false,
+              "labelPadding": 5,
+              "values": [0.82, 0.85, 0.88, 0.91, 0.94, 0.97, 1, 1.03, 1.06, 1.09, 1.12],
+              "tickCount": 12
+            },
+            "scale": {
+              "domain": [0.82, 1.12],
+              "clamp": true
+            }
+          }
+        }
+      }
+    ],
+    "data": {
+      "values": [
+        {"country": "Pakistan", "iso3": "PAK", "value": 0.86},
+        {"country": "Tajikistan", "iso3": "TJK", "value": 0.96},
+        {"country": "Maldives", "iso3": "MDV", "value": 0.96},
+        {"country": "Indonesia", "iso3": "IDN", "value": 0.97},
+        {"country": "Uzbekistan", "iso3": "UZB", "value": 0.97},
+        {"country": "Thailand", "iso3": "THA", "value": 0.98},
+        {"country": "Cambodia", "iso3": "KHM", "value": 0.98},
+        {"country": "Timor-Leste", "iso3": "TLS", "value": 0.98},
+        {"country": "Lao PDR", "iso3": "LAO", "value": 0.99},
+        {"country": "Iran", "iso3": "IRN", "value": 0.99},
+        {"country": "Fiji", "iso3": "FJI", "value": 1},
+        {"country": "Malaysia", "iso3": "MYS", "value": 1},
+        {"country": "Republic of Korea", "iso3": "KOR", "value": 1},
+        {"country": "Japan", "iso3": "JPN", "value": 1},
+        {"country": "Kyrgyzstan", "iso3": "KGZ", "value": 1.01},
+        {"country": "Sri Lanka", "iso3": "LKA", "value": 1.01},
+        {"country": "Cook Islands", "iso3": "COK", "value": 1.01},
+        {"country": "Mongolia", "iso3": "MNG", "value": 1.01},
+        {"country": "Kazakhstan", "iso3": "KAZ", "value": 1.01},
+        {"country": "New Zealand", "iso3": "NZL", "value": 1.01},
+        {"country": "Samoa", "iso3": "WSM", "value": 1.02},
+        {"country": "Bangladesh", "iso3": "BGD", "value": 1.02},
+        {"country": "Bhutan", "iso3": "BTN", "value": 1.02},
+        {"country": "Macao", "iso3": "MAC", "value": 1.03},
+        {"country": "Brunei Darussalam", "iso3": "BRN", "value": 1.03},
+        {"country": "Nauru", "iso3": "NRU", "value": 1.04},
+        {"country": "Australia", "iso3": "AUS", "value": 1.05},
+        {"country": "Hong Kong", "iso3": "HKG", "value": 1.07},
+        {"country": "Solomon Islands", "iso3": "SLB", "value": 1.09},
+        {"country": "Philippines", "iso3": "PHL", "value": 1.1}
+      ]
+    }
+  }
+  
