@@ -40,7 +40,8 @@
       "color": {
         "field": "Type", 
         "type": "nominal",
-        "scale":{"range":["orange", "red"]}
+        "scale":{"range":["orange", "red"]},
+        "legend":{"orient": "top"}
        }
    }
 }

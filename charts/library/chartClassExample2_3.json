@@ -39,7 +39,8 @@
     
     "color": {
       "field": "Type", 
-      "type": "nominal"
+      "type": "nominal",
+      "legend":{"orient": "top"}
      }
  }
 }
