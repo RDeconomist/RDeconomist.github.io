@@ -1,64 +1,60 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-   
-    "title": {
-        "text": "Debt Interest Payments - UK",
-        "subtitle":["Various measures",""],
-        "subtitleFontStyle":"italic",
-        "subtitleFontSize":10,
-        "anchor": "middle",
-        "color": "black"},
-   
-     "data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/refs/heads/main/data/debtExampleUKyAxis_long.csv"},
-
-    "selection": {
-      "chooseItem": {
-        "type": "single",
-        "init": {"itemName": "GDP_bn"},
-        "fields": ["Variable"],
-        "bind": {
-          "input": "select",
-          "options": [
-          "DebtInterestToGDP",
-          "GDP_bn",
-          "debtInterest_bn"],
-        "name": "Pick a Variable:"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Debt Interest Payments - UK",
+    "subtitle": ["Various measures", ""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "middle",
+    "color": "black"
+  },
+  "padding": {"left": 20},
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/refs/heads/main/data/debtExampleUKyAxis_long.csv"
+  },
+  "view": {"strokeOpacity": 0},
+  "params": [
+    {
+      "name": "Indicator",
+      "value": "DebtInterestToGDP",
+      "bind": {
+        "input": "select",
+        "options": ["DebtInterestToGDP", "GDP_bn", "debtInterest_bn"]
       }
     }
+  ],
+  "transform": [{"filter": "datum.Variable == Indicator"}],
+  "mark": {
+    "type": "bar",
+    "clip": true,
+    "color": "rgba(128,0,0,.8)",
+    "size": 20
   },
-
-     "transform": [
-      {"filter": {"selection": "chooseItem"}}
-      ],
-   
-    "mark": {
-      "type":"bar",
-      "clip":true,
-      "color":"rgba(128,0,0,.8)",
-      "size":20},
-  
-    "height":270,
-    "width":300,
-   
-    "encoding": {
-      "x": {
-        "field": "Year", 
-        "type": "temporal",
-        "axis": {"title": null,"grid": false}
-        },
-  
-      "y": {
-        "field": "Value", 
-        "type": "quantitative",
-        "axis": {
-          "title": null,
-          "grid": false}
-        },
-      
-      "color": {
-        "field": "Type", 
-        "type": "nominal",
-        "scale":{"range":["rgb(224, 17, 43)", "rgb(128, 0, 0)"]}
-       }
-   }
+  "height": 270,
+  "width": 350,
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {"domain": false, "title": null, "tickOpacity": 0, "grid": false}
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "axis": {
+        "title": null,
+        "offset": 0,
+        "tickOpacity": 0,
+        "domain": false,
+        "labelExpr": "{'DebtInterestToGDP': format(datum.value, '.1%'), 'GDP_bn': format(datum.value, '$,.0f')+ 'B', 'debtInterest_bn': format(datum.value, '$,.0f')+ 'B'}[Indicator]",
+        "grid": false
+      }
+    },
+    "color": {
+      "field": "Type",
+      "type": "nominal",
+      "legend": {"title": "", "orient": "top"},
+      "scale": {"range": ["rgb(224, 17, 43)", "rgb(128, 0, 0)"]}
+    }
+  }
 }
