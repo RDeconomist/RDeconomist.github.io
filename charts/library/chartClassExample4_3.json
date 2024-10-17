@@ -1,0 +1,48 @@
+{ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+
+  "title": {
+    "text": "Assessing impact of a policy",
+    "subtitle":["Policy (x), and impact measure  (y)",""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/refs/heads/main/data/anscombesQuartet.csv"},
+
+  "mark": {
+    "type":"point",
+    "size":80,
+    "color":"rgb(0,67,167)",
+    "opacity":1},
+  
+  "height": 150,
+  "width": 150,
+
+  "encoding": {
+
+    "x": {
+      "field": "policyX", 
+      "type": "quantitative",
+      "title":null
+      },
+
+    "y": {
+      "field": "impactY", 
+      "type": "quantitative",
+      "title":null
+      },
+
+    "facet": {
+      "field": "Dataset", 
+      "type": "nominal",
+      "title":null,
+      "columns": 2
+      }
+
+
+   }
+}
