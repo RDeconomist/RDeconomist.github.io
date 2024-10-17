@@ -833,6 +833,52 @@
             <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartClassExample3_6.json">Code</a>                       
         </div>
 
+        <!-- Class example 4 -->
+
+        <div class="grid_item">
+            <p><strong>Class | Anscombe 1 </strong></p>
+            <p>A dataset here which co-mingles various difference policies - what can we do to clear this up?</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartClass18"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartClassExample4_0.json">Code</a>                       
+        </div>
+
+        <div class="grid_item">
+            <p><strong>Class | Anscombe 2 | Filter </strong></p>
+            <p>One option is to filter the data, so that only data from one policy experiment is showing.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartClass19"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartClassExample4_1.json">Code</a>                       
+        </div>
+
+        <div class="grid_item">
+            <p><strong>Class | Anscombe 3 | Colour </strong></p>
+            <p>Another option is to use colour. In this case it is not very helpful...</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartClass20"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartClassExample4_2.json">Code</a>                       
+        </div>
+
+        <div class="grid_item">
+            <p><strong>Class | Anscombe 4 | Facet </strong></p>
+            <p>The facet encoding produces a grid of charts. In this case, this is much clearer.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartClass21"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartClassExample4_3.json">Code</a>                       
+        </div>
+
 
 
     </div>
@@ -949,6 +995,11 @@
     var class16 = "charts/library/chartClassExample3_5.json"
     var class17 = "charts/library/chartClassExample3_6.json"
 
+    // Example 4
+    var class18 = "charts/library/chartClassExample4_0.json"
+    var class19 = "charts/library/chartClassExample4_1.json"
+    var class20 = "charts/library/chartClassExample4_2.json"
+    var class21 = "charts/library/chartClassExample4_3.json"
 
   
     // Now embed the charts in the divs set above:
@@ -1053,8 +1104,12 @@
     vegaEmbed('#chartClass15', class15, {"actions": false});
     vegaEmbed('#chartClass16', class16, {"actions": false});
     vegaEmbed('#chartClass17', class17, {"actions": false}); 
- 
- 
+
+    // Class Examples 4:
+    vegaEmbed('#chartClass18', class18, {"actions": false});
+    vegaEmbed('#chartClass19', class19, {"actions": false});
+    vegaEmbed('#chartClass20', class20, {"actions": false});
+    vegaEmbed('#chartClass21', class21, {"actions": false}); 
   
 
 </script>
