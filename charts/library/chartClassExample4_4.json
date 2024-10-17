@@ -3,7 +3,7 @@
 
   "title": {
     "text": "Assessing impact of a policy",
-    "subtitle":["Policy (x), and impact measure  (y)",""],
+    "subtitle":["",""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -39,6 +39,7 @@
     "color": {
       "field": "policyX", 
       "type": "quantitative",
+      "legend":{"orient":"bottom" },
       "title":null
       }
    }
