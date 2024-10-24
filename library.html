@@ -890,6 +890,28 @@
             <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartClassExample4_4.json">Code</a>                       
         </div>
 
+        <div class="grid_item">
+            <p><strong>Class | Tidy Data 1 |  </strong></p>
+            <p>This example takes in spreadsheet style "wide" data. The transform converts this to tiday (AKA long-form) data. The chart does not work well, given the differences in currencies used.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartClass23"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartClassExample5_1.json">Code</a>                       
+        </div>
+
+        <div class="grid_item">
+            <p><strong>Class | Tidy Data 2 |  </strong></p>
+            <p>With data in tiday form we can easily change or spec so that we use a "facet" encoding to provide a trelliss style chart. The main complication is that we must use independent y axes to display the data well.</p>
+            <hr>
+            <span style="display:block; height: 10px;"></span>
+            <div id="chartClass24"></div>
+            <span style="display:block; height: 10px;"></span>
+            <hr> 
+            <a class="libraryButton" href="https://github.com/RDeconomist/RDeconomist.github.io/blob/main/charts/library/chartClassExample5_2.json">Code</a>                       
+        </div>
+
 
 
     </div>
@@ -1013,6 +1035,11 @@
     var class21 = "charts/library/chartClassExample4_3.json"
     var class22 = "charts/library/chartClassExample4_4.json"
 
+    // Example 5
+    var class23 = "charts/library/chartClassExample5_1.json"
+    var class24 = "charts/library/chartClassExample5_2.json"
+  
+
 
   
     // Now embed the charts in the divs set above:
@@ -1124,6 +1151,10 @@
     vegaEmbed('#chartClass20', class20, {"actions": false});
     vegaEmbed('#chartClass21', class21, {"actions": false}); 
     vegaEmbed('#chartClass22', class22, {"actions": false}); 
+
+    // Class Examples 5:
+    vegaEmbed('#chartClass23', class23, {"actions": false}); 
+    vegaEmbed('#chartClass24', class24, {"actions": false}); 
   
 
 </script>
