@@ -38,6 +38,9 @@
     
             "color": {
                 "field": "country",
+                "legend":{
+                    "orient": "top"
+                },
                 "title":null}
     }
   }
