@@ -1,0 +1,35 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+    "data": {"url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/refs/heads/main/charts/classes/pareto.csv"},
+
+    "transform": [
+        {"fold":["Me", "You", "Waste"], "as": ["Person", "Value"]},
+
+        {"filter":{
+          "field": "Case", 
+          "oneOf":["D", "A", "C", "B"]}}
+        ],
+
+  "height":150,
+  "width":150,
+    
+  "mark": {"type": "arc", "innerRadius": 30},
+
+  "encoding": {
+  
+    "theta": {
+      "field": "Value", 
+      "type": "quantitative"},
+  
+    "color": {
+      "field": "Person", 
+      "type": "nominal",
+      "scale": {"range": ["orange", "black", "lightblue"]}},
+
+    "facet": {
+      "field": "Case",
+      "columns": 2,
+      "title":null}
+  }
+}
