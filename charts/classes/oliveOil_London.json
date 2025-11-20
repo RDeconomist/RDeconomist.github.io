@@ -1,0 +1,46 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+         
+    "title": {
+        "text": "Olive Oil in London",
+        "subtitle":["Price paths for four individual firms",""],
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"},
+        
+    "data": {
+        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/refs/heads/main/data/oliveOil_London.csv"
+        },
+
+    "transform": [
+        {"filter":"year(datum.date4) > 2015"},
+        {"filter": {"field": "store", "oneOf":[1, 12, 4, 5]}}
+    ],
+           
+    "height": 120,
+    "width": 200,   
+    
+    "mark": {   
+            "type":"line",
+            "strokeWidth":2},    
+    
+    "encoding": {
+            "x": {
+                "field": "date4",
+                "type": "temporal",
+                "title":null,
+                "axis":{"grid": false}},
+    
+            "y": {
+                "field": "price",
+                "type": "quantitative",
+                "title": null},
+    
+            "facet": {
+                "field": "store",
+                "columns": 2,
+                "title":null}},
+
+                "resolve": {"scale": {"y": "independent"}}
+  }
