@@ -21,7 +21,7 @@
 
  "params": [{
     "name":"myColour", 
-    "value":"pink",
+    "value":"red",
     "bind":{
         "input": "text",
         "name": "Choose colour:"}}
