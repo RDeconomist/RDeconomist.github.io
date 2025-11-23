@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>France GDP 2000–2005 - Live Data</title>
+
+    <!-- Vega-Lite & Vega Embed -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h2 { margin-top: 50px; }
+        .chart-container { margin-bottom: 50px; }
+    </style>
+</head>
+<body>
+
+    <h1>France GDP 2000–2005 - Live Data from World Bank API</h1>
+
+    <!-- Vega-Lite Chart -->
+    <div class="chart-container">
+        <h2>Vega-Lite Chart</h2>
+        <div id="vegaChart"></div>
+    </div>
+
+    <!-- Chart.js Chart -->
+    <div class="chart-container">
+        <h2>Chart.js Chart</h2>
+        <canvas id="chartjsChart" width="600" height="400"></canvas>
+    </div>
+
+    <!-- Plotly Chart -->
+    <div class="chart-container">
+        <h2>Plotly Chart</h2>
+        <div id="plotlyChart" style="width: 80%; height: 500px;"></div>
+    </div>
+
+    <script>
+        // World Bank API URL for France GDP (constant 2010 US$) 2000-2005
+        const apiUrl = 'https://api.worldbank.org/v2/country/FR/indicator/NY.GDP.MKTP.KD?date=1980:2024&format=json';
+
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                const gdpData = data[1].reverse(); // chronological order
+                const years = gdpData.map(d => d.date);
+                const values = gdpData.map(d => d.value);
+
+                // -------------------
+                // Vega-Lite Chart
+                // -------------------
+                const vegaSpec = {
+                    $schema: 'https://vega.github.io/schema/vega-lite/v5.json',
+                    description: 'France GDP 2000–2005 (Vega-Lite, live)',
+                    data: { values: years.map((year, i) => ({ year, gdp: values[i] })) },
+                    mark: { type: 'line', point: true },
+                    encoding: {
+                        x: { field: 'year', type: 'ordinal', title: 'Year' },
+                        y: { field: 'gdp', type: 'quantitative', title: 'GDP (constant 2010 US$)' }
+                    }
+                };
+                vegaEmbed('#vegaChart', vegaSpec, { actions: false });
+
+                // -------------------
+                // Chart.js Chart
+                // -------------------
+                const ctx = document.getElementById('chartjsChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: years,
+                        datasets: [{
+                            label: 'GDP (constant 2010 US$)',
+                            data: values,
+                            borderColor: 'green',
+                            backgroundColor: 'rgba(0,128,0,0.1)',
+                            fill: true,
+                            tension: 0.3,
+                            pointRadius: 5
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: { display: true, position: 'top' },
+                            title: { display: true, text: 'France GDP 2000–2005 (Chart.js, live)' }
+                        },
+                        scales: {
+                            x: { title: { display: true, text: 'Year' } },
+                            y: { title: { display: true, text: 'GDP (constant 2010 US$)' } }
+                        }
+                    }
+                });
+
+                // -------------------
+                // Plotly Chart
+                // -------------------
+                const trace = {
+                    x: years,
+                    y: values,
+                    type: 'scatter',
+                    mode: 'lines+markers',
+                    line: { color: 'blue', width: 3 },
+                    marker: { size: 8 },
+                    name: 'GDP'
+                };
+                const layout = {
+                    title: 'France GDP 2000–2005 (Plotly, live)',
+                    xaxis: { title: 'Year' },
+                    yaxis: { title: 'GDP (constant 2010 US$)' },
+                    margin: { t: 50, l: 80, r: 50, b: 50 }
+                };
+                Plotly.newPlot('plotlyChart', [trace], layout);
+            })
+            .catch(err => {
+                console.error('Error fetching GDP data:', err);
+                document.getElementById('vegaChart').innerHTML = 
+                    document.getElementById('plotlyChart').innerHTML = 
+                    document.getElementById('chartjsChart').innerHTML = 'Failed to load GDP data.';
+            });
+    </script>
+
+</body>
+</html>

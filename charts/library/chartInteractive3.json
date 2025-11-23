@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+  "text": "Inflation - since 1800",
+  "subtitle": "RPI: long series: annual percentage change ",
+  "subtitleFontStyle":"italic",
+  "subtitleFontSize":10,
+  "anchor": "start",
+  "color": "black"},
+
+  "width":300,
+  "height":300,
+
+  "data": {
+      "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/main/charts/ONSinflation/data_MM23-CDSI.json",
+      "format": {
+        "type":"json",
+        "property": "years"
+      }},
+
+ "params": [{
+    "name":"myColour", 
+    "value":"pink",
+    "bind":{
+        "input": "text",
+        "name": "Choose colour:"}}
+        ],
+
+  "mark":{
+    "type": "line",
+    "color":{"expr": "myColour"},
+    "strokeWidth":2},
+
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title":null},
+
+    "y": {
+      "field": "value",                
+      "type": "quantitative",
+      "title":null}}
+}
