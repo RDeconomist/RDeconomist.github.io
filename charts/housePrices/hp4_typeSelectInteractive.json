@@ -1,7 +1,5 @@
 { "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
 
-  "description": "Various US measures state by state",
-
   "title": {
     "text": "House Prices, UK",
     "subtitle":["Floor area (square feet) vs purchase price (£)",""],
