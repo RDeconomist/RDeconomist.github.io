@@ -1,0 +1,40 @@
+{ "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+
+  "description": "Various US measures state by state",
+
+  "title": {
+    "text": "House Prices, UK",
+    "subtitle":["Floor area (square feet) vs purchase price (£)",""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/refs/heads/main/data/data_ukHousePriceSales_Clean.csv",
+    "format":{"type":"csv"}},
+
+  "mark": {
+    "type":"circle",
+    "size":150,
+    "color":"rgba(255, 165, 0, 0.6)"},
+  
+  "height": 400,
+  "width": 500,
+
+  "encoding": {
+
+    "x": {
+      "field": "floorAreaSqm", 
+      "type": "quantitative",
+      "title":null
+      },
+
+    "y": {
+      "field": "priceSale", 
+      "type": "quantitative",
+      "title":null
+      }
+   }
+}
