@@ -1,4 +1,4 @@
-rentestimatecurrentprice,saleestimatecurrentprice,bathrooms,bedrooms,floorareasqm,livingrooms,latitude,longitude,outcode,postcode,propertytype,currentenergyrating,fulladdress,tenure
+priceRent,priceSale,bathrooms,bedrooms,floorAreaSqm,livingrooms,latitude,longitude,outcode,postcode,propertytype,energyRating,address,tenure
 950,235000,,2,,,51.447113,-0.24290749,SW15,SW15 4LZ,Flat/Maisonette,,"22 Rushmere House, Fontley Way, London, SW15 4LZ",Leasehold
 2200,627000,1,3,,2,51.535149,-0.4492566,UB10,UB10 0DE,Detached House,,"18 Baxter Close, Uxbridge, UB10 0DE",Freehold
 3000,643000,,,77,,51.459309,-0.1172709,SW2,SW2 1EG,Flat/Maisonette,B,"Flat 29, Somerset Place, 10 Brixton Hill, London, SW2 1EG",Leasehold
