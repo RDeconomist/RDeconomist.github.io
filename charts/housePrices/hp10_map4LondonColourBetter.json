@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+
+    "title": {
+    "text": "House Prices, London",
+    "subtitle":["Floor area (square feet) vs purchase price (£)",""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+
+  "width": 700,
+  "height": 500,
+  
+  "view": {"stroke": "transparent"},
+  
+  "layer": [
+    {
+      "data": {
+        "url": "data/londonBoroughs.json",
+        "format": {"type": "topojson", "feature": "boroughs"}},
+
+      "mark": {
+        "type": "geoshape",
+        "color":"rgb(240, 240, 240)",
+        "stroke": "white",
+        "strokeWidth": 0.2}
+    },
+
+       {
+      "data": {
+        "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/refs/heads/main/data/data_ukHousePriceSales_Clean.csv"},
+
+      "projection": {"type": "mercator"},
+
+      "transform": [
+        {"filter":{"field": "typesimplified", "oneOf":["House", "Terraced", "Flat"]}}
+      ],
+      
+      "mark": "circle",
+      
+      "encoding": {
+        "longitude": {"field": "longitude", "type": "quantitative"},
+        "latitude": {"field": "latitude", "type": "quantitative"},
+
+        "size": {
+          "field": "priceSale", 
+          "type": "quantitative",
+          "legend":{
+            "title": "Sales Price"
+          }},
+        
+      "color": {
+        "field": "typesimplified", 
+        "type": "nominal",
+        "title":null,
+        "scale":{"range":["orange", "blue", "darkblue"]}},
+      
+        "tooltip": [
+          {"field": "priceSale", "title":"Price", "format":","},
+          {"field": "propertytype"},
+          {"field": "postcode"}
+        ]
+      }
+    }
+         
+    
+  ]
+}
