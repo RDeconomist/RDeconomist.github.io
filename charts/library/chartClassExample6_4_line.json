@@ -1,0 +1,66 @@
+{ "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+
+
+  "title": {
+    "text": "A simple line may provide good fit",
+    "subtitle":["Policy (x), and impact measure  (y)",""],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/RDeconomist/RDeconomist.github.io/refs/heads/main/data/anscombesQuartet.csv"},
+
+    "height": 300,
+    "width": 300,
+
+  "transform": [
+    {"filter":{
+      "field":"Dataset",
+      "equal":"A"}}
+    ],  
+
+  "layer":[
+    
+    {"mark": {
+      "type":"point",
+      "size":250,
+      "color":"rgb(0,67,167)",
+      "opacity":1},
+      
+    "encoding": {
+      "x": {
+        "field": "policyX", 
+        "type": "quantitative",
+        "title":null},
+      "y": {
+        "field": "impactY", 
+        "type": "quantitative",
+        "title":null
+      }}},
+
+    {"mark": {
+      "type": "line", 
+      "color": "green"},
+      
+      "transform": [
+        {"regression": "impactY", 
+         "on": "policyX",
+         "extent": [3,15],
+         "method": "poly",
+         "order": 1}
+      ],
+
+      "encoding": {
+        "x": {
+          "field": "policyX", 
+          "type": "quantitative"},
+        "y": {
+          "field": "impactY", 
+          "type": "quantitative"}
+      }
+    }
+  ]
+}
